@@ -882,7 +882,109 @@ window.PAA_QUESTIONS_EXTRA = [
     stem:"Un grifo llena un tanque en 8 horas.",
     q:"¿Cuánto tardan 2 grifos iguales llenándolo juntos?",
     opts:["4 horas","16 horas","6 horas","10 horas"],
-    ans:0, exp:"Proporción inversa: con el doble de grifos, la mitad del tiempo. 8 ÷ 2 = 4 horas." }
+    ans:0, exp:"Proporción inversa: con el doble de grifos, la mitad del tiempo. 8 ÷ 2 = 4 horas." },
+
+  /* ===================== LOTE 3 — 50 preguntas nuevas ===================== */
+
+  /* -- Verbal: finalidad -- */
+  { id:"v_fin_10", domain:"verbal", topic:"finalidad", dif:2, stem:"Para reducir la deserción, el colegio abrió un programa de tutorías por las tardes.", q:"¿Cuál es la finalidad del programa?", opts:["Llenar las tardes","Reducir la deserción","Contratar tutores","Alargar el horario"], ans:1, exp:"Se abrió 'para reducir la deserción': esa es la finalidad." },
+  { id:"v_fin_11", domain:"verbal", topic:"finalidad", dif:2, stem:"Guarda capturas de cada conversación importante para tener respaldo si surge un malentendido.", q:"¿Cuál es la finalidad de guardar las capturas?", opts:["Llenar su teléfono","Tener respaldo ante un malentendido","Presumir sus chats","Borrar mensajes"], ans:1, exp:"El para qué es contar con respaldo o evidencia." },
+
+  /* -- Verbal: comportamiento -- */
+  { id:"v_com_10", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cuando el proyecto falla, en vez de buscar culpables, el líder reúne al equipo y plantea soluciones.", q:"¿Cómo se comporta el líder?", opts:["Culpa a los demás","Actúa de forma constructiva","Abandona el proyecto","Se queda callado"], ans:1, exp:"Buscar soluciones en lugar de culpables es actuar de forma constructiva." },
+  { id:"v_com_11", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cada vez que algo le sale mal, Lucía respira, lo analiza y vuelve a intentarlo.", q:"¿Cómo enfrenta Lucía los errores?", opts:["Se rinde enseguida","Con calma y persistencia","Culpando a la suerte","Enojándose con todos"], ans:1, exp:"Respirar, analizar y reintentar es enfrentar los errores con calma y persistencia." },
+
+  /* -- Verbal: causa y consecuencia -- */
+  { id:"v_cau_13", domain:"verbal", topic:"causa_consecuencia", dif:2, stem:"Como dejó el helado fuera del congelador, se derritió.", q:"¿Cuál fue la causa de que se derritiera?", opts:["El frío","Dejarlo fuera del congelador","Su sabor","El envase"], ans:1, exp:"'Como' introduce la causa: dejarlo fuera del congelador." },
+  { id:"v_cau_14", domain:"verbal", topic:"causa_consecuencia", dif:2, stem:"El aumento de turistas trajo consigo más empleos en la zona costera.", q:"¿Cuál es la consecuencia del aumento de turistas?", opts:["Menos empleos","Más empleos en la zona","Menos turistas","El cierre de hoteles"], ans:1, exp:"El efecto del aumento de turistas fue generar más empleos." },
+  { id:"v_cau_15", domain:"verbal", topic:"causa_consecuencia", dif:3, stem:"La sequía prolongada secó los pastos; por eso, el ganado quedó sin alimento.", q:"¿Cuál es la causa de que el ganado quedara sin alimento?", opts:["El exceso de lluvia","La sequía que secó los pastos","La falta de ganado","El frío"], ans:1, exp:"La cadena es: sequía → pastos secos → ganado sin alimento. La causa de fondo es la sequía." },
+
+  /* -- Verbal: simple y complejo -- */
+  { id:"v_sim_10", domain:"verbal", topic:"simple_complejo", dif:2, stem:"Sumar dos cifras es directo; balancear el presupuesto de un país implica miles de variables y decisiones.", q:"¿Cómo es el presupuesto frente a la suma?", opts:["Más simple","Más complejo","Más antiguo","Más barato"], ans:1, exp:"Por su gran cantidad de variables, el presupuesto es más complejo." },
+  { id:"v_sim_11", domain:"verbal", topic:"simple_complejo", dif:1, stem:"Tocar una sola nota en el piano es algo elemental.", q:"¿Cómo es esa acción?", opts:["Compleja","Simple","Imposible","Costosa"], ans:1, exp:"De un solo paso y elemental: es simple." },
+
+  /* -- Verbal: conceptualización -- */
+  { id:"v_con_12", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"Reconoció frente a todos que se había equivocado y pidió disculpas.", q:"¿Qué palabra describe su actitud?", opts:["Humildad","Soberbia","Indiferencia","Astucia"], ans:0, exp:"Admitir el error y disculparse refleja humildad." },
+  { id:"v_con_13", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"Dedica horas a cuidar animales abandonados sin recibir pago alguno.", q:"¿Qué palabra resume su actitud?", opts:["Altruismo","Egoísmo","Pereza","Ambición"], ans:0, exp:"Ayudar sin esperar nada a cambio es altruismo." },
+
+  /* -- Verbal: orden y desorden -- */
+  { id:"v_ord_10", domain:"verbal", topic:"orden_desorden", dif:2, stem:"El cuarto pasó de tener ropa por todos lados a quedar con todo guardado en cajones rotulados.", q:"¿Qué cambio ocurrió?", opts:["Del orden al desorden","Del desorden al orden","De limpio a sucio","De grande a chico"], ans:1, exp:"De ropa regada (desorden) a todo guardado y rotulado (orden)." },
+  { id:"v_ord_11", domain:"verbal", topic:"orden_desorden", dif:1, stem:"En la bodega, cada caja tiene etiqueta y un lugar fijo en los estantes.", q:"¿Cómo está la bodega?", opts:["Ordenada","Desordenada","Vacía","Vieja"], ans:0, exp:"Etiquetas y lugares fijos describen una bodega ordenada." },
+
+  /* -- Verbal: orden temporal -- */
+  { id:"v_tmp_10", domain:"verbal", topic:"orden_temporal", dif:2, stem:"Se siembra la semilla, se riega cada día, brota la planta y, al final, se cosecha.", q:"¿Qué ocurre justo antes de cosechar?", opts:["Sembrar la semilla","Que brote la planta","Regar la semilla","Comprar semillas"], ans:1, exp:"La secuencia es sembrar → regar → brotar → cosechar. Antes de cosechar, brota la planta." },
+  { id:"v_tmp_11", domain:"verbal", topic:"orden_temporal", dif:2, stem:"Primero se reúnen los materiales, luego se arma la estructura y, por último, se pinta.", q:"¿Qué se hace justo después de reunir los materiales?", opts:["Pintar","Armar la estructura","Reunir más materiales","Limpiar todo"], ans:1, exp:"Después de reunir los materiales se arma la estructura." },
+
+  /* -- Verbal: esencia -- */
+  { id:"v_ese_10", domain:"verbal", topic:"esencia", dif:3, stem:"Lo propio de un mapa es representar un territorio a escala.", q:"Por la misma lógica, ¿qué es lo propio de un reloj?", opts:["Representar un territorio","Marcar el paso del tiempo","Medir el peso","Indicar la temperatura"], ans:1, exp:"Si el mapa representa un territorio, lo propio del reloj es marcar el tiempo." },
+  { id:"v_ese_11", domain:"verbal", topic:"esencia", dif:2, stem:"Una característica esencial de una semilla es contener lo necesario para dar origen a una planta.", q:"Según el texto, ¿qué es lo propio de una semilla?", opts:["Su color","Poder dar origen a una planta","Su tamaño","Su precio"], ans:1, exp:"Lo característico de la semilla es su capacidad de generar una planta." },
+
+  /* -- Verbal: perspectiva -- */
+  { id:"v_per_11", domain:"verbal", topic:"perspectiva", dif:2, stem:"El mismo precio que a uno le parece caro, a otro con más ingresos le resulta accesible.", q:"¿Qué idea expresa el texto?", opts:["El precio es siempre alto","Un mismo precio se valora distinto según la persona","Nadie puede comprar","El precio no importa"], ans:1, exp:"La valoración del precio depende de quién lo mire: es cuestión de perspectiva." },
+  { id:"v_per_12", domain:"verbal", topic:"perspectiva", dif:3, stem:"La misma noticia alegra a los seguidores de un equipo y entristece a los del rival.", q:"¿Qué muestra el texto?", opts:["La noticia es falsa","Un hecho se vive distinto según el punto de vista","El deporte no importa","Todos sienten lo mismo"], ans:1, exp:"Un mismo hecho provoca reacciones opuestas según el punto de vista." },
+
+  /* -- Verbal: idea implícita -- */
+  { id:"v_imp_15", domain:"verbal", topic:"idea_implicita", dif:2, stem:"Llegó con el paraguas chorreando y los zapatos empapados.", q:"¿Cuál es una idea implícita?", opts:["Hacía calor","Estaba lloviendo","Venía de la playa","Era de noche"], ans:1, exp:"Paraguas chorreando y zapatos empapados implican que estaba lloviendo." },
+  { id:"v_imp_16", domain:"verbal", topic:"idea_implicita", dif:2, stem:"Desde que cambió de entrenador, el equipo no ha vuelto a perder.", q:"¿Cuál es una idea implícita?", opts:["El equipo siempre pierde","El cambio de entrenador mejoró al equipo","Ya no juegan","El entrenador anterior era mejor"], ans:1, exp:"Que dejaran de perder tras el cambio sugiere que el nuevo entrenador mejoró al equipo." },
+  { id:"v_imp_17", domain:"verbal", topic:"idea_implicita", dif:3, stem:"Pidió la cuenta apenas terminó de comer y ni siquiera esperó el postre.", q:"¿Cuál es una idea implícita?", opts:["Quería comer más","Tenía prisa por irse","Odiaba el lugar","No probó la comida"], ans:1, exp:"Pedir la cuenta de inmediato y no esperar el postre sugiere prisa por irse." },
+
+  /* -- Verbal: idea principal -- */
+  { id:"v_pri_13", domain:"verbal", topic:"idea_principal", dif:2, stem:"Reciclar, usar transporte público y ahorrar energía son acciones que ayudan al planeta.", q:"¿Cuál es la idea principal?", opts:["Acciones para cuidar el planeta","El precio del transporte","La historia del reciclaje","El consumo de energía"], ans:0, exp:"Los tres ejemplos apuntan al tema: acciones para cuidar el planeta." },
+  { id:"v_pri_14", domain:"verbal", topic:"idea_principal", dif:2, stem:"El sueño, la alimentación y el manejo del estrés influyen en la salud mental.", q:"¿Cuál es la idea principal?", opts:["Factores que influyen en la salud mental","Las horas de sueño","Los tipos de comida","El estrés laboral"], ans:0, exp:"Los tres elementos apuntan a los factores que influyen en la salud mental." },
+  { id:"v_pri_15", domain:"verbal", topic:"idea_principal", dif:3, stem:"La marimba acompaña fiestas, transmite tradición y representa la identidad de Centroamérica.", q:"¿Cuál es el tema central?", opts:["La importancia cultural de la marimba","El precio de la marimba","Cómo se fabrica una marimba","Las fiestas en general"], ans:0, exp:"Los tres rasgos apuntan a la importancia cultural de la marimba." },
+
+  /* -- Verbal: paráfrasis -- */
+  { id:"v_par_12", domain:"verbal", topic:"parafrasis", dif:2, stem:"Al mal tiempo, buena cara.", q:"¿Cuál opción expresa la misma idea?", opts:["Hay que enojarse con los problemas","Ante las dificultades, conviene mantener buena actitud","El clima siempre es malo","Nada tiene solución"], ans:1, exp:"El refrán aconseja una actitud positiva frente a las dificultades." },
+  { id:"v_par_13", domain:"verbal", topic:"parafrasis", dif:2, stem:"No dejes para mañana lo que puedas hacer hoy.", q:"¿Cuál opción conserva el sentido?", opts:["Todo se puede posponer","Conviene no posponer las tareas","Mañana es mejor que hoy","Hoy no se trabaja"], ans:1, exp:"El refrán recomienda no aplazar lo que se puede hacer ya." },
+  { id:"v_par_14", domain:"verbal", topic:"parafrasis", dif:3, stem:"Camarón que se duerme, se lo lleva la corriente.", q:"¿Cuál opción dice lo mismo con otras palabras?", opts:["Dormir es muy saludable","Quien se descuida pierde oportunidades","Los camarones nadan rápido","Hay que dormir más"], ans:1, exp:"El refrán advierte que descuidarse hace perder oportunidades." },
+
+  /* -- Verbal: proposiciones -- */
+  { id:"v_pro_11", domain:"verbal", topic:"proposiciones", dif:3, stem:"Toda sustancia ácida cambia el color del papel tornasol. Analice las proposiciones:\nI. Si una sustancia no cambia el color del papel, no es ácida.\nII. Ninguna sustancia ácida afecta el papel tornasol.\nIII. El vinagre, que es ácido, cambia el color del papel.", q:"¿Cuáles proposiciones se deducen del texto?", opts:["Solo la II","La I y la III","Solo la I","Las tres"], ans:1, exp:"I es la contrapositiva (válida) y III es un caso particular. II contradice el texto." },
+  { id:"v_pro_12", domain:"verbal", topic:"proposiciones", dif:2, stem:"Si un animal es mamífero, respira con pulmones. Analice las proposiciones:\nI. La ballena, que es mamífero, respira con pulmones.\nII. Los mamíferos no tienen pulmones.\nIII. Ningún mamífero respira.", q:"¿Cuál proposición se deduce del texto?", opts:["Solo la I","Solo la II","La II y la III","Las tres"], ans:0, exp:"Si todo mamífero respira con pulmones, la ballena (mamífero) también: I. II y III contradicen el texto." },
+
+  /* -- Mate: aritmética -- */
+  { id:"m_ari_14", domain:"math", topic:"aritmetica", dif:1, stem:"Considere la operación: 100 − 45 ÷ 9.", q:"¿Cuál es el resultado?", opts:["95","55","11","5"], ans:0, exp:"Primero la división: 45 ÷ 9 = 5. Luego 100 − 5 = 95." },
+  { id:"m_ari_15", domain:"math", topic:"aritmetica", dif:1, stem:"Un paquete trae 24 galletas y se reparten en partes iguales entre 6 niños.", q:"¿Cuántas galletas recibe cada niño?", opts:["3","4","6","8"], ans:1, exp:"24 ÷ 6 = 4 galletas por niño." },
+  { id:"m_ari_16", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación con decimales: 2,5 + 1,75 − 0,25.", q:"¿Cuál es el resultado?", opts:["4","4,5","3,5","4,25"], ans:0, exp:"2,5 + 1,75 = 4,25; luego 4,25 − 0,25 = 4." },
+
+  /* -- Mate: MCM y MCD -- */
+  { id:"m_mcm_9", domain:"math", topic:"mcm_mcd", dif:3, stem:"Se quieren cortar dos listones de 24 cm y 30 cm en trozos iguales lo más largos posible, sin desperdicio.", q:"¿Cuánto mide cada trozo?", opts:["6 cm","12 cm","3 cm","2 cm"], ans:0, exp:"El trozo más largo que divide a ambos es el MCD(24, 30) = 6 cm." },
+
+  /* -- Mate: relaciones de orden -- */
+  { id:"m_rel_10", domain:"math", topic:"relaciones_orden", dif:2, stem:"Considere los valores 2/5 ; 0,5 ; 1/4.", q:"¿Cuál es el menor?", opts:["2/5","0,5","1/4","Son iguales"], ans:2, exp:"En decimales: 0,40 ; 0,50 ; 0,25. El menor es 1/4 = 0,25." },
+  { id:"m_rel_11", domain:"math", topic:"relaciones_orden", dif:2, stem:"Se sabe que m < n y que ambos son negativos.", q:"¿Cuál afirmación es verdadera?", opts:["n es menor que m","m es menor que n","m es positivo","n es positivo"], ans:1, exp:"El dato dice directamente que m < n." },
+
+  /* -- Mate: conteo -- */
+  { id:"m_cnt_10", domain:"math", topic:"conteo", dif:2, stem:"Un helado se arma eligiendo 1 sabor (de 5) y 1 topping (de 3).", q:"¿Cuántas combinaciones distintas se pueden armar?", opts:["8","15","5","10"], ans:1, exp:"Principio multiplicativo: 5 × 3 = 15." },
+  { id:"m_cnt_11", domain:"math", topic:"conteo", dif:3, stem:"En una urna hay 6 fichas numeradas del 1 al 6 (tres pares y tres impares).", q:"¿Cuántas fichas se deben sacar como mínimo para asegurar que dos de ellas sumen un número par?", opts:["2","3","4","6"], ans:1, exp:"Dos números suman par si son del mismo tipo (par+par o impar+impar). Hay 2 tipos: con 3 fichas, por fuerza dos comparten tipo y su suma es par." },
+
+  /* -- Mate: permutaciones -- */
+  { id:"m_per_8", domain:"math", topic:"permutaciones", dif:2, stem:"Se quieren ordenar en fila 4 cuadros distintos en una pared.", q:"¿De cuántas maneras se pueden ordenar?", opts:["12","24","16","8"], ans:1, exp:"Ordenar 4 elementos distintos: 4! = 24." },
+
+  /* -- Mate: geometría -- */
+  { id:"m_geo_11", domain:"math", topic:"geometria", dif:2, stem:"Un triángulo tiene base de 8 cm y altura de 5 cm.", q:"¿Cuál es su área?", opts:["40 cm²","20 cm²","13 cm²","26 cm²"], ans:1, exp:"Área = base × altura ÷ 2 = 8 × 5 ÷ 2 = 20 cm²." },
+  { id:"m_geo_12", domain:"math", topic:"geometria", dif:3, stem:"Una pizza circular tiene radio de 10 cm. Use π ≈ 3,14.", q:"¿Cuál es su área aproximada?", opts:["314 cm²","31,4 cm²","62,8 cm²","100 cm²"], ans:0, exp:"Área = π·r² = 3,14 × 10² = 3,14 × 100 = 314 cm²." },
+
+  /* -- Mate: sucesiones -- */
+  { id:"m_suc_12", domain:"math", topic:"sucesiones", dif:2, stem:"Observe la sucesión: 3, 6, 9, 12, …", q:"¿Cuál es el término número 6?", opts:["15","18","21","16"], ans:1, exp:"Es aritmética con d = 3. a₆ = 3 + (6−1)·3 = 3 + 15 = 18." },
+  { id:"m_suc_13", domain:"math", topic:"sucesiones", dif:2, stem:"Observe la sucesión: 2, 4, 8, 16, …", q:"¿Cuál es el siguiente término?", opts:["24","32","20","30"], ans:1, exp:"Cada término se multiplica por 2: 16 × 2 = 32." },
+
+  /* -- Mate: datos y probabilidad -- */
+  { id:"m_dat_11", domain:"math", topic:"datos_probabilidad", dif:1, stem:"Se lanza una moneda equilibrada.", q:"¿Cuál es la probabilidad de que salga escudo?", opts:["1/2","1/4","1","1/3"], ans:0, exp:"Hay 2 resultados igualmente probables; uno es escudo: 1/2." },
+  { id:"m_dat_12", domain:"math", topic:"datos_probabilidad", dif:3, stem:"El promedio de 5 notas es 8. Cuatro de ellas son 7, 9, 8 y 6.", q:"¿Cuál es la quinta nota?", opts:["8","9","10","12"], ans:2, exp:"La suma total es 5·8 = 40. Las cuatro dadas suman 30, así que la quinta es 40 − 30 = 10." },
+
+  /* -- Mate: notación algebraica -- */
+  { id:"m_not_8", domain:"math", topic:"algebra_notacion", dif:2, stem:"Considere la frase: 'el triple de un número, aumentado en 6'.", q:"¿Cuál expresión la representa?", opts:["3x + 6","3(x + 6)","x/3 + 6","6 − 3x"], ans:0, exp:"El triple del número es 3x; aumentado en 6 es 3x + 6." },
+
+  /* -- Mate: relaciones algebraicas -- */
+  { id:"m_alr_8", domain:"math", topic:"algebra_relaciones", dif:2, stem:"Se sabe que 5x − 2 = 18.", q:"¿Cuál es el valor de x?", opts:["3","4","5","20"], ans:1, exp:"5x = 18 + 2 = 20, entonces x = 4." },
+
+  /* -- Mate: unidades de medida -- */
+  { id:"m_uni_9", domain:"math", topic:"unidades_medida", dif:3, stem:"Un ciclista avanza a 20 km/h de forma constante.", q:"¿Cuánto tarda en recorrer 5 km?", opts:["15 min","20 min","25 min","10 min"], ans:0, exp:"Tiempo = distancia ÷ velocidad = 5 ÷ 20 = 1/4 de hora = 15 minutos." },
+
+  /* -- Mate: razón y proporción -- */
+  { id:"m_raz_10", domain:"math", topic:"razon_proporcion", dif:2, stem:"Con 2 litros de pintura se cubren 9 m².", q:"¿Cuántos litros se necesitan para cubrir 27 m²?", opts:["4 L","6 L","9 L","3 L"], ans:1, exp:"27 m² es 3 veces 9 m², así que se necesitan 3 × 2 = 6 litros." },
+  { id:"m_raz_11", domain:"math", topic:"razon_proporcion", dif:3, stem:"Cinco máquinas iguales hacen un trabajo en 6 horas.", q:"¿Cuánto tardan 3 máquinas en el mismo trabajo?", opts:["10 horas","3,6 horas","8 horas","18 horas"], ans:0, exp:"Proporción inversa: 5·6 = 30 máquina-horas. Con 3 máquinas: 30 ÷ 3 = 10 horas." }
 ];
 
 /* Sumamos las preguntas extra al banco principal y reconstruimos el índice */

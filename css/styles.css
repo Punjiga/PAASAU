@@ -790,3 +790,39 @@ input { font-family: inherit; }
 .lesson-svg svg { width: 100%; max-width: 360px; height: auto; display: block; margin: 0 auto; }
 .lesson-svg.sm { padding: 10px; margin-top: 10px; }
 .lesson-svg.sm svg { max-width: 300px; }
+
+/* ============================================================
+   PAASAU v3 — animaciones, tarjeta de bloqueo, espaciado
+   ============================================================ */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes popIn { from { opacity: 0; transform: scale(.65); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .view-inner { animation: fadeUp .30s ease both; }
+  .login-card { animation: fadeUp .4s ease both; }
+  .result-big { animation: popIn .5s cubic-bezier(.2,.8,.3,1.25) both; }
+  .reco-card, .lock-card { animation: fadeUp .35s ease both; }
+}
+
+/* Micro-interacciones (feedback al tocar) */
+.btn { transition: transform .08s ease, background .15s, border-color .15s, color .15s, box-shadow .15s; }
+.btn:active { transform: translateY(1px) scale(.99); }
+.opt:active:not(:disabled) { transform: scale(.992); }
+.save-btn:active, .chip:active { transform: scale(.95); }
+.nav-item, .nav-item .ic { transition: color .15s, background .15s, transform .15s; }
+.nav-item.active .ic { transform: translateY(-1px) scale(1.06); }
+.chk, .switch-knob { transition: transform .18s ease, background .18s; }
+
+/* Tarjeta "en desarrollo" / bloqueo */
+.lock-card { text-align: center; padding: 32px 24px; }
+.lock-card > .ic svg { width: 44px; height: 44px; color: var(--gold); }
+.lock-title { font-family: var(--font-display); font-size: 21px; font-weight: 700; margin: 12px 0 6px; }
+.lock-text { max-width: 440px; margin: 0 auto; line-height: 1.55; }
+.lock-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+
+/* Pantalla de acceso: más aire, botón menos pegado */
+.login-form { display: flex; flex-direction: column; }
+.login-form .field-label { margin-top: 6px; margin-bottom: 6px; }
+.login-form #login-btn { margin-top: 12px; }
+.login-divider { margin: 20px 0 8px; }
+.login-note { margin-top: 10px; line-height: 1.5; }

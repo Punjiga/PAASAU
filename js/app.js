@@ -171,9 +171,22 @@
   /* ============================================================
      BANCO DE PREGUNTAS / FILTROS
      ============================================================ */
-  // Acceso ABIERTO: todas las personas ven el banco completo.
-  // (El login solo activa la sincronización en la nube, no desbloquea contenido.)
-  function guestFilter(qs) { return qs; }
+  // Invitado: ve una MUESTRA (~20%) del banco, repartida por tema.
+  // Con sesión iniciada (login) ve todo. El simulacro completo queda para login.
+  var GUEST_IDS = (function () {
+    var set = {}, byTopic = {};
+    QUESTIONS.forEach(function (q) { (byTopic[q.topic] = byTopic[q.topic] || []).push(q.id); });
+    Object.keys(byTopic).forEach(function (t) {
+      var ids = byTopic[t].slice().sort();
+      var keep = Math.max(1, Math.round(ids.length * (CFG.guestQuestionRatio || 0.2)));
+      for (var i = 0; i < keep; i++) set[ids[Math.floor(i * ids.length / keep)]] = true;
+    });
+    return set;
+  })();
+  function guestFilter(qs) {
+    if (!state.isGuest) return qs;
+    return qs.filter(function (q) { return GUEST_IDS[q.id]; });
+  }
   function poolForTopic(id) { return (Q_BY_TOPIC[id] || []).slice(); }
 
   /* ---- Mezcla de opciones (anti-sesgo + realismo) ----
@@ -301,10 +314,10 @@
 
   function devBanner() {
     return el("div", { class: "dev-banner", onclick: function () { go("ajustes"); } }, [
-      icon("sync"),
+      icon("lock"),
       el("div", {}, [
-        el("strong", { text: "Modo local. " }),
-        el("span", { text: "Tenés acceso a todo; tu progreso se guarda en este dispositivo. Tocá acá para iniciar sesión y sincronizarlo en la nube." })
+        el("strong", { text: "Muestra (20%) · en desarrollo. " }),
+        el("span", { text: "Estás viendo una parte del contenido. Iniciá sesión para acceder a todo PAASAU." })
       ])
     ]);
   }
@@ -565,7 +578,7 @@
 
   function practiceTopic(topic, count) {
     Sound.click();
-    var qs = poolForTopic(topic.id);
+    var qs = guestFilter(poolForTopic(topic.id));
     if (!qs.length) { alert("Este tema todavía no tiene preguntas."); return; }
     practiceQuiz(shuffle(qs).slice(0, count || 10), { title: "Práctica", subtitle: topic.name, focusTopic: topic });
   }
@@ -637,9 +650,9 @@
     card.appendChild(topicWrap);
 
     // Cuántas preguntas hay disponibles para la selección actual
-    var availPool = libreSel.topic
+    var availPool = guestFilter(libreSel.topic
       ? poolForTopic(libreSel.topic)
-      : QUESTIONS.filter(function (q) { return q.domain === libreSel.domain; });
+      : QUESTIONS.filter(function (q) { return q.domain === libreSel.domain; }));
     var availN = availPool.length;
 
     // Cantidad
@@ -786,10 +799,24 @@
   /* ============================================================
      VISTA · SIMULACROS
      ============================================================ */
+  function lockCard(msg) {
+    var card = el("div", { class: "card lock-card" });
+    card.appendChild(icon("lock"));
+    card.appendChild(el("h3", { class: "lock-title", text: "Contenido en desarrollo" }));
+    card.appendChild(el("p", { class: "muted lock-text", text: (msg || "") + " PAASAU está en desarrollo: iniciá sesión para acceder a todo, o esperá a que esté abierto al público." }));
+    var row = el("div", { class: "lock-actions" });
+    row.appendChild(el("button", { class: "btn btn-cta", onclick: showLogin }, [icon("sync"), el("span", { text: "Iniciar sesión" })]));
+    row.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go("inicio"); } }, "Volver al inicio"));
+    card.appendChild(row);
+    return card;
+  }
+
   var SIM_SLOTS = 7;
   function renderSimulacros() {
     var frag = el("div", {});
     frag.appendChild(pageHead("Simulacros", "Examen completo de " + CFG.examTotalItems + " preguntas con " + (CFG.examMinutes) + " minutos, como el día real (formato PAA 2026)."));
+
+    if (state.isGuest) { frag.appendChild(lockCard("Los simulacros completos están disponibles al iniciar sesión.")); return frag; }
 
     var grid = el("div", { class: "sim-grid-cards" });
     for (var i = 0; i < SIM_SLOTS; i++) {
