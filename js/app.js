@@ -1,0 +1,1562 @@
+/* ============================================================
+   PAASAU — Lógica principal de la aplicación
+   Auth · navegación · vistas · motor de quizzes · sonidos · plan
+   ============================================================ */
+(function () {
+  "use strict";
+
+  var CFG = window.PAA_CONFIG;
+  var TOPICS = window.PAA_TOPICS;
+  var TOPIC_BY_ID = window.PAA_TOPIC_BY_ID;
+  var DOMAINS = window.PAA_DOMAINS;
+  var QUESTIONS = window.PAA_QUESTIONS;
+  var Q_BY_TOPIC = window.PAA_QUESTIONS_BY_TOPIC;
+
+  var state = Store.get();
+  var current = "inicio";
+  var liveTicker = null;
+  var pushTimer = null;
+
+  /* ============================================================
+     UTILIDADES
+     ============================================================ */
+  function el(tag, attrs, children) {
+    var n = document.createElement(tag);
+    attrs = attrs || {};
+    for (var k in attrs) {
+      if (!Object.prototype.hasOwnProperty.call(attrs, k)) continue;
+      var v = attrs[k];
+      if (k === "class") n.className = v;
+      else if (k === "html") n.innerHTML = v;
+      else if (k === "text") n.textContent = v;
+      else if (k.indexOf("on") === 0 && typeof v === "function") {
+        n.addEventListener(k.slice(2).toLowerCase(), v);
+      } else if (v === true) n.setAttribute(k, "");
+      else if (v !== false && v != null) n.setAttribute(k, v);
+    }
+    if (children == null) children = [];
+    if (!Array.isArray(children)) children = [children];
+    children.forEach(function (c) {
+      if (c == null || c === false) return;
+      n.appendChild(typeof c === "string" || typeof c === "number"
+        ? document.createTextNode(String(c)) : c);
+    });
+    return n;
+  }
+
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function clamp(x, lo, hi) { return Math.max(lo, Math.min(hi, x)); }
+
+  function fmtClock(totalSec) {
+    totalSec = Math.max(0, Math.floor(totalSec));
+    var h = Math.floor(totalSec / 3600);
+    var m = Math.floor((totalSec % 3600) / 60);
+    var s = totalSec % 60;
+    var mm = String(m).padStart(2, "0");
+    var ss = String(s).padStart(2, "0");
+    return h > 0 ? h + ":" + mm + ":" + ss : mm + ":" + ss;
+  }
+
+  function fmtStudyTime(totalSec) {
+    var m = Math.floor(totalSec / 60);
+    if (m < 60) return m + " min";
+    var h = Math.floor(m / 60);
+    var rem = m % 60;
+    return h + " h " + (rem ? rem + " min" : "");
+  }
+
+  /* Iconos (SVG en línea, estilo lineal) */
+  function icon(name) {
+    var p = {
+      inicio: '<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>',
+      diaria: '<path d="M12 3v18"/><path d="M5 8l7-5 7 5"/><circle cx="12" cy="14" r="4"/>',
+      libre: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>',
+      temas: '<path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h10"/>',
+      simulacros: '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+      progreso: '<path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16l3-4 3 2 4-6"/>',
+      ajustes: '<circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.5-2.4 1a7 7 0 0 0-1.7-1L14.5 2h-5l-.3 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.5L2.6 11a7 7 0 0 0 0 2l-2 1.5 2 3.5 2.4-1a7 7 0 0 0 1.7 1L9.5 22h5l.3-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.5-2-1.5a7 7 0 0 0 .1-1z"/>',
+      flame: '<path d="M12 2c1 3-2 4-2 7a2 2 0 0 0 4 0c0-1 0-1 0-1 2 2 3 4 3 6a5 5 0 0 1-10 0c0-3 3-5 5-12z"/>',
+      check: '<path d="M5 12l5 5 9-11"/>',
+      lock: '<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+      play: '<path d="M7 5l11 7-11 7z"/>',
+      sync: '<path d="M4 9a8 8 0 0 1 14-3l2 2"/><path d="M20 15a8 8 0 0 1-14 3l-2-2"/><path d="M20 4v4h-4"/><path d="M4 20v-4h4"/>',
+      logout: '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>',
+      arrow: '<path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>',
+      back: '<path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/>',
+      clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+      target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>'
+    };
+    var svg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" ' +
+      'stroke-linecap="round" stroke-linejoin="round">' + (p[name] || "") + "</svg>";
+    var span = document.createElement("span");
+    span.className = "ic";
+    span.innerHTML = svg;
+    return span;
+  }
+
+  /* ============================================================
+     SONIDO (Web Audio API)
+     ============================================================ */
+  var Sound = (function () {
+    var ctx = null;
+    function ensure() {
+      if (!ctx) {
+        try { ctx = new (window.AudioContext || window.webkitAudioContext)(); }
+        catch (e) { ctx = null; }
+      }
+      if (ctx && ctx.state === "suspended") ctx.resume();
+      return ctx;
+    }
+    function on() { return Store.get().settings.sound; }
+    function beep(freq, dur, type, gain, when) {
+      var c = ensure(); if (!c) return;
+      when = when || 0;
+      var o = c.createOscillator();
+      var g = c.createGain();
+      o.type = type || "sine";
+      o.frequency.value = freq;
+      var t0 = c.currentTime + when;
+      g.gain.setValueAtTime(0.0001, t0);
+      g.gain.exponentialRampToValueAtTime(gain || 0.12, t0 + 0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+      o.connect(g); g.connect(c.destination);
+      o.start(t0); o.stop(t0 + dur + 0.02);
+    }
+    return {
+      unlock: function () { ensure(); },
+      click: function () { if (on()) beep(420, 0.05, "triangle", 0.05); },
+      tick: function () { if (on()) beep(700, 0.04, "square", 0.04); },
+      correct: function () { if (!on()) return; beep(660, 0.12, "sine", 0.1, 0); beep(880, 0.16, "sine", 0.1, 0.1); },
+      wrong: function () { if (!on()) return; beep(200, 0.18, "sawtooth", 0.09, 0); beep(150, 0.22, "sawtooth", 0.08, 0.08); },
+      celebrate: function () {
+        if (!on()) return;
+        [523, 659, 784, 1046].forEach(function (f, i) { beep(f, 0.18, "triangle", 0.09, i * 0.09); });
+      }
+    };
+  })();
+
+  /* ============================================================
+     CONFETI (DOM ligero)
+     ============================================================ */
+  function confetti(n) {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    n = n || 80;
+    var colors = ["#2EE6A6", "#FF9F43", "#C792EA", "#4DA3FF", "#FFD166", "#FF6B6B"];
+    var layer = el("div", { class: "confetti-layer" });
+    for (var i = 0; i < n; i++) {
+      var piece = el("i");
+      var c = colors[Math.floor(Math.random() * colors.length)];
+      piece.style.left = Math.random() * 100 + "%";
+      piece.style.background = c;
+      piece.style.animationDelay = (Math.random() * 0.3) + "s";
+      piece.style.animationDuration = (1.1 + Math.random() * 0.9) + "s";
+      piece.style.transform = "rotate(" + (Math.random() * 360) + "deg)";
+      layer.appendChild(piece);
+    }
+    document.body.appendChild(layer);
+    setTimeout(function () { layer.remove(); }, 2600);
+  }
+
+  /* ============================================================
+     BANCO DE PREGUNTAS / FILTROS
+     ============================================================ */
+  // Acceso ABIERTO: todas las personas ven el banco completo.
+  // (El login solo activa la sincronización en la nube, no desbloquea contenido.)
+  function guestFilter(qs) { return qs; }
+  function poolForTopic(id) { return (Q_BY_TOPIC[id] || []).slice(); }
+
+  /* ---- Mezcla de opciones (anti-sesgo + realismo) ----
+     Devuelve una copia de la pregunta con las opciones en orden aleatorio
+     y el índice de la respuesta recalculado. El topic/dominio no cambian. */
+  function shuffleOptions(q) {
+    var order = shuffle(q.opts.map(function (_, i) { return i; }));
+    var newOpts = order.map(function (i) { return q.opts[i]; });
+    var newAns = order.indexOf(q.ans);
+    var copy = {};
+    for (var k in q) { if (Object.prototype.hasOwnProperty.call(q, k)) copy[k] = q[k]; }
+    copy.opts = newOpts;
+    copy.ans = newAns;
+    return copy;
+  }
+  // Prepara una lista de preguntas para un quiz/simulacro: mezcla sus opciones.
+  function prepare(list) { return list.map(shuffleOptions); }
+
+  /* ============================================================
+     PLAN DE ESTUDIO
+     ============================================================ */
+  function priorityList() {
+    return TOPICS.map(function (t) {
+      var pt = state.perTopic[t.id] || { answered: 0, correct: 0, studied: false };
+      var mastery = pt.answered ? pt.correct / pt.answered : 0;
+      var score = 0;
+      if (!pt.studied && pt.answered < 5) score -= 100; // sin estudiar = prioridad alta
+      score += mastery * 60;                            // más débil primero
+      score += Math.min(pt.answered, 20);               // menos practicado primero
+      return { topic: t, pt: pt, mastery: mastery, score: score };
+    }).sort(function (a, b) { return a.score - b.score; });
+  }
+
+  function planPreview(days) {
+    var pr = priorityList();
+    var out = [];
+    var today = new Date();
+    for (var i = 0; i < days; i++) {
+      var d = new Date(today.getTime() + i * 86400000);
+      var item = pr[i % pr.length];
+      out.push({
+        dateKey: Store.todayKey(d),
+        date: d,
+        topic: item.topic,
+        isToday: i === 0
+      });
+    }
+    return out;
+  }
+
+  function buildDailyQuiz() {
+    var pr = priorityList();
+    var focus = pr[0].topic;
+    var qs = guestFilter(poolForTopic(focus.id));
+    var i = 1;
+    while (qs.length < CFG.dailyQuizSize && i < pr.length) {
+      var extra = guestFilter(poolForTopic(pr[i].topic.id)).filter(function (q) {
+        return qs.indexOf(q) === -1;
+      });
+      qs = qs.concat(extra);
+      i++;
+    }
+    qs = shuffle(qs).slice(0, CFG.dailyQuizSize);
+    return { focus: focus, questions: qs };
+  }
+
+  /* ============================================================
+     NAVEGACIÓN
+     ============================================================ */
+  var ROUTES = [
+    { id: "inicio", label: "Inicio", render: renderInicio },
+    { id: "diaria", label: "Práctica diaria", render: renderDiaria },
+    { id: "libre", label: "Práctica libre", render: renderLibre },
+    { id: "temas", label: "Temas", render: renderTemas },
+    { id: "simulacros", label: "Simulacros", render: renderSimulacros },
+    { id: "progreso", label: "Progreso", render: renderProgreso },
+    { id: "ajustes", label: "Ajustes", render: renderAjustes }
+  ];
+
+  function buildNav() {
+    ["nav-desktop", "nav-mobile"].forEach(function (navId) {
+      var nav = document.getElementById(navId);
+      if (!nav) return;
+      nav.innerHTML = "";
+      ROUTES.forEach(function (r) {
+        var btn = el("button", {
+          class: "nav-item" + (r.id === current ? " active" : ""),
+          "data-route": r.id,
+          onclick: function () { go(r.id); }
+        }, [icon(r.id), el("span", { class: "nav-label", text: r.label })]);
+        nav.appendChild(btn);
+      });
+    });
+  }
+
+  function refreshNav() {
+    var items = document.querySelectorAll(".nav-item");
+    items.forEach(function (it) {
+      it.classList.toggle("active", it.getAttribute("data-route") === current);
+    });
+  }
+
+  function mount(node, withBanner) {
+    var view = document.getElementById("view");
+    view.innerHTML = "";
+    if (withBanner && state.isGuest) view.appendChild(devBanner());
+    var inner = el("div", { class: "view-inner" }, [node]);
+    view.appendChild(inner);
+    window.scrollTo(0, 0);
+    view.scrollTop = 0;
+  }
+
+  function go(routeId) {
+    current = routeId;
+    Sound.click();
+    var route = ROUTES.find(function (r) { return r.id === routeId; });
+    mount(route.render(), true);
+    refreshNav();
+  }
+
+  function devBanner() {
+    return el("div", { class: "dev-banner", onclick: function () { go("ajustes"); } }, [
+      icon("sync"),
+      el("div", {}, [
+        el("strong", { text: "Modo local. " }),
+        el("span", { text: "Tenés acceso a todo; tu progreso se guarda en este dispositivo. Tocá acá para iniciar sesión y sincronizarlo en la nube." })
+      ])
+    ]);
+  }
+
+  /* ============================================================
+     BARRA SUPERIOR (cuenta regresiva + racha)
+     ============================================================ */
+  function refreshTopbar() {
+    var days = Store.daysUntilExam();
+    var cd = document.getElementById("tb-countdown");
+    if (cd) {
+      if (days == null) {
+        cd.innerHTML = "";
+        cd.appendChild(icon("clock"));
+        cd.appendChild(el("span", { text: "Definí la fecha del examen" }));
+      } else {
+        var label = days > 1 ? "días" : (days === 1 ? "día" : (days === 0 ? "¡es hoy!" : "ya pasó"));
+        cd.innerHTML = "";
+        cd.appendChild(icon("clock"));
+        if (days >= 0) {
+          cd.appendChild(el("span", { class: "chip-num", text: String(days) }));
+          cd.appendChild(el("span", { text: "Quedan " }));
+          cd.lastChild.textContent = days === 0 ? "" : "Quedan ";
+          cd.appendChild(el("span", { text: label }));
+        } else {
+          cd.appendChild(el("span", { text: "El examen ya pasó" }));
+        }
+      }
+    }
+    var st = document.getElementById("tb-streak");
+    if (st) {
+      var s = Store.currentStreak();
+      st.innerHTML = "";
+      var flame = icon("flame");
+      flame.classList.add("flame");
+      if (s > 0) flame.classList.add("flame-on");
+      st.appendChild(flame);
+      st.appendChild(el("span", { class: "chip-num", text: String(s) }));
+      st.appendChild(el("span", { text: s === 1 ? "día" : "días" }));
+    }
+  }
+
+  /* ============================================================
+     VISTA · INICIO (panel)
+     ============================================================ */
+  function ring(percent, color, label, sublabel) {
+    var R = 34, C = 2 * Math.PI * R;
+    var off = C * (1 - clamp(percent, 0, 100) / 100);
+    var wrap = el("div", { class: "ring" });
+    wrap.innerHTML =
+      '<svg viewBox="0 0 80 80">' +
+      '<circle cx="40" cy="40" r="' + R + '" class="ring-bg"/>' +
+      '<circle cx="40" cy="40" r="' + R + '" class="ring-fg" style="stroke:' + color +
+      ';stroke-dasharray:' + C.toFixed(1) + ';stroke-dashoffset:' + off.toFixed(1) + '"/>' +
+      '<text x="40" y="45" text-anchor="middle" class="ring-num">' + Math.round(percent) + '%</text>' +
+      '</svg>';
+    wrap.appendChild(el("div", { class: "ring-label", text: label }));
+    if (sublabel) wrap.appendChild(el("div", { class: "ring-sub muted", text: sublabel }));
+    return wrap;
+  }
+
+  function renderInicio() {
+    var frag = el("div", { class: "dash" });
+
+    // Héroe: cuenta regresiva
+    var days = Store.daysUntilExam();
+    var hero = el("div", { class: "card count-hero" });
+    if (days == null) {
+      hero.appendChild(el("div", { class: "count-label", text: state.examName }));
+      hero.appendChild(el("div", { class: "count-num", text: "—" }));
+      hero.appendChild(el("div", { class: "count-sub muted", text: "Definí la fecha de tu examen en Ajustes para activar la cuenta regresiva." }));
+      hero.appendChild(el("button", { class: "btn btn-primary", style: "margin-top:14px", onclick: function () { go("ajustes"); } }, "Definir fecha"));
+    } else {
+      hero.appendChild(el("div", { class: "count-label", text: state.examName }));
+      var big = el("div", { class: "count-num" });
+      if (days < 0) big.textContent = "—";
+      else big.textContent = String(days);
+      hero.appendChild(big);
+      var sub = days < 0 ? "El examen ya pasó. Actualizá la fecha en Ajustes."
+        : (days === 0 ? "¡Es hoy! Respirá y confiá en lo que practicaste."
+          : (days === 1 ? "día para tu examen" : "días para tu examen"));
+      hero.appendChild(el("div", { class: "count-sub", text: sub }));
+    }
+    frag.appendChild(hero);
+
+    // CTA del día + racha
+    var grid2 = el("div", { class: "dash-2" });
+
+    var daily = buildDailyQuiz();
+    var ctaCard = el("div", { class: "card cta" });
+    ctaCard.appendChild(el("div", { class: "cta-eyebrow muted", text: "Tu enfoque de hoy" }));
+    ctaCard.appendChild(el("div", { class: "cta-title", text: daily.focus.name }));
+    var dom = DOMAINS[daily.focus.domain];
+    ctaCard.appendChild(el("span", { class: "pill pill-" + daily.focus.domain, text: dom.short }));
+    ctaCard.appendChild(el("p", { class: "cta-desc muted", text: Store.studiedToday()
+      ? "Ya estudiaste hoy, ¡seguí así! Podés reforzar este tema cuando querás."
+      : "Una sesión corta hoy mantiene tu racha viva. Empezá con una lección y unas preguntas." }));
+    var ctaBtn = el("button", { class: "btn btn-cta", onclick: startDaily }, [icon("play"), el("span", { text: "Empezar práctica del día" })]);
+    ctaCard.appendChild(ctaBtn);
+    grid2.appendChild(ctaCard);
+
+    // Racha
+    var streak = Store.currentStreak();
+    var streakCard = el("div", { class: "card streak-card" });
+    streakCard.appendChild(el("div", { class: "card-sub muted", text: "Racha actual" }));
+    var flameWrap = el("div", { class: "streak-flame-wrap" });
+    var fl = icon("flame"); fl.classList.add("flame-big"); if (streak > 0) fl.classList.add("flame-on");
+    flameWrap.appendChild(fl);
+    flameWrap.appendChild(el("div", { class: "streak-big", text: String(streak) }));
+    streakCard.appendChild(flameWrap);
+    streakCard.appendChild(el("div", { class: "muted", text: streak === 1 ? "día seguido" : "días seguidos" }));
+    streakCard.appendChild(el("div", { class: "streak-record muted", text: "Récord: " + state.streak.longest + (state.streak.longest === 1 ? " día" : " días") }));
+    grid2.appendChild(streakCard);
+
+    frag.appendChild(grid2);
+
+    // Anillos de progreso
+    var rings = el("div", { class: "card rings-card" });
+    rings.appendChild(el("div", { class: "card-title", text: "Tu progreso" }));
+    var ringRow = el("div", { class: "rings" });
+    var studied = Store.studiedTopicsCount();
+    ringRow.appendChild(ring(Store.accuracy(), "var(--brand)", "Aciertos", state.questionsAnswered + " resueltas"));
+    ringRow.appendChild(ring(100 * studied / TOPICS.length, "var(--verbal)", "Temas vistos", studied + " de " + TOPICS.length));
+    var simBest = state.simulacros.length ? Math.max.apply(null, state.simulacros.map(function (s) { return Math.round(100 * s.score / s.total); })) : 0;
+    ringRow.appendChild(ring(simBest, "var(--math)", "Mejor simulacro", state.simulacros.length + " hechos"));
+    rings.appendChild(ringRow);
+
+    var stats = el("div", { class: "stat-row" });
+    stats.appendChild(stat(fmtStudyTime(state.totalSeconds), "tiempo total", "live-total"));
+    stats.appendChild(stat(String(state.questionsAnswered), "preguntas"));
+    stats.appendChild(stat(String(state.correctAnswers), "correctas"));
+    rings.appendChild(stats);
+    frag.appendChild(rings);
+
+    // Puntos débiles (recomendación persistente de estudio)
+    var weakCard = weakTopicsCard();
+    if (weakCard) frag.appendChild(weakCard);
+
+    // Vista previa del plan
+    if (days != null && days > 0) {
+      var planCard = el("div", { class: "card" });
+      planCard.appendChild(el("div", { class: "card-title", text: "Plan sugerido" }));
+      planCard.appendChild(el("div", { class: "card-sub muted", text: "Temas priorizados según lo que más necesitás reforzar." }));
+      var list = el("div", { class: "plan-list" });
+      planPreview(Math.min(7, days + 1)).forEach(function (d, idx) {
+        var dayName = idx === 0 ? "Hoy" : d.date.toLocaleDateString("es-CR", { weekday: "short", day: "numeric" });
+        var row = el("div", { class: "plan-day" + (idx === 0 ? " plan-today" : "") });
+        var dot = el("span", { class: "plan-dot" }); dot.style.background = "var(--" + d.topic.domain + ")";
+        row.appendChild(dot);
+        row.appendChild(el("span", { class: "plan-date", text: dayName }));
+        row.appendChild(el("span", { class: "plan-topic", text: d.topic.name }));
+        row.appendChild(el("span", { class: "pill pill-" + d.topic.domain, text: DOMAINS[d.topic.domain].short }));
+        list.appendChild(row);
+      });
+      planCard.appendChild(list);
+      frag.appendChild(planCard);
+    }
+
+    startLiveTicker();
+    return frag;
+  }
+
+  function stat(num, label, id) {
+    var s = el("div", { class: "stat" });
+    s.appendChild(el("div", { class: "stat-num", id: id || null, text: num }));
+    s.appendChild(el("div", { class: "stat-label muted", text: label }));
+    return s;
+  }
+
+  function startLiveTicker() {
+    if (liveTicker) clearInterval(liveTicker);
+    liveTicker = setInterval(function () {
+      var node = document.getElementById("live-total");
+      if (!node) return;
+      node.textContent = fmtStudyTime(Store.get().totalSeconds);
+    }, 1000);
+  }
+
+  /* ============================================================
+     VISTA · PRÁCTICA DIARIA
+     ============================================================ */
+  function renderDiaria() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Práctica diaria", "Una lección corta y unas preguntas del tema que hoy más te conviene."));
+
+    var daily = buildDailyQuiz();
+    var t = daily.focus;
+    var card = el("div", { class: "card lesson" });
+    card.appendChild(el("span", { class: "pill pill-" + t.domain, text: DOMAINS[t.domain].short }));
+    card.appendChild(el("h2", { class: "lesson-title", text: t.name }));
+    card.appendChild(el("p", { class: "lesson-body", text: t.teoria }));
+    card.appendChild(el("button", { class: "btn btn-cta", onclick: startDaily }, [icon("play"), el("span", { text: "Practicar este tema (" + daily.questions.length + " preguntas)" })]));
+    frag.appendChild(card);
+
+    // Otros temas débiles
+    var weak = priorityList().slice(0, 4);
+    var wc = el("div", { class: "card" });
+    wc.appendChild(el("div", { class: "card-title", text: "También conviene repasar" }));
+    var wl = el("div", { class: "weak-list" });
+    weak.forEach(function (w) {
+      var row = el("button", { class: "weak-row", onclick: function () { practiceTopic(w.topic); } });
+      var dot = el("span", { class: "plan-dot" }); dot.style.background = "var(--" + w.topic.domain + ")";
+      row.appendChild(dot);
+      row.appendChild(el("span", { class: "weak-name", text: w.topic.name }));
+      row.appendChild(el("span", { class: "weak-mastery muted", text: w.pt.answered ? Store.topicMastery(w.topic.id) + "%" : "nuevo" }));
+      row.appendChild(icon("arrow"));
+      wl.appendChild(row);
+    });
+    wc.appendChild(wl);
+    frag.appendChild(wc);
+
+    return frag;
+  }
+
+  function startDaily() {
+    Sound.click();
+    var daily = buildDailyQuiz();
+    if (!daily.questions.length) { alert("No hay preguntas disponibles."); return; }
+    practiceQuiz(daily.questions, {
+      title: "Práctica del día",
+      subtitle: daily.focus.name,
+      focusTopic: daily.focus
+    });
+  }
+
+  function practiceTopic(topic, count) {
+    Sound.click();
+    var qs = poolForTopic(topic.id);
+    if (!qs.length) { alert("Este tema todavía no tiene preguntas."); return; }
+    practiceQuiz(shuffle(qs).slice(0, count || 10), { title: "Práctica", subtitle: topic.name, focusTopic: topic });
+  }
+
+  /* ============================================================
+     VISTA · PRÁCTICA LIBRE
+     ============================================================ */
+  var libreSel = { domain: "verbal", topic: null, count: 10, timed: false };
+  function renderLibre() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Práctica libre", "Elegí qué practicar y cuántas preguntas. Sin presión, a tu ritmo."));
+
+    var card = el("div", { class: "card picker" });
+
+    // Mezcla rápida
+    var quick = el("div", { class: "quick-mix" });
+    quick.appendChild(el("div", {}, [
+      el("div", { class: "card-title", text: "Mezcla rápida" }),
+      el("div", { class: "muted", text: "10 preguntas variadas de todo el temario." })
+    ]));
+    quick.appendChild(el("button", { class: "btn btn-primary", onclick: function () {
+      Sound.click();
+      var qs = shuffle(guestFilter(QUESTIONS.slice())).slice(0, 10);
+      practiceQuiz(qs, { title: "Mezcla rápida", subtitle: "Temario completo" });
+    } }, "Empezar"));
+    card.appendChild(quick);
+
+    card.appendChild(el("div", { class: "divider" }));
+
+    // Selector por dominio
+    card.appendChild(el("label", { class: "field-label", text: "Área" }));
+    var segDom = el("div", { class: "seg" });
+    ["verbal", "math"].forEach(function (d) {
+      var b = el("button", {
+        class: "seg-btn" + (libreSel.domain === d ? " active" : ""),
+        onclick: function () { libreSel.domain = d; libreSel.topic = null; Sound.click(); rerenderLibre(frag); }
+      }, DOMAINS[d].name);
+      segDom.appendChild(b);
+    });
+    card.appendChild(segDom);
+
+    // Selector de tema
+    card.appendChild(el("label", { class: "field-label", text: "Tema" }));
+    var topicWrap = el("div", { class: "topic-chips" });
+    TOPICS.filter(function (t) { return t.domain === libreSel.domain; }).forEach(function (t) {
+      var avail = guestFilter(poolForTopic(t.id)).length;
+      var b = el("button", {
+        class: "chip-btn" + (libreSel.topic === t.id ? " active" : "") + (avail === 0 ? " disabled" : ""),
+        onclick: function () { if (avail === 0) return; libreSel.topic = t.id; Sound.click(); rerenderLibre(frag); }
+      }, t.name);
+      topicWrap.appendChild(b);
+    });
+    card.appendChild(topicWrap);
+
+    // Cuántas preguntas hay disponibles para la selección actual
+    var availPool = libreSel.topic
+      ? poolForTopic(libreSel.topic)
+      : QUESTIONS.filter(function (q) { return q.domain === libreSel.domain; });
+    var availN = availPool.length;
+
+    // Cantidad
+    card.appendChild(el("label", { class: "field-label", text: "Cantidad de preguntas" }));
+    var segCount = el("div", { class: "seg seg-wrap" });
+    CFG.practiceCounts.forEach(function (c) {
+      var b = el("button", {
+        class: "seg-btn" + (libreSel.count === c ? " active" : "") + (c > availN ? " disabled" : ""),
+        title: c > availN ? "Solo hay " + availN + " disponibles" : "",
+        onclick: function () { libreSel.count = c; Sound.click(); rerenderLibre(frag); }
+      }, String(c));
+      segCount.appendChild(b);
+    });
+    card.appendChild(segCount);
+
+    // Cantidad personalizada
+    var customWrap = el("div", { class: "custom-count" });
+    var customInput = el("input", {
+      class: "input input-num", type: "number", min: "1", max: String(Math.min(CFG.practiceCountMax, availN)),
+      placeholder: "otra…", value: CFG.practiceCounts.indexOf(libreSel.count) === -1 ? String(libreSel.count) : ""
+    });
+    customInput.addEventListener("change", function () {
+      var v = parseInt(customInput.value, 10);
+      if (isNaN(v) || v < 1) return;
+      libreSel.count = clamp(v, 1, Math.min(CFG.practiceCountMax, availN));
+      Sound.click(); rerenderLibre(frag);
+    });
+    customWrap.appendChild(el("span", { class: "muted custom-label", text: "o escribí una cantidad:" }));
+    customWrap.appendChild(customInput);
+    customWrap.appendChild(el("span", { class: "muted custom-avail", text: "(hay " + availN + " disponibles)" }));
+    card.appendChild(customWrap);
+
+    // Tiempo (opcional, al ritmo del examen real)
+    var perItem = CFG.secondsPerItem;
+    var estMin = Math.max(1, Math.round(libreSel.count * perItem / 60));
+    card.appendChild(el("label", { class: "field-label", text: "Tiempo" }));
+    var timeRow = el("div", { class: "switch-row" });
+    var tsw = el("button", {
+      class: "switch" + (libreSel.timed ? " on" : ""),
+      onclick: function () { libreSel.timed = !libreSel.timed; Sound.click(); rerenderLibre(frag); }
+    }, el("span", { class: "switch-knob" }));
+    timeRow.appendChild(tsw);
+    timeRow.appendChild(el("span", { class: "switch-text", text: libreSel.timed
+      ? ("Con tiempo · " + estMin + " min (ritmo del examen)")
+      : "Sin límite de tiempo" }));
+    card.appendChild(timeRow);
+
+    // Empezar
+    var startBtn = el("button", {
+      class: "btn btn-cta", style: "margin-top:18px",
+      onclick: function () {
+        Sound.click();
+        var pool = availPool.slice();
+        if (!pool.length) { alert("No hay preguntas disponibles para esa selección."); return; }
+        var n = Math.min(libreSel.count, pool.length);
+        var qs = shuffle(pool).slice(0, n);
+        var label = libreSel.topic ? TOPIC_BY_ID[libreSel.topic].name : DOMAINS[libreSel.domain].name;
+        practiceQuiz(qs, {
+          title: "Práctica libre", subtitle: label,
+          focusTopic: libreSel.topic ? TOPIC_BY_ID[libreSel.topic] : null,
+          timeLimitSec: libreSel.timed ? n * perItem : 0
+        });
+      }
+    }, [icon("play"), el("span", { text: "Empezar práctica" + (libreSel.timed ? " (" + estMin + " min)" : "") })]);
+    card.appendChild(startBtn);
+
+    frag.appendChild(card);
+    return frag;
+  }
+  function rerenderLibre(oldFrag) { mount(renderLibre(), true); }
+
+  /* ============================================================
+     VISTA · TEMAS
+     ============================================================ */
+  function renderTemas() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Temas", "Todo el temario de la PAA. Marcá lo que ya dominás y practicá lo que falta."));
+
+    var cols = el("div", { class: "topic-cols" });
+    ["verbal", "math"].forEach(function (dom) {
+      var col = el("div", { class: "topic-col card" });
+      var head = el("div", { class: "domain-h" });
+      var dotc = el("span", { class: "domain-dot" }); dotc.style.background = "var(--" + dom + ")";
+      head.appendChild(dotc);
+      head.appendChild(el("span", { text: DOMAINS[dom].name }));
+      col.appendChild(head);
+
+      TOPICS.filter(function (t) { return t.domain === dom; }).forEach(function (t) {
+        var pt = state.perTopic[t.id] || { answered: 0, correct: 0, studied: false };
+        var mastery = pt.answered ? Store.topicMastery(t.id) : 0;
+        var row = el("div", { class: "topic-row" });
+
+        var top = el("div", { class: "topic-row-top" });
+        var chk = el("button", {
+          class: "chk" + (pt.studied ? " on" : ""),
+          title: "Marcar como estudiado",
+          onclick: function () {
+            Sound.click();
+            Store.setTopicStudied(t.id, !pt.studied);
+            schedulePush();
+            mount(renderTemas(), true);
+          }
+        });
+        if (pt.studied) chk.appendChild(icon("check"));
+        top.appendChild(chk);
+        top.appendChild(el("span", { class: "topic-name", text: t.name }));
+        top.appendChild(el("span", { class: "topic-pct muted", text: pt.answered ? mastery + "%" : "—" }));
+        row.appendChild(top);
+
+        var bar = el("div", { class: "bar" });
+        var fill = el("div", { class: "bar-fill" });
+        fill.style.width = (pt.answered ? mastery : 0) + "%";
+        fill.style.background = "var(--" + dom + ")";
+        bar.appendChild(fill);
+        row.appendChild(bar);
+
+        var actions = el("div", { class: "topic-actions" });
+        actions.appendChild(el("button", { class: "btn btn-ghost btn-sm", onclick: function () { openLesson(t); } }, "Lección"));
+        actions.appendChild(el("button", { class: "btn btn-soft btn-sm", onclick: function () { practiceTopic(t); } }, "Practicar"));
+        row.appendChild(actions);
+
+        col.appendChild(row);
+      });
+      cols.appendChild(col);
+    });
+    frag.appendChild(cols);
+    return frag;
+  }
+
+  function openLesson(t) {
+    Sound.click();
+    var node = el("div", {});
+    node.appendChild(backHead(t.name, function () { go("temas"); }));
+    var card = el("div", { class: "card lesson" });
+    card.appendChild(el("span", { class: "pill pill-" + t.domain, text: DOMAINS[t.domain].short }));
+    card.appendChild(el("h2", { class: "lesson-title", text: t.name }));
+    card.appendChild(el("p", { class: "lesson-body", text: t.teoria }));
+    card.appendChild(el("button", { class: "btn btn-cta", onclick: function () { practiceTopic(t); } }, [icon("play"), el("span", { text: "Practicar ahora" })]));
+    node.appendChild(card);
+    mount(node, false);
+  }
+
+  /* ============================================================
+     VISTA · SIMULACROS
+     ============================================================ */
+  var SIM_SLOTS = 7;
+  function renderSimulacros() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Simulacros", "Examen completo de " + CFG.examTotalItems + " preguntas con " + (CFG.examMinutes) + " minutos, como el día real (formato PAA 2026)."));
+
+    var grid = el("div", { class: "sim-grid-cards" });
+    for (var i = 0; i < SIM_SLOTS; i++) {
+      (function (n) {
+        var card = el("div", { class: "card sim-card" });
+        card.appendChild(el("div", { class: "sim-num", text: "Simulacro " + (n + 1) }));
+        var done = state.simulacros[n];
+        if (done) {
+          var pct = Math.round(100 * done.score / done.total);
+          card.appendChild(el("div", { class: "sim-score", text: done.score + "/" + done.total + "  ·  " + pct + "%" }));
+          card.appendChild(el("div", { class: "muted sim-when", text: new Date(done.date).toLocaleDateString("es-CR", { day: "numeric", month: "short" }) }));
+        } else {
+          card.appendChild(el("div", { class: "muted sim-when", text: "Sin hacer" }));
+        }
+        card.appendChild(el("button", { class: "btn btn-primary btn-sm", onclick: function () { confirmStartSim(n); } }, done ? "Repetir" : "Empezar"));
+        grid.appendChild(card);
+      })(i);
+    }
+    frag.appendChild(grid);
+
+    if (state.simulacros.length) {
+      var hist = el("div", { class: "card" });
+      hist.appendChild(el("div", { class: "card-title", text: "Tus últimos resultados" }));
+      var list = el("div", { class: "sim-hist" });
+      state.simulacros.slice(0, 8).forEach(function (s) {
+        var pct = Math.round(100 * s.score / s.total);
+        var row = el("div", { class: "sim-hist-row" });
+        row.appendChild(el("span", { class: "muted", text: new Date(s.date).toLocaleDateString("es-CR", { day: "numeric", month: "short" }) }));
+        var bar = el("div", { class: "bar bar-thin" });
+        var fill = el("div", { class: "bar-fill" }); fill.style.width = pct + "%";
+        fill.style.background = pct >= 70 ? "var(--brand)" : (pct >= 50 ? "var(--gold)" : "var(--danger)");
+        bar.appendChild(fill); row.appendChild(bar);
+        row.appendChild(el("span", { class: "sim-hist-pct", text: pct + "%" }));
+        list.appendChild(row);
+      });
+      hist.appendChild(list);
+      frag.appendChild(hist);
+    }
+    return frag;
+  }
+
+  function confirmStartSim(n) {
+    Sound.click();
+    var node = el("div", { class: "card confirm-card" });
+    node.appendChild(el("h2", { text: "Simulacro " + (n + 1) }));
+    node.appendChild(el("p", { class: "muted", text: "Vas a empezar un examen de " + CFG.examTotalItems + " preguntas con " + CFG.examMinutes + " minutos de tiempo. Tratá de hacerlo de corrido, como en el examen real. ¿List@?" }));
+    var row = el("div", { class: "confirm-actions" });
+    row.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go("simulacros"); } }, "Cancelar"));
+    row.appendChild(el("button", { class: "btn btn-cta", onclick: function () { startSim(n); } }, [icon("play"), el("span", { text: "Comenzar ahora" })]));
+    node.appendChild(row);
+    mount(node, false);
+  }
+
+  // Construye un simulacro con la mezcla del examen real: ~59% verbal, ~41% mate.
+  function buildSimQuestions(n) {
+    var nVerbal = Math.min(CFG.examVerbalItems || Math.round(n * 0.59), n);
+    var nMath = n - nVerbal;
+    var verbalPool = shuffle(QUESTIONS.filter(function (q) { return q.domain === "verbal"; }));
+    var mathPool = shuffle(QUESTIONS.filter(function (q) { return q.domain === "math"; }));
+    var repeated = false;
+    function take(pool, k) {
+      var out = [], i = 0;
+      while (out.length < k) {
+        if (i >= pool.length) { pool = shuffle(pool); i = 0; repeated = true; }
+        out.push(pool[i++]);
+      }
+      return out;
+    }
+    var picked = take(verbalPool, nVerbal).concat(take(mathPool, nMath));
+    return { questions: shuffle(picked), repeated: repeated };
+  }
+
+  /* ============================================================
+     MOTOR DE QUIZ · PRÁCTICA (feedback inmediato)
+     ============================================================ */
+  function practiceQuiz(rawQuestions, opts) {
+    opts = opts || {};
+    var questions = prepare(rawQuestions);   // opciones mezcladas (anti-sesgo)
+    var idx = 0, correct = 0, answered = false;
+    var missed = {};                          // topicId -> # de fallos
+    var timeLeft = opts.timeLimitSec || 0;
+    var quizTimer = null;
+
+    var root = el("div", { class: "quiz" });
+    var head = el("div", { class: "quiz-head" });
+    head.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: function () { stopTimer(); go(current === "diaria" ? "diaria" : current); } }, icon("back")));
+    head.appendChild(el("div", { class: "quiz-head-mid" }, [
+      el("div", { class: "quiz-title", text: opts.title || "Práctica" }),
+      opts.subtitle ? el("div", { class: "quiz-sub muted", text: opts.subtitle }) : null
+    ]));
+    var timerEl = null;
+    if (timeLeft > 0) {
+      timerEl = el("div", { class: "quiz-timer", id: "quiz-timer" }, [icon("clock"), el("span", { text: fmtClock(timeLeft) })]);
+      head.appendChild(timerEl);
+    }
+    root.appendChild(head);
+
+    var prog = el("div", { class: "progress" });
+    var progFill = el("div", { class: "progress-fill" });
+    prog.appendChild(progFill);
+    root.appendChild(prog);
+    var counter = el("div", { class: "quiz-counter muted" });
+    root.appendChild(counter);
+
+    var body = el("div", { class: "quiz-body" });
+    root.appendChild(body);
+
+    mount(root, false);
+    draw();
+    if (timeLeft > 0) {
+      quizTimer = setInterval(function () {
+        timeLeft--;
+        var span = timerEl.querySelector("span");
+        if (span) span.textContent = fmtClock(timeLeft);
+        if (timeLeft <= 30) timerEl.classList.add("danger");
+        if (timeLeft <= 0) { stopTimer(); finish(true); }
+      }, 1000);
+    }
+    function stopTimer() { if (quizTimer) { clearInterval(quizTimer); quizTimer = null; } }
+
+    function draw() {
+      answered = false;
+      var q = questions[idx];
+      progFill.style.width = (100 * idx / questions.length) + "%";
+      counter.textContent = "Pregunta " + (idx + 1) + " de " + questions.length;
+      body.innerHTML = "";
+
+      var topic = TOPIC_BY_ID[q.topic];
+      body.appendChild(el("span", { class: "pill pill-" + q.domain, text: topic ? topic.name : DOMAINS[q.domain].short }));
+      if (q.stem) body.appendChild(el("p", { class: "q-stem", text: q.stem }));
+      body.appendChild(el("p", { class: "q-text", text: q.q }));
+
+      var opts2 = el("div", { class: "opts" });
+      var letters = ["A", "B", "C", "D"];
+      q.opts.forEach(function (optText, i) {
+        var b = el("button", { class: "opt", onclick: function () { choose(i, b, opts2, q); } });
+        b.appendChild(el("span", { class: "opt-letter", text: letters[i] }));
+        b.appendChild(el("span", { class: "opt-text", text: optText }));
+        opts2.appendChild(b);
+      });
+      body.appendChild(opts2);
+
+      var expBox = el("div", { class: "q-exp", id: "q-exp", hidden: true });
+      body.appendChild(expBox);
+
+      var actions = el("div", { class: "quiz-actions", id: "q-actions" });
+      body.appendChild(actions);
+    }
+
+    function choose(i, btn, container, q) {
+      if (answered) return;
+      answered = true;
+      var isRight = i === q.ans;
+      if (isRight) { correct++; Sound.correct(); }
+      else { Sound.wrong(); missed[q.topic] = (missed[q.topic] || 0) + 1; }
+      Store.recordAnswer(q.topic, isRight);
+
+      var letters = ["A", "B", "C", "D"];
+      var allBtns = container.querySelectorAll(".opt");
+      allBtns.forEach(function (b, bi) {
+        b.disabled = true;
+        if (bi === q.ans) b.classList.add("correct");
+        if (bi === i && !isRight) b.classList.add("wrong");
+      });
+
+      var exp = document.getElementById("q-exp");
+      exp.hidden = false;
+      exp.innerHTML = "";
+      exp.appendChild(el("div", { class: "exp-tag " + (isRight ? "ok" : "no"),
+        text: isRight ? "¡Correcto!" : "Respuesta correcta: " + letters[q.ans] + ") " + q.opts[q.ans] }));
+      exp.appendChild(el("div", { class: "exp-text", text: q.exp }));
+
+      // Al fallar, mostramos un repaso corto del tema (aprender en el momento)
+      if (!isRight) {
+        var topic = TOPIC_BY_ID[q.topic];
+        if (topic && topic.teoria) {
+          var lesson = el("div", { class: "exp-lesson" });
+          lesson.appendChild(el("div", { class: "exp-lesson-h", text: "Repaso rápido · " + topic.name }));
+          lesson.appendChild(el("div", { class: "exp-lesson-b", text: topic.teoria }));
+          exp.appendChild(lesson);
+        }
+      }
+
+      var actions = document.getElementById("q-actions");
+      actions.innerHTML = "";
+      var last = idx === questions.length - 1;
+      actions.appendChild(el("button", { class: "btn btn-cta", onclick: next }, last ? "Ver resultados" : "Siguiente"));
+      refreshTopbar();
+    }
+
+    function next() {
+      Sound.click();
+      if (idx < questions.length - 1) { idx++; draw(); }
+      else { stopTimer(); finish(false); }
+    }
+
+    function finish(byTime) {
+      stopTimer();
+      progFill.style.width = "100%";
+      var pct = Math.round(100 * correct / questions.length);
+      schedulePush();
+      var res = el("div", { class: "result" });
+      res.appendChild(el("div", { class: "result-eyebrow muted", text: byTime ? "Se acabó el tiempo · Resultado" : "Resultado" }));
+      res.appendChild(el("div", { class: "result-big", text: correct + " / " + questions.length }));
+      res.appendChild(el("div", { class: "result-pct", text: pct + "% de aciertos" }));
+
+      var msg = pct >= 80 ? "¡Excelente! Dominás bien este contenido."
+        : pct >= 60 ? "Buen trabajo. Un poco más de práctica y lo tenés."
+          : "Vas aprendiendo. Repasá las lecciones recomendadas y volvé a intentarlo: se mejora rápido.";
+      res.appendChild(el("p", { class: "result-msg muted", text: msg }));
+
+      var acts = el("div", { class: "result-actions" });
+      acts.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go(current); } }, "Volver"));
+      if (opts.focusTopic) acts.appendChild(el("button", { class: "btn btn-cta", onclick: function () { practiceTopic(opts.focusTopic, questions.length); } }, "Practicar de nuevo"));
+      res.appendChild(acts);
+
+      body.innerHTML = "";
+      counter.textContent = "Completado";
+      body.appendChild(res);
+
+      // Recomendación: qué repasar según lo que más se falló
+      var reco = recommendCard(missed);
+      if (reco) body.appendChild(reco);
+
+      if (pct >= 60) { Sound.celebrate(); confetti(pct >= 80 ? 110 : 70); }
+      refreshTopbar();
+    }
+  }
+
+  /* Tarjeta de recomendación: temas a repasar según los fallos (objeto topicId->#). */
+  function recommendCard(missed) {
+    var entries = Object.keys(missed).map(function (id) { return { id: id, n: missed[id] }; })
+      .filter(function (e) { return e.n > 0 && TOPIC_BY_ID[e.id]; })
+      .sort(function (a, b) { return b.n - a.n; });
+    if (!entries.length) return null;
+    var top = entries.slice(0, 3);
+    var card = el("div", { class: "card reco-card" });
+    card.appendChild(el("div", { class: "reco-h" }, [icon("target"), el("span", { text: "Te conviene repasar" })]));
+    card.appendChild(el("div", { class: "card-sub muted", text: "Según lo que más se te complicó en esta práctica:" }));
+    var list = el("div", { class: "reco-list" });
+    top.forEach(function (e) {
+      var t = TOPIC_BY_ID[e.id];
+      var row = el("div", { class: "reco-row" });
+      var dot = el("span", { class: "plan-dot" }); dot.style.background = "var(--" + t.domain + ")";
+      row.appendChild(dot);
+      row.appendChild(el("div", { class: "reco-info" }, [
+        el("span", { class: "reco-name", text: t.name }),
+        el("span", { class: "reco-miss muted", text: e.n === 1 ? "1 fallo" : e.n + " fallos" })
+      ]));
+      row.appendChild(el("button", { class: "btn btn-ghost btn-sm", onclick: function () { openLesson(t); } }, "Lección"));
+      row.appendChild(el("button", { class: "btn btn-soft btn-sm", onclick: function () { practiceTopic(t); } }, "Practicar"));
+      list.appendChild(row);
+    });
+    card.appendChild(list);
+    return card;
+  }
+
+  /* Puntos débiles persistentes: temas con varios intentos y bajo dominio. */
+  function weakTopics(minAnswered, maxMastery) {
+    return TOPICS.map(function (t) {
+      var pt = state.perTopic[t.id] || { answered: 0, correct: 0 };
+      return { topic: t, answered: pt.answered, mastery: pt.answered ? Store.topicMastery(t.id) : 100 };
+    }).filter(function (x) {
+      return x.answered >= (minAnswered || 3) && x.mastery < (maxMastery || 65);
+    }).sort(function (a, b) { return a.mastery - b.mastery; });
+  }
+
+  function weakTopicsCard() {
+    var weak = weakTopics(3, 65).slice(0, 3);
+    if (!weak.length) return null;
+    var card = el("div", { class: "card reco-card" });
+    card.appendChild(el("div", { class: "reco-h" }, [icon("target"), el("span", { text: "Tus puntos débiles" })]));
+    card.appendChild(el("div", { class: "card-sub muted", text: "Temas donde tu porcentaje de aciertos va más bajo. Un repaso acá sube rápido tu nota." }));
+    var list = el("div", { class: "reco-list" });
+    weak.forEach(function (w) {
+      var row = el("div", { class: "reco-row" });
+      var dot = el("span", { class: "plan-dot" }); dot.style.background = "var(--" + w.topic.domain + ")";
+      row.appendChild(dot);
+      row.appendChild(el("div", { class: "reco-info" }, [
+        el("span", { class: "reco-name", text: w.topic.name }),
+        el("span", { class: "reco-miss muted", text: w.mastery + "% de aciertos" })
+      ]));
+      row.appendChild(el("button", { class: "btn btn-ghost btn-sm", onclick: function () { openLesson(w.topic); } }, "Lección"));
+      row.appendChild(el("button", { class: "btn btn-soft btn-sm", onclick: function () { practiceTopic(w.topic); } }, "Practicar"));
+      list.appendChild(row);
+    });
+    card.appendChild(list);
+    return card;
+  }
+
+  /* ============================================================
+     MOTOR DE QUIZ · SIMULACRO (sin feedback, con tiempo)
+     ============================================================ */
+  function startSim(n) {
+    Sound.click();
+    var built = buildSimQuestions(CFG.examTotalItems);
+    var questions = prepare(built.questions);   // opciones mezcladas
+    var answers = new Array(questions.length).fill(null);
+    var idx = 0;
+    var remaining = CFG.examMinutes * 60;
+    var timer = null;
+    var finished = false;
+
+    var root = el("div", { class: "sim" });
+
+    var bar = el("div", { class: "sim-bar" });
+    bar.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: leave }, icon("back")));
+    var timerEl = el("div", { class: "sim-timer", id: "sim-timer", text: fmtClock(remaining) });
+    bar.appendChild(timerEl);
+    var progTxt = el("div", { class: "sim-progtxt", id: "sim-progtxt" });
+    bar.appendChild(progTxt);
+    root.appendChild(bar);
+
+    if (built.repeated) {
+      root.appendChild(el("div", { class: "sim-note muted", text: "Nota: el banco tiene menos de " + CFG.examTotalItems + " preguntas únicas, así que algunas se repiten para completar el examen." }));
+    }
+
+    var qbox = el("div", { class: "sim-qbox" });
+    root.appendChild(qbox);
+
+    var navRow = el("div", { class: "sim-nav" });
+    var prevBtn = el("button", { class: "btn btn-ghost", onclick: function () { Sound.click(); if (idx > 0) { idx--; drawQ(); } } }, [icon("back"), el("span", { text: "Anterior" })]);
+    var nextBtn = el("button", { class: "btn btn-soft", onclick: function () { Sound.click(); if (idx < questions.length - 1) { idx++; drawQ(); } } }, [el("span", { text: "Siguiente" }), icon("arrow")]);
+    navRow.appendChild(prevBtn);
+    navRow.appendChild(nextBtn);
+    root.appendChild(navRow);
+
+    // Mapa de preguntas
+    var mapWrap = el("div", { class: "card sim-map-card" });
+    mapWrap.appendChild(el("div", { class: "card-sub muted", text: "Mapa de preguntas (tocá para ir)" }));
+    var map = el("div", { class: "sim-map", id: "sim-map" });
+    questions.forEach(function (q, i) {
+      var c = el("button", { class: "sim-cell", "data-i": i, onclick: function () { Sound.click(); idx = i; drawQ(); } }, String(i + 1));
+      map.appendChild(c);
+    });
+    mapWrap.appendChild(map);
+    root.appendChild(mapWrap);
+
+    var finishBtn = el("button", { class: "btn btn-cta btn-block", style: "margin-top:16px", onclick: function () { confirmFinish(); } }, "Finalizar examen");
+    root.appendChild(finishBtn);
+
+    mount(root, false);
+    drawQ();
+    timer = setInterval(function () {
+      remaining--;
+      document.getElementById("sim-timer").textContent = fmtClock(remaining);
+      if (remaining <= 60) document.getElementById("sim-timer").classList.add("danger");
+      if (remaining <= 0) { doFinish(true); }
+    }, 1000);
+
+    function drawQ() {
+      var q = questions[idx];
+      document.getElementById("sim-progtxt").textContent = (idx + 1) + " / " + questions.length;
+      qbox.innerHTML = "";
+      qbox.appendChild(el("div", { class: "sim-qnum muted", text: "Pregunta " + (idx + 1) }));
+      if (q.stem) qbox.appendChild(el("p", { class: "q-stem", text: q.stem }));
+      qbox.appendChild(el("p", { class: "q-text", text: q.q }));
+      var opts = el("div", { class: "opts" });
+      var letters = ["A", "B", "C", "D"];
+      q.opts.forEach(function (txt, i) {
+        var b = el("button", {
+          class: "opt" + (answers[idx] === i ? " chosen" : ""),
+          onclick: function () { answers[idx] = i; markCell(); paintOpts(opts, i); }
+        });
+        b.appendChild(el("span", { class: "opt-letter", text: letters[i] }));
+        b.appendChild(el("span", { class: "opt-text", text: txt }));
+        opts.appendChild(b);
+      });
+      qbox.appendChild(opts);
+      prevBtn.disabled = idx === 0;
+      nextBtn.disabled = idx === questions.length - 1;
+      syncMap();
+    }
+    function paintOpts(container, sel) {
+      Sound.tick();
+      container.querySelectorAll(".opt").forEach(function (b, bi) {
+        b.classList.toggle("chosen", bi === sel);
+      });
+    }
+    function markCell() { syncMap(); }
+    function syncMap() {
+      var cells = document.querySelectorAll("#sim-map .sim-cell");
+      cells.forEach(function (c, i) {
+        c.classList.toggle("answered", answers[i] != null);
+        c.classList.toggle("current", i === idx);
+      });
+    }
+
+    function confirmFinish() {
+      Sound.click();
+      var blank = answers.filter(function (a) { return a == null; }).length;
+      var ok = confirm(blank ? ("Te quedan " + blank + " preguntas sin responder. ¿Querés finalizar igual?") : "¿Finalizar y ver tu resultado?");
+      if (ok) doFinish(false);
+    }
+
+    function leave() {
+      Sound.click();
+      if (confirm("Si salís, este simulacro no se guarda. ¿Salir?")) {
+        if (timer) clearInterval(timer);
+        go("simulacros");
+      }
+    }
+
+    function doFinish(byTime) {
+      if (finished) return;
+      finished = true;
+      if (timer) clearInterval(timer);
+      var score = 0;
+      var byDomain = { verbal: { correct: 0, total: 0 }, math: { correct: 0, total: 0 } };
+      var missed = {};
+      questions.forEach(function (q, i) {
+        var chosen = answers[i];
+        var right = chosen === q.ans;
+        if (right) score++;
+        else missed[q.topic] = (missed[q.topic] || 0) + 1;  // fallo o en blanco
+        byDomain[q.domain].total++;
+        if (right) byDomain[q.domain].correct++;
+        if (chosen != null) Store.recordAnswer(q.topic, right);
+      });
+      var durationSec = CFG.examMinutes * 60 - remaining;
+      Store.saveSimulacro({
+        date: new Date().toISOString(),
+        score: score, total: questions.length,
+        durationSec: durationSec, byDomain: byDomain
+      });
+      schedulePush();
+      reviewSim(questions, answers, score, byDomain, byTime, missed);
+    }
+  }
+
+  function reviewSim(questions, answers, score, byDomain, byTime, missed) {
+    var pct = Math.round(100 * score / questions.length);
+    var root = el("div", {});
+    var res = el("div", { class: "card result" });
+    res.appendChild(el("div", { class: "result-eyebrow muted", text: byTime ? "Se acabó el tiempo · Resultado" : "Simulacro completado" }));
+    res.appendChild(el("div", { class: "result-big", text: score + " / " + questions.length }));
+    res.appendChild(el("div", { class: "result-pct", text: pct + "% de aciertos" }));
+
+    var br = el("div", { class: "result-break" });
+    ["verbal", "math"].forEach(function (d) {
+      var bd = byDomain[d];
+      var dp = bd.total ? Math.round(100 * bd.correct / bd.total) : 0;
+      var row = el("div", { class: "break-row" });
+      var dot = el("span", { class: "domain-dot" }); dot.style.background = "var(--" + d + ")";
+      row.appendChild(dot);
+      row.appendChild(el("span", { class: "break-name", text: DOMAINS[d].short }));
+      var bar = el("div", { class: "bar bar-thin" });
+      var fill = el("div", { class: "bar-fill" }); fill.style.width = dp + "%"; fill.style.background = "var(--" + d + ")";
+      bar.appendChild(fill); row.appendChild(bar);
+      row.appendChild(el("span", { class: "break-pct", text: bd.correct + "/" + bd.total }));
+      br.appendChild(row);
+    });
+    res.appendChild(br);
+
+    var acts = el("div", { class: "result-actions" });
+    acts.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go("simulacros"); } }, "Volver a simulacros"));
+    var showReview = el("button", { class: "btn btn-soft", onclick: function () { toggleReview(); } }, "Ver revisión");
+    acts.appendChild(showReview);
+    res.appendChild(acts);
+    root.appendChild(res);
+
+    // Recomendación de estudio según los temas más fallados
+    var reco = recommendCard(missed || {});
+    if (reco) root.appendChild(reco);
+
+    var reviewBox = el("div", { class: "review-box", id: "review-box", hidden: true });
+    root.appendChild(reviewBox);
+
+    mount(root, false);
+    if (pct >= 60) { Sound.celebrate(); confetti(pct >= 80 ? 120 : 70); }
+    else Sound.wrong();
+    refreshTopbar();
+
+    var built = false;
+    function toggleReview() {
+      Sound.click();
+      var box = document.getElementById("review-box");
+      if (!built) {
+        questions.forEach(function (q, i) {
+          var right = answers[i] === q.ans;
+          var item = el("div", { class: "review-item " + (right ? "ok" : "no") });
+          item.appendChild(el("div", { class: "review-q", text: (i + 1) + ". " + q.q }));
+          var letters = ["A", "B", "C", "D"];
+          item.appendChild(el("div", { class: "review-ans", text: "Tu respuesta: " + (answers[i] != null ? letters[answers[i]] + ") " + q.opts[answers[i]] : "(en blanco)") }));
+          if (!right) item.appendChild(el("div", { class: "review-correct", text: "Correcta: " + letters[q.ans] + ") " + q.opts[q.ans] }));
+          item.appendChild(el("div", { class: "review-exp muted", text: q.exp }));
+          box.appendChild(item);
+        });
+        built = true;
+      }
+      box.hidden = !box.hidden;
+    }
+  }
+
+  /* ============================================================
+     VISTA · PROGRESO
+     ============================================================ */
+  function renderProgreso() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Progreso", "Mirá cómo vas avanzando. Todo se guarda y se sincroniza entre tus dispositivos."));
+
+    var summary = el("div", { class: "card prog-summary" });
+    var s1 = el("div", { class: "prog-stat" });
+    s1.appendChild(el("div", { class: "prog-num", text: Store.accuracy() + "%" }));
+    s1.appendChild(el("div", { class: "muted", text: "aciertos globales" }));
+    var s2 = el("div", { class: "prog-stat" });
+    s2.appendChild(el("div", { class: "prog-num", id: "prog-time", text: fmtStudyTime(state.totalSeconds) }));
+    s2.appendChild(el("div", { class: "muted", text: "tiempo estudiado" }));
+    var s3 = el("div", { class: "prog-stat" });
+    s3.appendChild(el("div", { class: "prog-num", text: String(state.streak.longest) }));
+    s3.appendChild(el("div", { class: "muted", text: "mejor racha" }));
+    var s4 = el("div", { class: "prog-stat" });
+    s4.appendChild(el("div", { class: "prog-num", text: String(state.simulacros.length) }));
+    s4.appendChild(el("div", { class: "muted", text: "simulacros" }));
+    summary.appendChild(s1); summary.appendChild(s2); summary.appendChild(s3); summary.appendChild(s4);
+    frag.appendChild(summary);
+
+    // Puntos débiles
+    var weakCardP = weakTopicsCard();
+    if (weakCardP) frag.appendChild(weakCardP);
+
+    // Calendario de racha
+    var calCard = el("div", { class: "card" });
+    calCard.appendChild(el("div", { class: "card-title", text: "Actividad reciente" }));
+    calCard.appendChild(el("div", { class: "card-sub muted", text: "Cada cuadro es un día. Más verde = más preguntas resueltas." }));
+    calCard.appendChild(buildCalendar(70));
+    frag.appendChild(calCard);
+
+    // Dominio por tema
+    ["verbal", "math"].forEach(function (dom) {
+      var card = el("div", { class: "card" });
+      var head = el("div", { class: "domain-h" });
+      var dot = el("span", { class: "domain-dot" }); dot.style.background = "var(--" + dom + ")";
+      head.appendChild(dot); head.appendChild(el("span", { text: DOMAINS[dom].name }));
+      card.appendChild(head);
+      TOPICS.filter(function (t) { return t.domain === dom; }).forEach(function (t) {
+        var pt = state.perTopic[t.id] || { answered: 0, correct: 0 };
+        var m = pt.answered ? Store.topicMastery(t.id) : 0;
+        var row = el("div", { class: "mastery-row" });
+        row.appendChild(el("span", { class: "mastery-name", text: t.name }));
+        var bar = el("div", { class: "bar bar-thin" });
+        var fill = el("div", { class: "bar-fill" }); fill.style.width = m + "%"; fill.style.background = "var(--" + dom + ")";
+        bar.appendChild(fill); row.appendChild(bar);
+        row.appendChild(el("span", { class: "mastery-pct muted", text: pt.answered ? m + "%" : "—" }));
+        card.appendChild(row);
+      });
+      frag.appendChild(card);
+    });
+
+    startProgTime();
+    return frag;
+  }
+
+  function startProgTime() {
+    if (liveTicker) clearInterval(liveTicker);
+    liveTicker = setInterval(function () {
+      var node = document.getElementById("prog-time");
+      if (!node) return;
+      node.textContent = fmtStudyTime(Store.get().totalSeconds);
+    }, 1000);
+  }
+
+  function buildCalendar(days) {
+    var wrap = el("div", { class: "cal-grid" });
+    var today = new Date();
+    var maxQ = 1;
+    for (var key in state.history) {
+      if (state.history[key].questions > maxQ) maxQ = state.history[key].questions;
+    }
+    for (var i = days - 1; i >= 0; i--) {
+      var d = new Date(today.getTime() - i * 86400000);
+      var key2 = Store.todayKey(d);
+      var h = state.history[key2];
+      var q = h ? h.questions : 0;
+      var level = q === 0 ? 0 : (q >= maxQ * 0.66 ? 3 : (q >= maxQ * 0.33 ? 2 : 1));
+      var cell = el("div", { class: "cal-cell lvl-" + level, title: d.toLocaleDateString("es-CR", { day: "numeric", month: "short" }) + ": " + q + " preguntas" });
+      wrap.appendChild(cell);
+    }
+    return wrap;
+  }
+
+  /* ============================================================
+     VISTA · AJUSTES
+     ============================================================ */
+  function renderAjustes() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Ajustes", "Configurá tu examen, el sonido y tu sesión."));
+
+    var examCard = el("div", { class: "card settings-card" });
+    examCard.appendChild(el("div", { class: "card-title", text: "Tu examen" }));
+    examCard.appendChild(el("label", { class: "field-label", text: "Nombre del examen" }));
+    var nameInput = el("input", { class: "input", type: "text", value: state.examName || "", id: "set-name" });
+    examCard.appendChild(nameInput);
+    examCard.appendChild(el("label", { class: "field-label", text: "Fecha del examen" }));
+    var dateInput = el("input", { class: "input", type: "date", value: state.examDate || "", id: "set-date" });
+    examCard.appendChild(dateInput);
+    examCard.appendChild(el("div", { class: "muted set-hint", text: "PAA UCR / UNA 2026: aplicación el 3 y 4 de octubre. 45 ítems · 1 h 50 min · 4 opciones." }));
+    examCard.appendChild(el("button", {
+      class: "btn btn-primary", style: "margin-top:14px",
+      onclick: function () {
+        Sound.click();
+        Store.setExam(dateInput.value || null, nameInput.value || state.examName);
+        refreshTopbar();
+        schedulePush();
+        toast("Examen actualizado");
+      }
+    }, "Guardar examen"));
+    frag.appendChild(examCard);
+
+    var soundCard = el("div", { class: "card settings-card" });
+    soundCard.appendChild(el("div", { class: "card-title", text: "Sonido" }));
+    var sw = el("button", {
+      class: "switch" + (state.settings.sound ? " on" : ""),
+      onclick: function () {
+        var v = Store.toggleSound();
+        sw.classList.toggle("on", v);
+        swLabel.textContent = v ? "Activado" : "Desactivado";
+        if (v) Sound.correct();
+        schedulePush();
+      }
+    }, el("span", { class: "switch-knob" }));
+    var swLabel = el("span", { class: "switch-text", text: state.settings.sound ? "Activado" : "Desactivado" });
+    var swRow = el("div", { class: "switch-row" });
+    swRow.appendChild(sw); swRow.appendChild(swLabel);
+    soundCard.appendChild(swRow);
+    frag.appendChild(soundCard);
+
+    var syncCard = el("div", { class: "card settings-card" });
+    syncCard.appendChild(el("div", { class: "card-title", text: "Sincronización" }));
+    if (state.isGuest) {
+      syncCard.appendChild(el("p", { class: "muted", text: "Estás en modo local: tu progreso se guarda en este dispositivo. Iniciá sesión con tu contraseña para sincronizarlo en la nube entre tus dispositivos." }));
+      syncCard.appendChild(el("button", { class: "btn btn-soft", onclick: showLogin }, [icon("sync"), el("span", { text: "Iniciar sesión para sincronizar" })]));
+    } else {
+      var last = state.lastSync ? new Date(state.lastSync).toLocaleString("es-CR") : "nunca";
+      var lastLine = el("p", { class: "muted sync-line", text: "Última sincronización: " + last });
+      syncCard.appendChild(lastLine);
+      syncCard.appendChild(el("button", {
+        class: "btn btn-soft", onclick: function () {
+          Sound.click();
+          lastLine.textContent = "Sincronizando…";
+          Store.push().then(function () { return Store.pull(); }).then(function () {
+            state = Store.get();
+            lastLine.textContent = "Última sincronización: " + (state.lastSync ? new Date(state.lastSync).toLocaleString("es-CR") : "nunca");
+            toast("Datos sincronizados");
+          });
+        }
+      }, [icon("sync"), el("span", { text: "Sincronizar ahora" })]));
+    }
+    frag.appendChild(syncCard);
+
+    var sessCard = el("div", { class: "card settings-card" });
+    sessCard.appendChild(el("div", { class: "card-title", text: "Sesión" }));
+    sessCard.appendChild(el("p", { class: "muted", text: state.isGuest
+      ? "Estás en modo local: tenés todo el contenido y tu progreso se guarda en este dispositivo."
+      : "Sesión iniciada como " + state.user + ". Tu progreso se sincroniza en la nube." }));
+    if (state.isGuest) {
+      sessCard.appendChild(el("button", { class: "btn btn-soft", onclick: showLogin }, [icon("sync"), el("span", { text: "Iniciar sesión para sincronizar" })]));
+    } else {
+      sessCard.appendChild(el("button", { class: "btn btn-ghost", onclick: logout }, [icon("logout"), el("span", { text: "Cerrar sesión" })]));
+    }
+    frag.appendChild(sessCard);
+
+    var dangerCard = el("div", { class: "card settings-card danger-zone" });
+    dangerCard.appendChild(el("div", { class: "card-title", text: "Borrar datos" }));
+    dangerCard.appendChild(el("p", { class: "muted", text: "Elimina todo tu progreso de este dispositivo. Si tenés sincronización, los datos en la nube no se borran salvo que sincronices después." }));
+    dangerCard.appendChild(el("button", {
+      class: "btn btn-danger", onclick: function () {
+        if (confirm("¿Seguro que querés borrar todo tu progreso local? No se puede deshacer.")) {
+          try { localStorage.removeItem("rutaPaa_state_v1"); } catch (e) {}
+          Store.logout();
+          state = Store.get();
+          showLogin();
+        }
+      }
+    }, "Borrar mi progreso"));
+    frag.appendChild(dangerCard);
+
+    frag.appendChild(el("p", { class: "security-note muted", text: "Nota: la contraseña y las llaves de sincronización viven en el código del sitio, así que no son seguridad real. La contraseña solo activa la sincronización de tu progreso, no desbloquea contenido. No guardes información sensible." }));
+
+    return frag;
+  }
+
+  /* ============================================================
+     COMPONENTES COMUNES
+     ============================================================ */
+  function pageHead(title, sub) {
+    var h = el("div", { class: "page-head" });
+    h.appendChild(el("h1", { class: "page-title", text: title }));
+    if (sub) h.appendChild(el("p", { class: "page-sub muted", text: sub }));
+    return h;
+  }
+  function backHead(title, onBack) {
+    var h = el("div", { class: "back-head" });
+    h.appendChild(el("button", { class: "icon-btn", onclick: onBack }, icon("back")));
+    h.appendChild(el("h1", { class: "page-title", text: title }));
+    return h;
+  }
+
+  function toast(msg) {
+    var t = el("div", { class: "toast", text: msg });
+    document.body.appendChild(t);
+    requestAnimationFrame(function () { t.classList.add("show"); });
+    setTimeout(function () { t.classList.remove("show"); setTimeout(function () { t.remove(); }, 300); }, 1800);
+  }
+
+  /* ============================================================
+     SESIÓN Y SINCRONIZACIÓN
+     ============================================================ */
+  function schedulePush() {
+    if (state.isGuest) return;
+    if (pushTimer) clearTimeout(pushTimer);
+    pushTimer = setTimeout(function () { Store.push(); }, 1500);
+  }
+
+  function enterApp() {
+    state = Store.get();
+    document.getElementById("login-screen").hidden = true;
+    document.getElementById("app-shell").hidden = false;
+    buildNav();
+    refreshTopbar();
+    current = "inicio";
+    mount(renderInicio(), true);
+
+    if (document.visibilityState === "visible") Store.Timer.start();
+
+    if (!state.isGuest) {
+      Store.pull().then(function () {
+        state = Store.get();
+        refreshTopbar();
+        if (current === "inicio") mount(renderInicio(), true);
+      });
+      if (pushTimer) clearTimeout(pushTimer);
+      setInterval(function () { if (!state.isGuest) Store.push(); }, 60000);
+    }
+  }
+
+  function logout() {
+    Sound.click();
+    if (liveTicker) clearInterval(liveTicker);
+    if (!state.isGuest) { Store.push(); }
+    Store.logout();
+    state = Store.get();
+    showLogin();
+  }
+
+  function showLogin() {
+    document.getElementById("app-shell").hidden = true;
+    var ls = document.getElementById("login-screen");
+    ls.hidden = false;
+    var pass = document.getElementById("login-pass");
+    if (pass) pass.value = "";
+    var msg = document.getElementById("login-msg");
+    if (msg) msg.textContent = "";
+  }
+
+  function wireLogin() {
+    var passInput = document.getElementById("login-pass");
+    var loginBtn = document.getElementById("login-btn");
+    var guestBtn = document.getElementById("guest-btn");
+    var msg = document.getElementById("login-msg");
+
+    function attempt() {
+      Sound.unlock();
+      var val = passInput.value;
+      if (val === CFG.authPassword) {
+        Sound.correct();
+        Store.login(CFG.defaultUser);
+        state = Store.get();
+        enterApp();
+      } else {
+        Sound.wrong();
+        msg.textContent = "Contraseña incorrecta. Probá de nuevo.";
+        var card = document.querySelector(".login-card");
+        card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
+      }
+    }
+    loginBtn.addEventListener("click", attempt);
+    passInput.addEventListener("keydown", function (e) { if (e.key === "Enter") attempt(); });
+    guestBtn.addEventListener("click", function () {
+      Sound.unlock(); Sound.click();
+      Store.guest();
+      state = Store.get();
+      enterApp();
+    });
+  }
+
+  /* ============================================================
+     CICLO DE VIDA / VISIBILIDAD
+     ============================================================ */
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+      Store.Timer.stop();
+      if (!Store.get().isGuest) Store.push();
+    } else {
+      Store.Timer.start();
+    }
+  });
+  window.addEventListener("beforeunload", function () {
+    Store.Timer.stop();
+  });
+
+  /* ============================================================
+     ARRANQUE
+     ============================================================ */
+  function boot() {
+    var bn = document.getElementById("brand-name");
+    if (bn) bn.textContent = CFG.appName;
+    var tg = document.getElementById("brand-tagline");
+    if (tg) tg.textContent = CFG.tagline;
+    var bn2 = document.getElementById("tb-appname");
+    if (bn2) bn2.textContent = CFG.appName;
+
+    wireLogin();
+
+    state = Store.get();
+    if (state.user) {
+      enterApp();
+    } else {
+      showLogin();
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+})();
