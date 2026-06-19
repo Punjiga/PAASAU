@@ -16,6 +16,7 @@
   var current = "inicio";
   var liveTicker = null;
   var pushTimer = null;
+  var quizActive = false, quizPaused = false, heroCountdown = null;
 
   /* ============================================================
      UTILIDADES
@@ -92,7 +93,9 @@
       arrow: '<path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>',
       back: '<path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/>',
       clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
-      target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>'
+      target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
+      bookmark: '<path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/>',
+      pause: '<rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/>'
     };
     var svg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" ' +
       'stroke-linecap="round" stroke-linejoin="round">' + (p[name] || "") + "</svg>";
@@ -177,7 +180,12 @@
      Devuelve una copia de la pregunta con las opciones en orden aleatorio
      y el índice de la respuesta recalculado. El topic/dominio no cambian. */
   function shuffleOptions(q) {
-    var order = shuffle(q.opts.map(function (_, i) { return i; }));
+    var base = q.opts.map(function (_, i) { return i; });
+    var order = shuffle(base);
+    if (q.opts.length > 1) {
+      var tries = 0;
+      while (order.every(function (v, i) { return v === i; }) && tries < 8) { order = shuffle(base); tries++; }
+    }
     var newOpts = order.map(function (i) { return q.opts[i]; });
     var newAns = order.indexOf(q.ans);
     var copy = {};
@@ -358,6 +366,37 @@
     return wrap;
   }
 
+  function renderCountdownInto(node) {
+    var ms = Store.msUntilExam();
+    if (ms == null) return;
+    if (ms < 0) ms = 0;
+    var totalSec = Math.floor(ms / 1000);
+    var d = Math.floor(totalSec / 86400);
+    var h = Math.floor((totalSec % 86400) / 3600);
+    var m = Math.floor((totalSec % 3600) / 60);
+    var sec = totalSec % 60;
+    var units = [[d, d === 1 ? "día" : "días"], [h, "horas"], [m, "min"], [sec, "seg"]];
+    var prev = node._cd || [];
+    node.innerHTML = "";
+    units.forEach(function (u, i) {
+      var box = el("div", { class: "cd-unit" });
+      var num = el("div", { class: "cd-num", text: String(u[0]).padStart(2, "0") });
+      if (prev[i] !== u[0]) num.classList.add("tick");
+      box.appendChild(num);
+      box.appendChild(el("div", { class: "cd-lbl muted", text: u[1] }));
+      node.appendChild(box);
+    });
+    node._cd = units.map(function (u) { return u[0]; });
+  }
+  function startCountdown(node) {
+    if (heroCountdown) { clearInterval(heroCountdown); heroCountdown = null; }
+    renderCountdownInto(node);
+    heroCountdown = setInterval(function () {
+      if (!document.body.contains(node)) { clearInterval(heroCountdown); heroCountdown = null; return; }
+      renderCountdownInto(node);
+    }, 1000);
+  }
+
   function renderInicio() {
     var frag = el("div", { class: "dash" });
 
@@ -371,14 +410,15 @@
       hero.appendChild(el("button", { class: "btn btn-primary", style: "margin-top:14px", onclick: function () { go("ajustes"); } }, "Definir fecha"));
     } else {
       hero.appendChild(el("div", { class: "count-label", text: state.examName }));
-      var big = el("div", { class: "count-num" });
-      if (days < 0) big.textContent = "—";
-      else big.textContent = String(days);
-      hero.appendChild(big);
-      var sub = days < 0 ? "El examen ya pasó. Actualizá la fecha en Ajustes."
-        : (days === 0 ? "¡Es hoy! Respirá y confiá en lo que practicaste."
-          : (days === 1 ? "día para tu examen" : "días para tu examen"));
-      hero.appendChild(el("div", { class: "count-sub", text: sub }));
+      if (days < 0) {
+        hero.appendChild(el("div", { class: "count-num", text: "\u2014" }));
+        hero.appendChild(el("div", { class: "count-sub", text: "El examen ya pasó. Actualizá la fecha en Ajustes." }));
+      } else {
+        var cdWrap = el("div", { class: "countdown", id: "hero-countdown" });
+        hero.appendChild(cdWrap);
+        hero.appendChild(el("div", { class: "count-sub", text: days === 0 ? "¡Es hoy! Respirá y confiá en lo que practicaste." : "para tu examen" }));
+        startCountdown(cdWrap);
+      }
     }
     frag.appendChild(hero);
 
@@ -488,6 +528,7 @@
     card.appendChild(el("span", { class: "pill pill-" + t.domain, text: DOMAINS[t.domain].short }));
     card.appendChild(el("h2", { class: "lesson-title", text: t.name }));
     card.appendChild(el("p", { class: "lesson-body", text: t.teoria }));
+    if (t.svg) { var lsv = el("div", { class: "lesson-svg" }); lsv.innerHTML = t.svg; card.appendChild(lsv); }
     card.appendChild(el("button", { class: "btn btn-cta", onclick: startDaily }, [icon("play"), el("span", { text: "Practicar este tema (" + daily.questions.length + " preguntas)" })]));
     frag.appendChild(card);
 
@@ -529,6 +570,13 @@
     practiceQuiz(shuffle(qs).slice(0, count || 10), { title: "Práctica", subtitle: topic.name, focusTopic: topic });
   }
 
+  function practiceSaved() {
+    Sound.click();
+    var qs = Store.savedQuestions();
+    if (!qs.length) { alert("Todav\u00eda no guardaste preguntas. Tocá Guardar en una pregunta para repasarla luego."); return; }
+    practiceQuiz(shuffle(qs.slice()), { title: "Repaso de guardadas", subtitle: qs.length + " preguntas guardadas" });
+  }
+
   /* ============================================================
      VISTA · PRÁCTICA LIBRE
      ============================================================ */
@@ -551,6 +599,15 @@
       practiceQuiz(qs, { title: "Mezcla rápida", subtitle: "Temario completo" });
     } }, "Empezar"));
     card.appendChild(quick);
+
+    var savedN = Store.savedCount();
+    var savedRow = el("div", { class: "quick-mix" });
+    savedRow.appendChild(el("div", {}, [
+      el("div", { class: "card-title", text: "Preguntas guardadas" }),
+      el("div", { class: "muted", text: savedN ? (savedN + " guardada" + (savedN === 1 ? "" : "s") + " para repasar.") : "Marcá preguntas con Guardar y repasalas acá." })
+    ]));
+    savedRow.appendChild(el("button", { class: "btn btn-soft" + (savedN ? "" : " disabled"), onclick: function () { if (savedN) practiceSaved(); } }, "Repasar"));
+    card.appendChild(savedRow);
 
     card.appendChild(el("div", { class: "divider" }));
 
@@ -720,6 +777,7 @@
     card.appendChild(el("span", { class: "pill pill-" + t.domain, text: DOMAINS[t.domain].short }));
     card.appendChild(el("h2", { class: "lesson-title", text: t.name }));
     card.appendChild(el("p", { class: "lesson-body", text: t.teoria }));
+    if (t.svg) { var lsv = el("div", { class: "lesson-svg" }); lsv.innerHTML = t.svg; card.appendChild(lsv); }
     card.appendChild(el("button", { class: "btn btn-cta", onclick: function () { practiceTopic(t); } }, [icon("play"), el("span", { text: "Practicar ahora" })]));
     node.appendChild(card);
     mount(node, false);
@@ -812,21 +870,25 @@
     var questions = prepare(rawQuestions);   // opciones mezcladas (anti-sesgo)
     var idx = 0, correct = 0, answered = false;
     var missed = {};                          // topicId -> # de fallos
+    var timed = (opts.timeLimitSec || 0) > 0;
     var timeLeft = opts.timeLimitSec || 0;
-    var quizTimer = null;
+    var elapsed = 0;
+    var paused = false;
+    var clock = null;
+
+    quizActive = true; quizPaused = false;
 
     var root = el("div", { class: "quiz" });
     var head = el("div", { class: "quiz-head" });
-    head.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: function () { stopTimer(); go(current === "diaria" ? "diaria" : current); } }, icon("back")));
+    head.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: function () { endQuiz(); go(current === "diaria" ? "diaria" : current); } }, icon("back")));
     head.appendChild(el("div", { class: "quiz-head-mid" }, [
       el("div", { class: "quiz-title", text: opts.title || "Práctica" }),
       opts.subtitle ? el("div", { class: "quiz-sub muted", text: opts.subtitle }) : null
     ]));
-    var timerEl = null;
-    if (timeLeft > 0) {
-      timerEl = el("div", { class: "quiz-timer", id: "quiz-timer" }, [icon("clock"), el("span", { text: fmtClock(timeLeft) })]);
-      head.appendChild(timerEl);
-    }
+    var clockEl = el("div", { class: "quiz-timer" + (timed ? "" : " up"), id: "quiz-timer" }, [icon("clock"), el("span", { text: fmtClock(timed ? timeLeft : 0) })]);
+    head.appendChild(clockEl);
+    var pauseBtn = el("button", { class: "icon-btn pause-btn", title: "Pausar / reanudar", onclick: function () { togglePause(); } }, icon("pause"));
+    head.appendChild(pauseBtn);
     root.appendChild(head);
 
     var prog = el("div", { class: "progress" });
@@ -839,18 +901,38 @@
     var body = el("div", { class: "quiz-body" });
     root.appendChild(body);
 
+    var pauseOverlay = el("div", { class: "pause-overlay", id: "pause-overlay", hidden: true });
+    pauseOverlay.appendChild(el("div", { class: "pause-card" }, [
+      el("div", { class: "pause-title", text: "En pausa" }),
+      el("p", { class: "muted", text: "Tomate el tiempo que necesités. El cronómetro está detenido." }),
+      el("button", { class: "btn btn-cta", onclick: function () { togglePause(); } }, [icon("play"), el("span", { text: "Reanudar" })])
+    ]));
+    root.appendChild(pauseOverlay);
+
     mount(root, false);
     draw();
-    if (timeLeft > 0) {
-      quizTimer = setInterval(function () {
+    Store.Timer.start();
+    clock = setInterval(function () {
+      if (paused) return;
+      if (timed) {
         timeLeft--;
-        var span = timerEl.querySelector("span");
-        if (span) span.textContent = fmtClock(timeLeft);
-        if (timeLeft <= 30) timerEl.classList.add("danger");
-        if (timeLeft <= 0) { stopTimer(); finish(true); }
-      }, 1000);
+        var sp = clockEl.querySelector("span"); if (sp) sp.textContent = fmtClock(timeLeft);
+        if (timeLeft <= 30) clockEl.classList.add("danger");
+        if (timeLeft <= 0) finish(true);
+      } else {
+        elapsed++;
+        var sp2 = clockEl.querySelector("span"); if (sp2) sp2.textContent = fmtClock(elapsed);
+      }
+    }, 1000);
+
+    function togglePause() {
+      Sound.click();
+      paused = !paused; quizPaused = paused;
+      var ov = document.getElementById("pause-overlay"); if (ov) ov.hidden = !paused;
+      pauseBtn.classList.toggle("active", paused);
+      if (paused) Store.Timer.stop(); else Store.Timer.start();
     }
-    function stopTimer() { if (quizTimer) { clearInterval(quizTimer); quizTimer = null; } }
+    function endQuiz() { quizActive = false; quizPaused = false; if (clock) { clearInterval(clock); clock = null; } Store.Timer.stop(); }
 
     function draw() {
       answered = false;
@@ -859,8 +941,20 @@
       counter.textContent = "Pregunta " + (idx + 1) + " de " + questions.length;
       body.innerHTML = "";
 
+      var topRow = el("div", { class: "q-toprow" });
       var topic = TOPIC_BY_ID[q.topic];
-      body.appendChild(el("span", { class: "pill pill-" + q.domain, text: topic ? topic.name : DOMAINS[q.domain].short }));
+      topRow.appendChild(el("span", { class: "pill pill-" + q.domain, text: topic ? topic.name : DOMAINS[q.domain].short }));
+      var savedNow = Store.isSaved(q.id);
+      var saveBtn = el("button", { class: "save-btn" + (savedNow ? " on" : ""), title: "Guardar para repasar" }, [icon("bookmark"), el("span", { text: savedNow ? "Guardada" : "Guardar" })]);
+      saveBtn.addEventListener("click", function () {
+        var on = Store.toggleSaved(q.id);
+        saveBtn.classList.toggle("on", on);
+        saveBtn.querySelector("span").textContent = on ? "Guardada" : "Guardar";
+        schedulePush();
+      });
+      topRow.appendChild(saveBtn);
+      body.appendChild(topRow);
+
       if (q.stem) body.appendChild(el("p", { class: "q-stem", text: q.stem }));
       body.appendChild(el("p", { class: "q-text", text: q.q }));
 
@@ -876,13 +970,12 @@
 
       var expBox = el("div", { class: "q-exp", id: "q-exp", hidden: true });
       body.appendChild(expBox);
-
       var actions = el("div", { class: "quiz-actions", id: "q-actions" });
       body.appendChild(actions);
     }
 
     function choose(i, btn, container, q) {
-      if (answered) return;
+      if (answered || paused) return;
       answered = true;
       var isRight = i === q.ans;
       if (isRight) { correct++; Sound.correct(); }
@@ -904,13 +997,13 @@
         text: isRight ? "¡Correcto!" : "Respuesta correcta: " + letters[q.ans] + ") " + q.opts[q.ans] }));
       exp.appendChild(el("div", { class: "exp-text", text: q.exp }));
 
-      // Al fallar, mostramos un repaso corto del tema (aprender en el momento)
       if (!isRight) {
         var topic = TOPIC_BY_ID[q.topic];
         if (topic && topic.teoria) {
           var lesson = el("div", { class: "exp-lesson" });
           lesson.appendChild(el("div", { class: "exp-lesson-h", text: "Repaso rápido · " + topic.name }));
           lesson.appendChild(el("div", { class: "exp-lesson-b", text: topic.teoria }));
+          if (topic.svg) { var esv = el("div", { class: "lesson-svg sm" }); esv.innerHTML = topic.svg; lesson.appendChild(esv); }
           exp.appendChild(lesson);
         }
       }
@@ -925,11 +1018,11 @@
     function next() {
       Sound.click();
       if (idx < questions.length - 1) { idx++; draw(); }
-      else { stopTimer(); finish(false); }
+      else finish(false);
     }
 
     function finish(byTime) {
-      stopTimer();
+      endQuiz();
       progFill.style.width = "100%";
       var pct = Math.round(100 * correct / questions.length);
       schedulePush();
@@ -952,7 +1045,6 @@
       counter.textContent = "Completado";
       body.appendChild(res);
 
-      // Recomendación: qué repasar según lo que más se falló
       var reco = recommendCard(missed);
       if (reco) body.appendChild(reco);
 
@@ -1455,7 +1547,7 @@
     current = "inicio";
     mount(renderInicio(), true);
 
-    if (document.visibilityState === "visible") Store.Timer.start();
+    // El cronómetro de estudio NO corre acá: solo cuenta dentro de práctica/simulacro.
 
     if (!state.isGuest) {
       Store.pull().then(function () {
@@ -1525,7 +1617,7 @@
     if (document.hidden) {
       Store.Timer.stop();
       if (!Store.get().isGuest) Store.push();
-    } else {
+    } else if (quizActive && !quizPaused) {
       Store.Timer.start();
     }
   });

@@ -8,21 +8,37 @@ window.Store = (function () {
   /* ---------- Estado por defecto ---------- */
   function emptyState() {
     return {
-      version: 1,
+      version: 2,
       user: null,              // "Punjiga" (login) | "Invitado"
       isGuest: true,
       examDate: null,          // "YYYY-MM-DD"
       examName: CFG.defaultExamName,
       streak: { current: 0, longest: 0, lastDay: null },
       history: {},             // { "YYYY-MM-DD": { minutes, questions, correct } }
-      totalSeconds: 0,         // tiempo total estudiado (acumulado)
+      totalSeconds: 0,         // tiempo estudiado: SOLO cuenta dentro de práctica/simulacro
       questionsAnswered: 0,
       correctAnswers: 0,
       perTopic: {},            // { topicId: { answered, correct, studied } }
       simulacros: [],          // { date, score, total, durationSec, byDomain }
+      saved: [],               // ids de preguntas guardadas para repasar
       settings: { sound: true },
+      studyResetDone: true,    // bandera de migración (estado nuevo ya está "reseteado")
       lastSync: null
     };
+  }
+
+  // Migración: resetea el tiempo estudiado una sola vez (datos viejos contaban
+  // el tiempo de navegación). También garantiza que existan saved[] y la bandera.
+  function migrate(st) {
+    if (!st.studyResetDone) {
+      st.totalSeconds = 0;
+      if (st.history) Object.keys(st.history).forEach(function (k) {
+        if (st.history[k]) st.history[k].minutes = 0;
+      });
+      st.studyResetDone = true;
+    }
+    if (!Array.isArray(st.saved)) st.saved = [];
+    return st;
   }
 
   let state = load();
@@ -33,7 +49,7 @@ window.Store = (function () {
       const raw = localStorage.getItem(LS_KEY);
       if (!raw) return emptyState();
       const parsed = JSON.parse(raw);
-      return Object.assign(emptyState(), parsed);
+      return migrate(Object.assign(emptyState(), parsed));
     } catch (e) {
       console.warn("No se pudo leer el estado local:", e);
       return emptyState();
@@ -62,30 +78,33 @@ window.Store = (function () {
     if (!state.examDate) return null;
     return daysBetween(todayKey(), state.examDate);
   }
+  // Milisegundos hasta el examen (medianoche local del día del examen).
+  function msUntilExam() {
+    if (!state.examDate) return null;
+    return new Date(state.examDate + "T00:00:00").getTime() - Date.now();
+  }
 
   /* ---------- Racha ---------- */
-  // Marca el día de hoy como estudiado y actualiza la racha.
   function markStudiedToday() {
     const t = todayKey();
     const s = state.streak;
-    if (s.lastDay === t) return; // ya contado hoy
+    if (s.lastDay === t) return;
     if (s.lastDay && daysBetween(s.lastDay, t) === 1) {
-      s.current += 1;            // día consecutivo
+      s.current += 1;
     } else {
-      s.current = 1;            // primera vez o se rompió la racha
+      s.current = 1;
     }
     s.lastDay = t;
     if (s.current > s.longest) s.longest = s.current;
     persist();
   }
-  // Si pasó más de un día sin estudiar, la racha vigente es 0 (sin perder el récord).
   function currentStreak() {
     const s = state.streak;
     if (!s.lastDay) return 0;
     const gap = daysBetween(s.lastDay, todayKey());
-    if (gap <= 0) return s.current;     // hoy
-    if (gap === 1) return s.current;     // ayer: aún puede continuar hoy
-    return 0;                            // se rompió
+    if (gap <= 0) return s.current;
+    if (gap === 1) return s.current;
+    return 0;
   }
   function studiedToday() { return state.streak.lastDay === todayKey(); }
 
@@ -123,8 +142,25 @@ window.Store = (function () {
     persist();
   }
 
-  /* ---------- Cronómetro de estudio en vivo ---------- */
-  // Cuenta el tiempo de estudio con la pestaña visible (en modo local y con sesión).
+  /* ---------- Preguntas guardadas para repasar ---------- */
+  function isSaved(id) { return state.saved.indexOf(id) !== -1; }
+  function toggleSaved(id) {
+    const i = state.saved.indexOf(id);
+    if (i === -1) state.saved.push(id); else state.saved.splice(i, 1);
+    persist();
+    return isSaved(id);
+  }
+  function savedQuestions() {
+    const all = window.PAA_QUESTIONS || [];
+    const byId = {};
+    all.forEach(function (q) { byId[q.id] = q; });
+    return state.saved.map(function (id) { return byId[id]; }).filter(Boolean);
+  }
+  function savedCount() { return state.saved.length; }
+
+  /* ---------- Cronómetro de estudio ----------
+     Cuenta SOLO cuando una práctica/simulacro está activa. Lo controlan
+     las vistas de quiz (start al entrar a las preguntas, stop al salir/pausar). */
   const Timer = (function () {
     let running = false, last = 0, raf = null;
     function tick() {
@@ -158,19 +194,15 @@ window.Store = (function () {
     if (!CFG.sync.enabled || state.isGuest) return false;
     try {
       const res = await fetch(`${CFG.sync.base}/${CFG.sync.binId}/latest`, {
-        headers: {
-          "X-Access-Key": CFG.sync.accessKey,
-          "X-Bin-Meta": "false"
-        }
+        headers: { "X-Access-Key": CFG.sync.accessKey, "X-Bin-Meta": "false" }
       });
       if (!res.ok) throw new Error("HTTP " + res.status);
       const data = await res.json();
       const remote = data && data[CFG.sync.namespace];
       if (remote && typeof remote === "object") {
-        // Conserva la sesión local; trae el progreso de la nube si es más nuevo.
         const keepUser = state.user, keepGuest = state.isGuest;
         if (!remote.totalSeconds || remote.totalSeconds >= state.totalSeconds) {
-          state = Object.assign(emptyState(), remote);
+          state = migrate(Object.assign(emptyState(), remote));
         }
         state.user = keepUser; state.isGuest = keepGuest;
         state.lastSync = new Date().toISOString();
@@ -187,7 +219,6 @@ window.Store = (function () {
   async function push() {
     if (!CFG.sync.enabled || state.isGuest) return false;
     try {
-      // Lee el bin actual para no pisar otras llaves (ej. English Practice Hub).
       let record = {};
       try {
         const cur = await fetch(`${CFG.sync.base}/${CFG.sync.binId}/latest`, {
@@ -197,15 +228,12 @@ window.Store = (function () {
       } catch (_) { record = {}; }
 
       const payload = Object.assign({}, state);
-      delete payload.user; delete payload.isGuest; // datos de sesión no se sincronizan
+      delete payload.user; delete payload.isGuest;
       record[CFG.sync.namespace] = payload;
 
       const res = await fetch(`${CFG.sync.base}/${CFG.sync.binId}`, {
         method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Access-Key": CFG.sync.accessKey
-        },
+        headers: { "Content-Type": "application/json", "X-Access-Key": CFG.sync.accessKey },
         body: JSON.stringify(record)
       });
       if (!res.ok) throw new Error("HTTP " + res.status);
@@ -219,21 +247,9 @@ window.Store = (function () {
   }
 
   /* ---------- Sesión ---------- */
-  function login(username) {
-    state.isGuest = false;
-    state.user = username || CFG.defaultUser;
-    persist();
-  }
-  function guest() {
-    state.isGuest = true;
-    state.user = "Invitado";
-    persist();
-  }
-  function logout() {
-    Timer.stop();
-    state = emptyState();
-    persist();
-  }
+  function login(username) { state.isGuest = false; state.user = username || CFG.defaultUser; persist(); }
+  function guest() { state.isGuest = true; state.user = "Invitado"; persist(); }
+  function logout() { Timer.stop(); state = emptyState(); persist(); }
 
   /* ---------- Setters varios ---------- */
   function setExam(dateKey, name) {
@@ -263,9 +279,10 @@ window.Store = (function () {
   return {
     get: () => state,
     persist, todayKey, daysBetween,
-    daysUntilExam, setExam,
+    daysUntilExam, msUntilExam, setExam,
     markStudiedToday, currentStreak, studiedToday,
     recordAnswer, setTopicStudied, saveSimulacro,
+    isSaved, toggleSaved, savedQuestions, savedCount,
     Timer, pull, push,
     login, guest, logout, toggleSound,
     accuracy, topicMastery, studiedTopicsCount, totalMinutes

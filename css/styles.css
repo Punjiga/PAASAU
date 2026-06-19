@@ -736,3 +736,57 @@ input { font-family: inherit; }
 .custom-label { font-size: 13.5px; }
 .custom-avail { font-size: 12.5px; }
 .input-num { width: 100px; padding: 10px 12px; }
+
+/* ============================================================
+   PAASAU v2 — cuenta regresiva animada, pausa, guardar
+   ============================================================ */
+
+/* Cuenta regresiva días/horas/min/seg */
+.countdown { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 10px 0 4px; }
+.cd-unit {
+  display: flex; flex-direction: column; align-items: center; min-width: 64px;
+  background: var(--ink); border: 1px solid var(--line); border-radius: var(--r-md); padding: 10px 8px;
+}
+.cd-num { font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--brand); line-height: 1; }
+.cd-lbl { font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; margin-top: 5px; }
+.cd-num.tick { animation: cdtick .45s ease; }
+@keyframes cdtick { 0% { transform: translateY(-5px) scale(1.12); opacity: .3; } 100% { transform: none; opacity: 1; } }
+@media (max-width: 520px) { .cd-unit { min-width: 54px; padding: 8px 6px; } .cd-num { font-size: 24px; } }
+
+/* Botón de pausa + overlay */
+.pause-btn.active { color: var(--gold); }
+.pause-overlay {
+  position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center;
+  background: rgba(8,12,16,.82); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  animation: fade .2s ease;
+}
+.pause-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
+  padding: 28px 26px; text-align: center; max-width: 340px; box-shadow: var(--shadow);
+}
+.pause-title { font-family: var(--font-display); font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.pause-card p { font-size: 14px; line-height: 1.5; margin-bottom: 6px; }
+
+/* Fila superior de la pregunta: pill + guardar */
+.q-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.save-btn {
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600;
+  background: var(--surface-2); border: 1px solid var(--line); color: var(--muted); transition: all .15s;
+}
+.save-btn .ic svg { width: 15px; height: 15px; }
+.save-btn:hover { border-color: var(--gold); color: var(--gold); }
+.save-btn.on { background: rgba(255,209,102,.14); border-color: var(--gold); color: var(--gold); }
+.save-btn.on .ic svg { fill: var(--gold); }
+
+/* Reloj que sube (práctica sin límite) en tono calmado */
+.quiz-timer.up { color: var(--brand); border-color: var(--line); }
+
+/* SVG ilustrativo en lecciones */
+.lesson-svg {
+  background: var(--ink); border: 1px solid var(--line); border-radius: var(--r-md);
+  padding: 14px; margin-top: 14px; color: var(--text);
+}
+.lesson-svg svg { width: 100%; max-width: 360px; height: auto; display: block; margin: 0 auto; }
+.lesson-svg.sm { padding: 10px; margin-top: 10px; }
+.lesson-svg.sm svg { max-width: 300px; }

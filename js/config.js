@@ -21,7 +21,7 @@ window.PAA_CONFIG = {
      Tus datos se guardan bajo la llave "namespace". */
   sync: {
     enabled: true,
-    binId: "6a025efcadc21f119a8731b0",
+    binId: "6a356300f5f4af5e290fde79",
     accessKey: "$2a$10$YK3MqWef3iQ1T8KXdV8QMu4Rdi.w.o2QPdVJpcLFvwJwXSo8QIEzy",
     namespace: "rutaPaa",
     base: "https://api.jsonbin.io/v3/b"
