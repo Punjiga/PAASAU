@@ -22,7 +22,7 @@ window.PAA_CONFIG = {
   sync: {
     enabled: true,
     binId: "6a356300f5f4af5e290fde79",
-    accessKey: "$2a$10$YK3MqWef3iQ1T8KXdV8QMu4Rdi.w.o2QPdVJpcLFvwJwXSo8QIEzy",
+    accessKey: "$2a$10$Lj/Wg1sTimodtr9aWGa5a.luSsFrleSePFVYN0Bf8kRfiBFGG.wPS",
     namespace: "rutaPaa",
     base: "https://api.jsonbin.io/v3/b"
   },
