@@ -104,7 +104,8 @@
       clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
       target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
       bookmark: '<path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/>',
-      pause: '<rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/>'
+      pause: '<rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/>',
+      heart: '<path d="M12 21s-7-4.6-9.4-8.4A5 5 0 0 1 12 6.5 5 5 0 0 1 21.4 12.6C19 16.4 12 21 12 21z"/>'
     };
     var svg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" ' +
       'stroke-linecap="round" stroke-linejoin="round">' + (p[name] || "") + "</svg>";
@@ -277,15 +278,18 @@
     { id: "temas", label: "Temas", render: renderTemas },
     { id: "simulacros", label: "Simulacros", render: renderSimulacros },
     { id: "progreso", label: "Progreso", render: renderProgreso },
-    { id: "ajustes", label: "Ajustes", render: renderAjustes }
+    { id: "ajustes", label: "Ajustes", render: renderAjustes },
+    { id: "apoyo", label: "Apoyar", render: renderApoyo, hidden: true }
   ];
+  // En modo invitado, estas secciones están bloqueadas (en desarrollo).
+  var GUEST_LOCKED = { libre: 1, temas: 1, simulacros: 1, progreso: 1 };
 
   function buildNav() {
     ["nav-desktop", "nav-mobile"].forEach(function (navId) {
       var nav = document.getElementById(navId);
       if (!nav) return;
       nav.innerHTML = "";
-      ROUTES.forEach(function (r) {
+      ROUTES.filter(function (r) { return !r.hidden; }).forEach(function (r) {
         var btn = el("button", {
           class: "nav-item" + (r.id === current ? " active" : ""),
           "data-route": r.id,
@@ -317,7 +321,11 @@
     current = routeId;
     Sound.click();
     var route = ROUTES.find(function (r) { return r.id === routeId; });
-    mount(route.render(), true);
+    if (state.isGuest && GUEST_LOCKED[routeId]) {
+      mount(lockView(route.label), false);
+    } else {
+      mount(route.render(), true);
+    }
     refreshNav();
   }
 
@@ -492,6 +500,15 @@
     stats.appendChild(stat(String(state.correctAnswers), "correctas"));
     rings.appendChild(stats);
     frag.appendChild(rings);
+
+    // Apoyar el proyecto
+    var supportCta = el("div", { class: "card support-cta" });
+    supportCta.appendChild(el("div", { class: "support-cta-info" }, [
+      el("div", { class: "card-title", text: "Apoyá PAASAU" }),
+      el("div", { class: "muted", text: "Proyecto en desarrollo. Si te sirve, dale una manita 💚" })
+    ]));
+    supportCta.appendChild(el("button", { class: "btn btn-soft", onclick: function () { go("apoyo"); } }, [icon("heart"), el("span", { text: "Cómo apoyar" })]));
+    frag.appendChild(supportCta);
 
     // Puntos débiles (recomendación persistente de estudio)
     var weakCard = weakTopicsCard();
@@ -812,13 +829,51 @@
   function lockCard(msg) {
     var card = el("div", { class: "card lock-card" });
     card.appendChild(icon("lock"));
-    card.appendChild(el("h3", { class: "lock-title", text: "Contenido en desarrollo" }));
-    card.appendChild(el("p", { class: "muted lock-text", text: (msg || "") + " PAASAU está en desarrollo: iniciá sesión para acceder a todo, o esperá a que esté abierto al público." }));
+    card.appendChild(el("h3", { class: "lock-title", text: "En desarrollo" }));
+    card.appendChild(el("p", { class: "muted lock-text", text: (msg || "Esta sección todavía está en desarrollo.") + " Iniciá sesión para acceder a todo, o apoyá el proyecto para impulsarlo." }));
     var row = el("div", { class: "lock-actions" });
     row.appendChild(el("button", { class: "btn btn-cta", onclick: showLogin }, [icon("sync"), el("span", { text: "Iniciar sesión" })]));
+    row.appendChild(el("button", { class: "btn btn-soft", onclick: function () { go("apoyo"); } }, [icon("heart"), el("span", { text: "Apoyar el proyecto" })]));
     row.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go("inicio"); } }, "Volver al inicio"));
     card.appendChild(row);
     return card;
+  }
+
+  function lockView(label) {
+    var node = el("div", {});
+    node.appendChild(pageHead(label, "Sección en desarrollo"));
+    node.appendChild(lockCard("La sección «" + label + "» estará disponible al iniciar sesión o cuando PAASAU se abra al público."));
+    return node;
+  }
+
+  function renderApoyo() {
+    var frag = el("div", {});
+    frag.appendChild(backHead("Apoyá PAASAU", function () { go("inicio"); }));
+    var intro = el("div", { class: "card" });
+    intro.appendChild(el("p", { class: "apoyo-intro", text: "PAASAU es un proyecto en desarrollo, hecho con cariño para ayudar a estudiantes de Costa Rica a prepararse para la PAA (UCR y UNA). Es gratis y sigue creciendo. Si te sirve y querés impulsarlo —más preguntas, mejoras y mantenerlo en línea— tu aporte ayuda muchísimo. ¡Gracias!" }));
+    frag.appendChild(intro);
+
+    var sinpe = el("div", { class: "card support-card" });
+    sinpe.appendChild(el("div", { class: "support-h" }, [el("span", { class: "support-emoji", text: "📱" }), el("span", { text: "SINPE Móvil" })]));
+    sinpe.appendChild(el("div", { class: "support-big", text: "8986268" }));
+    sinpe.appendChild(el("button", { class: "btn btn-soft btn-sm", onclick: function () {
+      try { navigator.clipboard.writeText("8986268"); toast("Número copiado"); } catch (e) { toast("SINPE: 8986268"); }
+    } }, "Copiar número"));
+    frag.appendChild(sinpe);
+
+    var pp = el("div", { class: "card support-card" });
+    pp.appendChild(el("div", { class: "support-h" }, [el("span", { class: "support-emoji", text: "💳" }), el("span", { text: "PayPal" })]));
+    pp.appendChild(el("p", { class: "muted", text: "Aporte con tarjeta o saldo PayPal (también desde el extranjero)." }));
+    pp.appendChild(el("a", { class: "btn btn-cta", href: "https://paypal.me/punjiga", target: "_blank", rel: "noopener noreferrer" }, "Abrir PayPal"));
+    frag.appendChild(pp);
+
+    var cafe = el("div", { class: "card support-card" });
+    cafe.appendChild(el("div", { class: "support-h" }, [el("span", { class: "support-emoji", text: "☕" }), el("span", { text: "Invitame un café" })]));
+    cafe.appendChild(el("p", { class: "muted", text: "Un cafecito ayuda a seguir agregando preguntas y mejoras. Por SINPE o PayPal, lo que te quede mejor." }));
+    frag.appendChild(cafe);
+
+    frag.appendChild(el("p", { class: "muted apoyo-foot", text: "Hecho con cariño para la comunidad estudiantil. ¡Mucho éxito en tu examen!" }));
+    return frag;
   }
 
   var SIM_SLOTS = 7;

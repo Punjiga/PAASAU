@@ -40,7 +40,7 @@ window.PAA_CONFIG = {
   /* ---- Reglas de practica ---- */
   practiceCounts: [5, 10, 25, 30],
   practiceCountMax: 60,
-  guestQuestionRatio: 0.2,   // invitados ven ~20% del banco (muestra)
+  guestQuestionRatio: 0.12,  // invitados ven solo una muestra pequeña
   dailyQuizSize: 8,
   secondsPerItem: 147,
   minMinutesForStreak: 0

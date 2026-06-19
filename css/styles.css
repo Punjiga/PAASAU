@@ -855,3 +855,20 @@ input { font-family: inherit; }
   .sim-bar { flex-wrap: wrap; }
   .sim-bar .timer-bar { order: 3; width: 100%; justify-content: center; margin-top: 8px; }
 }
+
+/* ============================================================
+   PAASAU v5 — apoyo / donaciones, CTA de apoyo
+   ============================================================ */
+a.btn { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+
+.support-card { text-align: center; }
+.support-h { display: flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font-display); font-weight: 700; font-size: 17px; margin-bottom: 4px; }
+.support-emoji { font-size: 20px; }
+.support-big { font-family: var(--font-mono); font-size: 27px; font-weight: 700; color: var(--brand); letter-spacing: 1px; margin: 8px 0 14px; }
+.support-card p { line-height: 1.5; margin-bottom: 12px; }
+.apoyo-intro { font-size: 15px; line-height: 1.6; }
+.apoyo-foot { text-align: center; font-size: 13px; margin-top: 8px; }
+
+.support-cta { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.support-cta-info { flex: 1; min-width: 170px; }
+.support-cta .btn { flex: none; }
