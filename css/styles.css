@@ -826,3 +826,32 @@ input { font-family: inherit; }
 .login-form #login-btn { margin-top: 12px; }
 .login-divider { margin: 20px 0 8px; }
 .login-note { margin-top: 10px; line-height: 1.5; }
+
+/* ============================================================
+   PAASAU v4 — relojes claros y etiquetados (pregunta + total)
+   ============================================================ */
+.timer-bar { display: flex; gap: 8px; flex: none; }
+.tmr {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: 999px; padding: 5px 13px 5px 10px;
+}
+.tmr-dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.tmr-q .tmr-dot { background: var(--brand); }
+.tmr-tot .tmr-dot { background: var(--gold); }
+.tmr-info { display: flex; flex-direction: column; line-height: 1.05; }
+.tmr-lbl { font-size: 9px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); }
+.tmr-time { font-family: var(--font-mono); font-weight: 700; font-size: 14.5px; color: var(--text); }
+.tmr.danger .tmr-time { color: var(--danger); }
+.tmr.danger .tmr-dot { background: var(--danger); animation: pulse 1s infinite; }
+
+.timer-hint { font-size: 12px; margin-top: 8px; line-height: 1.45; }
+
+/* En pantallas chicas, los relojes pasan a una fila completa debajo del título */
+@media (max-width: 560px) {
+  .quiz-head { flex-wrap: wrap; }
+  .quiz-head-mid { flex: 1 1 auto; }
+  .timer-bar { order: 3; width: 100%; justify-content: center; margin-top: 8px; }
+  .sim-bar { flex-wrap: wrap; }
+  .sim-bar .timer-bar { order: 3; width: 100%; justify-content: center; margin-top: 8px; }
+}

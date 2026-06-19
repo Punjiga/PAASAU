@@ -74,6 +74,15 @@
     return h + " h " + (rem ? rem + " min" : "");
   }
 
+  // Reloj con etiqueta (puntito de color + nombre + tiempo). set(seg, peligro).
+  function makeTimerChip(label, cls) {
+    var box = el("div", { class: "tmr " + cls });
+    box.appendChild(el("span", { class: "tmr-dot" }));
+    var t = el("span", { class: "tmr-time", text: fmtClock(0) });
+    box.appendChild(el("div", { class: "tmr-info" }, [el("span", { class: "tmr-lbl", text: label }), t]));
+    return { el: box, set: function (sec, danger) { t.textContent = fmtClock(Math.max(0, sec)); box.classList.toggle("danger", !!danger); } };
+  }
+
   /* Iconos (SVG en línea, estilo lineal) */
   function icon(name) {
     var p = {
@@ -696,9 +705,10 @@
     }, el("span", { class: "switch-knob" }));
     timeRow.appendChild(tsw);
     timeRow.appendChild(el("span", { class: "switch-text", text: libreSel.timed
-      ? ("Con tiempo · " + estMin + " min (ritmo del examen)")
-      : "Sin límite de tiempo" }));
+      ? ("Modo examen: termina al acabarse (~" + estMin + " min)")
+      : "Sin límite (los relojes son solo guía)" }));
     card.appendChild(timeRow);
+    card.appendChild(el("div", { class: "muted timer-hint", text: "Siempre verás dos relojes: el de la pregunta actual y el total, al ritmo del examen (~2:27 por pregunta)." }));
 
     // Empezar
     var startBtn = el("button", {
@@ -713,7 +723,7 @@
         practiceQuiz(qs, {
           title: "Práctica libre", subtitle: label,
           focusTopic: libreSel.topic ? TOPIC_BY_ID[libreSel.topic] : null,
-          timeLimitSec: libreSel.timed ? n * perItem : 0
+          enforce: libreSel.timed
         });
       }
     }, [icon("play"), el("span", { text: "Empezar práctica" + (libreSel.timed ? " (" + estMin + " min)" : "") })]);
@@ -897,9 +907,10 @@
     var questions = prepare(rawQuestions);   // opciones mezcladas (anti-sesgo)
     var idx = 0, correct = 0, answered = false;
     var missed = {};                          // topicId -> # de fallos
-    var timed = (opts.timeLimitSec || 0) > 0;
-    var timeLeft = opts.timeLimitSec || 0;
-    var elapsed = 0;
+    var perQ = CFG.secondsPerItem || 147;     // ritmo del examen 2026 (~2:27 por pregunta)
+    var enforce = !!opts.enforce;             // modo examen: termina al llegar a 0
+    var qLeft = perQ;                         // tiempo restante de la pregunta actual
+    var totLeft = questions.length * perQ;    // tiempo restante de toda la sesión
     var paused = false;
     var clock = null;
 
@@ -912,8 +923,9 @@
       el("div", { class: "quiz-title", text: opts.title || "Práctica" }),
       opts.subtitle ? el("div", { class: "quiz-sub muted", text: opts.subtitle }) : null
     ]));
-    var clockEl = el("div", { class: "quiz-timer" + (timed ? "" : " up"), id: "quiz-timer" }, [icon("clock"), el("span", { text: fmtClock(timed ? timeLeft : 0) })]);
-    head.appendChild(clockEl);
+    var qT = makeTimerChip("Pregunta", "tmr-q");
+    var totT = makeTimerChip("Total", "tmr-tot");
+    head.appendChild(el("div", { class: "timer-bar" }, [qT.el, totT.el]));
     var pauseBtn = el("button", { class: "icon-btn pause-btn", title: "Pausar / reanudar", onclick: function () { togglePause(); } }, icon("pause"));
     head.appendChild(pauseBtn);
     root.appendChild(head);
@@ -937,19 +949,16 @@
     root.appendChild(pauseOverlay);
 
     mount(root, false);
+    qT.set(qLeft); totT.set(totLeft);
     draw();
     Store.Timer.start();
     clock = setInterval(function () {
       if (paused) return;
-      if (timed) {
-        timeLeft--;
-        var sp = clockEl.querySelector("span"); if (sp) sp.textContent = fmtClock(timeLeft);
-        if (timeLeft <= 30) clockEl.classList.add("danger");
-        if (timeLeft <= 0) finish(true);
-      } else {
-        elapsed++;
-        var sp2 = clockEl.querySelector("span"); if (sp2) sp2.textContent = fmtClock(elapsed);
-      }
+      if (!answered && qLeft > 0) qLeft--;   // la pregunta solo corre hasta que respondés
+      if (totLeft > 0) totLeft--;
+      qT.set(qLeft, qLeft <= 15);
+      totT.set(totLeft, totLeft <= 60);
+      if (totLeft <= 0 && enforce) finish(true);
     }, 1000);
 
     function togglePause() {
@@ -963,6 +972,7 @@
 
     function draw() {
       answered = false;
+      qLeft = perQ; qT.set(qLeft);   // reinicia el reloj de la pregunta actual
       var q = questions[idx];
       progFill.style.width = (100 * idx / questions.length) + "%";
       counter.textContent = "Pregunta " + (idx + 1) + " de " + questions.length;
@@ -1158,8 +1168,12 @@
 
     var bar = el("div", { class: "sim-bar" });
     bar.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: leave }, icon("back")));
-    var timerEl = el("div", { class: "sim-timer", id: "sim-timer", text: fmtClock(remaining) });
-    bar.appendChild(timerEl);
+    var perQ = CFG.secondsPerItem || 147;
+    var qLeft = perQ;
+    var simQT = makeTimerChip("Pregunta", "tmr-q");
+    var simTotT = makeTimerChip("Total examen", "tmr-tot");
+    simQT.set(qLeft); simTotT.set(remaining);
+    bar.appendChild(el("div", { class: "timer-bar" }, [simQT.el, simTotT.el]));
     var progTxt = el("div", { class: "sim-progtxt", id: "sim-progtxt" });
     bar.appendChild(progTxt);
     root.appendChild(bar);
@@ -1196,13 +1210,15 @@
     drawQ();
     timer = setInterval(function () {
       remaining--;
-      document.getElementById("sim-timer").textContent = fmtClock(remaining);
-      if (remaining <= 60) document.getElementById("sim-timer").classList.add("danger");
+      if (qLeft > 0) qLeft--;
+      simQT.set(qLeft, qLeft <= 15);
+      simTotT.set(remaining, remaining <= 60);
       if (remaining <= 0) { doFinish(true); }
     }, 1000);
 
     function drawQ() {
       var q = questions[idx];
+      qLeft = perQ; simQT.set(qLeft);   // reinicia el reloj de la pregunta
       document.getElementById("sim-progtxt").textContent = (idx + 1) + " / " + questions.length;
       qbox.innerHTML = "";
       qbox.appendChild(el("div", { class: "sim-qnum muted", text: "Pregunta " + (idx + 1) }));
