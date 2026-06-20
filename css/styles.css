@@ -905,3 +905,12 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; justif
 .db-verbal { background: rgba(199,146,234,.16); color: var(--verbal); border: 1px solid rgba(199,146,234,.45); }
 .db-math { background: rgba(77,163,255,.16); color: var(--math); border: 1px solid rgba(77,163,255,.45); }
 .sim-qbox .q-tags { margin-bottom: 8px; }
+
+/* ============================================================
+   PAASAU v7 — figuras en preguntas + aviso TEC
+   ============================================================ */
+.q-fig { margin: 6px 0 16px; padding: 16px; background: var(--ink); border: 1px solid var(--line); border-radius: var(--r-md); display: flex; justify-content: center; }
+.q-fig svg { width: 100%; max-width: 260px; height: auto; color: var(--text); }
+
+.tec-note { display: flex; align-items: flex-start; gap: 12px; border: 1px dashed var(--line); }
+.tec-emoji { font-size: 24px; flex: none; line-height: 1.2; }

@@ -514,6 +514,15 @@
     supportCta.appendChild(el("button", { class: "btn btn-soft", onclick: function () { go("apoyo"); } }, [icon("heart"), el("span", { text: "Cómo apoyar" })]));
     frag.appendChild(supportCta);
 
+    // Aviso TEC
+    var tecNote = el("div", { class: "card tec-note" });
+    tecNote.appendChild(el("div", { class: "tec-emoji", text: "🛠️" }));
+    tecNote.appendChild(el("div", {}, [
+      el("div", { class: "card-title", text: "¿Vas para el TEC?" }),
+      el("div", { class: "muted", text: "PAASAU está enfocado en la PAA (UCR y UNA). El examen del TEC es distinto; pronto haremos algo más enfocado para el TEC. Mientras tanto, practicar razonamiento verbal y matemático acá igual te ayuda muchísimo." })
+    ]));
+    frag.appendChild(tecNote);
+
     // Puntos débiles (recomendación persistente de estudio)
     var weakCard = weakTopicsCard();
     if (weakCard) frag.appendChild(weakCard);
@@ -1057,6 +1066,7 @@
 
       if (q.stem) body.appendChild(el("p", { class: "q-stem", text: q.stem }));
       body.appendChild(el("p", { class: "q-text", text: q.q }));
+      if (q.fig) { var figEl = el("div", { class: "q-fig" }); figEl.innerHTML = q.fig; body.appendChild(figEl); }
 
       var opts2 = el("div", { class: "opts" });
       var letters = ["A", "B", "C", "D"];
@@ -1305,6 +1315,7 @@
       qbox.appendChild(el("div", { class: "sim-qnum muted", text: "Pregunta " + (idx + 1) }));
       if (q.stem) qbox.appendChild(el("p", { class: "q-stem", text: q.stem }));
       qbox.appendChild(el("p", { class: "q-text", text: q.q }));
+      if (q.fig) { var simFig = el("div", { class: "q-fig" }); simFig.innerHTML = q.fig; qbox.appendChild(simFig); }
       var opts = el("div", { class: "opts" });
       var letters = ["A", "B", "C", "D"];
       q.opts.forEach(function (txt, i) {
