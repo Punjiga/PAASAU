@@ -105,7 +105,9 @@
       target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
       bookmark: '<path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/>',
       pause: '<rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/>',
-      heart: '<path d="M12 21s-7-4.6-9.4-8.4A5 5 0 0 1 12 6.5 5 5 0 0 1 21.4 12.6C19 16.4 12 21 12 21z"/>'
+      heart: '<path d="M12 21s-7-4.6-9.4-8.4A5 5 0 0 1 12 6.5 5 5 0 0 1 21.4 12.6C19 16.4 12 21 12 21z"/>',
+      consejos: '<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.8 10.6c.5.4.8 1 .8 1.6v.8h6v-.8c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3z"/>',
+      tablas: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>'
     };
     var svg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" ' +
       'stroke-linecap="round" stroke-linejoin="round">' + (p[name] || "") + "</svg>";
@@ -275,7 +277,9 @@
     { id: "inicio", label: "Inicio", render: renderInicio },
     { id: "diaria", label: "Práctica diaria", render: renderDiaria },
     { id: "libre", label: "Práctica libre", render: renderLibre },
+    { id: "tablas", label: "Tablas", render: renderTablas },
     { id: "temas", label: "Temas", render: renderTemas },
+    { id: "consejos", label: "Consejos", render: renderConsejos },
     { id: "simulacros", label: "Simulacros", render: renderSimulacros },
     { id: "progreso", label: "Progreso", render: renderProgreso },
     { id: "ajustes", label: "Ajustes", render: renderAjustes },
@@ -855,9 +859,9 @@
 
     var sinpe = el("div", { class: "card support-card" });
     sinpe.appendChild(el("div", { class: "support-h" }, [el("span", { class: "support-emoji", text: "📱" }), el("span", { text: "SINPE Móvil" })]));
-    sinpe.appendChild(el("div", { class: "support-big", text: "8986268" }));
+    sinpe.appendChild(el("div", { class: "support-big", text: "89862668" }));
     sinpe.appendChild(el("button", { class: "btn btn-soft btn-sm", onclick: function () {
-      try { navigator.clipboard.writeText("8986268"); toast("Número copiado"); } catch (e) { toast("SINPE: 8986268"); }
+      try { navigator.clipboard.writeText("89862668"); toast("Número copiado"); } catch (e) { toast("SINPE: 89862668"); }
     } }, "Copiar número"));
     frag.appendChild(sinpe);
 
@@ -1501,6 +1505,161 @@
       wrap.appendChild(cell);
     }
     return wrap;
+  }
+
+  /* ============================================================
+     VISTA · CONSEJOS
+     ============================================================ */
+  function renderConsejos() {
+    var secciones = [
+      { t: "Estrategia general", e: "\ud83c\udfaf", items: [
+        "Leé primero la pregunta y después el texto: así sabés qué buscar.",
+        "Si una pregunta te traba, marcá tu mejor opción y seguí; no pierdas minutos en una sola.",
+        "Eliminá las opciones claramente falsas: muchas veces quedás entre dos y subís tus chances.",
+        "Nunca dejés un ítem en blanco: la PAA no penaliza adivinar, así que siempre respondé algo."
+      ] },
+      { t: "Manejo del tiempo", e: "\u23f1\ufe0f", items: [
+        "Son 45 ítems en 110 minutos: tenés cerca de 2 minutos por pregunta.",
+        "Primera vuelta: respondé lo fácil. Dejá lo difícil para una segunda pasada.",
+        "Guardá unos 5 minutos al final para revisar y rellenar lo que falte."
+      ] },
+      { t: "Razonamiento verbal", e: "\ud83d\udcd6", items: [
+        "La respuesta está en el texto, no en lo que ya sabés del tema.",
+        "Desconfiá de opciones con 'siempre', 'nunca' o 'todos', salvo que el texto lo diga.",
+        "Para la idea principal, buscá lo que cubre todo el texto, no un detalle.",
+        "En paráfrasis, la correcta dice lo mismo con otras palabras, sin exagerar ni invertir."
+      ] },
+      { t: "Razonamiento matemático", e: "\ud83d\udd22", items: [
+        "No necesitás fórmulas avanzadas: es lógica de hasta noveno año.",
+        "Estimá antes de calcular: a veces descartás opciones imposibles de una.",
+        "Cuidá las unidades (min/horas, cm/m) y el orden de operaciones.",
+        "Hacé un dibujo o una tabla rápida para geometría, conteo o lógica.",
+        "En sucesiones, mirá la diferencia entre términos; si no, probá multiplicar."
+      ] },
+      { t: "El día del examen", e: "\ud83d\udcdd", items: [
+        "Dormí bien la noche anterior: un cerebro descansado rinde más.",
+        "Llevá tu identificación física vigente, lápiz de grafito 2B y borrador.",
+        "Desayuná algo y llegá temprano para evitar el estrés de última hora.",
+        "Rellená bien el círculo y revisá que el número de pregunta coincida con la hoja."
+      ] },
+      { t: "Nervios y mente", e: "\ud83e\uddd8", items: [
+        "Respirá hondo: 4 segundos inhalando, 4 exhalando. Baja los nervios rápido.",
+        "Una pregunta a la vez; no pienses en las 44 restantes.",
+        "No te compares con quien termina antes: rápido no es lo mismo que correcto."
+      ] }
+    ];
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Consejos", "Trucos reales para rendir mejor en la PAA. Cortos y al grano."));
+    secciones.forEach(function (sec) {
+      var card = el("div", { class: "card tips-card" });
+      card.appendChild(el("div", { class: "tips-h" }, [el("span", { class: "tips-emoji", text: sec.e }), el("span", { text: sec.t })]));
+      var ul = el("ul", { class: "tips-list" });
+      sec.items.forEach(function (it) { ul.appendChild(el("li", { text: it })); });
+      card.appendChild(ul);
+      frag.appendChild(card);
+    });
+    return frag;
+  }
+
+  /* ============================================================
+     VISTA · TABLAS DE MULTIPLICAR
+     ============================================================ */
+  var tablaSel = 2;
+  function renderTablas() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Tablas de multiplicar", "Practicá del 2 al 10 con un reto rápido. ¡Mejorá tu cálculo mental para la parte de matemática!"));
+    var card = el("div", { class: "card" });
+    card.appendChild(el("label", { class: "field-label", text: "Elegí qué practicar" }));
+    var grid = el("div", { class: "tabla-grid" });
+    [2, 3, 4, 5, 6, 7, 8, 9, 10, 0].forEach(function (nn) {
+      var b = el("button", { class: "tabla-btn" + (tablaSel === nn ? " active" : ""), onclick: function () { tablaSel = nn; Sound.click(); mount(renderTablas(), true); } }, nn === 0 ? "Mezcla" : ("Tabla del " + nn));
+      grid.appendChild(b);
+    });
+    card.appendChild(grid);
+    card.appendChild(el("button", { class: "btn btn-cta", style: "margin-top:16px", onclick: function () { startTablas(tablaSel); } }, [icon("play"), el("span", { text: "Empezar reto (10 preguntas)" })]));
+    frag.appendChild(card);
+    var tip = el("div", { class: "card" });
+    tip.appendChild(el("div", { class: "muted", text: "Dominar las tablas te hace mucho más rápido en el examen. La del 1 no la incluimos porque ya te la sabés. ¡Apuntá a responder sin pensar!" }));
+    frag.appendChild(tip);
+    return frag;
+  }
+
+  function startTablas(tabla) {
+    Sound.click();
+    var N = 10, idx = 0, correct = 0, streak = 0, best = 0, answered = false;
+    var qs = [];
+    for (var i = 0; i < N; i++) {
+      var a = tabla === 0 ? (2 + Math.floor(Math.random() * 9)) : tabla;
+      var b = 2 + Math.floor(Math.random() * 9);
+      qs.push([a, b]);
+    }
+    var root = el("div", { class: "quiz" });
+    var head = el("div", { class: "quiz-head" });
+    head.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: function () { go("tablas"); } }, icon("back")));
+    head.appendChild(el("div", { class: "quiz-head-mid" }, [
+      el("div", { class: "quiz-title", text: "Reto de tablas" }),
+      el("div", { class: "quiz-sub muted", text: tabla === 0 ? "Mezcla (2 al 10)" : ("Tabla del " + tabla) })
+    ]));
+    head.appendChild(el("div", { class: "tmr tmr-q" }, [el("span", { class: "tmr-dot" }), el("div", { class: "tmr-info" }, [el("span", { class: "tmr-lbl", text: "Racha" }), el("span", { class: "tmr-time", id: "tabla-streak", text: "0" })])]));
+    root.appendChild(head);
+    var prog = el("div", { class: "progress" }); var progFill = el("div", { class: "progress-fill" }); prog.appendChild(progFill); root.appendChild(prog);
+    var counter = el("div", { class: "quiz-counter muted" }); root.appendChild(counter);
+    var body = el("div", { class: "quiz-body" }); root.appendChild(body);
+    mount(root, false);
+    draw();
+
+    function draw() {
+      answered = false;
+      var a = qs[idx][0], b = qs[idx][1], ans = a * b;
+      progFill.style.width = (100 * idx / N) + "%";
+      counter.textContent = "Pregunta " + (idx + 1) + " de " + N;
+      document.getElementById("tabla-streak").textContent = String(streak);
+      body.innerHTML = "";
+      body.appendChild(el("div", { class: "tabla-q", text: a + " \u00d7 " + b }));
+      var seen = {}; seen[ans] = true; var options = [ans];
+      while (options.length < 4) {
+        var d = ans + (Math.floor(Math.random() * 11) - 5);
+        if (d > 0 && !seen[d]) { seen[d] = true; options.push(d); }
+      }
+      options = shuffle(options);
+      var opts2 = el("div", { class: "opts opts-grid" });
+      options.forEach(function (val) {
+        var bn = el("button", { class: "opt opt-center", onclick: function () { choose(val, bn, opts2, ans); } }, String(val));
+        opts2.appendChild(bn);
+      });
+      body.appendChild(opts2);
+    }
+
+    function choose(val, btn, container, ans) {
+      if (answered) return; answered = true;
+      var ok = val === ans;
+      if (ok) { correct++; streak++; if (streak > best) best = streak; Sound.correct(); btn.classList.add("correct"); }
+      else {
+        streak = 0; Sound.wrong(); btn.classList.add("wrong");
+        container.querySelectorAll(".opt").forEach(function (b2) { if (b2.textContent === String(ans)) b2.classList.add("correct"); });
+      }
+      document.getElementById("tabla-streak").textContent = String(streak);
+      container.querySelectorAll(".opt").forEach(function (b2) { b2.disabled = true; });
+      setTimeout(function () { if (idx < N - 1) { idx++; draw(); } else finish(); }, ok ? 450 : 900);
+    }
+
+    function finish() {
+      progFill.style.width = "100%";
+      Store.markStudiedToday(); schedulePush();
+      var pct = Math.round(100 * correct / N);
+      var res = el("div", { class: "result" });
+      res.appendChild(el("div", { class: "result-eyebrow muted", text: "Reto de tablas" }));
+      res.appendChild(el("div", { class: "result-big", text: correct + " / " + N }));
+      res.appendChild(el("div", { class: "result-pct", text: "Mejor racha: " + best }));
+      var msg = pct >= 90 ? "¡Crack! Tenés las tablas dominadas." : (pct >= 60 ? "¡Bien! Un poco más de práctica y volás." : "Seguí practicando, se mejora rapidísimo.");
+      res.appendChild(el("p", { class: "result-msg muted", text: msg }));
+      var acts = el("div", { class: "result-actions" });
+      acts.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go("tablas"); } }, "Volver"));
+      acts.appendChild(el("button", { class: "btn btn-cta", onclick: function () { startTablas(tabla); } }, "Otra vez"));
+      res.appendChild(acts);
+      body.innerHTML = ""; counter.textContent = "Completado"; body.appendChild(res);
+      if (pct >= 60) { Sound.celebrate(); confetti(pct >= 90 ? 110 : 60); }
+    }
   }
 
   /* ============================================================

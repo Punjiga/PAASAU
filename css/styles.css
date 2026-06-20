@@ -872,3 +872,29 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; justif
 .support-cta { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .support-cta-info { flex: 1; min-width: 170px; }
 .support-cta .btn { flex: none; }
+
+/* ============================================================
+   PAASAU v6 — Consejos y Tablas de multiplicar
+   ============================================================ */
+/* Consejos */
+.tips-card .tips-h { display: flex; align-items: center; gap: 9px; font-family: var(--font-display); font-weight: 700; font-size: 16.5px; margin-bottom: 10px; }
+.tips-emoji { font-size: 19px; }
+.tips-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.tips-list li { position: relative; padding-left: 22px; font-size: 14.5px; line-height: 1.5; color: #cdd9de; }
+.tips-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--brand); font-weight: 700; }
+
+/* Tablas */
+.tabla-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.tabla-btn { padding: 10px 14px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--text); font-weight: 600; font-size: 14px; transition: all .15s; }
+.tabla-btn:hover { border-color: var(--brand); }
+.tabla-btn.active { background: rgba(46,230,166,.14); border-color: var(--brand); color: var(--brand); }
+.tabla-q { font-family: var(--font-display); font-size: 46px; font-weight: 700; text-align: center; margin: 22px 0 24px; letter-spacing: 1px; }
+.opts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+.opt-center { justify-content: center; font-size: 21px; font-weight: 700; font-family: var(--font-mono); }
+
+/* Menú inferior (móvil) con scroll horizontal cuando hay muchas secciones */
+@media (max-width: 900px) {
+  .nav-mobile { overflow-x: auto; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
+  .nav-mobile::-webkit-scrollbar { display: none; }
+  .nav-mobile .nav-item { flex: 0 0 auto; min-width: 62px; }
+}
