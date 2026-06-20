@@ -966,6 +966,7 @@
     var questions = prepare(rawQuestions);   // opciones mezcladas (anti-sesgo)
     var idx = 0, correct = 0, answered = false;
     var missed = {};                          // topicId -> # de fallos
+    var perDom = { verbal: { c: 0, t: 0 }, math: { c: 0, t: 0 } };
     var perQ = CFG.secondsPerItem || 147;     // ritmo del examen 2026 (~2:27 por pregunta)
     var enforce = !!opts.enforce;             // modo examen: termina al llegar a 0
     var qLeft = perQ;                         // tiempo restante de la pregunta actual
@@ -1039,7 +1040,10 @@
 
       var topRow = el("div", { class: "q-toprow" });
       var topic = TOPIC_BY_ID[q.topic];
-      topRow.appendChild(el("span", { class: "pill pill-" + q.domain, text: topic ? topic.name : DOMAINS[q.domain].short }));
+      var tags = el("div", { class: "q-tags" });
+      tags.appendChild(el("span", { class: "domain-badge db-" + q.domain }, DOMAINS[q.domain].short));
+      if (topic) tags.appendChild(el("span", { class: "pill pill-" + q.domain, text: topic.name }));
+      topRow.appendChild(tags);
       var savedNow = Store.isSaved(q.id);
       var saveBtn = el("button", { class: "save-btn" + (savedNow ? " on" : ""), title: "Guardar para repasar" }, [icon("bookmark"), el("span", { text: savedNow ? "Guardada" : "Guardar" })]);
       saveBtn.addEventListener("click", function () {
@@ -1076,6 +1080,7 @@
       var isRight = i === q.ans;
       if (isRight) { correct++; Sound.correct(); }
       else { Sound.wrong(); missed[q.topic] = (missed[q.topic] || 0) + 1; }
+      perDom[q.domain].t++; if (isRight) perDom[q.domain].c++;
       Store.recordAnswer(q.topic, isRight);
 
       var letters = ["A", "B", "C", "D"];
@@ -1126,6 +1131,19 @@
       res.appendChild(el("div", { class: "result-eyebrow muted", text: byTime ? "Se acabó el tiempo · Resultado" : "Resultado" }));
       res.appendChild(el("div", { class: "result-big", text: correct + " / " + questions.length }));
       res.appendChild(el("div", { class: "result-pct", text: pct + "% de aciertos" }));
+      var br = el("div", { class: "result-break" });
+      ["verbal", "math"].forEach(function (d) {
+        if (!perDom[d].t) return;
+        var dp = Math.round(100 * perDom[d].c / perDom[d].t);
+        var row = el("div", { class: "break-row" });
+        var dot = el("span", { class: "domain-dot" }); dot.style.background = "var(--" + d + ")";
+        row.appendChild(dot);
+        row.appendChild(el("span", { class: "break-name", text: DOMAINS[d].name }));
+        var bar = el("div", { class: "bar bar-thin" }); var fill = el("div", { class: "bar-fill" }); fill.style.width = dp + "%"; fill.style.background = "var(--" + d + ")"; bar.appendChild(fill); row.appendChild(bar);
+        row.appendChild(el("span", { class: "break-pct", text: perDom[d].c + "/" + perDom[d].t }));
+        br.appendChild(row);
+      });
+      res.appendChild(br);
 
       var msg = pct >= 80 ? "¡Excelente! Dominás bien este contenido."
         : pct >= 60 ? "Buen trabajo. Un poco más de práctica y lo tenés."
@@ -1280,6 +1298,10 @@
       qLeft = perQ; simQT.set(qLeft);   // reinicia el reloj de la pregunta
       document.getElementById("sim-progtxt").textContent = (idx + 1) + " / " + questions.length;
       qbox.innerHTML = "";
+      var simTags = el("div", { class: "q-tags" });
+      simTags.appendChild(el("span", { class: "domain-badge db-" + q.domain }, DOMAINS[q.domain].short));
+      if (TOPIC_BY_ID[q.topic]) simTags.appendChild(el("span", { class: "pill pill-" + q.domain, text: TOPIC_BY_ID[q.topic].name }));
+      qbox.appendChild(simTags);
       qbox.appendChild(el("div", { class: "sim-qnum muted", text: "Pregunta " + (idx + 1) }));
       if (q.stem) qbox.appendChild(el("p", { class: "q-stem", text: q.stem }));
       qbox.appendChild(el("p", { class: "q-text", text: q.q }));
