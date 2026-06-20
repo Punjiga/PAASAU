@@ -264,31 +264,15 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:0, exp:"El texto usa las tres lenguas como muestra de la diversidad cultural y lingüística del país." },
 
   /* -- Paráfrasis -- */
-  { id:"v_par_4", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"Quien mucho abarca, poco aprieta.",
-    q:"¿Cuál opción expresa la misma idea con otras palabras?",
-    opts:["Querer hacer demasiado a la vez impide hacerlo bien","Hay que trabajar mucho siempre","Apretar las cosas es difícil","Nunca conviene intentar nada"],
-    ans:0, exp:"El refrán dice que intentar demasiado a la vez impide lograrlo bien: eso reformula la opción correcta." },
-  { id:"v_par_5", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"El esfuerzo de hoy es la recompensa de mañana.",
-    q:"¿Cuál opción dice lo mismo con otras palabras?",
-    opts:["El trabajo nunca sirve","Lo que se trabaja ahora da frutos después","El mañana no importa","La recompensa llega sin esfuerzo"],
-    ans:1, exp:"La idea es que el esfuerzo presente rinde frutos en el futuro." },
-  { id:"v_par_6", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"No todo lo que brilla es oro.",
-    q:"¿Cuál opción conserva el sentido del texto?",
-    opts:["El oro siempre brilla","Las apariencias pueden engañar","Todo lo brillante es valioso","El oro nunca brilla"],
-    ans:1, exp:"El refrán advierte que la apariencia no garantiza el valor: las apariencias pueden engañar." },
+  { id:"v_par_4", domain:"verbal", topic:"parafrasis", dif:3, stem:"El conocimiento que no se comparte termina por desvanecerse, como el agua estancada se pudre.", q:"¿Cuál opción expresa la misma idea?", opts:["El conocimiento es inútil","El saber se mantiene vivo cuando se comparte","El agua estancada es saludable","Compartir es una pérdida de tiempo"], ans:1, exp:"La comparación sugiere que el saber, como el agua, se echa a perder si no circula: se mantiene vivo al compartirlo." },
+  { id:"v_par_5", domain:"verbal", topic:"parafrasis", dif:2, stem:"La crítica, cuando es honesta, no busca herir, sino ayudar a mejorar.", q:"¿Cuál opción conserva el sentido?", opts:["Toda crítica busca herir","Una crítica honesta tiene la intención de ayudar","Hay que evitar toda crítica","Mejorar es imposible"], ans:1, exp:"El texto distingue la crítica honesta: su fin no es herir, sino ayudar a mejorar." },
+  { id:"v_par_6", domain:"verbal", topic:"parafrasis", dif:3, stem:"El hecho de que algo sea muy popular no garantiza que sea bueno.", q:"¿Cuál opción dice lo mismo con otras palabras?", opts:["Lo popular siempre es bueno","La popularidad no asegura la calidad","Nada bueno llega a ser popular","Hay que seguir siempre a la mayoría"], ans:1, exp:"Que algo sea popular no implica que sea bueno: la popularidad no garantiza calidad." },
   { id:"v_par_7", domain:"verbal", topic:"parafrasis", dif:3,
     stem:"La libertad de uno termina donde empieza la del otro.",
     q:"¿Cuál opción expresa la misma idea?",
     opts:["Nadie es realmente libre","La libertad propia tiene como límite la de los demás","La libertad no tiene ningún límite","Solo una persona puede ser libre"],
     ans:1, exp:"La frase dice que mi libertad llega hasta donde empieza la del otro: tiene como límite la libertad ajena." },
-  { id:"v_par_8", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"Más vale prevenir que lamentar.",
-    q:"¿Cuál opción reproduce la idea del texto?",
-    opts:["Lamentarse es lo más útil","Es mejor tomar precauciones a tiempo que sufrir después","Nunca pasa nada malo","Prevenir es imposible"],
-    ans:1, exp:"El refrán recomienda anticiparse: precaver a tiempo es preferible a lamentar luego." },
+  { id:"v_par_8", domain:"verbal", topic:"parafrasis", dif:3, stem:"Quien ignora los pequeños problemas de hoy suele enfrentarse a grandes problemas mañana.", q:"¿Cuál opción reproduce la idea?", opts:["Los problemas pequeños no importan","Descuidar lo pequeño hoy trae problemas mayores después","Mañana no existirán los problemas","Lo mejor es ignorar todo"], ans:1, exp:"El texto advierte que descuidar lo pequeño hoy lleva a problemas grandes después." },
 
   /* -- Proposiciones -- */
   { id:"v_pro_4", domain:"verbal", topic:"proposiciones", dif:3,
@@ -325,11 +309,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuánto recibe de vuelto?",
     opts:["₡600","₡700","₡800","₡900"],
     ans:1, exp:"3·2 500 = 7 500 y 2·900 = 1 800; total 9 300. Vuelto: 10 000 − 9 300 = 700." },
-  { id:"m_ari_7", domain:"math", topic:"aritmetica", dif:2,
-    stem:"Considere la operación: 2/3 + 1/6 − 1/2.",
-    q:"¿Cuál es el resultado?",
-    opts:["1/2","1/4","1/3","2/3"],
-    ans:2, exp:"Con común denominador 6: 4/6 + 1/6 − 3/6 = 2/6 = 1/3." },
+  { id:"m_ari_7", domain:"math", topic:"aritmetica", dif:3, stem:"Considere la operación con fracciones: 3/4 − 2/3 + 1/2.", q:"¿Cuál es el resultado?", opts:["7/12","1/12","5/12","2/3"], ans:0, exp:"Con común denominador 12: 9/12 − 8/12 + 6/12 = 7/12." },
   { id:"m_ari_8", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación: 5 + 2 × (8 − 3)² ÷ 5.", q:"¿Cuál es el resultado?", opts:["15","27","20","11"], ans:0, exp:"Primero el paréntesis: 8 − 3 = 5; al cuadrado: 25. Luego 2 × 25 = 50; 50 ÷ 5 = 10; 5 + 10 = 15." },
   { id:"m_ari_9", domain:"math", topic:"aritmetica", dif:2,
     stem:"En una finca hay 240 árboles y 3/8 de ellos son de naranja.",
@@ -361,16 +341,8 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Quién va de último en la fila?",
     opts:["Marta","Luis","Sara","Pedro"],
     ans:3, exp:"De adelante hacia atrás: Marta, Luis, Sara, Pedro. El último es Pedro." },
-  { id:"m_rel_5", domain:"math", topic:"relaciones_orden", dif:2,
-    stem:"Se sabe que x > y, que y > z y que z = 5.",
-    q:"¿Cuál afirmación es siempre verdadera?",
-    opts:["y es menor que 5","x es mayor que 5","z es el mayor","x es igual a y"],
-    ans:1, exp:"Como x > y > z = 5, entonces x > 5. (y también es > 5, pero la opción dice 'menor', que es falsa.)" },
-  { id:"m_rel_6", domain:"math", topic:"relaciones_orden", dif:2,
-    stem:"Considere los números 0,4 ; 3/8 ; 0,45 ; 1/2.",
-    q:"¿Cuál de ellos es el menor?",
-    opts:["0,4","3/8","0,45","1/2"],
-    ans:1, exp:"En decimales: 0,40 ; 0,375 ; 0,45 ; 0,50. El menor es 3/8 = 0,375." },
+  { id:"m_rel_5", domain:"math", topic:"relaciones_orden", dif:2, stem:"Se sabe que A es mayor que B, B es mayor que C y C es mayor que D.", q:"¿Quién es el menor de todos?", opts:["A","B","C","D"], ans:3, exp:"La cadena es A > B > C > D, así que el menor es D." },
+  { id:"m_rel_6", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,4 ; 0,47 ; 0,6 ; 0,55.", q:"¿Cuál está más cerca de 1/2?", opts:["0,4","0,47","0,6","0,55"], ans:1, exp:"1/2 = 0,50. Distancias: 0,10 ; 0,03 ; 0,10 ; 0,05. La menor es 0,03, o sea 0,47." },
   { id:"m_rel_7", domain:"math", topic:"relaciones_orden", dif:3,
     stem:"De tres cajas, A pesa más que B, y C pesa menos que B.",
     q:"¿Cuál afirmación es correcta?",
@@ -378,11 +350,7 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:1, exp:"Como A > B y B > C, el orden es A > B > C. La más pesada es A." },
 
   /* -- Conteo intuitivo -- */
-  { id:"m_cnt_4", domain:"math", topic:"conteo", dif:2,
-    stem:"Un menú ofrece 3 platos fuertes y 4 bebidas.",
-    q:"¿Cuántas combinaciones distintas de un plato y una bebida se pueden armar?",
-    opts:["7","12","9","16"],
-    ans:1, exp:"Por el principio multiplicativo: 3 × 4 = 12 combinaciones." },
+  { id:"m_cnt_4", domain:"math", topic:"conteo", dif:3, stem:"Un restaurante ofrece 3 entradas, 4 platos fuertes y 2 postres.", q:"¿Cuántos menús distintos de entrada, plato fuerte y postre se pueden armar?", opts:["24","9","12","14"], ans:0, exp:"Principio multiplicativo: 3 × 4 × 2 = 24 menús." },
   { id:"m_cnt_5", domain:"math", topic:"conteo", dif:3,
     stem:"En una gaveta, a oscuras, hay 6 medias negras y 8 blancas mezcladas.",
     q:"¿Cuántas medias hay que sacar como mínimo para asegurar un par del mismo color?",
@@ -400,11 +368,7 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:2, exp:"En el peor caso salen las 7 azules antes que rojas; luego se necesitan 2 rojas. Total 7 + 2 = 9." },
 
   /* -- Permutaciones -- */
-  { id:"m_per_4", domain:"math", topic:"permutaciones", dif:2,
-    stem:"Cinco personas se colocan en fila para una foto.",
-    q:"¿De cuántas maneras distintas pueden ordenarse?",
-    opts:["25","60","120","20"],
-    ans:2, exp:"Ordenar 5 elementos distintos: 5! = 5·4·3·2·1 = 120." },
+  { id:"m_per_4", domain:"math", topic:"permutaciones", dif:2, stem:"Se quieren ordenar en fila las 5 letras de la palabra LIBRO (todas distintas).", q:"¿Cuántos ordenamientos distintos hay?", opts:["120","60","25","100"], ans:0, exp:"Ordenar 5 elementos distintos: 5! = 5·4·3·2·1 = 120." },
   { id:"m_per_5", domain:"math", topic:"permutaciones", dif:2,
     stem:"De un grupo de 6 personas se debe elegir un presidente y un secretario (cargos distintos).",
     q:"¿De cuántas formas se pueden elegir?",
@@ -422,11 +386,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuánto mide su altura?",
     opts:["6 cm","5 cm","40 cm","12 cm"],
     ans:0, exp:"Área = base × altura, así que altura = 48 ÷ 8 = 6 cm." },
-  { id:"m_geo_6", domain:"math", topic:"geometria", dif:2,
-    stem:"Un cuadrado tiene un perímetro de 36 cm.",
-    q:"¿Cuál es su área?",
-    opts:["81 cm²","36 cm²","144 cm²","324 cm²"],
-    ans:0, exp:"Lado = 36 ÷ 4 = 9 cm. Área = lado² = 9² = 81 cm²." },
+  { id:"m_geo_6", domain:"math", topic:"geometria", dif:3, stem:"El área de un cuadrado es 49 cm².", q:"¿Cuál es su perímetro?", opts:["28 cm","14 cm","49 cm","21 cm"], ans:0, exp:"Si el área es lado² = 49, el lado es 7 cm. Perímetro = 4 × 7 = 28 cm." },
   { id:"m_geo_7", domain:"math", topic:"geometria", dif:2,
     stem:"Un triángulo tiene un área de 24 cm² y su base mide 6 cm.",
     q:"¿Cuánto mide su altura?",
@@ -439,33 +399,17 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:1, exp:"Área = π·r² = (22/7)·7² = (22/7)·49 = 22·7 = 154 cm²." },
 
   /* -- Sucesiones -- */
-  { id:"m_suc_6", domain:"math", topic:"sucesiones", dif:2,
-    stem:"Observe la sucesión: 3, 6, 12, 24, …",
-    q:"¿Cuál es el siguiente término?",
-    opts:["36","48","30","40"],
-    ans:1, exp:"Cada término se multiplica por 2: 24 × 2 = 48." },
-  { id:"m_suc_7", domain:"math", topic:"sucesiones", dif:2,
-    stem:"Observe la sucesión: 5, 9, 13, 17, …",
-    q:"¿Cuál es el décimo término?",
-    opts:["37","41","45","40"],
-    ans:1, exp:"Es aritmética con d = 4. a₁₀ = 5 + (10−1)·4 = 5 + 36 = 41." },
+  { id:"m_suc_6", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 3, 6, 12, 24, …", q:"¿Cuál es el séptimo término?", opts:["192","96","144","240"], ans:0, exp:"Cada término se multiplica por 2: 3, 6, 12, 24, 48, 96, 192. El séptimo es 192." },
+  { id:"m_suc_7", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 5, 9, 13, 17, …", q:"¿Qué posición ocupa el número 41?", opts:["10","9","11","12"], ans:0, exp:"Es aritmética con d = 4: aₙ = 5 + (n−1)·4. Igualando a 41: (n−1)·4 = 36 → n = 10." },
   { id:"m_suc_8", domain:"math", topic:"sucesiones", dif:3,
     stem:"Observe la sucesión: 1, 2, 4, 7, 11, 16, …",
     q:"¿Cuál es el siguiente número?",
     opts:["20","21","22","23"],
     ans:2, exp:"Las diferencias crecen: +1, +2, +3, +4, +5. El siguiente suma +6: 16 + 6 = 22." },
-  { id:"m_suc_9", domain:"math", topic:"sucesiones", dif:2,
-    stem:"Observe la sucesión: 2, 5, 10, 17, 26, …",
-    q:"¿Cuál es el siguiente número?",
-    opts:["35","36","37","50"],
-    ans:2, exp:"Las diferencias son 3, 5, 7, 9; la siguiente es 11: 26 + 11 = 37. (También n²+1: 6²+1 = 37.)" },
+  { id:"m_suc_9", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 1, 3, 7, 15, 31, …", q:"¿Cuál es el siguiente término?", opts:["63","47","62","51"], ans:0, exp:"Cada término se obtiene multiplicando por 2 y sumando 1: 31 × 2 + 1 = 63." },
 
   /* -- Datos y probabilidad -- */
-  { id:"m_dat_5", domain:"math", topic:"datos_probabilidad", dif:2,
-    stem:"Las notas de un estudiante fueron 7, 8, 6, 9 y 10.",
-    q:"¿Cuál es su promedio?",
-    opts:["7","8","8,5","40"],
-    ans:1, exp:"Promedio = (7+8+6+9+10) ÷ 5 = 40 ÷ 5 = 8." },
+  { id:"m_dat_5", domain:"math", topic:"datos_probabilidad", dif:3, stem:"Un estudiante tiene 7, 8 y 6 en tres exámenes y hará un cuarto.", q:"¿Qué nota necesita en el cuarto para que el promedio de los cuatro sea 7,5?", opts:["9","8","7,5","10"], ans:0, exp:"Para promediar 7,5 la suma debe ser 4 × 7,5 = 30. Lleva 7+8+6 = 21, así que necesita 30 − 21 = 9." },
   { id:"m_dat_6", domain:"math", topic:"datos_probabilidad", dif:2,
     stem:"En una urna hay 3 bolas verdes, 5 rojas y 2 azules. Se saca una al azar.",
     q:"¿Cuál es la probabilidad de que sea azul?",
@@ -496,38 +440,22 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:1, exp:"Primero la suma (x + 3) y luego su cuadrado: (x + 3)². Es distinto de x² + 9." },
 
   /* -- Relaciones algebraicas y paridad -- */
-  { id:"m_alr_4", domain:"math", topic:"algebra_relaciones", dif:2,
-    stem:"Se sabe que 2x − 5 = 11.",
-    q:"¿Cuál es el valor de x?",
-    opts:["3","8","6","16"],
-    ans:1, exp:"2x = 11 + 5 = 16, entonces x = 8." },
+  { id:"m_alr_4", domain:"math", topic:"algebra_relaciones", dif:3, stem:"Se sabe que 3(x − 2) = 18.", q:"¿Cuánto vale x + 5?", opts:["13","8","6","11"], ans:0, exp:"3(x−2)=18 → x−2=6 → x=8. Entonces x+5 = 13." },
   { id:"m_alr_5", domain:"math", topic:"algebra_relaciones", dif:3,
     stem:"Sea n un número entero cualquiera.",
     q:"¿Cuál de las siguientes expresiones representa siempre un número impar?",
     opts:["2n","n + 2","2n + 1","n²"],
     ans:2, exp:"2n es par para todo entero, así que 2n + 1 es siempre impar. Las otras dependen de n." },
-  { id:"m_alr_6", domain:"math", topic:"algebra_relaciones", dif:2,
-    stem:"Se suman dos números impares cualesquiera.",
-    q:"¿Cómo es siempre el resultado?",
-    opts:["Impar","Par","Primo","Igual a cero"],
-    ans:1, exp:"Impar + impar = par (por ejemplo 3 + 5 = 8). Siempre da un número par." },
+  { id:"m_alr_6", domain:"math", topic:"algebra_relaciones", dif:3, stem:"El producto de dos números enteros es par.", q:"¿Qué se puede afirmar con certeza?", opts:["Los dos son impares","Al menos uno de los dos es par","Los dos son pares","Ambos son negativos"], ans:1, exp:"Un producto es par si al menos uno de los factores es par. No tienen que ser los dos pares (par × impar también es par)." },
 
   /* -- Unidades de medida -- */
-  { id:"m_uni_5", domain:"math", topic:"unidades_medida", dif:2,
-    stem:"Considere un tiempo de 2,5 horas.",
-    q:"¿A cuántos minutos equivale?",
-    opts:["120 min","150 min","250 min","145 min"],
-    ans:1, exp:"1 h = 60 min, así que 2,5 h = 2,5 × 60 = 150 min." },
+  { id:"m_uni_5", domain:"math", topic:"unidades_medida", dif:2, stem:"Una película dura 2 horas y 35 minutos.", q:"¿Cuántos minutos dura en total?", opts:["155","235","135","150"], ans:0, exp:"2 horas = 120 minutos; más 35: 120 + 35 = 155 minutos." },
   { id:"m_uni_6", domain:"math", topic:"unidades_medida", dif:3,
     stem:"Un tren viaja a una velocidad constante de 120 km/h.",
     q:"¿Qué distancia recorre en 15 minutos?",
     opts:["30 km","60 km","8 km","20 km"],
     ans:0, exp:"15 min = 1/4 de hora. Distancia = 120 × 1/4 = 30 km." },
-  { id:"m_uni_7", domain:"math", topic:"unidades_medida", dif:2,
-    stem:"Una jarra contiene 3/4 de litro de jugo.",
-    q:"¿A cuántos mililitros equivale?",
-    opts:["75 ml","750 ml","7 500 ml","340 ml"],
-    ans:1, exp:"1 litro = 1 000 ml, entonces 3/4 de litro = 750 ml." },
+  { id:"m_uni_7", domain:"math", topic:"unidades_medida", dif:3, stem:"Una jarra contiene 1,5 litros de jugo y se sirven 3 vasos de 250 ml cada uno.", q:"¿Cuántos mililitros de jugo quedan en la jarra?", opts:["750 ml","1 250 ml","500 ml","250 ml"], ans:0, exp:"1,5 L = 1 500 ml. Se sirven 3 × 250 = 750 ml. Quedan 1 500 − 750 = 750 ml." },
 
   /* -- Razón y proporción -- */
   { id:"m_raz_5", domain:"math", topic:"razon_proporcion", dif:2,
@@ -535,11 +463,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuántos días tardarían 6 obreros en pintar la misma casa?",
     opts:["6 días","13 días","4 días","12 días"],
     ans:0, exp:"Proporción inversa: 4·9 = 36 obrero-días. Con 6 obreros: 36 ÷ 6 = 6 días." },
-  { id:"m_raz_6", domain:"math", topic:"razon_proporcion", dif:2,
-    stem:"Una receta para 4 personas usa 6 huevos.",
-    q:"¿Cuántos huevos se necesitan para 10 personas, manteniendo la proporción?",
-    opts:["12","15","18","20"],
-    ans:1, exp:"6 huevos ÷ 4 personas = 1,5 huevos por persona. Para 10: 1,5 × 10 = 15 huevos." },
+  { id:"m_raz_6", domain:"math", topic:"razon_proporcion", dif:2, stem:"Una receta para 6 porciones usa 450 g de harina.", q:"¿Cuánta harina se necesita para 10 porciones, manteniendo la proporción?", opts:["750 g","600 g","900 g","720 g"], ans:0, exp:"Por porción: 450 ÷ 6 = 75 g. Para 10 porciones: 75 × 10 = 750 g." },
   { id:"m_raz_7", domain:"math", topic:"razon_proporcion", dif:3,
     stem:"Un auto recorre 240 km con 16 litros de gasolina.",
     q:"¿Cuántos litros necesita para recorrer 90 km al mismo rendimiento?",
@@ -656,11 +580,7 @@ window.PAA_QUESTIONS_EXTRA = [
     opts:["Las plantas no necesitan agua","Algo en esa agua les hace daño","El sol las quema","Las plantas están sanas"],
     ans:1, exp:"Si se amarillan al regarlas con esa agua, se infiere que algo en el agua les hace daño." },
   { id:"v_imp_13", domain:"verbal", topic:"idea_implicita", dif:3, stem:"El restaurante abrió hace apenas un mes, pero ya hay que reservar con una semana de anticipación y la fila para entrar sin reserva da vuelta a la esquina.", q:"¿Qué se puede deducir del texto?", opts:["El restaurante va a cerrar pronto","El restaurante se volvió muy popular","La comida es de mala calidad","Nadie quiere ir a ese lugar"], ans:1, exp:"Reservas con una semana y filas largas en tan poco tiempo implican que se volvió muy popular." },
-  { id:"v_imp_14", domain:"verbal", topic:"idea_implicita", dif:2,
-    stem:"Habla tres idiomas y ha vivido en varios países.",
-    q:"¿Cuál es una idea implícita?",
-    opts:["Nunca salió de su ciudad","Ha tenido experiencia internacional","No sabe leer","Odia viajar"],
-    ans:1, exp:"Hablar varios idiomas y vivir en varios países implica experiencia internacional." },
+  { id:"v_imp_14", domain:"verbal", topic:"idea_implicita", dif:3, stem:"Aunque nunca menciona sus logros, su oficina está repleta de diplomas y reconocimientos acumulados durante veinte años de trabajo.", q:"¿Qué se puede deducir del texto?", opts:["No ha logrado nada importante","Tiene una trayectoria destacada, aunque no la presuma","Compró los diplomas","Acaba de empezar a trabajar"], ans:1, exp:"Veinte años de diplomas indican una trayectoria destacada; que no los mencione sugiere que es modesto." },
 
   /* -- Verbal: idea principal -- */
   { id:"v_pri_10", domain:"verbal", topic:"idea_principal", dif:2,
@@ -680,16 +600,8 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:0, exp:"Los tres rasgos apuntan a la importancia del volcán Arenal." },
 
   /* -- Verbal: paráfrasis -- */
-  { id:"v_par_9", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"A palabras necias, oídos sordos.",
-    q:"¿Cuál opción dice lo mismo con otras palabras?",
-    opts:["Hay que responder a todo insulto","Conviene no prestar atención a los comentarios necios","Las palabras siempre lastiman","Hay que hablar mucho"],
-    ans:1, exp:"El refrán aconseja ignorar los comentarios tontos." },
-  { id:"v_par_10", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"El que persevera, alcanza.",
-    q:"¿Cuál opción conserva el sentido?",
-    opts:["Solo importa la suerte","Quien insiste con constancia logra su meta","Rendirse es lo mejor","Nada se consigue"],
-    ans:1, exp:"Perseverar y alcanzar = insistir con constancia para lograr la meta." },
+  { id:"v_par_9", domain:"verbal", topic:"parafrasis", dif:3, stem:"Responder a cada provocación solo le da más fuerza; a veces el mejor gesto es el silencio.", q:"¿Cuál opción expresa la misma idea?", opts:["Hay que responder a toda provocación","A veces callar ante la provocación es lo más sabio","El silencio siempre es cobardía","Provocar a los demás es positivo"], ans:1, exp:"El texto sugiere que reaccionar alimenta la provocación; por eso, a veces callar es lo más sensato." },
+  { id:"v_par_10", domain:"verbal", topic:"parafrasis", dif:3, stem:"Los logros importantes rara vez son fruto del talento solo; casi siempre exigen constancia.", q:"¿Cuál opción conserva el sentido?", opts:["El talento es lo único que importa","La constancia es clave para los grandes logros","Sin talento no se logra nada","El esfuerzo no sirve de nada"], ans:1, exp:"El texto resta protagonismo al talento solo y destaca la constancia como clave de los logros." },
   { id:"v_par_11", domain:"verbal", topic:"parafrasis", dif:3,
     stem:"Roma no se construyó en un día.",
     q:"¿Cuál opción expresa la misma idea?",
@@ -710,11 +622,7 @@ window.PAA_QUESTIONS_EXTRA = [
 
   /* -- Mate: aritmética -- */
   { id:"m_ari_11", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación: 7 × 8 − 6 × 5 + 12 ÷ 4.", q:"¿Cuál es el resultado?", opts:["29","23","56","20"], ans:0, exp:"Primero × y ÷: 7×8=56, 6×5=30, 12÷4=3. Luego 56 − 30 + 3 = 29." },
-  { id:"m_ari_12", domain:"math", topic:"aritmetica", dif:2,
-    stem:"Un café cuesta ₡1 200.",
-    q:"¿Cuánto cuestan 7 cafés?",
-    opts:["₡7 200","₡8 400","₡9 600","₡8 000"],
-    ans:1, exp:"1 200 × 7 = 8 400." },
+  { id:"m_ari_12", domain:"math", topic:"aritmetica", dif:2, stem:"En una soda, un combo cuesta ₡3 200. Una familia pide 4 combos y, además, deja ₡1 000 de propina.", q:"¿Cuánto paga en total?", opts:["₡13 800","₡12 800","₡14 000","₡13 200"], ans:0, exp:"4 × 3 200 = 12 800; más la propina: 12 800 + 1 000 = 13 800." },
   { id:"m_ari_13", domain:"math", topic:"aritmetica", dif:2,
     stem:"Un tanque está a 3/4 de su capacidad y se usa 1/2 del total.",
     q:"¿Qué fracción del tanque queda?",
@@ -729,23 +637,11 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:1, exp:"Coinciden en el MCM(6, 9). 6 = 2·3 y 9 = 3², así que MCM = 2·3² = 18." },
 
   /* -- Mate: relaciones de orden -- */
-  { id:"m_rel_8", domain:"math", topic:"relaciones_orden", dif:2,
-    stem:"Considere los valores 0,5 ; 1/3 ; 0,25.",
-    q:"¿Cuál es el mayor?",
-    opts:["0,5","1/3","0,25","Son iguales"],
-    ans:0, exp:"En decimales: 0,50 ; 0,33 ; 0,25. El mayor es 0,5." },
-  { id:"m_rel_9", domain:"math", topic:"relaciones_orden", dif:2,
-    stem:"Se sabe que a > 0 y que b < 0.",
-    q:"¿Cuál afirmación es siempre verdadera?",
-    opts:["b es mayor que a","a es mayor que b","a es igual a b","b es positivo"],
-    ans:1, exp:"Un positivo siempre es mayor que un negativo: a > b." },
+  { id:"m_rel_8", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,7 ; 3/4 ; 0,72.", q:"Al ordenarlos de menor a mayor, ¿cuál queda en el medio?", opts:["0,7","0,72","3/4","Los tres son iguales"], ans:1, exp:"En decimales: 0,70 ; 0,75 ; 0,72. Ordenados: 0,70 < 0,72 < 0,75. En el medio queda 0,72." },
+  { id:"m_rel_9", domain:"math", topic:"relaciones_orden", dif:3, stem:"Se sabe que x es un número entero y que −5 < x < −2.", q:"¿Cuál de los siguientes valores SÍ puede ser x?", opts:["−5","−4","−2","−1"], ans:1, exp:"x está estrictamente entre −5 y −2, así que solo puede ser −4 o −3. De las opciones, la válida es −4 (−5 y −2 quedan excluidos y −1 es mayor que −2)." },
 
   /* -- Mate: conteo -- */
-  { id:"m_cnt_8", domain:"math", topic:"conteo", dif:2,
-    stem:"Hay 4 caminos de A a B y 3 caminos de B a C.",
-    q:"¿De cuántas formas se puede ir de A a C pasando por B?",
-    opts:["7","12","9","16"],
-    ans:1, exp:"Principio multiplicativo: 4 × 3 = 12 rutas." },
+  { id:"m_cnt_8", domain:"math", topic:"conteo", dif:3, stem:"Para ir de A a B hay 3 caminos, de B a C hay 4 y de C a D hay 2.", q:"¿De cuántas formas se puede ir de A a D pasando por B y C?", opts:["24","9","18","14"], ans:0, exp:"Se multiplican las opciones de cada tramo: 3 × 4 × 2 = 24." },
   { id:"m_cnt_9", domain:"math", topic:"conteo", dif:3,
     stem:"En una caja, a oscuras, hay 4 guantes izquierdos y 4 derechos sueltos.",
     q:"¿Cuántos guantes hay que sacar como mínimo para asegurar una pareja útil (uno izquierdo y uno derecho)?",
@@ -765,11 +661,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es su perímetro?",
     opts:["38 cm","84 cm","19 cm","40 cm"],
     ans:0, exp:"Perímetro = 2·(12 + 7) = 2·19 = 38 cm." },
-  { id:"m_geo_10", domain:"math", topic:"geometria", dif:2,
-    stem:"Un cuadrado tiene lados de 11 cm.",
-    q:"¿Cuál es su área?",
-    opts:["44 cm²","121 cm²","22 cm²","132 cm²"],
-    ans:1, exp:"Área del cuadrado = lado² = 11² = 121 cm²." },
+  { id:"m_geo_10", domain:"math", topic:"geometria", dif:3, stem:"Un rectángulo tiene 48 cm de perímetro y su largo es el doble de su ancho.", q:"¿Cuánto mide el ancho?", opts:["8 cm","16 cm","12 cm","6 cm"], ans:0, exp:"Perímetro: 2·(largo+ancho)=48 → largo+ancho=24. Si largo=2·ancho: 3·ancho=24 → ancho=8 cm." },
 
   /* -- Mate: sucesiones -- */
   { id:"m_suc_10", domain:"math", topic:"sucesiones", dif:2,
@@ -777,11 +669,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es el siguiente término?",
     opts:["10","12,5","20","15"],
     ans:1, exp:"Cada término se divide entre 2: 25 ÷ 2 = 12,5." },
-  { id:"m_suc_11", domain:"math", topic:"sucesiones", dif:2,
-    stem:"Observe la sucesión: 1, 4, 9, 16, 25, …",
-    q:"¿Cuál es el siguiente número?",
-    opts:["30","36","49","32"],
-    ans:1, exp:"Son los cuadrados (1², 2², 3²…). El siguiente es 6² = 36." },
+  { id:"m_suc_11", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 1, 8, 27, 64, …", q:"¿Cuál es el siguiente término?", opts:["125","100","81","96"], ans:0, exp:"Son los cubos: 1³, 2³, 3³, 4³… El siguiente es 5³ = 125." },
 
   /* -- Mate: datos y probabilidad -- */
   { id:"m_dat_9", domain:"math", topic:"datos_probabilidad", dif:2,
@@ -789,11 +677,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es la probabilidad de que sea de menta?",
     opts:["3/8","5/8","3/5","1/3"],
     ans:0, exp:"Favorables 3 sobre 8 totales: 3/8." },
-  { id:"m_dat_10", domain:"math", topic:"datos_probabilidad", dif:2,
-    stem:"Las edades de tres hermanos son 8, 11 y 14 años.",
-    q:"¿Cuál es el promedio de sus edades?",
-    opts:["10","11","12","33"],
-    ans:1, exp:"(8 + 11 + 14) ÷ 3 = 33 ÷ 3 = 11." },
+  { id:"m_dat_10", domain:"math", topic:"datos_probabilidad", dif:3, stem:"El promedio de tres números es 20. Dos de ellos son 15 y 22.", q:"¿Cuál es el tercer número?", opts:["23","20","18","25"], ans:0, exp:"La suma de los tres es 3 × 20 = 60. Como 15 + 22 = 37, el tercero es 60 − 37 = 23." },
 
   /* -- Mate: notación algebraica -- */
   { id:"m_not_7", domain:"math", topic:"algebra_notacion", dif:2,
@@ -803,11 +687,7 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:0, exp:"Primero la resta (x − 9) y luego se multiplica todo por 2: 2(x − 9)." },
 
   /* -- Mate: relaciones algebraicas -- */
-  { id:"m_alr_7", domain:"math", topic:"algebra_relaciones", dif:2,
-    stem:"Se sabe que 3x = 21.",
-    q:"¿Cuánto vale x + 4?",
-    opts:["7","11","25","18"],
-    ans:1, exp:"x = 21 ÷ 3 = 7, entonces x + 4 = 11." },
+  { id:"m_alr_7", domain:"math", topic:"algebra_relaciones", dif:3, stem:"Se sabe que 4x + 3 = 2x + 19.", q:"¿Cuál es el valor de x?", opts:["8","11","16","4"], ans:0, exp:"Pasamos las x a un lado: 4x − 2x = 19 − 3 → 2x = 16 → x = 8." },
 
   /* -- Mate: unidades de medida -- */
   { id:"m_uni_8", domain:"math", topic:"unidades_medida", dif:2,
@@ -817,11 +697,7 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:1, exp:"2 L = 2 000 ml. 2 000 ÷ 250 = 8 vasos." },
 
   /* -- Mate: razón y proporción -- */
-  { id:"m_raz_8", domain:"math", topic:"razon_proporcion", dif:2,
-    stem:"Tres lápices cuestan ₡900.",
-    q:"¿Cuánto cuestan 5 lápices al mismo precio?",
-    opts:["₡1 200","₡1 500","₡1 800","₡1 350"],
-    ans:1, exp:"Cada lápiz: 900 ÷ 3 = 300. Cinco lápices: 300 × 5 = 1 500." },
+  { id:"m_raz_8", domain:"math", topic:"razon_proporcion", dif:2, stem:"Cuatro cuadernos iguales cuestan ₡5 000.", q:"¿Cuánto cuestan 10 cuadernos al mismo precio?", opts:["₡12 500","₡10 000","₡15 000","₡11 250"], ans:0, exp:"Cada cuaderno: 5 000 ÷ 4 = 1 250. Diez cuadernos: 1 250 × 10 = 12 500." },
   { id:"m_raz_9", domain:"math", topic:"razon_proporcion", dif:3,
     stem:"Un grifo llena un tanque en 8 horas.",
     q:"¿Cuánto tardan 2 grifos iguales llenándolo juntos?",
@@ -878,8 +754,8 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"v_pri_15", domain:"verbal", topic:"idea_principal", dif:3, stem:"La marimba acompaña fiestas, transmite tradición y representa la identidad de Centroamérica.", q:"¿Cuál es el tema central?", opts:["La importancia cultural de la marimba","El precio de la marimba","Cómo se fabrica una marimba","Las fiestas en general"], ans:0, exp:"Los tres rasgos apuntan a la importancia cultural de la marimba." },
 
   /* -- Verbal: paráfrasis -- */
-  { id:"v_par_12", domain:"verbal", topic:"parafrasis", dif:2, stem:"Al mal tiempo, buena cara.", q:"¿Cuál opción expresa la misma idea?", opts:["Hay que enojarse con los problemas","Ante las dificultades, conviene mantener buena actitud","El clima siempre es malo","Nada tiene solución"], ans:1, exp:"El refrán aconseja una actitud positiva frente a las dificultades." },
-  { id:"v_par_13", domain:"verbal", topic:"parafrasis", dif:2, stem:"No dejes para mañana lo que puedas hacer hoy.", q:"¿Cuál opción conserva el sentido?", opts:["Todo se puede posponer","Conviene no posponer las tareas","Mañana es mejor que hoy","Hoy no se trabaja"], ans:1, exp:"El refrán recomienda no aplazar lo que se puede hacer ya." },
+  { id:"v_par_12", domain:"verbal", topic:"parafrasis", dif:3, stem:"Mantener la calma en los momentos difíciles suele abrir mejores soluciones que dejarse llevar por el enojo.", q:"¿Cuál opción dice lo mismo?", opts:["El enojo resuelve los problemas","La calma ayuda a encontrar mejores soluciones","Los momentos difíciles no tienen salida","Conviene no pensar en los problemas"], ans:1, exp:"El texto contrapone calma y enojo: la calma favorece mejores soluciones." },
+  { id:"v_par_13", domain:"verbal", topic:"parafrasis", dif:2, stem:"Posponer una y otra vez las tareas no las elimina: solo las acumula y las vuelve más pesadas.", q:"¿Cuál opción reproduce la idea?", opts:["Posponer hace desaparecer las tareas","Aplazar las tareas solo las acumula","Las tareas se resuelven solas","Mañana es mejor momento que hoy"], ans:1, exp:"El texto dice que posponer no quita las tareas, las junta y agrava: aplazar solo las acumula." },
   { id:"v_par_14", domain:"verbal", topic:"parafrasis", dif:3, stem:"Camarón que se duerme, se lo lleva la corriente.", q:"¿Cuál opción dice lo mismo con otras palabras?", opts:["Dormir es muy saludable","Quien se descuida pierde oportunidades","Los camarones nadan rápido","Hay que dormir más"], ans:1, exp:"El refrán advierte que descuidarse hace perder oportunidades." },
 
   /* -- Verbal: proposiciones -- */
@@ -895,8 +771,8 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_mcm_9", domain:"math", topic:"mcm_mcd", dif:3, stem:"Se quieren cortar dos listones de 24 cm y 30 cm en trozos iguales lo más largos posible, sin desperdicio.", q:"¿Cuánto mide cada trozo?", opts:["6 cm","12 cm","3 cm","2 cm"], ans:0, exp:"El trozo más largo que divide a ambos es el MCD(24, 30) = 6 cm." },
 
   /* -- Mate: relaciones de orden -- */
-  { id:"m_rel_10", domain:"math", topic:"relaciones_orden", dif:2, stem:"Considere los valores 2/5 ; 0,5 ; 1/4.", q:"¿Cuál es el menor?", opts:["2/5","0,5","1/4","Son iguales"], ans:2, exp:"En decimales: 0,40 ; 0,50 ; 0,25. El menor es 1/4 = 0,25." },
-  { id:"m_rel_11", domain:"math", topic:"relaciones_orden", dif:2, stem:"Se sabe que m < n y que ambos son negativos.", q:"¿Cuál afirmación es verdadera?", opts:["n es menor que m","m es menor que n","m es positivo","n es positivo"], ans:1, exp:"El dato dice directamente que m < n." },
+  { id:"m_rel_10", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 3/5 ; 0,58 ; 2/3 ; 0,6.", q:"¿Cuál es el mayor?", opts:["3/5","0,58","2/3","0,6"], ans:2, exp:"En decimales: 0,60 ; 0,58 ; 0,666… ; 0,60. El mayor es 2/3 ≈ 0,67." },
+  { id:"m_rel_11", domain:"math", topic:"relaciones_orden", dif:3, stem:"Se sabe que −x > 0.", q:"¿Qué se puede concluir del número x?", opts:["x es positivo","x es negativo","x es igual a cero","No se puede saber"], ans:1, exp:"Si el opuesto de x es positivo, entonces x es negativo (por ejemplo, si x=−3, −x=3>0)." },
 
   /* -- Mate: conteo -- */
   { id:"m_cnt_10", domain:"math", topic:"conteo", dif:2, stem:"Un helado se arma eligiendo 1 sabor (de 5) y 1 topping (de 3).", q:"¿Cuántas combinaciones distintas se pueden armar?", opts:["8","15","5","10"], ans:1, exp:"Principio multiplicativo: 5 × 3 = 15." },
@@ -906,12 +782,12 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_per_8", domain:"math", topic:"permutaciones", dif:2, stem:"Se quieren ordenar en fila 4 cuadros distintos en una pared.", q:"¿De cuántas maneras se pueden ordenar?", opts:["12","24","16","8"], ans:1, exp:"Ordenar 4 elementos distintos: 4! = 24." },
 
   /* -- Mate: geometría -- */
-  { id:"m_geo_11", domain:"math", topic:"geometria", dif:2, stem:"Un triángulo tiene base de 8 cm y altura de 5 cm.", q:"¿Cuál es su área?", opts:["40 cm²","20 cm²","13 cm²","26 cm²"], ans:1, exp:"Área = base × altura ÷ 2 = 8 × 5 ÷ 2 = 20 cm²." },
+  { id:"m_geo_11", domain:"math", topic:"geometria", dif:3, stem:"Un triángulo tiene un área de 24 cm² y una altura de 6 cm.", q:"¿Cuánto mide su base?", opts:["8 cm","4 cm","12 cm","6 cm"], ans:0, exp:"Área = base × altura ÷ 2 → 24 = base × 6 ÷ 2 = 3·base → base = 8 cm." },
   { id:"m_geo_12", domain:"math", topic:"geometria", dif:3, stem:"Una pizza circular tiene radio de 10 cm. Use π ≈ 3,14.", q:"¿Cuál es su área aproximada?", opts:["314 cm²","31,4 cm²","62,8 cm²","100 cm²"], ans:0, exp:"Área = π·r² = 3,14 × 10² = 3,14 × 100 = 314 cm²." },
 
   /* -- Mate: sucesiones -- */
-  { id:"m_suc_12", domain:"math", topic:"sucesiones", dif:2, stem:"Observe la sucesión: 3, 6, 9, 12, …", q:"¿Cuál es el término número 6?", opts:["15","18","21","16"], ans:1, exp:"Es aritmética con d = 3. a₆ = 3 + (6−1)·3 = 3 + 15 = 18." },
-  { id:"m_suc_13", domain:"math", topic:"sucesiones", dif:2, stem:"Observe la sucesión: 2, 4, 8, 16, …", q:"¿Cuál es el siguiente término?", opts:["24","32","20","30"], ans:1, exp:"Cada término se multiplica por 2: 16 × 2 = 32." },
+  { id:"m_suc_12", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 2, 6, 12, 20, 30, …", q:"¿Cuál es el siguiente término?", opts:["42","40","38","44"], ans:0, exp:"Las diferencias crecen: +4, +6, +8, +10. La siguiente es +12: 30 + 12 = 42. (También n·(n+1): 6·7 = 42.)" },
+  { id:"m_suc_13", domain:"math", topic:"sucesiones", dif:2, stem:"Observe la sucesión: 1, 1, 2, 3, 5, 8, 13, …", q:"¿Cuál es el siguiente término?", opts:["21","18","16","20"], ans:0, exp:"Cada término es la suma de los dos anteriores (Fibonacci): 8 + 13 = 21." },
 
   /* -- Mate: datos y probabilidad -- */
   { id:"m_dat_11", domain:"math", topic:"datos_probabilidad", dif:2, stem:"En una rifa hay 200 números y una persona compró 8 de ellos.", q:"¿Cuál es la probabilidad de que gane (que salga uno de sus números)?", opts:["1/25","8/100","1/8","1/200"], ans:0, exp:"Tiene 8 favorables de 200 posibles: 8/200, que simplificado es 1/25." },
@@ -921,13 +797,13 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_not_8", domain:"math", topic:"algebra_notacion", dif:2, stem:"Considere la frase: 'el triple de un número, aumentado en 6'.", q:"¿Cuál expresión la representa?", opts:["3x + 6","3(x + 6)","x/3 + 6","6 − 3x"], ans:0, exp:"El triple del número es 3x; aumentado en 6 es 3x + 6." },
 
   /* -- Mate: relaciones algebraicas -- */
-  { id:"m_alr_8", domain:"math", topic:"algebra_relaciones", dif:2, stem:"Se sabe que 5x − 2 = 18.", q:"¿Cuál es el valor de x?", opts:["3","4","5","20"], ans:1, exp:"5x = 18 + 2 = 20, entonces x = 4." },
+  { id:"m_alr_8", domain:"math", topic:"algebra_relaciones", dif:3, stem:"La mitad de un número, aumentada en 7, es igual a 16.", q:"¿Cuál es el número?", opts:["18","9","23","32"], ans:0, exp:"x/2 + 7 = 16 → x/2 = 9 → x = 18." },
 
   /* -- Mate: unidades de medida -- */
   { id:"m_uni_9", domain:"math", topic:"unidades_medida", dif:3, stem:"Un ciclista avanza a 20 km/h de forma constante.", q:"¿Cuánto tarda en recorrer 5 km?", opts:["15 min","20 min","25 min","10 min"], ans:0, exp:"Tiempo = distancia ÷ velocidad = 5 ÷ 20 = 1/4 de hora = 15 minutos." },
 
   /* -- Mate: razón y proporción -- */
-  { id:"m_raz_10", domain:"math", topic:"razon_proporcion", dif:2, stem:"Con 2 litros de pintura se cubren 9 m².", q:"¿Cuántos litros se necesitan para cubrir 27 m²?", opts:["4 L","6 L","9 L","3 L"], ans:1, exp:"27 m² es 3 veces 9 m², así que se necesitan 3 × 2 = 6 litros." },
+  { id:"m_raz_10", domain:"math", topic:"razon_proporcion", dif:3, stem:"Con 5 litros de pintura se cubren 60 m² de pared.", q:"¿Cuántos litros se necesitan para cubrir 84 m²?", opts:["7 L","6 L","8 L","9 L"], ans:0, exp:"Rendimiento: 60 ÷ 5 = 12 m² por litro. Para 84 m²: 84 ÷ 12 = 7 litros." },
   { id:"m_raz_11", domain:"math", topic:"razon_proporcion", dif:3, stem:"Cinco máquinas iguales hacen un trabajo en 6 horas.", q:"¿Cuánto tardan 3 máquinas en el mismo trabajo?", opts:["10 horas","3,6 horas","8 horas","18 horas"], ans:0, exp:"Proporción inversa: 5·6 = 30 máquina-horas. Con 3 máquinas: 30 ÷ 3 = 10 horas." },
 
   /* ===================== LOTE 4 — nivel examen (más difíciles) ===================== */
