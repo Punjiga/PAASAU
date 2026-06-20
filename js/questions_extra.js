@@ -26,11 +26,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es la finalidad de reducir esos impuestos?",
     opts:["Recaudar más dinero","Promover vehículos menos contaminantes","Encarecer los carros de gasolina","Construir más carreteras"],
     ans:1, exp:"El propósito es incentivar la compra de carros eléctricos y bajar la contaminación: promover vehículos menos contaminantes." },
-  { id:"v_fin_7", domain:"verbal", topic:"finalidad", dif:1,
-    stem:"Pedro madruga todos los días para llegar temprano al trabajo.",
-    q:"¿Cuál es la finalidad de que Pedro madrugue?",
-    opts:["Dormir más","Llegar temprano al trabajo","Hacer ejercicio","Saltarse el desayuno"],
-    ans:1, exp:"Madruga 'para llegar temprano al trabajo': esa es la finalidad." },
+  { id:"v_fin_7", domain:"verbal", topic:"finalidad", dif:2, stem:"Pedro programa tres alarmas con cinco minutos de diferencia cada mañana. Dice que no lo hace porque le guste el ruido, sino porque sabe que con una sola se volvería a dormir y llegaría tarde.", q:"¿Cuál es la finalidad de poner varias alarmas?", opts:["Disfrutar el sonido de las alarmas","Asegurarse de despertar y no llegar tarde","Despertar a toda la casa","Cumplir una costumbre sin sentido"], ans:1, exp:"El para qué es despertar a tiempo y no llegar tarde; el texto descarta lo del ruido." },
 
   /* -- Comportamiento -- */
   { id:"v_com_4", domain:"verbal", topic:"comportamiento", dif:2,
@@ -43,11 +39,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cómo se comporta Sofía frente al examen difícil?",
     opts:["Se bloquea por los nervios","Actúa con calma y estrategia","Abandona el examen","Copia a sus compañeros"],
     ans:1, exp:"Respirar, leer con calma y empezar por lo conocido describe una conducta calmada y estratégica." },
-  { id:"v_com_6", domain:"verbal", topic:"comportamiento", dif:1,
-    stem:"El perro mueve la cola y salta cada vez que su dueño llega a casa.",
-    q:"¿Cómo se comporta el perro cuando llega su dueño?",
-    opts:["Muestra alegría","Se esconde con miedo","Ladra con enojo","Se queda dormido"],
-    ans:0, exp:"Mover la cola y saltar al llegar el dueño expresa alegría." },
+  { id:"v_com_6", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cuando su equipo va perdiendo, en vez de bajar los brazos, la capitana habla con sus compañeras, reacomoda las posiciones y las anima a seguir intentándolo hasta el último minuto.", q:"¿Cómo se comporta la capitana cuando van perdiendo?", opts:["Se rinde y deja de jugar","Asume el liderazgo y motiva al equipo","Culpa a sus compañeras","Discute con la árbitra"], ans:1, exp:"Reorganizar y animar al equipo en la adversidad es asumir el liderazgo y motivar." },
   { id:"v_com_7", domain:"verbal", topic:"comportamiento", dif:2,
     stem:"Cada vez que pierde un partido, el jugador felicita al rival y agradece a su equipo.",
     q:"¿Cómo se comporta el jugador ante la derrota?",
@@ -92,11 +84,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cómo es el automóvil frente al triciclo?",
     opts:["Más simple","Más complejo","Más lento","Más barato"],
     ans:1, exp:"Por su gran cantidad de componentes, el automóvil se presenta como más complejo." },
-  { id:"v_sim_6", domain:"verbal", topic:"simple_complejo", dif:1,
-    stem:"Saludar con la mano es un gesto de un solo movimiento, fácil de hacer.",
-    q:"¿Cómo se describe ese gesto?",
-    opts:["Complejo","Simple","Costoso","Peligroso"],
-    ans:1, exp:"Un gesto de un solo movimiento y fácil es simple." },
+  { id:"v_sim_6", domain:"verbal", topic:"simple_complejo", dif:2, stem:"Saludar con la mano es un gesto que casi cualquiera hace sin pensar. Aprender lengua de señas, en cambio, exige memorizar cientos de gestos, expresiones faciales y reglas gramaticales propias.", q:"¿Cómo se presenta aprender lengua de señas frente a saludar con la mano?", opts:["Como algo más simple","Como algo más complejo","Como algo más antiguo","Como algo inútil"], ans:1, exp:"Aprender lengua de señas reúne muchos elementos y reglas: es más complejo que un saludo." },
   { id:"v_sim_7", domain:"verbal", topic:"simple_complejo", dif:3,
     stem:"Freír un huevo tiene básicamente un paso; organizar un banquete de varios tiempos exige planear, coordinar y cocinar decenas de platos a la vez.",
     q:"El banquete, frente al huevo frito, se presenta como algo:",
@@ -136,11 +124,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Qué cambio experimentó el taller?",
     opts:["Del orden al desorden","Del desorden al orden","De lo nuevo a lo viejo","De lo grande a lo pequeño"],
     ans:1, exp:"Pasó de herramientas tiradas (desorden) a cada una en su lugar rotulado (orden)." },
-  { id:"v_ord_5", domain:"verbal", topic:"orden_desorden", dif:1,
-    stem:"En la biblioteca, los libros están clasificados por autor y por tema.",
-    q:"¿Cómo puede describirse esa biblioteca?",
-    opts:["Ordenada","Desordenada","Vacía","Sucia"],
-    ans:0, exp:"Que los libros estén clasificados por criterios describe una biblioteca ordenada." },
+  { id:"v_ord_5", domain:"verbal", topic:"orden_desorden", dif:2, stem:"En la biblioteca, cada libro tiene un código, está ubicado por materia y por autor, y siempre se devuelve al mismo estante; así cualquiera encuentra lo que busca en segundos.", q:"¿Cómo puede describirse esa biblioteca?", opts:["Desordenada","Ordenada","Improvisada","Abandonada"], ans:1, exp:"Códigos, ubicación por criterio y todo en su sitio describen una biblioteca ordenada." },
   { id:"v_ord_6", domain:"verbal", topic:"orden_desorden", dif:2,
     stem:"Después de la fiesta, platos, vasos y sillas quedaron regados por toda la casa.",
     q:"¿Cómo quedó la casa?",
@@ -158,11 +142,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"Según el texto, ¿qué se hace inmediatamente antes de guardar la ropa?",
     opts:["Tenderla","Plancharla","Lavarla","Comprarla"],
     ans:1, exp:"La secuencia es lavar → tender → planchar → guardar. Justo antes de guardar se plancha." },
-  { id:"v_tmp_5", domain:"verbal", topic:"orden_temporal", dif:1,
-    stem:"Ana se baña, se viste y luego desayuna.",
-    q:"¿Qué hace Ana justo antes de desayunar?",
-    opts:["Bañarse","Vestirse","Dormir","Salir"],
-    ans:1, exp:"El orden es bañarse → vestirse → desayunar. Antes de desayunar, se viste." },
+  { id:"v_tmp_5", domain:"verbal", topic:"orden_temporal", dif:2, stem:"Para publicar el video, Sofía primero lo graba, luego lo edita cortando los errores, después le agrega subtítulos y, finalmente, lo sube a la plataforma.", q:"¿Qué hace Sofía justo después de editar el video?", opts:["Grabarlo","Agregarle subtítulos","Subirlo a la plataforma","Borrarlo"], ans:1, exp:"El orden es grabar, editar, subtítulos y subir. Después de editar, agrega los subtítulos." },
   { id:"v_tmp_6", domain:"verbal", topic:"orden_temporal", dif:2,
     stem:"El albañil mezcla el cemento, levanta la pared y, al final, la pinta.",
     q:"¿Qué ocurre después de levantar la pared?",
@@ -239,11 +219,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Qué idea está implícita en el texto?",
     opts:["Iba a una fiesta","Esperaba mal tiempo","Vendía ropa","Hacía mucho calor"],
     ans:1, exp:"Llevar paraguas, botas y abrigo implica que esperaba lluvia y frío: mal tiempo." },
-  { id:"v_imp_9", domain:"verbal", topic:"idea_implicita", dif:1,
-    stem:"Las luces de la casa estaban apagadas y nadie respondió a la puerta.",
-    q:"¿Qué idea está implícita?",
-    opts:["La casa estaba en venta","Probablemente no había nadie","Había una fiesta adentro","Era de día"],
-    ans:1, exp:"Luces apagadas y nadie que responda sugieren que, probablemente, no había nadie en casa." },
+  { id:"v_imp_9", domain:"verbal", topic:"idea_implicita", dif:3, stem:"Llegué a la casa y todo estaba como lo había dejado: el periódico del lunes seguía en la entrada, el tazón del desayuno sin lavar y las luces apagadas en pleno día.", q:"¿Qué se puede deducir con seguridad?", opts:["Hubo una fiesta la noche anterior","Nadie había estado en la casa desde el lunes","Acababan de limpiar la casa","Había mucha gente adentro"], ans:1, exp:"El periódico del lunes intacto y todo igual indican que nadie estuvo allí desde entonces." },
   { id:"v_imp_10", domain:"verbal", topic:"idea_implicita", dif:2,
     stem:"Marta revisa tres veces que la puerta esté cerrada antes de dormir.",
     q:"¿Cuál es una idea implícita?",
@@ -354,11 +330,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es el resultado?",
     opts:["1/2","1/4","1/3","2/3"],
     ans:2, exp:"Con común denominador 6: 4/6 + 1/6 − 3/6 = 2/6 = 1/3." },
-  { id:"m_ari_8", domain:"math", topic:"aritmetica", dif:1,
-    stem:"Considere la operación: 18 − 3 × 4 + 6 ÷ 2.",
-    q:"¿Cuál es el resultado?",
-    opts:["15","9","21","12"],
-    ans:1, exp:"Primero × y ÷: 3×4=12 y 6÷2=3. Luego 18 − 12 + 3 = 9." },
+  { id:"m_ari_8", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación: 5 + 2 × (8 − 3)² ÷ 5.", q:"¿Cuál es el resultado?", opts:["15","27","20","11"], ans:0, exp:"Primero el paréntesis: 8 − 3 = 5; al cuadrado: 25. Luego 2 × 25 = 50; 50 ÷ 5 = 10; 5 + 10 = 15." },
   { id:"m_ari_9", domain:"math", topic:"aritmetica", dif:2,
     stem:"En una finca hay 240 árboles y 3/8 de ellos son de naranja.",
     q:"¿Cuántos árboles de naranja hay?",
@@ -376,11 +348,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Dentro de cuántos segundos vuelven a parpadear juntas por primera vez?",
     opts:["18 s","40 s","80 s","20 s"],
     ans:1, exp:"Coinciden en el MCM(8, 10). 8 = 2³ y 10 = 2·5, así que MCM = 2³·5 = 40 s." },
-  { id:"m_mcm_6", domain:"math", topic:"mcm_mcd", dif:1,
-    stem:"Considere los números 18 y 24.",
-    q:"¿Cuál es su máximo común divisor (MCD)?",
-    opts:["3","6","12","72"],
-    ans:1, exp:"18 = 2·3² y 24 = 2³·3. Comunes con menor exponente: 2·3 = 6." },
+  { id:"m_mcm_6", domain:"math", topic:"mcm_mcd", dif:2, stem:"Se quieren repartir 24 lápices y 36 borradores en bolsas iguales, usando la mayor cantidad de bolsas posible y sin que sobre nada.", q:"¿Cuántas bolsas se forman?", opts:["12","6","72","4"], ans:0, exp:"La mayor cantidad de bolsas iguales es el MCD(24, 36) = 12." },
   { id:"m_mcm_7", domain:"math", topic:"mcm_mcd", dif:3,
     stem:"Se reparten 36 lápices y 48 cuadernos en paquetes iguales, con la mayor cantidad posible de paquetes y sin que sobre nada.",
     q:"¿Cuántos paquetes se forman?",
@@ -503,11 +471,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es la probabilidad de que sea azul?",
     opts:["1/5","1/2","2/5","1/10"],
     ans:0, exp:"Hay 10 bolas en total y 2 azules: 2/10 = 1/5." },
-  { id:"m_dat_7", domain:"math", topic:"datos_probabilidad", dif:1,
-    stem:"Se lanza un dado común de 6 caras.",
-    q:"¿Cuál es la probabilidad de obtener un número mayor que 4?",
-    opts:["1/3","1/2","2/3","1/6"],
-    ans:0, exp:"Mayores que 4: el 5 y el 6 (2 casos). Probabilidad = 2/6 = 1/3." },
+  { id:"m_dat_7", domain:"math", topic:"datos_probabilidad", dif:2, stem:"Se lanza un dado común de 6 caras.", q:"¿Cuál es la probabilidad de obtener un número primo?", opts:["1/2","1/3","2/3","1/6"], ans:0, exp:"Los primos del 1 al 6 son 2, 3 y 5 (el 1 no es primo): 3 casos de 6, o sea 1/2." },
   { id:"m_dat_8", domain:"math", topic:"datos_probabilidad", dif:3,
     stem:"El promedio de 4 números es 15. Tres de ellos son 12, 18 y 10.",
     q:"¿Cuál es el cuarto número?",
@@ -590,11 +554,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es la finalidad de las capacitaciones?",
     opts:["Gastar el presupuesto","Mejorar el desempeño de los empleados","Contratar más personal","Reducir los salarios"],
     ans:1, exp:"Se ofrecen 'para mejorar su desempeño': esa es la finalidad." },
-  { id:"v_fin_9", domain:"verbal", topic:"finalidad", dif:1,
-    stem:"El municipio pintó líneas y colocó señales cerca de la escuela para proteger a los peatones.",
-    q:"¿Cuál es la finalidad de esas medidas?",
-    opts:["Embellecer la calle","Proteger a los peatones","Cobrar multas","Cerrar la escuela"],
-    ans:1, exp:"El propósito declarado es proteger a los peatones." },
+  { id:"v_fin_9", domain:"verbal", topic:"finalidad", dif:3, stem:"La biblioteca amplió su horario hasta la medianoche durante la época de exámenes. El director aclaró que no busca que los estudiantes duerman menos, sino ofrecerles un lugar tranquilo para estudiar cuando en casa no pueden.", q:"¿Cuál es la finalidad de ampliar el horario?", opts:["Que los estudiantes duerman menos","Ofrecer un espacio tranquilo para estudiar","Gastar más en electricidad","Competir con otras bibliotecas"], ans:1, exp:"El fin es dar un lugar tranquilo para estudiar; el texto descarta expresamente lo de dormir menos." },
 
   /* -- Verbal: comportamiento -- */
   { id:"v_com_8", domain:"verbal", topic:"comportamiento", dif:2,
@@ -631,11 +591,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cómo es el pastel frente al sándwich?",
     opts:["Más simple","Más complejo","Más barato","Más rápido"],
     ans:1, exp:"El pastel reúne muchos pasos y partes: es más complejo." },
-  { id:"v_sim_9", domain:"verbal", topic:"simple_complejo", dif:1,
-    stem:"Una nota corta de dos líneas se escribe en un momento.",
-    q:"¿Cómo es esa tarea?",
-    opts:["Compleja","Simple","Costosa","Lenta"],
-    ans:1, exp:"De pocos pasos y rápida: es simple." },
+  { id:"v_sim_9", domain:"verbal", topic:"simple_complejo", dif:2, stem:"Hervir agua es una tarea de un solo paso. Cocinar un menú de tres tiempos para veinte invitados exige planear las compras, calcular los tiempos de cada plato y coordinar varias preparaciones a la vez.", q:"¿Cómo es cocinar ese menú frente a hervir agua?", opts:["Más simple","Más complejo","Más rápido","Más barato"], ans:1, exp:"El menú reúne muchas tareas que hay que coordinar: es más complejo." },
 
   /* -- Verbal: conceptualización -- */
   { id:"v_con_10", domain:"verbal", topic:"conceptualizacion", dif:2,
@@ -655,11 +611,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Qué cambio ocurrió?",
     opts:["Del orden al desorden","Del desorden al orden","De grande a pequeño","De nuevo a viejo"],
     ans:1, exp:"De tiradas (desorden) a colgadas por criterio (orden)." },
-  { id:"v_ord_9", domain:"verbal", topic:"orden_desorden", dif:1,
-    stem:"Los archivos del escritorio están clasificados en carpetas con nombre.",
-    q:"¿Cómo está el escritorio?",
-    opts:["Ordenado","Desordenado","Vacío","Roto"],
-    ans:0, exp:"Clasificados por criterio: está ordenado." },
+  { id:"v_ord_9", domain:"verbal", topic:"orden_desorden", dif:2, stem:"El escritorio digital de Ana pasó de tener decenas de archivos sueltos con nombres como documento1 y nuevo (2), a un sistema de carpetas por proyecto, cada una con su fecha y su tema.", q:"¿Qué cambio describe el texto?", opts:["Del orden al desorden","Del desorden al orden","De carpetas a archivos sueltos","No hubo ningún cambio"], ans:1, exp:"De archivos sueltos y mal nombrados (desorden) a carpetas claras por proyecto (orden)." },
 
   /* -- Verbal: orden temporal -- */
   { id:"v_tmp_8", domain:"verbal", topic:"orden_temporal", dif:2,
@@ -703,11 +655,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuál es una idea implícita?",
     opts:["Las plantas no necesitan agua","Algo en esa agua les hace daño","El sol las quema","Las plantas están sanas"],
     ans:1, exp:"Si se amarillan al regarlas con esa agua, se infiere que algo en el agua les hace daño." },
-  { id:"v_imp_13", domain:"verbal", topic:"idea_implicita", dif:1,
-    stem:"No quedaban entradas y la fila daba vuelta a la cuadra.",
-    q:"¿Qué idea está implícita?",
-    opts:["A nadie le interesaba","El evento era muy popular","Era gratis","Estaba cancelado"],
-    ans:1, exp:"Entradas agotadas y fila enorme implican que el evento era muy popular." },
+  { id:"v_imp_13", domain:"verbal", topic:"idea_implicita", dif:3, stem:"El restaurante abrió hace apenas un mes, pero ya hay que reservar con una semana de anticipación y la fila para entrar sin reserva da vuelta a la esquina.", q:"¿Qué se puede deducir del texto?", opts:["El restaurante va a cerrar pronto","El restaurante se volvió muy popular","La comida es de mala calidad","Nadie quiere ir a ese lugar"], ans:1, exp:"Reservas con una semana y filas largas en tan poco tiempo implican que se volvió muy popular." },
   { id:"v_imp_14", domain:"verbal", topic:"idea_implicita", dif:2,
     stem:"Habla tres idiomas y ha vivido en varios países.",
     q:"¿Cuál es una idea implícita?",
@@ -761,11 +709,7 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:0, exp:"El texto dice que el sol seca la ropa: I. II y III no se siguen." },
 
   /* -- Mate: aritmética -- */
-  { id:"m_ari_11", domain:"math", topic:"aritmetica", dif:1,
-    stem:"Considere la operación: 7 × 8 − 6 × 5.",
-    q:"¿Cuál es el resultado?",
-    opts:["26","250","20","16"],
-    ans:0, exp:"Primero los productos: 7×8=56 y 6×5=30. Luego 56 − 30 = 26." },
+  { id:"m_ari_11", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación: 7 × 8 − 6 × 5 + 12 ÷ 4.", q:"¿Cuál es el resultado?", opts:["29","23","56","20"], ans:0, exp:"Primero × y ÷: 7×8=56, 6×5=30, 12÷4=3. Luego 56 − 30 + 3 = 29." },
   { id:"m_ari_12", domain:"math", topic:"aritmetica", dif:2,
     stem:"Un café cuesta ₡1 200.",
     q:"¿Cuánto cuestan 7 cafés?",
@@ -901,7 +845,7 @@ window.PAA_QUESTIONS_EXTRA = [
 
   /* -- Verbal: simple y complejo -- */
   { id:"v_sim_10", domain:"verbal", topic:"simple_complejo", dif:2, stem:"Sumar dos cifras es directo; balancear el presupuesto de un país implica miles de variables y decisiones.", q:"¿Cómo es el presupuesto frente a la suma?", opts:["Más simple","Más complejo","Más antiguo","Más barato"], ans:1, exp:"Por su gran cantidad de variables, el presupuesto es más complejo." },
-  { id:"v_sim_11", domain:"verbal", topic:"simple_complejo", dif:1, stem:"Tocar una sola nota en el piano es algo elemental.", q:"¿Cómo es esa acción?", opts:["Compleja","Simple","Imposible","Costosa"], ans:1, exp:"De un solo paso y elemental: es simple." },
+  { id:"v_sim_11", domain:"verbal", topic:"simple_complejo", dif:2, stem:"Un triciclo se arma con unas pocas piezas que encajan a presión. Un automóvil moderno integra miles de componentes mecánicos, eléctricos y electrónicos que deben funcionar en conjunto.", q:"¿Qué caracteriza al automóvil frente al triciclo?", opts:["Su sencillez","Su complejidad","Su bajo precio","Su antigüedad"], ans:1, exp:"Miles de componentes que deben funcionar juntos hacen del automóvil algo complejo." },
 
   /* -- Verbal: conceptualización -- */
   { id:"v_con_12", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"Reconoció frente a todos que se había equivocado y pidió disculpas.", q:"¿Qué palabra describe su actitud?", opts:["Humildad","Soberbia","Indiferencia","Astucia"], ans:0, exp:"Admitir el error y disculparse refleja humildad." },
@@ -909,7 +853,7 @@ window.PAA_QUESTIONS_EXTRA = [
 
   /* -- Verbal: orden y desorden -- */
   { id:"v_ord_10", domain:"verbal", topic:"orden_desorden", dif:2, stem:"El cuarto pasó de tener ropa por todos lados a quedar con todo guardado en cajones rotulados.", q:"¿Qué cambio ocurrió?", opts:["Del orden al desorden","Del desorden al orden","De limpio a sucio","De grande a chico"], ans:1, exp:"De ropa regada (desorden) a todo guardado y rotulado (orden)." },
-  { id:"v_ord_11", domain:"verbal", topic:"orden_desorden", dif:1, stem:"En la bodega, cada caja tiene etiqueta y un lugar fijo en los estantes.", q:"¿Cómo está la bodega?", opts:["Ordenada","Desordenada","Vacía","Vieja"], ans:0, exp:"Etiquetas y lugares fijos describen una bodega ordenada." },
+  { id:"v_ord_11", domain:"verbal", topic:"orden_desorden", dif:2, stem:"La bodega solía ser un caos: cajas sin marcar apiladas hasta el techo y productos vencidos mezclados con los nuevos. Hoy todo está clasificado por tipo, con etiquetas y fechas a la vista.", q:"¿Qué cambio experimentó la bodega?", opts:["Del orden al desorden","Del desorden al orden","De grande a pequeña","De llena a vacía"], ans:1, exp:"De cajas sin marcar y productos mezclados (desorden) a todo clasificado y etiquetado (orden)." },
 
   /* -- Verbal: orden temporal -- */
   { id:"v_tmp_10", domain:"verbal", topic:"orden_temporal", dif:2, stem:"Se siembra la semilla, se riega cada día, brota la planta y, al final, se cosecha.", q:"¿Qué ocurre justo antes de cosechar?", opts:["Sembrar la semilla","Que brote la planta","Regar la semilla","Comprar semillas"], ans:1, exp:"La secuencia es sembrar → regar → brotar → cosechar. Antes de cosechar, brota la planta." },
@@ -943,8 +887,8 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"v_pro_12", domain:"verbal", topic:"proposiciones", dif:2, stem:"Si un animal es mamífero, respira con pulmones. Analice las proposiciones:\nI. La ballena, que es mamífero, respira con pulmones.\nII. Los mamíferos no tienen pulmones.\nIII. Ningún mamífero respira.", q:"¿Cuál proposición se deduce del texto?", opts:["Solo la I","Solo la II","La II y la III","Las tres"], ans:0, exp:"Si todo mamífero respira con pulmones, la ballena (mamífero) también: I. II y III contradicen el texto." },
 
   /* -- Mate: aritmética -- */
-  { id:"m_ari_14", domain:"math", topic:"aritmetica", dif:1, stem:"Considere la operación: 100 − 45 ÷ 9.", q:"¿Cuál es el resultado?", opts:["95","55","11","5"], ans:0, exp:"Primero la división: 45 ÷ 9 = 5. Luego 100 − 5 = 95." },
-  { id:"m_ari_15", domain:"math", topic:"aritmetica", dif:1, stem:"Un paquete trae 24 galletas y se reparten en partes iguales entre 6 niños.", q:"¿Cuántas galletas recibe cada niño?", opts:["3","4","6","8"], ans:1, exp:"24 ÷ 6 = 4 galletas por niño." },
+  { id:"m_ari_14", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación: 100 − (45 + 15) ÷ 6 × 2.", q:"¿Cuál es el resultado?", opts:["80","90","70","60"], ans:0, exp:"Paréntesis: 45 + 15 = 60. Luego 60 ÷ 6 = 10 y 10 × 2 = 20. Por último 100 − 20 = 80." },
+  { id:"m_ari_15", domain:"math", topic:"aritmetica", dif:2, stem:"Un paquete trae 24 galletas. En una fiesta, 6 niños se reparten en partes iguales 3 paquetes completos.", q:"¿Cuántas galletas recibe cada niño?", opts:["12","8","4","18"], ans:0, exp:"3 paquetes son 3 × 24 = 72 galletas. 72 ÷ 6 = 12 por niño." },
   { id:"m_ari_16", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación con decimales: 2,5 + 1,75 − 0,25.", q:"¿Cuál es el resultado?", opts:["4","4,5","3,5","4,25"], ans:0, exp:"2,5 + 1,75 = 4,25; luego 4,25 − 0,25 = 4." },
 
   /* -- Mate: MCM y MCD -- */
@@ -970,7 +914,7 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_suc_13", domain:"math", topic:"sucesiones", dif:2, stem:"Observe la sucesión: 2, 4, 8, 16, …", q:"¿Cuál es el siguiente término?", opts:["24","32","20","30"], ans:1, exp:"Cada término se multiplica por 2: 16 × 2 = 32." },
 
   /* -- Mate: datos y probabilidad -- */
-  { id:"m_dat_11", domain:"math", topic:"datos_probabilidad", dif:1, stem:"Se lanza una moneda equilibrada.", q:"¿Cuál es la probabilidad de que salga escudo?", opts:["1/2","1/4","1","1/3"], ans:0, exp:"Hay 2 resultados igualmente probables; uno es escudo: 1/2." },
+  { id:"m_dat_11", domain:"math", topic:"datos_probabilidad", dif:2, stem:"En una rifa hay 200 números y una persona compró 8 de ellos.", q:"¿Cuál es la probabilidad de que gane (que salga uno de sus números)?", opts:["1/25","8/100","1/8","1/200"], ans:0, exp:"Tiene 8 favorables de 200 posibles: 8/200, que simplificado es 1/25." },
   { id:"m_dat_12", domain:"math", topic:"datos_probabilidad", dif:3, stem:"El promedio de 5 notas es 8. Cuatro de ellas son 7, 9, 8 y 6.", q:"¿Cuál es la quinta nota?", opts:["8","9","10","12"], ans:2, exp:"La suma total es 5·8 = 40. Las cuatro dadas suman 30, así que la quinta es 40 − 30 = 10." },
 
   /* -- Mate: notación algebraica -- */
