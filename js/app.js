@@ -71,6 +71,25 @@
     return out;
   }
 
+  // Selección con sesgo de dificultad: mayoría difícil/media + 1 fácil de calentamiento.
+  // Así la práctica "sabe a examen" sin sentirse obvia, pero arranca suave (no abruma).
+  function pickMix(pool, n) {
+    pool = pool.slice();
+    if (n >= pool.length) return shuffle(pool);
+    var by = { 1: [], 2: [], 3: [] };
+    shuffle(pool).forEach(function (q) { (by[q.dif] || by[2]).push(q); });
+    var out = [];
+    if (n >= 4) { var warm = by[1].length ? by[1] : (by[2].length ? by[2] : by[3]); if (warm.length) out.push(warm.shift()); }
+    var need = n - out.length;
+    var n3 = Math.min(by[3].length, Math.round(need * 0.6));
+    var n2 = Math.min(by[2].length, need - n3);
+    for (var i = 0; i < n3; i++) out.push(by[3].shift());
+    for (var j = 0; j < n2; j++) out.push(by[2].shift());
+    var rest = by[3].concat(by[2]).concat(by[1]);
+    while (out.length < n && rest.length) out.push(rest.shift());
+    return shuffle(out);
+  }
+
   function clamp(x, lo, hi) { return Math.max(lo, Math.min(hi, x)); }
 
   function fmtClock(totalSec) {
@@ -283,7 +302,7 @@
       qs = qs.concat(extra);
       i++;
     }
-    qs = shuffle(qs).slice(0, CFG.dailyQuizSize);
+    qs = pickMix(qs, CFG.dailyQuizSize);
     return { focus: focus, questions: qs };
   }
 
@@ -664,7 +683,7 @@
     ]));
     quick.appendChild(el("button", { class: "btn btn-primary", onclick: function () {
       Sound.click();
-      var qs = shuffle(guestFilter(QUESTIONS.slice())).slice(0, 10);
+      var qs = pickMix(guestFilter(QUESTIONS.slice()), 10);
       practiceQuiz(qs, { title: "Mezcla rápida", subtitle: "Temario completo" });
     } }, "Empezar"));
     card.appendChild(quick);
@@ -765,7 +784,7 @@
         var pool = availPool.slice();
         if (!pool.length) { alert("No hay preguntas disponibles para esa selección."); return; }
         var n = Math.min(libreSel.count, pool.length);
-        var qs = shuffle(pool).slice(0, n);
+        var qs = pickMix(pool, n);
         var label = libreSel.topic ? TOPIC_BY_ID[libreSel.topic].name : DOMAINS[libreSel.domain].name;
         practiceQuiz(qs, {
           title: "Práctica libre", subtitle: label,
