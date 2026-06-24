@@ -11,16 +11,8 @@ window.PAA_QUESTIONS_EXTRA = [
   /* ===================== VERBAL ===================== */
 
   /* -- Finalidad -- */
-  { id:"v_fin_4", domain:"verbal", topic:"finalidad", dif:1,
-    stem:"La municipalidad colocó basureros de reciclaje en cada parque con el fin de separar mejor los desechos.",
-    q:"Según el texto, ¿cuál es la finalidad de los basureros de reciclaje?",
-    opts:["Embellecer los parques","Separar mejor los desechos","Dar empleo a recolectores","Reducir el tamaño de los parques"],
-    ans:1, exp:"El texto lo dice: se colocan 'con el fin de separar mejor los desechos'. Esa es la finalidad; lo demás no aparece como propósito." },
-  { id:"v_fin_5", domain:"verbal", topic:"finalidad", dif:1,
-    stem:"Antes de salir de viaje, Lucía anotó en una lista todo lo que debía llevar para no olvidar nada.",
-    q:"¿Cuál es la finalidad de hacer la lista?",
-    opts:["Presumir su organización","Evitar olvidar lo necesario","Gastar menos dinero","Llegar más rápido"],
-    ans:1, exp:"El para qué de la lista es 'no olvidar nada': evitar olvidar lo necesario." },
+  { id:"v_fin_4", domain:"verbal", topic:"finalidad", dif:2, stem:"La municipalidad instaló basureros de colores en cada parque y los rotuló por tipo de material. Buscaba que los vecinos separaran los desechos desde el inicio y así reciclar más.", q:"¿Cuál es la finalidad principal de la medida?", opts:["Decorar los parques con colores","Facilitar la separación de desechos para reciclar","Dar trabajo a los recolectores","Reducir la cantidad de basureros"], ans:1, exp:"La finalidad es el para qué: que se separen los desechos y se recicle más (B). Los colores son el medio, no el fin (A); C y D no aparecen en el texto." },
+  { id:"v_fin_5", domain:"verbal", topic:"finalidad", dif:1, stem:"Antes de un viaje largo, Lucía anota en una lista todo lo que debe empacar y la revisa al cerrar la maleta.", q:"¿Con qué finalidad hace y revisa la lista?", opts:["Presumir lo organizada que es","Asegurarse de no olvidar nada","Empacar más rápido que otros","Llevar menos cosas"], ans:1, exp:"El fin es asegurarse de no olvidar nada (B). Revisar la lista no busca presumir (A) ni competir en rapidez (C), y no dice que quiera llevar menos (D)." },
   { id:"v_fin_6", domain:"verbal", topic:"finalidad", dif:3,
     stem:"El gobierno reduce los impuestos a los carros eléctricos para incentivar su compra y disminuir la contaminación.",
     q:"¿Cuál es la finalidad de reducir esos impuestos?",
@@ -29,29 +21,13 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"v_fin_7", domain:"verbal", topic:"finalidad", dif:2, stem:"Pedro programa tres alarmas con cinco minutos de diferencia cada mañana. Dice que no lo hace porque le guste el ruido, sino porque sabe que con una sola se volvería a dormir y llegaría tarde.", q:"¿Cuál es la finalidad de poner varias alarmas?", opts:["Disfrutar el sonido de las alarmas","Asegurarse de despertar y no llegar tarde","Despertar a toda la casa","Cumplir una costumbre sin sentido"], ans:1, exp:"El para qué es despertar a tiempo y no llegar tarde; el texto descarta lo del ruido." },
 
   /* -- Comportamiento -- */
-  { id:"v_com_4", domain:"verbal", topic:"comportamiento", dif:1,
-    stem:"Cuando alguien lo contradice, Daniel sube la voz y no deja hablar a los demás.",
-    q:"¿Cómo se comporta Daniel ante quien lo contradice?",
-    opts:["Escucha con atención","Reacciona de forma intolerante","Cambia de opinión","Se queda callado"],
-    ans:1, exp:"Subir la voz e impedir que otros hablen es una reacción intolerante." },
-  { id:"v_com_5", domain:"verbal", topic:"comportamiento", dif:1,
-    stem:"Ante un examen difícil, Sofía respira, lee con calma y resuelve primero lo que sabe.",
-    q:"¿Cómo se comporta Sofía frente al examen difícil?",
-    opts:["Se bloquea por los nervios","Actúa con calma y estrategia","Abandona el examen","Copia a sus compañeros"],
-    ans:1, exp:"Respirar, leer con calma y empezar por lo conocido describe una conducta calmada y estratégica." },
+  { id:"v_com_4", domain:"verbal", topic:"comportamiento", dif:2, stem:"En las reuniones, apenas alguien opina distinto, Daniel sube la voz, interrumpe y no deja terminar a los demás; al final, solo se escucha su versión.", q:"¿Cómo se comporta Daniel frente a las opiniones distintas?", opts:["Con apertura","De forma autoritaria","Con indiferencia","Con timidez"], ans:1, exp:"Imponer su voz e impedir que otros hablen es una actitud autoritaria (B). No es apertura (A, lo contrario), ni indiferencia (C: sí reacciona), ni timidez (D: no se calla)." },
+  { id:"v_com_5", domain:"verbal", topic:"comportamiento", dif:2, stem:"Al recibir un examen difícil, Sofía respira hondo, lee todo antes de empezar y resuelve primero lo que domina para asegurar puntos, dejando lo dudoso para el final.", q:"¿Qué describe mejor la manera en que Sofía enfrenta el examen?", opts:["Improvisa sin un plan","Actúa con calma y estrategia","Se paraliza por los nervios","Responde al azar"], ans:1, exp:"Leer todo y resolver primero lo seguro es una estrategia con calma (B). No improvisa (A) ni va al azar (D), y no se paraliza (C): justamente controla los nervios." },
   { id:"v_com_6", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cuando su equipo va perdiendo, en vez de bajar los brazos, la capitana habla con sus compañeras, reacomoda las posiciones y las anima a seguir intentándolo hasta el último minuto.", q:"¿Cómo se comporta la capitana cuando van perdiendo?", opts:["Se rinde y deja de jugar","Asume el liderazgo y motiva al equipo","Culpa a sus compañeras","Discute con la árbitra"], ans:1, exp:"Reorganizar y animar al equipo en la adversidad es asumir el liderazgo y motivar." },
-  { id:"v_com_7", domain:"verbal", topic:"comportamiento", dif:1,
-    stem:"Cada vez que pierde un partido, el jugador felicita al rival y agradece a su equipo.",
-    q:"¿Cómo se comporta el jugador ante la derrota?",
-    opts:["Con resentimiento","Con deportividad","Con indiferencia","Con desesperación"],
-    ans:1, exp:"Felicitar al rival y agradecer al equipo tras perder es actuar con deportividad." },
+  { id:"v_com_7", domain:"verbal", topic:"comportamiento", dif:2, stem:"Aunque acababa de perder la final, el jugador se acercó a felicitar al rival, agradeció a su equipo y dijo que aprendería de la derrota.", q:"¿Qué actitud muestra ante la derrota?", opts:["Resentimiento","Deportividad","Conformismo","Indiferencia"], ans:1, exp:"Reconocer al rival y querer aprender de la derrota es deportividad (B). No hay resentimiento (A); no es conformismo (C: sí busca mejorar) ni indiferencia (D: le importa)." },
 
   /* -- Causa y consecuencia -- */
-  { id:"v_cau_5", domain:"verbal", topic:"causa_consecuencia", dif:1,
-    stem:"Como no regaron las plantas durante semanas, el jardín se secó.",
-    q:"Según el texto, ¿cuál fue la causa de que el jardín se secara?",
-    opts:["El exceso de agua","La falta de riego","El frío del invierno","La sombra de los árboles"],
-    ans:1, exp:"El conector 'como' introduce la causa: no regar las plantas (falta de riego)." },
+  { id:"v_cau_5", domain:"verbal", topic:"causa_consecuencia", dif:2, stem:"Durante semanas nadie regó el jardín. Hubo algunas lluvias ligeras, pero no fueron suficientes, y poco a poco las plantas se marchitaron hasta secarse por completo.", q:"¿Cuál fue la causa principal de que el jardín se secara?", opts:["Las lluvias ligeras","La falta de riego suficiente","El exceso de agua","El tipo de plantas"], ans:1, exp:"Hubo algo de lluvia, así que no fue exceso de agua (C) ni la lluvia la culpable (A). El texto insiste en que nadie regó lo suficiente: esa es la causa (B). El tipo de planta (D) no se menciona." },
   { id:"v_cau_6", domain:"verbal", topic:"causa_consecuencia", dif:2,
     stem:"El aumento del precio del combustible provocó que muchos productos se encarecieran.",
     q:"Según el texto, ¿cuál es una consecuencia del aumento del combustible?",
@@ -107,11 +83,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Qué palabra resume esa actitud?",
     opts:["Empatía","Envidia","Curiosidad","Orgullo"],
     ans:0, exp:"Ponerse en el lugar del otro para comprender lo que siente es empatía." },
-  { id:"v_con_8", domain:"verbal", topic:"conceptualizacion", dif:1,
-    stem:"No presumió de sus logros y reconoció abiertamente la ayuda de los demás.",
-    q:"¿Cómo se caracteriza, en una palabra, a esta persona?",
-    opts:["Soberbia","Humildad","Frialdad","Pereza"],
-    ans:1, exp:"No presumir y reconocer la ayuda ajena describe humildad." },
+  { id:"v_con_8", domain:"verbal", topic:"conceptualizacion", dif:3, stem:"Tras ganar el premio, no habló de sus méritos: agradeció a su equipo, reconoció la ayuda que había recibido y repitió que el logro era de todos.", q:"¿Qué cualidad describe mejor su actitud?", opts:["Humildad","Generosidad","Timidez","Inseguridad"], ans:0, exp:"Restarse protagonismo y dar crédito a otros es humildad (A). No es generosidad (B: no regala bienes), ni timidez o inseguridad (C, D: habló con seguridad, solo sin presumir)." },
   { id:"v_con_9", domain:"verbal", topic:"conceptualizacion", dif:3,
     stem:"Siguió intentando resolver el problema, sin perder la calma, aunque ya había fallado diez veces.",
     q:"¿Qué palabra resume su actitud?",
@@ -125,11 +97,7 @@ window.PAA_QUESTIONS_EXTRA = [
     opts:["Del orden al desorden","Del desorden al orden","De lo nuevo a lo viejo","De lo grande a lo pequeño"],
     ans:1, exp:"Pasó de herramientas tiradas (desorden) a cada una en su lugar rotulado (orden)." },
   { id:"v_ord_5", domain:"verbal", topic:"orden_desorden", dif:2, stem:"En la biblioteca, cada libro tiene un código, está ubicado por materia y por autor, y siempre se devuelve al mismo estante; así cualquiera encuentra lo que busca en segundos.", q:"¿Cómo puede describirse esa biblioteca?", opts:["Desordenada","Ordenada","Improvisada","Abandonada"], ans:1, exp:"Códigos, ubicación por criterio y todo en su sitio describen una biblioteca ordenada." },
-  { id:"v_ord_6", domain:"verbal", topic:"orden_desorden", dif:1,
-    stem:"Después de la fiesta, platos, vasos y sillas quedaron regados por toda la casa.",
-    q:"¿Cómo quedó la casa?",
-    opts:["En orden","En desorden","Limpia","Vacía"],
-    ans:1, exp:"Cosas regadas por todas partes describen desorden." },
+  { id:"v_ord_6", domain:"verbal", topic:"orden_desorden", dif:1, stem:"Cuando terminó la fiesta, había platos sucios en los sillones, vasos en el piso y sillas tiradas por toda la sala.", q:"¿Qué palabra describe mejor el estado en que quedó la sala?", opts:["Pulcritud","Desorden","Vacío","Armonía"], ans:1, exp:"Cosas regadas y fuera de su lugar describen desorden (B). Lo contrario sería pulcritud o armonía (A, D); y no quedó vacía (C), al contrario, llena de cosas." },
   { id:"v_ord_7", domain:"verbal", topic:"orden_desorden", dif:3,
     stem:"El archivo digital pasó de carpetas sin nombre y documentos sueltos a un sistema con categorías claras y bien rotuladas.",
     q:"¿Qué describe ese cambio?",
@@ -137,17 +105,9 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:1, exp:"Pasar de documentos sueltos a categorías claras es organizar lo que estaba en desorden." },
 
   /* -- Orden temporal -- */
-  { id:"v_tmp_4", domain:"verbal", topic:"orden_temporal", dif:1,
-    stem:"Primero se lava la ropa, luego se tiende, después se plancha y, por último, se guarda.",
-    q:"Según el texto, ¿qué se hace inmediatamente antes de guardar la ropa?",
-    opts:["Tenderla","Plancharla","Lavarla","Comprarla"],
-    ans:1, exp:"La secuencia es lavar → tender → planchar → guardar. Justo antes de guardar se plancha." },
+  { id:"v_tmp_4", domain:"verbal", topic:"orden_temporal", dif:1, stem:"Para dejar la ropa lista, primero se lava, luego se tiende al sol, después se plancha y, al final, se guarda doblada en el clóset.", q:"¿Qué se hace inmediatamente antes de guardarla?", opts:["Tenderla","Plancharla","Lavarla","Comprarla"], ans:1, exp:"La secuencia es lavar, tender, planchar y guardar. Lo que va justo antes de guardar es planchar (B). Tender y lavar (A, C) ocurren antes; comprarla (D) no es un paso del proceso." },
   { id:"v_tmp_5", domain:"verbal", topic:"orden_temporal", dif:2, stem:"Para publicar el video, Sofía primero lo graba, luego lo edita cortando los errores, después le agrega subtítulos y, finalmente, lo sube a la plataforma.", q:"¿Qué hace Sofía justo después de editar el video?", opts:["Grabarlo","Agregarle subtítulos","Subirlo a la plataforma","Borrarlo"], ans:1, exp:"El orden es grabar, editar, subtítulos y subir. Después de editar, agrega los subtítulos." },
-  { id:"v_tmp_6", domain:"verbal", topic:"orden_temporal", dif:1,
-    stem:"El albañil mezcla el cemento, levanta la pared y, al final, la pinta.",
-    q:"¿Qué ocurre después de levantar la pared?",
-    opts:["Mezclar el cemento","Pintarla","Comprar ladrillos","Cavar la zanja"],
-    ans:1, exp:"La secuencia es mezclar → levantar → pintar. Después de levantar la pared, se pinta." },
+  { id:"v_tmp_6", domain:"verbal", topic:"orden_temporal", dif:2, stem:"El albañil primero mezcla el cemento, luego levanta la pared ladrillo por ladrillo, la deja secar un día y, al final, la pinta.", q:"¿Qué se hace inmediatamente después de levantar la pared?", opts:["Mezclar el cemento","Dejarla secar","Pintarla de una vez","Cavar la zanja"], ans:1, exp:"La secuencia es mezclar, levantar, dejar secar y pintar. Justo después de levantar la pared se deja secar (B). Mezclar (A) fue antes; pintar (C) va después del secado; cavar (D) no aparece." },
   { id:"v_tmp_7", domain:"verbal", topic:"orden_temporal", dif:3,
     stem:"En la función: se abren las cortinas, se presenta el primer acto, hay un intermedio y luego viene el segundo acto.",
     q:"¿Qué ocurre inmediatamente antes del segundo acto?",
@@ -160,21 +120,13 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"De acuerdo con la lógica del texto, ¿qué sería propio de un buen mecánico?",
     opts:["Escuchar al cliente, revisar el vehículo y reparar lo necesario","Cobrar lo más posible","Cambiar todas las piezas siempre","Trabajar sin revisar nada"],
     ans:0, exp:"Por lógica paralela, las tres acciones del médico (escuchar, examinar, dar lo apropiado) se trasladan al mecánico: escuchar, revisar y reparar lo necesario." },
-  { id:"v_ese_5", domain:"verbal", topic:"esencia", dif:1,
-    stem:"Una característica esencial del hielo es estar frío y en estado sólido.",
-    q:"Según el texto, ¿cuál es una característica esencial del hielo?",
-    opts:["Su precio","Estar frío y sólido","Su tamaño","Su marca"],
-    ans:1, exp:"Lo propio del hielo, según el texto, es estar frío y sólido." },
+  { id:"v_ese_5", domain:"verbal", topic:"esencia", dif:1, stem:"Un cubo de hielo puede ser grande o pequeño, transparente o turbio; pero si deja de estar frío y sólido, ya no es hielo.", q:"¿Cuál es la característica esencial del hielo?", opts:["Su tamaño","Estar frío y en estado sólido","Su transparencia","Su forma"], ans:1, exp:"Lo esencial es lo que no puede faltar. Tamaño, transparencia y forma pueden variar (A, C, D); lo que define al hielo es estar frío y sólido (B)." },
   { id:"v_ese_6", domain:"verbal", topic:"esencia", dif:3,
     stem:"Lo propio de un reloj es marcar el paso del tiempo.",
     q:"Por la misma lógica, ¿qué es lo propio de un termómetro?",
     opts:["Marcar la hora","Medir la temperatura","Pesar objetos","Medir distancias"],
     ans:1, exp:"Si lo propio del reloj es medir el tiempo, lo propio del termómetro es medir la temperatura." },
-  { id:"v_ese_7", domain:"verbal", topic:"esencia", dif:1,
-    stem:"Lo esencial de una llave es abrir y cerrar una cerradura determinada.",
-    q:"Según el texto, ¿qué es lo propio de una llave?",
-    opts:["Su color","Abrir y cerrar su cerradura","Su material","Su tamaño"],
-    ans:1, exp:"Lo característico de una llave es su función: abrir y cerrar su cerradura." },
+  { id:"v_ese_7", domain:"verbal", topic:"esencia", dif:2, stem:"Una llave puede ser de cualquier metal, color o tamaño; lo que la hace ser una llave es que abre y cierra una cerradura determinada.", q:"¿Qué es lo esencial de una llave?", opts:["Su material","Abrir y cerrar su cerradura","Su color","Su peso"], ans:1, exp:"Material, color y peso pueden cambiar sin que deje de ser llave (A, C, D): son rasgos accidentales. Lo esencial es su función: abrir y cerrar su cerradura (B)." },
 
   /* -- Perspectiva -- */
   { id:"v_per_4", domain:"verbal", topic:"perspectiva", dif:2,
@@ -473,36 +425,16 @@ window.PAA_QUESTIONS_EXTRA = [
   /* ===================== LOTE 2 — 50 preguntas nuevas ===================== */
 
   /* -- Verbal: finalidad -- */
-  { id:"v_fin_8", domain:"verbal", topic:"finalidad", dif:1,
-    stem:"Una empresa ofrece capacitaciones gratuitas a sus empleados para mejorar su desempeño.",
-    q:"¿Cuál es la finalidad de las capacitaciones?",
-    opts:["Gastar el presupuesto","Mejorar el desempeño de los empleados","Contratar más personal","Reducir los salarios"],
-    ans:1, exp:"Se ofrecen 'para mejorar su desempeño': esa es la finalidad." },
+  { id:"v_fin_8", domain:"verbal", topic:"finalidad", dif:2, stem:"Una empresa paga cursos a sus empleados durante la jornada laboral. Aunque le cuesta tiempo y dinero, sostiene que vale la pena porque luego el personal trabaja mejor.", q:"¿Cuál es la finalidad de ofrecer los cursos?", opts:["Gastar el presupuesto del año","Mejorar el desempeño del personal","Reducir las horas de trabajo","Despedir a los menos capaces"], ans:1, exp:"El costo en tiempo y dinero es un obstáculo que aceptan; el fin que lo justifica es que el personal trabaje mejor (B). A, C y D no son lo que la empresa persigue." },
   { id:"v_fin_9", domain:"verbal", topic:"finalidad", dif:3, stem:"La biblioteca amplió su horario hasta la medianoche durante la época de exámenes. El director aclaró que no busca que los estudiantes duerman menos, sino ofrecerles un lugar tranquilo para estudiar cuando en casa no pueden.", q:"¿Cuál es la finalidad de ampliar el horario?", opts:["Que los estudiantes duerman menos","Ofrecer un espacio tranquilo para estudiar","Gastar más en electricidad","Competir con otras bibliotecas"], ans:1, exp:"El fin es dar un lugar tranquilo para estudiar; el texto descarta expresamente lo de dormir menos." },
 
   /* -- Verbal: comportamiento -- */
-  { id:"v_com_8", domain:"verbal", topic:"comportamiento", dif:1,
-    stem:"Ante un examen sorpresa, varios estudiantes se ponen nerviosos y se quedan en blanco.",
-    q:"¿Cómo se comportan esos estudiantes?",
-    opts:["Se concentran mejor","Se bloquean por los nervios","Lo celebran","Se duermen"],
-    ans:1, exp:"La conducta descrita es bloquearse por los nervios." },
-  { id:"v_com_9", domain:"verbal", topic:"comportamiento", dif:1,
-    stem:"Ante una opinión distinta, Marcos escucha, pregunta y luego responde con respeto.",
-    q:"¿Cómo se comporta Marcos?",
-    opts:["Se ofende","Dialoga con respeto","Se va molesto","Ignora al otro"],
-    ans:1, exp:"Escuchar, preguntar y responder con respeto es dialogar." },
+  { id:"v_com_8", domain:"verbal", topic:"comportamiento", dif:1, stem:"Apenas el profesor anunció un examen sorpresa, a varios estudiantes se les aceleró el pulso, olvidaron lo estudiado y se quedaron mirando la hoja en blanco.", q:"¿Cómo reaccionaron esos estudiantes?", opts:["Con concentración","Bloqueados por la ansiedad","Con alegría","Con total calma"], ans:1, exp:"Olvidar lo estudiado y quedarse en blanco es bloquearse por la ansiedad (B). Lo contrario sería concentración o calma (A, D); y nadie reacciona con alegría (C)." },
+  { id:"v_com_9", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cuando alguien defiende una idea opuesta a la suya, Marcos no se ofende: escucha completo, pregunta para entender y recién entonces explica su punto sin descalificar al otro.", q:"¿Cómo se comporta Marcos ante el desacuerdo?", opts:["Evita el tema","Dialoga con respeto","Cede de inmediato","Se impone"], ans:1, exp:"Escuchar, preguntar y responder sin descalificar es dialogar con respeto (B). No evita el tema (A: sí participa), no cede por ceder (C: da su punto) ni se impone (D)." },
 
   /* -- Verbal: causa y consecuencia -- */
-  { id:"v_cau_10", domain:"verbal", topic:"causa_consecuencia", dif:1,
-    stem:"Debido a las fuertes lluvias, se canceló el partido de fútbol.",
-    q:"¿Cuál fue la causa de la cancelación?",
-    opts:["El cansancio de los jugadores","Las fuertes lluvias","La falta de público","Un error del árbitro"],
-    ans:1, exp:"'Debido a' introduce la causa: las fuertes lluvias." },
-  { id:"v_cau_11", domain:"verbal", topic:"causa_consecuencia", dif:1,
-    stem:"Estudió toda la noche; por eso, al día siguiente estaba agotado.",
-    q:"¿Cuál es la consecuencia de estudiar toda la noche?",
-    opts:["Estaba descansado","Estaba agotado","No fue a clase","Aprobó sin estudiar"],
-    ans:1, exp:"'Por eso' marca la consecuencia: el agotamiento." },
+  { id:"v_cau_10", domain:"verbal", topic:"causa_consecuencia", dif:1, stem:"Las fuertes lluvias del fin de semana inundaron la cancha; por eso el partido se canceló y se reprogramó para el mes siguiente.", q:"¿Qué relación de causa y consecuencia plantea el texto?", opts:["La cancelación causó las lluvias","Las lluvias causaron la cancelación","La reprogramación causó las lluvias","No hay relación de causa"], ans:1, exp:"Hay que ver qué pasó primero. Las lluvias inundaron la cancha y por eso se canceló: la causa son las lluvias y la consecuencia es la cancelación (B). A y C invierten el orden y D lo niega." },
+  { id:"v_cau_11", domain:"verbal", topic:"causa_consecuencia", dif:2, stem:"Marcos estudió toda la noche sin dormir. Al día siguiente llegó al examen, pero le costaba concentrarse, leía dos veces cada pregunta y se sentía agotado.", q:"¿Cuál fue la consecuencia de no haber dormido?", opts:["Rindió mejor por estudiar más","Llegó descansado al examen","Su rendimiento bajó por el cansancio","Decidió no presentarse"], ans:2, exp:"Aunque estudió más, el texto muestra los efectos: le costaba concentrarse y estaba agotado, o sea su rendimiento bajó (C). A es lo contrario; B choca con agotado; D no pasó, sí llegó." },
   { id:"v_cau_12", domain:"verbal", topic:"causa_consecuencia", dif:3,
     stem:"El uso constante de protector solar reduce el riesgo de quemaduras en la piel.",
     q:"¿Qué relación de causa y consecuencia plantea el texto?",
@@ -523,18 +455,10 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Qué palabra describe su actitud?",
     opts:["Solidaridad","Envidia","Pereza","Orgullo"],
     ans:0, exp:"Ayudar de forma espontánea se conceptualiza como solidaridad." },
-  { id:"v_con_11", domain:"verbal", topic:"conceptualizacion", dif:1,
-    stem:"Llegó puntual a cada cita durante todo el año, sin faltar ni una vez.",
-    q:"¿Qué palabra resume su conducta?",
-    opts:["Puntualidad","Distracción","Pereza","Desorden"],
-    ans:0, exp:"Cumplir siempre con la hora acordada es puntualidad." },
+  { id:"v_con_11", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"Durante todo el año llegó a la hora exacta a cada cita, entregó cada trabajo en la fecha pactada y nunca hizo esperar a nadie, aun cuando le tocaba madrugar.", q:"¿Qué cualidad resume mejor su conducta?", opts:["Responsabilidad","Rigidez","Suerte","Ambición"], ans:0, exp:"Cumplir horarios y plazos de forma constante refleja responsabilidad (A). No es rigidez (B: no se habla de ser inflexible), ni suerte (C: depende de él), ni ambición (D)." },
 
   /* -- Verbal: orden y desorden -- */
-  { id:"v_ord_8", domain:"verbal", topic:"orden_desorden", dif:1,
-    stem:"Las herramientas pasaron de estar tiradas por el piso a colgar ordenadas por tamaño en la pared.",
-    q:"¿Qué cambio ocurrió?",
-    opts:["Del orden al desorden","Del desorden al orden","De grande a pequeño","De nuevo a viejo"],
-    ans:1, exp:"De tiradas (desorden) a colgadas por criterio (orden)." },
+  { id:"v_ord_8", domain:"verbal", topic:"orden_desorden", dif:2, stem:"El taller solía ser un caos: las herramientas se amontonaban en el piso y costaba hallar cada una. Tras una jornada de limpieza, quedaron colgadas en un panel, agrupadas por tipo y rotuladas.", q:"¿Qué cambio experimentó el taller?", opts:["Del orden al desorden","Del desorden al orden","De grande a pequeño","De viejo a nuevo"], ans:1, exp:"Pasó de herramientas amontonadas (desorden) a agrupadas y rotuladas (orden): del desorden al orden (B). A invierte el cambio; C y D hablan de tamaño o edad, que no es el punto." },
   { id:"v_ord_9", domain:"verbal", topic:"orden_desorden", dif:2, stem:"El escritorio digital de Ana pasó de tener decenas de archivos sueltos con nombres como documento1 y nuevo (2), a un sistema de carpetas por proyecto, cada una con su fecha y su tema.", q:"¿Qué cambio describe el texto?", opts:["Del orden al desorden","Del desorden al orden","De carpetas a archivos sueltos","No hubo ningún cambio"], ans:1, exp:"De archivos sueltos y mal nombrados (desorden) a carpetas claras por proyecto (orden)." },
 
   /* -- Verbal: orden temporal -- */
@@ -555,11 +479,7 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"Por la misma lógica, ¿qué es lo propio de un termómetro?",
     opts:["Señalar el norte","Medir la temperatura","Medir el peso","Marcar la hora"],
     ans:1, exp:"Si la brújula sirve para orientarse, el termómetro sirve para medir la temperatura." },
-  { id:"v_ese_9", domain:"verbal", topic:"esencia", dif:1,
-    stem:"Una característica esencial de un puente es unir dos puntos separados por un obstáculo.",
-    q:"Según el texto, ¿qué es lo propio de un puente?",
-    opts:["Su color","Unir dos puntos separados","Su antigüedad","Su material"],
-    ans:1, exp:"Lo característico de un puente es su función: unir dos puntos." },
+  { id:"v_ese_9", domain:"verbal", topic:"esencia", dif:2, stem:"Un puente puede ser de madera, piedra o acero, corto o larguísimo; pero todos comparten algo: permiten cruzar un obstáculo uniendo dos puntos separados.", q:"¿Cuál es la característica esencial de un puente?", opts:["El material con que se construye","Unir dos puntos separados por un obstáculo","Su longitud","Su antigüedad"], ans:1, exp:"Material, longitud y antigüedad varían entre puentes (A, C, D): son accidentales. Lo que define a cualquier puente es unir dos puntos salvando un obstáculo (B)." },
 
   /* -- Verbal: perspectiva -- */
   { id:"v_per_9", domain:"verbal", topic:"perspectiva", dif:3,
@@ -707,16 +627,16 @@ window.PAA_QUESTIONS_EXTRA = [
   /* ===================== LOTE 3 — 50 preguntas nuevas ===================== */
 
   /* -- Verbal: finalidad -- */
-  { id:"v_fin_10", domain:"verbal", topic:"finalidad", dif:1, stem:"Para reducir la deserción, el colegio abrió un programa de tutorías por las tardes.", q:"¿Cuál es la finalidad del programa?", opts:["Llenar las tardes","Reducir la deserción","Contratar tutores","Alargar el horario"], ans:1, exp:"Se abrió 'para reducir la deserción': esa es la finalidad." },
-  { id:"v_fin_11", domain:"verbal", topic:"finalidad", dif:1, stem:"Guarda capturas de cada conversación importante para tener respaldo si surge un malentendido.", q:"¿Cuál es la finalidad de guardar las capturas?", opts:["Llenar su teléfono","Tener respaldo ante un malentendido","Presumir sus chats","Borrar mensajes"], ans:1, exp:"El para qué es contar con respaldo o evidencia." },
+  { id:"v_fin_10", domain:"verbal", topic:"finalidad", dif:2, stem:"Al ver que muchos estudiantes abandonaban a mitad de año, el colegio abrió tutorías gratuitas por las tardes y un acompañamiento para quienes iban quedando atrás.", q:"¿Cuál es la finalidad del programa?", opts:["Llenar las tardes libres","Evitar que los estudiantes abandonen","Contratar más profesores","Alargar la jornada escolar"], ans:1, exp:"El programa responde a que muchos abandonaban; su fin es evitar esa deserción (B). Las tutorías y el horario son el medio, no el fin (A, D); C no se menciona." },
+  { id:"v_fin_11", domain:"verbal", topic:"finalidad", dif:1, stem:"Acostumbra guardar una captura de cada acuerdo importante que hace por mensaje, por si después alguien recuerda las cosas de otra manera.", q:"¿Cuál es la finalidad de guardar esas capturas?", opts:["Llenar la memoria del teléfono","Tener una prueba ante un malentendido","Presumir sus conversaciones","Poder borrarlas más fácil"], ans:1, exp:"El fin es tener respaldo o prueba si surge un desacuerdo (B). No busca llenar el teléfono (A) ni presumir (C), y guardar no es para borrar (D)." },
 
   /* -- Verbal: comportamiento -- */
   { id:"v_com_10", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cuando el proyecto falla, en vez de buscar culpables, el líder reúne al equipo y plantea soluciones.", q:"¿Cómo se comporta el líder?", opts:["Culpa a los demás","Actúa de forma constructiva","Abandona el proyecto","Se queda callado"], ans:1, exp:"Buscar soluciones en lugar de culpables es actuar de forma constructiva." },
-  { id:"v_com_11", domain:"verbal", topic:"comportamiento", dif:1, stem:"Cada vez que algo le sale mal, Lucía respira, lo analiza y vuelve a intentarlo.", q:"¿Cómo enfrenta Lucía los errores?", opts:["Se rinde enseguida","Con calma y persistencia","Culpando a la suerte","Enojándose con todos"], ans:1, exp:"Respirar, analizar y reintentar es enfrentar los errores con calma y persistencia." },
+  { id:"v_com_11", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cuando un proyecto le sale mal, Lucía no se lamenta ni busca culpables: anota qué falló, ajusta el plan y lo intenta otra vez con el mismo empeño.", q:"¿Qué actitud describe mejor la forma en que Lucía enfrenta los errores?", opts:["Resignación","Resiliencia","Indiferencia","Perfeccionismo"], ans:1, exp:"Recuperarse del fallo y volver a intentarlo ajustando el plan es resiliencia (B). No es resignación (A: no se rinde), ni indiferencia (C: sí le importa), ni perfeccionismo (D: no exige perfección, persiste)." },
 
   /* -- Verbal: causa y consecuencia -- */
-  { id:"v_cau_13", domain:"verbal", topic:"causa_consecuencia", dif:1, stem:"Como dejó el helado fuera del congelador, se derritió.", q:"¿Cuál fue la causa de que se derritiera?", opts:["El frío","Dejarlo fuera del congelador","Su sabor","El envase"], ans:1, exp:"'Como' introduce la causa: dejarlo fuera del congelador." },
-  { id:"v_cau_14", domain:"verbal", topic:"causa_consecuencia", dif:1, stem:"El aumento de turistas trajo consigo más empleos en la zona costera.", q:"¿Cuál es la consecuencia del aumento de turistas?", opts:["Menos empleos","Más empleos en la zona","Menos turistas","El cierre de hoteles"], ans:1, exp:"El efecto del aumento de turistas fue generar más empleos." },
+  { id:"v_cau_13", domain:"verbal", topic:"causa_consecuencia", dif:1, stem:"Dejó el helado sobre la mesa de la cocina en un día caluroso y se olvidó de él. Una hora después, era un charco dulce.", q:"¿Cuál fue la causa de que el helado se derritiera?", opts:["El frío del congelador","El calor, al dejarlo fuera del congelador","El sabor del helado","El tipo de mesa"], ans:1, exp:"El helado se derrite con el calor. La causa fue dejarlo fuera en un día caluroso (B). A es lo contrario (el frío lo conserva); el sabor y la mesa (C, D) no influyen." },
+  { id:"v_cau_14", domain:"verbal", topic:"causa_consecuencia", dif:2, stem:"Cuando la zona costera se volvió un destino turístico, abrieron hoteles, sodas y tiendas de artesanía. Mucha gente del pueblo que antes emigraba para trabajar encontró empleo cerca de su casa.", q:"¿Cuál es una consecuencia del auge turístico, según el texto?", opts:["Más gente tuvo que emigrar","Se generaron empleos en la zona","Cerraron los negocios locales","Bajó la cantidad de turistas"], ans:1, exp:"El texto dice que quienes antes emigraban hallaron empleo cerca: la consecuencia es que se crearon empleos locales (B). A es lo contrario y C, D contradicen el auge descrito." },
   { id:"v_cau_15", domain:"verbal", topic:"causa_consecuencia", dif:3, stem:"La sequía prolongada secó los pastos; por eso, el ganado quedó sin alimento.", q:"¿Cuál es la causa de que el ganado quedara sin alimento?", opts:["El exceso de lluvia","La sequía que secó los pastos","La falta de ganado","El frío"], ans:1, exp:"La cadena es: sequía → pastos secos → ganado sin alimento. La causa de fondo es la sequía." },
 
   /* -- Verbal: simple y complejo -- */
@@ -724,11 +644,11 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"v_sim_11", domain:"verbal", topic:"simple_complejo", dif:2, stem:"Un triciclo se arma con unas pocas piezas que encajan a presión. Un automóvil moderno integra miles de componentes mecánicos, eléctricos y electrónicos que deben funcionar en conjunto.", q:"¿Qué caracteriza al automóvil frente al triciclo?", opts:["Su sencillez","Su complejidad","Su bajo precio","Su antigüedad"], ans:1, exp:"Miles de componentes que deben funcionar juntos hacen del automóvil algo complejo." },
 
   /* -- Verbal: conceptualización -- */
-  { id:"v_con_12", domain:"verbal", topic:"conceptualizacion", dif:1, stem:"Reconoció frente a todos que se había equivocado y pidió disculpas.", q:"¿Qué palabra describe su actitud?", opts:["Humildad","Soberbia","Indiferencia","Astucia"], ans:0, exp:"Admitir el error y disculparse refleja humildad." },
-  { id:"v_con_13", domain:"verbal", topic:"conceptualizacion", dif:1, stem:"Dedica horas a cuidar animales abandonados sin recibir pago alguno.", q:"¿Qué palabra resume su actitud?", opts:["Altruismo","Egoísmo","Pereza","Ambición"], ans:0, exp:"Ayudar sin esperar nada a cambio es altruismo." },
+  { id:"v_con_12", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"Cuando notó que su decisión había perjudicado al grupo, lo dijo frente a todos, asumió su error y ofreció disculpas, sin inventar excusas.", q:"¿Qué actitud describe mejor su reacción?", opts:["Autocrítica","Cobardía","Soberbia","Indiferencia"], ans:0, exp:"Admitir el propio error sin excusas es autocrítica (A). Lo contrario sería soberbia (C) o indiferencia (D); y reconocerlo en público no es cobardía (B): al revés, cuesta valor." },
+  { id:"v_con_13", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"Sin que nadie se lo pida ni recibir pago, dedica sus tardes a alimentar y curar animales abandonados, solo porque le importa su bienestar.", q:"¿Qué cualidad refleja mejor su conducta?", opts:["Altruismo","Obligación","Interés","Vanidad"], ans:0, exp:"Ayudar sin esperar nada a cambio es altruismo (A). No es obligación (B: nadie se lo pide), ni interés (C: no gana nada), ni vanidad (D: no busca lucirse)." },
 
   /* -- Verbal: orden y desorden -- */
-  { id:"v_ord_10", domain:"verbal", topic:"orden_desorden", dif:1, stem:"El cuarto pasó de tener ropa por todos lados a quedar con todo guardado en cajones rotulados.", q:"¿Qué cambio ocurrió?", opts:["Del orden al desorden","Del desorden al orden","De limpio a sucio","De grande a chico"], ans:1, exp:"De ropa regada (desorden) a todo guardado y rotulado (orden)." },
+  { id:"v_ord_10", domain:"verbal", topic:"orden_desorden", dif:1, stem:"El cuarto pasó de tener ropa tirada en la cama, el piso y las sillas, a quedar con cada prenda doblada y guardada en cajones rotulados.", q:"¿Qué cambio ocurrió en el cuarto?", opts:["Del orden al desorden","Del desorden al orden","De grande a pequeño","De claro a oscuro"], ans:1, exp:"Pasó de ropa tirada (desorden) a todo guardado y rotulado (orden): del desorden al orden (B). A es lo contrario; C y D no tienen que ver con el cambio descrito." },
   { id:"v_ord_11", domain:"verbal", topic:"orden_desorden", dif:2, stem:"La bodega solía ser un caos: cajas sin marcar apiladas hasta el techo y productos vencidos mezclados con los nuevos. Hoy todo está clasificado por tipo, con etiquetas y fechas a la vista.", q:"¿Qué cambio experimentó la bodega?", opts:["Del orden al desorden","Del desorden al orden","De grande a pequeña","De llena a vacía"], ans:1, exp:"De cajas sin marcar y productos mezclados (desorden) a todo clasificado y etiquetado (orden)." },
 
   /* -- Verbal: orden temporal -- */
@@ -737,7 +657,7 @@ window.PAA_QUESTIONS_EXTRA = [
 
   /* -- Verbal: esencia -- */
   { id:"v_ese_10", domain:"verbal", topic:"esencia", dif:3, stem:"Lo propio de un mapa es representar un territorio a escala.", q:"Por la misma lógica, ¿qué es lo propio de un reloj?", opts:["Representar un territorio","Marcar el paso del tiempo","Medir el peso","Indicar la temperatura"], ans:1, exp:"Si el mapa representa un territorio, lo propio del reloj es marcar el tiempo." },
-  { id:"v_ese_11", domain:"verbal", topic:"esencia", dif:1, stem:"Una característica esencial de una semilla es contener lo necesario para dar origen a una planta.", q:"Según el texto, ¿qué es lo propio de una semilla?", opts:["Su color","Poder dar origen a una planta","Su tamaño","Su precio"], ans:1, exp:"Lo característico de la semilla es su capacidad de generar una planta." },
+  { id:"v_ese_11", domain:"verbal", topic:"esencia", dif:1, stem:"Una semilla puede ser diminuta o grande, lisa o rugosa; pero lo esencial es que guarda dentro lo necesario para dar origen a una nueva planta.", q:"¿Cuál es la característica esencial de una semilla?", opts:["Su tamaño","Poder dar origen a una planta","Su textura","Su color"], ans:1, exp:"Tamaño, textura y color cambian de una semilla a otra (A, C, D). Lo que no puede faltar es su capacidad de originar una planta (B): eso es lo esencial." },
 
   /* -- Verbal: perspectiva -- */
   { id:"v_per_11", domain:"verbal", topic:"perspectiva", dif:2, stem:"El mismo precio que a uno le parece caro, a otro con más ingresos le resulta accesible.", q:"¿Qué idea expresa el texto?", opts:["El precio es siempre alto","Un mismo precio se valora distinto según la persona","Nadie puede comprar","El precio no importa"], ans:1, exp:"La valoración del precio depende de quién lo mire: es cuestión de perspectiva." },
