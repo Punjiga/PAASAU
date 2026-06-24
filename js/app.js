@@ -54,6 +54,23 @@
     return a;
   }
 
+  // ----- Render de matemática (fracciones y división) -----
+  // Escapa HTML y convierte marcas a notación clara, para que no haya confusión:
+  //   {{a/b}}  -> fracción apilada (a sobre b, con su rayita)
+  //   ÷        -> ya se escribe directo en el texto para las divisiones
+  // Ejemplos:  "{{2/5}} del libro"  ·  "{{5·4/2}}"  ·  "180 ÷ 6 = 30"
+  function escapeHTML(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function mathHTML(s) {
+    var out = escapeHTML(s);
+    out = out.replace(/\{\{\s*([^{}]+?)\s*\/\s*([^{}]+?)\s*\}\}/g, function (_, n, d) {
+      return '<span class="frac"><span class="fr-n">' + n + '</span><span class="fr-d">' + d + '</span></span>';
+    });
+    return out;
+  }
+
   function clamp(x, lo, hi) { return Math.max(lo, Math.min(hi, x)); }
 
   function fmtClock(totalSec) {
@@ -519,7 +536,7 @@
     tecNote.appendChild(el("div", { class: "tec-emoji", text: "🛠️" }));
     tecNote.appendChild(el("div", {}, [
       el("div", { class: "card-title", text: "¿Vas para el TEC?" }),
-      el("div", { class: "muted", text: "PAASAU está enfocado en la PAA (UCR y UNA). El examen del TEC es distinto; pronto haremos algo más enfocado para el TEC. Mientras tanto, practicar razonamiento verbal y matemático acá igual te ayuda muchísimo." })
+      el("div", { class: "muted", text: "PAASAU está enfocado en la PAA (UCR y UNA). El examen del TEC es distinto: usa un razonamiento matemático más avanzado y con un enfoque algo diferente (aunque comparte algunas cosas con la PAA). Por eso una versión para el TEC viene pronto, bien hecha. Mientras tanto, practicar verbal y matemática acá te da una base que igual te ayuda muchísimo." })
     ]));
     frag.appendChild(tecNote);
 
@@ -1009,13 +1026,12 @@
     var body = el("div", { class: "quiz-body" });
     root.appendChild(body);
 
-    var pauseOverlay = el("div", { class: "pause-overlay", id: "pause-overlay", hidden: true });
-    pauseOverlay.appendChild(el("div", { class: "pause-card" }, [
-      el("div", { class: "pause-title", text: "En pausa" }),
-      el("p", { class: "muted", text: "Tomate el tiempo que necesités. El cronómetro está detenido." }),
-      el("button", { class: "btn btn-cta", onclick: function () { togglePause(); } }, [icon("play"), el("span", { text: "Reanudar" })])
-    ]));
-    root.appendChild(pauseOverlay);
+    // Indicador de pausa NO bloqueante: marca que está en pausa pero deja leer la explicación.
+    var pauseTag = el("div", { class: "pause-tag", id: "pause-tag", hidden: true }, [
+      icon("pause"),
+      el("span", { text: "En pausa · cronómetro detenido. Podés leer con calma." })
+    ]);
+    root.insertBefore(pauseTag, body);
 
     mount(root, false);
     qT.set(qLeft); totT.set(totLeft);
@@ -1033,8 +1049,9 @@
     function togglePause() {
       Sound.click();
       paused = !paused; quizPaused = paused;
-      var ov = document.getElementById("pause-overlay"); if (ov) ov.hidden = !paused;
+      var tag = document.getElementById("pause-tag"); if (tag) tag.hidden = !paused;
       pauseBtn.classList.toggle("active", paused);
+      pauseBtn.title = paused ? "Reanudar" : "Pausar";
       if (paused) Store.Timer.stop(); else Store.Timer.start();
     }
     function endQuiz() { quizActive = false; quizPaused = false; if (clock) { clearInterval(clock); clock = null; } Store.Timer.stop(); }
@@ -1064,8 +1081,8 @@
       topRow.appendChild(saveBtn);
       body.appendChild(topRow);
 
-      if (q.stem) body.appendChild(el("p", { class: "q-stem", text: q.stem }));
-      body.appendChild(el("p", { class: "q-text", text: q.q }));
+      if (q.stem) body.appendChild(el("p", { class: "q-stem", html: mathHTML(q.stem) }));
+      body.appendChild(el("p", { class: "q-text", html: mathHTML(q.q) }));
       if (q.fig) { var figEl = el("div", { class: "q-fig" }); figEl.innerHTML = q.fig; body.appendChild(figEl); }
 
       var opts2 = el("div", { class: "opts" });
@@ -1073,7 +1090,7 @@
       q.opts.forEach(function (optText, i) {
         var b = el("button", { class: "opt", onclick: function () { choose(i, b, opts2, q); } });
         b.appendChild(el("span", { class: "opt-letter", text: letters[i] }));
-        b.appendChild(el("span", { class: "opt-text", text: optText }));
+        b.appendChild(el("span", { class: "opt-text", html: mathHTML(optText) }));
         opts2.appendChild(b);
       });
       body.appendChild(opts2);
@@ -1105,19 +1122,11 @@
       exp.hidden = false;
       exp.innerHTML = "";
       exp.appendChild(el("div", { class: "exp-tag " + (isRight ? "ok" : "no"),
-        text: isRight ? "¡Correcto!" : "Respuesta correcta: " + letters[q.ans] + ") " + q.opts[q.ans] }));
-      exp.appendChild(el("div", { class: "exp-text", text: q.exp }));
-
-      if (!isRight) {
-        var topic = TOPIC_BY_ID[q.topic];
-        if (topic && topic.teoria) {
-          var lesson = el("div", { class: "exp-lesson" });
-          lesson.appendChild(el("div", { class: "exp-lesson-h", text: "Repaso rápido · " + topic.name }));
-          lesson.appendChild(el("div", { class: "exp-lesson-b", text: topic.teoria }));
-          if (topic.svg) { var esv = el("div", { class: "lesson-svg sm" }); esv.innerHTML = topic.svg; lesson.appendChild(esv); }
-          exp.appendChild(lesson);
-        }
-      }
+        html: isRight ? "¡Correcto!" : "Respuesta correcta: " + letters[q.ans] + ") " + mathHTML(q.opts[q.ans]) }));
+      exp.appendChild(el("div", { class: "exp-why", text: "Por qué" }));
+      var expText = el("div", { class: "exp-text" });
+      expText.innerHTML = mathHTML(q.exp);
+      exp.appendChild(expText);
 
       var actions = document.getElementById("q-actions");
       actions.innerHTML = "";
@@ -1313,8 +1322,8 @@
       if (TOPIC_BY_ID[q.topic]) simTags.appendChild(el("span", { class: "pill pill-" + q.domain, text: TOPIC_BY_ID[q.topic].name }));
       qbox.appendChild(simTags);
       qbox.appendChild(el("div", { class: "sim-qnum muted", text: "Pregunta " + (idx + 1) }));
-      if (q.stem) qbox.appendChild(el("p", { class: "q-stem", text: q.stem }));
-      qbox.appendChild(el("p", { class: "q-text", text: q.q }));
+      if (q.stem) qbox.appendChild(el("p", { class: "q-stem", html: mathHTML(q.stem) }));
+      qbox.appendChild(el("p", { class: "q-text", html: mathHTML(q.q) }));
       if (q.fig) { var simFig = el("div", { class: "q-fig" }); simFig.innerHTML = q.fig; qbox.appendChild(simFig); }
       var opts = el("div", { class: "opts" });
       var letters = ["A", "B", "C", "D"];
@@ -1324,7 +1333,7 @@
           onclick: function () { answers[idx] = i; markCell(); paintOpts(opts, i); }
         });
         b.appendChild(el("span", { class: "opt-letter", text: letters[i] }));
-        b.appendChild(el("span", { class: "opt-text", text: txt }));
+        b.appendChild(el("span", { class: "opt-text", html: mathHTML(txt) }));
         opts.appendChild(b);
       });
       qbox.appendChild(opts);
@@ -1440,11 +1449,11 @@
         questions.forEach(function (q, i) {
           var right = answers[i] === q.ans;
           var item = el("div", { class: "review-item " + (right ? "ok" : "no") });
-          item.appendChild(el("div", { class: "review-q", text: (i + 1) + ". " + q.q }));
+          item.appendChild(el("div", { class: "review-q", html: (i + 1) + ". " + mathHTML(q.q) }));
           var letters = ["A", "B", "C", "D"];
-          item.appendChild(el("div", { class: "review-ans", text: "Tu respuesta: " + (answers[i] != null ? letters[answers[i]] + ") " + q.opts[answers[i]] : "(en blanco)") }));
-          if (!right) item.appendChild(el("div", { class: "review-correct", text: "Correcta: " + letters[q.ans] + ") " + q.opts[q.ans] }));
-          item.appendChild(el("div", { class: "review-exp muted", text: q.exp }));
+          item.appendChild(el("div", { class: "review-ans", html: "Tu respuesta: " + (answers[i] != null ? letters[answers[i]] + ") " + mathHTML(q.opts[answers[i]]) : "(en blanco)") }));
+          if (!right) item.appendChild(el("div", { class: "review-correct", html: "Correcta: " + letters[q.ans] + ") " + mathHTML(q.opts[q.ans]) }));
+          item.appendChild(el("div", { class: "review-exp muted", html: mathHTML(q.exp) }));
           box.appendChild(item);
         });
         built = true;
@@ -1598,23 +1607,75 @@
      VISTA · TABLAS DE MULTIPLICAR
      ============================================================ */
   var tablaSel = 2;
+  var tablaMode = "opciones";
+  var TABLA_MODES = [
+    { id: "opciones", name: "Opciones", desc: "Elegí la respuesta entre 4." },
+    { id: "escribir", name: "Escribí vos", desc: "Tecleá el resultado, sin opciones." },
+    { id: "contra", name: "Contrarreloj", desc: "60 s. ¿Cuántas pegás de seguido?" }
+  ];
   function renderTablas() {
     var frag = el("div", {});
-    frag.appendChild(pageHead("Tablas de multiplicar", "Practicá del 2 al 10 con un reto rápido. ¡Mejorá tu cálculo mental para la parte de matemática!"));
+    frag.appendChild(pageHead("Tablas de multiplicar", "Mejorá tu cálculo mental para la parte de matemática. Elegí el modo y la tabla."));
     var card = el("div", { class: "card" });
-    card.appendChild(el("label", { class: "field-label", text: "Elegí qué practicar" }));
+
+    card.appendChild(el("label", { class: "field-label", text: "Modo de juego" }));
+    var modeGrid = el("div", { class: "mode-grid" });
+    TABLA_MODES.forEach(function (m) {
+      var b = el("button", { class: "mode-btn" + (tablaMode === m.id ? " active" : ""), onclick: function () { tablaMode = m.id; Sound.click(); mount(renderTablas(), true); } }, [
+        el("span", { class: "mode-name", text: m.name }),
+        el("span", { class: "mode-desc muted", text: m.desc })
+      ]);
+      modeGrid.appendChild(b);
+    });
+    card.appendChild(modeGrid);
+
+    card.appendChild(el("label", { class: "field-label", style: "margin-top:18px", text: "Elegí qué tabla practicar" }));
     var grid = el("div", { class: "tabla-grid" });
     [2, 3, 4, 5, 6, 7, 8, 9, 10, 0].forEach(function (nn) {
       var b = el("button", { class: "tabla-btn" + (tablaSel === nn ? " active" : ""), onclick: function () { tablaSel = nn; Sound.click(); mount(renderTablas(), true); } }, nn === 0 ? "Mezcla" : ("Tabla del " + nn));
       grid.appendChild(b);
     });
     card.appendChild(grid);
-    card.appendChild(el("button", { class: "btn btn-cta", style: "margin-top:16px", onclick: function () { startTablas(tablaSel); } }, [icon("play"), el("span", { text: "Empezar reto (10 preguntas)" })]));
+
+    var cta = tablaMode === "contra" ? "Empezar contrarreloj (60 s)" : "Empezar reto (10 preguntas)";
+    card.appendChild(el("button", { class: "btn btn-cta", style: "margin-top:18px", onclick: function () { startTablaReto(tablaSel, tablaMode); } }, [icon("play"), el("span", { text: cta })]));
     frag.appendChild(card);
+
     var tip = el("div", { class: "card" });
-    tip.appendChild(el("div", { class: "muted", text: "Dominar las tablas te hace mucho más rápido en el examen. La del 1 no la incluimos porque ya te la sabés. ¡Apuntá a responder sin pensar!" }));
+    tip.appendChild(el("div", { class: "muted", text: "Dominar las tablas te hace mucho más rápido en el examen. La del 1 no la incluimos porque ya te la sabés. En “Escribí vos” pensás la respuesta en vez de adivinarla; en “Contrarreloj” sumás racha contra el tiempo." }));
     frag.appendChild(tip);
     return frag;
+  }
+
+  // Genera un par [a, b] según la tabla elegida (0 = mezcla 2 al 10)
+  function tablaPair(tabla) {
+    var a = tabla === 0 ? (2 + Math.floor(Math.random() * 9)) : tabla;
+    var b = 2 + Math.floor(Math.random() * 9);
+    return [a, b];
+  }
+  function tablaSubt(tabla) { return tabla === 0 ? "Mezcla (2 al 10)" : ("Tabla del " + tabla); }
+  function startTablaReto(tabla, mode) {
+    if (mode === "escribir") return startTablasEscribir(tabla);
+    if (mode === "contra") return startTablasContra(tabla);
+    return startTablas(tabla);
+  }
+  // Pantalla de resultados compartida para los retos de 10 preguntas
+  function tablaFinish(body, counter, progFill, eyebrow, correct, total, best, again) {
+    progFill.style.width = "100%";
+    Store.markStudiedToday(); schedulePush();
+    var pct = Math.round(100 * correct / total);
+    var res = el("div", { class: "result" });
+    res.appendChild(el("div", { class: "result-eyebrow muted", text: eyebrow }));
+    res.appendChild(el("div", { class: "result-big", text: correct + " / " + total }));
+    res.appendChild(el("div", { class: "result-pct", text: "Mejor racha: " + best }));
+    var msg = pct >= 90 ? "¡Crack! Tenés las tablas dominadas." : (pct >= 60 ? "¡Bien! Un poco más de práctica y volás." : "Seguí practicando, se mejora rapidísimo.");
+    res.appendChild(el("p", { class: "result-msg muted", text: msg }));
+    var acts = el("div", { class: "result-actions" });
+    acts.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go("tablas"); } }, "Volver"));
+    acts.appendChild(el("button", { class: "btn btn-cta", onclick: again }, "Otra vez"));
+    res.appendChild(acts);
+    body.innerHTML = ""; counter.textContent = "Completado"; body.appendChild(res);
+    if (pct >= 60) { Sound.celebrate(); confetti(pct >= 90 ? 110 : 60); }
   }
 
   function startTablas(tabla) {
@@ -1692,6 +1753,145 @@
       res.appendChild(acts);
       body.innerHTML = ""; counter.textContent = "Completado"; body.appendChild(res);
       if (pct >= 60) { Sound.celebrate(); confetti(pct >= 90 ? 110 : 60); }
+    }
+  }
+
+  /* MODO ESCRIBIR · tecleás el resultado con un teclado numérico (sin opciones) */
+  function startTablasEscribir(tabla) {
+    Sound.click();
+    var N = 10, idx = 0, correct = 0, streak = 0, best = 0, answered = false, entry = "";
+    var qs = []; for (var i = 0; i < N; i++) qs.push(tablaPair(tabla));
+    var root = el("div", { class: "quiz" });
+    var head = el("div", { class: "quiz-head" });
+    head.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: function () { go("tablas"); } }, icon("back")));
+    head.appendChild(el("div", { class: "quiz-head-mid" }, [
+      el("div", { class: "quiz-title", text: "Escribí el resultado" }),
+      el("div", { class: "quiz-sub muted", text: tablaSubt(tabla) })
+    ]));
+    head.appendChild(el("div", { class: "tmr tmr-q" }, [el("span", { class: "tmr-dot" }), el("div", { class: "tmr-info" }, [el("span", { class: "tmr-lbl", text: "Racha" }), el("span", { class: "tmr-time", id: "tabla-streak", text: "0" })])]));
+    root.appendChild(head);
+    var prog = el("div", { class: "progress" }); var progFill = el("div", { class: "progress-fill" }); prog.appendChild(progFill); root.appendChild(prog);
+    var counter = el("div", { class: "quiz-counter muted" }); root.appendChild(counter);
+    var body = el("div", { class: "quiz-body" }); root.appendChild(body);
+    mount(root, false);
+    draw();
+
+    function draw() {
+      answered = false; entry = "";
+      var a = qs[idx][0], b = qs[idx][1];
+      progFill.style.width = (100 * idx / N) + "%";
+      counter.textContent = "Pregunta " + (idx + 1) + " de " + N;
+      document.getElementById("tabla-streak").textContent = String(streak);
+      body.innerHTML = "";
+      body.appendChild(el("div", { class: "tabla-q", text: a + " × " + b }));
+      body.appendChild(el("div", { class: "tabla-entry", id: "tabla-entry", text: "?" }));
+      body.appendChild(el("div", { class: "tabla-fb", id: "tabla-fb" }));
+      var pad = el("div", { class: "numpad" });
+      ["1", "2", "3", "4", "5", "6", "7", "8", "9"].forEach(function (d) {
+        pad.appendChild(el("button", { class: "numpad-key", onclick: function () { typeDigit(d); } }, d));
+      });
+      pad.appendChild(el("button", { class: "numpad-key numpad-del", title: "Borrar", onclick: del }, "⌫"));
+      pad.appendChild(el("button", { class: "numpad-key", onclick: function () { typeDigit("0"); } }, "0"));
+      pad.appendChild(el("button", { class: "numpad-key numpad-ok", title: "Comprobar", onclick: submit }, icon("check")));
+      body.appendChild(pad);
+    }
+    function typeDigit(d) { if (answered || entry.length >= 4) return; entry += d; updateDisp(); Sound.click(); }
+    function del() { if (answered) return; entry = entry.slice(0, -1); updateDisp(); }
+    function updateDisp() { var e = document.getElementById("tabla-entry"); if (e) { e.textContent = entry || "?"; e.classList.toggle("filled", !!entry); } }
+
+    function submit() {
+      if (answered || entry === "") return;
+      answered = true;
+      var a = qs[idx][0], b = qs[idx][1], ans = a * b;
+      var ok = parseInt(entry, 10) === ans;
+      var disp = document.getElementById("tabla-entry");
+      var fb = document.getElementById("tabla-fb");
+      if (ok) { correct++; streak++; if (streak > best) best = streak; Sound.correct(); disp.classList.add("ok"); fb.textContent = "¡Correcto!"; fb.className = "tabla-fb ok"; }
+      else { streak = 0; Sound.wrong(); disp.classList.add("no"); fb.textContent = "Era " + a + " × " + b + " = " + ans; fb.className = "tabla-fb no"; }
+      document.getElementById("tabla-streak").textContent = String(streak);
+      setTimeout(function () { if (idx < N - 1) { idx++; draw(); } else tablaFinish(body, counter, progFill, "Escribí el resultado", correct, N, best, function () { startTablasEscribir(tabla); }); }, ok ? 600 : 1150);
+    }
+  }
+
+  /* MODO CONTRARRELOJ · 60 s para sumar la mayor racha de respuestas correctas */
+  function startTablasContra(tabla) {
+    Sound.click();
+    var TIME = 60, left = TIME, score = 0, streak = 0, best = 0, answered = false, ended = false, clock = null, ans = 0;
+    var root = el("div", { class: "quiz" });
+    var head = el("div", { class: "quiz-head" });
+    head.appendChild(el("button", { class: "icon-btn", title: "Salir", onclick: function () { stop(); go("tablas"); } }, icon("back")));
+    head.appendChild(el("div", { class: "quiz-head-mid" }, [
+      el("div", { class: "quiz-title", text: "Contrarreloj" }),
+      el("div", { class: "quiz-sub muted", text: tablaSubt(tabla) })
+    ]));
+    var timeChip = el("div", { class: "tmr tmr-q" }, [el("span", { class: "tmr-dot" }), el("div", { class: "tmr-info" }, [el("span", { class: "tmr-lbl", text: "Tiempo" }), el("span", { class: "tmr-time", id: "contra-time", text: fmtClock(TIME) })])]);
+    head.appendChild(timeChip);
+    root.appendChild(head);
+    root.appendChild(el("div", { class: "contra-stats" }, [
+      el("div", { class: "contra-stat" }, [el("span", { class: "contra-num", id: "contra-score", text: "0" }), el("span", { class: "contra-lbl muted", text: "puntos" })]),
+      el("div", { class: "contra-stat" }, [el("span", { class: "contra-num", id: "contra-streak", text: "0" }), el("span", { class: "contra-lbl muted", text: "racha" })])
+    ]));
+    var body = el("div", { class: "quiz-body" }); root.appendChild(body);
+    mount(root, false);
+    draw();
+    clock = setInterval(function () {
+      left--;
+      var t = document.getElementById("contra-time"); if (t) t.textContent = fmtClock(Math.max(0, left));
+      timeChip.classList.toggle("danger", left <= 10);
+      if (left <= 0) finish();
+    }, 1000);
+
+    function stop() { ended = true; if (clock) { clearInterval(clock); clock = null; } }
+
+    function draw() {
+      answered = false;
+      var p = tablaPair(tabla), a = p[0], b = p[1]; ans = a * b;
+      body.innerHTML = "";
+      body.appendChild(el("div", { class: "tabla-q", text: a + " × " + b }));
+      var seen = {}; seen[ans] = true; var options = [ans];
+      while (options.length < 4) {
+        var d = ans + (Math.floor(Math.random() * 11) - 5);
+        if (d > 0 && !seen[d]) { seen[d] = true; options.push(d); }
+      }
+      options = shuffle(options);
+      var opts2 = el("div", { class: "opts opts-grid" });
+      options.forEach(function (val) {
+        var bn = el("button", { class: "opt opt-center", onclick: function () { choose(val, bn, opts2); } }, String(val));
+        opts2.appendChild(bn);
+      });
+      body.appendChild(opts2);
+    }
+
+    function choose(val, btn, container) {
+      if (answered || ended) return; answered = true;
+      var ok = val === ans;
+      if (ok) { score++; streak++; if (streak > best) best = streak; Sound.correct(); btn.classList.add("correct"); }
+      else {
+        streak = 0; Sound.wrong(); btn.classList.add("wrong");
+        container.querySelectorAll(".opt").forEach(function (b2) { if (b2.textContent === String(ans)) b2.classList.add("correct"); });
+      }
+      document.getElementById("contra-score").textContent = String(score);
+      document.getElementById("contra-streak").textContent = String(streak);
+      container.querySelectorAll(".opt").forEach(function (b2) { b2.disabled = true; });
+      setTimeout(function () { if (!ended) draw(); }, ok ? 280 : 600);
+    }
+
+    function finish() {
+      if (ended) return;
+      stop();
+      Store.markStudiedToday(); schedulePush();
+      var res = el("div", { class: "result" });
+      res.appendChild(el("div", { class: "result-eyebrow muted", text: "Contrarreloj · " + tablaSubt(tabla) }));
+      res.appendChild(el("div", { class: "result-big", text: String(score) }));
+      res.appendChild(el("div", { class: "result-pct", text: "puntos · mejor racha: " + best }));
+      var msg = score >= 25 ? "¡Velocidad de crack! Tu cálculo mental vuela." : (score >= 15 ? "¡Muy bien! Cada vez más rápido." : "Buen inicio. Con práctica vas a volar.");
+      res.appendChild(el("p", { class: "result-msg muted", text: msg }));
+      var acts = el("div", { class: "result-actions" });
+      acts.appendChild(el("button", { class: "btn btn-ghost", onclick: function () { go("tablas"); } }, "Volver"));
+      acts.appendChild(el("button", { class: "btn btn-cta", onclick: function () { startTablasContra(tabla); } }, "Otra vez"));
+      res.appendChild(acts);
+      body.innerHTML = ""; body.appendChild(res);
+      if (score >= 15) { Sound.celebrate(); confetti(score >= 25 ? 110 : 60); }
     }
   }
 

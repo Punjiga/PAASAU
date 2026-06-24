@@ -536,7 +536,19 @@ input { font-family: inherit; }
 .exp-tag { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
 .exp-tag.ok { color: var(--brand); }
 .exp-tag.no { color: var(--danger); }
+.exp-why {
+  font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--gold); margin: 2px 0 4px;
+}
 .exp-text { font-size: 14.5px; line-height: 1.6; color: #cdd9de; }
+
+/* Fracciones apiladas (número sobre número) y notación clara de matemática */
+.frac {
+  display: inline-flex; flex-direction: column; align-items: center;
+  vertical-align: -0.45em; margin: 0 .18em; line-height: 1; font-size: .92em;
+}
+.frac .fr-n { padding: 0 .35em 1px; border-bottom: 1.5px solid currentColor; }
+.frac .fr-d { padding: 1px .35em 0; }
 
 .quiz-actions { margin-top: 20px; display: flex; justify-content: flex-end; }
 .quiz-actions .btn { min-width: 160px; }
@@ -753,19 +765,20 @@ input { font-family: inherit; }
 @keyframes cdtick { 0% { transform: translateY(-5px) scale(1.12); opacity: .3; } 100% { transform: none; opacity: 1; } }
 @media (max-width: 520px) { .cd-unit { min-width: 54px; padding: 8px 6px; } .cd-num { font-size: 24px; } }
 
-/* Botón de pausa + overlay */
+/* Botón de pausa + indicador de pausa (no bloqueante) */
 .pause-btn.active { color: var(--gold); }
-.pause-overlay {
-  position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center;
-  background: rgba(8,12,16,.82); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+/* Chip de pausa: marca que está en pausa pero deja leer la explicación con calma */
+.pause-tag {
+  display: flex; align-items: center; gap: 8px;
+  margin: 0 0 12px; padding: 9px 13px;
+  border-radius: var(--r-md);
+  background: rgba(255,209,102,.13);
+  border: 1px solid rgba(255,209,102,.45);
+  color: var(--gold); font-size: 13px; font-weight: 600;
   animation: fade .2s ease;
 }
-.pause-card {
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
-  padding: 28px 26px; text-align: center; max-width: 340px; box-shadow: var(--shadow);
-}
-.pause-title { font-family: var(--font-display); font-size: 22px; font-weight: 700; margin-bottom: 8px; }
-.pause-card p { font-size: 14px; line-height: 1.5; margin-bottom: 6px; }
+.pause-tag svg { width: 16px; height: 16px; flex: 0 0 auto; }
+.pause-tag span { color: var(--text); font-weight: 500; }
 
 /* Fila superior de la pregunta: pill + guardar */
 .q-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
@@ -891,6 +904,37 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; justif
 .tabla-q { font-family: var(--font-display); font-size: 46px; font-weight: 700; text-align: center; margin: 22px 0 24px; letter-spacing: 1px; }
 .opts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
 .opt-center { justify-content: center; font-size: 21px; font-weight: 700; font-family: var(--font-mono); }
+
+/* Selector de modo de juego (Tablas) */
+.mode-grid { display: grid; gap: 8px; }
+.mode-btn { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; padding: 11px 14px; border-radius: var(--r-md); background: var(--surface-2); border: 1px solid var(--line); transition: all .15s; }
+.mode-btn:hover { border-color: var(--brand); }
+.mode-btn.active { background: rgba(46,230,166,.14); border-color: var(--brand); }
+.mode-name { font-weight: 700; font-size: 14.5px; color: var(--text); }
+.mode-btn.active .mode-name { color: var(--brand); }
+.mode-desc { font-size: 12.5px; }
+
+/* Modo escribir: visor de respuesta + teclado numérico */
+.tabla-entry { font-family: var(--font-mono); font-size: 38px; font-weight: 700; text-align: center; min-height: 50px; letter-spacing: 2px; color: var(--muted); margin-bottom: 4px; }
+.tabla-entry.filled { color: var(--text); }
+.tabla-entry.ok { color: var(--brand); }
+.tabla-entry.no { color: var(--danger); }
+.tabla-fb { text-align: center; min-height: 20px; font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+.tabla-fb.ok { color: var(--brand); }
+.tabla-fb.no { color: var(--danger); }
+.numpad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; max-width: 320px; margin: 0 auto; }
+.numpad-key { display: flex; align-items: center; justify-content: center; padding: 15px 0; border-radius: var(--r-md); background: var(--surface-2); border: 1px solid var(--line); color: var(--text); font-size: 22px; font-weight: 700; font-family: var(--font-mono); transition: all .12s; }
+.numpad-key:hover { border-color: var(--brand); }
+.numpad-key:active { transform: scale(.95); }
+.numpad-del { color: var(--muted); font-size: 20px; }
+.numpad-ok { background: var(--brand); border-color: var(--brand); color: #04140e; }
+.numpad-ok svg { width: 24px; height: 24px; }
+
+/* Modo contrarreloj: marcador de puntos y racha */
+.contra-stats { display: flex; justify-content: center; gap: 40px; margin: 6px 0 16px; }
+.contra-stat { display: flex; flex-direction: column; align-items: center; }
+.contra-num { font-family: var(--font-display); font-size: 30px; font-weight: 700; color: var(--brand); line-height: 1; }
+.contra-lbl { font-size: 12px; margin-top: 3px; }
 
 /* Menú inferior (móvil) con scroll horizontal cuando hay muchas secciones */
 @media (max-width: 900px) {

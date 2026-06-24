@@ -309,10 +309,10 @@ window.PAA_QUESTIONS_EXTRA = [
     q:"¿Cuánto recibe de vuelto?",
     opts:["₡600","₡700","₡800","₡900"],
     ans:1, exp:"3·2 500 = 7 500 y 2·900 = 1 800; total 9 300. Vuelto: 10 000 − 9 300 = 700." },
-  { id:"m_ari_7", domain:"math", topic:"aritmetica", dif:3, stem:"Considere la operación con fracciones: 3/4 − 2/3 + 1/2.", q:"¿Cuál es el resultado?", opts:["7/12","1/12","5/12","2/3"], ans:0, exp:"Con común denominador 12: 9/12 − 8/12 + 6/12 = 7/12." },
+  { id:"m_ari_7", domain:"math", topic:"aritmetica", dif:3, stem:"Considere la operación con fracciones: {{3/4}} − {{2/3}} + {{1/2}}.", q:"¿Cuál es el resultado?", opts:["{{7/12}}","{{1/12}}","{{5/12}}","{{2/3}}"], ans:0, exp:"Con común denominador 12: {{9/12}} − {{8/12}} + {{6/12}} = {{7/12}}." },
   { id:"m_ari_8", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación: 5 + 2 × (8 − 3)² ÷ 5.", q:"¿Cuál es el resultado?", opts:["15","27","20","11"], ans:0, exp:"Primero el paréntesis: 8 − 3 = 5; al cuadrado: 25. Luego 2 × 25 = 50; 50 ÷ 5 = 10; 5 + 10 = 15." },
   { id:"m_ari_9", domain:"math", topic:"aritmetica", dif:2,
-    stem:"En una finca hay 240 árboles y 3/8 de ellos son de naranja.",
+    stem:"En una finca hay 240 árboles y {{3/8}} de ellos son de naranja.",
     q:"¿Cuántos árboles de naranja hay?",
     opts:["64","80","96","90"],
     ans:3, exp:"240 ÷ 8 = 30; 30 × 3 = 90 árboles de naranja." },
@@ -342,7 +342,7 @@ window.PAA_QUESTIONS_EXTRA = [
     opts:["Marta","Luis","Sara","Pedro"],
     ans:3, exp:"De adelante hacia atrás: Marta, Luis, Sara, Pedro. El último es Pedro." },
   { id:"m_rel_5", domain:"math", topic:"relaciones_orden", dif:2, stem:"Se sabe que A es mayor que B, B es mayor que C y C es mayor que D.", q:"¿Quién es el menor de todos?", opts:["A","B","C","D"], ans:3, exp:"La cadena es A > B > C > D, así que el menor es D." },
-  { id:"m_rel_6", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,4 ; 0,47 ; 0,6 ; 0,55.", q:"¿Cuál está más cerca de 1/2?", opts:["0,4","0,47","0,6","0,55"], ans:1, exp:"1/2 = 0,50. Distancias: 0,10 ; 0,03 ; 0,10 ; 0,05. La menor es 0,03, o sea 0,47." },
+  { id:"m_rel_6", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,4 ; 0,47 ; 0,6 ; 0,55.", q:"¿Cuál está más cerca de {{1/2}}?", opts:["0,4","0,47","0,6","0,55"], ans:1, exp:"{{1/2}} = 0,50. Distancias: 0,10 ; 0,03 ; 0,10 ; 0,05. La menor es 0,03, o sea 0,47." },
   { id:"m_rel_7", domain:"math", topic:"relaciones_orden", dif:3,
     stem:"De tres cajas, A pesa más que B, y C pesa menos que B.",
     q:"¿Cuál afirmación es correcta?",
@@ -393,10 +393,10 @@ window.PAA_QUESTIONS_EXTRA = [
     opts:["4 cm","8 cm","6 cm","12 cm"],
     ans:1, exp:"Área = base × altura ÷ 2, entonces 24 = 6 × altura ÷ 2 = 3·altura, así que altura = 8 cm." },
   { id:"m_geo_8", domain:"math", topic:"geometria", dif:3,
-    stem:"Un círculo tiene un radio de 7 cm. Use π ≈ 22/7.",
+    stem:"Un círculo tiene un radio de 7 cm. Use π ≈ {{22/7}}.",
     q:"¿Cuál es su área?",
     opts:["44 cm²","154 cm²","154 cm","308 cm²"],
-    ans:1, exp:"Área = π·r² = (22/7)·7² = (22/7)·49 = 22·7 = 154 cm²." },
+    ans:1, exp:"Área = π·r² = ({{22/7}})·7² = ({{22/7}})·49 = 22·7 = 154 cm²." },
 
   /* -- Sucesiones -- */
   { id:"m_suc_6", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 3, 6, 12, 24, …", q:"¿Cuál es el séptimo término?", opts:["192","96","144","240"], ans:0, exp:"Cada término se multiplica por 2: 3, 6, 12, 24, 48, 96, 192. El séptimo es 192." },
@@ -413,9 +413,9 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_dat_6", domain:"math", topic:"datos_probabilidad", dif:2,
     stem:"En una urna hay 3 bolas verdes, 5 rojas y 2 azules. Se saca una al azar.",
     q:"¿Cuál es la probabilidad de que sea azul?",
-    opts:["1/5","1/2","2/5","1/10"],
-    ans:0, exp:"Hay 10 bolas en total y 2 azules: 2/10 = 1/5." },
-  { id:"m_dat_7", domain:"math", topic:"datos_probabilidad", dif:2, stem:"Se lanza un dado común de 6 caras.", q:"¿Cuál es la probabilidad de obtener un número primo?", opts:["1/2","1/3","2/3","1/6"], ans:0, exp:"Los primos del 1 al 6 son 2, 3 y 5 (el 1 no es primo): 3 casos de 6, o sea 1/2." },
+    opts:["{{1/5}}","{{1/2}}","{{2/5}}","{{1/10}}"],
+    ans:0, exp:"Hay 10 bolas en total y 2 azules: {{2/10}} = {{1/5}}." },
+  { id:"m_dat_7", domain:"math", topic:"datos_probabilidad", dif:2, stem:"Se lanza un dado común de 6 caras.", q:"¿Cuál es la probabilidad de obtener un número primo?", opts:["{{1/2}}","{{1/3}}","{{2/3}}","{{1/6}}"], ans:0, exp:"Los primos del 1 al 6 son 2, 3 y 5 (el 1 no es primo): 3 casos de 6, o sea {{1/2}}." },
   { id:"m_dat_8", domain:"math", topic:"datos_probabilidad", dif:3,
     stem:"El promedio de 4 números es 15. Tres de ellos son 12, 18 y 10.",
     q:"¿Cuál es el cuarto número?",
@@ -454,7 +454,7 @@ window.PAA_QUESTIONS_EXTRA = [
     stem:"Un tren viaja a una velocidad constante de 120 km/h.",
     q:"¿Qué distancia recorre en 15 minutos?",
     opts:["30 km","60 km","8 km","20 km"],
-    ans:0, exp:"15 min = 1/4 de hora. Distancia = 120 × 1/4 = 30 km." },
+    ans:0, exp:"15 min = {{1/4}} de hora. Distancia = 120 × {{1/4}} = 30 km." },
   { id:"m_uni_7", domain:"math", topic:"unidades_medida", dif:3, stem:"Una jarra contiene 1,5 litros de jugo y se sirven 3 vasos de 250 ml cada uno.", q:"¿Cuántos mililitros de jugo quedan en la jarra?", opts:["750 ml","1 250 ml","500 ml","250 ml"], ans:0, exp:"1,5 L = 1 500 ml. Se sirven 3 × 250 = 750 ml. Quedan 1 500 − 750 = 750 ml." },
 
   /* -- Razón y proporción -- */
@@ -624,10 +624,10 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_ari_11", domain:"math", topic:"aritmetica", dif:2, stem:"Considere la operación: 7 × 8 − 6 × 5 + 12 ÷ 4.", q:"¿Cuál es el resultado?", opts:["29","23","56","20"], ans:0, exp:"Primero × y ÷: 7×8=56, 6×5=30, 12÷4=3. Luego 56 − 30 + 3 = 29." },
   { id:"m_ari_12", domain:"math", topic:"aritmetica", dif:2, stem:"En una soda, un combo cuesta ₡3 200. Una familia pide 4 combos y, además, deja ₡1 000 de propina.", q:"¿Cuánto paga en total?", opts:["₡13 800","₡12 800","₡14 000","₡13 200"], ans:0, exp:"4 × 3 200 = 12 800; más la propina: 12 800 + 1 000 = 13 800." },
   { id:"m_ari_13", domain:"math", topic:"aritmetica", dif:2,
-    stem:"Un tanque está a 3/4 de su capacidad y se usa 1/2 del total.",
+    stem:"Un tanque está a {{3/4}} de su capacidad y se usa {{1/2}} del total.",
     q:"¿Qué fracción del tanque queda?",
-    opts:["1/4","1/2","1/3","3/8"],
-    ans:0, exp:"3/4 − 1/2 = 3/4 − 2/4 = 1/4." },
+    opts:["{{1/4}}","{{1/2}}","{{1/3}}","{{3/8}}"],
+    ans:0, exp:"{{3/4}} − {{1/2}} = {{3/4}} − {{2/4}} = {{1/4}}." },
 
   /* -- Mate: MCM y MCD -- */
   { id:"m_mcm_8", domain:"math", topic:"mcm_mcd", dif:2,
@@ -637,7 +637,7 @@ window.PAA_QUESTIONS_EXTRA = [
     ans:1, exp:"Coinciden en el MCM(6, 9). 6 = 2·3 y 9 = 3², así que MCM = 2·3² = 18." },
 
   /* -- Mate: relaciones de orden -- */
-  { id:"m_rel_8", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,7 ; 3/4 ; 0,72.", q:"Al ordenarlos de menor a mayor, ¿cuál queda en el medio?", opts:["0,7","0,72","3/4","Los tres son iguales"], ans:1, exp:"En decimales: 0,70 ; 0,75 ; 0,72. Ordenados: 0,70 < 0,72 < 0,75. En el medio queda 0,72." },
+  { id:"m_rel_8", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,7 ; {{3/4}} ; 0,72.", q:"Al ordenarlos de menor a mayor, ¿cuál queda en el medio?", opts:["0,7","0,72","{{3/4}}","Los tres son iguales"], ans:1, exp:"En decimales: 0,70 ; 0,75 ; 0,72. Ordenados: 0,70 < 0,72 < 0,75. En el medio queda 0,72." },
   { id:"m_rel_9", domain:"math", topic:"relaciones_orden", dif:3, stem:"Se sabe que x es un número entero y que −5 < x < −2.", q:"¿Cuál de los siguientes valores SÍ puede ser x?", opts:["−5","−4","−2","−1"], ans:1, exp:"x está estrictamente entre −5 y −2, así que solo puede ser −4 o −3. De las opciones, la válida es −4 (−5 y −2 quedan excluidos y −1 es mayor que −2)." },
 
   /* -- Mate: conteo -- */
@@ -675,8 +675,8 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_dat_9", domain:"math", topic:"datos_probabilidad", dif:2,
     stem:"En una bolsa hay 8 caramelos: 3 de menta y 5 de fresa. Se saca uno al azar.",
     q:"¿Cuál es la probabilidad de que sea de menta?",
-    opts:["3/8","5/8","3/5","1/3"],
-    ans:0, exp:"Favorables 3 sobre 8 totales: 3/8." },
+    opts:["{{3/8}}","{{5/8}}","{{3/5}}","{{1/3}}"],
+    ans:0, exp:"Favorables 3 sobre 8 totales: {{3/8}}." },
   { id:"m_dat_10", domain:"math", topic:"datos_probabilidad", dif:3, stem:"El promedio de tres números es 20. Dos de ellos son 15 y 22.", q:"¿Cuál es el tercer número?", opts:["23","20","18","25"], ans:0, exp:"La suma de los tres es 3 × 20 = 60. Como 15 + 22 = 37, el tercero es 60 − 37 = 23." },
 
   /* -- Mate: notación algebraica -- */
@@ -771,7 +771,7 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_mcm_9", domain:"math", topic:"mcm_mcd", dif:3, stem:"Se quieren cortar dos listones de 24 cm y 30 cm en trozos iguales lo más largos posible, sin desperdicio.", q:"¿Cuánto mide cada trozo?", opts:["6 cm","12 cm","3 cm","2 cm"], ans:0, exp:"El trozo más largo que divide a ambos es el MCD(24, 30) = 6 cm." },
 
   /* -- Mate: relaciones de orden -- */
-  { id:"m_rel_10", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 3/5 ; 0,58 ; 2/3 ; 0,6.", q:"¿Cuál es el mayor?", opts:["3/5","0,58","2/3","0,6"], ans:2, exp:"En decimales: 0,60 ; 0,58 ; 0,666… ; 0,60. El mayor es 2/3 ≈ 0,67." },
+  { id:"m_rel_10", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores {{3/5}} ; 0,58 ; {{2/3}} ; 0,6.", q:"¿Cuál es el mayor?", opts:["{{3/5}}","0,58","{{2/3}}","0,6"], ans:2, exp:"En decimales: 0,60 ; 0,58 ; 0,666… ; 0,60. El mayor es {{2/3}} ≈ 0,67." },
   { id:"m_rel_11", domain:"math", topic:"relaciones_orden", dif:3, stem:"Se sabe que −x > 0.", q:"¿Qué se puede concluir del número x?", opts:["x es positivo","x es negativo","x es igual a cero","No se puede saber"], ans:1, exp:"Si el opuesto de x es positivo, entonces x es negativo (por ejemplo, si x=−3, −x=3>0)." },
 
   /* -- Mate: conteo -- */
@@ -790,7 +790,7 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_suc_13", domain:"math", topic:"sucesiones", dif:2, stem:"Observe la sucesión: 1, 1, 2, 3, 5, 8, 13, …", q:"¿Cuál es el siguiente término?", opts:["21","18","16","20"], ans:0, exp:"Cada término es la suma de los dos anteriores (Fibonacci): 8 + 13 = 21." },
 
   /* -- Mate: datos y probabilidad -- */
-  { id:"m_dat_11", domain:"math", topic:"datos_probabilidad", dif:2, stem:"En una rifa hay 200 números y una persona compró 8 de ellos.", q:"¿Cuál es la probabilidad de que gane (que salga uno de sus números)?", opts:["1/25","8/100","1/8","1/200"], ans:0, exp:"Tiene 8 favorables de 200 posibles: 8/200, que simplificado es 1/25." },
+  { id:"m_dat_11", domain:"math", topic:"datos_probabilidad", dif:2, stem:"En una rifa hay 200 números y una persona compró 8 de ellos.", q:"¿Cuál es la probabilidad de que gane (que salga uno de sus números)?", opts:["{{1/25}}","{{8/100}}","{{1/8}}","{{1/200}}"], ans:0, exp:"Tiene 8 favorables de 200 posibles: {{8/200}}, que simplificado es {{1/25}}." },
   { id:"m_dat_12", domain:"math", topic:"datos_probabilidad", dif:3, stem:"El promedio de 5 notas es 8. Cuatro de ellas son 7, 9, 8 y 6.", q:"¿Cuál es la quinta nota?", opts:["8","9","10","12"], ans:2, exp:"La suma total es 5·8 = 40. Las cuatro dadas suman 30, así que la quinta es 40 − 30 = 10." },
 
   /* -- Mate: notación algebraica -- */
@@ -800,7 +800,7 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_alr_8", domain:"math", topic:"algebra_relaciones", dif:3, stem:"La mitad de un número, aumentada en 7, es igual a 16.", q:"¿Cuál es el número?", opts:["18","9","23","32"], ans:0, exp:"x/2 + 7 = 16 → x/2 = 9 → x = 18." },
 
   /* -- Mate: unidades de medida -- */
-  { id:"m_uni_9", domain:"math", topic:"unidades_medida", dif:3, stem:"Un ciclista avanza a 20 km/h de forma constante.", q:"¿Cuánto tarda en recorrer 5 km?", opts:["15 min","20 min","25 min","10 min"], ans:0, exp:"Tiempo = distancia ÷ velocidad = 5 ÷ 20 = 1/4 de hora = 15 minutos." },
+  { id:"m_uni_9", domain:"math", topic:"unidades_medida", dif:3, stem:"Un ciclista avanza a 20 km/h de forma constante.", q:"¿Cuánto tarda en recorrer 5 km?", opts:["15 min","20 min","25 min","10 min"], ans:0, exp:"Tiempo = distancia ÷ velocidad = 5 ÷ 20 = {{1/4}} de hora = 15 minutos." },
 
   /* -- Mate: razón y proporción -- */
   { id:"m_raz_10", domain:"math", topic:"razon_proporcion", dif:3, stem:"Con 5 litros de pintura se cubren 60 m² de pared.", q:"¿Cuántos litros se necesitan para cubrir 84 m²?", opts:["7 L","6 L","8 L","9 L"], ans:0, exp:"Rendimiento: 60 ÷ 5 = 12 m² por litro. Para 84 m²: 84 ÷ 12 = 7 litros." },
@@ -849,7 +849,7 @@ window.PAA_QUESTIONS_EXTRA = [
   { id:"m_cnt_16", domain:"math", topic:"conteo", dif:2, fig:'<svg viewBox="0 0 180 150" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="90,15 20,135 160,135" fill="rgba(77,163,255,.12)" stroke="var(--math)" stroke-width="2"/><line x1="90" y1="15" x2="90" y2="135" stroke="var(--math)" stroke-width="2"/></svg>', stem:"En la figura, un triángulo grande está dividido por una línea que va del vértice superior a la base.", q:"¿Cuántos triángulos hay en total?", opts:["2","3","4","5"], ans:1, exp:"Los dos triángulos pequeños y el grande que ambos forman: 3 en total." },
   { id:"m_geo_15", domain:"math", topic:"geometria", dif:3, fig:'<svg viewBox="0 0 195 165" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="20,30 120,30 120,75 170,75 170,140 20,140" fill="rgba(77,163,255,.12)" stroke="var(--math)" stroke-width="2"/><text x="80" y="156" fill="currentColor" font-size="12">8 cm</text><text x="2" y="92" fill="currentColor" font-size="12">6 cm</text></svg>', stem:"La figura en forma de L se obtuvo al recortar una esquina rectangular a un rectángulo de 8 cm por 6 cm.", q:"¿Cuál es el perímetro de la figura?", opts:["28 cm","22 cm","24 cm","20 cm"], ans:0, exp:"Al recortar una esquina, los lados del recorte reemplazan exactamente a los que se quitaron: el contorno sigue midiendo lo mismo que el rectángulo completo, 2·(8+6) = 28 cm." },
   { id:"m_geo_16", domain:"math", topic:"geometria", dif:2, fig:'<svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="20" y1="100" x2="180" y2="100" stroke="var(--math)" stroke-width="2"/><line x1="100" y1="100" x2="45" y2="32" stroke="var(--math)" stroke-width="2"/><text x="52" y="92" fill="currentColor" font-size="13">130°</text><text x="128" y="92" fill="currentColor" font-size="14">?</text></svg>', stem:"En la figura, los dos ángulos están formados sobre una misma línea recta. Uno mide 130°.", q:"¿Cuánto mide el otro ángulo?", opts:["50°","60°","40°","130°"], ans:0, exp:"Los ángulos que se forman sobre una línea recta suman 180°. Entonces 180 − 130 = 50°." },
-  { id:"m_ari_18", domain:"math", topic:"aritmetica", dif:2, fig:'<svg viewBox="0 0 250 70" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="15" width="28" height="40" fill="rgba(46,230,166,.55)" stroke="var(--brand)" stroke-width="1.5"/><rect x="37" y="15" width="28" height="40" fill="rgba(46,230,166,.55)" stroke="var(--brand)" stroke-width="1.5"/><rect x="65" y="15" width="28" height="40" fill="rgba(46,230,166,.55)" stroke="var(--brand)" stroke-width="1.5"/><rect x="93" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="121" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="149" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="177" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="205" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/></svg>', stem:"La barra de la figura está dividida en partes iguales y algunas están sombreadas.", q:"¿Qué fracción de la barra está sombreada?", opts:["3/8","3/5","5/8","1/3"], ans:0, exp:"La barra tiene 8 partes iguales y 3 están sombreadas: 3/8." },
+  { id:"m_ari_18", domain:"math", topic:"aritmetica", dif:2, fig:'<svg viewBox="0 0 250 70" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="15" width="28" height="40" fill="rgba(46,230,166,.55)" stroke="var(--brand)" stroke-width="1.5"/><rect x="37" y="15" width="28" height="40" fill="rgba(46,230,166,.55)" stroke="var(--brand)" stroke-width="1.5"/><rect x="65" y="15" width="28" height="40" fill="rgba(46,230,166,.55)" stroke="var(--brand)" stroke-width="1.5"/><rect x="93" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="121" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="149" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="177" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/><rect x="205" y="15" width="28" height="40" fill="none" stroke="var(--brand)" stroke-width="1.5"/></svg>', stem:"La barra de la figura está dividida en partes iguales y algunas están sombreadas.", q:"¿Qué fracción de la barra está sombreada?", opts:["{{3/8}}","{{3/5}}","{{5/8}}","{{1/3}}"], ans:0, exp:"La barra tiene 8 partes iguales y 3 están sombreadas: {{3/8}}." },
   { id:"m_geo_17", domain:"math", topic:"geometria", dif:2, fig:'<svg viewBox="0 0 180 150" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="var(--line)" stroke-width="1"><line x1="30" y1="30" x2="30" y2="120"/><line x1="60" y1="30" x2="60" y2="120"/><line x1="90" y1="30" x2="90" y2="120"/><line x1="120" y1="30" x2="120" y2="120"/><line x1="150" y1="30" x2="150" y2="120"/><line x1="30" y1="30" x2="150" y2="30"/><line x1="30" y1="60" x2="150" y2="60"/><line x1="30" y1="90" x2="150" y2="90"/><line x1="30" y1="120" x2="150" y2="120"/></g><polygon points="30,120 150,120 30,30" fill="rgba(77,163,255,.18)" stroke="var(--math)" stroke-width="2"/></svg>', stem:"En la figura, cada cuadrito mide 1 cm. El triángulo tiene base 4 cm y altura 3 cm.", q:"¿Cuál es el área del triángulo?", opts:["6 cm²","12 cm²","7 cm²","10 cm²"], ans:0, exp:"Área del triángulo = base × altura ÷ 2 = 4 × 3 ÷ 2 = 6 cm²." }
 ];
 

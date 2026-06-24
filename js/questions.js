@@ -227,10 +227,10 @@ window.PAA_QUESTIONS = [
     opts:["₡860","₡1 040","₡960","₡1 100"],
     ans:1, exp:"8 × 75 = 600 y 3 × 120 = 360; en total gasta 960. Vuelto: 2 000 − 960 = 1 040." },
   { id:"m_ari_2", domain:"math", topic:"aritmetica", dif:2,
-    stem:"María leyó 2/5 de un libro el lunes y 1/3 el martes.",
+    stem:"María leyó {{2/5}} de un libro el lunes y {{1/3}} el martes.",
     q:"¿Qué fracción del libro le falta por leer?",
-    opts:["1/15","4/15","11/15","3/8"],
-    ans:1, exp:"2/5 + 1/3 = 6/15 + 5/15 = 11/15 leído. Falta 1 − 11/15 = 4/15." },
+    opts:["{{1/15}}","{{4/15}}","{{11/15}}","{{3/8}}"],
+    ans:1, exp:"{{2/5}} + {{1/3}} = {{6/15}} + {{5/15}} = {{11/15}} leído. Falta 1 − {{11/15}} = {{4/15}}." },
   { id:"m_ari_3", domain:"math", topic:"aritmetica", dif:2, stem:"Un litro de gasolina cuesta ₡652,50. Un conductor echa 30 litros y paga con tres billetes de ₡10 000.", q:"¿Cuánto recibe de vuelto?", opts:["₡10 425","₡9 575","₡10 575","₡11 425"], ans:0, exp:"30 × 652,50 = 19 575. Vuelto: 30 000 − 19 575 = 10 425." },
   { id:"m_ari_4", domain:"math", topic:"aritmetica", dif:3, stem:"Considere la operación: 3 + 4 × 5 − 8 ÷ 2 + 2³.", q:"¿Cuál es el resultado?", opts:["27","19","35","11"], ans:0, exp:"Potencia y luego × y ÷: 2³=8, 4×5=20, 8÷2=4. Después: 3 + 20 − 4 + 8 = 27." },
   { id:"m_ari_5", domain:"math", topic:"aritmetica", dif:2,
@@ -264,7 +264,7 @@ window.PAA_QUESTIONS = [
     opts:["Ana","Beto","Carlos","Diana"],
     ans:2, exp:"Orden: Diana > Ana > Beto > Carlos. El menor es Carlos." },
   { id:"m_rel_2", domain:"math", topic:"relaciones_orden", dif:3, stem:"Se sabe que a < 0 < b y que el valor absoluto de a es mayor que el de b.", q:"¿Cuál afirmación es siempre verdadera?", opts:["a + b > 0","a + b < 0","a + b = 0","a es mayor que b"], ans:1, exp:"Como a es negativo y |a| > |b|, el negativo pesa más que el positivo: a + b < 0." },
-  { id:"m_rel_3", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,4 ; 3/5 ; 0,55 ; 2/5 ; 0,7.", q:"¿Cuántos de ellos son mayores que 1/2?", opts:["2","3","4","1"], ans:1, exp:"1/2 = 0,5. Mayores: 3/5 (0,6), 0,55 y 0,7. Son 3 (0,4 y 2/5=0,4 no superan 0,5)." },
+  { id:"m_rel_3", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,4 ; {{3/5}} ; 0,55 ; {{2/5}} ; 0,7.", q:"¿Cuántos de ellos son mayores que {{1/2}}?", opts:["2","3","4","1"], ans:1, exp:"{{1/2}} = 0,5. Mayores: {{3/5}} (0,6), 0,55 y 0,7. Son 3 (0,4 y {{2/5}}=0,4 no superan 0,5)." },
 
   /* -- Conteo intuitivo -- */
   { id:"m_cnt_1", domain:"math", topic:"conteo", dif:3,
@@ -281,7 +281,7 @@ window.PAA_QUESTIONS = [
     stem:"En una reunión hay 5 personas y cada una saluda de mano a todas las demás exactamente una vez.",
     q:"¿Cuántos saludos se dan en total?",
     opts:["10","20","25","15"],
-    ans:0, exp:"Cada par se saluda una vez: 5·4/2 = 10 saludos." },
+    ans:0, exp:"Cada par se saluda una vez: {{5·4/2}} = 10 saludos." },
 
   /* -- Permutaciones -- */
   { id:"m_per_1", domain:"math", topic:"permutaciones", dif:2,
@@ -309,10 +309,10 @@ window.PAA_QUESTIONS = [
   { id:"m_geo_2", domain:"math", topic:"geometria", dif:3, stem:"Una sala rectangular mide 6 m de largo por 4 m de ancho. Se cubrirá todo el piso con baldosas cuadradas de 1 m de lado, y cada baldosa cuesta ₡2 500.", q:"¿Cuánto se gasta en baldosas?", opts:["₡60 000","₡25 000","₡48 000","₡100 000"], ans:0, exp:"Área = 6 × 4 = 24 m², o sea 24 baldosas. 24 × 2 500 = 60 000." },
   { id:"m_geo_3", domain:"math", topic:"geometria", dif:3, stem:"Un terreno triangular tiene 20 m de base y 15 m de altura. Se vende a ₡8 000 el metro cuadrado.", q:"¿Cuánto cuesta el terreno?", opts:["₡1 200 000","₡2 400 000","₡150 000","₡800 000"], ans:0, exp:"Área = 20 × 15 ÷ 2 = 150 m². Costo: 150 × 8 000 = 1 200 000." },
   { id:"m_geo_4", domain:"math", topic:"geometria", dif:3,
-    stem:"Una rueda tiene un radio de 35 cm. Use π ≈ 22/7.",
+    stem:"Una rueda tiene un radio de 35 cm. Use π ≈ {{22/7}}.",
     q:"¿Cuál es su circunferencia (perímetro)?",
     opts:["110 cm","220 cm","154 cm","440 cm"],
-    ans:1, exp:"Circunferencia = 2·π·r = 2·(22/7)·35 = 2·22·5 = 220 cm." },
+    ans:1, exp:"Circunferencia = 2·π·r = 2·({{22/7}})·35 = 2·22·5 = 220 cm." },
 
   /* -- Sucesiones -- */
   { id:"m_suc_1", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 4, 7, 10, 13, …", q:"¿Cuál es el término que ocupa la posición 12?", opts:["37","34","40","31"], ans:0, exp:"Es aritmética con d = 3. a₁₂ = 4 + (12 − 1)·3 = 4 + 33 = 37." },
@@ -337,8 +337,8 @@ window.PAA_QUESTIONS = [
   { id:"m_dat_1", domain:"math", topic:"datos_probabilidad", dif:2,
     stem:"En una caja hay 4 bolas rojas y 6 azules. Se saca una bola al azar.",
     q:"¿Cuál es la probabilidad de que sea roja?",
-    opts:["2/5","3/5","4/6","1/4"],
-    ans:0, exp:"Probabilidad = favorables/total = 4/10 = 2/5." },
+    opts:["{{2/5}}","{{3/5}}","{{4/6}}","{{1/4}}"],
+    ans:0, exp:"Probabilidad = favorables ÷ total = {{4/10}} = {{2/5}}." },
   { id:"m_dat_2", domain:"math", topic:"datos_probabilidad", dif:3,
     stem:"En cuatro exámenes, un estudiante obtuvo 80, 90, 70 y 100. Hará un quinto examen y quiere que el promedio de los cinco sea exactamente 86.",
     q:"¿Qué nota necesita en el quinto examen?",
@@ -349,7 +349,7 @@ window.PAA_QUESTIONS = [
     q:"¿Qué resultado es el más probable?",
     opts:["Premio mayor","Premio mediano","Sin premio","Premio pequeño"],
     ans:2, exp:"El resultado más probable es el de mayor cantidad de casos: 'sin premio' (50 de 100)." },
-  { id:"m_dat_4", domain:"math", topic:"datos_probabilidad", dif:3, stem:"En una bolsa hay 12 bolas: 5 rojas, 4 azules y 3 verdes. Se saca una al azar.", q:"¿Cuál es la probabilidad de que NO sea roja?", opts:["7/12","5/12","1/2","3/12"], ans:0, exp:"Las que no son rojas son 4 + 3 = 7, de 12 en total: 7/12." },
+  { id:"m_dat_4", domain:"math", topic:"datos_probabilidad", dif:3, stem:"En una bolsa hay 12 bolas: 5 rojas, 4 azules y 3 verdes. Se saca una al azar.", q:"¿Cuál es la probabilidad de que NO sea roja?", opts:["{{7/12}}","{{5/12}}","{{1/2}}","{{3/12}}"], ans:0, exp:"Las que no son rojas son 4 + 3 = 7, de 12 en total: {{7/12}}." },
 
   /* -- Notación algebraica -- */
   { id:"m_not_1", domain:"math", topic:"algebra_notacion", dif:2,
@@ -384,7 +384,7 @@ window.PAA_QUESTIONS = [
     stem:"Un carro viaja a 90 km/h.",
     q:"¿Qué distancia recorre en 40 minutos?",
     opts:["36 km","60 km","120 km","45 km"],
-    ans:1, exp:"40 min = 40/60 h = 2/3 h. Distancia = 90 · 2/3 = 60 km." },
+    ans:1, exp:"40 min = {{40/60}} h = {{2/3}} h. Distancia = 90 · {{2/3}} = 60 km." },
   { id:"m_uni_4", domain:"math", topic:"unidades_medida", dif:2,
     stem:"Un evento empezó a las 10:45 a. m. y duró 2 horas y 50 minutos.",
     q:"¿A qué hora terminó?",
@@ -402,7 +402,7 @@ window.PAA_QUESTIONS = [
     stem:"Tres obreros construyen un muro en 12 días.",
     q:"¿Cuántos días tardarían 6 obreros trabajando al mismo ritmo?",
     opts:["24","6","18","4"],
-    ans:1, exp:"Proporción inversa: 3·12 = 36 obrero-días. Con 6 obreros: 36/6 = 6 días." },
+    ans:1, exp:"Proporción inversa: 3·12 = 36 obrero-días. Con 6 obreros: 36 ÷ 6 = 6 días." },
   { id:"m_raz_4", domain:"math", topic:"razon_proporcion", dif:3, stem:"Seis obreros tardan 10 días en terminar una obra.", q:"¿Cuántos días tardarían 4 obreros, trabajando al mismo ritmo?", opts:["15 días","6,7 días","12 días","20 días"], ans:0, exp:"Proporción inversa: 6 × 10 = 60 obrero-días. Con 4 obreros: 60 ÷ 4 = 15 días." }
 ];
 
