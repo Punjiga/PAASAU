@@ -143,6 +143,7 @@
       pause: '<rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/>',
       heart: '<path d="M12 21s-7-4.6-9.4-8.4A5 5 0 0 1 12 6.5 5 5 0 0 1 21.4 12.6C19 16.4 12 21 12 21z"/>',
       consejos: '<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.8 10.6c.5.4.8 1 .8 1.6v.8h6v-.8c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3z"/>',
+      material: '<path d="M4 19V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M8 3v13"/><path d="M11 7h5M11 10h5"/>',
       tablas: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>'
     };
     var svg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" ' +
@@ -316,6 +317,7 @@
     { id: "tablas", label: "Tablas", render: renderTablas },
     { id: "temas", label: "Temas", render: renderTemas },
     { id: "consejos", label: "Consejos", render: renderConsejos },
+    { id: "material", label: "Material", render: renderMaterial },
     { id: "simulacros", label: "Simulacros", render: renderSimulacros },
     { id: "progreso", label: "Progreso", render: renderProgreso },
     { id: "ajustes", label: "Ajustes", render: renderAjustes },
@@ -1959,6 +1961,78 @@
       body.innerHTML = ""; body.appendChild(res);
       if (score >= 15) { Sound.celebrate(); confetti(score >= 25 ? 110 : 60); }
     }
+  }
+
+  /* ============================================================
+     VISTA · MATERIAL DE APOYO
+     ============================================================ */
+  function renderMaterial() {
+    var frag = el("div", {});
+    frag.appendChild(pageHead("Material de apoyo", "Repaso rápido de fórmulas y estrategias para la PAA. Tenelo a mano antes de practicar."));
+
+    var mat = el("div", { class: "card" });
+    mat.appendChild(el("div", { class: "card-title", text: "Fórmulas clave de matemática" }));
+    var shapes = el("div", { class: "mat-svg" });
+    shapes.innerHTML = '<svg viewBox="0 0 340 96" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="26" width="74" height="46" fill="rgba(77,163,255,.14)" stroke="var(--math)" stroke-width="2"/><text x="22" y="88" fill="currentColor" font-size="11">Rectángulo</text><polygon points="150,72 110,72 130,28" fill="rgba(46,230,166,.14)" stroke="var(--brand)" stroke-width="2"/><text x="106" y="88" fill="currentColor" font-size="11">Triángulo</text><circle cx="222" cy="49" r="23" fill="rgba(199,146,234,.14)" stroke="var(--verbal)" stroke-width="2"/><text x="202" y="88" fill="currentColor" font-size="11">Círculo</text><rect x="280" y="29" width="42" height="42" fill="rgba(255,209,102,.14)" stroke="var(--gold)" stroke-width="2"/><text x="282" y="88" fill="currentColor" font-size="11">Cuadrado</text></svg>';
+    mat.appendChild(shapes);
+    var fxs = [
+      ["Rectángulo", "área = base × altura · perímetro = 2 × (base + altura)"],
+      ["Cuadrado", "área = lado × lado · perímetro = 4 × lado"],
+      ["Triángulo", "área = base × altura ÷ 2"],
+      ["Círculo", "área = π × radio² · circunferencia = 2 × π × radio  (π ≈ 3,14 o {{22/7}})"],
+      ["Porcentaje", "el x % de N = N × x ÷ 100"],
+      ["Regla de tres", "si a → b, entonces c → b × c ÷ a"],
+      ["Probabilidad", "casos favorables ÷ casos totales"],
+      ["Promedio", "suma de los datos ÷ cantidad de datos"],
+      ["Velocidad", "distancia ÷ tiempo"]
+    ];
+    var fl = el("div", { class: "mat-list" });
+    fxs.forEach(function (f) {
+      var row = el("div", { class: "mat-row" });
+      row.appendChild(el("span", { class: "mat-key", text: f[0] }));
+      row.appendChild(el("span", { class: "mat-val", html: mathHTML(f[1]) }));
+      fl.appendChild(row);
+    });
+    mat.appendChild(fl);
+    frag.appendChild(mat);
+
+    var verb = el("div", { class: "card" });
+    verb.appendChild(el("div", { class: "card-title", text: "Cómo abordar cada tipo de verbal" }));
+    var vs = [
+      ["Idea principal", "Elegí la opción que ABARCA todo el texto, no un detalle suelto."],
+      ["Idea implícita", "Lo que se DEDUCE aunque no esté escrito. Ojo con lo que el texto NO dice."],
+      ["Paráfrasis", "La opción que dice LO MISMO con otras palabras, ni más ni menos."],
+      ["Proposiciones", "Revisá una por una cuál se deduce; descartá las que afirman de más."],
+      ["Perspectiva", "Un mismo hecho se ve distinto según quién lo mira y qué le interesa."],
+      ["Causa y consecuencia", "Qué pasó primero (causa) y qué resultó (consecuencia). Coincidir no es causar."],
+      ["Finalidad", "El para qué. No confundas el fin con el medio."],
+      ["Conceptualización", "Resumí la actitud o idea en UNA palabra precisa."]
+    ];
+    var vl = el("div", { class: "mat-list" });
+    vs.forEach(function (f) {
+      var row = el("div", { class: "mat-row" });
+      row.appendChild(el("span", { class: "mat-key", text: f[0] }));
+      row.appendChild(el("span", { class: "mat-val", text: f[1] }));
+      vl.appendChild(row);
+    });
+    verb.appendChild(vl);
+    frag.appendChild(verb);
+
+    var ex = el("div", { class: "card" });
+    ex.appendChild(el("div", { class: "card-title", text: "Estrategia para el día del examen" }));
+    var tips = [
+      "45 ítems en 110 minutos ≈ 2 min por ítem. No te trabes: marcá tu mejor opción y seguí.",
+      "NO penaliza adivinar: nunca dejés una en blanco.",
+      "Leé TODAS las opciones antes de marcar; la trampa suele parecerse a la correcta.",
+      "En mate, hacé un dibujo o una tabla rápida y revisá las unidades.",
+      "Si una te traba, pasá y volvé después con la mente fresca. Respirá."
+    ];
+    var ul = el("ul", { class: "mat-tips" });
+    tips.forEach(function (t) { ul.appendChild(el("li", { text: t })); });
+    ex.appendChild(ul);
+    frag.appendChild(ex);
+
+    return frag;
   }
 
   /* ============================================================

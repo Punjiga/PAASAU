@@ -587,6 +587,18 @@ input { font-family: inherit; }
 .review-ans.ok { color: var(--brand); }
 .review-ans.no { color: var(--danger); }
 .q-fig.sm svg { max-height: 120px; }
+/* Material de apoyo */
+.mat-svg { display: flex; justify-content: center; margin: 6px 0 16px; }
+.mat-svg svg { width: 100%; max-width: 340px; height: auto; }
+.mat-list { display: flex; flex-direction: column; }
+.mat-row { display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--line-soft); }
+.mat-row:last-child { border-bottom: none; }
+.mat-key { font-weight: 700; font-size: 13.5px; color: var(--brand); }
+.mat-val { font-size: 14px; line-height: 1.55; color: #cdd9de; }
+.mat-tips { list-style: none; display: flex; flex-direction: column; gap: 11px; }
+.mat-tips li { position: relative; padding-left: 20px; font-size: 14px; line-height: 1.55; color: #cdd9de; }
+.mat-tips li::before { content: "\203A"; position: absolute; left: 5px; color: var(--brand); font-weight: 700; }
+@media (max-width: 560px) { .mat-row { grid-template-columns: 1fr; gap: 2px; } }
 
 /* ============================================================
    PROGRESO
