@@ -265,9 +265,12 @@ window.Store = (function () {
   }
 
   /* ---------- Sesión ---------- */
-  function login(username) { state.isGuest = false; state.user = username || CFG.defaultUser; persist(); }
-  function guest() { state.isGuest = true; state.user = "Invitado"; persist(); }
-  function logout() { Timer.stop(); state = emptyState(); persist(); }
+  // Iniciar/cerrar sesión NO es un cambio de datos: usar persistRaw para no tocar savedAt.
+  // (Si bumpeáramos savedAt al loguear, un dispositivo nuevo se vería "más nuevo" que la nube
+  //  y no bajaría tu progreso. Justo el bug que causaba "pierdo todo".)
+  function login(username) { state.isGuest = false; state.user = username || CFG.defaultUser; persistRaw(); }
+  function guest() { state.isGuest = true; state.user = "Invitado"; persistRaw(); }
+  function logout() { Timer.stop(); state = emptyState(); persistRaw(); }
 
   /* ---------- Setters varios ---------- */
   function setExam(dateKey, name) {
