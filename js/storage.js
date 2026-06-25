@@ -23,7 +23,8 @@ window.Store = (function () {
       saved: [],               // ids de preguntas guardadas para repasar
       settings: { sound: true },
       studyResetDone: true,    // bandera de migración (estado nuevo ya está "reseteado")
-      lastSync: null
+      lastSync: null,
+      savedAt: 0               // marca de tiempo del último cambio local (para mezclar bien la nube)
     };
   }
 
@@ -55,10 +56,13 @@ window.Store = (function () {
       return emptyState();
     }
   }
-  function persist() {
+  function persistRaw() {
     try { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
     catch (e) { console.warn("No se pudo guardar localmente:", e); }
   }
+  // persist() marca el momento del cambio (savedAt) para que la sincronización
+  // sepa cuál versión es la más nueva entre dispositivos.
+  function persist() { state.savedAt = Date.now(); persistRaw(); }
 
   /* ---------- Utilidades de fecha (fecha local del dispositivo) ---------- */
   function todayKey(d = new Date()) {
@@ -82,6 +86,13 @@ window.Store = (function () {
   function msUntilExam() {
     if (!state.examDate) return null;
     return new Date(state.examDate + "T00:00:00").getTime() - Date.now();
+  }
+  // Milisegundos hasta la próxima medianoche local: el contador de días baja
+  // exactamente cuando esto llega a 0, así la barra y el héroe muestran el MISMO número.
+  function msUntilNextMidnight() {
+    const d = new Date();
+    const next = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1, 0, 0, 0, 0);
+    return next.getTime() - d.getTime();
   }
 
   /* ---------- Racha ---------- */
@@ -191,33 +202,40 @@ window.Store = (function () {
 
   /* ---------- Sincronización con JSONBin ---------- */
   async function pull() {
-    if (!CFG.sync.enabled || state.isGuest) return false;
+    if (!CFG.sync.enabled || state.isGuest) return { ok: false, reason: "off" };
     try {
       const res = await fetch(`${CFG.sync.base}/${CFG.sync.binId}/latest`, {
         headers: { "X-Access-Key": CFG.sync.accessKey, "X-Bin-Meta": "false" }
       });
-      if (!res.ok) throw new Error("HTTP " + res.status);
+      if (!res.ok) return { ok: false, status: res.status, reason: "http" };
       const data = await res.json();
       const remote = data && data[CFG.sync.namespace];
       if (remote && typeof remote === "object") {
-        const keepUser = state.user, keepGuest = state.isGuest;
-        if (!remote.totalSeconds || remote.totalSeconds >= state.totalSeconds) {
+        // Tomar la versión de la nube solo si es MÁS NUEVA que lo local (por savedAt).
+        // Así, cambios hechos en otro dispositivo no borran los de este, y viceversa.
+        const remoteAt = remote.savedAt || 0;
+        const localAt = state.savedAt || 0;
+        const applied = remoteAt >= localAt;
+        if (applied) {
+          const keepUser = state.user, keepGuest = state.isGuest;
           state = migrate(Object.assign(emptyState(), remote));
+          state.user = keepUser; state.isGuest = keepGuest;
         }
-        state.user = keepUser; state.isGuest = keepGuest;
         state.lastSync = new Date().toISOString();
-        persist();
-        return true;
+        persistRaw();
+        return { ok: true, applied: applied };
       }
-      return false;
+      state.lastSync = new Date().toISOString();
+      persistRaw();
+      return { ok: true, applied: false, empty: true };
     } catch (e) {
       console.warn("Sync (pull) falló:", e.message);
-      return false;
+      return { ok: false, reason: "net", error: e.message };
     }
   }
 
   async function push() {
-    if (!CFG.sync.enabled || state.isGuest) return false;
+    if (!CFG.sync.enabled || state.isGuest) return { ok: false, reason: "off" };
     try {
       let record = {};
       try {
@@ -236,13 +254,13 @@ window.Store = (function () {
         headers: { "Content-Type": "application/json", "X-Access-Key": CFG.sync.accessKey },
         body: JSON.stringify(record)
       });
-      if (!res.ok) throw new Error("HTTP " + res.status);
+      if (!res.ok) return { ok: false, status: res.status, reason: "http" };
       state.lastSync = new Date().toISOString();
-      persist();
-      return true;
+      persistRaw();
+      return { ok: true };
     } catch (e) {
       console.warn("Sync (push) falló:", e.message);
-      return false;
+      return { ok: false, reason: "net", error: e.message };
     }
   }
 
@@ -279,7 +297,7 @@ window.Store = (function () {
   return {
     get: () => state,
     persist, todayKey, daysBetween,
-    daysUntilExam, msUntilExam, setExam,
+    daysUntilExam, msUntilExam, msUntilNextMidnight, setExam,
     markStudiedToday, currentStreak, studiedToday,
     recordAnswer, setTopicStudied, saveSimulacro,
     isSaved, toggleSaved, savedQuestions, savedCount,

@@ -437,12 +437,14 @@
   }
 
   function renderCountdownInto(node) {
-    var ms = Store.msUntilExam();
-    if (ms == null) return;
+    // Días = MISMO número que la barra superior (días de calendario hasta el examen).
+    // Horas/min/seg = tiempo hasta la próxima medianoche, cuando ese número baja en 1.
+    var d = Store.daysUntilExam();
+    if (d == null || d < 0) return;
+    var ms = Store.msUntilNextMidnight();
     if (ms < 0) ms = 0;
     var totalSec = Math.floor(ms / 1000);
-    var d = Math.floor(totalSec / 86400);
-    var h = Math.floor((totalSec % 86400) / 3600);
+    var h = Math.floor(totalSec / 3600);
     var m = Math.floor((totalSec % 3600) / 60);
     var sec = totalSec % 60;
     var units = [[d, d === 1 ? "día" : "días"], [h, "horas"], [m, "min"], [sec, "seg"]];
@@ -1973,10 +1975,18 @@
         class: "btn btn-soft", onclick: function () {
           Sound.click();
           lastLine.textContent = "Sincronizando…";
-          Store.push().then(function () { return Store.pull(); }).then(function () {
-            state = Store.get();
-            lastLine.textContent = "Última sincronización: " + (state.lastSync ? new Date(state.lastSync).toLocaleString("es-CR") : "nunca");
-            toast("Datos sincronizados");
+          Store.push().then(function (pr) {
+            return Store.pull().then(function (lr) {
+              state = Store.get();
+              lastLine.textContent = "Última sincronización: " + (state.lastSync ? new Date(state.lastSync).toLocaleString("es-CR") : "nunca");
+              if (pr.ok && lr.ok) { toast("Datos sincronizados en la nube"); }
+              else {
+                var stc = pr.status || lr.status;
+                if (stc === 401 || stc === 403) toast("Sin permiso de escritura (HTTP " + stc + "). Hay que activar Update en la Access Key de JSONBin.");
+                else if (stc) toast("Error de sincronización (HTTP " + stc + ")");
+                else toast("No se pudo sincronizar. Revisá tu conexión.");
+              }
+            });
           });
         }
       }, [icon("sync"), el("span", { text: "Sincronizar ahora" })]));
@@ -2063,6 +2073,7 @@
         state = Store.get();
         refreshTopbar();
         if (current === "inicio") mount(renderInicio(), true);
+        Store.push();   // asegura que la nube quede sembrada con tu progreso tras iniciar sesión
       });
       if (pushTimer) clearTimeout(pushTimer);
       setInterval(function () { if (!state.isGuest) Store.push(); }, 60000);
