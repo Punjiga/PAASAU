@@ -60,9 +60,16 @@ window.Store = (function () {
     try { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
     catch (e) { console.warn("No se pudo guardar localmente:", e); }
   }
-  // persist() marca el momento del cambio (savedAt) para que la sincronización
-  // sepa cuál versión es la más nueva entre dispositivos.
-  function persist() { state.savedAt = Date.now(); persistRaw(); }
+  // persist() marca el momento del cambio (savedAt) y AUTO-GUARDA en la nube.
+  function persist() { state.savedAt = Date.now(); persistRaw(); scheduleAutoPush(); }
+  // Auto-guardado: cada cambio agenda un push (con debounce). Así NO hay que tocar
+  // ningún botón; todo lo que hagas se sincroniza solo (si iniciaste sesión).
+  let autoPushTimer = null;
+  function scheduleAutoPush() {
+    if (!CFG.sync.enabled || state.isGuest) return;
+    if (autoPushTimer) clearTimeout(autoPushTimer);
+    autoPushTimer = setTimeout(function () { push(); }, 1800);
+  }
 
   /* ---------- Utilidades de fecha (fecha local del dispositivo) ---------- */
   function todayKey(d = new Date()) {
@@ -304,7 +311,7 @@ window.Store = (function () {
     markStudiedToday, currentStreak, studiedToday,
     recordAnswer, setTopicStudied, saveSimulacro,
     isSaved, toggleSaved, savedQuestions, savedCount,
-    Timer, pull, push,
+    Timer, pull, push, scheduleAutoPush,
     login, guest, logout, toggleSound,
     accuracy, topicMastery, studiedTopicsCount, totalMinutes
   };

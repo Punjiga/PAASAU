@@ -1280,6 +1280,8 @@
     var remaining = CFG.examMinutes * 60;
     var timer = null;
     var finished = false;
+    var paused = false;
+    quizActive = true; quizPaused = false;
 
     var root = el("div", { class: "sim" });
 
@@ -1291,9 +1293,16 @@
     var simTotT = makeTimerChip("Total examen", "tmr-tot");
     simQT.set(qLeft); simTotT.set(remaining);
     bar.appendChild(el("div", { class: "timer-bar" }, [simQT.el, simTotT.el]));
+    var simPauseBtn = el("button", { class: "icon-btn pause-btn", title: "Pausar / reanudar", onclick: function () { togglePause(); } }, icon("pause"));
+    bar.appendChild(simPauseBtn);
     var progTxt = el("div", { class: "sim-progtxt", id: "sim-progtxt" });
     bar.appendChild(progTxt);
     root.appendChild(bar);
+    var simPauseTag = el("div", { class: "pause-tag", id: "sim-pause-tag", hidden: true }, [
+      icon("pause"),
+      el("span", { text: "En pausa · relojes detenidos. Podés leer con calma." })
+    ]);
+    root.appendChild(simPauseTag);
 
     if (built.repeated) {
       root.appendChild(el("div", { class: "sim-note muted", text: "Nota: el banco tiene menos de " + CFG.examTotalItems + " preguntas únicas, así que algunas se repiten para completar el examen." }));
@@ -1325,13 +1334,24 @@
 
     mount(root, false);
     drawQ();
+    Store.Timer.start();
     timer = setInterval(function () {
+      if (paused) return;
       remaining--;
       if (qLeft > 0) qLeft--;
       simQT.set(qLeft, qLeft <= 15);
       simTotT.set(remaining, remaining <= 60);
       if (remaining <= 0) { doFinish(true); }
     }, 1000);
+
+    function togglePause() {
+      Sound.click();
+      paused = !paused; quizPaused = paused;
+      var tag = document.getElementById("sim-pause-tag"); if (tag) tag.hidden = !paused;
+      simPauseBtn.classList.toggle("active", paused);
+      simPauseBtn.title = paused ? "Reanudar" : "Pausar";
+      if (paused) Store.Timer.stop(); else Store.Timer.start();
+    }
 
     function drawQ() {
       var q = questions[idx];
@@ -1387,7 +1407,9 @@
     function leave() {
       Sound.click();
       if (confirm("Si salís, este simulacro no se guarda. ¿Salir?")) {
+        quizActive = false; quizPaused = false;
         if (timer) clearInterval(timer);
+        Store.Timer.stop();
         go("simulacros");
       }
     }
@@ -1395,7 +1417,9 @@
     function doFinish(byTime) {
       if (finished) return;
       finished = true;
+      quizActive = false; quizPaused = false;
       if (timer) clearInterval(timer);
+      Store.Timer.stop();
       var score = 0;
       var byDomain = { verbal: { correct: 0, total: 0 }, math: { correct: 0, total: 0 } };
       var missed = {};
@@ -1462,23 +1486,44 @@
     else Sound.wrong();
     refreshTopbar();
 
-    var built = false;
+    var revFilter = "no";  // 'no' incorrectas | 'ok' correctas | 'all' todas
+    function buildReviewList() {
+      var box = document.getElementById("review-box");
+      box.innerHTML = "";
+      var letters = ["A", "B", "C", "D"];
+      var nNo = questions.filter(function (q, i) { return answers[i] !== q.ans; }).length;
+      var nOk = questions.length - nNo;
+      var tabs = el("div", { class: "rev-tabs" });
+      [["no", "Incorrectas (" + nNo + ")"], ["ok", "Correctas (" + nOk + ")"], ["all", "Todas (" + questions.length + ")"]].forEach(function (t) {
+        tabs.appendChild(el("button", { class: "rev-tab" + (revFilter === t[0] ? " active" : ""), onclick: function () { revFilter = t[0]; buildReviewList(); } }, t[1]));
+      });
+      box.appendChild(tabs);
+      var any = false;
+      questions.forEach(function (q, i) {
+        var right = answers[i] === q.ans;
+        if (revFilter === "no" && right) return;
+        if (revFilter === "ok" && !right) return;
+        any = true;
+        var item = el("div", { class: "review-item " + (right ? "ok" : "no") });
+        item.appendChild(el("div", { class: "review-qnum muted", text: "Pregunta " + (i + 1) + (TOPIC_BY_ID[q.topic] ? " · " + TOPIC_BY_ID[q.topic].name : "") }));
+        if (q.stem) item.appendChild(el("div", { class: "review-stem", html: mathHTML(q.stem) }));
+        item.appendChild(el("div", { class: "review-q", html: mathHTML(q.q) }));
+        if (q.fig) { var rf = el("div", { class: "q-fig sm" }); rf.innerHTML = q.fig; item.appendChild(rf); }
+        item.appendChild(el("div", { class: "review-ans " + (right ? "ok" : "no"), html: "Tu respuesta: " + (answers[i] != null ? letters[answers[i]] + ") " + mathHTML(q.opts[answers[i]]) : "(en blanco)") }));
+        if (!right) item.appendChild(el("div", { class: "review-correct", html: "Correcta: " + letters[q.ans] + ") " + mathHTML(q.opts[q.ans]) }));
+        var why = el("div", { class: "review-exp" });
+        why.appendChild(el("div", { class: "exp-why", text: "Por qué" }));
+        var wt = el("div", { class: "exp-text" }); wt.innerHTML = mathHTML(q.exp); why.appendChild(wt);
+        item.appendChild(why);
+        box.appendChild(item);
+      });
+      if (!any) box.appendChild(el("div", { class: "muted", style: "text-align:center;padding:20px", text: revFilter === "no" ? "¡No fallaste ninguna! 🎉" : "Nada que mostrar acá." }));
+    }
+    var built2 = false;
     function toggleReview() {
       Sound.click();
       var box = document.getElementById("review-box");
-      if (!built) {
-        questions.forEach(function (q, i) {
-          var right = answers[i] === q.ans;
-          var item = el("div", { class: "review-item " + (right ? "ok" : "no") });
-          item.appendChild(el("div", { class: "review-q", html: (i + 1) + ". " + mathHTML(q.q) }));
-          var letters = ["A", "B", "C", "D"];
-          item.appendChild(el("div", { class: "review-ans", html: "Tu respuesta: " + (answers[i] != null ? letters[answers[i]] + ") " + mathHTML(q.opts[answers[i]]) : "(en blanco)") }));
-          if (!right) item.appendChild(el("div", { class: "review-correct", html: "Correcta: " + letters[q.ans] + ") " + mathHTML(q.opts[q.ans]) }));
-          item.appendChild(el("div", { class: "review-exp muted", html: mathHTML(q.exp) }));
-          box.appendChild(item);
-        });
-        built = true;
-      }
+      if (!built2) { buildReviewList(); built2 = true; box.hidden = false; return; }
       box.hidden = !box.hidden;
     }
   }
@@ -2052,9 +2097,8 @@
      SESIÓN Y SINCRONIZACIÓN
      ============================================================ */
   function schedulePush() {
-    if (state.isGuest) return;
-    if (pushTimer) clearTimeout(pushTimer);
-    pushTimer = setTimeout(function () { Store.push(); }, 1500);
+    // El auto-guardado vive en Store.persist(); esto solo lo refuerza.
+    Store.scheduleAutoPush();
   }
 
   function enterApp() {
