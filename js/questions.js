@@ -1,385 +1,4807 @@
 /* ============================================================
-   RUTA PAA — Banco de preguntas (ORIGINALES, estilo PAA)
-   No son las preguntas del folleto oficial: son nuevas, creadas con la
-   misma estructura y temario para que tengás material fresco.
-
-   Esquema de cada pregunta:
-   { id, domain:'verbal'|'math', topic:'<id de topics.js>', dif:1|2|3,
-     stem:'enunciado', q:'la pregunta', opts:[a,b,c,d], ans:índice 0-3,
-     exp:'explicación' }
-
-   Para agregar más: copiá un objeto, cambiá el id y sumalo al array.
+   PAASAU — Banco de preguntas (Nivel Élite Generado)
+   Total: 300 preguntas
+   Generado automáticamente por el script del Tutor IA
    ============================================================ */
 window.PAA_QUESTIONS = [
-  /* ===================== VERBAL ===================== */
-
-  /* -- Finalidad -- */
-  { id:"v_fin_1", domain:"verbal", topic:"finalidad", dif:3,
-    stem:"Desde hace una década, varias municipalidades instalaron reductores de velocidad, semáforos peatonales y pasos elevados cerca de escuelas y hospitales. Estas obras encarecen el mantenimiento y a veces molestan a los conductores, pero las autoridades insisten en conservarlas.",
-    q:"¿Cuál es la finalidad principal de las autoridades con estas obras?",
-    opts:["Recaudar más dinero mediante multas","Proteger la vida de los peatones en zonas sensibles","Incomodar a propósito a los conductores","Reducir el gasto en mantenimiento vial"],
-    ans:1, exp:"El para qué es proteger a los peatones en zonas sensibles (B). Recaudar con multas (A) o incomodar a los conductores (C) no son fines que el texto plantee; reducir el gasto (D) es lo contrario, pues el texto dice que las obras encarecen el mantenimiento." },
-  { id:"v_fin_2", domain:"verbal", topic:"finalidad", dif:3, stem:"Marta destina una parte fija de su salario a un fondo cada mes. Aunque eso la obliga a renunciar a algunos gustos hoy, ella explica que lo hace pensando en comprar casa propia antes de los cuarenta.", q:"¿Cuál es la finalidad del ahorro de Marta?", opts:["Privarse de gustos en el presente","Comprar casa propia en el futuro","Demostrar disciplina a los demás","Aumentar su salario mensual"], ans:1, exp:"La finalidad es el para qué: comprar casa propia (B). Privarse de gustos (A) es el medio, no el fin; demostrar disciplina (C) no se menciona; y no busca subir su salario (D), sino ahorrar parte de él." },
-  { id:"v_fin_3", domain:"verbal", topic:"finalidad", dif:3,
-    stem:"La pedagogía contemporánea sugiere que la reiteración espaciada de conceptos abstractos no tiene como objetivo la memorización mecánica, sino la reestructuración cognitiva del estudiante. Al exponerse repetidamente a un modelo teórico bajo diferentes contextos, el cerebro fortalece las conexiones neuronales que permiten la asimilación profunda.\n\nSin embargo, muchos educadores tradicionales abusan de la repetición constante y monótona, ignorando que sin variación de contexto, el cerebro simplemente filtra la información como ruido de fondo, provocando fatiga en lugar de aprendizaje.",
-    q:"¿Cuál de las siguientes opciones describe mejor la finalidad de la reiteración según el enfoque contemporáneo del texto?",
-    opts:["Acelerar el proceso de memorización mecánica para cubrir más temas","Provocar fatiga cognitiva para evaluar la resistencia del estudiante","Fomentar la asimilación mediante el fortalecimiento de conexiones neuronales","Eliminar el ruido de fondo para evitar la reestructuración cognitiva"],
-    ans:2, exp:"Entiendo por qué podrías haber dudado, ya que el texto menciona varios conceptos técnicos. Vamos a desarmarlo: ¿Qué nos dice el primer párrafo sobre el verdadero objetivo de la reiteración espaciada? Nos indica que busca la reestructuración cognitiva mediante conexiones neuronales. Fíjate cómo la primera opción es justo lo contrario de lo que afirma el texto ('no tiene como objetivo la memorización mecánica'). Tip para el examen: cuando veas un texto contrastante, subraya qué le pertenece a cada postura para no caer en las trampas." },
-
-  /* -- Comportamiento -- */
-  { id:"v_com_1", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cada vez que recibe una crítica sobre su trabajo, Luis, en lugar de leerla completa, responde al instante defendiéndose y enumerando excusas, sin detenerse a pensar si el comentario tenía algo de razón.", q:"¿Cómo se comporta Luis ante las críticas?", opts:["Las analiza con calma","Reacciona a la defensiva sin escuchar","Las agradece y mejora","Las ignora por completo"], ans:1, exp:"Responder al instante con excusas, sin considerar la crítica, es reaccionar a la defensiva (B). No la analiza con calma (A) ni la agradece para mejorar (C); y no la ignora (D): al contrario, responde de inmediato." },
-  { id:"v_com_2", domain:"verbal", topic:"comportamiento", dif:3, stem:"Ante el menor ruido extraño, el conejo no corre ni intenta atacar: se queda completamente inmóvil, pegado al suelo, confiando en que su quietud lo vuelva difícil de notar para el depredador.", q:"¿Cómo se comporta el conejo ante una posible amenaza?", opts:["Huye a toda velocidad","Se queda inmóvil para pasar desapercibido","Ataca al depredador","Hace ruido para asustarlo"], ans:1, exp:"El texto dice que no corre ni ataca: se queda inmóvil para no ser notado (B). Por eso no huye (A) ni ataca (C); y quedarse quieto es lo opuesto a hacer ruido (D)." },
-  { id:"v_com_3", domain:"verbal", topic:"comportamiento", dif:2,
-    stem:"Algunas personas, cuando reciben una crítica, en lugar de escuchar responden de inmediato a la defensiva.",
-    q:"¿Cómo se comportan estas personas ante una crítica?",
-    opts:["Reflexionan con calma","Reaccionan a la defensiva","La ignoran por completo","Agradecen el comentario"],
-    ans:1, exp:"La conducta descrita es responder de inmediato a la defensiva (B). No reflexionan con calma (A) ni agradecen (D); tampoco ignoran la crítica (C): justamente reaccionan a ella." },
-
-  /* -- Causa y consecuencia -- */
-  { id:"v_cau_1", domain:"verbal", topic:"causa_consecuencia", dif:3, stem:"La tala excesiva en la parte alta dejó las laderas sin árboles. Sin raíces que retuvieran la tierra, las primeras lluvias fuertes arrastraron el suelo y enturbiaron el río del que bebe la comunidad.", q:"Según el texto, ¿cuál es una consecuencia de la tala?", opts:["El aumento de árboles en la zona","La contaminación del río por el arrastre de tierra","La mejora de la calidad del agua","La llegada de más lluvias"], ans:1, exp:"Sin raíces que retengan la tierra, la lluvia arrastró el suelo y enturbió el río (B). Más árboles (A) y mejor agua (C) son lo contrario de lo ocurrido; más lluvias (D) no es efecto de la tala." },
-  { id:"v_cau_2", domain:"verbal", topic:"causa_consecuencia", dif:2, stem:"Diversos estudios señalan que dormir mal de manera constante no solo produce cansancio: con el tiempo afecta la memoria, debilita las defensas del cuerpo y aumenta la irritabilidad.", q:"Según el texto, ¿qué puede causar dormir mal de forma constante?", opts:["Mejor memoria","Problemas de memoria, defensas y ánimo","Más energía durante el día","Mayor concentración"], ans:1, exp:"El texto enumera los efectos de dormir mal: daña memoria, defensas y ánimo (B). Mejor memoria (A), más energía (C) y mayor concentración (D) dicen lo contrario." },
-  { id:"v_cau_3", domain:"verbal", topic:"causa_consecuencia", dif:2, stem:"El equipo no era el más talentoso de la liga, pero entrenó con disciplina todos los días, corrigió sus errores tras cada partido y llegó a la final con la mejor condición física. Al final, se llevó el campeonato.", q:"Según el texto, ¿qué explica mejor el triunfo del equipo?", opts:["El talento natural de sus jugadores","El trabajo constante y la corrección de errores","La suerte en los partidos decisivos","La debilidad de los rivales"], ans:1, exp:"El texto aclara que NO eran los más talentosos, así que A se descarta. No menciona suerte (C) ni rivales débiles (D). La causa que sí repite es el entreno disciplinado y corregir errores: por eso B." },
-  { id:"v_cau_4", domain:"verbal", topic:"causa_consecuencia", dif:2,
-    stem:"El uso prolongado de pantallas antes de dormir dificulta conciliar el sueño.",
-    q:"¿Qué relación se establece en el texto?",
-    opts:["El sueño causa el uso de pantallas","El uso de pantallas dificulta el sueño","Las pantallas mejoran el sueño","No hay relación entre ambos"],
-    ans:1, exp:"La causa es el uso de pantallas y la consecuencia, la dificultad para dormir (B). A invierte la relación; C afirma lo contrario; y sí hay relación, así que D es falso." },
-
-  /* -- Simple y complejo -- */
-  { id:"v_sim_1", domain:"verbal", topic:"simple_complejo", dif:2,
-    stem:"Un reloj de arena solo mide el tiempo con la caída de granos; en cambio, un reloj digital integra sensores, batería y múltiples funciones.",
-    q:"Según el texto, ¿en qué se diferencian ambos relojes?",
-    opts:["Uno es antiguo y el otro nuevo","Uno es simple y el otro complejo","Uno es barato y el otro caro","Uno es pequeño y el otro grande"],
-    ans:1, exp:"El contraste es entre un mecanismo de un solo elemento (simple) y otro de muchos componentes (complejo) (B). El texto no los compara por antigüedad (A), precio (C) ni tamaño (D)." },
-  { id:"v_sim_2", domain:"verbal", topic:"simple_complejo", dif:3, stem:"Encender un fósforo requiere un solo gesto. En cambio, mantener encendida una central termoeléctrica implica coordinar combustible, turbinas, sistemas de enfriamiento, controles de seguridad y decenas de operarios trabajando las 24 horas.", q:"¿Qué diferencia esencial plantea el texto entre ambas acciones?", opts:["Una es más antigua que la otra","Una es simple y la otra, compleja por sus muchas partes","Una es más cara que la otra","Una es más peligrosa que la otra"], ans:1, exp:"El contraste es entre un acto de un solo paso y otro con muchísimas partes coordinadas: simple frente a complejo (B). No se comparan por antigüedad (A), precio (C) ni peligro (D)." },
-  { id:"v_sim_3", domain:"verbal", topic:"simple_complejo", dif:2,
-    stem:"Una choza se levanta con unos pocos materiales; un rascacielos necesita ingeniería, miles de materiales y años de trabajo.",
-    q:"¿Cómo se presenta el rascacielos frente a la choza?",
-    opts:["Como algo simple","Como algo complejo","Como algo inútil","Como algo económico"],
-    ans:1, exp:"El rascacielos se describe por su ingeniería, materiales y años de trabajo: como algo complejo (B). No se presenta como simple (A), ni como inútil (C) o económico (D)." },
-
-  /* -- Conceptualización -- */
-  { id:"v_con_1", domain:"verbal", topic:"conceptualizacion", dif:2,
-    stem:"Quien comparte lo que tiene con los demás, sin esperar nada a cambio, practica una de las virtudes más valoradas.",
-    q:"Según el texto, ¿cuál palabra describe esa virtud?",
-    opts:["Generosidad","Justicia","Paciencia","Humildad"],
-    ans:0, exp:"Compartir sin esperar nada a cambio es generosidad (A). No es justicia (B: dar a cada quien lo suyo), ni paciencia (C) ni humildad (D), que son otras virtudes." },
-  { id:"v_con_2", domain:"verbal", topic:"conceptualizacion", dif:2,
-    stem:"El estudiante revisó cada dato, comprobó las fuentes y no aceptó ninguna afirmación sin evidencia.",
-    q:"¿Cómo puede describirse, en una palabra, su actitud?",
-    opts:["Rigurosa","Indiferente","Apresurada","Confiada"],
-    ans:0, exp:"Verificar cada dato y exigir evidencia es una actitud rigurosa (A). No es indiferente (B) ni confiada (D), pues no acepta nada sin comprobar; tampoco apresurada (C): se toma su tiempo." },
-  { id:"v_con_3", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"El corredor tropezó y cayó tres veces durante la carrera. Cada vez se levantó, recuperó el ritmo y siguió, hasta cruzar la meta en último lugar pero sin rendirse.", q:"¿Qué cualidad refleja mejor su actitud?", opts:["Velocidad","Perseverancia","Ambición","Talento"], ans:1, exp:"Llegó último, así que no destaca por velocidad (A) ni talento (D), y no se habla de querer más (ambición, C). Lo que lo define es insistir tras cada caída: perseverancia (B)." },
-  { id:"v_con_4", domain:"verbal", topic:"conceptualizacion", dif:2, stem:"Le confiaron un secreto delicado. Aunque varias personas trataron de sonsacárselo e incluso sus amigos le preguntaron con insistencia, no soltó ni una palabra.", q:"¿Qué palabra describe mejor su actitud?", opts:["Discreción","Timidez","Indiferencia","Astucia"], ans:0, exp:"Guardar lo confiado pese a la presión es discreción (A). No es timidez (B: no calla por miedo), ni indiferencia (C: sí le importa), ni astucia (D: no engaña a nadie)." },
-
-  /* -- Orden y desorden -- */
-  { id:"v_ord_1", domain:"verbal", topic:"orden_desorden", dif:2,
-    stem:"Antes de la reunión, los documentos estaban amontonados sin clasificación; después, quedaron archivados por fecha y tema.",
-    q:"Según el texto, ¿qué cambio experimentaron los documentos?",
-    opts:["Del orden al desorden","Del desorden al orden","De lo nuevo a lo viejo","De lo público a lo privado"],
-    ans:1, exp:"Pasaron de amontonados sin clasificar (desorden) a archivados por fecha y tema (orden): del desorden al orden (B). A invierte el cambio; nuevo/viejo (C) y público/privado (D) no son el criterio del texto." },
-  { id:"v_ord_2", domain:"verbal", topic:"orden_desorden", dif:2, stem:"Antes, las herramientas del taller se amontonaban en cualquier rincón y nadie hallaba nada a tiempo. Tras una jornada de organización, cada una quedó colgada en un panel y rotulada según su uso.", q:"¿Qué cambio experimentó el taller?", opts:["Del orden al desorden","Del desorden al orden","De lo nuevo a lo viejo","De lo barato a lo caro"], ans:1, exp:"Pasó de herramientas amontonadas (desorden) a cada una rotulada en su lugar (orden): del desorden al orden (B). A es lo contrario; nuevo/viejo (C) y barato/caro (D) no describen el cambio." },
-  { id:"v_ord_3", domain:"verbal", topic:"orden_desorden", dif:2, stem:"Después de la mudanza, las cajas quedaron apiladas sin etiquetas, los libros mezclados con la vajilla y la ropa repartida entre varias habitaciones, sin que nada estuviera en su sitio.", q:"¿Cómo se describe el estado de la casa tras la mudanza?", opts:["En perfecto orden","En completo desorden","Totalmente vacía","Recién pintada"], ans:1, exp:"Cajas sin etiqueta, cosas mezcladas y nada en su sitio describen desorden (B). No es orden (A); y el texto no dice que la casa quedara vacía (C) ni recién pintada (D)." },
-
-  /* -- Orden temporal -- */
-  { id:"v_tmp_1", domain:"verbal", topic:"orden_temporal", dif:2,
-    stem:"Primero se mezclan los ingredientes secos, luego se añade la leche y, por último, se hornea la masa.",
-    q:"Según el texto, ¿qué se hace inmediatamente antes de hornear?",
-    opts:["Mezclar los ingredientes secos","Añadir la leche","Servir el pastel","Encender el horno"],
-    ans:1, exp:"La secuencia es secos, leche y hornear. Justo antes de hornear se añade la leche (B). Mezclar los secos (A) es el primer paso; servir (C) y encender el horno (D) no son el paso inmediatamente anterior." },
-  { id:"v_tmp_2", domain:"verbal", topic:"orden_temporal", dif:2, stem:"La receta indica: primero batir los huevos con el azúcar, luego incorporar la harina poco a poco, después verter la mezcla en el molde y, por último, hornear durante 40 minutos.", q:"Según la receta, ¿qué se hace inmediatamente antes de hornear?", opts:["Batir los huevos","Verter la mezcla en el molde","Incorporar la harina","Servir el postre"], ans:1, exp:"El orden es batir, harina, verter en el molde y hornear. Lo previo a hornear es verter la mezcla en el molde (B). Batir (A) e incorporar harina (C) van antes; servir (D) es el final." },
-  { id:"v_tmp_3", domain:"verbal", topic:"orden_temporal", dif:2,
-    stem:"La semilla germina, luego crece el tallo, después aparecen las hojas y finalmente brota la flor.",
-    q:"Según el texto, ¿qué ocurre antes de que aparezcan las hojas?",
-    opts:["Brota la flor","Crece el tallo","Cae la semilla","Se seca la planta"],
-    ans:1, exp:"La secuencia es germinar, tallo, hojas y flor. Antes de las hojas crece el tallo (B). La flor (A) brota al final; caer la semilla (C) es el inicio; secarse (D) no está en el texto." },
-
-  /* -- Esencia -- */
-  { id:"v_ese_1", domain:"verbal", topic:"esencia", dif:3,
-    stem:"Un buen líder se caracteriza, generalmente, por escuchar a su equipo, tomar decisiones justas y dar el ejemplo.",
-    q:"De acuerdo con la lógica del texto, ¿qué caracteriza generalmente a un buen maestro?",
-    opts:["Escuchar a sus estudiantes, evaluar con justicia y enseñar con el ejemplo","Ordenar a sus estudiantes y exigir resultados","Dictar la materia y aplicar exámenes difíciles","Trabajar solo, sin ayuda de nadie"],
-    ans:0, exp:"Por lógica paralela con el líder (escuchar, justicia, ejemplo), lo propio del maestro es escuchar, evaluar con justicia y enseñar con el ejemplo (A). Ordenar y exigir (B), dictar con exámenes difíciles (C) o trabajar solo (D) no son esas cualidades." },
-  { id:"v_ese_2", domain:"verbal", topic:"esencia", dif:2,
-    stem:"El agua, en su forma líquida, se caracteriza por no tener forma propia y adaptarse al recipiente que la contiene.",
-    q:"Según el texto, ¿cuál es una característica esencial del agua líquida?",
-    opts:["Tener color","Adaptarse al recipiente","Tener sabor","Mantener una forma fija"],
-    ans:1, exp:"Lo propio del agua líquida es adaptarse al recipiente (B). El color (A) y el sabor (C) no son su rasgo esencial; mantener forma fija (D) es lo contrario de un líquido." },
-  { id:"v_ese_3", domain:"verbal", topic:"esencia", dif:3,
-    stem:"Lo propio de un desierto es la escasez de agua, las altas temperaturas durante el día y la poca vegetación.",
-    q:"De acuerdo con la lógica del texto, ¿qué sería propio de una selva tropical?",
-    opts:["Abundancia de agua, vegetación densa y mucha vida","Escasez de agua y poca vegetación","Frío extremo y nieve","Ausencia total de animales"],
-    ans:0, exp:"Por contraste con el desierto (seco, poca vida), lo propio de la selva es abundancia de agua, vegetación densa y mucha vida (A). B describe el desierto; el frío y la nieve (C) y la ausencia de animales (D) no corresponden a una selva." },
-
-  /* -- Perspectiva -- */
-  { id:"v_per_1", domain:"verbal", topic:"perspectiva", dif:2,
-    stem:"Observar un problema desde lejos es una cosa; vivirlo en carne propia es otra muy distinta.",
-    q:"¿Cuál de las siguientes opciones presenta la idea del texto con otras palabras?",
-    opts:["Observar y vivir un problema son experiencias diferentes","Observar un problema es más difícil que vivirlo","Vivir un problema no enseña nada","Observar y vivir son lo mismo"],
-    ans:0, exp:"El texto contrasta dos experiencias distintas: observar y vivir un problema no es lo mismo (A). No dice que observar sea más difícil (B), ni que vivirlo no enseñe (C), ni que sean iguales (D)." },
-  { id:"v_per_2", domain:"verbal", topic:"perspectiva", dif:2, stem:"Cuando cae un fuerte aguacero, el agricultor lo celebra porque regará sus cultivos; el viajero, en cambio, se lamenta porque le arruina el paseo.", q:"¿Qué explica mejor que la misma lluvia provoque reacciones opuestas?", opts:["La lluvia cae más fuerte para uno que para otro","Cada quien la juzga según cómo afecta lo que le importa","El agricultor sabe de clima y el viajero no","En el fondo a ambos les molesta la lluvia"], ans:1, exp:"La lluvia es la misma (A es falso). Lo que cambia es el interés de cada uno: al agricultor le sirve y al viajero le estorba (B). C inventa un saber que el texto no menciona; D contradice que el agricultor la celebra." },
-  { id:"v_per_3", domain:"verbal", topic:"perspectiva", dif:2, stem:"Armar la misma torre de bloques es, para el niño, una aventura fascinante; para el adulto apurado, una forma de perder el tiempo.", q:"¿Qué idea se desprende del texto?", opts:["El juego no tiene ningún valor","El valor de una actividad cambia según quién la mira y qué busca","Los adultos no saben jugar","Los niños siempre pierden el tiempo"], ans:1, exp:"B recoge la idea: la misma actividad vale distinto según la mirada (el niño disfruta, el adulto mide su tiempo). A y D toman partido por un solo lado; C agrega un juicio que el texto no hace." },
-
-  /* -- Idea implícita -- */
-  { id:"v_imp_1", domain:"verbal", topic:"idea_implicita", dif:2, stem:"Pedro nunca sale sin paraguas cuando ve el cielo nublado, aunque al final muchas veces no llueva.", q:"¿Qué idea está implícita en el texto?", opts:["Pedro odia mojarse","Pedro prefiere prevenir, aunque no esté seguro de que lloverá","A Pedro le gusta cargar el paraguas","Pedro siempre acierta con el clima"], ans:1, exp:"Llevar paraguas aunque muchas veces no llueva implica que prefiere prevenir por si acaso (B). A exagera un sentimiento; C es poco probable; D lo contradice, pues a veces no llueve." },
-  { id:"v_imp_2", domain:"verbal", topic:"idea_implicita", dif:2,
-    stem:"En esa comunidad, solo las personas que terminaron la universidad consiguen empleos bien pagados.",
-    q:"¿Cuál es una idea implícita en el texto?",
-    opts:["La educación influye en las oportunidades laborales","Nadie trabaja en esa comunidad","La universidad es gratuita","Todos ganan lo mismo"],
-    ans:0, exp:"Si solo los universitarios consiguen buenos empleos, queda implícito que la educación influye en las oportunidades laborales (A). B, C y D afirman cosas que el texto no dice (que nadie trabaja, que es gratis, que todos ganan igual)." },
-  { id:"v_imp_3", domain:"verbal", topic:"idea_implicita", dif:2,
-    stem:"Aunque el restaurante es caro, siempre está lleno de clientes.",
-    q:"¿Qué idea está implícita en el texto?",
-    opts:["La comida no gusta a nadie","El precio alto no ha alejado a los clientes","El restaurante va a cerrar","Los clientes no pagan"],
-    ans:1, exp:"Que esté lleno a pesar de ser caro implica que el precio alto no aleja a los clientes (B). A y D contradicen que esté lleno; que cerrará (C) no se deduce de tener éxito." },
-  { id:"v_imp_4", domain:"verbal", topic:"idea_implicita", dif:2,
-    stem:"Cada vez que María estudia con anticipación, obtiene buenas notas.",
-    q:"¿Cuál es una idea implícita?",
-    opts:["Estudiar con tiempo favorece los buenos resultados","Las notas no dependen del estudio","María nunca estudia","Las buenas notas son por suerte"],
-    ans:0, exp:"Que con anticipación saque siempre buenas notas implica que estudiar con tiempo favorece los resultados (A). B y D niegan esa relación; C contradice que sí estudia." },
-  { id:"v_imp_5", domain:"verbal", topic:"idea_implicita", dif:3,
-    stem:"Cuando por fin se apagaron los motores de la fábrica y los últimos trabajadores se marcharon, en todo el valle solo quedó el rumor del viento moviendo las hojas.",
-    q:"¿Qué se puede deducir con seguridad del texto?",
-    opts:["La fábrica reabrirá al día siguiente","En ese momento reinaba el silencio en el lugar","Afuera había mucha gente conversando","Se acercaba una fuerte tormenta"],
-    ans:1, exp:"Motores apagados, trabajadores idos y solo el rumor del viento implican que reinaba el silencio (B). Reabrir (A), gente conversando (C) o una tormenta (D) no se deducen del texto." },
-
-  /* -- Idea principal / tema -- */
-  { id:"v_pri_1", domain:"verbal", topic:"idea_principal", dif:2,
-    stem:"Los volcanes pueden ser activos, inactivos o extintos; además, varían en tamaño y en el tipo de material que expulsan.",
-    q:"¿Cuál es el tema principal del texto?",
-    opts:["La clasificación de los volcanes","El peligro de los volcanes","La altura de los volcanes","La formación de los volcanes"],
-    ans:0, exp:"El texto enumera tipos y variaciones de volcanes: su tema es la clasificación de los volcanes (A). El peligro (B), la altura (C) y la formación (D) no son de lo que trata." },
-  { id:"v_pri_2", domain:"verbal", topic:"idea_principal", dif:2,
-    stem:"El ejercicio regular fortalece el corazón y los músculos, mejora el ánimo al liberar endorfinas, favorece un sueño más profundo y ayuda a mantener un peso saludable; además, practicado en grupo, fortalece los vínculos sociales.",
-    q:"¿Cuál es la idea principal del texto?",
-    opts:["El ejercicio aporta múltiples beneficios para la salud y la vida","El ejercicio sirve únicamente para bajar de peso","Hacer ejercicio en grupo es obligatorio","Las endorfinas provocan cansancio"],
-    ans:0, exp:"El texto lista beneficios físicos, anímicos y sociales; la idea que los engloba es que el ejercicio aporta múltiples beneficios (A). B lo reduce a uno solo; C y D afirman cosas que el texto no dice." },
-  { id:"v_pri_3", domain:"verbal", topic:"idea_principal", dif:2, stem:"El café es una de las principales exportaciones de Costa Rica, genera empleo en muchas zonas rurales y forma parte de la identidad del país.", q:"¿Cuál es el tema central del texto?", opts:["El café da empleo en el campo","El peso del café en la economía y la cultura de Costa Rica","El café se exporta a otros países","El café es una bebida muy popular"], ans:1, exp:"A y C son detalles ciertos del texto, pero solo una parte; D ni se menciona. La idea que une lo económico y lo cultural es B: el papel del café para el país." },
-
-  /* -- Paráfrasis -- */
-  { id:"v_par_1", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"El conocimiento es la única herramienta que nos protege de ser engañados.",
-    q:"¿Cuál opción expresa la misma idea con otras palabras?",
-    opts:["Saber nos defiende del engaño","El engaño es inevitable","El conocimiento engaña a las personas","Nadie puede aprender"],
-    ans:0, exp:"Decir que el conocimiento nos protege del engaño equivale a que saber nos defiende del engaño (A). B, C y D cambian o invierten el sentido (que el engaño es inevitable, que el saber engaña, que nadie aprende)." },
-  { id:"v_par_2", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"No basta con desear el éxito; hay que trabajar para alcanzarlo.",
-    q:"¿Cuál de las siguientes opciones reproduce la idea del texto?",
-    opts:["El éxito llega solo con desearlo","El éxito requiere esfuerzo además de deseo","Desear el éxito es inútil","El trabajo no sirve de nada"],
-    ans:1, exp:"Que no baste desear y haya que trabajar equivale a que el éxito requiere esfuerzo además del deseo (B). A dice lo contrario; C y D niegan el valor del deseo o del trabajo, que el texto sí reconoce." },
-  { id:"v_par_3", domain:"verbal", topic:"parafrasis", dif:2,
-    stem:"La verdad, aunque incómoda, siempre es preferible a una mentira agradable.",
-    q:"¿Cuál opción dice lo mismo con otras palabras?",
-    opts:["Es mejor una verdad molesta que una mentira cómoda","Las mentiras son mejores que las verdades","La verdad nunca incomoda","Hay que evitar la verdad"],
-    ans:0, exp:"Preferir la verdad incómoda a la mentira agradable equivale a 'mejor una verdad molesta que una mentira cómoda' (A). B la invierte; C niega que incomode; D aconseja evitar la verdad, lo opuesto al texto." },
-
-  /* -- Proposiciones -- */
-  { id:"v_pro_1", domain:"verbal", topic:"proposiciones", dif:3,
-    stem:"Toda planta necesita luz para realizar la fotosíntesis. Analice las proposiciones:\nI. Una planta sin luz no puede realizar fotosíntesis.\nII. La luz es innecesaria para las plantas.\nIII. Algunas plantas hacen fotosíntesis en total oscuridad.",
-    q:"¿Cuál(es) proposición(es) se deduce(n) del texto?",
-    opts:["Solo la I","Solo la II","Solo la III","La I y la III"],
-    ans:0, exp:"De 'toda planta necesita luz' se deduce que sin luz no hay fotosíntesis: la I (A). La II niega esa necesidad y la III afirma fotosíntesis en oscuridad; ambas contradicen el texto." },
-  { id:"v_pro_2", domain:"verbal", topic:"proposiciones", dif:3,
-    stem:"Ningún ser humano puede vivir sin agua. Analice las proposiciones:\nI. El agua es indispensable para la vida humana.\nII. Algunos humanos viven sin agua.\nIII. Sin agua, un ser humano no puede sobrevivir.",
-    q:"¿Cuáles proposiciones concuerdan con el texto?",
-    opts:["Solo la II","La I y la III","Solo la III","La I, la II y la III"],
-    ans:1, exp:"De 'nadie vive sin agua' se deducen la I (el agua es indispensable) y la III (sin agua no se sobrevive): por eso B. La II dice lo contrario del texto." },
-  { id:"v_pro_3", domain:"verbal", topic:"proposiciones", dif:2,
-    stem:"Cuando sube la temperatura, el hielo se derrite. Analice las proposiciones:\nI. El calor puede transformar el hielo en agua.\nII. El hielo se mantiene sólido al subir la temperatura.\nIII. El frío derrite el hielo.",
-    q:"¿Cuál proposición se deduce del texto?",
-    opts:["Solo la I","Solo la II","Solo la III","La II y la III"],
-    ans:0, exp:"De 'al subir la temperatura el hielo se derrite' se deduce que el calor lo transforma en agua: la I (A). La II niega que se derrita y la III confunde frío con calor." },
-
-  /* ===================== MATEMÁTICO ===================== */
-
-  /* -- Aritmética -- */
-  { id:"m_ari_1", domain:"math", topic:"aritmetica", dif:3,
-    stem:"En una tienda, el precio de un confite es de ₡75 y el de un chicle es de ₡120. Andrés desea comprar 8 confites y una cantidad 'x' de chicles, donde 'x' es un número entero positivo. Si Andrés paga con un billete de ₡2 000 y el dependiente le devuelve exactamente ₡680 de vuelto.",
-    q:"¿Cuántos chicles compró Andrés?",
-    opts:["3","6","8","960"],
-    ans:1, exp:"¡Cuidado aquí! Sé que es tentador lanzarse a operar los primeros números que ves, pero detengámonos un momento. Si pagó con ₡2000 y le devolvieron ₡680, ¿cuánto gastó en total? Exacto, 2000 - 680 = 1320. Ahora, si sabemos que compró 8 confites a ₡75 (600), ¿cuánto dinero le quedó para los chicles? ¡Correcto! 1320 - 600 = 720. Si cada chicle vale 120, entonces 720 ÷ 120 = 6 chicles (opción B). Tip de élite: cuando un problema incluya la frase 'x es entero positivo', asegúrate de que tu resultado final cumpla esa restricción." },
-  { id:"m_ari_2", domain:"math", topic:"aritmetica", dif:2,
-    stem:"María leyó {{2/5}} de un libro el lunes y {{1/3}} el martes.",
-    q:"¿Qué fracción del libro le falta por leer?",
-    opts:["{{1/15}}","{{4/15}}","{{11/15}}","{{3/8}}"],
-    ans:1, exp:"{{2/5}} + {{1/3}} = {{6/15}} + {{5/15}} = {{11/15}} leído. Falta 1 − {{11/15}} = {{4/15}}." },
-  { id:"m_ari_3", domain:"math", topic:"aritmetica", dif:2, stem:"Un litro de gasolina cuesta ₡652,50. Un conductor echa 30 litros y paga con tres billetes de ₡10 000.", q:"¿Cuánto recibe de vuelto?", opts:["₡10 425","₡9 575","₡10 575","₡11 425"], ans:0, exp:"30 × 652,50 = 19 575. Vuelto: 30 000 − 19 575 = 10 425." },
-  { id:"m_ari_4", domain:"math", topic:"aritmetica", dif:3, stem:"Considere la operación: 3 + 4 × 5 − 8 ÷ 2 + 2³.", q:"¿Cuál es el resultado?", opts:["27","19","35","11"], ans:0, exp:"Potencia y luego × y ÷: 2³=8, 4×5=20, 8÷2=4. Después: 3 + 20 − 4 + 8 = 27." },
-  { id:"m_ari_5", domain:"math", topic:"aritmetica", dif:2,
-    stem:"La temperatura en Cartago era de 12 °C al mediodía y bajó 15 °C en la madrugada.",
-    q:"¿Cuál fue la temperatura en la madrugada?",
-    opts:["−3 °C","3 °C","27 °C","−27 °C"],
-    ans:0, exp:"Bajar 15° desde 12° es restar: 12 − 15 = −3 °C (queda bajo cero)." },
-
-  /* -- MCM y MCD -- */
-  { id:"m_mcm_1", domain:"math", topic:"mcm_mcd", dif:2,
-    stem:"Dos buses salen de la misma terminal: uno cada 12 minutos y el otro cada 18 minutos. Ambos salen juntos a las 6:00 a. m.",
-    q:"¿A qué hora vuelven a salir juntos por primera vez?",
-    opts:["6:30 a. m.","6:36 a. m.","6:54 a. m.","7:12 a. m."],
-    ans:1, exp:"Coinciden en el MCM(12, 18) = 36 minutos. 6:00 + 36 min = 6:36 a. m." },
-  { id:"m_mcm_2", domain:"math", topic:"mcm_mcd", dif:3, stem:"Dos buses salen de la misma terminal: uno cada 15 minutos y otro cada 25 minutos. Ambos salen juntos a las 6:00 a. m.", q:"¿A qué hora vuelven a salir juntos por primera vez?", opts:["7:15 a. m.","6:40 a. m.","7:00 a. m.","8:00 a. m."], ans:0, exp:"Coinciden en el MCM(15, 25) = 75 minutos. 6:00 + 1 h 15 min = 7:15 a. m." },
-  { id:"m_mcm_3", domain:"math", topic:"mcm_mcd", dif:2,
-    stem:"Se quieren cortar dos cintas, una de 60 cm y otra de 48 cm, en pedazos iguales lo más largos posible, sin que sobre cinta.",
-    q:"¿Cuánto medirá cada pedazo?",
-    opts:["6 cm","12 cm","24 cm","4 cm"],
-    ans:1, exp:"El pedazo más largo que divide a ambas es el MCD(60, 48) = 12 cm." },
-  { id:"m_mcm_4", domain:"math", topic:"mcm_mcd", dif:3,
-    stem:"El mínimo común múltiplo de dos números es 60 y uno de ellos es 15.",
-    q:"¿Cuál de los siguientes podría ser el otro número?",
-    opts:["8","9","12","25"],
-    ans:2, exp:"MCM(15, 12) = 60. En cambio MCM(15,8)=120, MCM(15,9)=45 y MCM(15,25)=75." },
-
-  /* -- Relaciones de orden -- */
-  { id:"m_rel_1", domain:"math", topic:"relaciones_orden", dif:2,
-    stem:"Cuatro amigos comparan su edad: Ana es mayor que Beto, Carlos es menor que Beto y Diana es mayor que Ana.",
-    q:"¿Quién es el menor de los cuatro?",
-    opts:["Ana","Beto","Carlos","Diana"],
-    ans:2, exp:"Orden: Diana > Ana > Beto > Carlos. El menor es Carlos." },
-  { id:"m_rel_2", domain:"math", topic:"relaciones_orden", dif:3, stem:"Se sabe que a < 0 < b y que el valor absoluto de a es mayor que el de b.", q:"¿Cuál afirmación es siempre verdadera?", opts:["a + b > 0","a + b < 0","a + b = 0","a es mayor que b"], ans:1, exp:"Como a es negativo y |a| > |b|, el negativo pesa más que el positivo: a + b < 0." },
-  { id:"m_rel_3", domain:"math", topic:"relaciones_orden", dif:3, stem:"Considere los valores 0,4 ; {{3/5}} ; 0,55 ; {{2/5}} ; 0,7.", q:"¿Cuántos de ellos son mayores que {{1/2}}?", opts:["2","3","4","1"], ans:1, exp:"{{1/2}} = 0,5. Mayores: {{3/5}} (0,6), 0,55 y 0,7. Son 3 (0,4 y {{2/5}}=0,4 no superan 0,5)." },
-
-  /* -- Conteo intuitivo -- */
-  { id:"m_cnt_1", domain:"math", topic:"conteo", dif:3,
-    stem:"En una bolsa hay 5 bolas rojas, 3 azules y 4 verdes.",
-    q:"¿Cuántas bolas hay que sacar como mínimo, sin ver, para asegurarse de tener al menos una de cada color?",
-    opts:["3","4","10","12"],
-    ans:2, exp:"En el peor caso se sacan las dos cantidades mayores (5 + 4 = 9) sin obtener el tercer color; la siguiente bola completa los tres: 10." },
-  { id:"m_cnt_2", domain:"math", topic:"conteo", dif:2,
-    stem:"Un candado usa un código de 2 dígitos (del 0 al 9), y se sabe que los dos dígitos son distintos.",
-    q:"¿Cuántos códigos distintos son posibles?",
-    opts:["81","90","100","45"],
-    ans:1, exp:"El primer dígito tiene 10 opciones y el segundo 9 (distinto del primero): 10 × 9 = 90." },
-  { id:"m_cnt_3", domain:"math", topic:"conteo", dif:2,
-    stem:"En una reunión hay 5 personas y cada una saluda de mano a todas las demás exactamente una vez.",
-    q:"¿Cuántos saludos se dan en total?",
-    opts:["10","20","25","15"],
-    ans:0, exp:"Cada par se saluda una vez: {{5·4/2}} = 10 saludos." },
-
-  /* -- Permutaciones -- */
-  { id:"m_per_1", domain:"math", topic:"permutaciones", dif:2,
-    stem:"Tres personas van a sentarse en 3 sillas colocadas en fila.",
-    q:"¿De cuántas maneras distintas pueden sentarse?",
-    opts:["3","6","9","27"],
-    ans:1, exp:"Ordenar 3 elementos distintos: 3! = 3·2·1 = 6." },
-  { id:"m_per_2", domain:"math", topic:"permutaciones", dif:2,
-    stem:"Se quieren ordenar 4 libros distintos en un estante.",
-    q:"¿De cuántas maneras se pueden ordenar?",
-    opts:["12","16","24","256"],
-    ans:2, exp:"Ordenar 4 libros distintos son 4! (factorial): 4·3·2·1 = 24 maneras." },
-  { id:"m_per_3", domain:"math", topic:"permutaciones", dif:2,
-    stem:"Un equipo debe elegir un capitán y un subcapitán entre 5 jugadores.",
-    q:"¿De cuántas formas distintas puede hacerlo?",
-    opts:["10","20","25","120"],
-    ans:1, exp:"El capitán: 5 opciones; el subcapitán: 4 restantes. 5 × 4 = 20." },
-
-  /* -- Geometría -- */
-  { id:"m_geo_1", domain:"math", topic:"geometria", dif:3,
-    stem:"Un terreno rectangular mide 8 m de largo y 5 m de ancho. Se quiere cercar todo su contorno con malla, pero uno de los lados de 8 m ya tiene una pared y no necesita malla.",
-    q:"¿Cuántos metros de malla se necesitan?",
-    opts:["26 m","18 m","21 m","13 m"],
-    ans:1, exp:"El perímetro total es 2·(8 + 5) = 26 m. Como un lado de 8 m no lleva malla: 26 − 8 = 18 m." },
-  { id:"m_geo_2", domain:"math", topic:"geometria", dif:3, stem:"Una sala rectangular mide 6 m de largo por 4 m de ancho. Se cubrirá todo el piso con baldosas cuadradas de 1 m de lado, y cada baldosa cuesta ₡2 500.", q:"¿Cuánto se gasta en baldosas?", opts:["₡60 000","₡25 000","₡48 000","₡100 000"], ans:0, exp:"Área = 6 × 4 = 24 m², o sea 24 baldosas. 24 × 2 500 = 60 000." },
-  { id:"m_geo_3", domain:"math", topic:"geometria", dif:3, stem:"Un terreno triangular tiene 20 m de base y 15 m de altura. Se vende a ₡8 000 el metro cuadrado.", q:"¿Cuánto cuesta el terreno?", opts:["₡1 200 000","₡2 400 000","₡150 000","₡800 000"], ans:0, exp:"Área = 20 × 15 ÷ 2 = 150 m². Costo: 150 × 8 000 = 1 200 000." },
-  { id:"m_geo_4", domain:"math", topic:"geometria", dif:3,
-    stem:"Una rueda tiene un radio de 35 cm. Use π ≈ {{22/7}}.",
-    q:"¿Cuál es su circunferencia (perímetro)?",
-    opts:["110 cm","220 cm","154 cm","440 cm"],
-    ans:1, exp:"Circunferencia = 2·π·r = 2·({{22/7}})·35 = 2·22·5 = 220 cm." },
-
-  /* -- Sucesiones -- */
-  { id:"m_suc_1", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 4, 7, 10, 13, …", q:"¿Cuál es el término que ocupa la posición 12?", opts:["37","34","40","31"], ans:0, exp:"Es aritmética con d = 3. a₁₂ = 4 + (12 − 1)·3 = 4 + 33 = 37." },
-  { id:"m_suc_2", domain:"math", topic:"sucesiones", dif:2,
-    stem:"En la sucesión 2, 6, 18, 54, … cada término se obtiene del anterior con la misma operación.",
-    q:"¿Cuál es el siguiente término?",
-    opts:["108","162","216","72"],
-    ans:1, exp:"Cada término se multiplica por 3: 54 × 3 = 162." },
-  { id:"m_suc_3", domain:"math", topic:"sucesiones", dif:3, stem:"Observe la sucesión: 2, 5, 10, 17, 26, …", q:"¿Cuál es el séptimo término?", opts:["50","37","42","65"], ans:0, exp:"El patrón es n²+1: 1²+1=2, 2²+1=5, … El séptimo es 7²+1 = 50." },
-  { id:"m_suc_4", domain:"math", topic:"sucesiones", dif:3,
-    stem:"Observe la sucesión: 2, 3, 5, 8, 12, …",
-    q:"¿Cuál es el siguiente número?",
-    opts:["15","16","17","18"],
-    ans:2, exp:"Las diferencias aumentan: +1, +2, +3, +4. El siguiente suma +5: 12 + 5 = 17." },
-  { id:"m_suc_5", domain:"math", topic:"sucesiones", dif:2,
-    stem:"En la sucesión 1, 1, 2, 3, 5, 8, … cada término es la suma de los dos anteriores.",
-    q:"¿Cuál es el octavo término?",
-    opts:["13","21","34","19"],
-    ans:1, exp:"1, 1, 2, 3, 5, 8, 13, 21. El octavo término es 21." },
-
-  /* -- Datos y probabilidad -- */
-  { id:"m_dat_1", domain:"math", topic:"datos_probabilidad", dif:2,
-    stem:"En una caja hay 4 bolas rojas y 6 azules. Se saca una bola al azar.",
-    q:"¿Cuál es la probabilidad de que sea roja?",
-    opts:["{{2/5}}","{{3/5}}","{{4/6}}","{{1/4}}"],
-    ans:0, exp:"Probabilidad = favorables ÷ total = {{4/10}} = {{2/5}}." },
-  { id:"m_dat_2", domain:"math", topic:"datos_probabilidad", dif:3,
-    stem:"En cuatro exámenes, un estudiante obtuvo 80, 90, 70 y 100. Hará un quinto examen y quiere que el promedio de los cinco sea exactamente 86.",
-    q:"¿Qué nota necesita en el quinto examen?",
-    opts:["90","86","94","100"],
-    ans:0, exp:"Para promediar 86 en cinco exámenes, la suma debe ser 5 × 86 = 430. Los cuatro primeros suman 340, así que necesita 430 − 340 = 90." },
-  { id:"m_dat_3", domain:"math", topic:"datos_probabilidad", dif:2,
-    stem:"En una rifa hay 100 boletos: 50 sin premio, 30 con premio pequeño, 15 con premio mediano y 5 con premio mayor. Se compra un boleto.",
-    q:"¿Qué resultado es el más probable?",
-    opts:["Premio mayor","Premio mediano","Sin premio","Premio pequeño"],
-    ans:2, exp:"El resultado más probable es el de mayor cantidad de casos: 'sin premio' (50 de 100)." },
-  { id:"m_dat_4", domain:"math", topic:"datos_probabilidad", dif:3, stem:"En una bolsa hay 12 bolas: 5 rojas, 4 azules y 3 verdes. Se saca una al azar.", q:"¿Cuál es la probabilidad de que NO sea roja?", opts:["{{7/12}}","{{5/12}}","{{1/2}}","{{3/12}}"], ans:0, exp:"Las que no son rojas son 4 + 3 = 7, de 12 en total: {{7/12}}." },
-
-  /* -- Notación algebraica -- */
-  { id:"m_not_1", domain:"math", topic:"algebra_notacion", dif:2,
-    stem:"Considere la frase: 'cinco más que el doble de un número'.",
-    q:"¿Cuál expresión la representa?",
-    opts:["2x + 5","2(x + 5)","5 − 2x","x/2 + 5"],
-    ans:0, exp:"El doble del número es 2x; cinco más que eso es 2x + 5." },
-  { id:"m_not_2", domain:"math", topic:"algebra_notacion", dif:2,
-    stem:"Carlos tiene x colones y Ana tiene el triple que Carlos, menos 200 colones.",
-    q:"¿Cuánto tiene Ana, en colones?",
-    opts:["3x − 200","3(x − 200)","x/3 − 200","200 − 3x"],
-    ans:0, exp:"El triple de Carlos es 3x; menos 200 es 3x − 200." },
-  { id:"m_not_3", domain:"math", topic:"algebra_notacion", dif:3, stem:"Un número se representa con la letra n.", q:"¿Cuál expresión representa: el doble de un número, disminuido en cinco, es igual a quince?", opts:["2n − 5 = 15","2(n − 5) = 15","n/2 − 5 = 15","5 − 2n = 15"], ans:0, exp:"El doble del número es 2n; disminuido en 5 es 2n − 5; igual a quince: 2n − 5 = 15." },
-
-  /* -- Relaciones algebraicas y paridad -- */
-  { id:"m_alr_1", domain:"math", topic:"algebra_relaciones", dif:3, stem:"Sea n un número entero cualquiera.", q:"¿Cuál de las siguientes expresiones es múltiplo de 4 para todo n?", opts:["4n","2n","4n + 2","n + 4"], ans:0, exp:"4n = 4·n siempre es múltiplo de 4. 2n no (si n es impar), 4n+2 deja residuo 2 y n+4 depende de n." },
-  { id:"m_alr_2", domain:"math", topic:"algebra_relaciones", dif:3,
-    stem:"Sean P y Q enteros positivos. Se sabe que el producto P·Q es impar.",
-    q:"¿Qué se puede afirmar con certeza?",
-    opts:["P es par","Q es par","P y Q son impares","P es impar y Q es par"],
-    ans:2, exp:"Un producto es impar solo si ambos factores son impares. Por tanto, P y Q son impares." },
-  { id:"m_alr_3", domain:"math", topic:"algebra_relaciones", dif:3, stem:"Se sabe que 2x − 3 = 11.", q:"¿Cuánto vale x²?", opts:["49","14","7","21"], ans:0, exp:"De 2x − 3 = 11 se obtiene 2x = 14, o sea x = 7. Entonces x² = 7² = 49." },
-
-  /* -- Unidades de medida -- */
-  { id:"m_uni_1", domain:"math", topic:"unidades_medida", dif:2,
-    stem:"Un atleta corre 5 km en 25 minutos a ritmo constante.",
-    q:"¿Cuántos metros recorre en 5 minutos?",
-    opts:["500 m","1000 m","1500 m","200 m"],
-    ans:1, exp:"5 km = 5000 m en 25 min → 200 m por minuto. En 5 min: 200 × 5 = 1000 m." },
-  { id:"m_uni_2", domain:"math", topic:"unidades_medida", dif:3, stem:"Una llave llena un balde de 18 litros en 3 minutos, a ritmo constante.", q:"¿Cuántos litros echa en 50 segundos?", opts:["5 litros","6 litros","3 litros","9 litros"], ans:0, exp:"3 min = 180 s, así que echa 18 ÷ 180 = 0,1 L por segundo. En 50 s: 50 × 0,1 = 5 litros." },
-  { id:"m_uni_3", domain:"math", topic:"unidades_medida", dif:3,
-    stem:"Un carro viaja a 90 km/h.",
-    q:"¿Qué distancia recorre en 40 minutos?",
-    opts:["36 km","60 km","120 km","45 km"],
-    ans:1, exp:"40 min = {{40/60}} h = {{2/3}} h. Distancia = 90 · {{2/3}} = 60 km." },
-  { id:"m_uni_4", domain:"math", topic:"unidades_medida", dif:2,
-    stem:"Un evento empezó a las 10:45 a. m. y duró 2 horas y 50 minutos.",
-    q:"¿A qué hora terminó?",
-    opts:["12:35 p. m.","1:35 p. m.","1:25 p. m.","12:55 p. m."],
-    ans:1, exp:"10:45 + 2 h = 12:45; + 50 min = 13:35, es decir 1:35 p. m." },
-
-  /* -- Razón y proporción -- */
-  { id:"m_raz_1", domain:"math", topic:"razon_proporcion", dif:2,
-    stem:"En una receta, por cada 2 tazas de arroz se usan 3 tazas de agua.",
-    q:"Si se usan 8 tazas de arroz, ¿cuántas tazas de agua se necesitan?",
-    opts:["9","12","16","6"],
-    ans:1, exp:"Proporción directa: 8 tazas son 4 veces 2, así que el agua es 4 × 3 = 12 tazas." },
-  { id:"m_raz_2", domain:"math", topic:"razon_proporcion", dif:3, stem:"En un mapa, 2 cm representan 50 km reales. Dos ciudades aparecen separadas por 7 cm en el mapa.", q:"¿Qué distancia real las separa?", opts:["175 km","100 km","350 km","125 km"], ans:0, exp:"Si 2 cm = 50 km, entonces 1 cm = 25 km. Por lo tanto 7 × 25 = 175 km." },
-  { id:"m_raz_3", domain:"math", topic:"razon_proporcion", dif:3,
-    stem:"Tres obreros construyen un muro en 12 días.",
-    q:"¿Cuántos días tardarían 6 obreros trabajando al mismo ritmo?",
-    opts:["24","6","18","4"],
-    ans:1, exp:"Proporción inversa: 3·12 = 36 obrero-días. Con 6 obreros: 36 ÷ 6 = 6 días." },
-  { id:"m_raz_4", domain:"math", topic:"razon_proporcion", dif:3, stem:"Seis obreros tardan 10 días en terminar una obra.", q:"¿Cuántos días tardarían 4 obreros, trabajando al mismo ritmo?", opts:["15 días","6,7 días","12 días","20 días"], ans:0, exp:"Proporción inversa: 6 × 10 = 60 obrero-días. Con 4 obreros: 60 ÷ 4 = 15 días." }
+  {
+    "id": "m_ecu_1",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "4",
+      "3",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **15**.\n\nSi T = 15, y sabemos que T = 5c:\n15 = 5c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_2",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 28**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "5",
+      "5",
+      "7"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 28. Por lo tanto, el T máximo posible es **25**.\n\nSi T = 25, y sabemos que T = 5c:\n25 = 5c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_3",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "4",
+      "2",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_4",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "3",
+      "2",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 6c:\n12 = 6c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_5",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "2",
+      "2",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **10**.\n\nSi T = 10, y sabemos que T = 5c:\n10 = 5c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_6",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 30**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "4",
+      "5",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 30. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_7",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 30**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "4",
+      "6",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 30. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_8",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 4c:\n12 = 4c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_9",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **10**.\n\nSi T = 10, y sabemos que T = 5c:\n10 = 5c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_10",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "2",
+      "2",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 6c:\n12 = 6c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_11",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 9**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "3",
+      "2",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 9. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_12",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 9**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "2",
+      "4",
+      "3"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 9. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_13",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "4",
+      "3",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **9**.\n\nSi T = 9, y sabemos que T = 3c:\n9 = 3c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_14",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 25**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "4",
+      "6",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 25. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_15",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "4",
+      "3",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **15**.\n\nSi T = 15, y sabemos que T = 5c:\n15 = 5c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_16",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 24**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "6",
+      "4",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 24. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 5c:\n20 = 5c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_17",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 14**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "6",
+      "4",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 14. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 3c:\n12 = 3c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_18",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 24**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "4",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 24. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 5c:\n20 = 5c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_19",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 30**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "6",
+      "4",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 30. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_20",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 9**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "2",
+      "2",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 9. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_21",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 28**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "7",
+      "5",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 28. Por lo tanto, el T máximo posible es **25**.\n\nSi T = 25, y sabemos que T = 5c:\n25 = 5c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_22",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "3",
+      "3",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_23",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "3",
+      "4",
+      "3"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 4c:\n12 = 4c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_24",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "5",
+      "4",
+      "3"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 4c:\n12 = 4c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_25",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 14**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "4",
+      "4",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 14. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 3c:\n12 = 3c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_26",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **9**.\n\nSi T = 9, y sabemos que T = 3c:\n9 = 3c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_27",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 10**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "4",
+      "3",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 10. Por lo tanto, el T máximo posible es **9**.\n\nSi T = 9, y sabemos que T = 3c:\n9 = 3c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_28",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "5",
+      "4",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **15**.\n\nSi T = 15, y sabemos que T = 5c:\n15 = 5c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_29",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 21**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "7",
+      "6",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 21. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 4c:\n20 = 4c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_30",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "4",
+      "3",
+      "2"
+    ],
+    "ans": 3,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_31",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 18**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "4",
+      "5",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 18. Por lo tanto, el T máximo posible es **16**.\n\nSi T = 16, y sabemos que T = 4c:\n16 = 4c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_32",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "2",
+      "2",
+      "3"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 6c:\n12 = 6c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_33",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "5",
+      "3",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **18**.\n\nSi T = 18, y sabemos que T = 6c:\n18 = 6c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_34",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "3",
+      "2",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **10**.\n\nSi T = 10, y sabemos que T = 5c:\n10 = 5c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_35",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 6**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 6. Por lo tanto, el T máximo posible es **3**.\n\nSi T = 3, y sabemos que T = 3c:\n3 = 3c  \n**c = 1 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_36",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 18**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "4",
+      "5",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 18. Por lo tanto, el T máximo posible es **16**.\n\nSi T = 16, y sabemos que T = 4c:\n16 = 4c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_37",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 30**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "6",
+      "5",
+      "4"
+    ],
+    "ans": 3,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 30. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_38",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 14**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "5",
+      "4",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 14. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 3c:\n12 = 3c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_39",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 16**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "3",
+      "5",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 16. Por lo tanto, el T máximo posible es **15**.\n\nSi T = 15, y sabemos que T = 5c:\n15 = 5c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_40",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "5",
+      "4",
+      "3"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 4c:\n12 = 4c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_41",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "4",
+      "3"
+    ],
+    "ans": 3,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **9**.\n\nSi T = 9, y sabemos que T = 3c:\n9 = 3c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_42",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 35**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "5",
+      "7",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 35. Por lo tanto, el T máximo posible es **30**.\n\nSi T = 30, y sabemos que T = 6c:\n30 = 6c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_43",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 25**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "6",
+      "4",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 25. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_44",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 24**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "4",
+      "5",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 24. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 5c:\n20 = 5c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_45",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 35**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "7",
+      "5",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 35. Por lo tanto, el T máximo posible es **30**.\n\nSi T = 30, y sabemos que T = 6c:\n30 = 6c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_46",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **15**.\n\nSi T = 15, y sabemos que T = 5c:\n15 = 5c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_47",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 14**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "4",
+      "6",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 14. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 3c:\n12 = 3c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_48",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 24**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 24. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 5c:\n20 = 5c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_49",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 16**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "4",
+      "3",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 16. Por lo tanto, el T máximo posible es **15**.\n\nSi T = 15, y sabemos que T = 5c:\n15 = 5c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_50",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 30**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "6",
+      "5",
+      "4"
+    ],
+    "ans": 3,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 30. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_51",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 21**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "7",
+      "5",
+      "6",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 21. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 4c:\n20 = 4c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_52",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 28**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "5",
+      "5",
+      "7"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 28. Por lo tanto, el T máximo posible es **25**.\n\nSi T = 25, y sabemos que T = 5c:\n25 = 5c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_53",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 28**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "5",
+      "5",
+      "7"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 28. Por lo tanto, el T máximo posible es **25**.\n\nSi T = 25, y sabemos que T = 5c:\n25 = 5c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_54",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 35**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "7",
+      "5",
+      "6",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 35. Por lo tanto, el T máximo posible es **30**.\n\nSi T = 30, y sabemos que T = 6c:\n30 = 6c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_55",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 8**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "4",
+      "2",
+      "3"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 8. Por lo tanto, el T máximo posible es **6**.\n\nSi T = 6, y sabemos que T = 3c:\n6 = 3c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_56",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 28**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "7",
+      "5",
+      "5",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 28. Por lo tanto, el T máximo posible es **25**.\n\nSi T = 25, y sabemos que T = 5c:\n25 = 5c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_57",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 24**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 24. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 5c:\n20 = 5c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_58",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "3",
+      "5",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **18**.\n\nSi T = 18, y sabemos que T = 6c:\n18 = 6c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_59",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 10**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "5",
+      "4",
+      "3"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 10. Por lo tanto, el T máximo posible es **9**.\n\nSi T = 9, y sabemos que T = 3c:\n9 = 3c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_60",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "2",
+      "2",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 6c:\n12 = 6c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_61",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 25**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "4",
+      "4",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 25. Por lo tanto, el T máximo posible es **24**.\n\nSi T = 24, y sabemos que T = 6c:\n24 = 6c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_62",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "3",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 4c:\n12 = 4c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_63",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "3",
+      "5",
+      "3"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 4c:\n12 = 4c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_64",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 24**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "6",
+      "4",
+      "5",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 24. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 5c:\n20 = 5c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_65",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 10**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "3",
+      "3",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 10. Por lo tanto, el T máximo posible es **9**.\n\nSi T = 9, y sabemos que T = 3c:\n9 = 3c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_66",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 16**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "3",
+      "4",
+      "3"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 16. Por lo tanto, el T máximo posible es **15**.\n\nSi T = 15, y sabemos que T = 5c:\n15 = 5c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_67",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 8**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "2",
+      "4",
+      "3"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 8. Por lo tanto, el T máximo posible es **6**.\n\nSi T = 6, y sabemos que T = 3c:\n6 = 3c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_68",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 8**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "4",
+      "3",
+      "2"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 8. Por lo tanto, el T máximo posible es **6**.\n\nSi T = 6, y sabemos que T = 3c:\n6 = 3c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_69",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 9**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "3",
+      "2",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 9. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_70",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 9**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "4",
+      "3",
+      "2"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 9. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_71",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 35**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "6",
+      "5",
+      "7"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 35. Por lo tanto, el T máximo posible es **30**.\n\nSi T = 30, y sabemos que T = 6c:\n30 = 6c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_72",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 9**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 9. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_73",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 21**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "7",
+      "6",
+      "5",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 21. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 4c:\n20 = 4c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_74",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "3",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **18**.\n\nSi T = 18, y sabemos que T = 6c:\n18 = 6c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_75",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 12**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "3"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 12. Por lo tanto, el T máximo posible es **8**.\n\nSi T = 8, y sabemos que T = 4c:\n8 = 4c  \n**c = 2 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_76",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 5 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 35**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 5c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 5c = **6c**.\n\nEsto significa que el total T debe ser un **múltiplo de 6**.\n\nEl problema dice explícitamente que T es estrictamente menor a 35. Por lo tanto, el T máximo posible es **30**.\n\nSi T = 30, y sabemos que T = 6c:\n30 = 6c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_77",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 21**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "7",
+      "5",
+      "6",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 21. Por lo tanto, el T máximo posible es **20**.\n\nSi T = 20, y sabemos que T = 4c:\n20 = 4c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_78",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 3 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 15**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "3",
+      "5",
+      "3",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4**.\n\nEl problema dice explícitamente que T es estrictamente menor a 15. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 4c:\n12 = 4c  \n**c = 3 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_79",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 2 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 14**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "4",
+      "6",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 2c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 2c = **3c**.\n\nEsto significa que el total T debe ser un **múltiplo de 3**.\n\nEl problema dice explícitamente que T es estrictamente menor a 14. Por lo tanto, el T máximo posible es **12**.\n\nSi T = 12, y sabemos que T = 3c:\n12 = 3c  \n**c = 4 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ecu_80",
+    "domain": "math",
+    "topic": "ecuaciones",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente 4 gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **entero positivo estrictamente menor a 28**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "5",
+      "6",
+      "5",
+      "7"
+    ],
+    "ans": 0,
+    "exp": "¡Analicémoslo matemáticamente para no caer en la trampa!\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 4c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 4c = **5c**.\n\nEsto significa que el total T debe ser un **múltiplo de 5**.\n\nEl problema dice explícitamente que T es estrictamente menor a 28. Por lo tanto, el T máximo posible es **25**.\n\nSi T = 25, y sabemos que T = 5c:\n25 = 5c  \n**c = 5 cerdos**.\n\n**Tip Élite:** ¡Siempre plantea la ecuación y cuídate de la palabra \"estrictamente menor\"!"
+  },
+  {
+    "id": "m_ari_81",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡160. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1730 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "8",
+      "7",
+      "14"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1730, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1730 = **1270**.\n\nCompró 5 confites a ₡30 cada uno:\n**Gasto en confites:** 5 × 30 = **150**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1270 - 150 = **1120**.\n\nSi cada chocolate vale 160:\n1120 ÷ 160 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_82",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡110. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1300 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "6",
+      "10",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1300, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1300 = **700**.\n\nCompró 5 confites a ₡30 cada uno:\n**Gasto en confites:** 5 × 30 = **150**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 700 - 150 = **550**.\n\nSi cada chocolate vale 110:\n550 ÷ 110 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_83",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡120. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1080 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1080, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1080 = **920**.\n\nCompró 8 confites a ₡25 cada uno:\n**Gasto en confites:** 8 × 25 = **200**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 920 - 200 = **720**.\n\nSi cada chocolate vale 120:\n720 ÷ 120 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_84",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡160. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1795 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "7",
+      "12",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1795, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1795 = **1205**.\n\nCompró 7 confites a ₡35 cada uno:\n**Gasto en confites:** 7 × 35 = **245**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1205 - 245 = **960**.\n\nSi cada chocolate vale 160:\n960 ÷ 160 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_85",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡160. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1955 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "10",
+      "5",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1955, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1955 = **1045**.\n\nCompró 7 confites a ₡35 cada uno:\n**Gasto en confites:** 7 × 35 = **245**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1045 - 245 = **800**.\n\nSi cada chocolate vale 160:\n800 ÷ 160 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_86",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡150. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1970 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "6",
+      "5",
+      "10"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1970, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1970 = **1030**.\n\nCompró 8 confites a ₡35 cada uno:\n**Gasto en confites:** 8 × 35 = **280**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1030 - 280 = **750**.\n\nSi cada chocolate vale 150:\n750 ÷ 150 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_87",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡150. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1340 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "2",
+      "6",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1340, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1340 = **660**.\n\nCompró 6 confites a ₡35 cada uno:\n**Gasto en confites:** 6 × 35 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 660 - 210 = **450**.\n\nSi cada chocolate vale 150:\n450 ÷ 150 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_88",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡190. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1190 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "2",
+      "3",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1190, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1190 = **810**.\n\nCompró 8 confites a ₡30 cada uno:\n**Gasto en confites:** 8 × 30 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 810 - 240 = **570**.\n\nSi cada chocolate vale 190:\n570 ÷ 190 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_89",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡160. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1960 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "6",
+      "10",
+      "5"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1960, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1960 = **1040**.\n\nCompró 8 confites a ₡30 cada uno:\n**Gasto en confites:** 8 × 30 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1040 - 240 = **800**.\n\nSi cada chocolate vale 160:\n800 ÷ 160 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_90",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡100. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1075 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "7",
+      "8",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1075, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1075 = **925**.\n\nCompró 9 confites a ₡25 cada uno:\n**Gasto en confites:** 9 × 25 = **225**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 925 - 225 = **700**.\n\nSi cada chocolate vale 100:\n700 ÷ 100 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_91",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡120. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1490 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "2",
+      "4",
+      "6",
+      "3"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1490, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1490 = **510**.\n\nCompró 6 confites a ₡25 cada uno:\n**Gasto en confites:** 6 × 25 = **150**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 510 - 150 = **360**.\n\nSi cada chocolate vale 120:\n360 ÷ 120 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_92",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡120. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1985 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "8",
+      "7",
+      "14"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1985, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1985 = **1015**.\n\nCompró 5 confites a ₡35 cada uno:\n**Gasto en confites:** 5 × 35 = **175**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1015 - 175 = **840**.\n\nSi cada chocolate vale 120:\n840 ÷ 120 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_93",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡110. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1545 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "2",
+      "4",
+      "3"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1545, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1545 = **455**.\n\nCompró 5 confites a ₡25 cada uno:\n**Gasto en confites:** 5 × 25 = **125**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 455 - 125 = **330**.\n\nSi cada chocolate vale 110:\n330 ÷ 110 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_94",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡110. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1250 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "5",
+      "4",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1250, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1250 = **750**.\n\nCompró 8 confites a ₡25 cada uno:\n**Gasto en confites:** 8 × 25 = **200**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 750 - 200 = **550**.\n\nSi cada chocolate vale 110:\n550 ÷ 110 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_95",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡100. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1430 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "6",
+      "4",
+      "2"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1430, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1430 = **570**.\n\nCompró 6 confites a ₡45 cada uno:\n**Gasto en confites:** 6 × 45 = **270**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 570 - 270 = **300**.\n\nSi cada chocolate vale 100:\n300 ÷ 100 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_96",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡180. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1145 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "4",
+      "2",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1145, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1145 = **855**.\n\nCompró 9 confites a ₡35 cada uno:\n**Gasto en confites:** 9 × 35 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 855 - 315 = **540**.\n\nSi cada chocolate vale 180:\n540 ÷ 180 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_97",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡120. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1345 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1345, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1345 = **655**.\n\nCompró 7 confites a ₡25 cada uno:\n**Gasto en confites:** 7 × 25 = **175**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 655 - 175 = **480**.\n\nSi cada chocolate vale 120:\n480 ÷ 120 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_98",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡190. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1495 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "8",
+      "6",
+      "7",
+      "14"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1495, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1495 = **1505**.\n\nCompró 7 confites a ₡25 cada uno:\n**Gasto en confites:** 7 × 25 = **175**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1505 - 175 = **1330**.\n\nSi cada chocolate vale 190:\n1330 ÷ 190 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_99",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡160. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1115 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "3",
+      "4",
+      "2"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1115, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1115 = **885**.\n\nCompró 9 confites a ₡45 cada uno:\n**Gasto en confites:** 9 × 45 = **405**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 885 - 405 = **480**.\n\nSi cada chocolate vale 160:\n480 ÷ 160 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_100",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡180. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1680 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "7",
+      "5",
+      "12",
+      "6"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1680, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1680 = **1320**.\n\nCompró 8 confites a ₡30 cada uno:\n**Gasto en confites:** 8 × 30 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1320 - 240 = **1080**.\n\nSi cada chocolate vale 180:\n1080 ÷ 180 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_101",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡170. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1755 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1755, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1755 = **1245**.\n\nCompró 9 confites a ₡25 cada uno:\n**Gasto en confites:** 9 × 25 = **225**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1245 - 225 = **1020**.\n\nSi cada chocolate vale 170:\n1020 ÷ 170 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_102",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡120. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1920 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "12",
+      "6",
+      "5",
+      "7"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1920, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1920 = **1080**.\n\nCompró 8 confites a ₡45 cada uno:\n**Gasto en confites:** 8 × 45 = **360**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1080 - 360 = **720**.\n\nSi cada chocolate vale 120:\n720 ÷ 120 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_103",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡140. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1795 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "8",
+      "7",
+      "6",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1795, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1795 = **1205**.\n\nCompró 5 confites a ₡45 cada uno:\n**Gasto en confites:** 5 × 45 = **225**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1205 - 225 = **980**.\n\nSi cada chocolate vale 140:\n980 ÷ 140 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_104",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡150. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1740 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "12",
+      "7",
+      "6",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1740, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1740 = **1260**.\n\nCompró 9 confites a ₡40 cada uno:\n**Gasto en confites:** 9 × 40 = **360**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1260 - 360 = **900**.\n\nSi cada chocolate vale 150:\n900 ÷ 150 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_105",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡150. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1740 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "14",
+      "8",
+      "7"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1740, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1740 = **1260**.\n\nCompró 6 confites a ₡35 cada uno:\n**Gasto en confites:** 6 × 35 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1260 - 210 = **1050**.\n\nSi cada chocolate vale 150:\n1050 ÷ 150 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_106",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡140. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1895 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "6",
+      "4",
+      "10"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1895, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1895 = **1105**.\n\nCompró 9 confites a ₡45 cada uno:\n**Gasto en confites:** 9 × 45 = **405**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1105 - 405 = **700**.\n\nSi cada chocolate vale 140:\n700 ÷ 140 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_107",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡100. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1940 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "14",
+      "8",
+      "7"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1940, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1940 = **1060**.\n\nCompró 8 confites a ₡45 cada uno:\n**Gasto en confites:** 8 × 45 = **360**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1060 - 360 = **700**.\n\nSi cada chocolate vale 100:\n700 ÷ 100 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_108",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡190. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1460 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "8",
+      "14",
+      "7",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1460, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1460 = **1540**.\n\nCompró 6 confites a ₡35 cada uno:\n**Gasto en confites:** 6 × 35 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1540 - 210 = **1330**.\n\nSi cada chocolate vale 190:\n1330 ÷ 190 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_109",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡130. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1820 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "14",
+      "8",
+      "6",
+      "7"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1820, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1820 = **1180**.\n\nCompró 6 confites a ₡45 cada uno:\n**Gasto en confites:** 6 × 45 = **270**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1180 - 270 = **910**.\n\nSi cada chocolate vale 130:\n910 ÷ 130 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_110",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡100. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1390 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "4",
+      "3",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1390, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1390 = **610**.\n\nCompró 7 confites a ₡30 cada uno:\n**Gasto en confites:** 7 × 30 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 610 - 210 = **400**.\n\nSi cada chocolate vale 100:\n400 ÷ 100 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_111",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡180. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1640 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "7",
+      "6",
+      "12",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1640, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1640 = **1360**.\n\nCompró 7 confites a ₡40 cada uno:\n**Gasto en confites:** 7 × 40 = **280**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1360 - 280 = **1080**.\n\nSi cada chocolate vale 180:\n1080 ÷ 180 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_112",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡110. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1135 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "10",
+      "4",
+      "5",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1135, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1135 = **865**.\n\nCompró 7 confites a ₡45 cada uno:\n**Gasto en confites:** 7 × 45 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 865 - 315 = **550**.\n\nSi cada chocolate vale 110:\n550 ÷ 110 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_113",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡170. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1080 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "5",
+      "4",
+      "8"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1080, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1080 = **920**.\n\nCompró 6 confites a ₡40 cada uno:\n**Gasto en confites:** 6 × 40 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 920 - 240 = **680**.\n\nSi cada chocolate vale 170:\n680 ÷ 170 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_114",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡160. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1885 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "10",
+      "4",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1885, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1885 = **1115**.\n\nCompró 7 confites a ₡45 cada uno:\n**Gasto en confites:** 7 × 45 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1115 - 315 = **800**.\n\nSi cada chocolate vale 160:\n800 ÷ 160 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_115",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡150. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1190 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "3",
+      "8",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1190, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1190 = **810**.\n\nCompró 6 confites a ₡35 cada uno:\n**Gasto en confites:** 6 × 35 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 810 - 210 = **600**.\n\nSi cada chocolate vale 150:\n600 ÷ 150 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_116",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡130. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1995 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "7",
+      "6",
+      "12",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1995, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1995 = **1005**.\n\nCompró 5 confites a ₡45 cada uno:\n**Gasto en confites:** 5 × 45 = **225**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1005 - 225 = **780**.\n\nSi cada chocolate vale 130:\n780 ÷ 130 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_117",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡190. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1430 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "14",
+      "8",
+      "7",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1430, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1430 = **1570**.\n\nCompró 6 confites a ₡40 cada uno:\n**Gasto en confites:** 6 × 40 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1570 - 240 = **1330**.\n\nSi cada chocolate vale 190:\n1330 ÷ 190 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_118",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡150. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1040 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "4",
+      "6",
+      "10"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1040, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1040 = **960**.\n\nCompró 7 confites a ₡30 cada uno:\n**Gasto en confites:** 7 × 30 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 960 - 210 = **750**.\n\nSi cada chocolate vale 150:\n750 ÷ 150 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_119",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡110. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1030 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "7",
+      "14",
+      "6",
+      "8"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1030, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1030 = **970**.\n\nCompró 5 confites a ₡40 cada uno:\n**Gasto en confites:** 5 × 40 = **200**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 970 - 200 = **770**.\n\nSi cada chocolate vale 110:\n770 ÷ 110 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_120",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡190. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1880 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1880, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1880 = **1120**.\n\nCompró 9 confites a ₡40 cada uno:\n**Gasto en confites:** 9 × 40 = **360**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1120 - 360 = **760**.\n\nSi cada chocolate vale 190:\n760 ÷ 190 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_121",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡140. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1915 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "12",
+      "6",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1915, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1915 = **1085**.\n\nCompró 7 confites a ₡35 cada uno:\n**Gasto en confites:** 7 × 35 = **245**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1085 - 245 = **840**.\n\nSi cada chocolate vale 140:\n840 ÷ 140 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_122",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡130. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1280 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "8",
+      "4",
+      "5",
+      "3"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1280, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1280 = **720**.\n\nCompró 8 confites a ₡25 cada uno:\n**Gasto en confites:** 8 × 25 = **200**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 720 - 200 = **520**.\n\nSi cada chocolate vale 130:\n520 ÷ 130 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_123",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡150. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1050 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "5",
+      "10",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1050, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1050 = **950**.\n\nCompró 5 confites a ₡40 cada uno:\n**Gasto en confites:** 5 × 40 = **200**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 950 - 200 = **750**.\n\nSi cada chocolate vale 150:\n750 ÷ 150 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_124",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡100. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1090 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "7",
+      "14",
+      "8",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1090, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1090 = **910**.\n\nCompró 7 confites a ₡30 cada uno:\n**Gasto en confites:** 7 × 30 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 910 - 210 = **700**.\n\nSi cada chocolate vale 100:\n700 ÷ 100 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_125",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡110. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1335 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "8",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1335, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1335 = **665**.\n\nCompró 5 confites a ₡45 cada uno:\n**Gasto en confites:** 5 × 45 = **225**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 665 - 225 = **440**.\n\nSi cada chocolate vale 110:\n440 ÷ 110 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_126",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡180. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1950 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "5",
+      "10",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1950, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1950 = **1050**.\n\nCompró 5 confites a ₡30 cada uno:\n**Gasto en confites:** 5 × 30 = **150**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1050 - 150 = **900**.\n\nSi cada chocolate vale 180:\n900 ÷ 180 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_127",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡120. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1280 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "8",
+      "4",
+      "5",
+      "3"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1280, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1280 = **720**.\n\nCompró 8 confites a ₡30 cada uno:\n**Gasto en confites:** 8 × 30 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 720 - 240 = **480**.\n\nSi cada chocolate vale 120:\n480 ÷ 120 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_128",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡170. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1665 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "12",
+      "6",
+      "7",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1665, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1665 = **1335**.\n\nCompró 7 confites a ₡45 cada uno:\n**Gasto en confites:** 7 × 45 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1335 - 315 = **1020**.\n\nSi cada chocolate vale 170:\n1020 ÷ 170 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_129",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡150. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1925 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "7",
+      "6",
+      "5",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1925, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1925 = **1075**.\n\nCompró 7 confites a ₡25 cada uno:\n**Gasto en confites:** 7 × 25 = **175**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1075 - 175 = **900**.\n\nSi cada chocolate vale 150:\n900 ÷ 150 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_130",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡100. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1325 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "6",
+      "10",
+      "5"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1325, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1325 = **675**.\n\nCompró 5 confites a ₡35 cada uno:\n**Gasto en confites:** 5 × 35 = **175**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 675 - 175 = **500**.\n\nSi cada chocolate vale 100:\n500 ÷ 100 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_131",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡190. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1690 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "10",
+      "4",
+      "6",
+      "5"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1690, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1690 = **1310**.\n\nCompró 8 confites a ₡45 cada uno:\n**Gasto en confites:** 8 × 45 = **360**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1310 - 360 = **950**.\n\nSi cada chocolate vale 190:\n950 ÷ 190 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_132",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡110. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1020 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "14",
+      "8",
+      "7",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1020, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1020 = **980**.\n\nCompró 6 confites a ₡35 cada uno:\n**Gasto en confites:** 6 × 35 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 980 - 210 = **770**.\n\nSi cada chocolate vale 110:\n770 ÷ 110 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_133",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡100. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1250 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "12",
+      "6",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1250, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1250 = **750**.\n\nCompró 5 confites a ₡30 cada uno:\n**Gasto en confites:** 5 × 30 = **150**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 750 - 150 = **600**.\n\nSi cada chocolate vale 100:\n600 ÷ 100 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_134",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡120. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1320 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "6",
+      "4",
+      "2"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1320, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1320 = **680**.\n\nCompró 8 confites a ₡40 cada uno:\n**Gasto en confites:** 8 × 40 = **320**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 680 - 320 = **360**.\n\nSi cada chocolate vale 120:\n360 ÷ 120 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_135",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡190. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1000 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "8",
+      "5",
+      "4",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1000, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1000 = **1000**.\n\nCompró 6 confites a ₡40 cada uno:\n**Gasto en confites:** 6 × 40 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1000 - 240 = **760**.\n\nSi cada chocolate vale 190:\n760 ÷ 190 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_136",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡140. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1125 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "3",
+      "8",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1125, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1125 = **875**.\n\nCompró 9 confites a ₡35 cada uno:\n**Gasto en confites:** 9 × 35 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 875 - 315 = **560**.\n\nSi cada chocolate vale 140:\n560 ÷ 140 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_137",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡150. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1270 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "3",
+      "2",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1270, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1270 = **730**.\n\nCompró 7 confites a ₡40 cada uno:\n**Gasto en confites:** 7 × 40 = **280**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 730 - 280 = **450**.\n\nSi cada chocolate vale 150:\n450 ÷ 150 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_138",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡120. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1070 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "12",
+      "7",
+      "5",
+      "6"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1070, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1070 = **930**.\n\nCompró 7 confites a ₡30 cada uno:\n**Gasto en confites:** 7 × 30 = **210**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 930 - 210 = **720**.\n\nSi cada chocolate vale 120:\n720 ÷ 120 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_139",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡110. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1990 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "8",
+      "7",
+      "14"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1990, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1990 = **1010**.\n\nCompró 6 confites a ₡40 cada uno:\n**Gasto en confites:** 6 × 40 = **240**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1010 - 240 = **770**.\n\nSi cada chocolate vale 110:\n770 ÷ 110 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_140",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡110. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1410 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1410, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1410 = **590**.\n\nCompró 5 confites a ₡30 cada uno:\n**Gasto en confites:** 5 × 30 = **150**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 590 - 150 = **440**.\n\nSi cada chocolate vale 110:\n440 ÷ 110 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_141",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡130. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1150 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "10",
+      "4",
+      "5",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1150, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1150 = **850**.\n\nCompró 8 confites a ₡25 cada uno:\n**Gasto en confites:** 8 × 25 = **200**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 850 - 200 = **650**.\n\nSi cada chocolate vale 130:\n650 ÷ 130 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_142",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡110. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1080 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "6",
+      "14",
+      "7",
+      "8"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1080, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1080 = **920**.\n\nCompró 6 confites a ₡25 cada uno:\n**Gasto en confites:** 6 × 25 = **150**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 920 - 150 = **770**.\n\nSi cada chocolate vale 110:\n770 ÷ 110 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_143",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡150. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1635 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "14",
+      "6",
+      "8",
+      "7"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1635, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1635 = **1365**.\n\nCompró 9 confites a ₡35 cada uno:\n**Gasto en confites:** 9 × 35 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1365 - 315 = **1050**.\n\nSi cada chocolate vale 150:\n1050 ÷ 150 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_144",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡100. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1200 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "12",
+      "5",
+      "7",
+      "6"
+    ],
+    "ans": 3,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1200, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1200 = **800**.\n\nCompró 8 confites a ₡25 cada uno:\n**Gasto en confites:** 8 × 25 = **200**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 800 - 200 = **600**.\n\nSi cada chocolate vale 100:\n600 ÷ 100 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_145",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡110. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1070 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "7",
+      "6",
+      "12"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1070, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1070 = **930**.\n\nCompró 6 confites a ₡45 cada uno:\n**Gasto en confites:** 6 × 45 = **270**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 930 - 270 = **660**.\n\nSi cada chocolate vale 110:\n660 ÷ 110 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_146",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡45 y un chocolate cuesta ₡130. Andrés desea comprar 7 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1775 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "14",
+      "8",
+      "7",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1775, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1775 = **1225**.\n\nCompró 7 confites a ₡45 cada uno:\n**Gasto en confites:** 7 × 45 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1225 - 315 = **910**.\n\nSi cada chocolate vale 130:\n910 ÷ 130 = **7 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_147",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡25 y un chocolate cuesta ₡130. Andrés desea comprar 5 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1485 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "4",
+      "6",
+      "2"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1485, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1485 = **515**.\n\nCompró 5 confites a ₡25 cada uno:\n**Gasto en confites:** 5 × 25 = **125**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 515 - 125 = **390**.\n\nSi cada chocolate vale 130:\n390 ÷ 130 = **3 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_148",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡40 y un chocolate cuesta ₡100. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2000 y el dependiente le devuelve exactamente ₡1240 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "4",
+      "3",
+      "5",
+      "8"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡2000 y le devolvieron ₡1240, ¿cuánto gastó en total?\n**Gasto Total:** 2000 - 1240 = **760**.\n\nCompró 9 confites a ₡40 cada uno:\n**Gasto en confites:** 9 × 40 = **360**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 760 - 360 = **400**.\n\nSi cada chocolate vale 100:\n400 ÷ 100 = **4 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_149",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡30 y un chocolate cuesta ₡170. Andrés desea comprar 6 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1970 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "5",
+      "10",
+      "4",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1970, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1970 = **1030**.\n\nCompró 6 confites a ₡30 cada uno:\n**Gasto en confites:** 6 × 30 = **180**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1030 - 180 = **850**.\n\nSi cada chocolate vale 170:\n850 ÷ 170 = **5 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "m_ari_150",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡35 y un chocolate cuesta ₡160. Andrés desea comprar 9 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡3000 y el dependiente le devuelve exactamente ₡1725 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "12",
+      "5",
+      "6",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "Hagamos ingeniería inversa paso a paso.\n\nSi pagó con ₡3000 y le devolvieron ₡1725, ¿cuánto gastó en total?\n**Gasto Total:** 3000 - 1725 = **1275**.\n\nCompró 9 confites a ₡35 cada uno:\n**Gasto en confites:** 9 × 35 = **315**.\n\n¿Cuánto dinero corresponde a los chocolates?\n**Gasto en chocolates:** 1275 - 315 = **960**.\n\nSi cada chocolate vale 160:\n960 ÷ 160 = **6 chocolates**.\n\n**Tip Élite:** No olvides restar el vuelto del billete inicial. Un error común es dividir el vuelto directamente."
+  },
+  {
+    "id": "v_elite_151",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_152",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_153",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_154",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_155",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_156",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_157",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_158",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_159",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_160",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_161",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_162",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_163",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_164",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_165",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_166",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_167",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_168",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_169",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_170",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_171",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_172",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_173",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_174",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_175",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_176",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_177",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_178",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_179",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_180",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_181",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_182",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_183",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_184",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_185",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_186",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_187",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_188",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_189",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_190",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_191",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_192",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_193",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_194",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_195",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_196",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_197",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_198",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_199",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_200",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_201",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_202",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_203",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_204",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_205",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_206",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_207",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_208",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_209",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_210",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_211",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_212",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_213",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_214",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_215",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_216",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_217",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_218",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_219",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_220",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_221",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_222",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_223",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_224",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_225",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_226",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_227",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_228",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_229",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_230",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_231",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_232",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_233",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_234",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_235",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_236",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_237",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_238",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_239",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_240",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_241",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_242",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_243",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_244",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_245",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_246",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_247",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_248",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_249",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_250",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_251",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_252",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_253",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_254",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_255",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_256",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_257",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_258",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_259",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_260",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_261",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_262",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_263",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_264",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_265",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_266",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_267",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_268",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_269",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 1,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_270",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_271",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_272",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_273",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_274",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_275",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_276",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades."
+    ],
+    "ans": 1,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_277",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_278",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_279",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_280",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_281",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad."
+    ],
+    "ans": 2,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_282",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_283",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_284",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_285",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_286",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio."
+    ],
+    "ans": 3,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_287",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_288",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_289",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_290",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_291",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_292",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_293",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes."
+    ],
+    "ans": 0,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_294",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos."
+    ],
+    "ans": 3,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_295",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos.",
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas."
+    ],
+    "ans": 0,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_296",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_297",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 0,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  },
+  {
+    "id": "v_elite_298",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos."
+    ],
+    "ans": 2,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\nRevisa los distractores: asumen éxito de la censura (falso), inventan motivos económicos (falso) o tergiversan el rol de la aprobación (falso).\n\n**Tip Élite:** Busca el sinónimo exacto de la premisa central; aquí 'sofocar' = 'silenciar' y 'amplifica' = 'mayor visibilidad'."
+  },
+  {
+    "id": "v_elite_299",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El verdadero progreso de una disciplina científica no se mide por la cantidad de respuestas definitivas que ofrece, sino por la calidad y profundidad de las nuevas preguntas que es capaz de formular al enfrentarse a lo desconocido.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La cantidad de descubrimientos es el único factor determinante para evaluar el éxito de un investigador científico.",
+      "Las disciplinas científicas deben evitar formular preguntas para no confundir a los estudiantes.",
+      "La ciencia solo progresa cuando logra dar respuestas definitivas e incuestionables a los problemas de la humanidad.",
+      "El avance en la ciencia se evidencia en la generación de interrogantes más complejas frente a nuevos misterios."
+    ],
+    "ans": 3,
+    "exp": "Analiza la estructura: 'No se mide por [A], sino por [B]'.\n\nEl texto afirma explícitamente que NO son las 'respuestas definitivas' lo que importa (eso descarta de inmediato los distractores que afirman lo contrario), sino las 'nuevas preguntas'.\n\n**Tip Élite:** Presta extrema atención a conectores adversativos como 'sino'. Ellos marcan el verdadero peso argumentativo de la oración."
+  },
+  {
+    "id": "v_elite_300",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el sentido del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- Afirman lo contrario a la tesis (linealidad).\n- Confunden lo que ocurre en la 'ciencia normal'.\n\nLa opción correcta captura perfectamente este concepto de 'sustitución abrupta'.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global."
+  }
 ];
-
-/* Índice por tema (se llena al cargar) */
-window.PAA_QUESTIONS_BY_TOPIC = window.PAA_QUESTIONS.reduce((m, q) => {
-  (m[q.topic] = m[q.topic] || []).push(q);
-  return m;
-}, {});

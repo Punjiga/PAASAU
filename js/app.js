@@ -65,6 +65,10 @@
   }
   function mathHTML(s) {
     var out = escapeHTML(s);
+    out = out.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+    out = out.replace(/\*(.*?)\*/g, '<i>$1</i>');
+    out = out.replace(/\n\s*-\s+(.*?)(?=\n|$)/g, '<br>&bull; $1');
+    out = out.replace(/\n/g, '<br>');
     out = out.replace(/\{\{\s*([^{}]+?)\s*\/\s*([^{}]+?)\s*\}\}/g, function (_, n, d) {
       return '<span class="frac"><span class="fr-n">' + n + '</span><span class="fr-d">' + d + '</span></span>';
     });
@@ -706,32 +710,35 @@
     // Selector por dominio
     card.appendChild(el("label", { class: "field-label", text: "Área" }));
     var segDom = el("div", { class: "seg" });
-    ["verbal", "math"].forEach(function (d) {
+    ["verbal", "math", "ambas"].forEach(function (d) {
+      var name = d === "ambas" ? "Ambas Áreas" : DOMAINS[d].name;
       var b = el("button", {
         class: "seg-btn" + (libreSel.domain === d ? " active" : ""),
         onclick: function () { libreSel.domain = d; libreSel.topic = null; Sound.click(); rerenderLibre(frag); }
-      }, DOMAINS[d].name);
+      }, name);
       segDom.appendChild(b);
     });
     card.appendChild(segDom);
 
     // Selector de tema
-    card.appendChild(el("label", { class: "field-label", text: "Tema" }));
-    var topicWrap = el("div", { class: "topic-chips" });
-    TOPICS.filter(function (t) { return t.domain === libreSel.domain; }).forEach(function (t) {
-      var avail = guestFilter(poolForTopic(t.id)).length;
-      var b = el("button", {
-        class: "chip-btn" + (libreSel.topic === t.id ? " active" : "") + (avail === 0 ? " disabled" : ""),
-        onclick: function () { if (avail === 0) return; libreSel.topic = t.id; Sound.click(); rerenderLibre(frag); }
-      }, t.name);
-      topicWrap.appendChild(b);
-    });
-    card.appendChild(topicWrap);
+    if (libreSel.domain !== "ambas") {
+      card.appendChild(el("label", { class: "field-label", text: "Tema" }));
+      var topicWrap = el("div", { class: "topic-chips" });
+      TOPICS.filter(function (t) { return t.domain === libreSel.domain; }).forEach(function (t) {
+        var avail = guestFilter(poolForTopic(t.id)).length;
+        var b = el("button", {
+          class: "chip-btn" + (libreSel.topic === t.id ? " active" : "") + (avail === 0 ? " disabled" : ""),
+          onclick: function () { if (avail === 0) return; libreSel.topic = t.id; Sound.click(); rerenderLibre(frag); }
+        }, t.name);
+        topicWrap.appendChild(b);
+      });
+      card.appendChild(topicWrap);
+    }
 
     // Cuántas preguntas hay disponibles para la selección actual
     var availPool = guestFilter(libreSel.topic
       ? poolForTopic(libreSel.topic)
-      : QUESTIONS.filter(function (q) { return q.domain === libreSel.domain; }));
+      : (libreSel.domain === "ambas" ? QUESTIONS : QUESTIONS.filter(function (q) { return q.domain === libreSel.domain; })));
     var availN = availPool.length;
 
     // Cantidad
