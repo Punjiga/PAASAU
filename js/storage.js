@@ -275,17 +275,7 @@ window.Store = (function () {
   // Iniciar/cerrar sesión NO es un cambio de datos: usar persistRaw para no tocar savedAt.
   // (Si bumpeáramos savedAt al loguear, un dispositivo nuevo se vería "más nuevo" que la nube
   //  y no bajaría tu progreso. Justo el bug que causaba "pierdo todo".)
-  function login(username) { 
-    state.isGuest = false; 
-    state.user = username || CFG.defaultUser; 
-    // Solución para no perder progreso de invitado:
-    // Si hay progreso local, forzamos que sea el más nuevo para que herede a la nube.
-    if (state.questionsAnswered > 0 || state.totalSeconds > 0) {
-      persist(); 
-    } else {
-      persistRaw(); 
-    }
-  }
+  function login(username) { state.isGuest = false; state.user = username || CFG.defaultUser; persistRaw(); }
   function guest() { state.isGuest = true; state.user = "Invitado"; persistRaw(); }
   function logout() { Timer.stop(); state = emptyState(); persistRaw(); }
 
