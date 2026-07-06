@@ -20,11 +20,11 @@ window.PAA_QUESTIONS = [
     opts:["Recaudar más dinero mediante multas","Proteger la vida de los peatones en zonas sensibles","Incomodar a propósito a los conductores","Reducir el gasto en mantenimiento vial"],
     ans:1, exp:"El para qué es proteger a los peatones en zonas sensibles (B). Recaudar con multas (A) o incomodar a los conductores (C) no son fines que el texto plantee; reducir el gasto (D) es lo contrario, pues el texto dice que las obras encarecen el mantenimiento." },
   { id:"v_fin_2", domain:"verbal", topic:"finalidad", dif:3, stem:"Marta destina una parte fija de su salario a un fondo cada mes. Aunque eso la obliga a renunciar a algunos gustos hoy, ella explica que lo hace pensando en comprar casa propia antes de los cuarenta.", q:"¿Cuál es la finalidad del ahorro de Marta?", opts:["Privarse de gustos en el presente","Comprar casa propia en el futuro","Demostrar disciplina a los demás","Aumentar su salario mensual"], ans:1, exp:"La finalidad es el para qué: comprar casa propia (B). Privarse de gustos (A) es el medio, no el fin; demostrar disciplina (C) no se menciona; y no busca subir su salario (D), sino ahorrar parte de él." },
-  { id:"v_fin_3", domain:"verbal", topic:"finalidad", dif:2,
-    stem:"El profesor repite varias veces los conceptos más difíciles durante la clase para que sus estudiantes los comprendan mejor.",
-    q:"¿Cuál es la finalidad de repetir los conceptos?",
-    opts:["Alargar la clase","Facilitar la comprensión","Demostrar su conocimiento","Evaluar a los estudiantes"],
-    ans:1, exp:"Repite 'para que comprendan mejor', así que el fin es facilitar la comprensión (B). Alargar la clase (A) o lucir su saber (C) no son el propósito; tampoco evaluar (D): repetir no es examinar." },
+  { id:"v_fin_3", domain:"verbal", topic:"finalidad", dif:3,
+    stem:"La pedagogía contemporánea sugiere que la reiteración espaciada de conceptos abstractos no tiene como objetivo la memorización mecánica, sino la reestructuración cognitiva del estudiante. Al exponerse repetidamente a un modelo teórico bajo diferentes contextos, el cerebro fortalece las conexiones neuronales que permiten la asimilación profunda.\n\nSin embargo, muchos educadores tradicionales abusan de la repetición constante y monótona, ignorando que sin variación de contexto, el cerebro simplemente filtra la información como ruido de fondo, provocando fatiga en lugar de aprendizaje.",
+    q:"¿Cuál de las siguientes opciones describe mejor la finalidad de la reiteración según el enfoque contemporáneo del texto?",
+    opts:["Acelerar el proceso de memorización mecánica para cubrir más temas","Provocar fatiga cognitiva para evaluar la resistencia del estudiante","Fomentar la asimilación mediante el fortalecimiento de conexiones neuronales","Eliminar el ruido de fondo para evitar la reestructuración cognitiva"],
+    ans:2, exp:"Entiendo por qué podrías haber dudado, ya que el texto menciona varios conceptos técnicos. Vamos a desarmarlo: ¿Qué nos dice el primer párrafo sobre el verdadero objetivo de la reiteración espaciada? Nos indica que busca la reestructuración cognitiva mediante conexiones neuronales. Fíjate cómo la primera opción es justo lo contrario de lo que afirma el texto ('no tiene como objetivo la memorización mecánica'). Tip para el examen: cuando veas un texto contrastante, subraya qué le pertenece a cada postura para no caer en las trampas." },
 
   /* -- Comportamiento -- */
   { id:"v_com_1", domain:"verbal", topic:"comportamiento", dif:2, stem:"Cada vez que recibe una crítica sobre su trabajo, Luis, en lugar de leerla completa, responde al instante defendiéndose y enumerando excusas, sin detenerse a pensar si el comentario tenía algo de razón.", q:"¿Cómo se comporta Luis ante las críticas?", opts:["Las analiza con calma","Reacciona a la defensiva sin escuchar","Las agradece y mejora","Las ignora por completo"], ans:1, exp:"Responder al instante con excusas, sin considerar la crítica, es reaccionar a la defensiva (B). No la analiza con calma (A) ni la agradece para mejorar (C); y no la ignora (D): al contrario, responde de inmediato." },
@@ -193,11 +193,11 @@ window.PAA_QUESTIONS = [
   /* ===================== MATEMÁTICO ===================== */
 
   /* -- Aritmética -- */
-  { id:"m_ari_1", domain:"math", topic:"aritmetica", dif:2,
-    stem:"En una pulpería, un confite cuesta ₡75 y un chicle ₡120. Andrés compra 8 confites y 3 chicles, y paga con un billete de ₡2 000.",
-    q:"¿Cuánto recibe de vuelto?",
-    opts:["₡860","₡1 040","₡960","₡1 100"],
-    ans:1, exp:"8 × 75 = 600 y 3 × 120 = 360; en total gasta 960. Vuelto: 2 000 − 960 = 1 040." },
+  { id:"m_ari_1", domain:"math", topic:"aritmetica", dif:3,
+    stem:"En una tienda, el precio de un confite es de ₡75 y el de un chicle es de ₡120. Andrés desea comprar 8 confites y una cantidad 'x' de chicles, donde 'x' es un número entero positivo. Si Andrés paga con un billete de ₡2 000 y el dependiente le devuelve exactamente ₡680 de vuelto.",
+    q:"¿Cuántos chicles compró Andrés?",
+    opts:["3","6","8","960"],
+    ans:1, exp:"¡Cuidado aquí! Sé que es tentador lanzarse a operar los primeros números que ves, pero detengámonos un momento. Si pagó con ₡2000 y le devolvieron ₡680, ¿cuánto gastó en total? Exacto, 2000 - 680 = 1320. Ahora, si sabemos que compró 8 confites a ₡75 (600), ¿cuánto dinero le quedó para los chicles? ¡Correcto! 1320 - 600 = 720. Si cada chicle vale 120, entonces 720 ÷ 120 = 6 chicles (opción B). Tip de élite: cuando un problema incluya la frase 'x es entero positivo', asegúrate de que tu resultado final cumpla esa restricción." },
   { id:"m_ari_2", domain:"math", topic:"aritmetica", dif:2,
     stem:"María leyó {{2/5}} de un libro el lunes y {{1/3}} el martes.",
     q:"¿Qué fracción del libro le falta por leer?",

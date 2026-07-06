@@ -1146,7 +1146,7 @@
       exp.innerHTML = "";
       exp.appendChild(el("div", { class: "exp-tag " + (isRight ? "ok" : "no"),
         html: isRight ? "¡Correcto!" : "Respuesta correcta: " + letters[q.ans] + ") " + mathHTML(q.opts[q.ans]) }));
-      exp.appendChild(el("div", { class: "exp-why", text: "Por qué" }));
+      exp.appendChild(el("div", { class: "exp-why", text: "Tutor IA 🧠" }));
       var expText = el("div", { class: "exp-text" });
       expText.innerHTML = mathHTML(q.exp);
       exp.appendChild(expText);
@@ -1514,7 +1514,7 @@
         item.appendChild(el("div", { class: "review-ans " + (right ? "ok" : "no"), html: "Tu respuesta: " + (answers[i] != null ? letters[answers[i]] + ") " + mathHTML(q.opts[answers[i]]) : "(en blanco)") }));
         if (!right) item.appendChild(el("div", { class: "review-correct", html: "Correcta: " + letters[q.ans] + ") " + mathHTML(q.opts[q.ans]) }));
         var why = el("div", { class: "review-exp" });
-        why.appendChild(el("div", { class: "exp-why", text: "Por qué" }));
+        why.appendChild(el("div", { class: "exp-why", text: "Tutor IA 🧠" }));
         var wt = el("div", { class: "exp-text" }); wt.innerHTML = mathHTML(q.exp); why.appendChild(wt);
         item.appendChild(why);
         box.appendChild(item);
