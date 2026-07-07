@@ -1,0 +1,87 @@
+[
+  {
+    "id": "q_pdf6_11",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En las sociedades agrícolas o recolectoras, la\ntransmisión oral de leyendas, mitos y anécdotas\nes una actividad importante: sirve tanto para\neducar como para entretener.\nLos tres procesos centrales que expone el texto\nanterior son:",
+    "q": "",
+    "opts": [
+      "leyendas - mitos - anécdotas.",
+      "anécdotas - educación - entretenimiento.",
+      "recolección - transmisión oral - leyendas.",
+      "agricultura - recolección - transmisión oral.",
+      "transmisión oral - educación - entretenimiento."
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_12",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Un sastre pretendía cortar de un pedazo\nde tela un mantel de cierta área y de forma\ncuadrada, pero no fue posible obtenerlo así.\nPor esto, decidió cortarlo en forma rectangular,\nde tal manera que tuviera por ancho el lado del\ncuadrado disminuido en 2 y por largo el lado del\ncuadrado aumentado en 2.\nEntonces, el área del mantel rectangular resultó\ncon respecto a la del cuadrangular",
+    "q": "",
+    "opts": [
+      "igual.",
+      "2 unidades menor.",
+      "4 unidades menor.",
+      "2 unidades mayor.",
+      "4 unidades mayor."
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_13",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "El ser humano puede sobrevivir tres semanas\nsin alimentos y tres días sin agua, pero será\nafortunado quien dure tres horas sin el calor\nnecesario.\nSegún el texto anterior, el ser humano es",
+    "q": "",
+    "opts": [
+      "más resistente al frío que al hambre.",
+      "más resistente al hambre que al frío.",
+      "menos resistente a la sed que al frío.",
+      "más resistente a la sed que al hambre.",
+      "menos resistente al hambre que al frío."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_14",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Analice las siguientes igualdades y descubra\nla ley que se da en ellas:\n• 22 – 12 = 2 • 1 + 1.\n• 32 – 22 = 2 • 2 + 1.\n• 42 – 32 = 2 • 3 + 1.\n• 52 – 42 = 2 • 4 + 1.\nDe acuerdo con la ley, ¿cuál de las siguientes",
+    "q": "expresiones es equivalente a 1002 – 992?",
+    "opts": [
+      "2 • 98 + 1",
+      "2 • 99 + 1",
+      "2 • 992 + 1",
+      "2 • 100 + 1",
+      "2 • 1002 +1"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_15",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Un cuadrilátero P tiene 32 cm de perímetro\ny 48 cm2 de área. Un cuadrado Q posee un\nperímetro igual a la cuarta parte del perímetro\ndel cuadrilátero P.\n¿Cuál es la diferencia entre las áreas del",
+    "q": "cuadrilátero P y el cuadrado Q?",
+    "opts": [
+      "12 cm2",
+      "23 cm2",
+      "28 cm2",
+      "39 cm2",
+      "44 cm2"
+    ],
+    "ans": 4,
+    "exp": ""
+  }
+]

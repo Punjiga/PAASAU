@@ -1,0 +1,674 @@
+[
+  {
+    "id": "m_mcm_8",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 2,
+    "stem": "Dos campanas suenan: una cada 6 minutos y otra cada 9 minutos. Ahora sonaron juntas.",
+    "q": "¿En cuántos minutos vuelven a sonar juntas?",
+    "opts": [
+      "12",
+      "18",
+      "54",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "Coinciden en el MCM(6, 9). 6 = 2·3 y 9 = 3², así que MCM = 2·3² = 18."
+  },
+  {
+    "id": "m_rel_8",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere los valores 0,7 ; {{3/4}} ; 0,72.",
+    "q": "Al ordenarlos de menor a mayor, ¿cuál queda en el medio?",
+    "opts": [
+      "0,7",
+      "0,72",
+      "{{3/4}}",
+      "Los tres son iguales"
+    ],
+    "ans": 1,
+    "exp": "En decimales: 0,70 ; 0,75 ; 0,72. Ordenados: 0,70 < 0,72 < 0,75. En el medio queda 0,72."
+  },
+  {
+    "id": "m_rel_9",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Se sabe que x es un número entero y que −5 < x < −2.",
+    "q": "¿Cuál de los siguientes valores SÍ puede ser x?",
+    "opts": [
+      "−5",
+      "−4",
+      "−2",
+      "−1"
+    ],
+    "ans": 1,
+    "exp": "x está estrictamente entre −5 y −2, así que solo puede ser −4 o −3. De las opciones, la válida es −4 (−5 y −2 quedan excluidos y −1 es mayor que −2)."
+  },
+  {
+    "id": "m_cnt_8",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Para ir de A a B hay 3 caminos, de B a C hay 4 y de C a D hay 2.",
+    "q": "¿De cuántas formas se puede ir de A a D pasando por B y C?",
+    "opts": [
+      "24",
+      "9",
+      "18",
+      "14"
+    ],
+    "ans": 0,
+    "exp": "Se multiplican las opciones de cada tramo: 3 × 4 × 2 = 24."
+  },
+  {
+    "id": "m_cnt_9",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En una caja, a oscuras, hay 4 guantes izquierdos y 4 derechos sueltos.",
+    "q": "¿Cuántos guantes hay que sacar como mínimo para asegurar una pareja útil (uno izquierdo y uno derecho)?",
+    "opts": [
+      "2",
+      "5",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "En el peor caso salen los 4 de una misma mano; el siguiente es de la otra. 4 + 1 = 5."
+  },
+  {
+    "id": "m_per_7",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "En un concurso con 5 participantes se reparten el 1.°, 2.° y 3.° lugar.",
+    "q": "¿De cuántas formas distintas pueden quedar esos tres puestos?",
+    "opts": [
+      "15",
+      "60",
+      "125",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "Se eligen y ordenan 3 de 5: 5 × 4 × 3 = 60."
+  },
+  {
+    "id": "m_geo_9",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 2,
+    "stem": "Un rectángulo mide 12 cm de largo y 7 cm de ancho.",
+    "q": "¿Cuál es su perímetro?",
+    "opts": [
+      "38 cm",
+      "84 cm",
+      "19 cm",
+      "40 cm"
+    ],
+    "ans": 0,
+    "exp": "Perímetro = 2·(12 + 7) = 2·19 = 38 cm."
+  },
+  {
+    "id": "m_geo_10",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un rectángulo tiene 48 cm de perímetro y su largo es el doble de su ancho.",
+    "q": "¿Cuánto mide el ancho?",
+    "opts": [
+      "8 cm",
+      "16 cm",
+      "12 cm",
+      "6 cm"
+    ],
+    "ans": 0,
+    "exp": "Perímetro: 2·(largo+ancho)=48 → largo+ancho=24. Si largo=2·ancho: 3·ancho=24 → ancho=8 cm."
+  },
+  {
+    "id": "m_suc_10",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 2,
+    "stem": "Observe la sucesión: 100, 50, 25, … (cada término es la mitad del anterior).",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "10",
+      "12,5",
+      "20",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "Cada término se divide entre 2: 25 ÷ 2 = 12,5."
+  },
+  {
+    "id": "m_suc_11",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Observe la sucesión: 1, 8, 27, 64, …",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "125",
+      "100",
+      "81",
+      "96"
+    ],
+    "ans": 0,
+    "exp": "Son los cubos: 1³, 2³, 3³, 4³… El siguiente es 5³ = 125."
+  },
+  {
+    "id": "m_dat_9",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 2,
+    "stem": "En una bolsa hay 8 caramelos: 3 de menta y 5 de fresa. Se saca uno al azar.",
+    "q": "¿Cuál es la probabilidad de que sea de menta?",
+    "opts": [
+      "{{3/8}}",
+      "{{5/8}}",
+      "{{3/5}}",
+      "{{1/3}}"
+    ],
+    "ans": 0,
+    "exp": "Favorables 3 sobre 8 totales: {{3/8}}."
+  },
+  {
+    "id": "m_dat_10",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El promedio de tres números es 20. Dos de ellos son 15 y 22.",
+    "q": "¿Cuál es el tercer número?",
+    "opts": [
+      "23",
+      "20",
+      "18",
+      "25"
+    ],
+    "ans": 0,
+    "exp": "La suma de los tres es 3 × 20 = 60. Como 15 + 22 = 37, el tercero es 60 − 37 = 23."
+  },
+  {
+    "id": "m_not_7",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 2,
+    "stem": "Considere la frase: 'un número disminuido en 9, todo multiplicado por 2'.",
+    "q": "¿Cuál expresión la representa?",
+    "opts": [
+      "2(x − 9)",
+      "2x − 9",
+      "x − 18",
+      "2x + 9"
+    ],
+    "ans": 0,
+    "exp": "Primero la resta (x − 9) y luego se multiplica todo por 2: 2(x − 9)."
+  },
+  {
+    "id": "m_alr_7",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Se sabe que 4x + 3 = 2x + 19.",
+    "q": "¿Cuál es el valor de x?",
+    "opts": [
+      "8",
+      "11",
+      "16",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "Pasamos las x a un lado: 4x − 2x = 19 − 3 → 2x = 16 → x = 8."
+  },
+  {
+    "id": "m_uni_8",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 2,
+    "stem": "Un recipiente tiene 2 litros de agua y se sirve en vasos de 250 ml.",
+    "q": "¿Cuántos vasos se llenan?",
+    "opts": [
+      "4",
+      "8",
+      "5",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "2 L = 2 000 ml. 2 000 ÷ 250 = 8 vasos."
+  },
+  {
+    "id": "m_raz_8",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 2,
+    "stem": "Cuatro cuadernos iguales cuestan ₡5 000.",
+    "q": "¿Cuánto cuestan 10 cuadernos al mismo precio?",
+    "opts": [
+      "₡12 500",
+      "₡10 000",
+      "₡15 000",
+      "₡11 250"
+    ],
+    "ans": 0,
+    "exp": "Cada cuaderno: 5 000 ÷ 4 = 1 250. Diez cuadernos: 1 250 × 10 = 12 500."
+  },
+  {
+    "id": "m_raz_9",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un grifo llena un tanque en 8 horas.",
+    "q": "¿Cuánto tardan 2 grifos iguales llenándolo juntos?",
+    "opts": [
+      "4 horas",
+      "16 horas",
+      "6 horas",
+      "10 horas"
+    ],
+    "ans": 0,
+    "exp": "Proporción inversa: con el doble de grifos, la mitad del tiempo. 8 ÷ 2 = 4 horas."
+  },
+  {
+    "id": "v_fin_10",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 2,
+    "stem": "Al ver que muchos estudiantes abandonaban a mitad de año, el colegio abrió tutorías gratuitas por las tardes y un acompañamiento para quienes iban quedando atrás.",
+    "q": "¿Cuál es la finalidad del programa?",
+    "opts": [
+      "Llenar las tardes libres",
+      "Evitar que los estudiantes abandonen",
+      "Contratar más profesores",
+      "Alargar la jornada escolar"
+    ],
+    "ans": 1,
+    "exp": "El programa responde a que muchos abandonaban; su fin es evitar esa deserción (B). Las tutorías y el horario son el medio, no el fin (A, D); C no se menciona."
+  },
+  {
+    "id": "v_fin_11",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 1,
+    "stem": "Acostumbra guardar una captura de cada acuerdo importante que hace por mensaje, por si después alguien recuerda las cosas de otra manera.",
+    "q": "¿Cuál es la finalidad de guardar esas capturas?",
+    "opts": [
+      "Llenar la memoria del teléfono",
+      "Tener una prueba ante un malentendido",
+      "Presumir sus conversaciones",
+      "Poder borrarlas más fácil"
+    ],
+    "ans": 1,
+    "exp": "El fin es tener respaldo o prueba si surge un desacuerdo (B). No busca llenar el teléfono (A) ni presumir (C), y guardar no es para borrar (D)."
+  },
+  {
+    "id": "v_com_10",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "Cuando el proyecto falla, en vez de buscar culpables, el líder reúne al equipo y plantea soluciones.",
+    "q": "¿Cómo se comporta el líder?",
+    "opts": [
+      "Culpa a los demás",
+      "Actúa de forma constructiva",
+      "Abandona el proyecto",
+      "Se queda callado"
+    ],
+    "ans": 1,
+    "exp": "Buscar soluciones en vez de culpables es actuar de forma constructiva (B). No culpa a los demás (A), no abandona el proyecto (C) ni se queda callado (D): toma la iniciativa."
+  },
+  {
+    "id": "v_com_11",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "Cuando un proyecto le sale mal, Lucía no se lamenta ni busca culpables: anota qué falló, ajusta el plan y lo intenta otra vez con el mismo empeño.",
+    "q": "¿Qué actitud describe mejor la forma en que Lucía enfrenta los errores?",
+    "opts": [
+      "Resignación",
+      "Resiliencia",
+      "Indiferencia",
+      "Perfeccionismo"
+    ],
+    "ans": 1,
+    "exp": "Recuperarse del fallo y volver a intentarlo ajustando el plan es resiliencia (B). No es resignación (A: no se rinde), ni indiferencia (C: sí le importa), ni perfeccionismo (D: no exige perfección, persiste)."
+  },
+  {
+    "id": "v_cau_13",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 1,
+    "stem": "Dejó el helado sobre la mesa de la cocina en un día caluroso y se olvidó de él. Una hora después, era un charco dulce.",
+    "q": "¿Cuál fue la causa de que el helado se derritiera?",
+    "opts": [
+      "El frío del congelador",
+      "El calor, al dejarlo fuera del congelador",
+      "El sabor del helado",
+      "El tipo de mesa"
+    ],
+    "ans": 1,
+    "exp": "El helado se derrite con el calor. La causa fue dejarlo fuera en un día caluroso (B). A es lo contrario (el frío lo conserva); el sabor y la mesa (C, D) no influyen."
+  },
+  {
+    "id": "v_cau_14",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "Cuando la zona costera se volvió un destino turístico, abrieron hoteles, sodas y tiendas de artesanía. Mucha gente del pueblo que antes emigraba para trabajar encontró empleo cerca de su casa.",
+    "q": "¿Cuál es una consecuencia del auge turístico, según el texto?",
+    "opts": [
+      "Más gente tuvo que emigrar",
+      "Se generaron empleos en la zona",
+      "Cerraron los negocios locales",
+      "Bajó la cantidad de turistas"
+    ],
+    "ans": 1,
+    "exp": "El texto dice que quienes antes emigraban hallaron empleo cerca: la consecuencia es que se crearon empleos locales (B). A es lo contrario y C, D contradicen el auge descrito."
+  },
+  {
+    "id": "v_cau_15",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La sequía prolongada secó los pastos; por eso, el ganado quedó sin alimento.",
+    "q": "¿Cuál es la causa de que el ganado quedara sin alimento?",
+    "opts": [
+      "El exceso de lluvia",
+      "La sequía que secó los pastos",
+      "La falta de ganado",
+      "El frío"
+    ],
+    "ans": 1,
+    "exp": "La cadena es sequía, pastos secos y ganado sin alimento; la causa de fondo es la sequía (B). El exceso de lluvia (A) y el frío (D) no aparecen; la falta de ganado (C) no es la causa."
+  },
+  {
+    "id": "v_sim_10",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 2,
+    "stem": "Sumar dos cifras es directo; balancear el presupuesto de un país implica miles de variables y decisiones.",
+    "q": "¿Cómo es el presupuesto frente a la suma?",
+    "opts": [
+      "Más simple",
+      "Más complejo",
+      "Más antiguo",
+      "Más barato"
+    ],
+    "ans": 1,
+    "exp": "Balancear el presupuesto de un país implica miles de variables: es más complejo que sumar dos cifras (B). No es más simple (A); antigüedad (C) y precio (D) no se comparan."
+  },
+  {
+    "id": "v_sim_11",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 2,
+    "stem": "Un triciclo se arma con unas pocas piezas que encajan a presión. Un automóvil moderno integra miles de componentes mecánicos, eléctricos y electrónicos que deben funcionar en conjunto.",
+    "q": "¿Qué caracteriza al automóvil frente al triciclo?",
+    "opts": [
+      "Su sencillez",
+      "Su complejidad",
+      "Su bajo precio",
+      "Su antigüedad"
+    ],
+    "ans": 1,
+    "exp": "Miles de componentes que deben funcionar juntos hacen del automóvil algo complejo (B). Su sencillez (A) es lo contrario; precio (C) y antigüedad (D) no son el rasgo en juego."
+  },
+  {
+    "id": "v_con_12",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "Cuando notó que su decisión había perjudicado al grupo, lo dijo frente a todos, asumió su error y ofreció disculpas, sin inventar excusas.",
+    "q": "¿Qué actitud describe mejor su reacción?",
+    "opts": [
+      "Autocrítica",
+      "Cobardía",
+      "Soberbia",
+      "Indiferencia"
+    ],
+    "ans": 0,
+    "exp": "Admitir el propio error sin excusas es autocrítica (A). Lo contrario sería soberbia (C) o indiferencia (D); y reconocerlo en público no es cobardía (B): al revés, cuesta valor."
+  },
+  {
+    "id": "v_con_13",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "Sin que nadie se lo pida ni recibir pago, dedica sus tardes a alimentar y curar animales abandonados, solo porque le importa su bienestar.",
+    "q": "¿Qué cualidad refleja mejor su conducta?",
+    "opts": [
+      "Altruismo",
+      "Obligación",
+      "Interés",
+      "Vanidad"
+    ],
+    "ans": 0,
+    "exp": "Ayudar sin esperar nada a cambio es altruismo (A). No es obligación (B: nadie se lo pide), ni interés (C: no gana nada), ni vanidad (D: no busca lucirse)."
+  },
+  {
+    "id": "v_ord_10",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 1,
+    "stem": "El cuarto pasó de tener ropa tirada en la cama, el piso y las sillas, a quedar con cada prenda doblada y guardada en cajones rotulados.",
+    "q": "¿Qué cambio ocurrió en el cuarto?",
+    "opts": [
+      "Del orden al desorden",
+      "Del desorden al orden",
+      "De grande a pequeño",
+      "De claro a oscuro"
+    ],
+    "ans": 1,
+    "exp": "Pasó de ropa tirada (desorden) a todo guardado y rotulado (orden): del desorden al orden (B). A es lo contrario; C y D no tienen que ver con el cambio descrito."
+  },
+  {
+    "id": "v_ord_11",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 2,
+    "stem": "La bodega solía ser un caos: cajas sin marcar apiladas hasta el techo y productos vencidos mezclados con los nuevos. Hoy todo está clasificado por tipo, con etiquetas y fechas a la vista.",
+    "q": "¿Qué cambio experimentó la bodega?",
+    "opts": [
+      "Del orden al desorden",
+      "Del desorden al orden",
+      "De grande a pequeña",
+      "De llena a vacía"
+    ],
+    "ans": 1,
+    "exp": "De cajas sin marcar y productos mezclados (desorden) a todo clasificado y etiquetado (orden): del desorden al orden (B). A es lo contrario; tamaño (C) y si está llena o vacía (D) no son el cambio."
+  },
+  {
+    "id": "v_tmp_10",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "Se siembra la semilla, se riega cada día, brota la planta y, al final, se cosecha.",
+    "q": "¿Qué ocurre justo antes de cosechar?",
+    "opts": [
+      "Sembrar la semilla",
+      "Que brote la planta",
+      "Regar la semilla",
+      "Comprar semillas"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es sembrar, regar, brotar y cosechar. Antes de cosechar, brota la planta (B). Sembrar (A) y regar (C) van antes; comprar semillas (D) no es parte de la secuencia."
+  },
+  {
+    "id": "v_tmp_11",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "Primero se reúnen los materiales, luego se arma la estructura y, por último, se pinta.",
+    "q": "¿Qué se hace justo después de reunir los materiales?",
+    "opts": [
+      "Pintar",
+      "Armar la estructura",
+      "Reunir más materiales",
+      "Limpiar todo"
+    ],
+    "ans": 1,
+    "exp": "Después de reunir los materiales se arma la estructura (B). Pintar (A) es el último paso; reunir más (C) y limpiar (D) no están en la secuencia descrita."
+  },
+  {
+    "id": "v_ese_10",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 2,
+    "stem": "Si lo propio de un mapa es representar un territorio a escala, entonces cada objeto se define por la función que cumple, no por su apariencia.",
+    "q": "Por la misma lógica, ¿qué es lo propio de un reloj?",
+    "opts": [
+      "Representar un territorio",
+      "Marcar el paso del tiempo",
+      "Medir la temperatura",
+      "Indicar el peso"
+    ],
+    "ans": 1,
+    "exp": "Lo propio es la función. La del reloj es marcar el tiempo (B). Representar un territorio (A) es del mapa; medir temperatura (C), del termómetro; pesar (D), de la balanza."
+  },
+  {
+    "id": "v_ese_11",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 1,
+    "stem": "Una semilla puede ser diminuta o grande, lisa o rugosa; pero lo esencial es que guarda dentro lo necesario para dar origen a una nueva planta.",
+    "q": "¿Cuál es la característica esencial de una semilla?",
+    "opts": [
+      "Su tamaño",
+      "Poder dar origen a una planta",
+      "Su textura",
+      "Su color"
+    ],
+    "ans": 1,
+    "exp": "Tamaño, textura y color cambian de una semilla a otra (A, C, D). Lo que no puede faltar es su capacidad de originar una planta (B): eso es lo esencial."
+  },
+  {
+    "id": "v_per_11",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "El mismo precio que a una persona de ingresos ajustados le parece carísimo, a otra de mayores ingresos le resulta accesible.",
+    "q": "¿Qué idea expresa el texto?",
+    "opts": [
+      "El precio es objetivamente alto",
+      "Lo caro o lo barato depende de la situación de quien compra",
+      "Nadie puede pagar ese precio",
+      "El precio debería ser igual para todos"
+    ],
+    "ans": 1,
+    "exp": "El mismo precio se percibe distinto según los ingresos de cada quien (B). A lo vuelve absoluto; C exagera; D propone algo que el texto no plantea."
+  },
+  {
+    "id": "v_per_12",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La misma noticia —el gol en el último minuto— estalla en alegría entre los seguidores de un equipo y en tristeza entre los del rival.",
+    "q": "¿Qué muestra el texto?",
+    "opts": [
+      "Las emociones fuertes hacen perder la objetividad",
+      "Un mismo hecho provoca emociones opuestas según el bando de cada quien",
+      "La rivalidad deportiva siempre termina en conflicto",
+      "El resultado de un partido no le importa a nadie"
+    ],
+    "ans": 1,
+    "exp": "El mismo gol alegra a unos y entristece a otros según a qué equipo sigan (B). A y C son frases que suenan razonables, pero no son lo que el texto muestra; D contradice las emociones que describe."
+  },
+  {
+    "id": "v_imp_15",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 1,
+    "stem": "Entró a la oficina con el paraguas chorreando, los zapatos empapados y dejando un reguero de gotas en el piso.",
+    "q": "¿Qué se puede concluir, aunque el texto no lo diga directamente?",
+    "opts": [
+      "Que afuera hacía calor",
+      "Que afuera estaba lloviendo",
+      "Que venía de nadar",
+      "Que era de madrugada"
+    ],
+    "ans": 1,
+    "exp": "Un paraguas chorreando y zapatos empapados son señales de lluvia: se concluye que afuera llovía (B). El calor (A) no moja; venir de nadar (C) no explica el paraguas; la hora (D) no se deduce."
+  },
+  {
+    "id": "v_imp_16",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Desde que cambió de entrenador, el equipo no ha vuelto a perder.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "El equipo siempre pierde",
+      "El cambio de entrenador mejoró al equipo",
+      "Ya no juegan",
+      "El entrenador anterior era mejor"
+    ],
+    "ans": 1,
+    "exp": "Que dejara de perder justo tras el cambio implica que el nuevo entrenador mejoró al equipo (B). A dice lo contrario; 'ya no juegan' (C) no se deduce; y D contradice la mejora."
+  },
+  {
+    "id": "v_imp_17",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Pidió la cuenta apenas terminó de comer y ni siquiera esperó el postre.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "Quería comer más",
+      "Tenía prisa por irse",
+      "Odiaba el lugar",
+      "No probó la comida"
+    ],
+    "ans": 1,
+    "exp": "Pedir la cuenta de inmediato y no esperar el postre sugiere prisa por irse."
+  },
+  {
+    "id": "v_pri_13",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Reciclar los desechos, usar el transporte público y ahorrar energía son acciones cotidianas que ayudan a cuidar el planeta.",
+    "q": "¿Cuál es la idea principal?",
+    "opts": [
+      "Hay que usar transporte público",
+      "Pequeñas acciones diarias ayudan a cuidar el planeta",
+      "Reciclar resulta difícil",
+      "La energía es cada vez más cara"
+    ],
+    "ans": 1,
+    "exp": "A es una de las acciones (detalle); C y D agregan juicios que el texto no hace. B resume el conjunto: acciones cotidianas que cuidan el planeta."
+  },
+  {
+    "id": "v_pri_14",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "El sueño, la alimentación y la manera de manejar el estrés influyen, cada uno a su modo, en la salud mental de una persona.",
+    "q": "¿Cuál es la idea principal?",
+    "opts": [
+      "El estrés daña la salud mental",
+      "Varios factores cotidianos influyen en la salud mental",
+      "Hay que dormir más horas",
+      "La alimentación debe cuidarse"
+    ],
+    "ans": 1,
+    "exp": "A, C y D toman un solo factor cada uno (detalles). B recoge la idea general: varios factores influyen en la salud mental."
+  },
+  {
+    "id": "v_pri_15",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "La marimba acompaña las fiestas populares, transmite tradiciones de generación en generación y se ha vuelto un símbolo de la identidad centroamericana.",
+    "q": "¿Cuál es el tema central?",
+    "opts": [
+      "La marimba suena en las fiestas",
+      "El valor cultural y simbólico de la marimba",
+      "La marimba es un instrumento de madera",
+      "Las tradiciones se están perdiendo"
+    ],
+    "ans": 1,
+    "exp": "A es un detalle; C es un dato físico; D ni aparece. B reúne lo festivo, lo tradicional y lo identitario: ese es el tema central."
+  }
+]

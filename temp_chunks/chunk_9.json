@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_cau_8",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La tala de las montañas dejó el suelo sin raíces que lo sostuvieran; por eso, con las lluvias, ocurrieron deslizamientos.",
+    "q": "Según el texto, ¿cuál es la causa de los deslizamientos?",
+    "opts": [
+      "Las lluvias por sí solas",
+      "La tala que debilitó el suelo",
+      "La construcción de casas",
+      "La falta de lluvia"
+    ],
+    "ans": 1,
+    "exp": "La cadena es: la tala dejó el suelo sin raíces y por eso hubo deslizamientos; la causa de fondo es la tala (B). La lluvia sola (A) no bastaría sin esa debilidad; construir casas (C) y la falta de lluvia (D) no aparecen."
+  },
+  {
+    "id": "v_cau_9",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "El uso responsable del agua permite que haya reservas durante la época seca.",
+    "q": "¿Qué relación de causa y consecuencia plantea el texto?",
+    "opts": [
+      "Cuidar el agua asegura reservas para la sequía",
+      "La sequía produce más agua",
+      "El agua no se puede almacenar",
+      "La época seca no afecta a nadie"
+    ],
+    "ans": 0,
+    "exp": "Usar el agua de forma responsable (causa) asegura reservas para la sequía (consecuencia) (A). B y C contradicen el texto; y la sequía sí afecta, así que D es falso."
+  },
+  {
+    "id": "v_sim_4",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 2,
+    "stem": "Encender una vela requiere solo un fósforo; en cambio, poner en marcha una central eléctrica implica turbinas, controles y un equipo de ingenieros.",
+    "q": "¿En qué se diferencian ambas acciones?",
+    "opts": [
+      "En su antigüedad",
+      "En la cantidad de elementos y procesos",
+      "En su color",
+      "En su precio"
+    ],
+    "ans": 1,
+    "exp": "La diferencia es la cantidad de elementos y procesos: la vela necesita un fósforo; la central, turbinas, controles e ingenieros (B). No se comparan por antigüedad (A), color (C) ni precio (D)."
+  },
+  {
+    "id": "v_sim_5",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 2,
+    "stem": "Un triciclo tiene pocas piezas fáciles de armar; un automóvil moderno integra miles de componentes mecánicos y electrónicos.",
+    "q": "¿Cómo es el automóvil frente al triciclo?",
+    "opts": [
+      "Más simple",
+      "Más complejo",
+      "Más lento",
+      "Más barato"
+    ],
+    "ans": 1,
+    "exp": "Por sus miles de componentes mecánicos y electrónicos, el automóvil es más complejo (B). No es más simple (A); lento (C) y barato (D) no son el contraste del texto."
+  },
+  {
+    "id": "v_sim_6",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 2,
+    "stem": "Saludar con la mano es un gesto que casi cualquiera hace sin pensar. Aprender lengua de señas, en cambio, exige memorizar cientos de gestos, expresiones faciales y reglas gramaticales propias.",
+    "q": "¿Cómo se presenta aprender lengua de señas frente a saludar con la mano?",
+    "opts": [
+      "Como algo más simple",
+      "Como algo más complejo",
+      "Como algo más antiguo",
+      "Como algo inútil"
+    ],
+    "ans": 1,
+    "exp": "Aprender lengua de señas reúne cientos de gestos y reglas: es más complejo que un saludo automático (B). No es más simple (A), ni se habla de antigüedad (C) o de que sea inútil (D)."
+  },
+  {
+    "id": "v_sim_7",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Freír un huevo tiene básicamente un paso; organizar un banquete de varios tiempos exige planear, coordinar y cocinar decenas de platos a la vez.",
+    "q": "El banquete, frente al huevo frito, se presenta como algo:",
+    "opts": [
+      "Igual de simple",
+      "Más complejo",
+      "Menos nutritivo",
+      "Más rápido"
+    ],
+    "ans": 1,
+    "exp": "El banquete reúne muchas tareas interrelacionadas: más complejo que freír un huevo (B). No es igual de simple (A); su valor nutritivo (C) y la rapidez (D) no se comparan."
+  },
+  {
+    "id": "v_con_5",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "Encontró una billetera con dinero y la devolvió completa a su dueño, aunque nadie lo habría sabido.",
+    "q": "¿Qué palabra describe su actitud?",
+    "opts": [
+      "Honradez",
+      "Astucia",
+      "Timidez",
+      "Indiferencia"
+    ],
+    "ans": 0,
+    "exp": "Devolver lo ajeno aun sin ser visto es honradez (A). No es astucia (B: no busca ventaja), ni timidez (C) ni indiferencia (D), que no explican el gesto."
+  },
+  {
+    "id": "v_con_6",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "Trabajó horas extra, sin quejarse, para entregar el proyecto en la fecha acordada.",
+    "q": "¿Cómo se describe, en una palabra, su actitud?",
+    "opts": [
+      "Pereza",
+      "Compromiso",
+      "Vanidad",
+      "Suerte"
+    ],
+    "ans": 1,
+    "exp": "Esforzarse sin quejarse para cumplir lo acordado refleja compromiso (B). Es lo contrario de pereza (A); y no es vanidad (C) ni suerte (D), pues depende de su esfuerzo."
+  },
+  {
+    "id": "v_con_7",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "Escuchó el problema de su amiga y se puso en su lugar para comprender lo que sentía.",
+    "q": "¿Qué palabra resume esa actitud?",
+    "opts": [
+      "Empatía",
+      "Envidia",
+      "Curiosidad",
+      "Orgullo"
+    ],
+    "ans": 0,
+    "exp": "Ponerse en el lugar del otro para comprender lo que siente es empatía (A). No es envidia (B) ni orgullo (D); y va más allá de la simple curiosidad (C)."
+  },
+  {
+    "id": "v_con_8",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Tras ganar el premio, no habló de sus méritos: agradeció a su equipo, reconoció la ayuda que había recibido y repitió que el logro era de todos.",
+    "q": "¿Qué cualidad describe mejor su actitud?",
+    "opts": [
+      "Humildad",
+      "Generosidad",
+      "Timidez",
+      "Inseguridad"
+    ],
+    "ans": 0,
+    "exp": "Restarse protagonismo y dar crédito a otros es humildad (A). No es generosidad (B: no regala bienes), ni timidez o inseguridad (C, D: habló con seguridad, solo sin presumir)."
+  },
+  {
+    "id": "v_con_9",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Siguió intentando resolver el problema, sin perder la calma, aunque ya había fallado diez veces.",
+    "q": "¿Qué palabra resume su actitud?",
+    "opts": [
+      "Tenacidad",
+      "Pereza",
+      "Suerte",
+      "Distracción"
+    ],
+    "ans": 0,
+    "exp": "Insistir con calma pese a fallar diez veces es tenacidad (A). Es lo opuesto a pereza (B) y distracción (D); y no es suerte (C), pues depende de su constancia."
+  },
+  {
+    "id": "v_ord_4",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 2,
+    "stem": "El taller estaba lleno de herramientas tiradas por el suelo; tras la limpieza, cada una quedó colgada en su gancho rotulado.",
+    "q": "¿Qué cambio experimentó el taller?",
+    "opts": [
+      "Del orden al desorden",
+      "Del desorden al orden",
+      "De lo nuevo a lo viejo",
+      "De lo grande a lo pequeño"
+    ],
+    "ans": 1,
+    "exp": "Pasó de herramientas tiradas (desorden) a cada una en su gancho rotulado (orden): del desorden al orden (B). A es lo contrario; nuevo/viejo (C) y tamaño (D) no son el cambio."
+  },
+  {
+    "id": "v_ord_5",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 2,
+    "stem": "En la biblioteca, cada libro tiene un código, está ubicado por materia y por autor, y siempre se devuelve al mismo estante; así cualquiera encuentra lo que busca en segundos.",
+    "q": "¿Cómo puede describirse esa biblioteca?",
+    "opts": [
+      "Desordenada",
+      "Ordenada",
+      "Improvisada",
+      "Abandonada"
+    ],
+    "ans": 1,
+    "exp": "Códigos, ubicación por materia y autor, y todo en su sitio describen una biblioteca ordenada (B). No es desordenada (A), ni improvisada (C) o abandonada (D): justo lo opuesto."
+  },
+  {
+    "id": "v_ord_6",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 1,
+    "stem": "Cuando terminó la fiesta, había platos sucios en los sillones, vasos en el piso y sillas tiradas por toda la sala.",
+    "q": "¿Qué palabra describe mejor el estado en que quedó la sala?",
+    "opts": [
+      "Pulcritud",
+      "Desorden",
+      "Vacío",
+      "Armonía"
+    ],
+    "ans": 1,
+    "exp": "Cosas regadas y fuera de su lugar describen desorden (B). Lo contrario sería pulcritud o armonía (A, D); y no quedó vacía (C), al contrario, llena de cosas."
+  },
+  {
+    "id": "v_ord_7",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El archivo digital pasó de carpetas sin nombre y documentos sueltos a un sistema con categorías claras y bien rotuladas.",
+    "q": "¿Qué describe ese cambio?",
+    "opts": [
+      "Un aumento del desorden",
+      "Una organización del desorden previo",
+      "Una pérdida de archivos",
+      "Un cambio de colores"
+    ],
+    "ans": 1,
+    "exp": "Pasar de documentos sueltos a categorías claras es organizar lo que estaba en desorden (B). No aumenta el desorden (A), no se pierden archivos (C) ni se trata de colores (D)."
+  },
+  {
+    "id": "v_tmp_4",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 1,
+    "stem": "Para dejar la ropa lista, primero se lava, luego se tiende al sol, después se plancha y, al final, se guarda doblada en el clóset.",
+    "q": "¿Qué se hace inmediatamente antes de guardarla?",
+    "opts": [
+      "Tenderla",
+      "Plancharla",
+      "Lavarla",
+      "Comprarla"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es lavar, tender, planchar y guardar. Lo que va justo antes de guardar es planchar (B). Tender y lavar (A, C) ocurren antes; comprarla (D) no es un paso del proceso."
+  },
+  {
+    "id": "v_tmp_5",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "Para publicar el video, Sofía primero lo graba, luego lo edita cortando los errores, después le agrega subtítulos y, finalmente, lo sube a la plataforma.",
+    "q": "¿Qué hace Sofía justo después de editar el video?",
+    "opts": [
+      "Grabarlo",
+      "Agregarle subtítulos",
+      "Subirlo a la plataforma",
+      "Borrarlo"
+    ],
+    "ans": 1,
+    "exp": "El orden es grabar, editar, subtítulos y subir. Después de editar agrega los subtítulos (B). Grabar (A) fue antes; subir (C) es el final; borrarlo (D) no aparece."
+  },
+  {
+    "id": "v_tmp_6",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "El albañil primero mezcla el cemento, luego levanta la pared ladrillo por ladrillo, la deja secar un día y, al final, la pinta.",
+    "q": "¿Qué se hace inmediatamente después de levantar la pared?",
+    "opts": [
+      "Mezclar el cemento",
+      "Dejarla secar",
+      "Pintarla de una vez",
+      "Cavar la zanja"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es mezclar, levantar, dejar secar y pintar. Justo después de levantar la pared se deja secar (B). Mezclar (A) fue antes; pintar (C) va después del secado; cavar (D) no aparece."
+  },
+  {
+    "id": "v_tmp_7",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "En la función: se abren las cortinas, se presenta el primer acto, hay un intermedio y luego viene el segundo acto.",
+    "q": "¿Qué ocurre inmediatamente antes del segundo acto?",
+    "opts": [
+      "El primer acto",
+      "El intermedio",
+      "La apertura de cortinas",
+      "Los aplausos finales"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es cortinas, primer acto, intermedio y segundo acto. Antes del segundo acto está el intermedio (B). El primer acto (A) y la apertura (C) van antes; los aplausos (D), al final."
+  },
+  {
+    "id": "v_ese_4",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Lo propio de un buen médico es escuchar al paciente, examinarlo con cuidado y recetar lo apropiado.",
+    "q": "De acuerdo con la lógica del texto, ¿qué sería propio de un buen mecánico?",
+    "opts": [
+      "Escuchar al cliente, revisar el vehículo y reparar lo necesario",
+      "Cobrar lo más posible",
+      "Cambiar todas las piezas siempre",
+      "Trabajar sin revisar nada"
+    ],
+    "ans": 0,
+    "exp": "Por lógica paralela con el médico (escuchar, examinar, dar lo apropiado), lo propio del mecánico es escuchar, revisar y reparar lo necesario (A). Cobrar de más (B), cambiar todo siempre (C) o no revisar (D) son lo contrario de un buen mecánico."
+  },
+  {
+    "id": "v_ese_5",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 1,
+    "stem": "Un cubo de hielo puede ser grande o pequeño, transparente o turbio; pero si deja de estar frío y sólido, ya no es hielo.",
+    "q": "¿Cuál es la característica esencial del hielo?",
+    "opts": [
+      "Su tamaño",
+      "Estar frío y en estado sólido",
+      "Su transparencia",
+      "Su forma"
+    ],
+    "ans": 1,
+    "exp": "Lo esencial es lo que no puede faltar. Tamaño, transparencia y forma pueden variar (A, C, D); lo que define al hielo es estar frío y sólido (B)."
+  },
+  {
+    "id": "v_ese_6",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 2,
+    "stem": "Así como lo propio de un reloj es marcar el paso del tiempo —no su forma ni su material—, cada instrumento se define por la función que cumple.",
+    "q": "Por esa misma lógica, ¿qué es lo propio de un termómetro?",
+    "opts": [
+      "Marcar la hora",
+      "Medir la temperatura",
+      "Indicar la dirección",
+      "Pesar objetos"
+    ],
+    "ans": 1,
+    "exp": "Lo propio es la FUNCIÓN. La del termómetro es medir la temperatura (B). Marcar la hora (A) es del reloj; indicar dirección (C), de la brújula; pesar (D), de la balanza."
+  },
+  {
+    "id": "v_ese_7",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 2,
+    "stem": "Una llave puede ser de cualquier metal, color o tamaño; lo que la hace ser una llave es que abre y cierra una cerradura determinada.",
+    "q": "¿Qué es lo esencial de una llave?",
+    "opts": [
+      "Su material",
+      "Abrir y cerrar su cerradura",
+      "Su color",
+      "Su peso"
+    ],
+    "ans": 1,
+    "exp": "Material, color y peso pueden cambiar sin que deje de ser llave (A, C, D): son rasgos accidentales. Lo esencial es su función: abrir y cerrar su cerradura (B)."
+  },
+  {
+    "id": "v_per_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "El invierno que arruina las vacaciones del turista es justo la temporada que llena de clientes la tienda de abrigos.",
+    "q": "¿Qué muestra este contraste?",
+    "opts": [
+      "Que el invierno perjudica a todos",
+      "Que un mismo hecho beneficia a unos y perjudica a otros",
+      "Que el turista se queja de más",
+      "Que las tiendas se aprovechan de la gente"
+    ],
+    "ans": 1,
+    "exp": "El mismo invierno tiene efectos opuestos: malo para el turista, bueno para el negocio (B). A generaliza un solo lado; C y D agregan juicios que el texto no plantea."
+  },
+  {
+    "id": "v_per_5",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "Subir la misma montaña es, para el niño lleno de energía, una emocionante aventura; para el anciano de rodillas cansadas, un esfuerzo agotador.",
+    "q": "¿Qué explica que la montaña se viva de forma tan distinta?",
+    "opts": [
+      "La montaña cambia de altura según quién sube",
+      "La experiencia depende de la condición y la mirada de cada quien",
+      "El niño exagera su emoción",
+      "El anciano no debería caminar"
+    ],
+    "ans": 1,
+    "exp": "La montaña no cambia (A es falso); lo que cambia es quién la sube y cómo la vive (B). C y D juzgan a una persona, pero el punto es que un mismo hecho se vive distinto."
+  },
+  {
+    "id": "v_per_6",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Reprobar un examen puede vivirse como un golpe definitivo o como una señal útil de qué temas conviene reforzar.",
+    "q": "¿Qué plantea el texto sobre un mismo hecho?",
+    "opts": [
+      "Que reprobar no tiene remedio",
+      "Que admite lecturas opuestas según cómo se interprete",
+      "Que los exámenes son injustos",
+      "Que da igual aprobar o reprobar"
+    ],
+    "ans": 1,
+    "exp": "El mismo hecho (reprobar) admite dos lecturas: fracaso u oportunidad de mejorar (B). A se queda solo con la lectura negativa; C culpa al examen; D banaliza, y el texto no dice eso."
+  },
+  {
+    "id": "v_per_7",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "La canción que una persona pone a buen volumen para animarse es, para la vecina que intenta dormir, un ruido insoportable.",
+    "q": "¿Qué idea expresa el texto?",
+    "opts": [
+      "La música siempre molesta a los demás",
+      "Un mismo sonido se vive distinto según la situación de cada quien",
+      "Está prohibido escuchar música",
+      "La vecina tiene mal gusto"
+    ],
+    "ans": 1,
+    "exp": "El mismo sonido es disfrute para uno y molestia para otra, según su situación (B). A generaliza; C inventa una prohibición; D descalifica sin que el texto lo diga."
+  },
+  {
+    "id": "v_per_8",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "Un mismo comentario directo, a unas personas les parece una muestra de sinceridad y a otras, una grosería.",
+    "q": "Según el texto, ¿de qué depende que el comentario se tome bien o mal?",
+    "opts": [
+      "De que el comentario sea verdadero",
+      "De cómo lo interpreta quien lo recibe",
+      "De que se diga en voz alta",
+      "De que la persona sea grosera"
+    ],
+    "ans": 1,
+    "exp": "El mismo comentario cambia de sentido según quién lo recibe e interpreta (B). A, C y D señalan rasgos del comentario en sí, pero el texto pone el peso en la interpretación del receptor."
+  },
+  {
+    "id": "v_imp_6",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Cada vez que come en ese restaurante, a Luis le duele el estómago.",
+    "q": "¿Cuál es una idea implícita en el texto?",
+    "opts": [
+      "A Luis no le gusta comer",
+      "Algo de esa comida le hace daño",
+      "El restaurante es caro",
+      "Luis nunca come"
+    ],
+    "ans": 1,
+    "exp": "Que le duela el estómago cada vez que come ahí implica que algo de esa comida le hace daño (B). A contradice que sí va a comer; el precio (C) y 'nunca come' (D) no vienen al caso."
+  },
+  {
+    "id": "v_imp_7",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "La biblioteca siempre se llena durante la época de exámenes.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "La biblioteca es muy pequeña",
+      "En época de exámenes la gente estudia más",
+      "Nadie usa la biblioteca",
+      "Los libros son gratis"
+    ],
+    "ans": 1,
+    "exp": "Que se llene en época de exámenes implica que entonces la gente estudia más (B). El tamaño (A), 'nadie la usa' (C) y 'libros gratis' (D) no se deducen."
+  },
+  {
+    "id": "v_imp_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Antes de salir, Juan tomó paraguas, botas de hule y un abrigo grueso.",
+    "q": "¿Qué idea está implícita en el texto?",
+    "opts": [
+      "Iba a una fiesta",
+      "Esperaba mal tiempo",
+      "Vendía ropa",
+      "Hacía mucho calor"
+    ],
+    "ans": 1,
+    "exp": "Llevar paraguas, botas y abrigo implica que esperaba mal tiempo (B). Una fiesta (A), vender ropa (C) o mucho calor (D) no encajan con ese equipo."
+  },
+  {
+    "id": "v_imp_9",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Llegué a la casa y todo estaba como lo había dejado: el periódico del lunes seguía en la entrada, el tazón del desayuno sin lavar y las luces apagadas en pleno día.",
+    "q": "¿Qué se puede deducir con seguridad?",
+    "opts": [
+      "Hubo una fiesta la noche anterior",
+      "Nadie había estado en la casa desde el lunes",
+      "Acababan de limpiar la casa",
+      "Había mucha gente adentro"
+    ],
+    "ans": 1,
+    "exp": "Periódico del lunes intacto, tazón sin lavar y luces apagadas implican que nadie estuvo ahí desde el lunes (B). Una fiesta (A) o mucha gente (C) dejarían rastros; 'recién limpiado' (D) contradice el desorden."
+  },
+  {
+    "id": "v_imp_10",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Marta revisa tres veces que la puerta esté cerrada antes de dormir.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "Marta es descuidada",
+      "Marta es precavida con la seguridad",
+      "Marta no duerme nunca",
+      "La puerta está rota"
+    ],
+    "ans": 1,
+    "exp": "Revisar tres veces la puerta implica que es precavida con la seguridad (B). Es lo opuesto a descuidada (A); 'no duerme' (C) y 'puerta rota' (D) no se deducen."
+  },
+  {
+    "id": "v_imp_11",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Aunque le ofrecieron más sueldo en otra empresa, decidió quedarse donde estaba.",
+    "q": "¿Qué idea está implícita?",
+    "opts": [
+      "El dinero es lo único que le importa",
+      "Valora algo más que el salario",
+      "No sabe tomar decisiones",
+      "La otra empresa cerró"
+    ],
+    "ans": 1,
+    "exp": "Rechazar más sueldo por quedarse implica que valora algo más que el salario (B). A dice lo contrario; 'no sabe decidir' (C) y 'la empresa cerró' (D) no aparecen."
+  },
+  {
+    "id": "v_pri_4",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "El reciclaje reduce la cantidad de basura que llega a los rellenos, ahorra recursos naturales al reutilizar materiales y disminuye la contaminación del aire y del agua.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "En los rellenos se acumula mucha basura",
+      "El reciclaje aporta varios beneficios ambientales",
+      "El reciclaje reutiliza materiales",
+      "Reciclar limpia el aire"
+    ],
+    "ans": 1,
+    "exp": "A, C y D son detalles ciertos, pero cada uno cubre solo una parte. La idea que los abarca a todos es que el reciclaje trae varios beneficios (B): esa es la principal."
+  },
+  {
+    "id": "v_pri_5",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Las abejas polinizan los cultivos de los que sale buena parte de nuestra comida, producen miel y ayudan a mantener el equilibrio de muchos ecosistemas.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "Las abejas producen miel",
+      "Las abejas cumplen un papel valioso para la naturaleza y las personas",
+      "Las abejas polinizan cultivos",
+      "Las abejas viven en ecosistemas"
+    ],
+    "ans": 1,
+    "exp": "Producir miel y polinizar (A, C) son detalles, no el todo. B resume todos los aportes de las abejas. D es cierto pero trivial y no es el punto central."
+  },
+  {
+    "id": "v_pri_6",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Leer con frecuencia amplía el vocabulario, ejercita la memoria y expone la mente a ideas y puntos de vista nuevos.",
+    "q": "¿Cuál es la idea principal?",
+    "opts": [
+      "Leer amplía el vocabulario",
+      "La lectura aporta varios beneficios para la mente",
+      "Leer ejercita la memoria",
+      "Existen muchas ideas nuevas"
+    ],
+    "ans": 1,
+    "exp": "A y C son beneficios sueltos (detalles); D se va del tema. B reúne todos esos beneficios: es la idea principal."
+  },
+  {
+    "id": "v_pri_7",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El río nace en la montaña, cruza el valle dando agua a los cultivos y desemboca en el mar, sosteniendo la vida a su paso.",
+    "q": "¿Cuál es el tema central del texto?",
+    "opts": [
+      "El color del agua",
+      "El recorrido del río y su aporte a la vida",
+      "La altura de la montaña",
+      "La pesca en el mar"
+    ],
+    "ans": 1,
+    "exp": "Todo el texto sigue el recorrido del río y su aporte a la vida (B). El color del agua (A), la altura de la montaña (C) y la pesca (D) son detalles o ni aparecen."
+  },
+  {
+    "id": "v_pri_8",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Dormir bien mejora la memoria, fortalece las defensas del cuerpo y ayuda a mantener estable el estado de ánimo.",
+    "q": "¿Cuál es la idea principal?",
+    "opts": [
+      "Dormir mejora la memoria",
+      "Un buen descanso beneficia el cuerpo y la mente",
+      "Dormir fortalece las defensas",
+      "El ánimo cambia de a ratos"
+    ],
+    "ans": 1,
+    "exp": "A y C son beneficios concretos (detalles). B los engloba: dormir bien beneficia cuerpo y mente. D es vago y no resume el texto."
+  },
+  {
+    "id": "v_pri_9",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "En Costa Rica conviven el español, el bribri y el inglés criollo limonense, reflejo de su diversidad cultural.",
+    "q": "¿Cuál es el tema central del texto?",
+    "opts": [
+      "La diversidad lingüística de Costa Rica",
+      "La gramática del español",
+      "La población de Limón",
+      "La enseñanza del inglés"
+    ],
+    "ans": 0,
+    "exp": "Las tres lenguas son una muestra de la diversidad lingüística de Costa Rica (A). La gramática (B), la población de Limón (C) y la enseñanza del inglés (D) son temas que el texto no desarrolla."
+  },
+  {
+    "id": "v_par_4",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El conocimiento que no se comparte termina por desvanecerse, como el agua estancada se pudre.",
+    "q": "¿Cuál opción expresa la misma idea?",
+    "opts": [
+      "El conocimiento es inútil",
+      "El saber se mantiene vivo cuando se comparte",
+      "El agua estancada es saludable",
+      "Compartir es una pérdida de tiempo"
+    ],
+    "ans": 1,
+    "exp": "Que el conocimiento no compartido se desvanezca equivale a que el saber se mantiene vivo al compartirse (B). A lo desvaloriza; C malinterpreta la comparación del agua; D contradice la idea de compartir."
+  },
+  {
+    "id": "v_par_5",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 2,
+    "stem": "La crítica, cuando es honesta, no busca herir, sino ayudar a mejorar.",
+    "q": "¿Cuál opción conserva el sentido?",
+    "opts": [
+      "Toda crítica busca herir",
+      "Una crítica honesta tiene la intención de ayudar",
+      "Hay que evitar toda crítica",
+      "Mejorar es imposible"
+    ],
+    "ans": 1,
+    "exp": "El texto distingue la crítica honesta: su fin no es herir, sino ayudar a mejorar."
+  }
+]

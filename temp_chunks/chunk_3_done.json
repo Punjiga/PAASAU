@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_tmp_6",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "En el proceso constructivo tradicional, el capataz indica que el mortero debe homogeneizarse primero. Posteriormente, se procede al mamposteado de los ladrillos, fase a la cual le sucede ineludiblemente un periodo de curado de 24 horas antes de aplicar el recubrimiento estético final.",
+    "q": "Según las instrucciones detalladas por el capataz, ¿qué acción procede inmediatamente después del mamposteado?",
+    "opts": [
+      "La homogeneización del mortero",
+      "El periodo de curado del material",
+      "La aplicación del recubrimiento estético",
+      "La revisión del nivel estructural"
+    ],
+    "ans": 1,
+    "exp": "Para resolver este problema de secuencia temporal, debemos identificar el orden exacto de las acciones descritas en el texto:\n\n- **Primero**: Se homogeneiza el mortero (mezclar el cemento).\n- **Segundo**: Se procede al mamposteado (levantar la pared).\n- **Tercero**: Sigue el periodo de curado de 24 horas (dejar secar).\n- **Cuarto**: Se aplica el recubrimiento estético (pintar).\n\nEl texto especifica que al mamposteado 'le sucede ineludiblemente' el curado. Por lo tanto, la opción correcta es la que describe esta fase.\n\n**Tip Élite:** En preguntas de secuencia temporal, presta atención a los conectores de transición temporal (como 'primero', 'posteriormente', 'le sucede', 'antes de') para reconstruir la cronología sin perderte en el vocabulario técnico."
+  },
+  {
+    "id": "v_tmp_7",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "La velada teatral sigue un protocolo estricto: el descorrimiento del telón marca el inicio, dando paso a la primera parte de la dramaturgia. A esta le sigue una pausa escénica que sirve de preludio al clímax y desenlace de la obra en su último bloque.",
+    "q": "¿Qué suceso se interpone entre la primera parte de la dramaturgia y el bloque final de la obra?",
+    "opts": [
+      "La presentación del elenco",
+      "La pausa escénica",
+      "El descorrimiento del telón",
+      "El clímax de la dramaturgia"
+    ],
+    "ans": 1,
+    "exp": "Para determinar el orden de los eventos en el teatro, analicemos la cronología descrita:\n\n- **Evento inicial**: Descorrimiento del telón.\n- **Segundo evento**: Primera parte de la dramaturgia.\n- **Tercer evento**: Pausa escénica (que sirve de preludio).\n- **Último evento**: Último bloque (clímax y desenlace).\n\nLa pregunta requiere identificar qué ocurre justo antes del último bloque (entre la primera parte y el bloque final). El texto señala claramente que a la primera parte 'le sigue una pausa escénica', la cual precede al último bloque.\n\n**Tip Élite:** A menudo, las preguntas de secuencia en exámenes de admisión disfrazan las relaciones temporales con sustantivos complejos. Identificar las fases (inicio, medio, pausa, fin) simplifica el análisis."
+  },
+  {
+    "id": "v_ese_4",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "La praxis médica de excelencia se fundamenta en una tríada ineludible: la anamnesis exhaustiva, la auscultación rigurosa y la prescripción certera.",
+    "q": "Aplicando un razonamiento analógico a esta premisa, ¿cuál sería la tríada equivalente para una praxis técnica de excelencia en ingeniería automotriz?",
+    "opts": [
+      "La indagación del fallo, el diagnóstico vehicular y la reparación precisa",
+      "La cotización previa, el cambio sistemático de refacciones y el cobro de honorarios",
+      "La inspección ocular, el desmontaje preventivo y la sustitución universal",
+      "El escaneo genérico, la omisión de pruebas empíricas y el ajuste superficial"
+    ],
+    "ans": 0,
+    "exp": "Este ejercicio evalúa tu capacidad para establecer analogías estructurales. Desglosemos la tríada médica:\n\n- **Anamnesis (escuchar al paciente)**: Equivale a indagar el fallo con el usuario.\n- **Auscultación (examinar)**: Corresponde al diagnóstico minucioso del vehículo.\n- **Prescripción certera (recetar lo adecuado)**: Se alinea con efectuar la reparación precisa y necesaria.\n\nLas otras opciones proponen acciones mecánicas (cambio sistemático, omisión de pruebas) que rompen la lógica de precisión, rigor y atención individualizada que define la 'excelencia' en el texto base.\n\n**Tip Élite:** Cuando te pidan aplicar un razonamiento analógico, descompón la premisa original en sus elementos funcionales esenciales y busca la opción que replique exactamente esa estructura en el nuevo contexto."
+  },
+  {
+    "id": "v_ese_5",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "En la conceptualización de los cuerpos, existen propiedades contingentes, como sus dimensiones geométricas o su índice de refracción; y propiedades inherentes, cuya supresión anula la identidad misma del ente, tal como ocurre con el hielo al perder sus condiciones termodinámicas y estructurales específicas.",
+    "q": "Con base en la distinción ontológica del texto, ¿cuáles constituyen propiedades inherentes del hielo?",
+    "opts": [
+      "La configuración geométrica y el volumen",
+      "La baja temperatura y el estado de agregación sólido",
+      "El índice de refracción y la transparencia",
+      "La procedencia hídrica y la potabilidad"
+    ],
+    "ans": 1,
+    "exp": "El texto nos introduce a la diferencia filosófica entre propiedades contingentes (accidentales) e inherentes (esenciales):\n\n- Las **propiedades contingentes** pueden variar (dimensiones geométricas, índice de refracción) sin que el objeto deje de ser lo que es.\n- Las **propiedades inherentes** son aquellas cuya 'supresión anula la identidad' del objeto.\n\nPara el hielo, perder sus 'condiciones termodinámicas' (baja temperatura) y 'estructurales específicas' (estado sólido) lo convierte en agua líquida, perdiendo su identidad de hielo.\n\n**Tip Élite:** En ejercicios que distingan entre esencia y accidente, la esencia es siempre la condición *sine qua non* (sin la cual no), es decir, aquello estrictamente necesario para que el sujeto exista como tal."
+  },
+  {
+    "id": "v_ese_6",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "La naturaleza teleológica de los artefactos establece que su ontología no radica en su morfología o en su composición material, sino exclusivamente en la finalidad operativa para la cual fueron concebidos, tal como se evidencia en la medición cronológica.",
+    "q": "Bajo este paradigma teleológico, ¿qué atributo define ontológicamente a un sismógrafo?",
+    "opts": [
+      "La predicción de fenómenos meteorológicos a largo plazo",
+      "El registro de la magnitud y propagación de ondas telúricas",
+      "La estabilización de las estructuras arquitectónicas",
+      "El diseño cilíndrico de su tambor de registro"
+    ],
+    "ans": 1,
+    "exp": "Comprendamos la premisa central: el texto afirma que la esencia ('ontología') de un instrumento radica en su propósito o función ('finalidad operativa'), no en su forma física.\n\n- El sismógrafo es un instrumento científico.\n- Su función intrínseca, y por tanto su esencia bajo este paradigma, es medir y registrar los movimientos de la tierra (ondas telúricas).\n\nLas opciones que mencionan el diseño (morfología) o funciones ajenas a su propósito original (predecir el clima, estabilizar edificios) no definen al objeto.\n\n**Tip Élite:** El término 'teleológico' se refiere al estudio de los fines o propósitos. Siempre que lo veas asociado a objetos, la respuesta radicará en 'para qué sirve' (su utilidad primordial)."
+  },
+  {
+    "id": "v_ese_7",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Un código criptográfico puede emplear matrices complejas, sustitución alfanumérica o algoritmos cuánticos; sin embargo, las variables estructurales son secundarias frente a su rasgo definitorio: permitir el descifrado exclusivo por parte del receptor autorizado.",
+    "q": "¿Cuál es el atributo esencial de un código criptográfico según el razonamiento expuesto?",
+    "opts": [
+      "La complejidad algorítmica y su estructura matricial",
+      "La facultad de restringir y habilitar el acceso a la información",
+      "La aleatoriedad de su sustitución alfanumérica",
+      "La capacidad de ser transmitido por vías cuánticas"
+    ],
+    "ans": 1,
+    "exp": "El texto plantea una distinción entre las características secundarias (matrices, sustitución, algoritmos) y el rasgo definitorio o esencial de un código criptográfico.\n\n- Las variables estructurales pueden cambiar sin que el objeto deje de ser un código.\n- Lo esencial ('rasgo definitorio') es su capacidad funcional: 'permitir el descifrado exclusivo'.\n\nEsto equivale a restringir y habilitar el acceso a la información de manera selectiva.\n\n**Tip Élite:** Identifica el contraste que hace el autor entre lo variable (lo secundario, lo que enumera como posibles variaciones) y lo constante (lo que le da su razón de ser). La esencia siempre se oculta en la función irremplazable."
+  },
+  {
+    "id": "v_per_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La devaluación de la moneda nacional que erosiona el poder adquisitivo del ciudadano común, se erige simultáneamente como el catalizador de rentabilidad para el sector exportador que liquida en divisas extranjeras.",
+    "q": "¿Qué principio socioeconómico ilustra de manera subyacente este fenómeno?",
+    "opts": [
+      "La inevitabilidad del deterioro financiero generalizado",
+      "La naturaleza asimétrica y dual de los impactos coyunturales",
+      "La preeminencia del bienestar corporativo sobre el individual",
+      "La especulación abusiva de los mercados internacionales"
+    ],
+    "ans": 1,
+    "exp": "El texto nos presenta un escenario de contraste donde un mismo evento macroeconómico (la devaluación de la moneda) tiene dos caras:\n\n- **Efecto negativo**: Erosiona el poder adquisitivo del ciudadano.\n- **Efecto positivo**: Es un catalizador de rentabilidad para el exportador.\n\nEste contraste no juzga ni indica que un lado sea más importante que el otro, sino que expone cómo un mismo fenómeno impacta de maneras opuestas a distintos actores, mostrando un efecto asimétrico y dual.\n\n**Tip Élite:** Cuando un texto presenta una balanza de ganadores y perdedores ante un mismo hecho, el objetivo suele ser destacar la relatividad o la asimetría del fenómeno, huyendo de opciones absolutistas o moralizantes."
+  },
+  {
+    "id": "v_per_5",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La asimilación de un paradigma tecnológico disruptivo representa, para el profesional neófito, un vasto horizonte de posibilidades de desarrollo; en contraste, para el especialista veterano, suele percibirse como una amenaza de obsolescencia inminente frente a su acervo de conocimientos tradicionales.",
+    "q": "¿A qué factor atribuye el texto la divergencia en la recepción del nuevo paradigma?",
+    "opts": [
+      "Al carácter intrínsecamente destructivo de las innovaciones tecnológicas",
+      "A la mediación de las circunstancias y el bagaje previo de los sujetos",
+      "A la falta de capacidad cognitiva de los especialistas experimentados",
+      "Al optimismo irracional que caracteriza a las nuevas generaciones"
+    ],
+    "ans": 1,
+    "exp": "El fragmento analiza cómo un mismo evento (un paradigma tecnológico disruptivo) desencadena dos reacciones contrapuestas:\n\n- **El neófito (novato)**: Lo ve como oportunidad de desarrollo.\n- **El veterano**: Lo percibe como amenaza de obsolescencia.\n\nLa tecnología en sí misma es neutra en el texto. La diferencia radica enteramente en el punto de vista, determinado por la posición, experiencia y 'bagaje previo' de quienes la experimentan. Las otras opciones emiten juicios de valor no sustentados.\n\n**Tip Élite:** Las preguntas de perspectiva demandan que diferencies el estímulo objetivo (el paradigma tecnológico) de la reacción subjetiva. La respuesta correcta suele apuntar a la subjetividad del receptor, evitando calificaciones morales (como 'irracional' o 'destructivo')."
+  },
+  {
+    "id": "v_per_6",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La experimentación de un colapso financiero corporativo oscila entre ser concebido como el clímax del fracaso gerencial irreversible, o bien, como la auditoría empírica más rigurosa para la reestructuración del modelo de negocios.",
+    "q": "¿Qué premisa sobre el análisis de crisis se desprende lógicamente del planteamiento?",
+    "opts": [
+      "Que las caídas corporativas son el corolario inevitable de la mala praxis",
+      "Que la fenomenología del fracaso es susceptible de hermenéuticas divergentes",
+      "Que las auditorías externas carecen de validez frente a los fallos reales",
+      "Que la reestructuración corporativa exime a la gerencia de responsabilidades"
+    ],
+    "ans": 1,
+    "exp": "El texto aborda un evento específico (el colapso financiero) desde dos ángulos diametralmente opuestos:\n\n- **Visión fatalista**: Fracaso gerencial irreversible.\n- **Visión constructiva**: Oportunidad de auditoría empírica para reestructurar.\n\nEsta dualidad indica que el mismo fenómeno puede interpretarse de distintas maneras. En términos académicos formales, esto significa que la fenomenología (el estudio del fenómeno) permite interpretaciones (hermenéuticas) divergentes o diferentes.\n\n**Tip Élite:** Acostúmbrate al uso de vocabulario académico en preguntas de alto nivel. 'Hermenéutica' se refiere al arte o teoría de la interpretación. Conocer estos términos te ahorrará tiempo valioso durante el examen."
+  },
+  {
+    "id": "v_per_7",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La implantación de medidas de austeridad gubernamental es defendida por los organismos de crédito como un ejercicio indispensable de responsabilidad fiscal; no obstante, es padecida por los sectores vulnerables como un desmantelamiento atroz de las redes de seguridad social.",
+    "q": "¿Qué postulado sobre las políticas públicas se ilustra en este escenario?",
+    "opts": [
+      "La naturaleza perniciosa e indefendible de toda restricción presupuestaria",
+      "La relatividad del impacto axiológico y material en función del actor afectado",
+      "La connivencia explícita entre el Estado y los entes financieros internacionales",
+      "La necesidad de abolir las redes de seguridad en aras del equilibrio fiscal"
+    ],
+    "ans": 1,
+    "exp": "Analicemos las dos perspectivas presentadas frente a las medidas de austeridad:\n\n- **Organismos de crédito**: Lo valoran positivamente (responsabilidad fiscal).\n- **Sectores vulnerables**: Lo sufren negativamente (desmantelamiento atroz).\n\nEsto evidencia que la política pública no tiene un valor ('impacto axiológico') o efecto ('material') uniforme, sino que depende enteramente del actor que la experimente. Las demás opciones toman partido por una de las dos posturas, lo cual traiciona la neutralidad descriptiva del texto original.\n\n**Tip Élite:** La palabra 'axiológico' se refiere al sistema de valores. Cuando un texto presenta dos bandos con valoraciones contrarias sobre un mismo hecho, la inferencia correcta es que el valor del hecho es relativo a la posición del actor."
+  },
+  {
+    "id": "v_per_8",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La adopción de una retórica política frontal y desprovista de eufemismos suele polarizar al electorado: un segmento la decodifica como un loable rasgo de transparencia republicana, mientras que el sector antagonista la repudia como una manifestación de demagogia e incivismo.",
+    "q": "¿Qué factor resulta determinante para la asignación de valor a este tipo de retórica, según el texto?",
+    "opts": [
+      "La comprobación empírica de la veracidad del mensaje emitido",
+      "El tamiz interpretativo y la matriz ideológica del receptor",
+      "La ausencia premeditada de eufemismos en el discurso público",
+      "El nivel de incivismo inherente a la clase política contemporánea"
+    ],
+    "ans": 1,
+    "exp": "El texto plantea un mismo estímulo (retórica política frontal) que genera dos recepciones contrarias:\n\n- **Segmento A**: Lo considera transparencia (positivo).\n- **Segmento B**: Lo repudia como demagogia (negativo).\n\nEl mensaje emitido es exactamente el mismo; por lo tanto, la diferencia no radica en las palabras, sino en cómo el receptor 'decodifica' y evalúa (tamiz interpretativo) la información recibida.\n\n**Tip Élite:** En los ejercicios de perspectiva y recepción del discurso, enfócate en el verbo central ('decodifica', 'interpreta'). Si la reacción varía pero el mensaje es estático, la variable dependiente siempre será el marco cognitivo o ideológico del oyente."
+  },
+  {
+    "id": "v_imp_6",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "De manera sistemática y sin excepciones comprobadas, la ingesta de alimentos provenientes de aquel establecimiento gastronómico precede a un cuadro agudo de dispepsia en el organismo de Leonardo.",
+    "q": "¿Qué premisa subyace de forma inexcusable en el planteamiento anterior?",
+    "opts": [
+      "La aversión psicológica de Leonardo hacia la oferta culinaria local",
+      "La existencia de una correlación causal entre dicha dieta y su malestar",
+      "La deficiente regulación sanitaria del establecimiento en cuestión",
+      "La intolerancia genética de Leonardo a los conservadores artificiales"
+    ],
+    "ans": 1,
+    "exp": "El texto nos proporciona dos hechos concretos y relacionados de manera sistemática: la ingesta de alimentos en un lugar específico, seguida inmediatamente por malestar estomacal (dispepsia).\n\n- La repetición constante ('de manera sistemática') sugiere fuertemente que hay una relación de causa y efecto.\n- Deducir que hay una correlación causal entre la comida y el malestar es una inferencia válida y directa (idea implícita).\n\nLas opciones que atribuyen la causa a la sanidad del local (C) o a intolerancias genéticas (D) son sobreinterpretaciones especulativas que van más allá de los datos proporcionados.\n\n**Tip Élite:** Una inferencia lógica válida ('idea implícita') debe sostenerse únicamente con la información del texto, sin añadir hipótesis no comprobables (como problemas sanitarios o genéticos que el autor nunca menciona)."
+  },
+  {
+    "id": "v_imp_7",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Los índices de ocupación de la hemeroteca central experimentan una saturación predecible y recurrente que coincide, de manera exclusiva, con el epílogo del calendario académico evaluativo.",
+    "q": "¿Qué inferencia lógica se desprende de esta correlación estacional?",
+    "opts": [
+      "La infraestructura del recinto resulta arquitectónicamente insuficiente",
+      "La proximidad de las evaluaciones intensifica la demanda de espacios de estudio",
+      "El acervo bibliográfico es obsoleto durante los periodos regulares",
+      "Las autoridades universitarias limitan el acceso en épocas no evaluativas"
+    ],
+    "ans": 1,
+    "exp": "El fragmento establece una conexión cronológica innegable entre dos variables:\n\n- **Fenómeno**: Saturación de la hemeroteca (biblioteca).\n- **Momento**: Epílogo del calendario evaluativo (época de exámenes).\n\nDado que la afluencia sube drásticamente en respuesta directa a los exámenes, la inferencia natural es que las evaluaciones motivan esta demanda inusual de espacios de concentración. Deducir problemas arquitectónicos (A) o censura (D) es un error de extrapolación.\n\n**Tip Élite:** Cuidado con las opciones que asumen deficiencias sistémicas ('insuficiencia arquitectónica'). Si el texto solo expone una causa temporal para un aumento de demanda, tu deducción debe limitarse a esa dinámica de causa y efecto."
+  },
+  {
+    "id": "v_imp_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Previo a su expedición urbana, Mateo seleccionó meticulosamente un gabán impermeable, calzado de caucho con suela antideslizante y un paraguas de varillas reforzadas, descartando por completo su atuendo estival.",
+    "q": "¿Qué premisa sobre el contexto ambiental subyace en la conducta de Mateo?",
+    "opts": [
+      "La proximidad de un evento social de etiqueta rigurosa",
+      "La anticipación fundamentada de condiciones meteorológicas adversas",
+      "La intención deliberada de comercializar indumentaria especializada",
+      "La presencia de temperaturas anómalamente elevadas en la región"
+    ],
+    "ans": 1,
+    "exp": "Las acciones de Mateo hablan por sí solas: selecciona artículos específicos (impermeable, botas de caucho, paraguas) y rechaza prendas de verano (atuendo estival).\n\n- Esta indumentaria tiene una clara finalidad utilitaria: protegerse de la lluvia y el frío.\n- Por tanto, la acción de equiparse así implica inexorablemente que Mateo anticipaba lluvia o mal clima.\n\nLas opciones que sugieren eventos sociales o negocios comerciales carecen de anclaje semántico en el texto.\n\n**Tip Élite:** En los ítems de deducción, las acciones concretas de los personajes funcionan como 'pistas' que revelan la información no explícita. Pregúntate: ¿Cuál es la única condición externa que justifica racionalmente esta suma de acciones?"
+  },
+  {
+    "id": "v_imp_9",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Al trasponer el umbral, el panorama evidenciaba una estasis temporal absoluta: el matutino del lunes yacía inalterado en el felpudo, la loza del desayuno presentaba sedimentos desecados y la penumbra dominaba las estancias pese al cenit solar.",
+    "q": "A partir de la evidencia descrita, ¿qué conclusión fáctica resulta irrefutable?",
+    "opts": [
+      "La ocurrencia de un allanamiento furtivo durante la madrugada",
+      "La total ausencia de tránsito humano en el recinto desde el inicio de la semana",
+      "La reciente intervención de un servicio de limpieza profunda",
+      "La presencia de ocupantes ocultos resguardándose de la luz diurna"
+    ],
+    "ans": 1,
+    "exp": "El autor utiliza elementos altamente descriptivos ('estasis temporal', matutino intocado, sedimentos desecados en la loza) para construir una escena.\n\n- Todos estos detalles apuntan convergentemente hacia un único hecho: la interrupción abrupta de la vida doméstica y la falta de actividad posterior.\n- Al afirmar que el periódico del lunes sigue ahí y nada ha cambiado, la deducción lógica, directa e 'irrefutable' es que nadie ha ingresado desde entonces.\n\nSuposiciones de allanamientos u ocupantes ocultos introducen variables narrativas ficticias que el texto no provee ni insinúa.\n\n**Tip Élite:** Cuando te pregunten qué conclusión es 'irrefutable', debes elegir aquella que represente el común denominador de todas las pistas dadas. Cualquier opción que requiera agregar una suposición externa al texto, por lógica que parezca en una novela policial, es incorrecta en comprensión lectora."
+  },
+  {
+    "id": "v_imp_10",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El ritual nocturno de la señora Valdez exige, sin excepción alguna, la verificación triplicada de los cerrojos perimetrales y la comprobación exhaustiva del sistema de alarma antes de poder conciliar el sueño.",
+    "q": "¿Qué rasgo subyacente de la personalidad o el estado mental de la señora Valdez se infiere de este comportamiento?",
+    "opts": [
+      "Una negligencia sistemática en la preservación de su entorno",
+      "Una preocupación preeminente por la invulnerabilidad de su resguardo",
+      "Una condición crónica de insomnio refractario a tratamientos",
+      "Una incapacidad cognitiva para recordar eventos recientes"
+    ],
+    "ans": 1,
+    "exp": "El texto describe un comportamiento obsesivo y metódico ligado a un área específica: la protección de la casa (cerrojos y alarma).\n\n- Este nivel de reiteración ('verificación triplicada') evidencia que el sujeto tiene una imperiosa necesidad de sentir certeza antes de dormir.\n- Por tanto, se infiere una fuerte precaución y vigilancia por la seguridad o 'invulnerabilidad' de su hogar.\n\nInferir problemas de memoria (D) o insomnio patológico (C) son saltos lógicos desproporcionados frente a la evidencia de una simple hipervigilancia preventiva.\n\n**Tip Élite:** Las acciones repetitivas en un texto casi siempre denotan un rasgo psicológico o de actitud del personaje. Identifica el objeto de la repetición (la seguridad, en este caso) y vincúlalo con el estado mental correspondiente."
+  },
+  {
+    "id": "v_imp_11",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A pesar de la sustancial mejora en la estructura de compensación financiera que le extendió la corporación competidora, el directivo declinó la oferta para mantener su arraigo en la organización actual.",
+    "q": "¿Qué premisa sobre el sistema de incentivos del directivo está tácitamente presente en el texto?",
+    "opts": [
+      "Su motivación radica exclusivamente en la maximización de sus ingresos líquidos",
+      "Pondera factores no pecuniarios por encima del mero beneficio económico",
+      "Su capacidad de resolución estratégica se encuentra paralizada por la indecisión",
+      "La estabilidad del mercado laboral impide cualquier tipo de movilidad gerencial"
+    ],
+    "ans": 1,
+    "exp": "El enunciado plantea un dilema en el que se contrapone el beneficio económico ('compensación financiera') contra la pertenencia a la empresa actual ('arraigo').\n\n- Al elegir quedarse a pesar de ganar menos dinero, el directivo demuestra empíricamente que su lealtad, comodidad o algún otro factor inmaterial tiene más peso para él.\n- En otras palabras, 'pondera factores no pecuniarios' (cosas distintas al dinero).\n\nLas demás alternativas o bien contradicen abiertamente el texto (A) o introducen conjeturas infundadas sobre sus habilidades gerenciales (C).\n\n**Tip Élite:** Un contraste concesivo (usando 'a pesar de' o 'aunque') siempre implica que la acción resultante desafía la lógica común. Identifica cuál es esa expectativa rota (irse por dinero) para encontrar la premisa subyacente (hay cosas más valiosas que el dinero)."
+  },
+  {
+    "id": "v_pri_4",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La transición hacia modelos de economía circular mitiga la saturación de los vertederos sanitarios, frena la depredación exhaustiva de materias primas vírgenes y atenúa drásticamente la huella de carbono asociada a los procesos de extracción y manufactura.",
+    "q": "¿Cuál es la proposición fundamental que engloba el fragmento?",
+    "opts": [
+      "La saturación de vertederos representa la principal crisis ecológica contemporánea",
+      "La economía circular ejerce un impacto positivo y multifactorial en la ecología",
+      "La extracción de materias primas vírgenes es incompatible con la vida humana",
+      "La huella de carbono es la única métrica válida para medir la manufactura"
+    ],
+    "ans": 1,
+    "exp": "El fragmento enumera tres procesos distintos: la mitigación en vertederos, el freno a la depredación de materias primas y la atenuación de la huella de carbono.\n\n- Estas tres acciones comparten un mismo agente causal (los modelos de economía circular) y un mismo ámbito de impacto (beneficios ambientales).\n- La idea principal debe ser lo suficientemente amplia para cobijar a las tres; por ende, destacar su 'impacto multifactorial en la ecología' es la síntesis perfecta.\n\nElegir A o C implica confundir un ejemplo o detalle de apoyo con la tesis central del autor.\n\n**Tip Élite:** Cuando un texto presenta una enumeración de virtudes o características, la idea principal nunca es uno de los elementos de la lista, sino la categoría general a la que todos ellos pertenecen."
+  },
+  {
+    "id": "v_pri_5",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La familia Apidae no solo facilita la fecundación entomófila de un vasto porcentaje de los cultivos agrónomos de subsistencia humana, sino que genera subproductos apícolas de alto valor nutricional y resulta indispensable para la preservación de la homeostasis en múltiples biomas.",
+    "q": "¿Cuál es el núcleo temático o tesis central del pasaje?",
+    "opts": [
+      "Los subproductos apícolas constituyen el pilar nutricional de la modernidad",
+      "Estos polinizadores desempeñan funciones vitales tanto antropocéntricas como ecológicas",
+      "La fecundación entomófila es el único método viable para la agricultura",
+      "La homeostasis de los biomas depende exclusivamente de la polinización"
+    ],
+    "ans": 1,
+    "exp": "Descompongamos las funciones de la familia *Apidae* mencionadas en el texto:\n1. Favorecen los cultivos de subsistencia (beneficio para el ser humano).\n2. Generan subproductos nutricionales (beneficio para el ser humano).\n3. Preservan la homeostasis de los biomas (beneficio ecológico global).\n\nLa opción que resume correctamente esta multiplicidad de beneficios es aquella que abarca tanto el aspecto humano ('antropocéntricas') como el natural ('ecológicas'). Las demás opciones radicalizan un solo punto, cayendo en falsas exclusividades ('el pilar', 'único método', 'depende exclusivamente').\n\n**Tip Élite:** Desconfía profundamente de las opciones que incluyan adverbios o adjetivos absolutos ('exclusivamente', 'único', 'siempre', 'nunca') a menos que el texto base sea igualmente taxativo."
+  },
+  {
+    "id": "v_pri_6",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El hábito constante de decodificación literaria enriquece el acervo léxico del individuo, estimula la plasticidad de las redes neuronales asociadas a la retención y somete el intelecto a paradigmas conceptuales inéditos.",
+    "q": "¿Qué afirmación constituye la tesis englobadora del fragmento?",
+    "opts": [
+      "El incremento del acervo léxico es el principal objetivo de la alfabetización",
+      "La práctica lectora desencadena una multiplicidad de procesos cognitivos favorables",
+      "La memoria humana depende de manera exclusiva de la estimulación neuronal",
+      "La exposición a paradigmas inéditos genera inestabilidad intelectual"
+    ],
+    "ans": 1,
+    "exp": "El autor lista tres ventajas puntuales del 'hábito de decodificación literaria' (leer):\n- Enriquecimiento léxico.\n- Estimulación de la plasticidad (memoria).\n- Exposición a nuevos paradigmas (ideas).\n\nTodas estas ventajas ocurren en el cerebro o la mente humana. Por lo tanto, la síntesis adecuada es que la lectura genera 'una multiplicidad de procesos cognitivos favorables'. Limitar la idea principal a uno solo de los beneficios (A) o tergiversar los efectos (D) invalida las otras opciones.\n\n**Tip Élite:** La 'tesis englobadora' es el paraguas conceptual. Busca la opción que actúe como titular de periódico para la lista de detalles presentados."
+  },
+  {
+    "id": "v_pri_7",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Los cauces fluviales surgen en las cumbres orográficas, atraviesan las planicies irrigando vastas zonas de aprovechamiento agrícola y, finalmente, vierten sus caudales en el océano, fungiendo como arterias sustentadoras de los ecosistemas durante todo su trayecto.",
+    "q": "¿Cuál es el eje temático sobre el cual se articula el texto?",
+    "opts": [
+      "La importancia económica de las desembocaduras oceánicas",
+      "La trayectoria hidrológica y su función como sustento biológico",
+      "La altitud orográfica como factor determinante de la velocidad del caudal",
+      "Las técnicas de aprovechamiento agrícola en zonas de planicie"
+    ],
+    "ans": 1,
+    "exp": "El texto está estructurado cronológica y espacialmente siguiendo el viaje del agua:\n- **Origen**: Cumbres orográficas.\n- **Desarrollo**: Planicies irrigadas.\n- **Fin**: Desembocadura en el océano.\nY concluye con una valoración global: funcionan como arterias que sostienen los ecosistemas.\n\nLa opción correcta (B) fusiona ambos componentes esenciales: el recorrido físico ('trayectoria hidrológica') y su impacto trascendental ('sustento biológico'). Las demás opciones aíslan fragmentos (océanos, planicies) e ignoran el panorama completo.\n\n**Tip Élite:** El 'tema central' o 'eje temático' de un texto descriptivo a menudo se compone del sujeto principal (cauces fluviales/trayectoria) y el predicado general que se afirma sobre él (sustenta la vida)."
+  },
+  {
+    "id": "v_pri_8",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La observancia de una higiene del sueño óptima facilita la consolidación de engramas neuronales, optimiza la respuesta inmunológica celular y propicia la regulación sostenida del equilibrio neuroquímico emocional.",
+    "q": "¿Qué premisa sintetiza con mayor precisión el contenido del pasaje?",
+    "opts": [
+      "La consolidación de engramas es el propósito exclusivo del reposo biológico",
+      "El descanso adecuado ejerce efectos profilácticos integrales a nivel físico y psicológico",
+      "El sistema inmunológico depende únicamente de la ausencia de vigilia prolongada",
+      "La inestabilidad neuroquímica es una condición inherente al ser humano"
+    ],
+    "ans": 1,
+    "exp": "Nuevamente nos enfrentamos a una estructura argumentativa basada en la enumeración de beneficios:\n- **Cognitivo**: Consolidación neuronal (memoria).\n- **Físico**: Respuesta inmunológica (defensas).\n- **Psicológico/Emocional**: Equilibrio neuroquímico (estado de ánimo).\n\nLa premisa que sintetiza esto debe incluir la mejora en todos los frentes. La opción B captura esto perfectamente al mencionar 'efectos profilácticos integrales' (beneficios preventivos globales) tanto 'a nivel físico' como 'psicológico'.\n\n**Tip Élite:** Sustituir enumeraciones específicas por sus categorías macro (físico, psicológico, integral) es la técnica infalible para hallar ideas principales en textos descriptivos."
+  },
+  {
+    "id": "v_pri_9",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "En el territorio costarricense coexisten de manera orgánica la variante dialectal del español, el acervo ancestral bribri y la manifestación anglófona del criollo limonense, configurando un mosaico representativo de su riqueza identitaria.",
+    "q": "¿Qué concepto macro engloba el fenómeno descrito en el enunciado?",
+    "opts": [
+      "La pluralidad glotológica como reflejo de la diversidad cultural de la nación",
+      "El predominio histórico de la sintaxis hispana sobre las lenguas autóctonas",
+      "La segregación demográfica de las comunidades afrodescendientes",
+      "Las políticas gubernamentales de preservación de idiomas minoritarios"
+    ],
+    "ans": 0,
+    "exp": "El texto lista tres sistemas de comunicación verbal diferentes (español, bribri, criollo) que habitan un mismo país.\n- El propio autor concluye que esto es un 'mosaico representativo de su riqueza identitaria' (su diversidad cultural).\n- Por lo tanto, el concepto que envuelve esta coexistencia de idiomas es la 'pluralidad glotológica' (diversidad de lenguas), vinculada a la cultura.\n\nNinguna de las otras opciones tiene respaldo en el texto; el autor no aborda luchas de predominio, segregación ni políticas gubernamentales.\n\n**Tip Élite:** La palabra 'glotológica' deriva de 'glotis/glosa' (lengua). El dominio de raíces grecolatinas te permitirá descifrar alternativas que, a primera vista, parezcan incomprensibles."
+  },
+  {
+    "id": "v_par_4",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El bagaje intelectual que permanece hermético en un solo individuo tiende a la obsolescencia inexorable, operando bajo la misma dinámica entrópica que corrompe las aguas carentes de afluencia.",
+    "q": "¿Qué formulación parafrasea de manera fiel el aforismo anterior?",
+    "opts": [
+      "La acumulación de erudición resulta ser una empresa vana y destructiva",
+      "La vigencia y vitalidad de la erudición dependen de su transmisión colectiva",
+      "Los recursos hídricos estáticos poseen propiedades depurativas latentes",
+      "La difusión académica es un esfuerzo que acelera el desgaste intelectual"
+    ],
+    "ans": 1,
+    "exp": "El aforismo utiliza una metáfora para ilustrar una condición de supervivencia del conocimiento.\n- **Metáfora**: El agua necesita afluencia (movimiento) para no corromperse.\n- **Sujeto real**: El conocimiento (bagaje intelectual) necesita compartirse (no ser hermético) para no volverse obsoleto.\n\nLa paráfrasis exacta de esta idea es que el saber requiere ser transmitido ('transmisión colectiva') para mantener su 'vigencia y vitalidad'. La opción D es la trampa diametralmente opuesta al texto, mientras que C toma la metáfora de forma literal e incorrecta.\n\n**Tip Élite:** Parafrasear correctamente implica traducir el fondo sin perder el sentido. Nunca te quedes con la literalidad de las metáforas y huye de las opciones que invierten la relación causa-efecto del texto base."
+  },
+  {
+    "id": "v_par_5",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El escrutinio de terceros, siempre que emane de la probidad intelectual, carece de propósitos lesivos; su teleología es, más bien, catalizar el perfeccionamiento de su objeto.",
+    "q": "¿Cuál de las siguientes sentencias preserva el núcleo semántico del fragmento?",
+    "opts": [
+      "La fiscalización externa posee siempre un componente intrínsecamente destructivo",
+      "Una evaluación genuina se fundamenta en la voluntad de fomentar el progreso",
+      "La censura sistemática es el único mecanismo para alcanzar la excelencia",
+      "El perfeccionamiento humano es un estadio inalcanzable mediante el juicio ajeno"
+    ],
+    "ans": 1,
+    "exp": "Analicemos la estructura sintáctica y semántica:\n- **Condición**: Que el escrutinio (crítica) nazca de la probidad (honestidad).\n- **Negación**: No busca lesionar o herir.\n- **Propósito positivo**: Busca catalizar el perfeccionamiento (ayudar a mejorar).\n\nLa oración que mantiene este significado afirma que la 'evaluación genuina' (crítica honesta) tiene como base fomentar el progreso (perfeccionar). Las opciones A, C y D imponen juicios absolutos ('siempre destructivo', 'único mecanismo', 'inalcanzable') que desvirtúan por completo el tono constructivo del original.\n\n**Tip Élite:** Presta atención al tono emocional de las palabras. El texto base tiene un tono de 'constructividad condicionada' (si es honesto, es bueno). La respuesta correcta debe preservar esa misma modulación."
+  },
+  {
+    "id": "v_par_6",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La aclamación multitudinaria de un fenómeno cultural no constituye, per se, un aval irrefutable sobre su excelencia intrínseca.",
+    "q": "¿Qué enunciado constituye una paráfrasis semántica equivalente?",
+    "opts": [
+      "La predilección de las masas es el estándar definitivo del mérito artístico",
+      "La aceptación masiva no es un indicador infalible de superioridad cualitativa",
+      "Las expresiones de alta cultura jamás logran penetrar en el gusto mayoritario",
+      "La validación estadística exige la subordinación del criterio individual al colectivo"
+    ],
+    "ans": 1,
+    "exp": "El postulado desarma la falacia lógica del *ad populum* (creer que porque algo le gusta a muchos, es bueno).\n- Dice claramente que la popularidad ('aclamación multitudinaria') no es sinónimo de calidad ('excelencia intrínseca').\n- Por lo tanto, deducir que la aceptación no garantiza cualidad (B) es la reformulación exacta del principio expuesto.\n\nLa opción C lleva la premisa a un extremo cínico que el texto no avala (que *nada* bueno puede ser popular), lo cual es una tergiversación común en distractores de exámenes.\n\n**Tip Élite:** Parafrasear negaciones parciales ('no garantiza') requiere otra negación parcial ('no es infalible'). Evita las reformulaciones que convierten una duda en una certeza absoluta ('jamás', 'siempre')."
+  },
+  {
+    "id": "v_par_7",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El ejercicio pleno de la autonomía individual encuentra su frontera infranqueable exactamente en el punto donde amenazaría la esfera de derechos de los demás conciudadanos.",
+    "q": "¿Qué postulado jurídico y moral encapsula la misma tesis?",
+    "opts": [
+      "La convivencia gregaria exige la erradicación total del libre albedrío",
+      "Las prerrogativas personales están constreñidas por la inviolabilidad del prójimo",
+      "La emancipación subjetiva carece de restricciones en un marco democrático puro",
+      "La soberanía individual recae exclusivamente en los estratos hegemónicos"
+    ],
+    "ans": 1,
+    "exp": "Esta es una de las máximas más conocidas de la filosofía del derecho. Su estructura establece un equilibrio de límites:\n- La libertad ('autonomía individual') no es infinita.\n- Su límite es el derecho de un tercero ('esfera de derechos de los demás').\n\nEsto se traduce formalmente en que nuestras 'prerrogativas' (derechos) están limitadas ('constreñidas') para no violar al prójimo. Las afirmaciones de que nadie es libre (A) o de que la libertad no tiene límites (C) contradicen tajantemente la premisa del equilibrio.\n\n**Tip Élite:** La palabra 'constreñir' significa limitar, obligar o reducir. Entender que los derechos se constriñen mutuamente es la base para resolver dilemas de ética en comprensión de lectura."
+  },
+  {
+    "id": "v_par_8",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La desidia frente a las disfunciones incipientes del presente funciona como la incubadora ineludible de las crisis sistémicas del porvenir.",
+    "q": "¿Cuál de los siguientes corolarios mantiene la integridad semántica de la advertencia?",
+    "opts": [
+      "Las fricciones menores carecen de relevancia frente al panorama a largo plazo",
+      "La negligencia ante anomalías tempranas cataliza complicaciones de mayor magnitud",
+      "La proyección futura garantiza la resolución espontánea de los conflictos actuales",
+      "La estrategia de evasión es la táctica más efectiva para preservar la estabilidad"
+    ],
+    "ans": 1,
+    "exp": "El texto plantea un principio de causalidad y escalamiento:\n- Causa: Ignorar problemas hoy ('desidia frente a disfunciones incipientes').\n- Efecto: Problemas enormes mañana ('crisis sistémicas').\n\nLa paráfrasis debe mantener esta advertencia. 'La negligencia' (desidia) 'cataliza complicaciones' (crea grandes crisis) respeta la temporalidad y la progresión del daño implícita en la frase original. Las otras tres opciones promueven exactamente la inacción que el autor critica.\n\n**Tip Élite:** Un 'corolario' es una conclusión lógica o una evidencia derivada de un principio previo. Aquí te piden la conclusión natural que se desprende de la advertencia del autor."
+  },
+  {
+    "id": "v_pro_4",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Establezca como premisa universal: Todo elemento metálico presenta alta conductividad eléctrica. A partir de este axioma, analice las siguientes proposiciones:\nI. El cuprita (cobre), dada su clasificación elemental metálica, exhibe conductividad.\nII. La naturaleza metálica inhibe de forma absoluta el flujo de electrones.\nIII. Existen aleaciones metálicas excepcionales que fungen como aislantes perfectos.",
+    "q": "Aplicando estrictamente la lógica deductiva formal, ¿cuál o cuáles proposiciones constituyen inferencias válidas del axioma inicial?",
+    "opts": [
+      "Únicamente la proposición I",
+      "Únicamente la proposición II",
+      "Las proposiciones II y III conjuntamente",
+      "La totalidad de las proposiciones listadas"
+    ],
+    "ans": 0,
+    "exp": "En lógica formal, operamos basándonos estrictamente en las reglas del silogismo.\n- La premisa universal ('axioma') afirma categóricamente que TODOS los metales conducen electricidad (A).\n- La proposición I plantea un caso particular: El cobre es un metal, por lo tanto, forzosamente cumple la regla A. Esto es un silogismo válido.\n- Las proposiciones II y III niegan total o parcialmente el axioma inicial. Un axioma no puede contradecirse a sí mismo en una deducción válida.\n\nPor lo tanto, cualquier proposición que asuma la existencia de metales no conductores (sean aislantes perfectos o inhibidores) está cometiendo una falacia de contradicción.\n\n**Tip Élite:** En los ejercicios de silogismos y lógica formal proposicional, jamás uses tus conocimientos del mundo real. Si el texto establece una ley absoluta (Todo A es B), cualquier excepción (Incluso si en la vida real existiera) es lógicamente falsa dentro del ejercicio."
+  },
+  {
+    "id": "v_pro_5",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El estatuto del certamen dictamina que la condición indispensable para mantener el registro oficial es la exhibición presencial del documento de identidad. Valore las siguientes deducciones:\nI. La omisión en la presentación del documento invalida el estatus del aspirante.\nII. La exhibición de la credencial queda a discreción del comité evaluador.\nIII. Un participante registrado que carece del documento en físico incumple la normativa.",
+    "q": "¿Qué postulados se coligen ineludiblemente del rigor estatutario mencionado?",
+    "opts": [
+      "Únicamente la deducción II",
+      "Las deducciones I y III exclusivamente",
+      "Únicamente la deducción III",
+      "El conjunto íntegro de las deducciones"
+    ],
+    "ans": 1,
+    "exp": "Desglosemos la regla impuesta ('estatuto'): 'Condición indispensable' significa que no hay alternativas; sin documento, no hay registro.\n- La proposición I aplica la lógica inversa válida: Si A es indispensable para B, entonces 'no A' significa 'no B'.\n- La proposición III ejemplifica este mismo principio aplicándolo a un sujeto concreto (un participante registrado sin documento).\n- La proposición II afirma que el documento es 'a discreción' (opcional), lo cual vulnera frontalmente el carácter 'indispensable' de la regla.\n\nPor ende, las inferencias I y III son deducciones matemáticamente precisas del texto base.\n\n**Tip Élite:** La palabra 'coligen' significa inferir o deducir. Familiarízate con este verbo, ya que es el favorito de los redactores de pruebas estandarizadas de alto rendimiento."
+  },
+  {
+    "id": "v_pro_6",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Premisa condicional: Toda precipitación pluvial en la zona produce, invariablemente, el empapamiento de la superficie deportiva abierta. Analice las derivaciones lógicas:\nI. La ocurrencia de lluvia es agente causal del humedecimiento del terreno.\nII. La superficie genera su propio empapamiento al margen de los factores climáticos.\nIII. Las precipitaciones aceleran el proceso de evaporación del césped.",
+    "q": "¿Cuál(es) de los siguientes enunciados representa una inferencia lógicamente rigurosa?",
+    "opts": [
+      "Exclusivamente el enunciado I",
+      "Exclusivamente el enunciado II",
+      "Exclusivamente el enunciado III",
+      "Los enunciados I y III de manera conjunta"
+    ],
+    "ans": 0,
+    "exp": "El texto plantea una proposición condicional causal: Si ocurre A (precipitación), entonces ocurre B (empapamiento).\n- El enunciado I simplemente reformula esta relación causa-efecto de manera afirmativa: La lluvia (A) es el agente causal de que se moje (B). Es lógicamente incuestionable.\n- El enunciado II afirma que ocurre B sin A, lo que el texto no sostiene (aunque pudiera haber otras causas en la vida real, el texto solo nos habla de la lluvia).\n- El enunciado III contradice las leyes de la física y el propio texto, afirmando que el agua seca.\n\n**Tip Élite:** La clave en el razonamiento condicional es recordar que la presencia de la causa asegura el efecto, pero el texto no siempre excluye otras causas. Sin embargo, para deducir certezas, debes apegarte estrictamente a la causa mencionada."
+  },
+  {
+    "id": "v_pro_7",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "En el acta final consta que la promoción académica fue negada categóricamente a todo discente que omitiera la consignación de la tesina final. Analice las inferencias:\nI. La consignación del documento constituyó un prerrequisito ineludible para la acreditación.\nII. Existe evidencia de un margen de flexibilidad que permitió promociones excepcionales sin documento.\nIII. La carencia de la tesina derivó unívocamente en la reprobación del individuo.",
+    "q": "¿Qué proposiciones guardan total consistencia lógica con la regla asentada en el acta?",
+    "opts": [
+      "Únicamente la inferencia I",
+      "Las inferencias I y III simultáneamente",
+      "Únicamente la inferencia II",
+      "Las inferencias I, II y III en su conjunto"
+    ],
+    "ans": 1,
+    "exp": "La regla del texto es una negación universal: No hubo aprobados que no entregaran el trabajo ('Ninguno aprobó sin entregar').\n- La proposición I traduce esto en términos de necesidad: Si nadie pasó sin el trabajo, entonces el trabajo era un prerrequisito obligatorio.\n- La proposición III lo enuncia desde la perspectiva del sujeto que falla: Si fallas (no entregas), tu resultado es el fracaso (reprobación).\n- La proposición II introduce la noción de 'flexibilidad' y 'excepciones', rompiendo la categoricidad absoluta del 'Ninguno' expuesto en la premisa matriz.\n\n**Tip Élite:** Entiende la equivalencia lógica: 'Ningún A ocurre sin B' es idéntico a afirmar que 'B es una condición necesaria para que exista A'. Aprender estas equivalencias acelera enormemente la resolución mental."
+  },
+  {
+    "id": "v_pro_8",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Axioma biológico: La totalidad de las especies catalogadas dentro de la clase Aves poseen un tegumento cubierto de plumaje. Valore las siguientes afirmaciones silogísticas:\nI. El Passer domesticus (gorrión), al pertenecer a esta taxonomía, exhibe necesariamente cobertura de plumaje.\nII. El rigor taxonómico admite excepciones de aves desprovistas de dicha cubierta en entornos extremos.\nIII. El espécimen denominado gorrión carece por completo de folículos plumosos.",
+    "q": "¿Cuál(es) de las afirmaciones se deduce(n) de manera inapelable del axioma proporcionado?",
+    "opts": [
+      "La afirmación I, de forma exclusiva",
+      "La afirmación II, de forma exclusiva",
+      "Las afirmaciones II y III, combinadas",
+      "Todas las afirmaciones presentadas"
+    ],
+    "ans": 0,
+    "exp": "Estamos ante el silogismo deductivo más clásico (estilo Todos los hombres son mortales, Sócrates es hombre...).\n- El axioma es categórico: Toda ave tiene plumas.\n- El sujeto particular: El gorrión es un ave.\n- Conclusión inevitable (Proposición I): El gorrión tiene plumas.\n\nCualquier aseveración que abra la puerta a 'excepciones en entornos extremos' (II) o que niegue directamente la conclusión lógica (III) choca con el absolutismo del axioma propuesto. En la lógica proposicional, la forma pesa más que la biología real.\n\n**Tip Élite:** Si el enunciado usa cuantificadores universales (Todo, Ninguno, La totalidad), rechaza inmediatamente cualquier opción que proponga palabras como 'algunos', 'a veces', 'excepciones' o 'probablemente'."
+  },
+  {
+    "id": "m_ari_6",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "El departamento de proveeduría corporativa adquiere mobiliario de oficina: las sillas ergonómicas cotizan a $250.00 por unidad y los reposapiés articulados a $90.00. La empresa emite una orden de compra por 3 sillas y 2 reposapiés, transfiriendo un anticipo cerrado de $1,000.00.",
+    "q": "¿Cuál es el saldo a favor o vuelto que la corporación deberá registrar tras la facturación de esta orden?",
+    "opts": [
+      "$60.00",
+      "$70.00",
+      "$80.00",
+      "$90.00"
+    ],
+    "ans": 1,
+    "exp": "El proceso para resolver este problema aritmético de consumo exige calcular el costo total y restarlo del anticipo:\n- Costo de las sillas: 3 unidades × $250 = $750.\n- Costo de los reposapiés: 2 unidades × $90 = $180.\n- Suma total facturada: $750 + $180 = $930.\n\nPara hallar el saldo a favor, sustraemos este total del monto entregado:\n- $1000 - $930 = $70.\n\n**Tip Élite:** Evita hacer la resta mental total al final. Puedes restar parcialmente: 1000 - 750 = 250; luego 250 - 180 = 70. Dividir la resta en saltos reduce el riesgo de errores con los ceros."
+  },
+  {
+    "id": "m_ari_7",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Un análisis estequiométrico en laboratorio requiere la combinación sucesiva de reactivos, representada matemáticamente por la siguiente expresión de proporciones racionales: {{3/4}} − {{2/3}} + {{1/2}}.",
+    "q": "Al simplificar la expresión, ¿cuál es el cociente racional irreductible que representa el balance final de la mezcla?",
+    "opts": [
+      "{{7/12}}",
+      "{{1/12}}",
+      "{{5/12}}",
+      "{{2/3}}"
+    ],
+    "ans": 0,
+    "exp": "Para sumar y restar fracciones con denominadores heterogéneos, el paso fundamental es hallar el Mínimo Común Múltiplo (MCM).\n- Los denominadores son 4, 3 y 2. El MCM de estos números es 12.\n- Homogeneizamos cada fracción multiplicando el numerador por el factor necesario:\n  - {{3/4}} = {{(3×3)/(4×3)}} = {{9/12}}\n  - {{2/3}} = {{(2×4)/(3×4)}} = {{8/12}}\n  - {{1/2}} = {{(1×6)/(2×6)}} = {{6/12}}\n\nOperamos sobre un solo denominador:\n- (9 − 8 + 6) / 12 = 7 / 12.\n\n**Tip Élite:** Antes de buscar el MCM, fíjate si alguno de los denominadores ya es múltiplo de otro. Aquí, 4 es múltiplo de 2, por lo que puedes ignorar el 2 y simplemente multiplicar los denominadores primos relativos restantes (4 × 3 = 12)."
+  },
+  {
+    "id": "m_ari_8",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "El cálculo del coeficiente de resistencia térmica de un material aislante está dado por la evaluación estricta de la siguiente secuencia aritmética jerarquizada: 5 + 2 × (8 − 3)² ÷ 5.",
+    "q": "Aplicando las leyes universales de precedencia de operadores, ¿cuál es el coeficiente numérico final del material?",
+    "opts": [
+      "15",
+      "27",
+      "20",
+      "11"
+    ],
+    "ans": 0,
+    "exp": "Para resolver operaciones combinadas, el respeto a la jerarquía matemática (PEMDAS/BODMAS) es inviolable. Procedamos paso a paso:\n1. **Paréntesis**: Resolvemos el interior: (8 − 3) = 5. La expresión queda: 5 + 2 × (5)² ÷ 5.\n2. **Exponentes**: Elevamos el resultado: 5² = 25. La expresión queda: 5 + 2 × 25 ÷ 5.\n3. **Multiplicación y División** (de izquierda a derecha): Primero 2 × 25 = 50. Luego, dividimos entre 5: 50 ÷ 5 = 10. La expresión queda: 5 + 10.\n4. **Suma**: 5 + 10 = 15.\n\nElegir 27, por ejemplo, surgiría de sumar 5+2 primero, rompiendo la regla de oro de la jerarquía.\n\n**Tip Élite:** El error más letal en los exámenes es resolver de izquierda a derecha sin mirar los signos. Enmárcalo mentalmente: Sumas y restas son 'muros' que separan tu ecuación en islas independientes que debes resolver primero."
+  },
+  {
+    "id": "m_ari_9",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Un latifundio agrícola dispone de una población forestal de 240 especímenes maderables y frutales. El censo botánico revela que exactamente los {{3/8}} del inventario total corresponden a cítricos del género *Citrus sinensis*.",
+    "q": "¿A qué magnitud entera asciende la población de cítricos documentada en la plantación?",
+    "opts": [
+      "64 especímenes",
+      "80 especímenes",
+      "96 especímenes",
+      "90 especímenes"
+    ],
+    "ans": 3,
+    "exp": "El problema solicita calcular una fracción de una cantidad total entera.\n- Planteamiento: Encontrar los {{3/8}} de 240.\n- La operación base es: (240 / 8) × 3.\n- Al dividir el total entre el denominador (240 ÷ 8), averiguamos cuánto vale 'un octavo'. Esto nos da 30.\n- Como tenemos 'tres' de esos octavos, multiplicamos por el numerador: 30 × 3 = 90.\n\n**Tip Élite:** Cuando fracciones un número que termina en cero, ignora el cero temporalmente. Divide 24 entre 8 (es 3), agrégale el cero (es 30) y luego multiplica. Ganarás preciados segundos de agilidad mental."
+  },
+  {
+    "id": "m_ari_10",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "La fluctuación del índice bursátil de una corporación a lo largo de la semana presentó las siguientes variaciones nominales continuas: (−6) + (−4) − (−10) + 2.",
+    "q": "¿Cuál es el balance neto de la cotización al cierre del ciclo operativo analizado?",
+    "opts": [
+      "Un déficit neto de −2",
+      "Estabilidad absoluta en 0",
+      "Un superávit de 2",
+      "Un desplome de −12"
+    ],
+    "ans": 2,
+    "exp": "El manejo correcto de la ley de los signos es el único reto aquí. Procedamos paso a paso con las eliminaciones de paréntesis:\n- Primero agrupamos los sumandos negativos: (−6) + (−4) = −10.\n- Observamos el choque de signos en la resta de un negativo: Restar un negativo equivale a sumar su positivo, por ende, − (−10) se transforma en +10.\n- Evaluamos el acumulado: Teníamos −10 y le sumamos +10, lo que da como resultado 0.\n- Finalmente, añadimos el último término: 0 + 2 = 2.\n\n**Tip Élite:** Visualiza los signos como deudas y capitales. Deber 6 y luego deber 4 significa que debes 10. Si alguien te perdona (resta) una deuda de 10, es como si te dieran 10. Quedas en cero, y al sumarle 2, tu saldo a favor es 2."
+  },
+  {
+    "id": "m_mcm_5",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "En un satélite orbital, dos balizas de posicionamiento emiten pulsos de radio en ciclos cerrados: el transpondedor alfa emite una señal cada 8 milisegundos, mientras que el transpondedor beta lo hace cada 10 milisegundos. Si en el instante t=0 ambos emiten simultáneamente.",
+    "q": "¿Cuál será el valor del intervalo temporal 't' más próximo en el que ambas señales experimentarán una interferencia constructiva por sincronización simultánea?",
+    "opts": [
+      "18 milisegundos",
+      "40 milisegundos",
+      "80 milisegundos",
+      "20 milisegundos"
+    ],
+    "ans": 1,
+    "exp": "El problema nos plantea encontrar un punto futuro donde dos secuencias cíclicas de distinta duración coincidan por primera vez. Esto es, por definición, un cálculo del Mínimo Común Múltiplo (MCM).\n- Descomponemos los intervalos en sus factores primos:\n  - 8 = 2³\n  - 10 = 2 × 5\n- La regla del MCM dicta tomar todos los factores, comunes y no comunes, elevados a su mayor exponente:\n  - MCM = 2³ × 5 = 8 × 5 = 40.\n\nLas señales volverán a sincronizarse tras 40 milisegundos.\n\n**Tip Élite:** Siempre que un problema hable de eventos que 'se repiten cada X tiempo' y pregunte cuándo 'volverán a coincidir juntos', no dudes: saca el MCM. Ignora el camuflaje técnico del enunciado."
+  },
+  {
+    "id": "m_mcm_6",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "El departamento de logística ensambla kits de supervivencia táctica. Disponen de un lote limitado de 24 raciones deshidratadas y 36 purificadores de agua. La directriz operativa exige empacar el material en el mayor número posible de contenedores idénticos, garantizando un reparto equitativo y sin excedentes en bodega.",
+    "q": "Cumpliendo estrictamente con la directriz, ¿cuántos contenedores tácticos idénticos se podrán ensamblar en total?",
+    "opts": [
+      "12 contenedores",
+      "6 contenedores",
+      "72 contenedores",
+      "4 contenedores"
+    ],
+    "ans": 0,
+    "exp": "A diferencia de buscar una coincidencia a futuro, aquí la meta es dividir y agrupar dos cantidades distintas (24 y 36) en partes exactas y buscando que dicho grupo sea 'el mayor posible'. Esta es la pista clara para calcular el Máximo Común Divisor (MCD).\n- Descomponemos en factores primos:\n  - 24 = 2³ × 3\n  - 36 = 2² × 3²\n- La regla del MCD dicta tomar SOLO los factores comunes, elevados a su MENOR exponente:\n  - Factores comunes: 2 y 3.\n  - Menor exponente para el 2: 2².\n  - Menor exponente para el 3: 3¹.\n  - MCD = 2² × 3 = 4 × 3 = 12.\n\nSe podrán armar 12 contenedores tácticos, cada uno con 2 raciones y 3 purificadores.\n\n**Tip Élite:** Las palabras clave para identificar un problema de MCD son 'repartir', 'dividir', 'agrupar equitativamente' y, crucialmente, 'la MAYOR cantidad posible'."
+  },
+  {
+    "id": "m_mcm_7",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Una corporación filantrópica organiza el embalaje de dotaciones tecnológicas escolares. Poseen un excedente exacto de 36 tabletas y 48 baterías externas de carga. Los auditores requieren fragmentar este inventario en módulos absolutamente uniformes, maximizando el número de lotes beneficiados sin generar remanentes.",
+    "q": "¿A cuánto ascenderá el número máximo de lotes benéficos independientes que la corporación logrará distribuir bajo esta premisa?",
+    "opts": [
+      "6 lotes",
+      "8 lotes",
+      "12 lotes",
+      "4 lotes"
+    ],
+    "ans": 2,
+    "exp": "Al igual que el ejercicio anterior, nos enfrentamos a la distribución equitativa de dos números distintos buscando la máxima fragmentación posible sin sobrantes. Esto demanda hallar el Máximo Común Divisor (MCD).\n- Factores de las tabletas (36): 2² × 3²\n- Factores de las baterías (48): 2⁴ × 3\n- Seleccionamos factores comunes al menor exponente:\n  - El factor 2 tiene exponente menor en 2².\n  - El factor 3 tiene exponente menor en 3¹.\n  - MCD = 4 × 3 = 12.\n\nEl número máximo de lotes uniformes será 12 (cada lote contendrá 3 tabletas y 4 baterías).\n\n**Tip Élite:** Para calcular el MCD de forma acelerada sin descomponer en primos, busca la diferencia entre los dos números (48 - 36 = 12). Revisa si ese resultado (12) divide exactamente a ambos números originarios. Si lo hace, ¡ese es tu MCD! Es un truco ninja que ahorra minutos valiosos."
+  },
+  {
+    "id": "m_rel_4",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "En el ordenamiento protocolar de un séquito diplomático, el embajador A precede de manera inmediata al delegado B; a su vez, el delegado B se encuentra situado en una posición más avanzada que la cónsul C, mientras que el agregado D se halla posicionado a espaldas de la cónsul C.",
+    "q": "¿Qué figura diplomática ocupa el escaño postrero y definitivo de la comitiva?",
+    "opts": [
+      "El embajador A",
+      "El delegado B",
+      "La cónsul C",
+      "El agregado D"
+    ],
+    "ans": 3,
+    "exp": "Este es un ejercicio clásico de relaciones de orden lineal y transitividad. Tracemos el esquema mental de las posiciones, de adelante hacia atrás:\n- Dato 1: A precede a B (Orden temporal: A → B).\n- Dato 2: B está más avanzado que C (Orden temporal acumulado: A → B → C).\n- Dato 3: D se ubica a espaldas (detrás) de C (Orden final absoluto: A → B → C → D).\n\nSiguiendo esta cadena lógica transitiva indiscutible, el individuo posicionado en el extremo trasero es el agregado D.\n\n**Tip Élite:** En los problemas de ordenamiento, convierte siempre los nombres largos o títulos (embajador, cónsul) en simples letras (A, B, C, D) y usa símbolos de mayor/menor (A > B > C > D) para armar la línea de tiempo. No permitas que la pomposidad del texto sature tu memoria de trabajo."
+  }
+]

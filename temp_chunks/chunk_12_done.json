@@ -1,0 +1,674 @@
+[
+  {
+    "id": "m_mcm_8",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "En un sistema de alertas sincronizadas, un sensor emite una señal de calibración cada 6 minutos, mientras que un segundo sensor lo hace cada 9 minutos. Si ambos dispositivos han emitido su señal de forma simultánea en este instante.",
+    "q": "¿Cuál es el tiempo mínimo transcurrido, en minutos, para que ambas señales vuelvan a coincidir exactamente?",
+    "opts": [
+      "12",
+      "18",
+      "36",
+      "54"
+    ],
+    "ans": 1,
+    "exp": "Para determinar cuándo volverán a coincidir ambas señales, debemos buscar el primer momento en que los ciclos de ambos sensores se superponen. ¿Qué concepto matemático nos permite encontrar este punto de coincidencia?\n\n* El primer sensor emite señales en los múltiplos de 6: 6, 12, 18, 24...\n* El segundo sensor lo hace en los múltiplos de 9: 9, 18, 27...\n\nEl punto de encuentro corresponde al Mínimo Común Múltiplo (MCM).\n* Factorizando: 6 = 2 × 3 y 9 = 3².\n* Calculando el MCM tomamos los factores primos con su mayor exponente: 2 × 3² = 18.\n\n**Tip Élite:** Siempre que un problema implique eventos periódicos que inician juntos y se busca su próxima coincidencia simultánea, la clave inequívoca es calcular el MCM de sus frecuencias."
+  },
+  {
+    "id": "m_rel_8",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere el conjunto de números racionales dados por las magnitudes 0,7 ; 3/4 y 0,72.",
+    "q": "Si se ordenan dichos valores en forma estrictamente creciente, ¿qué elemento ocupa la posición central?",
+    "opts": [
+      "0,7",
+      "0,72",
+      "3/4",
+      "Ninguno, pues carecen de orden estricto"
+    ],
+    "ans": 1,
+    "exp": "Para comparar números racionales con distintas representaciones, resulta indispensable unificarlos en un solo formato, preferiblemente el decimal. ¿Cómo se expresan estos valores con la misma cantidad de cifras decimales?\n\n* El primer valor es 0,7, que equivale a 0,70.\n* La fracción 3/4 representa tres cuartas partes de la unidad, es decir, 0,75.\n* El tercer valor ya está en formato decimal: 0,72.\n\nAl ordenarlos de forma creciente obtenemos la secuencia: 0,70 < 0,72 < 0,75. Por ende, el valor que se ubica en el centro geométrico de la distribución ordinal es 0,72.\n\n**Tip Élite:** Ante un conjunto mixto de fracciones y decimales, transforma todo a decimales añadiendo ceros a la derecha para igualar la cantidad de cifras; esto anula cualquier ilusión óptica de magnitud."
+  },
+  {
+    "id": "m_rel_9",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Sea x un elemento perteneciente al conjunto de los números enteros (Z) tal que satisface la doble inecuación estricta −5 < x < −2.",
+    "q": "¿Cuál de los siguientes valores es una solución factible para x?",
+    "opts": [
+      "−5",
+      "−4",
+      "−2",
+      "−1"
+    ],
+    "ans": 1,
+    "exp": "Analicemos las condiciones dadas por la inecuación: el valor de x debe ser estrictamente mayor que −5 y estrictamente menor que −2. Además, nos indican que x pertenece a los enteros.\n\n* Al ser una desigualdad estricta, los extremos −5 y −2 no forman parte del conjunto solución.\n* Los únicos enteros que residen en el intervalo abierto (−5, −2) son el −4 y el −3.\n\nEvaluando las opciones disponibles, el −1 queda descartado por estar a la derecha del −2 en la recta numérica. La única alternativa que cumple todos los criterios es −4.\n\n**Tip Élite:** En inecuaciones estrictas sobre conjuntos enteros, visualiza siempre la recta numérica y recuerda que los límites del intervalo jamás se incluyen."
+  },
+  {
+    "id": "m_cnt_8",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un sistema de enrutamiento de datos consta de cuatro nodos interconectados (A, B, C y D). Existen 3 canales distintos para transmitir de A hacia B, 4 canales independientes de B hacia C, y 2 vías exclusivas de C hacia D.",
+    "q": "¿Cuál es el número total de trayectorias únicas que un paquete de datos puede tomar para viajar desde el nodo A hasta el nodo D, atravesando secuencialmente B y C?",
+    "opts": [
+      "24",
+      "12",
+      "9",
+      "14"
+    ],
+    "ans": 0,
+    "exp": "Para resolver la cantidad de rutas posibles en eventos secuenciales e independientes, debemos recurrir a los principios fundamentales del conteo. ¿Qué principio matemático rige la combinación de decisiones sucesivas?\n\n* El viaje se divide en tres etapas obligatorias: A a B, B a C y C a D.\n* Por cada una de las 3 opciones iniciales, se abren 4 nuevas opciones en la segunda etapa, y por cada una de estas, 2 opciones más en la etapa final.\n\nAplicando el Principio Multiplicativo, multiplicamos las alternativas de cada trayecto: 3 × 4 × 2 = 24.\n\n**Tip Élite:** Cuando un proceso requiere realizar la acción A y luego la acción B, multiplica las posibilidades. La palabra clave implícita \"y\" equivale a multiplicación en combinatoria."
+  },
+  {
+    "id": "m_cnt_9",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En un depósito no iluminado se almacenan 4 guantes diseñados exclusivamente para la mano izquierda y 4 para la mano derecha, todos del mismo color y material.",
+    "q": "¿Cuál es la cantidad mínima de guantes que deben extraerse al azar para garantizar con absoluta certeza la obtención de al menos un par funcional (uno izquierdo y uno derecho)?",
+    "opts": [
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "ans": 1,
+    "exp": "Este problema requiere aplicar el razonamiento del peor escenario posible, conocido formalmente como el Principio del Palomar (o de Dirichlet). ¿Cuál es la situación más adversa que podríamos enfrentar al extraer los guantes?\n\n* El peor de los casos sería extraer consecutivamente guantes de una sola lateralidad.\n* Podríamos sacar 1, 2, 3, e incluso 4 guantes, y que por azar absoluto todos sean izquierdos (o todos derechos).\n* Habiendo agotado todos los guantes de un lado (4 extracciones), el siguiente guante (la quinta extracción) forzosamente pertenecerá al lado opuesto.\n\nPor lo tanto, al sacar 4 + 1 = 5 guantes, aseguramos romper la mala racha y completar el par.\n\n**Tip Élite:** En problemas de garantizar o asegurar una condición extraña, asume siempre que tienes la peor suerte del universo (el caso extremo) y añade uno más al final."
+  },
+  {
+    "id": "m_per_7",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "En un certamen de innovación tecnológica de alta competitividad, 5 proyectos finalistas se disputan los premios correspondientes al primer, segundo y tercer lugar, sin posibilidad de empates.",
+    "q": "¿De cuántas formas mutuamente excluyentes es posible conformar el podio de los tres primeros lugares?",
+    "opts": [
+      "120",
+      "60",
+      "15",
+      "125"
+    ],
+    "ans": 1,
+    "exp": "Al repartir puestos específicos como primero, segundo y tercer lugar, debemos preguntarnos: ¿importa el orden en que seleccionamos a los ganadores?\n\n* Definitivamente sí. No es lo mismo ganar el oro que el bronce, por lo que estamos ante un problema de variaciones o permutaciones parciales, no de simples combinaciones.\n* Para el primer lugar, tenemos a los 5 finalistas disponibles.\n* Para el segundo lugar, quedan 4 candidatos elegibles (pues uno ya ganó el primero).\n* Para el tercer lugar, restan 3 opciones.\n\nPor el principio multiplicativo, el total de arreglos es 5 × 4 × 3 = 60.\n\n**Tip Élite:** Si el problema asigna roles específicos, jerarquías o medallas, el orden sí importa. Usa multiplicaciones descendentes para calcular permutaciones sin repetición."
+  },
+  {
+    "id": "m_geo_9",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un panel solar de geometría rectangular posee dimensiones tales que su longitud mayor abarca 12 cm y su longitud transversal es de 7 cm.",
+    "q": "¿Cuál es la longitud total del contorno perimetral de dicho panel?",
+    "opts": [
+      "38 cm",
+      "84 cm",
+      "19 cm",
+      "44 cm"
+    ],
+    "ans": 0,
+    "exp": "Para hallar el contorno total de una figura plana, necesitamos sumar la longitud de todos sus lados externos. ¿Cuáles son las propiedades estructurales de un rectángulo?\n\n* Un rectángulo está compuesto por dos pares de lados paralelos congruentes.\n* Tenemos dos lados de longitud mayor (largos) que miden 12 cm cada uno.\n* Y dos lados de longitud menor (anchos) que miden 7 cm cada uno.\n\nEl perímetro se formula como P = 2 × (largo + ancho).\nSustituyendo: P = 2 × (12 + 7) = 2 × 19 = 38 cm.\n\n**Tip Élite:** ¡No confundas área con perímetro! Si el problema pide un contorno, marco o frontera, debes sumar los lados; la multiplicación directa es el clásico distractor para calcular el área."
+  },
+  {
+    "id": "m_geo_10",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "El perímetro de una parcela rectangular mide exactamente 48 metros. Restricciones topográficas indican que la magnitud de su base es exactamente el doble de la longitud de su altura.",
+    "q": "¿Cuál es la medida exacta de la altura de la parcela?",
+    "opts": [
+      "8 m",
+      "16 m",
+      "12 m",
+      "24 m"
+    ],
+    "ans": 0,
+    "exp": "Estamos frente a un problema geométrico que requiere traducción al lenguaje algebraico. ¿Cómo relacionamos las medidas desconocidas con el dato del perímetro?\n\n* Definamos la altura (ancho) como x.\n* Por consiguiente, la base (largo) será 2x.\n* El perímetro es la suma de todos los lados: P = 2(base) + 2(altura).\n\nSustituyendo en la ecuación del perímetro:\n2(2x) + 2(x) = 48\n4x + 2x = 48\n6x = 48 -> x = 8 m.\n\n**Tip Élite:** Cuando un lado dependa matemáticamente de otro, utiliza una sola variable (por ejemplo, x y 2x) y plantea la ecuación perimetral; de este modo, resolverás la incógnita fundamental sin caer en sistemas complejos."
+  },
+  {
+    "id": "m_suc_10",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Considere la progresión geométrica modelada por la serie de valores: 100, 50, 25, ...",
+    "q": "¿Cuál es el valor estrictamente numérico que ocupa la cuarta posición en dicha sucesión?",
+    "opts": [
+      "10",
+      "12,5",
+      "15",
+      "20"
+    ],
+    "ans": 1,
+    "exp": "Para proyectar el siguiente término de una sucesión numérica, el primer paso es identificar la regla de correspondencia o patrón subyacente que vincula a cada término con su predecesor.\n\n* Al analizar la transición del primer al segundo término (100 a 50), notamos que se divide entre 2 (o se multiplica por la razón constante 1/2).\n* Esta misma regla se corrobora en el siguiente salto (50 a 25).\n\nDado que la sucesión obedece a una razón de reducción constante, el cuarto término se obtiene aplicando la misma operación geométrica: 25 / 2 = 12,5.\n\n**Tip Élite:** En progresiones decrecientes, prueba siempre primero las divisiones sucesivas o restas constantes. Hallar rápidamente la razón te garantiza proyectar cualquier término futuro con precisión."
+  },
+  {
+    "id": "m_suc_11",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice el patrón estructural de la siguiente secuencia aritmética no lineal: 1, 8, 27, 64, ...",
+    "q": "¿Cuál es la magnitud que corresponde al quinto término de la secuencia dada?",
+    "opts": [
+      "125",
+      "216",
+      "81",
+      "100"
+    ],
+    "ans": 0,
+    "exp": "A diferencia de las progresiones aritméticas donde hay una suma constante, esta secuencia crece aceleradamente. ¿De qué otra forma se relacionan estos números con su posición ordinal?\n\n* Si asignamos n como la posición del término:\n* Para n=1, el valor es 1, lo cual equivale a 1 al cubo.\n* Para n=2, el valor es 8, que es 2 al cubo.\n* Para n=3, obtenemos 27, correspondiente a 3 al cubo.\n* Para n=4, el 64 es 4 al cubo.\n\nLa secuencia describe los cubos perfectos de los números naturales. Por lo tanto, el quinto término será 5 al cubo = 5 × 5 × 5 = 125.\n\n**Tip Élite:** Memoriza las potencias elementales (cuadrados hasta el 15 y cubos hasta el 6). Reconocer series como 1, 4, 9, 16... o 1, 8, 27, 64... te ahorrará minutos vitales en el examen."
+  },
+  {
+    "id": "m_dat_9",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Una urna opaca contiene exactamente 8 esferas idénticas en masa y volumen, de las cuales 3 son de color esmeralda y el resto son carmesí. Se extrae una esfera de forma totalmente aleatoria.",
+    "q": "¿Cuál es la probabilidad matemática de que la esfera seleccionada sea de color esmeralda?",
+    "opts": [
+      "3/8",
+      "5/8",
+      "3/5",
+      "1/3"
+    ],
+    "ans": 0,
+    "exp": "El cálculo clásico de probabilidades bajo el enfoque de Laplace se basa en una proporción fundamental: casos favorables divididos entre los casos posibles. ¿Cuáles son estos valores en nuestro escenario?\n\n* Casos posibles (Espacio Muestral): Hay un total de 8 esferas en la urna, por lo que existen 8 resultados igualmente probables.\n* Casos favorables: Nos interesa extraer una esfera color esmeralda, y sabemos que hay exactamente 3 de ese tipo.\n\nAl aplicar la fórmula, la probabilidad se expresa directamente como la fracción irreductible 3/8.\n\n**Tip Élite:** La probabilidad jamás compara las partes entre sí (eso sería una razón, como 3/5). Siempre divide lo que buscas entre el universo total disponible."
+  },
+  {
+    "id": "m_dat_10",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "La media aritmética de una distribución compuesta por tres variables numéricas es estrictamente 20. Si se tiene certidumbre de que dos de estas variables asumen los valores 15 y 22.",
+    "q": "¿Cuál debe ser el valor exacto de la tercera variable para satisfacer dicha media?",
+    "opts": [
+      "23",
+      "20",
+      "18",
+      "60"
+    ],
+    "ans": 0,
+    "exp": "El concepto de media aritmética oculta una propiedad estructural sumamente útil: la suma total de los elementos siempre equivale al promedio multiplicado por el número de datos.\n\n* Si la media de los 3 números es 20, la suma de los tres elementos es forzosamente 3 × 20 = 60.\n* Ya conocemos dos de los valores: 15 y 22. Su suma parcial es 15 + 22 = 37.\n* La tercera variable (x) debe compensar la diferencia para alcanzar el total de 60.\n\nPlanteando la ecuación: 37 + x = 60, despejamos obteniendo x = 60 - 37 = 23.\n\n**Tip Élite:** Cuando te proporcionen un promedio, calcula inmediatamente la suma total de los elementos. Es el atajo más rápido y seguro para descubrir datos faltantes en estadística descriptiva."
+  },
+  {
+    "id": "m_not_7",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Considere la siguiente proposición enunciada en lenguaje natural: \"La diferencia entre una variable desconocida y nueve, multiplicada en su totalidad por dos\".",
+    "q": "¿Cuál de las siguientes expresiones algebraicas modela correctamente la estructura de la proposición?",
+    "opts": [
+      "2(x − 9)",
+      "2x − 9",
+      "x − 18",
+      "2(9 − x)"
+    ],
+    "ans": 0,
+    "exp": "La transición del lenguaje natural al algebraico requiere identificar no solo las operaciones matemáticas, sino el orden jerárquico establecido por la sintaxis de la frase.\n\n* La primera parte del enunciado indica \"la diferencia entre una variable y nueve\". Esto se traduce estrictamente como x − 9.\n* La coma ortográfica y la expresión \"multiplicada en su totalidad por dos\" imponen que toda la diferencia anterior se someta al producto.\n* Para proteger la resta y asegurar que se ejecute antes de la multiplicación, es indispensable utilizar signos de agrupación.\n\nPor tanto, el modelo algebraico correcto es 2(x − 9). Opciones como 2x − 9 cometen el error de multiplicar solo la incógnita, ignorando la integridad de la diferencia.\n\n**Tip Élite:** Los signos de puntuación en matemáticas verbales actúan como paréntesis virtuales. Frases como \"todo multiplicado por\" exigen de forma imperativa el uso de paréntesis para agrupar términos previos."
+  },
+  {
+    "id": "m_alr_7",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Considere la ecuación lineal de primer grado dada por la igualdad matemática: 4x + 3 = 2x + 19.",
+    "q": "¿Cuál es la raíz que satisface simultáneamente ambos miembros de la ecuación?",
+    "opts": [
+      "8",
+      "11",
+      "16",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "Resolver una ecuación de primer grado consiste en reagrupar los términos semejantes de manera que la incógnita quede despejada y aislada en un solo miembro de la igualdad.\n\n* Primero, transponemos los términos que contienen la variable x al lado izquierdo: el 2x pasa restando. Tendremos 4x − 2x.\n* Simultáneamente, transponemos las constantes al lado derecho: el +3 pasa restando, resultando en 19 − 3.\n* Reduciendo términos semejantes, la ecuación se simplifica a 2x = 16.\n\nFinalmente, dividimos ambos lados entre 2 para despejar x, lo que arroja la raíz x = 8.\n\n**Tip Élite:** Al transponer términos, siempre mueve la incógnita menor hacia el lado de la mayor para evitar lidiar con signos negativos molestos y reducir el margen de error."
+  },
+  {
+    "id": "m_uni_8",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un dispensador cilíndrico contiene exactamente 2 litros de solución salina. Se requiere dosificar dicha sustancia de forma equitativa en probetas con capacidad de 250 mililitros cada una.",
+    "q": "¿Cuántas probetas completas se lograrán llenar con la totalidad del contenido?",
+    "opts": [
+      "4",
+      "8",
+      "5",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "Para operar con diferentes medidas de capacidad, el principio axiomático exige estandarizar las unidades. Es matemáticamente inválido dividir litros entre mililitros de forma directa.\n\n* Sabemos por convención del sistema métrico decimal que 1 litro equivale a 1000 mililitros (ml).\n* En consecuencia, el volumen total del dispensador es de 2 × 1000 = 2000 ml.\n* Para determinar la cantidad de recipientes, dividimos el volumen total entre la capacidad de cada probeta: 2000 ÷ 250.\n\nAl efectuar la división (2000 ÷ 250 = 8), concluimos que el contenido alcanza exactamente para 8 probetas.\n\n**Tip Élite:** Memoriza las conversiones métricas básicas usando múltiplos de 10. Si el problema incluye decimales o ceros molestos al dividir, cancela los ceros finales en ambos números para agilizar el cálculo."
+  },
+  {
+    "id": "m_raz_8",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un lote compuesto por 4 dispositivos electrónicos idénticos tiene un valor comercial total de ₡5 000 en el mercado mayorista.",
+    "q": "Asumiendo un comportamiento lineal de los precios, ¿cuál será el coste exacto de adquirir un lote de 10 dispositivos idénticos?",
+    "opts": [
+      "₡12 500",
+      "₡10 000",
+      "₡15 000",
+      "₡20 000"
+    ],
+    "ans": 0,
+    "exp": "Este problema plantea una proporcionalidad directa clásica: a mayor cantidad de artículos, mayor será el costo total en la misma proporción. ¿Cuál es la forma más estructurada de resolverlo?\n\n* El método de reducción a la unidad resulta infalible. Si 4 dispositivos cuestan ₡5 000, calculamos el precio de un solo dispositivo dividiendo el costo entre la cantidad: 5000 ÷ 4 = 1250.\n* Ahora, conociendo el precio unitario (₡1 250), procedemos a calcular el lote de 10.\n* Multiplicamos el valor de la unidad por 10: 1250 × 10 = 12 500.\n\nLa adquisición del nuevo lote supondrá una inversión de ₡12 500.\n\n**Tip Élite:** Otra alternativa elegante es la regla de tres directa. O en este caso, notar que 10 es 2.5 veces 4; por lo que multiplicar 5000 × 2.5 arroja inmediatamente el mismo resultado."
+  },
+  {
+    "id": "m_raz_9",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un único ducto de inyección hídrica trabajando a flujo constante requiere de 8 horas ininterrumpidas para llenar completamente un tanque de almacenamiento industrial.",
+    "q": "Bajo idénticas condiciones de presión y caudal, ¿cuál será el tiempo de llenado si operan simultáneamente dos ductos de iguales características?",
+    "opts": [
+      "4 horas",
+      "16 horas",
+      "6 horas",
+      "12 horas"
+    ],
+    "ans": 0,
+    "exp": "A diferencia de los problemas de costos comerciales, aquí estamos frente a una proporcionalidad inversamente proporcional: a mayor número de trabajadores o ductos, el tiempo requerido para finalizar la tarea disminuye.\n\n* La relación es clara: si duplicamos el esfuerzo de trabajo (de 1 a 2 ductos), el tiempo necesario se reduce a la mitad.\n* Si 1 ducto tarda 8 horas, 2 ductos tardarán 8 ÷ 2 = 4 horas.\n\nLa suposición errónea clásica es multiplicar 8 × 2 = 16 horas, lo cual desafía la lógica (¡más grifos no pueden demorar más tiempo!).\n\n**Tip Élite:** En problemas de rendimiento y tiempo (grifos, constructores, máquinas), verifica con pura lógica: si añades fuerza de trabajo, la respuesta debe ser numéricamente menor al tiempo original."
+  },
+  {
+    "id": "v_fin_10",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Ante el alarmante índice de deserción estudiantil detectado hacia la mitad del ciclo lectivo, la institución educativa implementó un robusto programa de tutorías vespertinas gratuitas y un sistema de acompañamiento psicológico orientado a los alumnos con rezago académico.",
+    "q": "¿Cuál es el propósito fundamental que motivó a la institución a diseñar e implementar estas medidas?",
+    "opts": [
+      "Maximizar la utilización de las instalaciones durante el horario vespertino",
+      "Mitigar los altos índices de deserción académica de los estudiantes",
+      "Justificar la contratación de nuevo personal docente y administrativo",
+      "Extender artificialmente la duración de la jornada escolar tradicional"
+    ],
+    "ans": 1,
+    "exp": "Al analizar el propósito o finalidad de una acción en un texto, debemos distinguir entre los medios ejecutados y el fin último buscado por el sujeto.\n\n* La premisa inicial del texto presenta el detonante del problema: el elevado índice de deserción estudiantil a mitad de año.\n* Como respuesta, la institución implementa tutorías y acompañamiento dirigidos a alumnos con rezago.\n* Estas acciones son simplemente las herramientas o medios utilizados para atacar el problema original.\n\nPor consiguiente, la finalidad suprema de la estrategia es retener a los estudiantes, es decir, mitigar la deserción escolar. Las opciones relativas a uso de instalaciones o contratación de personal carecen de sustento en el párrafo.\n\n**Tip Élite:** La finalidad de un plan siempre responde directamente al problema inicial planteado en el texto. Pregúntate: \"¿Por qué empezó todo esto?\" para descubrir el verdadero propósito."
+  },
+  {
+    "id": "v_fin_11",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El ejecutivo mantiene como práctica sistemática archivar capturas de pantalla de cualquier consenso relevante alcanzado por mensajería instantánea, anticipándose a la contingencia de que alguna de las partes reconstruya los hechos de forma divergente en el futuro.",
+    "q": "¿Cuál es la intencionalidad principal que subyace a la práctica sistemática de almacenar dichas capturas?",
+    "opts": [
+      "Saturar progresivamente el almacenamiento local de sus dispositivos digitales",
+      "Disponer de evidencia irrefutable ante una eventual disonancia cognitiva o malentendido",
+      "Exhibir las negociaciones de alto perfil ante sus colegas corporativos",
+      "Facilitar la eliminación masiva de registros innecesarios posteriormente"
+    ],
+    "ans": 1,
+    "exp": "El texto describe una acción preventiva del individuo y explica de manera explícita la motivación detrás de dicho comportamiento profiláctico.\n\n* La frase \"anticipándose a la contingencia de que alguna de las partes reconstruya los hechos de forma divergente\" es la clave de bóveda.\n* Esto implica una preocupación clara por posibles contradicciones, alteraciones de la memoria o disputas futuras sobre lo pactado.\n* Guardar las capturas cumple el rol de resguardo probatorio.\n\nPor ende, el objetivo es poseer un respaldo documental que sirva como evidencia en caso de un malentendido. Las demás alternativas distorsionan absurdamente el texto o introducen motivos ajenos como la presunción.\n\n**Tip Élite:** Cuando el texto emplea conectores condicionales preventivos, la cláusula que sigue revela de inmediato la finalidad o motivación de la acción principal."
+  },
+  {
+    "id": "v_com_10",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Frente al fracaso inminente de un proyecto corporativo, en lugar de iniciar una caza de brujas para asignar responsabilidades, el gerente convoca a su equipo de trabajo con el fin exclusivo de reestructurar estrategias y diseñar soluciones viables.",
+    "q": "¿Qué modelo de comportamiento exhibe predominantemente el gerente ante la adversidad descrita?",
+    "opts": [
+      "Una tendencia punitiva y recriminatoria hacia sus subalternos",
+      "Un enfoque proactivo y constructivo para superar las crisis",
+      "Un patrón de evasión de responsabilidades abandonando el proyecto",
+      "Una actitud pasiva marcada por el silencio y la resignación"
+    ],
+    "ans": 1,
+    "exp": "Para determinar el comportamiento del personaje, debemos analizar las acciones que realiza en contraste con las que deliberadamente evita llevar a cabo durante una situación crítica.\n\n* El texto indica claramente qué es lo que no hace: en lugar de iniciar una caza de brujas (buscar culpables).\n* A continuación, detalla lo que sí hace: convoca al equipo y diseña soluciones viables.\n* Esta inclinación por reparar el problema y buscar mejoras, en vez de enfocarse en los castigos, define a un líder orientado al desarrollo.\n\nPor lo tanto, la actitud se clasifica como constructiva y proactiva. Cualquier alternativa que sugiera castigo, huida o pasividad contradice directamente las acciones afirmativas relatadas en el párrafo.\n\n**Tip Élite:** En preguntas de inferencia de personalidad, la estructura \"en vez de X, hace Y\" subraya el contraste. Identificar Y te dará el adjetivo preciso que define al personaje."
+  },
+  {
+    "id": "v_com_11",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Ante el colapso operativo de sus iniciativas, Lucía omite cualquier ejercicio de victimización o recriminación: diagnostica meticulosamente los fallos estructurales, reconfigura su planificación estratégica y reanuda la ejecución con un ímpetu inalterable.",
+    "q": "¿Cuál de los siguientes términos conceptualiza con mayor precisión el paradigma de afrontamiento empleado por Lucía?",
+    "opts": [
+      "Resignación estoica ante el fracaso",
+      "Resiliencia y capacidad adaptativa",
+      "Indiferencia frente a los resultados",
+      "Perfeccionismo obsesivo y paralizante"
+    ],
+    "ans": 1,
+    "exp": "El párrafo delinea un perfil psicológico muy específico mediante la descripción de la reacción del sujeto ante un escenario de frustración evidente.\n\n* Lucía no se victimiza, lo que descarta la pasividad o la resignación.\n* Al diagnosticar y reconfigurar, demuestra una voluntad de mejora que descarta por completo la indiferencia.\n* El hecho de volver a intentarlo con ímpetu inalterable tras el fracaso no se alinea con el perfeccionismo obsesivo (el cual suele paralizar ante el error).\n\nLa capacidad de absorber el golpe del fracaso, extraer un aprendizaje estructural y recuperar la energía inicial para un nuevo intento es la definición académica fundamental de la resiliencia.\n\n**Tip Élite:** Conoce a fondo la semántica de la palabra resiliencia. Es un concepto recurrente en los exámenes estandarizados modernos en la sección de aptitud verbal."
+  },
+  {
+    "id": "v_cau_13",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Debido a un descuido momentáneo, la copa de helado artesanal quedó expuesta sobre la encimera de la cocina durante un sofocante mediodía de verano. Transcurrida una hora, el postre había transmutado en un estanque líquido de almíbar.",
+    "q": "¿Cuál fue el agente causal primario que provocó el cambio de estado físico del postre?",
+    "opts": [
+      "Las bajas temperaturas residuales de la nevera",
+      "La prolongada exposición térmica fuera del ambiente refrigerado",
+      "La alta concentración de glucosa en el sabor del postre",
+      "La conductividad térmica del material de la encimera"
+    ],
+    "ans": 1,
+    "exp": "Este ejercicio exige aislar el agente causal directo de una transformación física descrita narrativamente en el enunciado.\n\n* El texto destaca circunstancias medioambientales particulares: la exposición al ambiente durante un sofocante mediodía de verano.\n* Científica y lógicamente, la transición de sólido a líquido de un helado ocurre al romper la cadena de frío y someterlo a temperaturas elevadas.\n* El texto no hace énfasis en las propiedades intrínsecas de la mesa o los ingredientes del postre como factores detonantes.\n\nPor tanto, el causante primordial de que el helado se derritiera fue el calor ambiental debido a la exposición prolongada fuera de un sistema de refrigeración.\n\n**Tip Élite:** Cuando busques la causa de un evento físico en comprensión lectora, aíslate de distractores circunstanciales (como el sabor o el tipo de mesa) y apégate al factor que desencadena la acción descrita."
+  },
+  {
+    "id": "v_cau_14",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La consolidación del litoral como un epicentro de turismo internacional catalizó la apertura de infraestructuras hoteleras, restaurantes y boutiques autóctonas. En consecuencia, numerosos residentes locales, históricamente forzados al éxodo laboral, lograron insertarse productivamente en su propia región.",
+    "q": "¿Cuál es una consecuencia económica directa derivada del auge turístico, según se infiere del fragmento?",
+    "opts": [
+      "Se incrementó drásticamente el éxodo de los habitantes nativos",
+      "Se generó una vigorosa oferta de empleo dentro de la comunidad local",
+      "Se produjo el colapso sistemático de los pequeños emprendimientos",
+      "Se registró un declive sostenido en la afluencia de visitantes extranjeros"
+    ],
+    "ans": 1,
+    "exp": "En las relaciones de causa-efecto textuales, es imperativo distinguir entre el catalizador (el boom turístico) y el impacto social o económico que éste desencadena en la población descrita.\n\n* El texto menciona que, antes del turismo, los habitantes enfrentaban un éxodo laboral (emigración forzada por falta de trabajo).\n* El cambio ocurre con la apertura de nuevos comercios turísticos.\n* El impacto explícito es que estos mismos pobladores lograron insertarse productivamente en su propia región.\n\nEste cambio representa inequívocamente la creación y retención de empleos locales. Las alternativas que mencionan el quiebre de negocios o aumento de la emigración contradicen diametralmente el sentido optimista del párrafo original.\n\n**Tip Élite:** Las secuencias de causa y consecuencia a menudo se marcan con conectores lógicos (como \"en consecuencia\" o \"por ende\"). Subraya la cláusula que sigue a estos conectores; ahí suele residir la respuesta exacta."
+  },
+  {
+    "id": "v_cau_15",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Un fenómeno de aridez climática extraordinariamente prolongado erradicó por completo la cobertura de forraje en las llanuras; en consecuencia directa, las manadas de bovinos sufrieron una privación nutricional extrema.",
+    "q": "¿Cuál constituye la génesis causal primaria de la crisis alimentaria experimentada por el ganado?",
+    "opts": [
+      "Un periodo anómalo de precipitaciones excesivas",
+      "La severa aridez climática que devastó el forraje",
+      "La progresiva despoblación de las manadas bovinas",
+      "Una drástica caída térmica en el ecosistema"
+    ],
+    "ans": 1,
+    "exp": "Estamos analizando una cadena causal de tres eslabones. Para encontrar la causa primaria o génesis, debemos rastrear la secuencia de eventos hasta su origen.\n\n* Efecto final (Tercer eslabón): Las manadas de bovinos sufrieron privación nutricional.\n* Causa inmediata (Segundo eslabón): La erradicación de la cobertura de forraje.\n* Causa raíz (Primer eslabón): El fenómeno de aridez climática (sequía prolongada).\n\nDado que el segundo eslabón es solo una consecuencia directa del primero, la génesis causal responsable de toda la crisis es indiscutiblemente la sequía. Opciones como precipitaciones excesivas o caída térmica son invenciones sin fundamento textual.\n\n**Tip Élite:** En el análisis de una cadena de eventos, distingue entre causa inmediata y causa raíz. Si la pregunta busca la génesis, siempre retrocede hasta el factor inicial que desató el efecto dominó."
+  },
+  {
+    "id": "v_sim_10",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "La adición de dos dígitos elementales representa un proceso cognitivo lineal y directo; en marcada antítesis, equilibrar la política fiscal y el presupuesto de una nación exige la orquestación simultánea de miles de variables macroeconómicas y deliberaciones estratégicas.",
+    "q": "¿Qué atributo fundamental diferencia la estructuración del presupuesto nacional frente a una simple adición aritmética?",
+    "opts": [
+      "Un nivel de simplicidad metodológica superior",
+      "Una complejidad analítica y multidimensional sustancialmente mayor",
+      "Una naturaleza histórica y cronológica mucho más antigua",
+      "Una ejecución operativa de menor costo financiero"
+    ],
+    "ans": 1,
+    "exp": "El fragmento se construye bajo una estructura retórica de contraste, oponiendo dos actividades de naturalezas radicalmente distintas mediante la frase \"en marcada antítesis\".\n\n* Por un lado, la suma de dígitos se cataloga como un proceso lineal y directo (sencillo).\n* Por otro, el presupuesto nacional requiere orquestar miles de variables macroeconómicas y deliberaciones estratégicas.\n* Esta enorme multiplicidad de factores en el presupuesto encarna el concepto puro de lo complejo frente a lo simple.\n\nNo hay en el texto ninguna mención al costo financiero, ni a la cronología de ambas acciones. La distinción es pura y exclusivamente sobre su grado de dificultad y estructura.\n\n**Tip Élite:** Las comparaciones textuales rara vez abarcan más de un eje temático. Si el texto compara lo fácil con lo difícil (variables), no te dejes engañar por alternativas que introducen variables económicas o temporales no mencionadas."
+  },
+  {
+    "id": "v_sim_11",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El ensamblaje de un triciclo infantil se limita a unas cuantas piezas prefabricadas que se acoplan por simple presión mecánica. Inversamente, un vehículo automotor de última generación constituye un sistema intrincado que integra sinérgicamente miles de sensores electrónicos, circuitos y piezas mecánicas.",
+    "q": "¿Qué cualidad intrínseca caracteriza al vehículo automotor en contraste con el triciclo infantil?",
+    "opts": [
+      "Su notable minimalismo y sencillez estructural",
+      "Su elevada complejidad y dependencia sistémica",
+      "Su depreciación acelerada en el mercado secundario",
+      "Su carácter arcaico frente a las nuevas tecnologías"
+    ],
+    "ans": 1,
+    "exp": "Este párrafo utiliza el paralelismo para ilustrar la disparidad tecnológica entre dos medios de transporte con propósitos similares pero diseños abismalmente diferentes.\n\n* El triciclo se define por su simple presión y escasas piezas (simplicidad extrema).\n* El automóvil se describe con adjetivos y frases de alto calibre: sistema intrincado, integra sinérgicamente, miles de sensores.\n* La multiplicidad de partes interdependientes que deben funcionar en red es el pilar de la complejidad moderna.\n\nPor consiguiente, el vehículo automotor resalta por su elevada complejidad estructural, rechazando por completo nociones de minimalismo, o variables financieras y temporales que el autor ni siquiera rozó.\n\n**Tip Élite:** La palabra \"intrincado\" (así como entramado, sinérgico o red) es un indicador léxico directo de complejidad en las pruebas de aptitud verbal."
+  },
+  {
+    "id": "v_con_12",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Al tomar consciencia de que su directriz había repercutido negativamente en el desempeño colectivo, el coordinador expuso la situación en asamblea, internalizó públicamente su equivocación y extendió disculpas formales sin escudarse en subterfugios.",
+    "q": "¿Qué rasgo de carácter define con mayor precisión la conducta asumida por el coordinador?",
+    "opts": [
+      "Autocrítica e integridad profesional",
+      "Cobardía y temor al escarnio público",
+      "Soberbia y complejo de superioridad",
+      "Indiferencia ante las métricas colectivas"
+    ],
+    "ans": 0,
+    "exp": "El perfil psicológico del coordinador se dibuja a través de sus acciones frente a una crisis generada por su propio fallo de criterio. Analicemos sus reacciones:\n\n* Exponer el error de forma pública y voluntaria requiere valentía, destruyendo la tesis de la cobardía.\n* Asumir el error y ofrecer disculpas es diametralmente opuesto a la soberbia (que implicaría culpar a otros) o a la indiferencia (que implicaría ignorar el daño).\n* No usar subterfugios (excusas) demuestra un ejercicio maduro de responsabilidad personal.\n\nEl concepto de examinar y reconocer los fallos propios de manera constructiva y honesta se define lingüísticamente como autocrítica.\n\n**Tip Élite:** Analizar la reacción de un líder ante el fracaso es un tema literario clásico. Asumir sin excusas es siempre un indicador de honestidad, integridad o autocrítica; descarta cualquier opción que infiera debilidad moral."
+  },
+  {
+    "id": "v_con_13",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Careciendo de todo apremio externo y sin percibir remuneración económica alguna, la especialista consagra sus horas de descanso a la rehabilitación clínica de fauna callejera, motivada exclusivamente por una profunda empatía hacia el sufrimiento ajeno.",
+    "q": "¿Cuál de los siguientes términos éticos encarna fielmente la disposición moral de la especialista?",
+    "opts": [
+      "Altruismo desinteresado",
+      "Obligación contractual",
+      "Interés lucrativo encubierto",
+      "Vanidad y deseo de figuración"
+    ],
+    "ans": 0,
+    "exp": "El fragmento se esmera en descartar múltiples motivaciones egoístas para realzar la pureza ética de la acción descrita.\n\n* \"Careciendo de apremio\" elimina la noción de obligación o coacción externa.\n* \"Sin percibir remuneración\" neutraliza la posibilidad del interés financiero o lucrativo.\n* La frase \"motivada exclusivamente por empatía\" choca con cualquier hipótesis de vanidad o búsqueda de prestigio social.\n\nLa dedicación al bienestar de terceros sin esperar contraprestación alguna, ni material ni simbólica, constituye la esencia filosófica del altruismo.\n\n**Tip Élite:** En los textos morales, las acciones descritas con adverbios exclusorios (exclusivamente, solo, sin) sirven para aislar la virtud pura. El altruismo siempre se define por la ausencia total de beneficio personal."
+  },
+  {
+    "id": "v_ord_10",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El recinto transicionó de exhibir prendas dispersas aleatoriamente sobre el mobiliario y el suelo, a ostentar una configuración donde cada tejido yacía meticulosamente plegado y clasificado en compartimentos debidamente etiquetados.",
+    "q": "¿Qué transformación espacial y organizativa se materializó en el recinto?",
+    "opts": [
+      "Una degradación del orden hacia el caos entrópico",
+      "Una evolución manifiesta del desorden hacia un sistema ordenado",
+      "Una contracción volumétrica del espacio disponible",
+      "Una alteración radical en la paleta cromática del entorno"
+    ],
+    "ans": 1,
+    "exp": "El texto describe dos estados temporales contrapuestos de un mismo espacio físico, delineando una clara trayectoria de transformación.\n\n* El estado inicial presenta prendas dispersas aleatoriamente sobre múltiples superficies, lo cual es la definición operativa del caos o desorden.\n* El estado final muestra elementos meticulosamente plegados y clasificados en compartimentos, atributos inconfundibles de la organización y el método.\n\nEl flujo de los acontecimientos indica un rescate del espacio: se pasa del caos a la estructura, es decir, del desorden al orden. Las opciones referentes al volumen o color carecen de asidero en la descripción.\n\n**Tip Élite:** Presta atención a los verbos y adverbios de transición (transicionó de... a...). El primer estado marca tu punto de partida lógico y el segundo tu punto de llegada. La respuesta siempre debe reflejar esa misma direccionalidad temporal."
+  },
+  {
+    "id": "v_ord_11",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "Históricamente, el almacén operaba bajo una entropía total: embalajes anónimos apilados precariamente e insumos caducados entremezclados con lotes recientes. En la actualidad, el inventario goza de una taxonomía estricta, exhibiendo códigos de barras y fechas de expiración patentes.",
+    "q": "¿Qué cambio de paradigma logístico experimentó el almacén descrito?",
+    "opts": [
+      "Un deterioro progresivo desde un sistema prístino hacia el descontrol",
+      "Una reestructuración absoluta desde el caos hacia la sistematización ordenada",
+      "Una merma significativa en la capacidad volumétrica de almacenamiento",
+      "Un vaciamiento sistemático que dejó las instalaciones inoperantes"
+    ],
+    "ans": 1,
+    "exp": "El párrafo contrasta dos épocas de gestión en un mismo centro de acopio, enfatizando el antes y el después mediante descripciones vividas.\n\n* El escenario pretérito se describe con sustantivos como entropía total, embalajes anónimos y mezcla indebida; signos ineludibles de desorganización severa.\n* El escenario presente resalta términos como taxonomía estricta, códigos y patentes; elementos fundamentales del control y la eficiencia.\n\nLa narrativa es clara: se superó una etapa de caos logístico para alcanzar un estado de orden y control absoluto. Las alternativas relacionadas a cambios de tamaño o vaciamiento total constituyen inferencias inválidas e injustificadas.\n\n**Tip Élite:** En textos de contrastes temporales (antes/hoy, solía/ahora), la respuesta correcta siempre resume la esencia del contraste (caos vs. estructura) y nunca se enfoca en detalles periféricos o imaginarios."
+  },
+  {
+    "id": "v_tmp_10",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "El ciclo fenológico agrícola inicia con la siembra del germen en el surco, seguido de una hidratación sistemática diaria; subsecuentemente emerge el brote vegetativo y, como culminación ineludible, se ejecuta la recolección del fruto.",
+    "q": "De acuerdo con la cronología del ciclo descrito, ¿qué evento antecede inmediatamente a la fase de recolección?",
+    "opts": [
+      "La siembra inicial del germen en el sustrato",
+      "La emergencia visible del brote vegetativo",
+      "La hidratación sistemática de la parcela",
+      "La comercialización de las semillas germinadas"
+    ],
+    "ans": 1,
+    "exp": "Este ítem evalúa la capacidad de comprender secuencias temporales lineales y localizar hitos específicos dentro de una línea de tiempo narrativa. Reconstruyamos el proceso en orden:\n\n* Paso 1: Siembra del germen.\n* Paso 2: Hidratación sistemática.\n* Paso 3: Emergencia del brote vegetativo.\n* Paso 4 (Final): Recolección del fruto (cosecha).\n\nLa pregunta requiere identificar qué ocurre inmediatamente antes de la recolección (Paso 4). Observando nuestra secuencia reconstruida, la fase que precede al final de forma directa es la emergencia del brote vegetativo (Paso 3).\n\n**Tip Élite:** El adverbio \"inmediatamente\" (o \"justo antes\") es traicionero. Descarta acciones verdaderas pero distantes en el tiempo y concéntrate únicamente en el eslabón cronológico previo al evento mencionado."
+  },
+  {
+    "id": "v_tmp_11",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "El protocolo de ensamblaje industrial dicta que, en primera instancia, se efectúe el acopio de la materia prima; en la etapa intermedia se proceda con el montaje del armazón esquelético y, en la fase terminal, se aplique el recubrimiento cromático.",
+    "q": "Basándose estrictamente en las normativas del protocolo, ¿qué acción es contigua y posterior al acopio de la materia prima?",
+    "opts": [
+      "La aplicación del recubrimiento cromático",
+      "El montaje del armazón esquelético",
+      "El reabastecimiento continuo de insumos periféricos",
+      "La higienización del área de trabajo"
+    ],
+    "ans": 1,
+    "exp": "Al igual que en el análisis de ciclos naturales, los protocolos técnicos requieren un seguimiento secuencial estricto donde cada fase es dependiente de la anterior.\n\n* Fase de Inicio: Acopio de la materia prima (reunir materiales).\n* Fase Intermedia: Montaje del armazón esquelético (armar la estructura).\n* Fase Terminal: Recubrimiento cromático (pintar).\n\nLa interrogante solicita la etapa que ocurre de manera contigua y posterior (es decir, inmediatamente después) al acopio de materiales. Al revisar el flujograma, resulta evidente que la acción subsecuent es el montaje del armazón estructural.\n\n**Tip Élite:** Acostúmbrate al léxico formal de los exámenes (como \"contigua y posterior\", que significa \"justo después\"). A veces la dificultad no radica en la secuencia lógica, sino en descifrar el vocabulario de la propia pregunta."
+  },
+  {
+    "id": "v_ese_10",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Si admitimos que la ontología de una carta geográfica radica en su capacidad para representar un territorio a escala, inferimos que la esencia de un artefacto subyace en su utilidad teleológica, con total independencia de su estética superficial.",
+    "q": "Bajo este riguroso marco de análisis funcionalista, ¿cuál constituiría la esencia innegociable de un mecanismo de relojería?",
+    "opts": [
+      "Trazar coordenadas geoespaciales de referencia",
+      "Cuantificar y registrar el discurrir del tiempo",
+      "Registrar las fluctuaciones térmicas del ambiente",
+      "Determinar la masa inercial de un cuerpo"
+    ],
+    "ans": 1,
+    "exp": "El texto plantea un modelo de pensamiento filosófico: la esencia de una herramienta no es cómo se ve, sino para qué sirve (su utilidad teleológica o finalidad última).\n\n* Se nos invita a aplicar esta misma lógica a un objeto distinto: el mecanismo de relojería.\n* ¿Para qué fue inventado el reloj? Su única y verdadera razón de existir es medir el tiempo.\n* Las opciones que sugieren coordenadas (mapa), temperatura (termómetro) o masa (balanza) corresponden a las esencias de otras herramientas, no del reloj.\n\nPor lo tanto, bajo el prisma de la utilidad innegociable, cuantificar el paso del tiempo define universalmente a todo mecanismo de relojería.\n\n**Tip Élite:** Las preguntas de analogías filosóficas (Si A se define por X, ¿por qué se define B?) requieren que aísles la propiedad principal del primer ejemplo y busques esa misma propiedad en el segundo, ignorando distractores físicos."
+  },
+  {
+    "id": "v_ese_11",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Un embrión botánico puede exhibir dimensiones microscópicas o colosales, y presentar superficies pulidas o ásperas; sin embargo, su condición *sine qua non* reside en atesorar en su núcleo el potencial biológico inactivo para germinar una nueva entidad vegetal.",
+    "q": "¿Qué propiedad conforma el rasgo ontológico insustituible del embrión botánico según el autor?",
+    "opts": [
+      "Sus dimensiones relativas en el ecosistema",
+      "Su inherente potencial para generar nueva vida vegetal",
+      "Su morfología táctil y adaptación de la corteza",
+      "Su pigmentación como medio de camuflaje natural"
+    ],
+    "ans": 1,
+    "exp": "El párrafo establece un claro contraste entre los atributos accidentales (características que pueden variar sin que el objeto pierda su identidad) y su esencia verdadera.\n\n* Las menciones al tamaño y la textura son explícitamente clasificadas como variables no definitivas (puede exhibir... o...).\n* El punto de inflexión surge con el conector \"sin embargo\", que introduce el requisito fundamental: albergar el potencial para germinar y crear una nueva entidad.\n* Esta capacidad regenerativa es la condición *sine qua non*.\n\nErgo, su rasgo ontológico insustituible es su potencial generador. Colores, tamaños y texturas son simples trivialidades accidentales en la existencia de la semilla.\n\n**Tip Élite:** La frase latina *sine qua non* (sin la cual no) es sinónimo absoluto de esencia o característica indispensable. Cuando te pregunten por el núcleo de algo, descarta toda característica estética o variable."
+  },
+  {
+    "id": "v_per_11",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Una etiqueta de precio idéntica, que frente al escrutinio de un ciudadano de economía precaria se vislumbra como prohibitiva, se manifiesta como una inversión perfectamente holgada desde el análisis financiero de un inversor de alto patrimonio.",
+    "q": "¿Qué tesis sociológica fundamental se infiere implícitamente de la premisa anterior?",
+    "opts": [
+      "La inflación otorga a los precios una naturaleza objetivamente inalcanzable",
+      "La valoración de un costo económico es inherentemente relativa al poder adquisitivo del sujeto",
+      "La totalidad del estrato social carece de solvencia para afrontar dichos costos",
+      "Las políticas fiscales exigen una estandarización obligatoria de precios al consumidor"
+    ],
+    "ans": 1,
+    "exp": "El enunciado se articula sobre una situación de dualidad perceptiva frente a un hecho matemático concreto (el precio numérico de un producto).\n\n* El objeto (el precio) permanece constante e inalterable.\n* Sin embargo, los dos actores descritos emiten juicios de valor radicalmente disonantes: prohibitiva vs holgada.\n* Esta discrepancia no surge de la etiqueta en sí, sino de la plataforma económica desde la cual cada sujeto observa el fenómeno.\n\nLa tesis extraída es que conceptos como caro o barato carecen de valor absoluto en la sociología del consumo; su magnitud es totalmente relativa a la realidad financiera del comprador.\n\n**Tip Élite:** Frente a textos que describen la relatividad (donde X significa cosas distintas para distintas personas), la respuesta correcta siempre incluirá palabras como depende, relativo, subjetivo o perspectiva."
+  },
+  {
+    "id": "v_per_12",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Un evento deportivo objetivo —la anotación agónica en el tiempo de descuento— detona una catarsis de euforia desmedida en la bancada local, al tiempo que precipita a las gradas visitantes en un profundo abismo de desolación psicológica.",
+    "q": "¿Qué reflexión psicosocial se cristaliza en la escena descrita?",
+    "opts": [
+      "El fanatismo extremo nubla inevitablemente la capacidad de análisis racional",
+      "Un mismo suceso objetivo suscita respuestas emocionales polarizadas en función de las lealtades previas",
+      "El antagonismo competitivo desemboca invariablemente en agresiones sistémicas",
+      "El marcador final de los encuentros deportivos carece de trascendencia genuina"
+    ],
+    "ans": 1,
+    "exp": "Este párrafo es una elegante ilustración del concepto de sesgo de afiliación, donde el impacto emocional de un estímulo es filtrado por la identidad grupal del individuo.\n\n* El estímulo es singular y objetivo: una anotación en el tiempo de descuento.\n* Las reacciones son dicotómicas y extremas: euforia por un lado, desolación por el otro.\n* No existe mención alguna en el texto sobre pérdida de racionalidad (aunque sea una opinión popular), ni sobre agresiones violentas o apatía colectiva.\n\nLo que realmente cristaliza en el relato es cómo las lealtades o afiliaciones preexistentes de los espectadores moldean, hasta el punto de la polarización, la manera en que procesan emocionalmente el mismo suceso.\n\n**Tip Élite:** Nunca selecciones alternativas que asuman conflictos violentos o juicios morales negativos a menos que el texto los mencione literalmente. Limítate a evaluar lo descrito."
+  },
+  {
+    "id": "v_imp_15",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El oficinista irrumpió en el vestíbulo corporativo portando un paraguas que destilaba copiosamente; su calzado formal emitía un sonido acuoso al caminar y tras sus pasos iba quedando una evidente estela de humedad sobre el granito.",
+    "q": "¿Qué conclusión lógica puede derivarse inexorablemente del panorama anterior, aun sin ser declarada explícitamente?",
+    "opts": [
+      "El ambiente exterior padecía de una ola de calor bochornosa",
+      "El entorno exterior se encontraba bajo intensas precipitaciones atmosféricas",
+      "El individuo acababa de emerger de una sesión de entrenamiento acuático",
+      "El ingreso del sujeto se produjo en las gélidas horas de la madrugada"
+    ],
+    "ans": 1,
+    "exp": "La comprensión inferencial exige armar un rompecabezas lógico a partir de las pistas o indicios físicos que el autor siembra en el relato, sin recurrir a suposiciones descabelladas.\n\n* Analicemos las pruebas: un paraguas que destila copiosamente, un calzado que emite sonido acuoso y una estela de humedad.\n* Estas condiciones son los efectos colaterales clásicos y universales de haber estado expuesto a la lluvia sin el resguardo adecuado.\n* Inferir que el individuo venía de nadar no justifica el uso de un paraguas ni el calzado formal. Inferir la temperatura o la hora es arbitrario al carecer de pruebas textuales.\n\nPor eliminación y sentido común, la única deducción sólida e ineludible es que, fuera del edificio corporativo, estaba lloviendo de manera intensa.\n\n**Tip Élite:** La inferencia correcta actúa como la pieza que le da sentido unificador a todos los detalles del texto. Si una opción explica la mitad del texto pero contradice un solo detalle, deséchala."
+  },
+  {
+    "id": "v_imp_16",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A partir de la destitución del antiguo director técnico y la instauración del nuevo estratega, la plantilla ha consolidado una racha ininterrumpida de resultados invictos en la liga.",
+    "q": "¿Cuál es la premisa implícita subyacente que legitima la afirmación del texto?",
+    "opts": [
+      "La plantilla padecía de una mediocridad crónica e irresoluble",
+      "El relevo en la dirección táctica supuso un salto cualitativo favorable para el desempeño del club",
+      "La escuadra ha cesado temporalmente su participación en competencias oficiales",
+      "El estratega cesado poseía credenciales superiores a las del actual dirigente"
+    ],
+    "ans": 1,
+    "exp": "Una premisa implícita es una idea que, si bien no se imprime con palabras directas, constituye la base lógica que permite que el texto cobre sentido y transmita su mensaje central.\n\n* El enunciado conecta temporal y causalmente dos eventos: la llegada de un nuevo estratega y el surgimiento de resultados invictos.\n* El hecho de que destaquen este cambio como el punto de inflexión para dejar de perder significa que atribuyen el éxito reciente a la nueva dirección táctica.\n* Las opciones que sugieren mediocridad eterna, abandono de la liga o superioridad del técnico anterior son, en el mejor de los casos, contradictorias con el espíritu triunfal de la frase.\n\nLa lectura subyacente es clara: se asume de manera tácita que el nuevo entrenador implementó mejoras que elevaron el rendimiento de los jugadores de forma favorable.\n\n**Tip Élite:** Detectar un punto de quiebre en una historia (Desde que..., A partir de...) señala casi siempre una relación causal implícita. Lo nuevo trajo como consecuencia el estado actual de las cosas."
+  },
+  {
+    "id": "v_imp_17",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El comensal solicitó el comprobante de pago en el instante exacto en que agotó su platillo principal, prescindiendo deliberadamente de la tradicional cortesía de aguardar por la oferta de repostería.",
+    "q": "¿Qué inferencia psicosocial se deduce con mayor grado de probabilidad sobre el comportamiento del comensal?",
+    "opts": [
+      "Albergaba un apetito insaciable que el restaurante no logró suplir",
+      "Se encontraba bajo un fuerte apremio temporal que lo forzaba a retirarse con urgencia",
+      "Mantenía un desdén profundo hacia la calidad culinaria del establecimiento",
+      "Se abstuvo por completo de ingerir los alimentos servidos"
+    ],
+    "ans": 1,
+    "exp": "Las acciones no verbales y las transgresiones de normas sociales menores actúan como potentes reveladores de estados de ánimo o necesidades latentes.\n\n* Pedir la cuenta en el instante exacto muestra una falta de deseo por prolongar la estancia.\n* Prescindir de la repostería (no pedir postre) sacrifica la culminación clásica de una comida.\n* Aunque el odio al lugar podría ser posible, la urgencia de salir apresuradamente encaja de forma más directa y universal con un individuo que simplemente no tiene tiempo que perder.\n* Negar que probó la comida contradice que agotó su platillo.\n\nLa prisa o apremio temporal es la causa más razonable y justificada para saltarse los protocolos habituales de sobremesa en un restaurante.\n\n**Tip Élite:** Las preguntas que solicitan deducciones con mayor grado de probabilidad buscan la explicación más racional y cotidiana, no la teoría de conspiración. Evita inferir odio o dramas emocionales sin pruebas de peso."
+  },
+  {
+    "id": "v_pri_13",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La clasificación responsable de residuos sólidos, el uso preferencial de los sistemas de movilidad colectiva y la optimización del consumo eléctrico constituyen hábitos rutinarios fundamentales que contribuyen activamente a la preservación del equilibrio biosférico.",
+    "q": "¿Cuál de las siguientes proposiciones encapsula con mayor precisión el eje temático del fragmento?",
+    "opts": [
+      "La ineficiencia del transporte individual frente a los esquemas de movilidad urbana",
+      "La adopción de microhábitos cotidianos incide positivamente en la salvaguarda medioambiental",
+      "La excesiva dificultad operativa que desincentiva los procesos de reciclaje",
+      "El inminente colapso económico derivado del encarecimiento de la energía fósil"
+    ],
+    "ans": 1,
+    "exp": "El proceso para identificar la idea principal consiste en separar las ideas secundarias (ejemplos) de la afirmación global que las aglutina a todas como un paraguas conceptual.\n\n* ¿De qué habla el texto? Menciona tres acciones: clasificar residuos, movilidad colectiva y ahorro eléctrico. Estos son simples ejemplos (microhábitos).\n* ¿Para qué sirven estos ejemplos? El texto indica que son hábitos rutinarios fundamentales que logran un objetivo mayor: la preservación del equilibrio biosférico.\n* Las opciones que abordan problemas de transporte, dificultades del reciclaje o costos de la energía toman un solo ejemplo y lo exageran con ideas que el autor nunca redactó.\n\nLa proposición que agrupa correctamente la lista de ejemplos bajo su propósito final es la valoración positiva de los pequeños hábitos en la salvaguarda del ecosistema.\n\n**Tip Élite:** La idea principal jamás será uno de los ejemplos aislados, y tampoco debe incluir opiniones que, aunque parezcan ciertas, no estén escritas literalmente en el pasaje."
+  },
+  {
+    "id": "v_pri_14",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La calidad del ciclo circadiano, el balance de las pautas nutricionales y la eficacia en los mecanismos de regulación de la ansiedad convergen, cada cual desde su propio mecanismo neurobiológico, para condicionar el equilibrio psíquico y emocional del individuo.",
+    "q": "¿Cuál es la premisa nuclear que fundamenta la afirmación expuesta en el párrafo?",
+    "opts": [
+      "La ansiedad patológica ejerce un efecto corrosivo e irreversible sobre la psique",
+      "Una pluralidad de variables biopsicosociales inciden en la estabilidad mental de las personas",
+      "La expansión de los periodos de descanso es el tratamiento supremo contra el estrés",
+      "El rigor en las restricciones dietéticas constituye la base única de la cordura"
+    ],
+    "ans": 1,
+    "exp": "Este ejercicio requiere dominar la técnica de generalización semántica: transformar detalles específicos en conceptos amplios sin alterar su núcleo de verdad.\n\n* El autor enumera tres vectores: sueño (ciclo circadiano), alimentación (pautas nutricionales) y estrés (ansiedad). Estos tres vectores representan una pluralidad de variables.\n* Luego afirma que estos vectores convergen para condicionar el equilibrio psíquico (estabilidad mental).\n* Seleccionar el estrés, el sueño o la dieta de forma individual como idea principal es cometer un error de reducción, mutilando el sentido integral del texto.\n\nLa premisa nuclear agrupa sabiamente los componentes, afirmando de manera holística que la salud mental es multifactorial y depende del equilibrio de diversas rutinas vitales.\n\n**Tip Élite:** Cuando un texto presenta una enumeración equilibrada, la idea principal siempre usará sustantivos colectivos (diversos factores, múltiples variables) en vez de casarse con una sola letra."
+  },
+  {
+    "id": "v_pri_15",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Más allá de su sonoridad en las festividades folclóricas, la marimba funciona como un conducto ancestral que preserva el patrimonio intangible intergeneracional, consolidándose así como el emblema identitario innegable de la región mesoamericana.",
+    "q": "¿Cuál constituye la tesis central del autor en relación con el instrumento descrito?",
+    "opts": [
+      "El rol estrictamente amenizador de la marimba en los festejos patronales populares",
+      "La trascendencia histórica, cultural y simbólica que ostenta la marimba en la región",
+      "Las propiedades organológicas y de afinación de los xilófonos de madera autóctona",
+      "El acelerado deterioro y pérdida de vigencia de las costumbres musicales indígenas"
+    ],
+    "ans": 1,
+    "exp": "La tesis central es la opinión o valoración suprema que el autor desea grabar en la mente del lector tras leer su disertación.\n\n* El texto menciona su sonoridad festiva, pero el conector \"Más allá de\" señala que esta es solo una introducción superficial.\n* La verdadera carga argumentativa recae en llamarla conducto ancestral, preservadora del patrimonio intangible y emblema identitario.\n* Estas definiciones elevan al instrumento de la categoría de simple generador de ruido a la de patrimonio vivo.\n* Las opciones físicas, o los pronósticos pesimistas sobre pérdida de tradiciones, desvirtúan la reverencia mostrada en la narración.\n\nPor lo tanto, la tesis es un elogio y reconocimiento directo al peso cultural y al poder simbólico de la marimba.\n\n**Tip Élite:** Los conectores concesivos o de superación (Más allá de, A pesar de, Aunque) relegan la idea inicial a un segundo plano. La tesis central siempre se encuentra en la cláusula triunfante que sigue al conector."
+  }
+]

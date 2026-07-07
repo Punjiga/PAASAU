@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_fin_10",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Ante la alarmante tasa de deserción estudiantil registrada en el primer semestre, el centro educativo implementó un programa intensivo de tutorías vespertinas y mentorías focalizadas para el alumnado con rezago académico.",
+    "q": "¿Cuál es la finalidad primordial de estas medidas?",
+    "opts": [
+      "Optimizar el uso de las instalaciones vespertinas",
+      "Mitigar el abandono escolar mediante apoyo focalizado",
+      "Ampliar la planilla docente con nuevos especialistas",
+      "Extender la jornada lectiva de forma obligatoria"
+    ],
+    "ans": 1,
+    "exp": "El texto plantea que las medidas se originan frente a la deserción, con el propósito fundamental de revertir dicha tendencia.\n\n* Las tutorías y mentorías son los **medios** implementados, no el fin en sí mismo.\n* La ocupación de instalaciones y la extensión de jornada no constituyen el objetivo central derivado del problema planteado.\n* La contratación docente ni siquiera se infiere del fragmento.\n\n**Tip Élite:** Distingue rigurosamente entre los *medios* (qué se hace) y el *fin* (para qué se hace). La finalidad siempre responde al problema de fondo."
+  },
+  {
+    "id": "v_fin_11",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El negociador adoptó la práctica sistemática de respaldar cada acuerdo sustancial alcanzado vía mensajería mediante capturas de pantalla, previendo la posibilidad de futuras divergencias interpretativas entre las partes.",
+    "q": "¿Cuál es el propósito fundamental de almacenar dichas capturas?",
+    "opts": [
+      "Agotar la capacidad de almacenamiento con fines de registro",
+      "Constituir una prueba documental ante posibles discrepancias",
+      "Exhibir las conversaciones como símbolo de influencia",
+      "Facilitar la eliminación cíclica de acuerdos irrelevantes"
+    ],
+    "ans": 1,
+    "exp": "La acción de guardar capturas responde a la necesidad de blindarse ante versiones contradictorias, fungiendo como evidencia objetiva.\n\n* El almacenamiento excesivo es un efecto secundario indeseable, no un propósito.\n* Exhibir las conversaciones apela a un motivo de vanidad ausente en la lectura.\n* Facilitar la eliminación carece de sentido lógico respecto a guardar por prevención.\n\n**Tip Élite:** Al analizar motivaciones preventivas, identifica qué riesgo específico intenta mitigar el sujeto. La respuesta correcta neutralizará directamente ese riesgo."
+  },
+  {
+    "id": "v_com_10",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Ante el colapso inminente de un proyecto estratégico, el director de área omite sistemáticamente el rastreo de responsables individuales; en su lugar, convoca una cumbre de crisis orientada exclusivamente al diseño de planes de contingencia.",
+    "q": "¿Qué paradigma de liderazgo evidencia el proceder del director?",
+    "opts": [
+      "Punitivo y fiscalizador",
+      "Propositivo y resolutivo",
+      "Evasivo y negligente",
+      "Pasivo e indiferente"
+    ],
+    "ans": 1,
+    "exp": "El enfoque del director desestima el castigo (no busca culpables) y se concentra en la superación del escollo (diseñar contingencias), evidenciando un modelo resolutivo.\n\n* Un modelo punitivo exigiría la persecución implacable de los responsables.\n* La evasión o la indiferencia supondrían la inacción, algo que contradice la convocatoria de una cumbre de crisis.\n\n**Tip Élite:** Los comportamientos humanos en los textos se definen por contraste. Identifica qué acción elige el sujeto *en lugar de* otra para deducir su verdadera disposición."
+  },
+  {
+    "id": "v_com_11",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Frente a resultados adversos, la científica desestima cualquier manifestación de victimismo; en su lugar, documenta sistemáticamente las anomalías, recalibra su marco metodológico y reanuda el experimento con idéntico rigor analítico.",
+    "q": "¿Qué rasgo conductual define el abordaje de la científica ante el fracaso?",
+    "opts": [
+      "Conformismo estoico",
+      "Resiliencia analítica",
+      "Apatía procedimental",
+      "Dogmatismo perfeccionista"
+    ],
+    "ans": 1,
+    "exp": "La capacidad de asimilar el fallo como dato, ajustar el método y perseverar sin mermar el rigor constituye una manifestación clara de resiliencia estructurada.\n\n* El conformismo implicaría aceptar la derrota sin intentar la mejora.\n* La apatía contradice el rigor y la proactividad mostrada.\n* El dogmatismo supondría repetir ciegamente el mismo plan, mientras que ella lo recalibra.\n\n**Tip Élite:** Las virtudes descritas en los textos suelen incluir un componente de acción. La resiliencia no es solo soportar el golpe, sino utilizarlo como insumo para el siguiente intento."
+  },
+  {
+    "id": "v_cau_13",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Debido a un descuido momentáneo, la muestra de gelatina térmica quedó expuesta sobre la encimera del laboratorio a temperatura ambiente durante la ola de calor. Transcurridos sesenta minutos, la estructura sólida había colapsado, reduciéndose a una matriz líquida y viscosa.",
+    "q": "¿Cuál fue la causa directa del cambio de estado físico de la muestra?",
+    "opts": [
+      "El enfriamiento repentino del entorno de laboratorio",
+      "La exposición prolongada a una elevada temperatura ambiente",
+      "La composición molecular intrínseca de la muestra",
+      "El material de la encimera donde fue depositada"
+    ],
+    "ans": 1,
+    "exp": "El colapso de la estructura sólida fue provocado por el calor absorbido al quedar expuesta fuera de refrigeración en un ambiente cálido.\n\n* Un enfriamiento habría preservado la solidez de la matriz, logrando el efecto contrario.\n* La composición y el material de la mesa son condiciones pasivas, no el evento desencadenante de la fusión.\n\n**Tip Élite:** En cadenas causales físicas, diferencia las *condiciones previas* (lo que ya estaba ahí) del *agente activo* (la variable que cambia el estado). El agente suele ser la causa."
+  },
+  {
+    "id": "v_cau_14",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Con el auge inmobiliario y turístico que transformó el litoral en un polo de desarrollo, proliferaron infraestructuras hoteleras y enclaves comerciales. Este dinamismo permitió que la población autóctona, tradicionalmente forzada al éxodo laboral, lograra insertarse en el mercado productivo local.",
+    "q": "¿Qué consecuencia sociolaboral se deriva directamente del fenómeno descrito?",
+    "opts": [
+      "La intensificación de los flujos migratorios hacia la capital",
+      "La retención de la fuerza de trabajo gracias a la generación de empleos locales",
+      "El colapso de los pequeños comercios ante las grandes infraestructuras",
+      "La disminución drástica de la afluencia de visitantes foráneos"
+    ],
+    "ans": 1,
+    "exp": "El auge turístico catalizó la creación de negocios que absorbieron la mano de obra local, frenando el éxodo previo.\n\n* La intensificación migratoria es exactamente el escenario que el texto afirma haber superado.\n* El colapso comercial contradice la proliferación explícita de infraestructuras y negocios.\n* La caída de visitantes es incompatible con el concepto de 'auge'.\n\n**Tip Élite:** Al analizar impactos sociológicos en textos, busca siempre cómo la variable independiente (turismo) transforma el estado inicial de la variable dependiente (el empleo)."
+  },
+  {
+    "id": "v_cau_15",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La anomalía térmica del fenómeno de El Niño indujo una severa aridez que diezmó las praderas de la llanura. Consecuentemente, los rebaños bovinos enfrentaron un déficit nutricional crítico.",
+    "q": "¿Cuál es el factor primigenio que detonó la carestía de alimento para los rebaños?",
+    "opts": [
+      "Las precipitaciones torrenciales atípicas de la temporada",
+      "El severo déficit hídrico producto de la anomalía climática",
+      "La reducción drástica en la tasa de natalidad bovina",
+      "Las heladas intensas que afectaron la región"
+    ],
+    "ans": 1,
+    "exp": "La cadena causal inicia con la anomalía climática (sequía/déficit hídrico), la cual destruye las praderas y desemboca en el hambre del ganado. El origen de todo es la aridez.\n\n* Las lluvias atípicas o las heladas no tienen cabida en un escenario descrito expresamente como 'aridez'.\n* La disminución de natalidad es irrelevante para explicar la falta de pastos.\n\n**Tip Élite:** En cadenas de múltiples eslabones (A → B → C), el *factor primigenio* siempre es A. No te dejes distraer por el intermediario (B, las praderas diezmadas)."
+  },
+  {
+    "id": "v_sim_10",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Ejecutar un algoritmo de ordenamiento lineal es un proceso mecánico y secuencial; por el contrario, estructurar la política monetaria de una nación exige la orquestación simultánea de variables macroeconómicas volátiles y expectativas de mercado.",
+    "q": "¿Qué relación se establece entre la política monetaria y el algoritmo?",
+    "opts": [
+      "Mayor trivialidad conceptual",
+      "Mayor grado de complejidad sistémica",
+      "Mayor antigüedad procedimental",
+      "Menor exigencia analítica"
+    ],
+    "ans": 1,
+    "exp": "El texto contrasta un proceso de variables fijas y directas con uno multifactorial y dinámico, atribuyendo a este último una complejidad superlativa.\n\n* La trivialidad o la menor exigencia serían aplicables, acaso, al algoritmo en esta comparación.\n* La cronología o antigüedad no forma parte de las dimensiones abordadas por el fragmento.\n\n**Tip Élite:** Los contrastes de 'simple vs complejo' suelen oponer lo lineal/mecánico a lo interdependiente/multifactorial. Identifica qué elementos sostienen la multiplicidad de variables."
+  },
+  {
+    "id": "v_sim_11",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Un planeador rudimentario opera mediante principios aerodinámicos elementales y componentes estáticos. Un transbordador espacial, en cambio, sincroniza millones de líneas de código con subsistemas criogénicos, orbitales y de soporte vital en tiempo real.",
+    "q": "¿Qué atributo distingue estructuralmente al transbordador respecto al planeador?",
+    "opts": [
+      "Su diseño minimalista",
+      "Su intrincada complejidad tecnológica",
+      "Su inviabilidad económica",
+      "Su naturaleza arcaica"
+    ],
+    "ans": 1,
+    "exp": "La descripción del transbordador enfatiza la sincronización masiva de múltiples subsistemas avanzados, delineando una máquina de extrema complejidad.\n\n* El minimalismo define mejor al planeador rudimentario.\n* El costo y la antigüedad son inferencias ajenas a la descripción técnica expuesta.\n\n**Tip Élite:** La complejidad en sistemas físicos a menudo se ilustra no solo por la cantidad de partes, sino por la *interdependencia* entre ellas (sincronizar subsistemas)."
+  },
+  {
+    "id": "v_con_12",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Tras constatar que su directriz había provocado pérdidas sustanciales en el departamento, el directivo convocó al pleno, desglosó su equivocación de manera transparente y declinó buscar atenuantes externos, asumiendo el costo político de su fallo.",
+    "q": "¿Qué categoría conceptual define de forma precisa la postura del directivo?",
+    "opts": [
+      "Autocrítica responsable",
+      "Pusilanimidad corporativa",
+      "Obstinación dogmática",
+      "Cinismo desmedido"
+    ],
+    "ans": 0,
+    "exp": "El reconocimiento público y sin paliativos de un error propio frente a un grupo perjudicado constituye la esencia de la autocrítica y la responsabilidad.\n\n* La pusilanimidad o cobardía supondría ocultar el error o eludir la asamblea.\n* La obstinación hubiera implicado insistir en la decisión errada.\n* El cinismo se manifestaría si reconociera el error pero con descaro y sin asumir su gravedad.\n\n**Tip Élite:** La conceptualización de actitudes requiere empatar la acción concreta ('declinó buscar atenuantes') con su virtud filosófica o ética equivalente."
+  },
+  {
+    "id": "v_con_13",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Ajeno a cualquier presión coercitiva o expectativa de retribución monetaria, el cirujano destina sistemáticamente sus periodos de asueto a operar en zonas de conflicto, movido exclusivamente por un mandato interno de solidaridad humana.",
+    "q": "¿Qué cualidad ética se infiere de la praxis del cirujano?",
+    "opts": [
+      "Altruismo incondicional",
+      "Cumplimiento contractual",
+      "Pragmatismo utilitarista",
+      "Afán de protagonismo"
+    ],
+    "ans": 0,
+    "exp": "Actuar por solidaridad y sin beneficio personal (sin retribución) frente al sufrimiento ajeno es la definición académica del altruismo.\n\n* No existe cumplimiento contractual pues lo hace ajeno a coerción.\n* El utilitarismo o el pragmatismo buscarían una ventaja práctica o conveniencia, lo cual se descarta.\n* El afán de protagonismo desvirtuaría la motivación solidaria pura expuesta.\n\n**Tip Élite:** Cuando un texto remarca la ausencia de recompensas externas ('sin pago', 'sin presión'), te está guiando directamente hacia un concepto moral intrínseco."
+  },
+  {
+    "id": "v_ord_10",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El archivo central pasó de ser un depósito amorfo de legajos esparcidos sin criterio cronológico, a exhibir expedientes indexados, digitalizados y ubicados en estanterías codificadas alfanuméricamente.",
+    "q": "¿Qué transición conceptual ilustra el estado del archivo?",
+    "opts": [
+      "De la sistematización a la entropía",
+      "De la entropía a la sistematización",
+      "De la opulencia a la austeridad",
+      "De la obsolescencia a la modernidad"
+    ],
+    "ans": 1,
+    "exp": "El texto describe el paso desde el caos (depósito amorfo, esparcido) hacia el orden metódico (indexados, codificados). Entropía significa desorden; sistematización es orden.\n\n* La primera opción invierte el proceso descrito.\n* La transición no aborda la riqueza material.\n* Aunque hay digitalización, el foco central del contraste ('amorfo' vs 'indexado') es el ordenamiento, no solo la modernización.\n\n**Tip Élite:** Aprende sinónimos sofisticados para dualidades simples. Desorden = caos, entropía, anarquía. Orden = sistema, taxonomía, jerarquía."
+  },
+  {
+    "id": "v_ord_11",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El servidor de la empresa albergaba un ecosistema caótico: carpetas huérfanas, versiones redundantes y bases de datos fusionadas. Tras la auditoría, los directorios fueron purgados, las jerarquías de acceso restauradas y los archivos clasificados bajo una ontología estricta.",
+    "q": "¿Qué mutación estructural sufrió el servidor?",
+    "opts": [
+      "Una transición hacia la anarquía informática",
+      "Un avance desde la dispersión hacia el ordenamiento taxonómico",
+      "Una reducción dramática de su capacidad de procesamiento",
+      "Un incremento exponencial en su vulnerabilidad de red"
+    ],
+    "ans": 1,
+    "exp": "El proceso relata la corrección de un estado de desorden (carpetas huérfanas, redundancias) hacia una clasificación rigurosa y estructurada.\n\n* Transitar hacia la anarquía representaría el proceso opuesto.\n* La capacidad de procesamiento y la seguridad de red son factores técnicos paralelos que el fragmento no menciona.\n\n**Tip Élite:** En la lectura de nivel universitario, fíjate en prefijos y jerga ('ontología', 'taxonómico'). Reconocer que aluden a la 'clasificación' te da la respuesta al instante."
+  },
+  {
+    "id": "v_tmp_10",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "Se redacta el borrador del manuscrito, se somete a revisión por pares, el autor subsana las observaciones metodológicas y, finalmente, la revista procede con la publicación.",
+    "q": "¿Qué acción precede inmediatamente a la publicación del manuscrito?",
+    "opts": [
+      "Redactar el borrador inicial",
+      "Subsanar las observaciones metodológicas",
+      "Someter el texto a revisión por pares",
+      "Indexar la revista en bases de datos"
+    ],
+    "ans": 1,
+    "exp": "Siguiendo la secuencia expuesta, la acción que antecede de manera directa a la publicación es la corrección o subsanación de las observaciones por parte del autor.\n\n* La redacción y la revisión por pares ocurren en etapas previas, no *inmediatamente* antes.\n* La indexación es un evento posterior ajeno a la secuencia del texto.\n\n**Tip Élite:** Cuando te pregunten qué ocurre 'justo antes' o 'inmediatamente antes', rastrea el evento final en el texto y retrocede exactamente un peldaño en la cadena."
+  },
+  {
+    "id": "v_tmp_11",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "En la fase inicial se purifican los reactivos; a continuación, se sintetiza el compuesto en condiciones de vacío y, como paso culminante, se somete la muestra a espectroscopía de masas.",
+    "q": "¿Qué procedimiento se ejecuta inmediatamente después de purificar los reactivos?",
+    "opts": [
+      "Someter la muestra a espectroscopía",
+      "Sintetizar el compuesto al vacío",
+      "Descartar los excedentes químicos",
+      "Calibrar los instrumentos de medición"
+    ],
+    "ans": 1,
+    "exp": "La cronología del texto estipula que tras la fase inicial de purificación, sigue ('a continuación') la síntesis del compuesto en vacío.\n\n* La espectroscopía figura expresamente como el 'paso culminante'.\n* Descartar excedentes o calibrar son invenciones no documentadas en el fragmento.\n\n**Tip Élite:** Los marcadores discursivos de secuencia ('a continuación', 'luego', 'posteriormente') son los anclajes absolutos para resolver cualquier línea de tiempo."
+  },
+  {
+    "id": "v_ese_10",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Si la cualidad inalienable de un bisturí es realizar incisiones quirúrgicas precisas, se infiere que la identidad de la herramienta reside en su propósito operatorio y no en la aleación de su hoja.",
+    "q": "Siguiendo esta premisa analítica, ¿cuál es la esencia de una brújula?",
+    "opts": [
+      "Consistir en una aguja magnetizada sobre un pivote",
+      "Indicar el norte magnético para facilitar la orientación",
+      "Determinar la altitud respecto al nivel del mar",
+      "Medir fluctuaciones en el campo gravitatorio"
+    ],
+    "ans": 1,
+    "exp": "El texto establece que la esencia radica en la *función* ('propósito operatorio'). Por ende, la esencia de la brújula es su utilidad para orientar mediante el norte.\n\n* Su composición física apela a los materiales o apariencia, lo cual el texto descarta explícitamente como esencia.\n* Medir altitud corresponde a un altímetro.\n* Medir gravedad corresponde a un gravímetro.\n\n**Tip Élite:** En preguntas de analogía conceptual, aplica la misma regla (función > forma) al objeto interrogado para evitar caer en distractores descriptivos."
+  },
+  {
+    "id": "v_ese_11",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Un documento legal puede extenderse por cientos de fojas o compendiarse en un solo folio, redactarse en pergamino o validarse digitalmente; no obstante, su núcleo inalterable radica en su capacidad para generar obligaciones jurídicas vinculantes.",
+    "q": "¿Cuál es el atributo definitorio de un documento legal según el texto?",
+    "opts": [
+      "Su extensión métrica o formato físico",
+      "Su facultad para instituir obligaciones vinculantes",
+      "La solemnidad de su lenguaje escrito",
+      "El soporte material donde es plasmado"
+    ],
+    "ans": 1,
+    "exp": "Las características variables (extensión, soporte) se contraponen al 'núcleo inalterable' o esencial: la capacidad de generar consecuencias jurídicas.\n\n* El tamaño y el soporte son las variables accidentales explícitamente descartadas por el autor.\n* La solemnidad ni siquiera es un factor mencionado en la lectura.\n\n**Tip Élite:** Detecta el punto de giro argumentativo ('no obstante', 'sin embargo', 'pero'). Lo que sigue a ese conector suele introducir la cualidad esencial."
+  },
+  {
+    "id": "v_per_11",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "El rigor de una condena penal puede ser percibido como una represalia desmesurada por los familiares del infractor, mientras que las víctimas colaterales a menudo la interpretan como un acto de justicia insuficiente.",
+    "q": "¿Qué postulado subyace en la argumentación del fragmento?",
+    "opts": [
+      "El sistema de justicia carece de objetividad estructural",
+      "La valoración de un hecho fluctúa en función de la posición de quien lo juzga",
+      "Las condenas severas siempre generan disenso social",
+      "Las víctimas siempre exigen un resarcimiento económico"
+    ],
+    "ans": 1,
+    "exp": "El texto expone que un mismo evento (la condena) adquiere significados opuestos según el rol o la afectación de los observadores, evidenciando relatividad perceptiva.\n\n* La falta de objetividad del sistema es un salto lógico no comprobable en el texto; el sistema dictó una pena, los que varían son los espectadores.\n* El disenso absoluto y las demandas económicas son sobregeneralizaciones infundadas.\n\n**Tip Élite:** Los textos sobre perspectivas opuestas siempre buscan ilustrar la subjetividad de la experiencia. Huye de las opciones que absolutizan un bando."
+  },
+  {
+    "id": "v_per_12",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La promulgación de un tratado de libre comercio desata el júbilo en los consorcios agroexportadores consolidados, al tiempo que siembra pánico e incertidumbre entre los gremios de productores locales a pequeña escala.",
+    "q": "¿Qué dinámica psicosocial ilustra el escenario planteado?",
+    "opts": [
+      "Los tratados internacionales siempre favorecen a las élites",
+      "Un evento idéntico provoca reacciones dicotómicas derivadas de intereses divergentes",
+      "El libre mercado promueve invariablemente la desigualdad económica",
+      "Los gremios locales carecen de adaptabilidad ante el progreso"
+    ],
+    "ans": 1,
+    "exp": "El escenario retrata cómo un único acontecimiento genera impacto emocional polarizado (júbilo vs pánico) según los intereses del sector afectado.\n\n* Las afirmaciones económicas sobre las élites o el libre mercado exceden la intención del texto, que es descriptivo de reacciones.\n* Criticar a los gremios es tomar partido, algo que el autor no hace.\n\n**Tip Élite:** En lecturas sociológicas neutrales, la respuesta correcta describirá el *patrón* de la interacción, no juzgará su moralidad ni tomará partido."
+  },
+  {
+    "id": "v_imp_15",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El diplomático ingresó al recinto de negociaciones ostentando ojeras profundas, con la corbata desanudada y sosteniendo una taza de café negro con mano temblorosa, tras quince horas a puerta cerrada.",
+    "q": "¿Qué inferencia lógica se desprende válidamente del cuadro descrito?",
+    "opts": [
+      "El tratado internacional fue rechazado por completo",
+      "El individuo padece un cuadro de agotamiento severo",
+      "El recinto carecía de climatización adecuada",
+      "Se violaron los protocolos diplomáticos de vestimenta"
+    ],
+    "ans": 1,
+    "exp": "Las ojeras, el desaliño, el temblor y el café oscuro, combinados con las quince horas continuas, configuran inequívocamente síntomas físicos de fatiga extrema.\n\n* El fracaso del tratado es una especulación inasumible; se puede estar agotado tras un éxito rotundo.\n* La falta de clima o las violaciones de protocolo no justifican el cuadro integral presentado.\n\n**Tip Élite:** Las inferencias válidas deben derivarse de la *suma* de los indicios, no de uno solo. Todo el campo semántico apunta al desgaste físico."
+  },
+  {
+    "id": "v_imp_16",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A partir de la intervención del banco central para ajustar las tasas de interés, los indicadores de inflación, que mostraban una curva ascendente de dos dígitos, se han estabilizado en el rango meta.",
+    "q": "¿Qué corolario se encuentra implícito en esta aseveración?",
+    "opts": [
+      "La economía del país se encontraba en recesión total",
+      "La medida monetaria adoptada fue eficaz para contener la escalada de precios",
+      "El banco central no había intervenido nunca antes en la historia",
+      "Las tasas de interés deberán mantenerse altas perpetuamente"
+    ],
+    "ans": 1,
+    "exp": "Si la inflación subía antes de la medida y se estabilizó a partir de ella, se infiere lógicamente una relación de eficacia entre la acción y el resultado.\n\n* La recesión es un concepto macroeconómico distinto a la inflación y no está probado en el texto.\n* Afirmar que 'nunca antes' intervino o que será 'perpetuo' son falacias de absolutismo.\n\n**Tip Élite:** Cuando un texto establece un 'antes y un después' ligado a una acción específica, la idea implícita suele ser el impacto causal de esa acción."
+  },
+  {
+    "id": "v_imp_17",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El mandatario abandonó abruptamente la cumbre bilateral antes de la lectura del comunicado conjunto, dejando a su homólogo en el podio sin ofrecer declaración alguna a la prensa apostada.",
+    "q": "¿Qué deducción subyacente es factible realizar sobre el desarrollo de la cumbre?",
+    "opts": [
+      "Ambas naciones firmaron un pacto de cooperación histórica",
+      "Existieron fricciones o desacuerdos sustanciales entre las partes",
+      "El mandatario sufrió una emergencia médica repentina",
+      "La prensa tergiversó las declaraciones de los dignatarios"
+    ],
+    "ans": 1,
+    "exp": "Romper el protocolo de una cumbre de tan alto nivel (irse abruptamente, abandonar al homólogo) sugiere fuertemente una ruptura diplomática o un conflicto grave durante las negociaciones.\n\n* Un pacto histórico habría culminado con celebraciones y fotos conjuntas.\n* Una emergencia médica es posible, pero menos probable como inferencia principal de un acto de abandono en una negociación, donde la fricción política es la lectura directa.\n* La prensa no alcanzó a publicar nada, pues no hubo declaraciones.\n\n**Tip Élite:** Las desviaciones notorias de los protocolos de comportamiento esperado (social o diplomático) denotan invariablemente estados de conflicto o disgusto."
+  },
+  {
+    "id": "v_pri_13",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La diversificación del portafolio de inversiones, la constitución de fondos de liquidez para contingencias y la reducción sistemática de deuda con altos intereses constituyen pilares ineludibles para la sostenibilidad patrimonial a largo plazo.",
+    "q": "¿Cuál es la tesis central del pasaje?",
+    "opts": [
+      "Las deudas con altas tasas son el mayor riesgo financiero",
+      "La aplicación de prácticas financieras prudenciales garantiza la solidez patrimonial",
+      "Los fondos de liquidez superan en importancia a la diversificación",
+      "El mercado de inversiones es volátil e impredecible"
+    ],
+    "ans": 1,
+    "exp": "El texto enumera tres tácticas financieras específicas (diversificar, ahorrar, desendeudar) para englobarlas en un propósito superior: la sostenibilidad del patrimonio.\n\n* La primera opción eleva un solo detalle (las deudas) a categoría principal.\n* La tercera opción inventa una jerarquía entre las tácticas que el texto no establece.\n* La última opción introduce juicios sobre el mercado no abordados en el texto.\n\n**Tip Élite:** En estructuras enumerativas, la idea principal es la 'sombrilla' conceptual que cobija a todos los elementos listados sin dejar ninguno fuera."
+  },
+  {
+    "id": "v_pri_14",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La tasa de desempleo friccional, el volumen de la deuda soberana y la fluctuación del tipo de cambio frente a divisas fuertes inciden, desde sus respectivas dinámicas, en la calificación de riesgo que agencias internacionales otorgan a un país.",
+    "q": "¿Cuál enunciado sintetiza la idea medular del fragmento?",
+    "opts": [
+      "El desempleo friccional destruye la credibilidad internacional",
+      "Múltiples variables macroeconómicas condicionan el riesgo país",
+      "Las agencias internacionales monopolizan la calificación económica",
+      "La deuda soberana debe eliminarse para mejorar el tipo de cambio"
+    ],
+    "ans": 1,
+    "exp": "El texto lista factores macroeconómicos que convergen en un efecto común (la calificación de riesgo), lo que indica que el riesgo país es multifactorial.\n\n* La primera opción toma un fragmento menor (desempleo) y exagera su impacto.\n* Las demás opciones introducen sesgos políticos y normativos ausentes en la naturaleza descriptiva del texto.\n\n**Tip Élite:** El verbo principal del texto ('inciden') es la llave de bóveda. La idea principal siempre respetará la relación de causa/efecto que ese verbo establece."
+  },
+  {
+    "id": "v_pri_15",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La arquitectura gótica articuló el urbanismo medieval, fungió como vehículo de adoctrinamiento teológico a través de sus vitrales y se consagró como el hito de la supremacía de la Iglesia en Europa occidental.",
+    "q": "¿Cuál es el núcleo temático del texto?",
+    "opts": [
+      "La función de los vitrales en la sociedad analfabeta medieval",
+      "La trascendencia urbana, dogmática y simbólica del arte gótico",
+      "El diseño arquitectónico de las catedrales europeas",
+      "El absolutismo papal en el occidente de la Edad Media"
+    ],
+    "ans": 1,
+    "exp": "El fragmento asigna tres funciones estructurales al arte gótico: estructurador de la ciudad (urbanismo), educador religioso (teología) y símbolo de poder (supremacía). La opción de trascendencia urbana, dogmática y simbólica compila estas tres dimensiones.\n\n* La opción de vitrales parcializa el texto en un solo detalle.\n* La opción arquitectónica se queda en la superficie constructiva ('diseño'), ignorando el calado social y teológico.\n* La opción papal ignora la arquitectura para centrarse puramente en política.\n\n**Tip Élite:** Cuando un sujeto (arquitectura gótica) ejecuta tres acciones de igual peso, el núcleo temático debe integrar imperativamente esas tres facetas."
+  },
+  {
+    "id": "v_par_12",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Priorizar la objetividad analítica frente a las disrupciones de mercado propicia estrategias de contingencia más robustas que sucumbir a la especulación impulsiva.",
+    "q": "¿Qué formulación reproduce fidedignamente el sentido del enunciado?",
+    "opts": [
+      "La volatilidad del mercado torna obsoletas las estrategias objetivas",
+      "El sosiego reflexivo ante crisis genera respuestas más eficaces que la reacción instintiva",
+      "La especulación financiera es indispensable para superar las disrupciones",
+      "Las estrategias robustas son imposibles de diseñar durante periodos de crisis"
+    ],
+    "ans": 1,
+    "exp": "El fragmento original contrapone el análisis calmado a la impulsividad ante las crisis, dando ventaja al primero. 'Sosiego reflexivo' equivale a 'objetividad', y 'respuestas eficaces' a 'estrategias robustas'.\n\n* La primera opción declara obsoleta a la objetividad, invirtiendo el sentido.\n* La tercera opción ensalza la especulación, a la cual el texto original critica ('sucumbir').\n* La cuarta opción emite un veredicto de imposibilidad ajeno a la premisa.\n\n**Tip Élite:** La paráfrasis estricta mantiene el esqueleto lógico intacto (A es mejor que B) sustituyendo únicamente la carne léxica. Asegúrate de que las valoraciones positivas y negativas no se inviertan."
+  },
+  {
+    "id": "v_par_13",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La postergación crónica de resoluciones estructurales no disipa el conflicto subyacente; por el contrario, exacerba su complejidad y magnifica el daño colateral eventual.",
+    "q": "¿Cuál aseveración es semánticamente equivalente a la premisa anterior?",
+    "opts": [
+      "Diferir decisiones atenúa el impacto de los conflictos estructurales",
+      "Dilatar la resolución de problemas agrava progresivamente su severidad",
+      "Los daños colaterales se evitan mediante la postergación indefinida",
+      "El tiempo es el factor decisivo para disolver los conflictos subyacentes"
+    ],
+    "ans": 1,
+    "exp": "El texto advierte que evitar las decisiones difíciles (postergación crónica) empeora los problemas (exacerba su complejidad). 'Dilatar problemas agrava su severidad' encapsula esto a la perfección.\n\n* Las demás opciones defienden que el tiempo o la inacción curan los problemas, oponiéndose frontalmente al mensaje del autor.\n\n**Tip Élite:** Muchas veces las oraciones tienen dos partes separadas por un conector adversativo ('por el contrario'). Tu paráfrasis debe capturar ambas: la falacia (creer que posponer sirve) y la realidad (empeora todo)."
+  },
+  {
+    "id": "v_par_14",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "En la economía de libre mercado, los conglomerados que no innovan son devorados por la competencia.",
+    "q": "Considerando la analogía implícita, ¿qué refrán popular encapsula la misma enseñanza?",
+    "opts": [
+      "A mal tiempo, buena cara.",
+      "Camarón que se duerme, se lo lleva la corriente.",
+      "Más vale pájaro en mano que cien volando.",
+      "Cría cuervos y te sacarán los ojos."
+    ],
+    "ans": 1,
+    "exp": "El texto expone que la falta de alerta o adaptación (no innovar) conduce a la ruina, lo que se equipara al descuido del crustáceo que es arrastrado ('camarón que se duerme...').\n\n* 'A mal tiempo...' invoca al estoicismo.\n* 'Más vale pájaro...' aboga por el pragmatismo conservador.\n* 'Cría cuervos...' trata sobre la ingratitud.\n\n**Tip Élite:** Para empatar textos con proverbios, reduce ambos a su forma moral más primitiva. Aquí: 'Falta de acción = Perdición'. El único refrán que encaja en la plantilla es el del camarón."
+  },
+  {
+    "id": "v_pro_11",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Todo postulado fundamentado en el empirismo requiere de comprobación fáctica. Analice las proposiciones lógicas subsecuentes:\nI. Si una teoría no es susceptible de comprobación fáctica, carece de raíz empirista.\nII. Ningún postulado empirista se somete a validación de hechos empíricos.\nIII. Las leyes de la termodinámica, de índole empirista, exigen evidencia fáctica.",
+    "q": "¿Cuáles proposiciones se derivan estrictamente del silogismo principal?",
+    "opts": [
+      "Solo la II",
+      "La I y la III",
+      "Solo la I",
+      "Las tres en su conjunto"
+    ],
+    "ans": 1,
+    "exp": "Si 'A (empirismo) implica B (comprobación)', por contrapositiva lógica, 'No B implica No A' (I). Asimismo, un ejemplo específico de A (termodinámica) forzosamente cumple B (III).\n\n* La proposición II afirma exactamente lo contrario a la premisa central, negando la relación indisoluble entre empirismo y validación.\n\n**Tip Élite:** En lógica formal, la inferencia *Modus Tollens* siempre es válida: si A → B, entonces ~B → ~A. Si asimilas este patrón, resolverás cualquier ejercicio de proposiciones."
+  },
+  {
+    "id": "v_pro_12",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Si un activo califica como derivado financiero, su valor emana de un instrumento subyacente. Analice las afirmaciones:\nI. Las opciones de compra, clasificadas como derivados, dependen del valor de una acción matriz.\nII. Existen derivados financieros independientes de cualquier métrica subyacente.\nIII. Ningún instrumento subyacente logra influir en el mercado de derivados.",
+    "q": "¿Qué inferencia es lógicamente inobjetable según la norma expuesta?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "La II y la III",
+      "Ninguna de las proposiciones"
+    ],
+    "ans": 0,
+    "exp": "Si todo derivado depende de un subyacente, presentar un derivado específico (opciones de compra) implica afirmar que depende de un subyacente. La afirmación I cumple esto a cabalidad.\n\n* Las afirmaciones II y III destrozan la regla de dependencia absoluta planteada en el enunciado base.\n\n**Tip Élite:** Una regla categórica universal ('si es X, tiene que ser Y') jamás admite excepciones (como propone la II) ni desvinculaciones totales (como propone la III)."
+  },
+  {
+    "id": "m_ari_14",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En la evaluación de carteras de inversión, el coeficiente de ajuste requiere calcular la expresión aritmética jerarquizada: 250 − [3 × (120 − 40)] ÷ 4 + 15.",
+    "q": "¿Cuál es el valor terminal del coeficiente?",
+    "opts": [
+      "205",
+      "265",
+      "155",
+      "80"
+    ],
+    "ans": 0,
+    "exp": "Siguiendo estrictamente la jerarquía de las operaciones (PEMDAS/BODMAS):\n\n* Primero el paréntesis interno: 120 − 40 = 80.\n* Luego el corchete (multiplicación): 3 × 80 = 240.\n* Queda: 250 − 240 ÷ 4 + 15.\n* La división antecede a la suma/resta: 240 ÷ 4 = 60.\n* Resolución final lineal (izquierda a derecha): 250 − 60 = 190, y 190 + 15 = 205.\n\n**Tip Élite:** El error más letal en aritmética es ignorar la prioridad de izquierda a derecha cuando quedan multiplicaciones/divisiones juntas o sumas/restas juntas. Operar -60 + 15 como -(60+15) arruinaría el cálculo."
+  },
+  {
+    "id": "m_ari_15",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Un lote de semiconductores contiene 144 unidades. En un ensamblaje automatizado, 8 brazos robóticos deben distribuirse equitativamente la carga de trabajo de procesar 5 lotes íntegros.",
+    "q": "¿Qué cantidad exacta de unidades procesará cada brazo robótico individual?",
+    "opts": [
+      "90",
+      "720",
+      "18",
+      "72"
+    ],
+    "ans": 0,
+    "exp": "Para hallar el valor, calcula la carga total y divídela entre los agentes:\n\n* Total de unidades: 5 lotes × 144 unidades/lote = 720 unidades en total.\n* Distribución equitativa: 720 unidades ÷ 8 brazos = 90 unidades por brazo.\n\n**Tip Élite:** Evita multiplicar números enormes si puedes simplificar antes. Puedes dividir (144 ÷ 8) = 18, y luego multiplicar por 5 lotes (18 × 5 = 90). El orden de los factores no altera el producto."
+  },
+  {
+    "id": "m_ari_16",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "El algoritmo de rebalanceo de un índice bursátil procesa la siguiente secuencia de ajustes ponderados en formato decimal: 3,45 + 2,625 − 1,125 + 0,05.",
+    "q": "¿Cuál es el valor consolidado del índice tras las operaciones?",
+    "opts": [
+      "5,00",
+      "4,95",
+      "6,15",
+      "5,10"
+    ],
+    "ans": 0,
+    "exp": "Alinear las comas decimales es imperativo para evitar desfasajes:\n\n* Primera suma: 3,450 + 2,625 = 6,075.\n* Resta intermedia: 6,075 − 1,125 = 4,950.\n* Suma final: 4,950 + 0,050 = 5,000 (o simplemente 5).\n\n**Tip Élite:** Completa mentalmente los ceros a la derecha (3,45 = 3,450) para que todos los términos tengan la misma cantidad de decimales. Es el seguro definitivo contra errores de alineación."
+  },
+  {
+    "id": "m_mcm_9",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Un consorcio logístico requiere despachar bobinas de cable de fibra óptica de 540 metros y 720 metros en carretes fraccionados. Estos carretes deben poseer una longitud idéntica, ser lo más extensos posible y no generar excedentes en ninguna bobina original.",
+    "q": "¿Qué longitud específica deberá ostentar cada carrete fraccionado?",
+    "opts": [
+      "180 metros",
+      "90 metros",
+      "60 metros",
+      "2160 metros"
+    ],
+    "ans": 0,
+    "exp": "El problema demanda dividir longitudes exactas buscando la porción compartida de mayor envergadura; esto grita Máximo Común Divisor (MCD).\n\n* Descomponemos 540 y 720 en factores primos.\n* MCD(540, 720) = 180. (180 × 3 = 540 y 180 × 4 = 720).\n* Un carrete de 180 metros cumple todas las condiciones (igualdad, máxima longitud, cero desperdicio).\n\n**Tip Élite:** Identifica palabras clave: 'fraccionar/cortar/repartir', 'idéntico/igual' y 'lo más extenso/grande'. Esta tríada garantiza que el algoritmo a usar es invariablemente el MCD."
+  },
+  {
+    "id": "m_rel_10",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Durante una auditoría de rendimiento algorítmico, se extraen las siguientes tasas de eficiencia de cuatro subrutinas, expresadas en formatos heterogéneos: 5/7 ; 0,71 ; 11/15 ; 0,714.",
+    "q": "Ordenando de manera rigurosa, ¿cuál tasa detenta el valor numérico absoluto superior?",
+    "opts": [
+      "5/7",
+      "0,71",
+      "11/15",
+      "0,714"
+    ],
+    "ans": 2,
+    "exp": "La estrategia es llevar todo a formato decimal para comparar con el mismo rasero:\n\n* 5/7 ≈ 0,71428...\n* 0,71 = 0,710\n* 11/15 ≈ 0,73333...\n* 0,714 = 0,7140\n* Al cotejar, el valor 0,7333... (perteneciente a 11/15) es manifiestamente el de mayor cuantía.\n\n**Tip Élite:** Si las fracciones son intrincadas para dividir mentalmente, usa la multiplicación cruzada entre ellas para hallar la mayor rápidamente antes de luchar con los decimales."
+  },
+  {
+    "id": "m_rel_11",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "En un modelo matemático de tensiones termodinámicas, se establece como postulado ineludible que la desigualdad -k^3 > 0 es verdadera.",
+    "q": "Bajo este marco algebraico, ¿qué condición es intrínsecamente cierta respecto a la variable k?",
+    "opts": [
+      "k es una magnitud estrictamente positiva",
+      "k es una magnitud estrictamente negativa",
+      "k puede asumir el valor nulo",
+      "k es un número imaginario puro"
+    ],
+    "ans": 1,
+    "exp": "Analicemos la estructura de los signos y exponentes:\n\n* Si el opuesto de k³ es positivo (-k³ > 0), multiplicando por -1 (e invirtiendo la desigualdad), deducimos que k³ < 0.\n* Dado que toda potencia impar (como el cubo) conserva invariablemente el signo de su base, para que k³ sea negativo, la base 'k' debe ser forzosamente negativa.\n\n**Tip Élite:** Las potencias pares 'limpian' los signos negativos, pero las potencias impares son 'transparentes' y revelan el signo original de la base. Memoriza esa distinción axiomática."
+  },
+  {
+    "id": "m_cnt_10",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Para configurar los protocolos de cifrado de un servidor, un arquitecto de red debe ensamblar una suite de seguridad seleccionando exactamente: 1 algoritmo simétrico (entre 6 disponibles), 1 protocolo de hash (entre 4 disponibles) y 1 capa de transporte (entre 3 opciones).",
+    "q": "¿Cuántas arquitecturas de cifrado únicas pueden sintetizarse mediante esta matriz?",
+    "opts": [
+      "13",
+      "72",
+      "24",
+      "48"
+    ],
+    "ans": 1,
+    "exp": "El escenario demanda armar un paquete donde las decisiones de cada nivel son independientes y obligatorias. Esto activa el principio multiplicativo del conteo.\n\n* Opciones = (6 algoritmos) × (4 hashes) × (3 capas).\n* Total = 6 × 4 × 3 = 72 arquitecturas.\n\n**Tip Élite:** Diferencia cuándo sumar y cuándo multiplicar. Si eliges *uno de cada grupo* para formar un conjunto, se multiplica (Y). Si solo pudieras elegir *un único elemento de cualquier grupo*, se suma (O)."
+  },
+  {
+    "id": "m_cnt_11",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Una bóveda aloja 10 discos duros: 5 contienen llaves criptográficas de tipo A, y 5 portan llaves de tipo B. Se requiere emparejar dos llaves del mismo tipo para acceder al núcleo del sistema. La extracción se realiza totalmente a ciegas.",
+    "q": "¿Cuál es el número mínimo de extracciones requeridas para garantizar probabilísticamente la obtención del par deseado?",
+    "opts": [
+      "2",
+      "3",
+      "6",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "Este escenario se rige por el Principio del Palomar (o principio de Dirichlet) bajo el esquema del 'peor escenario posible'.\n\n* Existen 2 'tipos' o categorías posibles (A y B).\n* El peor escenario es extraer uno de cada tipo en los dos primeros intentos (1 disco A, 1 disco B).\n* En la tercera extracción, sin importar el disco que emerja (A o B), forzosamente formará pareja con uno de los ya extraídos. Mínimo: 3.\n\n**Tip Élite:** En ejercicios de 'garantizar extracciones', calcula siempre tu mala suerte máxima. Extrae uno de cada categoría hasta agotar variedad; el siguiente intento será el triunfo matemático."
+  },
+  {
+    "id": "m_per_8",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un panel de control aeroespacial requiere la instalación lineal de 6 módulos biométricos, cada uno con una configuración singular. Debido a regulaciones de ergonomía, la posición exacta de cada módulo altera drásticamente el protocolo de la tripulación.",
+    "q": "¿De cuántas secuencias operativas diferentes se puede ensamblar dicha línea de módulos?",
+    "opts": [
+      "36",
+      "720",
+      "120",
+      "24"
+    ],
+    "ans": 1,
+    "exp": "Se busca disponer 'n' elementos distintos en fila, donde el orden absoluto importa (no hay repeticiones ni combinatorias parciales). Es una permutación lineal simple de todos los elementos.\n\n* Fórmula: n! (factorial de n).\n* En este caso: 6! = 6 × 5 × 4 × 3 × 2 × 1.\n* 6! = 720 permutaciones.\n\n**Tip Élite:** Factoriales clave para memorizar y ahorrar tiempo: 4! = 24, 5! = 120, 6! = 720. Conocerlos de memoria es un rasgo indiscutible de pericia en el examen."
+  },
+  {
+    "id": "m_geo_11",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un panel fotovoltaico diseñado en forma de triángulo escaleno reporta una superficie de captación de 144 m². Se ha calibrado su soporte de inclinación determinando que la altura ortogonal respecto a su base inferior mide 12 m.",
+    "q": "Bajo estos parámetros métricos, ¿cuál es la extensión rectilínea de su base inferior?",
+    "opts": [
+      "24 m",
+      "12 m",
+      "48 m",
+      "6 m"
+    ],
+    "ans": 0,
+    "exp": "Despejar variables a partir de fórmulas conocidas es el estándar geométrico de nivel medio-alto.\n\n* Ecuación madre: Área = (base × altura) / 2\n* Sustitución: 144 = (base × 12) / 2\n* Simplificación: 144 = base × 6\n* Despeje final: base = 144 / 6 = 24 metros.\n\n**Tip Élite:** En la fórmula del triángulo, antes de multiplicar el área por 2 (que suele agrandar feamente los números), verifica si la altura es par. Si lo es, divídela por 2 de inmediato y despéjala directamente."
+  },
+  {
+    "id": "m_geo_12",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una antena parabólica receptora exhibe un disco perfectamente circular cuyo diámetro abarca 40 metros. Para calcular la dispersión térmica del material, se emplea la aproximación π ≈ 3,14.",
+    "q": "Determina la medida aproximada de su área focal.",
+    "opts": [
+      "1256 m²",
+      "5024 m²",
+      "125,6 m²",
+      "2512 m²"
+    ],
+    "ans": 0,
+    "exp": "El área del círculo depende críticamente del radio. El error común es usar el diámetro en la ecuación.\n\n* Diámetro = 40 m, por lo tanto, el Radio = 20 m.\n* Fórmula: Área = π × r²\n* Cálculo: 3,14 × (20)² = 3,14 × 400.\n* Táctica operativa: 3,14 × 400 = 314 × 4 = 1256 m².\n\n**Tip Élite:** Cuando un examen te da el diámetro en vez del radio, es una trampa deliberada para que omitas dividir por dos. Siempre subraya 'radio' o 'diámetro' antes de plasmar números."
+  },
+  {
+    "id": "m_suc_12",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Durante el modelado predictivo del crecimiento de una colonia bacteriana anómala, el conteo poblacional en intervalos secuenciales arrojó la siguiente serie: 2, 6, 12, 20, 30, 42, ...",
+    "q": "¿Cuál es la magnitud proyectada para el octavo intervalo de observación?",
+    "opts": [
+      "72",
+      "56",
+      "64",
+      "90"
+    ],
+    "ans": 0,
+    "exp": "Las series de segundo orden revelan su lógica al calcular la diferencia de sus diferencias (la aceleración).\n\n* Serie: 2, 6, 12, 20, 30, 42, X, Y\n* Diferencias 1º nivel: +4, +6, +8, +10, +12.\n* Diferencias 2º nivel: +2 constante.\n* El 7º término surge de 42 + 14 = 56.\n* El 8º término (el buscado) surge de 56 + 16 = 72.\n* Alternativamente, el enésimo término obedece a la fórmula n(n+1). Para n=8, 8(9) = 72.\n\n**Tip Élite:** Las sucesiones cuadráticas más célebres provienen de la forma n²+n (o n(n+1)). Si logras memorizar el patrón (2, 6, 12, 20, 30...), podrás proyectar cualquier término sin sudar la gota gorda."
+  }
+]

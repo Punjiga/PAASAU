@@ -1,0 +1,688 @@
+[
+  {
+    "id": "m_geo_14",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"35\" y=\"15\" width=\"120\" height=\"120\" fill=\"rgba(46,230,166,.20)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><rect x=\"71\" y=\"51\" width=\"48\" height=\"48\" fill=\"var(--ink)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"74\" y=\"153\" fill=\"currentColor\" font-size=\"13\">6 cm</text><text x=\"82\" y=\"79\" fill=\"currentColor\" font-size=\"11\">4 cm</text></svg>",
+    "stem": "Un diseñador industrial crea una placa metálica cuadrangular de 6 cm de lado. Para reducir el peso, perfora un orificio cuadrado perfecto de 4 cm de lado en la sección central de la placa.",
+    "q": "¿Cuál es el área de la región sombreada?",
+    "opts": [
+      "20 cm²",
+      "16 cm²",
+      "26 cm²",
+      "52 cm²"
+    ],
+    "ans": 0,
+    "exp": "Para encontrar el área de una región perforada, debemos visualizarla como la diferencia entre dos superficies totales.\n\n- Primero, calculamos el **área de la placa original**: $6^2 = 36\\text{ cm}^2$.\n- Luego, calculamos el **área del vacío** (el orificio): $4^2 = 16\\text{ cm}^2$.\n- Finalmente, **restamos** el vacío del total: $36 - 16 = 20\\text{ cm}^2$.\n\nLas otras opciones son trampas comunes: 16 cm² es solo el área del hueco, y 52 cm² suma ambas áreas irracionalmente.\n\n**Tip Élite:** Siempre que te pidan el área de una 'región sombreada' o 'restante', piensa en términos de resta: Área Mayor - Área Menor."
+  },
+  {
+    "id": "m_cnt_14",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 160 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"80\" y1=\"20\" x2=\"80\" y2=\"140\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"20\" y1=\"80\" x2=\"140\" y2=\"80\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Se presenta un diseño geométrico basado en una retícula ortogonal compuesta por una matriz de 2 × 2 subdivisiones simétricas.",
+    "q": "¿Cuántos cuadrados en total se pueden contar?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "9"
+    ],
+    "ans": 1,
+    "exp": "El error más común en problemas de conteo geométrico es limitarse a los elementos más evidentes sin considerar las combinaciones.\n\n- Primero, observamos los **cuadrados unitarios** (1 × 1). Hay exactamente 4 subdivisiones visibles.\n- Luego, debemos buscar cuadrados de mayores dimensiones. Al agrupar los 4 cuadrados unitarios, se forma **1 cuadrado mayor** de 2 × 2.\n- Sumando ambos casos: $4 + 1 = 5$ cuadrados en total.\n\n**Tip Élite:** En cuadrículas de $n \\times n$, el total de cuadrados siempre responde a la suma de los cuadrados perfectos. Para 2 × 2, es $1^2 + 2^2 = 5$."
+  },
+  {
+    "id": "m_cnt_15",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"15\" width=\"135\" height=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"60\" x2=\"150\" y2=\"60\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"105\" x2=\"150\" y2=\"105\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Un plano arquitectónico muestra una subdivisión de un patio cuadrangular, fragmentado mediante líneas paralelas y perpendiculares en una cuadrícula exacta de 3 × 3.",
+    "q": "¿Cuántos cuadrados en total se pueden contar (de todos los tamaños)?",
+    "opts": [
+      "9",
+      "13",
+      "14",
+      "18"
+    ],
+    "ans": 2,
+    "exp": "Para resolver este conteo sin omitir figuras ni contar doble, debemos proceder sistemáticamente por tamaño.\n\n- **Cuadrados de 1 × 1:** La cuadrícula base contiene 9 celdas independientes.\n- **Cuadrados de 2 × 2:** Deslizando un marco mental de 2 × 2 sobre la cuadrícula, encontramos 4 posiciones posibles (arriba-izq, arriba-der, abajo-izq, abajo-der).\n- **Cuadrados de 3 × 3:** Existe 1 único cuadrado que abarca toda la figura.\n- Sumando los subtotales: $9 + 4 + 1 = 14$ cuadrados.\n\n**Tip Élite:** Utiliza la fórmula rápida para retículas cuadradas de $n \\times n$: suma de los cuadrados perfectos. Aquí es $1^2 + 2^2 + 3^2 = 14$."
+  },
+  {
+    "id": "m_cnt_16",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Se traza un triángulo equilátero principal. Desde su vértice superior se proyecta una bisectriz que intersecta perpendicularmente la base, segmentando el espacio interior.",
+    "q": "¿Cuántos triángulos hay en total?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "El conteo de figuras superpuestas requiere no solo ver las partes, sino el todo que conforman juntas.\n\n- En un primer nivel, la bisectriz divide la figura en **2 triángulos internos** más pequeños e independientes.\n- Sin embargo, el **triángulo principal** original (que engloba a los otros dos) sigue existiendo y debe contabilizarse.\n- Por lo tanto, el total es $2 + 1 = 3$ triángulos.\n\nResponder 2 es caer en la trampa visual de ignorar el marco general.\n\n**Tip Élite:** Cuando líneas parten de un mismo vértice hacia una base, numera los espacios en la base y suma esos números. Aquí hay 2 espacios: $1 + 2 = 3$ triángulos."
+  },
+  {
+    "id": "m_geo_15",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 195 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,30 120,30 120,75 170,75 170,140 20,140\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"80\" y=\"156\" fill=\"currentColor\" font-size=\"12\">8 cm</text><text x=\"2\" y=\"92\" fill=\"currentColor\" font-size=\"12\">6 cm</text></svg>",
+    "stem": "Un arquitecto diseña una planta en forma de 'L'. Para ello, parte de un bloque rectangular de 8 metros de base por 6 metros de altura y le sustrae una sección rectangular en una de sus esquinas superiores.",
+    "q": "¿Cuál es el perímetro de la figura?",
+    "opts": [
+      "28 metros",
+      "22 metros",
+      "14 metros",
+      "24 metros"
+    ],
+    "ans": 0,
+    "exp": "Este es un problema clásico de ilusiones ópticas geométricas. A primera vista, parece faltar información porque no nos dan las medidas del recorte.\n\n- Analicemos qué ocurre al quitar una esquina rectangular: los dos segmentos retirados en el borde externo son **reemplazados exactamente** por dos nuevos segmentos paralelos e idénticos en el interior del recorte.\n- Por lo tanto, las distancias 'horizontales' y 'verticales' totales que se deben recorrer para dar la vuelta a la figura siguen siendo las mismas que las del rectángulo original.\n- El perímetro del rectángulo base es $2 \\times (8 + 6) = 28\\text{ m}$. El perímetro de la figura en L será idéntico.\n\n**Tip Élite:** Extraer una esquina rectangular de un rectángulo **nunca altera su perímetro**, solo reduce su área. Memoriza esta propiedad para ganar tiempo en el examen."
+  },
+  {
+    "id": "m_geo_16",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 200 120\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"100\" x2=\"180\" y2=\"100\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"100\" y1=\"100\" x2=\"45\" y2=\"32\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"52\" y=\"92\" fill=\"currentColor\" font-size=\"13\">130°</text><text x=\"128\" y=\"92\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "Una viga maestra descansa horizontalmente y es intersecada por un cable tensor, generando dos ángulos adyacentes suplementarios. El medidor láser indica que el ángulo obtuso resultante es de 130°.",
+    "q": "¿Cuánto mide el otro ángulo?",
+    "opts": [
+      "50°",
+      "60°",
+      "40°",
+      "130°"
+    ],
+    "ans": 0,
+    "exp": "El concepto clave aquí es la definición geométrica de los ángulos adyacentes sobre una línea recta.\n\n- Una línea recta horizontal representa un **ángulo llano**, cuya medida total es siempre de 180°.\n- Dado que el tensor divide este ángulo llano en dos, la suma de ambos debe ser obligatoriamente 180° (ángulos suplementarios).\n- Conociendo que una sección mide 130°, simplemente resolvemos: $180° - 130° = 50°$.\n\n**Tip Élite:** La palabra 'recta' o 'línea' en problemas de ángulos es un sinónimo oculto del valor numérico 180°. Búscalo siempre como tu punto de partida."
+  },
+  {
+    "id": "m_ari_18",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 250 70\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"9\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"37\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"65\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"93\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"121\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"149\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"177\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "Un medidor de progreso digital presenta una barra de estado particionada en 8 segmentos idénticos. Cierta cantidad de segmentos están iluminados indicando el porcentaje completado, mientras el resto permanece apagado.",
+    "q": "¿Qué fracción de la barra está sombreada?",
+    "opts": [
+      "{{3/8}}",
+      "{{3/5}}",
+      "{{5/8}}",
+      "{{5/3}}"
+    ],
+    "ans": 0,
+    "exp": "Para establecer una razón matemática correcta, necesitamos definir claramente las dos partes de una fracción: el numerador (lo que nos interesa) y el denominador (el universo total).\n\n- Primero, contabilizamos el **total de divisiones** (el denominador). La barra se fragmenta en 8 segmentos iguales.\n- Segundo, contabilizamos los **segmentos iluminados** (el numerador). Hay 3 segmentos sombreados.\n- Al construir la fracción, obtenemos **3/8**.\n\nEl distractor 3/5 es un error clásico donde se compara la parte sombreada con la *no sombreada*, creando una razón en lugar de una fracción del total.\n\n**Tip Élite:** Al modelar fracciones visuales, el denominador siempre es la suma de las partes iluminadas Y las apagadas. Jamás compares partes entre sí a menos que te pidan explícitamente una 'razón'."
+  },
+  {
+    "id": "m_geo_17",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g stroke=\"var(--line)\" stroke-width=\"1\"><line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"120\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"120\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"120\"/><line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"120\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"120\"/><line x1=\"30\" y1=\"30\" x2=\"150\" y2=\"30\"/><line x1=\"30\" y1=\"60\" x2=\"150\" y2=\"60\"/><line x1=\"30\" y1=\"90\" x2=\"150\" y2=\"90\"/><line x1=\"30\" y1=\"120\" x2=\"150\" y2=\"120\"/></g><polygon points=\"30,120 150,120 30,30\" fill=\"rgba(77,163,255,.18)\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Se inscribe un polígono triangular sobre un plano cartesiano cuadriculado, donde cada celda representa un área de 1 cm². Las proyecciones ortogonales del triángulo indican una base de 4 cm y una altura de 3 cm.",
+    "q": "¿Cuál es el área del triángulo?",
+    "opts": [
+      "6 cm²",
+      "12 cm²",
+      "7 cm²",
+      "14 cm²"
+    ],
+    "ans": 0,
+    "exp": "Este problema evalúa la aplicación directa del cálculo de áreas planas independientemente de la inclinación del triángulo.\n\n- La fórmula fundamental del área triangular es: $A = \\frac{\\text{base} \\times \\text{altura}}{2}$.\n- Identificamos los parámetros dados: la base mide 4 unidades y la altura perpendicular mide 3 unidades.\n- Sustituimos y calculamos: $\\frac{4 \\times 3}{2} = \\frac{12}{2} = 6\\text{ cm}^2$.\n\nEl distractor principal (12) ocurre al olvidar el paso final de dividir por 2, calculando el área del rectángulo que contiene al triángulo.\n\n**Tip Élite:** En cuadrículas, asegúrate de contar la *altura perpendicular* a la base elegida, no la longitud de los lados diagonales."
+  },
+  {
+    "id": "v_lec_1",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Históricamente, el paradigma predominante concebía el talento como un don intrínseco, inmutable e innato. Sin embargo, estudios longitudinales recientes desafían esta premisa determinista. Si bien se reconoce la existencia de predisposiciones cognitivas o físicas, el factor diferenciador en los individuos de alto rendimiento es la 'práctica deliberada': un proceso iterativo de repetición consciente, rectificación rigurosa de errores y búsqueda de desafíos progresivos. Desde esta óptica, el talento excepcional no es un punto de partida estático, sino el sedimento acumulado tras años de esfuerzo focalizado.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "Las aptitudes innatas son irrelevantes para alcanzar niveles excepcionales de rendimiento.",
+      "El alto rendimiento es fundamentalmente el producto de una práctica intencional y progresiva, no solo de dones innatos.",
+      "La 'práctica deliberada' es el único factor biológico que determina el éxito a largo plazo.",
+      "El talento es un atributo inmutable que se desarrolla independientemente del nivel de esfuerzo."
+    ],
+    "ans": 1,
+    "exp": "Para identificar la tesis, debemos encontrar la idea que engloba el propósito persuasivo de todo el párrafo.\n\n- El texto desmantela el 'paradigma predominante' (talento como don innato) para introducir una nueva perspectiva: el talento como resultado de la **práctica deliberada**.\n- La opción correcta (B) sintetiza este contraste: no niega lo innato por completo, pero afirma que el rendimiento superior se construye con práctica intencional.\n- El distractor A es un extremo falso ('irrelevante'), ya que el texto admite que existen 'predisposiciones'. El distractor C confunde términos al llamar biológica a la práctica.\n\n**Tip Élite:** En preguntas de comprensión crítica, descarta de inmediato las opciones que usen un tono extremista o absolutista (ej. 'irrelevantes', 'único factor')."
+  },
+  {
+    "id": "v_lec_2",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "La comunidad aguardaba con expectación la instalación del nuevo médico residente. Transcurrieron semanas, pero la vivienda asignada permaneció con los postigos herméticamente cerrados; la botica local, que había incrementado su inventario anticipando un flujo continuo de recetas, comenzó a retornar los lotes de antibióticos por proximidad a su fecha de caducidad. En la estación, el estandarte de bienvenida se deshilachaba lentamente bajo los inclementes temporales de octubre.",
+    "q": "¿Qué se puede deducir del texto, aunque no se diga directamente?",
+    "opts": [
+      "El médico decidió atender a los pacientes exclusivamente mediante visitas a domicilio.",
+      "El profesional de la salud esperado nunca se presentó en la comunidad.",
+      "La comunidad sufrió una epidemia severa debido a la falta de antibióticos disponibles.",
+      "La botica local quebró debido a las deudas adquiridas por el exceso de inventario."
+    ],
+    "ans": 1,
+    "exp": "Una conclusión implícita o inferencia es una afirmación que, sin estar escrita literalmente, se deriva de forma obligatoria de las pistas del texto.\n\n- Las pistas (postigos cerrados, botica devolviendo inventario, estandarte pudriéndose) construyen un cuadro de abandono y de un evento que **nunca ocurrió**.\n- La conclusión lógica irrefutable es que el médico nunca llegó (B).\n- Los distractores C y D (epidemia, quiebra de la botica) son especulaciones audaces. Inferir no es inventar; la inferencia debe anclarse estrictamente en los datos provistos.\n\n**Tip Élite:** El examen evalúa tu capacidad de distinguir entre una deducción lógica y una especulación imaginativa. Quédate siempre con la conclusión más mesurada y cercana a la evidencia del texto."
+  },
+  {
+    "id": "v_lec_3",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Una auditoría académica reveló el siguiente patrón invariable: la totalidad de los aspirantes que completaron el programa de simulación avanzada lograron certificar sus competencias en la evaluación final. Se tiene constancia documentada de que el estudiante C. Navarro logró certificar sus competencias en dicha evaluación.",
+    "q": "¿Qué se puede concluir con certeza?",
+    "opts": [
+      "C. Navarro completó rigurosamente el programa de simulación avanzada.",
+      "Ningún aspirante certificó sus competencias sin haber completado el programa.",
+      "Resulta imposible determinar con certeza si C. Navarro utilizó el simulador o no.",
+      "El programa de simulación avanzada fue la única herramienta que permitió a C. Navarro aprobar."
+    ],
+    "ans": 2,
+    "exp": "Este ejercicio es un clásico de lógica proposicional (Silogismos). Evaluemos la estructura formal:\n\n- **Premisa Mayor:** Si A (usas simulador) $\\rightarrow$ B (apruebas).\n- **Premisa Menor:** Navarro logró B (aprobó).\n- **Falacia de afirmación del consecuente:** Asumir que como ocurrió B, entonces obligatoriamente ocurrió A. El texto dice que *todos los del simulador aprobaron*, pero **no dice** que *solo los del simulador aprobaron*. Pudo haber aprobado estudiando por su cuenta.\n- Por lo tanto, no tenemos información suficiente para afirmar si usó o no el simulador (C).\n\n**Tip Élite:** Recuerda la regla de oro lógica: 'Todo A es B' NO significa que 'Todo B sea A'. Que todos los perros sean mamíferos no significa que todos los mamíferos sean perros."
+  },
+  {
+    "id": "v_lec_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Para el ingeniero estructural, el antiguo puente de vigas remachadas representa una anomalía logística, un riesgo calculado que exige demolición inmediata. Sin embargo, para el catedrático de historia, es un testimonio indisoluble de la revolución industrial del siglo XIX. Paralelamente, para los residentes ribereños, carece de cualquier mística o peligro: es, llanamente, el atajo más eficiente hacia el mercado local.",
+    "q": "¿Qué idea central transmite el texto?",
+    "opts": [
+      "El valor histórico de una estructura debe prevalecer siempre sobre los riesgos estructurales.",
+      "La significación y valor de un objeto están supeditados a la perspectiva e intereses del observador.",
+      "La ingeniería moderna se caracteriza por una falta de aprecio por el patrimonio arquitectónico.",
+      "Los atajos comunitarios suelen estar construidos sobre infraestructuras obsoletas y peligrosas."
+    ],
+    "ans": 1,
+    "exp": "Para extraer la premisa filosófica, debemos observar el hilo conductor que une los tres ejemplos distintos presentados en el texto.\n\n- El texto presenta un mismo objeto físico (el puente) analizado desde tres ángulos: técnico (ingeniero), académico (historiador) y pragmático (vecinos).\n- Ninguna visión es catalogada como 'correcta' por el autor; simplemente constata que el valor del puente **cambia según quién lo mire**.\n- La opción B abstrae perfectamente este concepto: la relatividad del valor según el observador.\n- Los demás distractores asumen posturas que el texto no toma (como defender el puente o atacar a los ingenieros).\n\n**Tip Élite:** Cuando un texto presenta múltiples perspectivas contrastantes sin emitir un juicio de valor sobre ellas, la idea principal casi siempre versa sobre la 'subjetividad', la 'relatividad' o la 'diversidad de interpretaciones'."
+  },
+  {
+    "id": "v_lec_5",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El acto cotidiano de encender una lámpara se percibe como un evento trivial e instantáneo: un leve desplazamiento del interruptor y la oscuridad se disipa. Subyacente a esta aparente simplicidad, opera una red colosal: turbinas hidráulicas monumentales, miles de kilómetros de líneas de transmisión de alta tensión, subestaciones moduladoras y algoritmos en tiempo real que sincronizan milimétricamente la oferta y la demanda energética para que ese destello ocurra.",
+    "q": "¿Qué contraste plantea el texto?",
+    "opts": [
+      "Una analogía entre la velocidad de la luz y el avance de las redes tecnológicas modernas.",
+      "Un marcado contraste entre la simplicidad superficial de una acción y la abrumadora complejidad sistémica que la sustenta.",
+      "Una crítica velada al desconocimiento social respecto a las fuentes de generación hidroeléctrica.",
+      "Una demostración de la superioridad de la ingeniería eléctrica sobre las acciones humanas cotidianas."
+    ],
+    "ans": 1,
+    "exp": "El 'recurso argumentativo' es el mecanismo lógico que el autor utiliza para construir su mensaje.\n\n- El párrafo se divide en dos mitades evidentes. La primera habla de lo 'trivial' y la 'aparente simplicidad' (mover un dedo).\n- La segunda mitad revela lo 'subyacente' y 'colosal' (turbinas, redes, algoritmos).\n- Esta estructura es un contraste clásico (Opción B) diseñado para generar asombro frente a lo cotidiano.\n- No hay críticas (C), analogías de velocidad (A) ni comparaciones de superioridad (D); solo la revelación de la complejidad oculta.\n\n**Tip Élite:** Busca palabras conectoras como 'Subyacente a...' o 'Sin embargo...'. Estos conectores de adversidad o contraste te indican de inmediato la estructura lógica del argumento."
+  },
+  {
+    "id": "v_lec_6",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El individuo que prodiga compromisos desmesurados en todas direcciones termina por erosionar su propia credibilidad: las garantías verbales, cuando se emiten sin el respaldo de la capacidad real de ejecución, sufren una drástica devaluación y pierden la gravidez que las revestía de autoridad.",
+    "q": "¿Cuál opción expresa mejor la idea del texto?",
+    "opts": [
+      "El exceso de promesas es el camino más directo para ganar popularidad temporal.",
+      "La proliferación irresponsable de promesas conduce a la devaluación de la palabra empeñada.",
+      "La credibilidad de un individuo es completamente independiente de su capacidad de ejecución.",
+      "Toda garantía verbal carece de valor frente a los acuerdos establecidos por escrito."
+    ],
+    "ans": 1,
+    "exp": "La paráfrasis exige reescribir la idea principal sin alterar su intención crítica.\n\n- El texto advierte que dar compromisos sin capacidad de cumplirlos ('en todas direcciones', 'desmesurados') hace que la palabra pierda peso ('devaluación', pierde 'gravidez').\n- La opción B captura esta dinámica de causa-efecto perfectamente: proliferación irresponsable (causa) $\\rightarrow$ devaluación de la palabra (efecto).\n- La A dice lo contrario al texto. La C rompe la lógica planteada y la D introduce elementos externos al texto ('acuerdos por escrito').\n\n**Tip Élite:** En ejercicios de paráfrasis, asegúrate de que la opción correcta mantenga el mismo *tono* (aquí, crítico y admonitorio) que el texto original."
+  },
+  {
+    "id": "v_lec_7",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Estadísticamente, existe una correlación innegable: los meses que registran los picos más altos en las ventas de helados coinciden milimétricamente con las tasas más elevadas de ahogamientos costeros. No obstante, inferir que el consumo de lácteos congelados induce asfixia por inmersión sería un absurdo epistemológico. La realidad es que ambas variables son propulsadas por un tercer factor subyacente: el implacable calor estival que abarrotece simultáneamente las heladerías y los litorales.",
+    "q": "¿Qué idea sostiene el texto?",
+    "opts": [
+      "El calor estival es el principal factor de riesgo para la seguridad en entornos acuáticos.",
+      "La correlación simultánea de dos fenómenos estadísticos no implica necesariamente una relación de causalidad entre ellos.",
+      "El aumento en el consumo de productos fríos disminuye la capacidad de respuesta física al nadar.",
+      "Los estudios estadísticos son intrínsecamente defectuosos y no deben emplearse para políticas públicas."
+    ],
+    "ans": 1,
+    "exp": "Este es un texto clásico sobre lógica analítica y falacias estadísticas.\n\n- El texto muestra dos eventos que ocurren al mismo tiempo (correlación): venta de helados y ahogamientos.\n- Luego, advierte que creer que uno causa el otro ('induce asfixia') es un 'absurdo', revelando que hay una tercera causa real (el calor).\n- El principio filosófico subyacente (B) es el famoso 'correlación no implica causalidad'.\n- Las opciones A y C se quedan estancadas en lo literal del ejemplo de los helados, fallando en extraer el *principio* que pide la pregunta. La D hace una generalización radical contra la estadística.\n\n**Tip Élite:** Cuando un texto científico o lógico utiliza un ejemplo curioso (helados y ahogamientos), rara vez te preguntarán sobre el ejemplo per se; te preguntarán sobre el **principio abstracto** que dicho ejemplo pretende demostrar."
+  },
+  {
+    "id": "v_lec_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Durante la junta directiva, la presentación del agresivo plan de expansión fue recibida con ovaciones y asentimientos efusivos. Sin embargo, en el instante en que el director ejecutivo inquirió sobre quién asumiría el liderazgo del comité de implementación, el clamor cesó abruptamente. Las miradas se anclaron en los bloc de notas y, de súbito, una epidemia de compromisos ineludibles afloró entre los presentes.",
+    "q": "¿Qué se puede deducir del texto?",
+    "opts": [
+      "Los miembros de la junta conspiraban secretamente para derrocar al director ejecutivo.",
+      "La aprobación retórica del proyecto no estuvo acompañada de un compromiso operativo genuino.",
+      "El plan de expansión presentado contenía fallas estructurales evidentes para todos los presentes.",
+      "El exceso de carga laboral impidió objetivamente que cualquier directivo asumiera nuevas tareas."
+    ],
+    "ans": 1,
+    "exp": "La pregunta nos exige deducir el comportamiento grupal basado en los contrastes de sus acciones.\n\n- Primera acción: 'ovaciones y asentimientos' (aprobación retórica o de palabra).\n- Segunda acción: 'miradas al suelo' y excusas inventadas ('epidemia de compromisos') cuando se exigió responsabilidad (falta de compromiso real).\n- La conclusión B condensa este abismo entre aplaudir una idea y estar dispuesto a trabajar en ella.\n- Las opciones A y C son invenciones sin base. La D toma las excusas ('compromisos ineludibles') como verdades objetivas, cuando el autor usa sarcasmo al llamarlo una 'epidemia súbita'.\n\n**Tip Élite:** Presta atención al tono irónico o sarcástico. Expresiones como 'epidemia de compromisos' te indican que el narrador no les cree, advirtiéndote que no tomes sus excusas como hechos literales."
+  },
+  {
+    "id": "m_cnt_17",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"55\" x2=\"145\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"85\" x2=\"145\" y2=\"85\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"115\" x2=\"145\" y2=\"115\" stroke=\"var(--math)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "Un algoritmo de visión artificial debe analizar un tablero reticular cuadrado segmentado en 4 × 4 módulos idénticos para detectar patrones geométricos.",
+    "q": "¿Cuántos cuadrados en total se pueden contar (de todos los tamaños)?",
+    "opts": [
+      "16",
+      "26",
+      "30",
+      "40"
+    ],
+    "ans": 2,
+    "exp": "La forma más rápida y segura de resolver matrices cuadradas grandes sin perder la cuenta es mediante inducción matemática.\n\n- Un tablero 4 × 4 contiene cuadrados de tamaños $1\\times1, 2\\times2, 3\\times3$ y $4\\times4$.\n- En lugar de contar a ciegas, aplicamos la propiedad de la suma de cuadrados perfectos para una matriz $n \\times n$: $1^2 + 2^2 + 3^2 + 4^2$.\n- Resolvemos: $1 + 4 + 9 + 16 = 30$.\n\nEl distractor 16 es para quienes solo ven las unidades menores; el distractor 26 (errar la suma de 9 y 16) castiga la aritmética rápida descuidada.\n\n**Tip Élite:** Apréndete esta serie de memoria para los exámenes: para una matriz $1\\times1$ es 1, $2\\times2$ es 5, $3\\times3$ es 14, $4\\times4$ es 30, $5\\times5$ es 55. Te ahorrará minutos invaluables."
+  },
+  {
+    "id": "m_cnt_18",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.10)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"67\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"113\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Una estructura piramidal bidimensional está definida por un triángulo mayor. Desde su cúspide o vértice superior, se proyectan dos rectas interiores que descienden hasta intersecar la base, dividiendo el espacio en franjas angulares contiguas.",
+    "q": "¿Cuántos triángulos hay en total?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "Este problema requiere un sistema metódico de combinaciones espaciales para no obviar ninguna subfigura.\n\n- **Base simple:** Tenemos 3 triángulos pequeños e individuales formados directamente por los cortes.\n- **Agrupación de a 2:** Uniendo el primero y el segundo obtenemos 1 triángulo mediano; uniendo el segundo y el tercero obtenemos otro. Total: 2 triángulos.\n- **Agrupación máxima:** Uniendo los tres segmentos obtenemos el triángulo principal. Total: 1 triángulo.\n- Suma total: $3 + 2 + 1 = 6$.\n\n**Tip Élite:** Cuando rectas radian de un vértice a una base, el número total de triángulos siempre es la suma consecutiva de los segmentos en la base. Si la base tiene 3 secciones, la respuesta es $1 + 2 + 3 = 6$. Si tuviera 4, sería $1 + 2 + 3 + 4 = 10$."
+  },
+  {
+    "id": "m_cnt_19",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 210 90\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"30\" width=\"170\" height=\"40\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"76\" y1=\"30\" x2=\"76\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"133\" y1=\"30\" x2=\"133\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Un espectrofotómetro imprime una tira reactiva rectangular que se encuentra particionada transversalmente en 3 bandas operativas contiguas y del mismo tamaño.",
+    "q": "¿Cuántos rectángulos en total se pueden contar?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "ans": 3,
+    "exp": "Al igual que en los triángulos adyacentes, el conteo de rectángulos alineados exige sumar combinaciones progresivas.\n\n- **Módulo básico:** Existen 3 bandas rectangulares independientes de tamaño unitario.\n- **Bloques dobles:** Podemos agrupar la banda (1+2) para formar un rectángulo mayor, y la banda (2+3) para formar otro. Son 2 rectángulos medianos.\n- **Bloque total:** La tira completa, abarcando (1+2+3), conforma 1 rectángulo grande.\n- Sumatoria: $3 + 2 + 1 = 6$ rectángulos.\n\n**Tip Élite:** La regla matemática para cualquier tira dividida en $n$ segmentos contiguos es equivalente a la suma de los primeros $n$ números naturales: $\\frac{n(n+1)}{2}$. Para $n=3$, resulta $\\frac{3(4)}{2} = 6$."
+  },
+  {
+    "id": "m_geo_18",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 200 175\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"25,35 145,35 145,80 175,80 175,145 25,145\" fill=\"rgba(46,230,166,.16)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"80\" y=\"163\" fill=\"currentColor\" font-size=\"12\">10 cm</text><text x=\"4\" y=\"95\" fill=\"currentColor\" font-size=\"12\">8 cm</text></svg>",
+    "stem": "Una lámina de acero, originalmente de proporciones 10 m × 8 m, debe ser modificada estructuralmente. Se realiza un corte en una de sus esquinas extrayendo una sección rectangular precisa de 4 m × 3 m para acoplar tuberías.",
+    "q": "¿Cuál es el área de la figura?",
+    "opts": [
+      "68 m²",
+      "80 m²",
+      "56 m²",
+      "92 m²"
+    ],
+    "ans": 0,
+    "exp": "Para áreas complejas ortogonales, el método de sustracción suele ser el más directo y seguro.\n\n- Calculamos el **área de la lámina original** antes del corte: $10 \\times 8 = 80\\text{ m}^2$.\n- Calculamos el **área de la porción desechada** (la esquina): $4 \\times 3 = 12\\text{ m}^2$.\n- Aplicamos la resta para hallar el área neta: $80 - 12 = 68\\text{ m}^2$.\n\nEl distractor 92 representa un error cognitivo común: *sumar* el área del recorte en lugar de restarla, confundiendo una extracción con un anexo.\n\n**Tip Élite:** Cuando te pidan un 'área', los recortes en las esquinas restan área (a diferencia del perímetro, que se mantiene igual). Diferencia bien estos dos conceptos geométricos."
+  },
+  {
+    "id": "m_geo_20",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"135\" x2=\"40\" y2=\"30\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"155\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"135\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"46\" y=\"80\" fill=\"currentColor\" font-size=\"13\">35°</text><text x=\"92\" y=\"128\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "Un brazo mecánico articulado reposa en un ángulo de 90° exactos respecto a su base. Debido a una calibración, el brazo se desplaza internamente siendo fraccionado por un rayo láser que determina que uno de los ángulos incidentes es de 35°.",
+    "q": "¿Cuánto mide la otra parte?",
+    "opts": [
+      "55°",
+      "65°",
+      "45°",
+      "145°"
+    ],
+    "ans": 0,
+    "exp": "El término 'ortogonalidad' es el equivalente académico para 'ángulo recto' o perpendicular.\n\n- Sabemos que un ángulo recto, o la suma del espacio en un cuadrante cartesiano, equivale estrictamente a 90° (ángulos complementarios).\n- Si la estructura total mide 90° y un segmento conocido consume 35°, el resto debe completar la diferencia.\n- Planteamos la ecuación simple: $90° - 35° = 55°$.\n\nEl distractor 65° es un error de sustracción (asumir $100-35$ en lugar de base 90). El distractor 145° asume erróneamente un ángulo llano ($180-35$).\n\n**Tip Élite:** Siempre asocia mentalmente la palabra 'ortogonal', 'perpendicular' o el símbolo del cuadradito en el vértice con el número mágico 90°."
+  },
+  {
+    "id": "v_elite_01",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La trayectoria de la ciencia no constituye una simple acumulación lineal y pacífica de conocimientos inmutables. El teórico Thomas Kuhn postuló que el progreso epistemológico genuino irrumpe a través de drásticas revoluciones.\n\nDurante las fases de 'ciencia normal', la academia opera sometida a un paradigma hegemónico, resolviendo problemas periféricos sin cuestionar los dogmas centrales. No obstante, al acumularse discrepancias y anomalías insalvables para dicho modelo, sobreviene una crisis estructural. Ésta culmina únicamente cuando irrumpe un marco teórico novedoso que derroca y sustituye de tajo las premisas anteriores, operando un salto abrupto y disruptivo.",
+    "q": "¿Cuál de las siguientes afirmaciones sintetiza mejor la tesis central del texto?",
+    "opts": [
+      "La etapa de 'ciencia normal' se define por una constante refutación de las leyes fundamentales.",
+      "El avance del conocimiento científico estriba exclusivamente en una agregación metódica y lineal.",
+      "El progreso epistemológico se detona mediante rupturas sistémicas de los modelos imperantes.",
+      "La proliferación de anomalías es prueba fehaciente de que la capacidad de invención científica ha fenecido."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- **Opción B:** Afirma exactamente lo contrario a la tesis del autor.\n- **Opción A:** Confunde lo que ocurre en la 'ciencia normal', donde el texto afirma que *no* se cuestionan las reglas.\n- **Opción D:** Exagera el punto diciendo que la ciencia deja de progresar 'para siempre'.\n\nLa **opción C** captura perfectamente este concepto de 'sustitución abrupta' de los modelos.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global, no un simple hecho intermedio o una exageración absoluta."
+  },
+  {
+    "id": "v_elite_02",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Durante la consolidación urbana del siglo XIX, los arquitectos higienistas impulsaron la edificación de vastos bulevares en los epicentros europeos. Su justificación técnica postulaba que las avenidas de gran amplitud y linealidad propiciarían la libre circulación eólica, erradicando así las 'miasmas' o efluvios nocivos que, bajo el paradigma de la época, emanaban del subsuelo engendrando las epidemias.\n\nPese a que el modelo miasmático fue categóricamente derribado décadas más tarde por la microbiología moderna de Louis Pasteur, esta reestructuración urbana se mantuvo vigente. Paradójicamente, su trazado facilitó la posterior implementación de redes cloacales subterráneas de gran escala, una contingencia que los planificadores originales jamás habían contemplado como prioridad fundacional.",
+    "q": "¿Cuál era la finalidad primordial de la construcción de bulevares según los arquitectos del siglo XIX?",
+    "opts": [
+      "Proyectar la infraestructura necesaria para alojar el alcantarillado subterráneo moderno.",
+      "Neutralizar los microorganismos patógenos recientemente tipificados por la ciencia pasteuriana.",
+      "Incentivar la ventilación citadina para disipar los vapores deletéreos del subsuelo.",
+      "Elevar el perfil estético de las capitales europeas a través del paisajismo rectilíneo."
+    ],
+    "ans": 2,
+    "exp": "¡Analicemos esto como un detective! El texto tiene una trampa temporal. Nos pregunta por la finalidad de los arquitectos del **siglo XIX**.\n\n¿Qué dice el primer párrafo? Que querían que el viento disipara las 'miasmas' (vapores nocivos). Por tanto, la opción correcta es la **C**.\n\nMuchos estudiantes marcan la **A** porque el texto menciona alcantarillas al final, pero nota que dice *'algo que los planificadores originales jamás habían contemplado'*. Siempre debes responder desde la perspectiva temporal que pide la pregunta.\n\n**Tip Élite:** Cuando un texto contrasta dos épocas o dos teorías científicas distintas, asegúrate de aislar exactamente qué creía cada bando para no cruzar la información."
+  },
+  {
+    "id": "v_elite_03",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El paradigma tradicional dictaba que la neuroplasticidad era un fenómeno restringido a las primeras fases del desarrollo ontogénico infantil. Sin embargo, ensayos clínicos recientes en sujetos maduros que padecieron isquemias cerebrales han evidenciado concluyentemente que el cerebro adulto conserva la facultad intrínseca de reconfigurar sus circuitos neuronales con el objetivo de suplir las facultades cognitivas vulneradas.\n\nAnalice las siguientes proposiciones:\nI. El encéfalo adulto es una entidad inmutable e incapaz de forjar nuevas sinapsis bajo ningún contexto.\nII. Las secuelas patológicas en cerebros maduros resultan invictamente irreversibles debido a una pérdida absoluta de plasticidad.\nIII. La competencia para la restructuración sináptica persiste, al menos de manera focalizada, durante la senectud y adultez.",
+    "q": "¿Cuál(es) de las proposiciones se deduce(n) lógicamente del texto anterior?",
+    "opts": [
+      "Solo la proposición I es lógicamente deducible.",
+      "Solo la proposición II es lógicamente deducible.",
+      "Solo la proposición III es lógicamente deducible.",
+      "Las proposiciones I y II son mutuamente deducibles."
+    ],
+    "ans": 2,
+    "exp": "Sé que la lectura científica asusta a veces, pero analicémoslo paso a paso.\n\nEl texto afirma claramente que el cerebro adulto *conserva la facultad de reconfigurar sus circuitos*.\n\n- **Proposición I:** Dice que el cerebro adulto es 'inmutable'. Esto **contradice** directamente al texto.\n- **Proposición II:** Dice que las secuelas son 'irreversibles' por pérdida absoluta de plasticidad. De nuevo, el texto afirma que hay plasticidad para *suplir*.\n- **Proposición III:** Afirma que la reestructuración sináptica persiste en la adultez, lo cual es exactamente la premisa del texto.\n\nPor lo tanto, la única opción válida es **Solo la III (C)**.\n\n**Tip Élite:** Las opciones con palabras absolutistas como 'invictamente' o 'bajo ningún contexto' suelen ser falsas en exámenes de razonamiento."
+  },
+  {
+    "id": "v_elite_04",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El aparato censor del estado, en su afán coercitivo por extirpar de raíz un postulado de corte subversivo, paradójicamente funge como un megáfono formidable que multiplica la resonancia del discurso, propulsándolo mucho más allá de su nicho primigenio y revistiéndolo de un aura de martirologio intelectual invulnerable.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el mismo concepto utilizando otras palabras?",
+    "opts": [
+      "El escrutinio oficial representa el mecanismo más infalible para sepultar para siempre ideologías disidentes en la esfera pública.",
+      "El acto de represión institucional sobre una corriente heterodoxa suele catalizar un incremento exponencial en su prestigio y difusión.",
+      "Los ideólogos subversivos provocan deliberadamente al estado censor como única vía legítima de generar rentabilidad monetaria.",
+      "Los planteamientos subversivos carecen sistemáticamente de penetración social hasta que obtienen el beneplácito de las autoridades."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar extirpar (silenciar) un postulado subversivo, paradójicamente actúa como un 'megáfono' (le da visibilidad).\n\n- La opción **A** dice lo contrario (que el escrutinio sepulta la ideología).\n- La opción **C** inventa una motivación económica ('rentabilidad monetaria') que jamás se menciona en el texto.\n- La opción **D** tergiversa todo asumiendo que las ideas necesitan 'beneplácito', cuando el texto habla de 'aparato censor'.\n\nLa **opción B** es la paráfrasis exacta de la premisa principal."
+  },
+  {
+    "id": "v_elite_05",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Ante la recesión financiera que convulsionó el cuatrimestre, la junta administrativa adoptó una directriz insólita: soslayando la ortodoxia corporativa que prescribía recortes masivos en la planilla base, decretó una contracción salarial del 40% exclusiva para la alta gerencia e implementó una jornada laboral comprimida de cuatro días.\n\nEsta resolución, aunque repudiada de entrada por los inversores bajo el temor de un colapso en los márgenes de producción, cristalizó en un arraigo institucional sin precedentes entre los operarios, mitigando el índice de deserción corporativa a márgenes estadísticamente nulos.",
+    "q": "¿Cómo se puede caracterizar el comportamiento de la gerencia frente a la crisis?",
+    "opts": [
+      "Sumamente ortodoxo, al acatar de forma estricta los lineamientos convencionales de su industria.",
+      "Cuestionable y negligente, al anteponer los privilegios del estrato gerencial en detrimento de los inversores.",
+      "Temerario e irracional, al subestimar premeditadamente la inminente fuga del capital humano.",
+      "Decididamente heterodoxo, anteponiendo la preservación del activo humano a expensas de privilegios cupulares."
+    ],
+    "ans": 3,
+    "exp": "Vamos a desarmar las opciones falsas. \n\n- ¿Fue **ortodoxo** (es decir, seguir las reglas tradicionales)? No, el texto dice expresamente 'soslayando la ortodoxia corporativa'. Así descartamos la A.\n- ¿Fue **temerario** respecto a la fuga de talentos? Al contrario, la redujo a cero, así que la C es falsa.\n- ¿Privilegió al estrato **gerencial**? No, les recortó el salario un 40%.\n\nLa única que calza lógicamente es la **D**: fue un movimiento heterodoxo (fuera de la norma) que priorizó la retención del talento.\n\n**Tip Élite:** El examen PAA asume que dominas vocabulario académico medio. Conocer la diferencia entre *ortodoxo* y *heterodoxo* te ahorrará mucho tiempo de lectura."
+  },
+  {
+    "id": "m_elite_01",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Un hacendado acuerda una transacción comercial para adquirir porcinos y aves de corral. El contrato estipula que, por cada porcino incorporado, debe adquirir de manera invariable e ineludible un lote de tres aves. Se establece matemáticamente que la sumatoria total de animales adquiridos, simbolizada como 'T', representa un valor **par positivo y estrictamente menor que el límite de 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "Sé que es tentador probar números al azar usando las respuestas, pero analicémoslo matemáticamente para no caer en la trampa.\n\n1. Si $p$ son los porcinos y $a$ las aves, el problema impone que: $a = 3p$.\n2. El total de animales es $T = p + a$.\n3. Sustituyendo, tenemos: $T = p + 3p = 4p$.\n\nEsto significa que el total $T$ debe ser un **múltiplo de 4** (4, 8, 12, 16, 20...).\n\nEl problema dice explícitamente que $T$ es estrictamente menor a 20. Por lo tanto, el $T$ máximo posible es **16**.\n\nSi $T = 16$, y sabemos que $T = 4p$:\n$16 = 4p$  \n**$p = 4$ porcinos** (Opción A).\n\n**Tip Élite:** Muchos eligen 5 porque $5 \\times 4 = 20$, ¡pero la restricción dice *menor* a 20, no menor o igual! Presta atención extrema a las palabras 'menor' vs 'menor o igual'."
+  },
+  {
+    "id": "m_elite_02",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En un establecimiento comercial, la tarifa por unidad de golosina A es de ₡75, mientras que la unidad de golosina B asciende a ₡120. Un consumidor proyecta abastecerse de 8 unidades de A y un volumen 'x' de unidades de B, asumiendo que 'x' es un escalar entero positivo.\n\nSi el consumidor liquida la transacción entregando un billete de denominación ₡2000 y el cajero le reintegra, sin margen de error, un saldo a favor de ₡680.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "6",
+      "8",
+      "960"
+    ],
+    "ans": 1,
+    "exp": "¡Cuidado aquí! Detengámonos un momento a hacer ingeniería inversa.\n\nSi pagó con ₡2000 y le devolvieron ₡680, ¿cuánto gastó en total el señor?\n**Gasto Total:** $2000 - 680 = 1320$.\n\nAhora, sabemos que compró 8 unidades de A a ₡75 cada una:\n**Gasto en golosina A:** $8 \\times 75 = 600$.\n\n¿Cuánto dinero de ese gasto total corresponde a la golosina B?\n**Gasto en B:** $1320 - 600 = 720$.\n\nSi cada unidad de B vale 120, entonces:\n$720 / 120 = 6$ unidades.\n\n**Tip Élite:** La opción '960' es un distractor diseñado para cazar a quienes olvidan restar el vuelto del billete inicial. ¡Lee despacio y triunfarás!"
+  },
+  {
+    "id": "m_elite_03",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Se plantean tres variables de orden numérico desconocido: $P$, $Q$ y $R$. Se certifican axiomáticamente las siguientes relaciones de orden:\n- El escalar $P$ es estrictamente mayor que el escalar $Q$.\n- El escalar $Q$ pertenece al conjunto de los números reales negativos.\n- El valor absoluto de $Q$ excede inexorablemente al valor absoluto de $P$.",
+    "q": "¿Cuál de las siguientes afirmaciones es SIEMPRE verdadera?",
+    "opts": [
+      "P + Q > 0",
+      "P + Q < 0",
+      "P pertenece a los reales negativos",
+      "P = 0"
+    ],
+    "ans": 1,
+    "exp": "¿Te confunde ver tantas letras sin números? ¡Esa es exactamente la intención del examen! Hagámoslo fácil asignando valores hipotéticos que cumplan las reglas:\n\n1. $Q$ es negativo. Digamos que **$Q = -10$**.\n2. $P$ es mayor que $Q$. Podría ser $P = 5$ o $P = -2$.\n3. PERO el valor absoluto de $Q$ (10) debe ser mayor que el valor absoluto de $P$.\n\nEsto significa que $P$ es un número 'más pequeño en tamaño' (ej. 5 o -2). \n\n¿Qué pasa si sumamos $P + Q$?\nYa sea ($5 + -10 = -5$) o ($-2 + -10 = -12$), el resultado **siempre será negativo** porque el peso del negativo ($Q$) es abrumadoramente mayor que cualquier valor que pueda tomar $P$.\n\nPor tanto, **$P + Q < 0$** es la única verdad absoluta.\n\n**Tip Élite:** Las preguntas de álgebra abstracta se resuelven en segundos si simplemente inventas números que obedezcan las reglas dadas y pruebas las opciones."
+  },
+  {
+    "id": "m_elite_04",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox='0 0 200 100' style='background:#121B24; border: 1px solid #25333F; max-width:100%; border-radius: 8px;'><rect x='10' y='10' width='180' height='80' fill='none' stroke='#C792EA' stroke-width='2'/><rect x='10' y='10' width='80' height='80' fill='#2EE6A6' opacity='0.2' stroke='#2EE6A6' stroke-width='2'/><text x='100' y='55' fill='#EAF2F4' font-family='sans-serif' font-size='12' text-anchor='middle'>Sobrante = 50 m²</text></svg>",
+    "stem": "Considere el predio rectangular ilustrado, cuyo lindero longitudinal duplica milimétricamente la longitud de su lindero transversal. El propietario proyecta una excavación cuadrangular (zona sombreada) cuya dimensión lateral se iguala a la del lindero transversal del predio original. La ficha catastral indica que el área de superficie remanente (zona exenta) es de 50 metros cuadrados.",
+    "q": "¿Cuál es el perímetro total del terreno rectangular original?",
+    "opts": [
+      "30 metros",
+      "42.4 metros",
+      "50 metros",
+      "60 metros"
+    ],
+    "ans": 1,
+    "exp": "¡Visualicémoslo juntos usando la figura!\n\nSi el largo es el doble del ancho ($L = 2A$), significa que el terreno total está compuesto literalmente por **dos cuadrados perfectos** pegados uno junto al otro.\n\nSi la excavación cuadrada (área sombreada) ocupa uno de esos cuadrados, el 'remanente' (zona vacía) es idéntico: es el otro cuadrado.\n\nEl problema dice que el remanente mide $50\\text{ m}^2$. Por ende, el área de un cuadrado es $A^2 = 50$.\nSi $A^2 = 50$, entonces el ancho es **$A = \\sqrt{50}$** (aproximadamente 7.07).\n\nNos piden el **perímetro del rectángulo original**:\nFórmula: $2L + 2A$.\nSustituyendo: $2(2A) + 2A = 4A + 2A = 6A$.\n\nMultiplicamos: $6 \\times 7.07 \\approx 42.4$ metros.\n\n**Tip Élite:** No entres en pánico si no tienes calculadora y ves una raíz. El examen a menudo te dará aproximaciones o raíces inexactas para medir tu capacidad de deducir, no tu capacidad de usar la calculadora."
+  },
+  {
+    "id": "m_elite_05",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "El firmware de una bóveda exige la configuración de un pin de acceso de 3 dígitos (del 0 al 9). El manual de criptografía dicta dos axiomas insoslayables:\n1) El dígito inicial tiene estrictamente vetado el valor de 0.\n2) El algoritmo rechaza cualquier secuencia que contenga redundancias numéricas (dígitos idénticos).",
+    "q": "¿Cuántas contraseñas diferentes es posible configurar en este dispositivo?",
+    "opts": [
+      "648",
+      "729",
+      "1000",
+      "504"
+    ],
+    "ans": 0,
+    "exp": "Este es un clásico problema del **Principio Multiplicativo** con restricciones. Vamos a llenar 3 'casillas' mentales: [ _ ] [ _ ] [ _ ]\n\n1. **Primera casilla:** Tiene los dígitos del 0 al 9 (10 opciones). PERO la regla dice que no puede ser 0. Así que tenemos **9 opciones válidas** (del 1 al 9).\n\n2. **Segunda casilla:** De nuevo, los dígitos del 0 al 9 (10 opciones). Esta vez *sí* podemos usar el 0, PERO la regla dice que no podemos repetir el dígito que usamos en la primera casilla. Así que tenemos $10 - 1 = 9$ opciones válidas.\n\n3. **Tercera casilla:** Teníamos 10 dígitos, pero ya quemamos dos distintos en las casillas anteriores. Así que nos quedan $10 - 2 = 8$ opciones válidas.\n\nMultiplicamos las posibilidades: $9 \\times 9 \\times 8 = 648$.\n\n**Tip Élite:** Siempre resuelve las restricciones más estrictas primero (como el 'primer dígito no puede ser 0'). Si ignoras esto y asumes $10 \\times 9 \\times 8$, marcarías erróneamente la opción 720 (que ni siquiera está para salvarte) o la 729."
+  },
+  {
+    "id": "v_fin_4",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "La administración local emplazó contenedores policromáticos en los espacios de esparcimiento público, rotulándolos meticulosamente según la clasificación del material. El objetivo rector de esta logística era incitar a la ciudadanía a realizar una clasificación de origen de los residuos para así potenciar exponencialmente las tasas de reciclaje municipal.",
+    "q": "¿Cuál es la finalidad principal de la medida?",
+    "opts": [
+      "Mejorar la estética urbana mediante contenedores policromáticos.",
+      "Optimizar la separación de residuos en la fuente para incrementar el reciclaje.",
+      "Fomentar la contratación masiva de personal en las plantas de tratamiento.",
+      "Minimizar drásticamente la distribución de contenedores en las áreas verdes."
+    ],
+    "ans": 1,
+    "exp": "La finalidad es el fin último ('para qué' se hace algo), mientras que las acciones son solo medios.\n\n- El texto señala que los colores y rótulos (los medios) se implementaron buscando que 'la ciudadanía clasificara los residuos' para 'potenciar el reciclaje' (el fin).\n- La opción B captura esta finalidad operativa de manera exacta.\n- La opción A confunde el medio (los colores) con el propósito, asumiendo una finalidad estética que el texto descarta tácitamente. C y D aportan inferencias sin respaldo textual.\n\n**Tip Élite:** En preguntas de 'finalidad', pregúntate: '¿Se sentirían satisfechos los creadores de esta medida si solo lograran X?'. Si la respuesta es no (ej: contenedores bonitos pero basura mezclada), entonces no has hallado la finalidad principal."
+  },
+  {
+    "id": "v_fin_5",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Previo a emprender expediciones prolongadas, Lucía redacta un inventario exhaustivo de los insumos requeridos. Metódicamente, audita cada ítem de esta bitácora frente al equipaje momentos antes de clausurarlo.",
+    "q": "¿Con qué finalidad hace y revisa la lista?",
+    "opts": [
+      "Exhibir ante sus pares su superioridad en la planificación logística.",
+      "Garantizar la inclusión de todos los elementos necesarios y mitigar olvidos.",
+      "Acelerar los tiempos de empaque para superar promedios habituales.",
+      "Restringir voluntariamente el volumen del equipaje para facilitar su traslado."
+    ],
+    "ans": 1,
+    "exp": "El texto describe un comportamiento pragmático orientado a resultados de prevención.\n\n- La acción de hacer y revisar la lista tiene una función explícitamente descrita: evitar descuidos u olvidos logísticos antes de un evento mayor (el viaje).\n- Por consiguiente, la finalidad es la seguridad del inventario (B).\n- Los distractores intentan inyectar motivaciones que carecen de asidero en el texto, como narcisismo (A), urgencia (C) o minimalismo (D).\n\n**Tip Élite:** Evita proyectar tus propios hábitos o suposiciones sobre los personajes de un texto. Cíñete a la motivación funcional que emerge de la lectura estricta."
+  },
+  {
+    "id": "v_fin_6",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El ministerio de hacienda implementó una reducción drástica de aranceles de importación para los vehículos de tracción 100% eléctrica. Esta política fiscal procura estimular la adopción de estas tecnologías en la población y, concomitantemente, mitigar los índices de polución atmosférica.",
+    "q": "¿Cuál es la finalidad de reducir esos impuestos?",
+    "opts": [
+      "Incrementar sustancialmente los ingresos fiscales a mediano plazo.",
+      "Fomentar la transición hacia alternativas de movilidad eco-amigables.",
+      "Penalizar artificialmente la venta de vehículos de combustión interna.",
+      "Financiar el desarrollo y expansión de la infraestructura vial urbana."
+    ],
+    "ans": 1,
+    "exp": "La identificación de propósitos en políticas públicas requiere aislar la causa impulsora declarada en el texto.\n\n- El texto es diáfano al indicar dos metas unidas: estimular su adopción (de autos eléctricos) y mitigar la polución.\n- La opción B ('fomentar alternativas eco-amigables') resume ambas metas en un solo concepto estratégico.\n- La opción A es lógicamente contradictoria (bajar aranceles reduce ingresos inmediatos, no busca aumentarlos como meta primaria). C asume una agresión al mercado de gasolina que no se menciona, y D es irrelevante.\n\n**Tip Élite:** Los términos 'procurar' y 'estimular' marcan explícitamente el inicio de una oración de finalidad. Lo que siga a esas palabras es la respuesta que buscas."
+  },
+  {
+    "id": "v_fin_7",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Pedro configura una secuencia de tres alarmas matutinas espaciadas por intervalos cronométricos de cinco minutos. Aclara explícitamente que no recurre a este esquema por afinidad con los sonidos estridentes, sino por plena consciencia de que un único llamado lo induciría a la reincidencia en el sueño, comprometiendo su puntualidad.",
+    "q": "¿Cuál es la finalidad de poner varias alarmas?",
+    "opts": [
+      "Satisfacer una preferencia sensorial por las alertas acústicas secuenciales.",
+      "Garantizar la interrupción efectiva del sueño para evitar demoras.",
+      "Alimentar un hábito compulsivo desprovisto de justificación racional.",
+      "Asegurar que todos los habitantes de la vivienda se levanten simultáneamente."
+    ],
+    "ans": 1,
+    "exp": "Este ejercicio requiere identificar la motivación real frente a una motivación descartada por el propio autor.\n\n- Pedro mismo niega la motivación estética ('no por afinidad con los sonidos'). Con esto eliminamos inmediatamente la opción A.\n- Plantea su debilidad ('reincidencia en el sueño') y el riesgo final ('comprometiendo su puntualidad'). El objetivo (B) es neutralizar ambos riesgos.\n- La D inventa un escenario social (la casa entera) que escapa del alcance del texto. La C niega que haya razón, pero Pedro da una razón lógica muy clara.\n\n**Tip Élite:** Cuando un texto incluye la estructura 'No lo hace por X, sino por Y', la X es tu primera pista para descartar distractores y la Y es la brújula hacia la respuesta correcta."
+  },
+  {
+    "id": "v_com_4",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "En los foros de debate, en el instante preciso en que se asoma una perspectiva divergente, Daniel incrementa su decibelaje, interrumpe de tajo al interlocutor y monopoliza la palabra. Al concluir la sesión, la única narrativa que resuena es invariablemente la suya.",
+    "q": "¿Cómo se comporta Daniel frente a las opiniones distintas?",
+    "opts": [
+      "Manifiesta una apertura democrática en la confrontación de ideas.",
+      "Despliega un comportamiento marcadamente autoritario y anulador.",
+      "Exhibe una calculada indiferencia ante los argumentos ajenos.",
+      "Demuestra reticencia y timidez frente a los conflictos intelectuales."
+    ],
+    "ans": 1,
+    "exp": "Caracterizar un comportamiento implica abstraer una serie de acciones concretas bajo un adjetivo psicológico o sociológico.\n\n- Las acciones ('incrementa decibelaje', 'interrumpe', 'monopoliza') son tácticas coercitivas destinadas a dominar el espacio y suprimir las voces de otros.\n- Este conjunto de tácticas califica perfectamente como un comportamiento **autoritario y anulador** (B).\n- Opción A es el antónimo de su actitud. Opción C (indiferencia) falla porque Daniel reacciona intensamente, no es apático. Opción D es contradictoria con subir la voz.\n\n**Tip Élite:** Evalúa la 'temperatura' emocional de las acciones del personaje. Acciones impositivas y dominantes siempre apuntan a adjetivos relacionados con el autoritarismo o la agresividad."
+  },
+  {
+    "id": "v_com_5",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Al enfrentarse a una evaluación de alta complejidad, Sofía implementa un protocolo deliberado: emplea los primeros minutos en hacer un escaneo integral del documento. Posteriormente, ataca los ítems de mayor dominio cognitivo para consolidar un puntaje base, reservando estratégicamente las incógnitas más arduas para la fase final del certamen.",
+    "q": "¿Qué describe mejor la manera en que Sofía enfrenta el examen?",
+    "opts": [
+      "Procede mediante impulsos reactivos desprovistos de planificación.",
+      "Opera con temple analítico y una aguda proyección estratégica.",
+      "Sucumbe ante la parálisis por análisis derivada de la presión académica.",
+      "Se abandona a la aleatoriedad confiando en respuestas azarosas."
+    ],
+    "ans": 1,
+    "exp": "Nuevamente, debemos sintetizar acciones físicas y cognitivas en un modelo de comportamiento.\n\n- Escanear antes de actuar, priorizar lo seguro y aplazar lo difícil son signos inequívocos de un método pensado. Todo ello denota control emocional y cálculo.\n- La opción B ('temple analítico' y 'proyección estratégica') resume a la perfección esta combinación de calma y método.\n- La opción A ('impulsos') y la D ('azar') son contradicciones directas del texto. La C ('parálisis') es falsa porque ella sí avanza de manera sistemática.\n\n**Tip Élite:** En preguntas de perfilamiento de conducta, busca emparejar el nivel de organización del personaje con adjetivos que reflejen ese mismo nivel de orden o caos."
+  },
+  {
+    "id": "v_com_6",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Cuando el marcador se torna adverso y el reloj presiona, la capitana se rehúsa a la capitulación prematura. En su lugar, convoca a la escuadra, reorganiza las líneas tácticas sobre la marcha y emite arengas que sostienen la moral operativa del equipo hasta el silbatazo final.",
+    "q": "¿Cómo se comporta la capitana cuando van perdiendo?",
+    "opts": [
+      "Adopta una postura derrotista y disuelve la cohesión del grupo.",
+      "Ejerce un liderazgo resiliente que revitaliza el tejido anímico del equipo.",
+      "Desvía la responsabilidad proyectando la culpa hacia sus subalternas.",
+      "Canaliza su frustración hacia un conflicto directo con las autoridades arbitrales."
+    ],
+    "ans": 1,
+    "exp": "El texto presenta un escenario de crisis (marcador en contra) y la reacción consecuente del sujeto.\n\n- En lugar de sucumbir, la capitana 'reorganiza' y 'emite arengas'. Esto implica asumir el mando y gestionar la emocionalidad colectiva.\n- La opción B es la única que reconoce este liderazgo activo y restaurador ('resiliente').\n- Las opciones A (rendición), C (búsqueda de chivos expiatorios) y D (conflicto de autoridad) describen reacciones tóxicas ante el fracaso, ninguna de las cuales es exhibida por la protagonista.\n\n**Tip Élite:** La 'resiliencia' es un concepto recurrente en los exámenes de comprensión. Se define como la capacidad de recuperarse y mantener el empuje frente a la adversidad. Aprende a detectarla en los textos."
+  },
+  {
+    "id": "v_com_7",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Instantes después de ser doblegado en el duelo definitivo por el campeonato, el competidor atravesó la pista para rendir honores a su adversario. Asimismo, externó un reconocimiento público al esfuerzo de su propio cuerpo técnico, aseverando que la amargura del revés se transmutaría en material de aprendizaje para futuros encuentros.",
+    "q": "¿Qué actitud muestra ante la derrota?",
+    "opts": [
+      "Un profundo resentimiento encubierto de falsas cortesías.",
+      "Un sentido de integridad y estoicismo afín a la excelencia deportiva.",
+      "Un conformismo apático frente a la pérdida de jerarquía.",
+      "Una indiferencia total hacia el desenlace de la competición."
+    ],
+    "ans": 1,
+    "exp": "Debemos leer las acciones post-derrota (felicitar al rival, agradecer, prometer aprendizaje) y clasificarlas éticamente.\n\n- Estas acciones reflejan aceptación madura de la derrota y deseo de superación, lo que tradicionalmente se llama 'buen perder' o alta deportividad.\n- La opción B ('integridad y estoicismo') eleva el concepto al nivel académico requerido. El estoicismo se relaciona con dominar las emociones ante la adversidad.\n- Las otras opciones asumen emociones negativas o pasivas (resentimiento, conformismo, indiferencia) que contradicen explícitamente el espíritu constructivo del personaje.\n\n**Tip Élite:** Si un personaje extrae una lección valiosa de un fracaso, nunca lo califiques como 'conformista'. El conformista se estanca; el estoico aprende y mejora."
+  },
+  {
+    "id": "v_cau_5",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Durante un período prolongado, el jardín botánico sufrió la negligencia total de los encargados de irrigación. Si bien se precipitaron algunas lloviznas esporádicas, el volumen hídrico resultó insignificante ante la demanda del terreno, provocando que la flora sucumbiera en una desecación paulatina pero definitiva.",
+    "q": "¿Cuál fue la causa principal de que el jardín se secara?",
+    "opts": [
+      "La irregularidad intrínseca de los patrones de lluvia estacionales.",
+      "La privación de un suministro hídrico artificial adecuado y constante.",
+      "La saturación del sustrato por humedad acumulada.",
+      "La falta de resistencia biológica natural de las especies cultivadas."
+    ],
+    "ans": 1,
+    "exp": "En ejercicios de causalidad, es fundamental distinguir entre factores mitigantes ineficaces y la causa raíz del evento.\n\n- El texto menciona lloviznas, pero aclara que fueron insuficientes (factor atenuante ineficaz). La premisa inicial y central es rotunda: 'negligencia total de los encargados de irrigación' (causa raíz).\n- Por lo tanto, la ausencia del riego humano necesario (B) es lo que directamente llevó a la sequía.\n- Las lluvias no causaron la muerte (A), la asfixia por agua (C) es opuesta a los hechos, y la genética botánica (D) es un invento ajeno al texto.\n\n**Tip Élite:** Cuidado con los distractores que culpan a elementos secundarios mencionados en el texto (como la lluvia). Si el texto dice 'A pesar de X, la falta de Y provocó Z', la causa siempre es Y."
+  },
+  {
+    "id": "v_cau_6",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La escalada abrupta en las tarifas de los hidrocarburos refinados detonó, como efecto dominó, una drástica inflación en la cadena de distribución, encareciendo sensiblemente una amplia gama de bienes de consumo masivo.",
+    "q": "Según el texto, ¿cuál es una consecuencia del aumento del combustible?",
+    "opts": [
+      "Una deflación generalizada en los mercados minoristas.",
+      "Un encarecimiento transversal de los bienes de consumo transportados.",
+      "Un inminente desabastecimiento global de combustibles fósiles.",
+      "Un ajuste proporcional al alza en los salarios del sector transporte."
+    ],
+    "ans": 1,
+    "exp": "La relación causa-consecuencia es lineal y explícita en este texto: A (hidrocarburos suben) $\\rightarrow$ B (bienes de consumo se encarecen).\n\n- Se nos pregunta por la consecuencia (el impacto directo).\n- La opción B refleja con precisión ese resultado directo: el aumento en el precio de los bienes.\n- La opción A dice lo opuesto (deflación es caída de precios). C y D plantean escenarios económicos (escasez o alza de salarios) que no están en el texto.\n\n**Tip Élite:** En preguntas de una sola frase, la clave está en el vocabulario. Si sabes que 'encarecer' significa 'aumentar de precio', conectas de inmediato con la opción que expresa incremento de costos, descartando las demás opciones ajenas."
+  },
+  {
+    "id": "v_cau_7",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "El éxito de Karla en el riguroso filtro de admisión universitaria no fue producto de coyunturas azarosas; fue la desembocadura lógica de un proceso de disciplina académica sistemática e ininterrumpida a lo largo de todo el ciclo anual.",
+    "q": "¿Cuál fue la causa de que Karla aprobara?",
+    "opts": [
+      "Una afortunada conjunción de variables fuera de su control.",
+      "Su compromiso sostenido y metódico con la preparación académica.",
+      "La inesperada accesibilidad de los reactivos de la evaluación.",
+      "El respaldo logístico y emocional incondicional de su red de pares."
+    ],
+    "ans": 1,
+    "exp": "El texto establece una dicotomía: niega explícitamente una causa (azar) para afirmar rotundamente otra (disciplina).\n\n- La frase 'no fue producto de coyunturas azarosas' elimina de tajo la opción A.\n- La causa afirmada es 'disciplina académica sistemática' y 'ciclo anual', lo que se traduce directamente como un esfuerzo sostenido y metódico (B).\n- Las opciones C (examen fácil) y D (apoyo de amigos) intentan restar mérito a la protagonista introduciendo variables fantasma.\n\n**Tip Élite:** Los adjetivos son la llave de las respuestas correctas. Palabras como 'sistemática' e 'ininterrumpida' en el texto deben emparejarse con sinónimos en las opciones, como 'sostenido' y 'metódico'."
+  }
+]

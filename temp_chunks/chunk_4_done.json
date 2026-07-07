@@ -1,0 +1,674 @@
+[
+  {
+    "id": "m_rel_5",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "En una evaluación de densidad de materiales, se determinó que el material $\\alpha$ presenta mayor densidad que $\\beta$, este a su vez supera la densidad de $\\gamma$, y finalmente, $\\gamma$ es más denso que $\\delta$.",
+    "q": "Según los datos obtenidos, ¿cuál material presenta la menor densidad relativa?",
+    "opts": [
+      "$\\alpha$",
+      "$\\beta$",
+      "$\\gamma$",
+      "$\\delta$"
+    ],
+    "ans": 3,
+    "exp": "Para determinar el material con menor densidad, resulta útil ordenar las relaciones de forma descendente:\n\n* Se nos indica que $\\alpha$ > $\\beta$.\n* A su vez, $\\beta$ > $\\gamma$.\n* Y finalmente, $\\gamma$ > $\\delta$.\n\nAl encadenar estas desigualdades, obtenemos: **$\\alpha$ > $\\beta$ > $\\gamma$ > $\\delta$**. \nPor lo tanto, $\\delta$ se encuentra en el extremo inferior de la cadena de desigualdades, siendo el menos denso.\n\n**Tip Élite:** Al enfrentarte a problemas de relaciones transitivas, establece una sola cadena de desigualdades en un mismo sentido. Esto permite visualizar inmediatamente los extremos."
+  },
+  {
+    "id": "m_rel_6",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere el conjunto de medidas de tolerancia de ensamblaje (en milímetros): $P = \\{0,4 ; 0,47 ; 0,6 ; 0,55\\}$.",
+    "q": "¿Cuál de las siguientes medidas del conjunto $P$ presenta la menor desviación absoluta respecto al valor central de $1/2$ mm?",
+    "opts": [
+      "0,4",
+      "0,47",
+      "0,6",
+      "0,55"
+    ],
+    "ans": 1,
+    "exp": "El objetivo es encontrar la menor desviación absoluta respecto a $1/2$.\nPrimero, debemos estandarizar el formato de los números. Transformemos $1/2$ a notación decimal:\n* $1/2 = 0,50$\n\nAhora, calculamos la desviación (diferencia absoluta) de cada medida respecto a $0,50$:\n* $|0,4 - 0,50| = 0,10$\n* $|0,47 - 0,50| = 0,03$\n* $|0,6 - 0,50| = 0,10$\n* $|0,55 - 0,50| = 0,05$\n\nAl comparar, la menor desviación es **$0,03$**, la cual corresponde a la medida $0,47$.\n\n**Tip Élite:** En problemas de proximidad o desviación, expresa siempre todos los valores con la misma cantidad de cifras decimales (por ejemplo, añade ceros si es necesario) para evitar errores comunes de lectura visual."
+  },
+  {
+    "id": "m_rel_7",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Un sistema de poleas soporta tres contenedores: $\\Sigma$, $\\Omega$ y $\\Phi$. Se registra que $\\Sigma$ ejerce una fuerza gravitatoria superior a $\\Omega$, mientras que $\\Phi$ registra un peso inferior al de $\\Omega$.",
+    "q": "A partir de la información anterior, ¿cuál aseveración es lógicamente necesaria?",
+    "opts": [
+      "$\\Phi$ es el contenedor más pesado",
+      "$\\Sigma$ es el contenedor más pesado",
+      "$\\Omega$ es el contenedor más ligero",
+      "$\\Sigma$ y $\\Phi$ ejercen la misma fuerza"
+    ],
+    "ans": 1,
+    "exp": "Traduzcamos la información dada a lenguaje matemático utilizando el símbolo de desigualdad ($>$):\n\n* **Dato 1:** $\\Sigma$ pesa más que $\\Omega$, lo que se escribe como $\\Sigma > \\Omega$.\n* **Dato 2:** $\\Phi$ pesa menos que $\\Omega$, o lo que es igual, $\\Omega$ pesa más que $\\Phi$ ($\\Omega > \\Phi$).\n\nAl integrar ambas expresiones gracias a la propiedad transitiva, formamos la cadena: **$\\Sigma > \\Omega > \\Phi$**.\nObservando la cadena, concluimos obligatoriamente que $\\Sigma$ se ubica como el mayor de los tres.\n\n**Tip Élite:** Transcribe siempre \"pesa menos\" o \"es menor\" a su forma recíproca con el símbolo \"mayor que\" ($>$). Así, unificas el sentido de todas las desigualdades, facilitando enormemente su integración."
+  },
+  {
+    "id": "m_cnt_4",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Para diseñar la interfaz de usuario de una aplicación móvil, un desarrollador debe seleccionar una paleta cromática. Cuenta con 3 combinaciones para la barra de navegación, 4 esquemas para el cuerpo principal y 2 opciones de contraste para los botones.",
+    "q": "Si cada tema visual debe estar compuesto por una selección independiente de cada elemento, ¿cuántos temas visuales distintos es posible codificar?",
+    "opts": [
+      "24",
+      "9",
+      "12",
+      "14"
+    ],
+    "ans": 0,
+    "exp": "Este es un problema clásico que se resuelve mediante el **principio fundamental del conteo** (o principio multiplicativo).\nPara formar un tema visual completo, el desarrollador debe tomar tres decisiones sucesivas e independientes:\n* **Decisión 1 (Barra):** 3 opciones.\n* **Decisión 2 (Cuerpo):** 4 opciones.\n* **Decisión 3 (Botones):** 2 opciones.\n\nEl número total de combinaciones se halla multiplicando el número de opciones de cada decisión: **$3 \\times 4 \\times 2 = 24$ temas**.\n\n**Tip Élite:** El principio multiplicativo se aplica siempre que un proceso esté compuesto por etapas secuenciales o elecciones independientes. Reconocer la palabra clave \"independiente\" es tu luz verde para multiplicar."
+  },
+  {
+    "id": "m_cnt_5",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En una caja opaca de un laboratorio se almacenan aleatoriamente 6 viales con reactivo tipo A y 8 viales con reactivo tipo B, indistinguibles al tacto.",
+    "q": "¿Cuál es el número mínimo de viales que un investigador debe extraer a ciegas para garantizar, con absoluta certeza, que ha obtenido al menos dos viales del mismo tipo?",
+    "opts": [
+      "3",
+      "4",
+      "9",
+      "2"
+    ],
+    "ans": 0,
+    "exp": "Para resolver este problema, empleamos el **Principio del Palomar** (o de las casillas). Debemos situarnos en el *peor escenario posible* al extraer los viales.\n\n* El peor escenario para no conseguir una pareja consiste en extraer primero un vial de tipo A, y luego extraer un vial de tipo B.\n* Tras 2 extracciones, tenemos un vial de cada tipo. Aún no hay parejas.\n* La **tercera extracción**, forzosamente, será de tipo A o de tipo B, formando ineludiblemente una pareja con alguno de los dos primeros.\n\nPor ende, se requiere extraer como mínimo **3** viales.\n\n**Tip Élite:** Cuando un problema pida extraer el mínimo para asegurar (\"garantizar\") algo, asume que tienes la peor de las suertes. Asíntota al fallo hasta que la próxima extracción te dé inevitablemente el éxito."
+  },
+  {
+    "id": "m_cnt_6",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un sistema criptográfico básico genera claves de acceso formadas por 3 caracteres alfabéticos, seleccionados exclusivamente del conjunto $\\{A, B, C, D\\}$. El protocolo exige que ningún carácter se repita en una misma clave.",
+    "q": "¿Cuántas claves de acceso únicas puede generar este sistema?",
+    "opts": [
+      "12",
+      "24",
+      "64",
+      "18"
+    ],
+    "ans": 1,
+    "exp": "Para configurar una clave de 3 caracteres sin repetición, abordaremos la selección posición por posición:\n\n* **Primera posición:** Existen 4 opciones disponibles ($A, B, C, D$).\n* **Segunda posición:** Habiendo usado ya un carácter, restan 3 opciones disponibles.\n* **Tercera posición:** Habiendo usado dos caracteres en total, restan 2 opciones.\n\nPor el principio multiplicativo, el total de permutaciones posibles es: **$4 \\times 3 \\times 2 = 24$ claves distintas**.\n\n**Tip Élite:** Cuando veas restricciones como \"sin repetición\" o \"caracteres distintos\", el número de opciones disminuirá progresivamente en cada etapa. Es una variación sin repetición matemática básica."
+  },
+  {
+    "id": "m_cnt_7",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En un depósito de control de calidad hay 5 sensores defectuosos y 7 sensores funcionales, todos de apariencia idéntica. El inspector retira sensores al azar para su análisis.",
+    "q": "¿Cuántos sensores deberá extraer el inspector como mínimo para garantizar absolutamente que entre los seleccionados haya al menos 2 sensores defectuosos?",
+    "opts": [
+      "7",
+      "8",
+      "9",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "Este escenario requiere aplicar el razonamiento del **peor caso posible** para garantizar una condición específica.\n\nEl inspector quiere 2 sensores defectuosos. El peor escenario (la \"peor suerte\") implica que extraerá todos los sensores funcionales antes de conseguir los que desea:\n* **Fase 1 (Mala suerte extrema):** Extrae primero los 7 sensores funcionales. Aún no tiene defectuosos.\n* **Fase 2 (Cumplimiento de la meta):** Habiendo vaciado el depósito de sensores funcionales, las siguientes 2 extracciones serán obligatoriamente defectuosas.\n\nTotal de extracciones garantizadas: **$7 \\text{ funcionales} + 2 \\text{ defectuosos} = 9$ sensores**.\n\n**Tip Élite:** Si te piden garantizar la presencia de un elemento específico, asume siempre que agotarás primero todas las existencias de los elementos indeseados."
+  },
+  {
+    "id": "m_per_4",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "En un protocolo de transmisión de datos, se envían 5 paquetes de información etiquetados como L, I, B, R y O, los cuales deben procesarse secuencialmente sin pérdida ni duplicación.",
+    "q": "¿Cuántas secuencias de recepción distintas puede registrar el servidor?",
+    "opts": [
+      "120",
+      "60",
+      "25",
+      "100"
+    ],
+    "ans": 0,
+    "exp": "Dado que se deben ordenar 5 elementos distintos y no se admite la repetición (cada paquete se procesa una vez), estamos ante una **permutación lineal** de 5 elementos.\n\nLa fórmula de una permutación de $n$ elementos es $n!$ (n factorial).\nPara $n = 5$:\n* $5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$\n\nPor ende, existen **120 secuencias** posibles en las que pueden llegar los paquetes.\n\n**Tip Élite:** Cuando debas ordenar TODOS los elementos de un conjunto donde no hay elementos repetidos, el total siempre será directamente el factorial de la cantidad total de elementos ($n!$)."
+  },
+  {
+    "id": "m_per_5",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Una junta directiva compuesta por 6 miembros ejecutivos debe seleccionar a dos de sus integrantes para ocupar los cargos de Director General y Director de Finanzas, respectivamente.",
+    "q": "Si una misma persona no puede ocupar ambos cargos, ¿de cuántas maneras diferentes puede conformarse esta dupla directiva?",
+    "opts": [
+      "11",
+      "30",
+      "36",
+      "720"
+    ],
+    "ans": 1,
+    "exp": "Este problema implica seleccionar y ordenar elementos de un conjunto para cubrir posiciones específicas, donde **el orden importa** (es diferente ser Director General que Director de Finanzas). Es una variación.\n\nPodemos resolverlo etapa por etapa:\n* **Selección del Director General:** Tenemos 6 candidatos elegibles.\n* **Selección del Director de Finanzas:** Tras nombrar al Director General, restan 5 candidatos elegibles para el puesto restante.\n\nMultiplicando las opciones: **$6 \\times 5 = 30$ formas** de designar ambos cargos.\n\n**Tip Élite:** Siempre que se asignen jerarquías, roles o cargos distintos, el orden de selección importa. Si los roles fuesen indistinguibles (ej. \"dos representantes iguales\"), tendrías que dividir entre las permutaciones del subgrupo elegido."
+  },
+  {
+    "id": "m_per_6",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Para diseñar un logotipo, se requiere disponer en una estructura horizontal las 4 siglas distintas de una organización corporativa (R, O, M, A).",
+    "q": "¿Cuántas disposiciones gráficas lineales diferentes se pueden generar empleando la totalidad de las letras sin repetirlas?",
+    "opts": [
+      "12",
+      "24",
+      "16",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Nos enfrentamos al ordenamiento de 4 elementos completamente distintos en una línea, donde cada elemento debe usarse exactamente una vez.\n\nEsto corresponde a la permutación de un conjunto completo. Empleamos la función factorial:\n* Para 4 elementos, calculamos $4!$\n* $4! = 4 \\times 3 \\times 2 \\times 1 = 24$\n\nExisten **24 configuraciones** gráficas distintas para el logotipo.\n\n**Tip Élite:** Familiarízate con los primeros factoriales de memoria ($3! = 6$, $4! = 24$, $5! = 120$, $6! = 720$). Te ahorrará tiempo invaluable en la resolución del examen."
+  },
+  {
+    "id": "m_geo_5",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un panel solar de formato rectangular cubre una superficie útil de $48\\text{ cm}^2$ (a escala). Se conoce que la longitud de su arista basal es exactamente de $8\\text{ cm}$.",
+    "q": "¿Cuál es la magnitud correspondiente a la altura de dicho panel?",
+    "opts": [
+      "$6\\text{ cm}$",
+      "$5\\text{ cm}$",
+      "$40\\text{ cm}$",
+      "$12\\text{ cm}$"
+    ],
+    "ans": 0,
+    "exp": "La base conceptual de este ejercicio reside en la fórmula del área de una figura rectangular, la cual vincula sus dos dimensiones ortogonales.\n\nSabemos que la fórmula es: **$\\text{Área} = \\text{base} \\times \\text{altura}$**.\nSustituyendo los valores conocidos:\n* $48 = 8 \\times \\text{altura}$\n\nDespejando la variable desconocida, dividimos el área entre la base:\n* $\\text{altura} = 48 / 8 = 6\\text{ cm}$\n\n**Tip Élite:** En problemas geométricos bidimensionales, la clave siempre es aislar la variable desconocida partiendo de la ecuación principal del área. Revisa tus unidades: el área es cuadrática y los lados lineales."
+  },
+  {
+    "id": "m_geo_6",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una parcela de experimentación agrícola posee forma estrictamente cuadrada, abarcando un área de $49\\text{ m}^2$. Se requiere instalar una cerca en todo su límite exterior.",
+    "q": "¿Cuál es la longitud total de malla perimetral requerida para cercar la parcela completamente?",
+    "opts": [
+      "$28\\text{ m}$",
+      "$14\\text{ m}$",
+      "$49\\text{ m}$",
+      "$21\\text{ m}$"
+    ],
+    "ans": 0,
+    "exp": "El problema nos reta a conectar dos propiedades de un cuadrado: su área y su perímetro.\n\n* **Paso 1 (Hallar el lado):** El área de un cuadrado está definida por $A = \\text{lado}^2$. Si $49 = \\text{lado}^2$, al extraer la raíz cuadrada positiva obtenemos que **$\\text{lado} = 7\\text{ m}$**.\n* **Paso 2 (Calcular el perímetro):** El perímetro de un cuadrado es la suma de sus cuatro lados iguales ($P = 4 \\times \\text{lado}$).\n* $P = 4 \\times 7\\text{ m} = 28\\text{ m}$.\n\nPor lo tanto, se requieren **$28\\text{ m}$** de malla perimetral.\n\n**Tip Élite:** No confundas área con perímetro. Si conoces el área de un cuadrado, la extracción de la raíz cuadrada será tu puente directo para hallar cualquier otra magnitud (lado, perímetro, o diagonal)."
+  },
+  {
+    "id": "m_geo_7",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un componente mecánico tiene la forma de un prisma triangular recto, cuya sección transversal es un triángulo con un área de $24\\text{ cm}^2$ y una base de $6\\text{ cm}$.",
+    "q": "¿Qué medida lineal le corresponde a la altura trazada sobre esa misma base en la sección transversal?",
+    "opts": [
+      "$4\\text{ cm}$",
+      "$8\\text{ cm}$",
+      "$6\\text{ cm}$",
+      "$12\\text{ cm}$"
+    ],
+    "ans": 1,
+    "exp": "El ejercicio requiere despejar una variable de la fórmula estándar del área de un triángulo.\n\nLa fórmula es: **$A = \\frac{\\text{base} \\times \\text{altura}}{2}$**.\nSustituyamos los valores conocidos:\n* $24 = \\frac{6 \\times \\text{altura}}{2}$\n\nResolvamos la ecuación paso a paso:\n* Al simplificar $\\frac{6}{2}$, obtenemos $3$. Entonces, $24 = 3 \\times \\text{altura}$.\n* Dividiendo ambos lados por 3: $\\text{altura} = \\frac{24}{3} = 8\\text{ cm}$.\n\n**Tip Élite:** Un error muy común en el estrés del examen es olvidar el divisor \"$2$\" en el área del triángulo. Siempre puedes multiplicar el área por 2 primero ($24 \\times 2 = 48$) y luego dividir por la base ($48 / 6 = 8$)."
+  },
+  {
+    "id": "m_geo_8",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "El diseño de un engranaje requiere el corte de una placa circular con un radio exacto de $7\\text{ cm}$. Para estimar el costo del material, asuma la aproximación de la constante $\\pi \\approx 22/7$.",
+    "q": "¿Cuál es el área de la placa circular que se utilizará para el engranaje?",
+    "opts": [
+      "$44\\text{ cm}^2$",
+      "$154\\text{ cm}^2$",
+      "$154\\text{ cm}$",
+      "$308\\text{ cm}^2$"
+    ],
+    "ans": 1,
+    "exp": "Debemos calcular la superficie acotada por un círculo utilizando la fórmula tradicional del área.\n\nLa ecuación es **$A = \\pi \\times r^2$**.\nProcedemos a sustituir los valores, utilizando la aproximación sugerida para $\\pi$:\n* $A = (22/7) \\times (7)^2$\n* $A = (22/7) \\times 49$\n\nPara operar de forma eficiente, dividimos primero $49$ entre $7$, lo que nos da $7$:\n* $A = 22 \\times 7 = 154\\text{ cm}^2$.\n\nLas opciones $154\\text{ cm}^2$ y $154\\text{ cm}$ están diseñadas para confundir. Como es área, la unidad debe ser cuadrática.\n\n**Tip Élite:** Cuando un problema especifique $\\pi \\approx 22/7$, es una señal inequívoca de que el radio (o el diámetro) es múltiplo de $7$. Esto permite una simplificación directa que evita multiplicar por números decimales molestos."
+  },
+  {
+    "id": "m_suc_6",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Considere el comportamiento de una tasa de replicación celular, la cual se ajusta al siguiente patrón discreto: $3, 6, 12, 24, \\dots$",
+    "q": "¿Cuál será la cantidad de células en la séptima fase de observación?",
+    "opts": [
+      "192",
+      "96",
+      "144",
+      "240"
+    ],
+    "ans": 0,
+    "exp": "Primero, identificamos la naturaleza de la sucesión analizando la relación entre términos consecutivos.\n\nVemos que:\n* $6 / 3 = 2$\n* $12 / 6 = 2$\n* $24 / 12 = 2$\nEs una **progresión geométrica** cuya razón común es $r = 2$. Cada término duplica al anterior.\n\nPodemos continuar la sucesión paso a paso hasta el séptimo término:\n* $T_1 = 3$\n* $T_2 = 6$\n* $T_3 = 12$\n* $T_4 = 24$\n* $T_5 = 48$\n* $T_6 = 96$\n* **$T_7 = 192$**\n\n**Tip Élite:** Alternativamente, puedes usar la fórmula del término general $T_n = a_1 \\times r^{n-1}$. Para el séptimo término: $T_7 = 3 \\times 2^6 = 3 \\times 64 = 192$. Este método es infalible para términos muy lejanos."
+  },
+  {
+    "id": "m_suc_7",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Una secuencia de señales de pulsos magnéticos se emite en las frecuencias (en Hz): $5, 9, 13, 17, \\dots$",
+    "q": "Si este patrón incremental se mantiene constante, ¿en qué número de emisión ordinal se producirá un pulso de exactamente $41\\text{ Hz}$?",
+    "opts": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "ans": 0,
+    "exp": "Evaluemos el patrón de crecimiento de la secuencia para definir su estructura matemática.\n\nNotamos que la diferencia entre términos es constante:\n* $9 - 5 = 4$\n* $13 - 9 = 4$\nEs una **progresión aritmética** con diferencia $d = 4$ y primer término $a_1 = 5$.\n\nEl término general está dado por: **$a_n = a_1 + (n - 1)d$**.\nBuscamos la posición $n$ en la que el término valga $41$:\n* $41 = 5 + (n - 1) \\times 4$\n* $36 = (n - 1) \\times 4$\n* $36 / 4 = n - 1$\n* $9 = n - 1 \\implies \\mathbf{n = 10}$\n\n**Tip Élite:** Un método rápido es restar el primer término al objetivo y dividir por la diferencia, luego sumar 1. $(41 - 5) / 4 + 1 = 9 + 1 = 10$. ¡Elegante y veloz!"
+  },
+  {
+    "id": "m_suc_8",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Un algoritmo de optimización ajusta el margen de error de un modelo predictivo en sucesivas iteraciones. La secuencia de parámetros de corrección es: $1, 2, 4, 7, 11, 16, \\dots$",
+    "q": "¿Cuál será el valor del parámetro de corrección proyectado para la iteración inmediatamente posterior?",
+    "opts": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "ans": 2,
+    "exp": "En este caso, la sucesión no es ni aritmética simple ni geométrica. Debemos analizar el comportamiento de las diferencias sucesivas, un proceso conocido como análisis de diferencias de segundo orden.\n\nCalculemos las diferencias entre los términos consecutivos:\n* De $1$ a $2$: **$+1$**\n* De $2$ a $4$: **$+2$**\n* De $4$ a $7$: **$+3$**\n* De $7$ a $11$: **$+4$**\n* De $11$ a $16$: **$+5$**\n\nComo es evidente, el incremento en sí mismo es una sucesión que aumenta en una unidad cada vez. El próximo incremento lógico será **$+6$**.\nAplicando esto al último término: **$16 + 6 = 22$**.\n\n**Tip Élite:** Si una secuencia no tiene diferencias ni razones constantes, calcula siempre \"la diferencia de las diferencias\". A menudo revelarás un patrón subyacente simple, como los números naturales o los números impares."
+  },
+  {
+    "id": "m_suc_9",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Un sistema informático procesa bloques de datos cuyas capacidades en megabytes responden a la secuencia: $1, 3, 7, 15, 31, \\dots$",
+    "q": "Siguiendo esta ley de recurrencia no lineal, ¿cuál es la capacidad asignada al sexto bloque de datos?",
+    "opts": [
+      "63",
+      "47",
+      "62",
+      "51"
+    ],
+    "ans": 0,
+    "exp": "Esta es una sucesión cuya ley de formación puede interpretarse desde dos perspectivas analíticas válidas.\n\n**Enfoque 1 (Diferencias sucesivas):**\nObservemos cómo crece cada paso:\n* $3 - 1 = 2$\n* $7 - 3 = 4$\n* $15 - 7 = 8$\n* $31 - 15 = 16$\nLas diferencias son las potencias de 2 ($2, 4, 8, 16$). La siguiente diferencia será $32$.\nSumando: **$31 + 32 = 63$**.\n\n**Enfoque 2 (Relación de recurrencia):**\nCada término es el doble del anterior más uno: $T_n = (T_{n-1} \\times 2) + 1$.\n* Para el término buscado: $31 \\times 2 + 1 = 62 + 1 = \\mathbf{63}$.\n\n**Tip Élite:** Secuencias que crecen rápidamente pero que no son estrictamente geométricas, a menudo están relacionadas con las potencias de dos ($2^n - 1$ o $2^n + 1$). Observa cómo $1, 3, 7, 15...$ son justamente $2^1-1, 2^2-1, 2^3-1, 2^4-1$."
+  },
+  {
+    "id": "m_dat_5",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Las valoraciones técnicas de tres prototipos en fase de testeo son $7$, $8$ y $6$. El protocolo exige que el promedio aritmético total tras evaluar un cuarto prototipo sea exactamente $7,5$.",
+    "q": "¿Qué valoración mínima deberá obtener el cuarto prototipo para cumplir con la exigencia del protocolo?",
+    "opts": [
+      "9",
+      "8",
+      "$7,5$",
+      "10"
+    ],
+    "ans": 0,
+    "exp": "El problema trata sobre la manipulación de la media aritmética a partir de la suma total de sus componentes.\n\nEl promedio se calcula dividiendo la **suma total** de los valores entre la cantidad de estos.\nSi deseamos que el promedio de $4$ evaluaciones sea $7,5$, la suma total objetivo es:\n* $\\text{Suma Total Objetivo} = \\text{Promedio} \\times \\text{Cantidad} = 7,5 \\times 4 = 30$.\n\nActualmente, disponemos de $3$ valoraciones que suman: $7 + 8 + 6 = 21$.\nPara alcanzar la suma objetivo de $30$, el cuarto prototipo debe aportar la diferencia:\n* **$30 - 21 = 9$**.\n\n**Tip Élite:** No intentes adivinar ni usar ensayo y error. Trabaja siempre con la \"Suma Total\" para resolver cualquier problema de promedio donde falte un dato."
+  },
+  {
+    "id": "m_dat_6",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Un lote de repuestos contiene 3 piezas fabricadas en aluminio (verdes), 5 en polímero (rojas) y 2 en titanio (azules). El sistema automatizado selecciona aleatoriamente un repuesto para el ensamblaje.",
+    "q": "¿Cuál es la probabilidad de que el repuesto seleccionado por el sistema sea el fabricado en titanio?",
+    "opts": [
+      "$1/5$",
+      "$1/2$",
+      "$2/5$",
+      "$1/10$"
+    ],
+    "ans": 0,
+    "exp": "El cálculo de la probabilidad clásica se fundamenta en la regla de Laplace, definida como el cociente entre los casos favorables y los casos totales posibles.\n\n* **Casos Totales:** El lote contiene un total de $3 + 5 + 2 = 10$ repuestos.\n* **Casos Favorables:** Existen exactamente $2$ piezas de titanio (las azules).\n\nAplicando la regla:\n* $\\text{Probabilidad} = \\frac{\\text{Casos Favorables}}{\\text{Casos Totales}} = \\frac{2}{10}$\n\nAl simplificar la fracción, obtenemos **$1/5$**.\n\n**Tip Élite:** Lee cuidadosamente si el enunciado pide la probabilidad de un evento simple o compuesto (como sacar dos seguidas). Si es un solo evento, es simplemente dividir la cantidad del objeto deseado entre el gran total. Simplifica siempre."
+  },
+  {
+    "id": "m_dat_7",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "En un experimento estocástico, se efectúa el lanzamiento de un dado hexaédrico regular no trucado, con caras numeradas del $1$ al $6$.",
+    "q": "¿Cuál es la probabilidad teórica de que el resultado de la cara superior sea un número primo?",
+    "opts": [
+      "$1/2$",
+      "$1/3$",
+      "$2/3$",
+      "$1/6$"
+    ],
+    "ans": 0,
+    "exp": "La resolución exige clasificar correctamente el espacio muestral según la definición matemática de un número primo.\n\nEl espacio muestral del dado es $E = \\{1, 2, 3, 4, 5, 6\\}$.\nUn número primo es aquel mayor que $1$, divisible únicamente por $1$ y por sí mismo.\nIdentifiquemos los primos en $E$:\n* El $1$ **no es primo**.\n* El $2$, $3$ y $5$ **sí son primos**.\n* El $4$ y el $6$ son compuestos.\n\nPor lo tanto, tenemos $3$ casos favorables sobre un total de $6$ posibles.\n* $\\text{Probabilidad} = 3/6 = \\mathbf{1/2}$.\n\n**Tip Élite:** Un error letal y recurrente es considerar al \"$1$\" como número primo. Memoriza que la serie de primos comienza en el $2$, que además es el único primo par."
+  },
+  {
+    "id": "m_dat_8",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El valor medio aritmético de un conjunto de $4$ lecturas barométricas es de $15\\text{ hPa}$. El registro parcial indica las lecturas: $12\\text{ hPa}$, $18\\text{ hPa}$ y $10\\text{ hPa}$.",
+    "q": "Suponiendo que no existen errores instrumentales, ¿cuál es forzosamente el valor de la cuarta lectura omitida en el registro?",
+    "opts": [
+      "15",
+      "18",
+      "20",
+      "25"
+    ],
+    "ans": 2,
+    "exp": "Al igual que en problemas anteriores, el concepto fundamental subyacente es el manejo de la suma total frente al promedio.\n\nSi conocemos que la media de $4$ elementos es $15$, podemos deducir la suma total de dichos elementos:\n* $\\text{Suma Total} = 4 \\times 15 = 60$.\n\nSumamos las tres lecturas que ya conocemos:\n* $12 + 18 + 10 = 40$.\n\nEl valor de la cuarta lectura será la diferencia entre la suma total teórica y la suma de las lecturas conocidas:\n* $60 - 40 = \\mathbf{20\\text{ hPa}}$.\n\n**Tip Élite:** El promedio aritmético es solo una forma de \"repartir uniformemente\" el peso total de los datos. Pensar en sumas totales es la estrategia más robusta para aislar incógnitas en la media."
+  },
+  {
+    "id": "m_not_4",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "En el contexto de un modelado algebraico elemental, analice la proposición textual: \"el cociente entre una magnitud arbitraria y dos, incrementado en siete unidades\".",
+    "q": "¿Qué sintaxis algebraica modela correctamente dicha proposición, considerando $x$ como la magnitud arbitraria?",
+    "opts": [
+      "$x/2 + 7$",
+      "$2x + 7$",
+      "$(x + 7)/2$",
+      "$7 - x/2$"
+    ],
+    "ans": 0,
+    "exp": "La transición de lenguaje natural a sintaxis matemática exige una lectura estructurada de las comas y los conectores lógicos.\n\nLa frase se divide en dos bloques principales:\n1. \"El cociente entre una magnitud arbitraria y dos\" $\\implies$ Esto representa la división de $x$ entre $2$, es decir, **$x/2$**.\n2. \"Incrementado en siete unidades\" $\\implies$ Se refiere a una adición de $7$ a la estructura anterior.\n\nUniendo las partes, la estructura jerárquica exige que la suma ocurra después de la división. El resultado es: **$x/2 + 7$**.\nNota que $(x+7)/2$ implicaría que se incrementa primero, lo cual estaría fraseado como \"la mitad de la suma del número y siete\".\n\n**Tip Élite:** Presta extrema atención a las comas en los enunciados verbales algebraicos. La coma actúa como un separador de agrupación (similar a un paréntesis) en la jerarquía de las operaciones."
+  },
+  {
+    "id": "m_not_5",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "La edad cronológica de la sujeto A se define mediante la variable $n$. Se establece empíricamente que la edad de la sujeto B equivale a cuatro años menos que el triple de la edad de la sujeto A.",
+    "q": "¿Qué modelo matemático describe de forma rigurosa la edad cronológica de la sujeto B en función de $n$?",
+    "opts": [
+      "$3n - 4$",
+      "$3(n - 4)$",
+      "$4 - 3n$",
+      "$n/3 - 4$"
+    ],
+    "ans": 0,
+    "exp": "La traducción de problemas de edades implica plantear multiplicadores y diferencias prestando atención al orden de la sustracción.\n\nDesglosemos la proposición referida a la sujeto B:\n* \"El triple de la edad de la sujeto A\": Sabiendo que A tiene $n$ años, el triple se transcribe como **$3n$**.\n* \"Cuatro años menos que (eso)\": Indica una resta, donde al valor inicial ($3n$) se le sustraen $4$ unidades.\n\nEl ensamble final de la ecuación es: **$3n - 4$**.\nEs fundamental no confundir \"4 menos que el triple\" ($3n - 4$) con \"el triple de: $n$ menos 4\" ($3(n - 4)$).\n\n**Tip Élite:** La frase \"menos que\" invierte el orden natural de lectura. Si te dicen \"X menos que Y\", matemáticamente debes escribirlo como $Y - X$."
+  },
+  {
+    "id": "m_not_6",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Analice la siguiente instrucción procedimental de álgebra simbólica: \"obtener la potencia cuadrática de la adición de una variable desconocida y tres\".",
+    "q": "Si denotamos la variable desconocida como $x$, ¿qué formulación algebraica sintetiza fielmente este mandato?",
+    "opts": [
+      "$x^2 + 3$",
+      "$(x + 3)^2$",
+      "$x^2 + 9$",
+      "$2(x + 3)$"
+    ],
+    "ans": 1,
+    "exp": "La jerarquía de las operaciones es la esencia misma de este ejercicio, y la estructura de la oración nos dicta dicha jerarquía.\n\n* La instrucción principal (el sujeto de la acción, al inicio) es \"obtener la potencia cuadrática de...\". Esto significa que la elevación al cuadrado será la operación externa, que englobará todo lo demás dentro de un paréntesis: $(\\dots)^2$.\n* ¿De qué? \"De la adición de una variable $x$ y $3$\". Esto se traduce como la operación interna: $(x + 3)$.\n\nConsolidando la expresión, tenemos que todo el binomio se eleva al cuadrado: **$(x + 3)^2$**.\nDifiere radicalmente de $x^2 + 3$, que se leería como \"la suma del cuadrado de un número y tres\".\n\n**Tip Élite:** La frase que aparece de primera (\"el cuadrado de...\", \"la raíz de...\", \"la mitad de...\") casi siempre se convierte en el contenedor más externo de la expresión algebraica, envolviendo a todo lo que le sigue con paréntesis."
+  },
+  {
+    "id": "m_alr_4",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "En el contexto de un equilibrio termodinámico, una variable de temperatura $x$ (en Kelvin) obedece a la relación paramétrica: $3(x - 2) = 18$.",
+    "q": "Con base en esta condición de frontera, ¿qué magnitud adquiere la expresión correlativa $x + 5$?",
+    "opts": [
+      "13",
+      "8",
+      "6",
+      "11"
+    ],
+    "ans": 0,
+    "exp": "El ejercicio impone un flujo de resolución en dos fases obligatorias: encontrar el valor individual de $x$ y luego evaluarlo en una nueva expresión.\n\n**Fase 1 (Aislar $x$):**\nDada la ecuación $3(x - 2) = 18$, podemos simplificar dividiendo ambos miembros entre $3$:\n* $x - 2 = 18 / 3$\n* $x - 2 = 6$\n* $x = 6 + 2 \\implies \\mathbf{x = 8}$.\n\n**Fase 2 (Evaluar la expresión meta):**\nSe nos pide el valor de $x + 5$.\nSustituyendo el valor encontrado:\n* $8 + 5 = \\mathbf{13}$.\n\n**Tip Élite:** Observa siempre qué es lo que realmente te pregunta el examen. Es sumamente habitual que los distractores incluyan el valor de $x$ ($8$) para atrapar a quienes detienen sus cálculos en la primera fase."
+  },
+  {
+    "id": "m_alr_5",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Se define a la variable $n$ como un elemento del conjunto de los números enteros ($\\mathbb{Z}$).",
+    "q": "De acuerdo con los axiomas de la teoría de números, ¿cuál de las alternativas formaliza matemáticamente, bajo cualquier circunstancia, a un entero de paridad impar?",
+    "opts": [
+      "$2n$",
+      "$n + 2$",
+      "$2n + 1$",
+      "$n^2$"
+    ],
+    "ans": 2,
+    "exp": "Analizaremos las propiedades de paridad para cada expresión, sabiendo que $n$ puede ser tanto par como impar.\n\n* $2n$: El producto de cualquier entero por un número par es invariablemente par. Esta es la definición misma de los números pares.\n* $n + 2$: Su paridad depende intrínsecamente de $n$. Si $n$ es impar, el resultado es impar; si es par, será par.\n* $n^2$: Nuevamente, depende. Si $n$ es impar ($3^2 = 9$), es impar. Si es par ($2^2 = 4$), es par.\n* **$2n + 1$**: Como vimos, $2n$ es un entero par sin excepción. Al sumarle $1$ a cualquier número par, aterrizamos forzosamente en su sucesor, el cual, por axioma, es **siempre un número impar**.\n\n**Tip Élite:** La estructura $2k$ (donde $k$ es entero) es la piedra angular para probar propiedades algebraicas de paridad. Asocia indefectiblemente \"$2n$\" a par y \"$2n+1$\" (o \"$2n-1$\") a impar."
+  },
+  {
+    "id": "m_alr_6",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Durante la compilación de un modelo criptográfico, se determina que el producto aritmético de dos variables enteras $A$ y $B$ resulta inevitablemente en un producto de naturaleza par.",
+    "q": "A partir de dicha premisa, ¿qué aseveración de carácter lógicamente concluyente puede inferirse sobre la paridad intrínseca de $A$ y $B$?",
+    "opts": [
+      "Los dos son impares",
+      "Al menos uno de los dos es par",
+      "Los dos son pares",
+      "Ambos son negativos"
+    ],
+    "ans": 1,
+    "exp": "Este problema evalúa la comprensión de las reglas de los factores en la teoría multiplicativa de la paridad.\n\nExaminemos los tres casos posibles al multiplicar dos enteros:\n1. Impar $\\times$ Impar = Impar (Ejemplo: $3 \\times 5 = 15$). Se descarta.\n2. Par $\\times$ Par = Par (Ejemplo: $2 \\times 4 = 8$). Cumple la condición.\n3. **Par $\\times$ Impar = Par** (Ejemplo: $2 \\times 3 = 6$). Cumple la condición.\n\nEl producto resulta par en dos situaciones distintas (caso 2 y caso 3). Lo único que es constante en ambos escenarios válidos es la presencia de **por lo menos un factor par**. Afirmar categóricamente que \"los dos son pares\" es falso debido a la existencia del tercer caso.\n\n**Tip Élite:** \"Con certeza\" significa que la afirmación no debe admitir excepciones (contraejemplos). Si un enunciado funciona a veces sí y a veces no, es insuficiente para ser la respuesta correcta."
+  },
+  {
+    "id": "m_uni_5",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un protocolo de procesamiento de datos en un supercomputador tiene un tiempo de ejecución continuo de $2$ horas y $35$ minutos.",
+    "q": "Para su adecuada parametrización en el registro de tareas (log), ¿a qué cantidad equivale este periodo, si se exige su expresión íntegra en minutos?",
+    "opts": [
+      "155",
+      "235",
+      "135",
+      "150"
+    ],
+    "ans": 0,
+    "exp": "El núcleo del ejercicio radica en la conversión correcta de unidades dentro del sistema sexagesimal de tiempo.\n\nSabemos, por definición, que $1\\text{ hora}$ equivale a $60\\text{ minutos}$.\nDebemos convertir la porción de horas y luego añadir los minutos residuales:\n* $\\text{Tiempo en horas convertidas} = 2 \\times 60 = 120\\text{ minutos}$.\n* $\\text{Tiempo total} = 120\\text{ minutos} + 35\\text{ minutos} = \\mathbf{155\\text{ minutos}}$.\n\nEl distractor \"235\" está pensado para quienes simplemente concatenan los dígitos \"$2$\" y \"$35$\" o tratan la hora erróneamente como múltiplo de cien.\n\n**Tip Élite:** El tiempo y los ángulos operan en base 60. Nunca trates las horas y los minutos como decimales convencionales en base 10 sin hacer una conversión explícita previa."
+  },
+  {
+    "id": "m_uni_6",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Una sonda espacial se desplaza en órbita sub-atmosférica a una velocidad crucero sostenida de $120\\text{ km/h}$.",
+    "q": "Suponiendo nula la resistencia externa, ¿qué desplazamiento lineal habrá concretado la sonda al transcurrir un lapso exacto de $15\\text{ minutos}$?",
+    "opts": [
+      "$30\\text{ km}$",
+      "$60\\text{ km}$",
+      "$8\\text{ km}$",
+      "$20\\text{ km}$"
+    ],
+    "ans": 0,
+    "exp": "La resolución descansa en la ecuación fundamental de la cinemática: $d = v \\times t$. Sin embargo, las unidades de velocidad y tiempo son discordantes, lo que exige una homogenización.\n\n**Paso 1 (Homogenizar unidades):**\nLa velocidad está en km/h, pero el tiempo en minutos. Pasaremos el tiempo a horas.\n* $15\\text{ minutos}$ equivale a una fracción de hora: $15 / 60 = 1/4\\text{ de hora}$ (o $0,25\\text{ h}$).\n\n**Paso 2 (Cálculo del desplazamiento):**\n* $d = 120\\text{ km/h} \\times (1/4)\\text{ h}$\n* $d = 120 / 4 = \\mathbf{30\\text{ km}}$.\n\n**Tip Élite:** Simplificar los bloques temporales frecuentes (15 min = 1/4 h, 20 min = 1/3 h, 45 min = 3/4 h) de memoria acelerará el proceso, evitándote engorrosas reglas de tres simples."
+  },
+  {
+    "id": "m_uni_7",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "En un entorno de síntesis química, un dispensador central almacena un reactivo de $1,5\\text{ L}$ de capacidad. Un técnico procede a dosificar el líquido, llenando $3$ probetas, cada una de $250\\text{ ml}$.",
+    "q": "Finalizado este proceso, ¿cuál es el volumen residual, cuantificado en mililitros, del reactivo remanente en el dispensador central?",
+    "opts": [
+      "$750\\text{ ml}$",
+      "$1250\\text{ ml}$",
+      "$500\\text{ ml}$",
+      "$250\\text{ ml}$"
+    ],
+    "ans": 0,
+    "exp": "El procedimiento exige sincronizar los sistemas de medida antes de ejecutar la sustracción.\n\n* **Volumen inicial:** Para homogeneizar a mililitros, multiplicamos los litros por $1000$.\n  $1,5\\text{ L} \\times 1000\\text{ ml/L} = 1500\\text{ ml}$.\n* **Volumen dosificado:** El total extraído corresponde a la suma de las $3$ probetas.\n  $3 \\times 250\\text{ ml} = 750\\text{ ml}$.\n\nRestando el volumen dosificado del volumen inicial obtenemos el residual:\n* $1500\\text{ ml} - 750\\text{ ml} = \\mathbf{750\\text{ ml}}$.\n\n**Tip Élite:** Convierte siempre la unidad más grande a la más pequeña al inicio del problema (litros a mililitros, metros a centímetros). Esto minimiza el riesgo de cometer errores operando con decimales."
+  },
+  {
+    "id": "m_raz_5",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un clúster de procesamiento compuesto por $4$ servidores idénticos logra procesar una macro-base de datos en $9$ días ininterrumpidos.",
+    "q": "Asumiendo que el rendimiento por servidor es rigurosamente constante y aditivo, ¿cuántos días consumirá la tarea si la infraestructura se escala a $6$ servidores operativos?",
+    "opts": [
+      "6 días",
+      "13 días",
+      "4 días",
+      "12 días"
+    ],
+    "ans": 0,
+    "exp": "Este es el escenario clásico de una **proporcionalidad inversa**. Si aumenta la fuerza de trabajo (servidores), el tiempo necesario (días) disminuirá.\n\nPodemos enfocarlo a través del concepto de \"trabajo total\" medido en *servidor-días*:\n* Si $4$ servidores tardan $9$ días, el \"tamaño\" total del trabajo es: $4 \\times 9 = 36\\text{ servidor-días}$.\n* Ahora la fuerza laboral es de $6$ servidores.\n* Distribuimos el trabajo total entre la nueva fuerza: $36\\text{ servidor-días} / 6\\text{ servidores} = \\mathbf{6\\text{ días}}$.\n\nNo caigas en la trampa mental de una regla de tres directa, que erróneamente daría $13,5$ días (a más trabajadores, jamás tardarán más).\n\n**Tip Élite:** La técnica de la constante o \"bolsa total de trabajo\" ($K = x \\times y$) es la metodología más robusta para evitar tropezar en los problemas de reglas inversas de tiempo y mano de obra."
+  },
+  {
+    "id": "m_raz_6",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "En el protocolo estándar de una aleación aeroespacial, se requiere el aporte de $450\\text{ g}$ de vanadio para cristalizar $6$ módulos estándar de blindaje.",
+    "q": "Si se pretende escalar la producción para fabricar un lote de $10$ módulos idénticos bajo las mismas condiciones térmicas, ¿qué masa de vanadio será imperativa?",
+    "opts": [
+      "$750\\text{ g}$",
+      "$600\\text{ g}$",
+      "$900\\text{ g}$",
+      "$720\\text{ g}$"
+    ],
+    "ans": 0,
+    "exp": "A diferencia del escenario anterior, enfrentamos una **proporcionalidad directa**. Al aumentar el producto (módulos), los insumos (vanadio) requeridos crecerán en la misma proporción.\n\nEl enfoque más metódico es la **reducción a la unidad**:\n* Si $6$ módulos necesitan $450\\text{ g}$, un solo módulo necesita:\n  $450\\text{ g} / 6 = 75\\text{ g por módulo}$.\n\nHabiendo encontrado la constante, multiplicamos por la nueva cantidad objetivo:\n* $10\\text{ módulos} \\times 75\\text{ g} = \\mathbf{750\\text{ g}}$.\n\n**Tip Élite:** La reducción a la unidad (hallar cuánto vale \"1\") disgrega el problema de forma transparente, protegiéndote de los cruces equivocados en la regla de tres formal."
+  },
+  {
+    "id": "m_raz_7",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un generador industrial de ciclo diésel es capaz de suministrar energía durante $240\\text{ horas}$ efectivas consumiendo exactamente $16\\text{ litros}$ de biocombustible.",
+    "q": "Considerando que el rendimiento termodinámico del motor permanece invariante, ¿cuál será el consumo proyectado en litros si se somete el generador a una carga continua de $90\\text{ horas}$?",
+    "opts": [
+      "$5\\text{ L}$",
+      "$6\\text{ L}$",
+      "$8\\text{ L}$",
+      "$7,5\\text{ L}$"
+    ],
+    "ans": 1,
+    "exp": "Se trata de una **proporción directa** (menos horas de funcionamiento implicarán lógicamente menor consumo de combustible).\n\nAplicamos el método analítico de reducción a la unidad para descubrir el \"rendimiento\" (horas por litro) del generador:\n* $\\text{Rendimiento} = 240\\text{ horas} / 16\\text{ litros} = 15\\text{ horas por cada litro}$.\n\nAhora, nos preguntamos: si cada litro rinde $15\\text{ horas}$, ¿cuántos litros se necesitan para cubrir la meta de $90\\text{ horas}$?\n* $\\text{Litros requeridos} = 90\\text{ horas} / 15\\text{ horas/litro} = \\mathbf{6\\text{ litros}}$.\n\n**Tip Élite:** Al hacer reducción a la unidad, asegúrate de mantener clara en tu cabeza (o anotada) la unidad resultante. \"$15$\" no es un simple número, es \"horas POR litro\". Esta semántica evita dividir en sentido inverso."
+  },
+  {
+    "id": "v_fin_8",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El departamento corporativo financia seminarios de capacitación en pleno horario laboral. Aunque el directorio reconoce que esta política demanda una fuga importante de capital y de horas productivas inmediatas, sostiene que la inversión halla su retorno en una marcada mejora de la optimización del desempeño humano en el largo plazo.",
+    "q": "De acuerdo con el dictamen del directorio, ¿qué propósito fundamental justifica esta política corporativa?",
+    "opts": [
+      "Consumir el presupuesto residual",
+      "Elevar la eficiencia del personal",
+      "Reducir los turnos laborales",
+      "Prescindir de los empleados menos aptos"
+    ],
+    "ans": 1,
+    "exp": "Para identificar la finalidad de una acción en un texto, hay que discriminar entre los *costos o consecuencias adversas* (obstáculos) y el *propósito meta* (la justificación de asumir dichos costos).\n\n* La \"fuga de capital y horas\" son obstáculos o costos (no el fin de la empresa).\n* El texto dictamina explícitamente que todo esto halla su \"retorno\" (justificación o fin último) en la **\"mejora de la optimización del desempeño\"** (opción B).\n\nLas demás alternativas (consumir presupuesto, reducir turnos o prescindir de empleados) son fabricaciones que ni se mencionan ni se infieren de la lógica invertida por la junta.\n\n**Tip Élite:** La finalidad (el \"para qué\") suele estar anclada a los marcadores de concesión. Si lees \"Aunque cueste X, se hace por Y\", ten certeza de que \"Y\" es la finalidad que justifica a la acción frente a \"X\"."
+  },
+  {
+    "id": "v_fin_9",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El decanato universitario extendió la apertura de la hemeroteca hasta altas horas de la madrugada en etapa de evaluaciones. Las autoridades institucionales enfatizaron en un comunicado que el objetivo subyacente no es promover un deterioro en la higiene del sueño del alumnado, sino proveer un recinto libre de polución acústica para aquellos cuya infraestructura doméstica es deficiente.",
+    "q": "A partir de la lectura, ¿qué objetivo primordial persigue la medida del decanato?",
+    "opts": [
+      "Deteriorar los hábitos de descanso",
+      "Habilitar un entorno idóneo de concentración",
+      "Incrementar el gasto en insumos operativos",
+      "Posicionarse sobre otras sedes académicas"
+    ],
+    "ans": 1,
+    "exp": "El ejercicio requiere distinguir el propósito genuino de la autoridad de otros efectos secundarios posibles o suposiciones que el texto descarta proactivamente.\n\n* El texto usa un claro contraste correctivo: \"el objetivo subyacente **no es** (deterioro del sueño), **sino** (proveer un recinto libre de polución acústica)\".\n* Esta estructura anula de facto la opción A.\n* \"Proveer un recinto libre de polución acústica\" es sinónimo semántico directo de **habilitar un entorno idóneo de concentración** (opción B).\n\nLas opciones referentes a costos operativos (C) o ventajas competitivas (D) son añadidos sin asidero en la retórica del fragmento.\n\n**Tip Élite:** Presta extrema atención a las estructuras disyuntivas explícitas como \"no es X, sino Y\". Su función primordial es guiar al lector anulando de antemano el distractor más evidente."
+  },
+  {
+    "id": "v_com_8",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Ante el advenimiento intempestivo de una auditoría en la planta de ensamblaje, la cuadrilla de operadores evidenció síntomas de taquicardia, presentó un cuadro de amnesia procedimental aguda y permaneció inerte frente a los paneles de control táctil.",
+    "q": "En términos de su abordaje conductual, ¿cómo se catalogaría la reacción primaria de los operadores?",
+    "opts": [
+      "Con un enfoque meticuloso",
+      "Mediante un colapso paralizante",
+      "Con evidente regocijo",
+      "Con total imperturbabilidad"
+    ],
+    "ans": 1,
+    "exp": "Esta pregunta evalúa la capacidad de sintetizar una lista de síntomas conductuales en una categoría psicológica abarcativa.\n\n* Las respuestas fisiológicas (taquicardia), cognitivas (amnesia procedimental) y motoras (inercia total) denotan en conjunto una pérdida de control debido al estrés agudo.\n* Esto se conceptualiza como un **colapso paralizante** (opción B).\n\nQuedan totalmente excluidas la imperturbabilidad o el enfoque (que requerirían acción racional) o el regocijo (cuya connotación es de alegría).\n\n**Tip Élite:** Al inferir un estado emocional o conductual a partir de descripciones físicas o cognitivas (taquicardia, inercia), agrupa los síntomas para determinar su \"polaridad\" (positiva/negativa, proactiva/pasiva). Aquí es claramente negativa y pasiva."
+  },
+  {
+    "id": "v_com_9",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Durante los comités éticos corporativos, si surge una disidencia teórica, el arquitecto de sistemas opta por no manifestar beligerancia. Por el contrario, ejerce una escucha activa ininterrumpida, elabora interrogantes aclaratorios y, solo posteriormente, articula su postura omitiendo sistemáticamente cualquier ataque ad hominem.",
+    "q": "¿Qué patrón de conducta relacional exhibe el arquitecto ante la disidencia?",
+    "opts": [
+      "Evade el enfrentamiento ideológico",
+      "Privilegia una dialéctica constructiva y respetuosa",
+      "Capitula ante la confrontación discursiva",
+      "Trata de imponer dogmáticamente su visión"
+    ],
+    "ans": 1,
+    "exp": "Se debe interpretar un conjunto secuencial de acciones relacionales y mapearlas a la actitud de comunicación correcta.\n\n* El texto lista acciones clave: no muestra beligerancia (agresividad), ejerce escucha activa, indaga y evita los ataques personales (*ad hominem*).\n* Estas acciones convergen en lo que se denomina una **dialéctica constructiva y respetuosa** (opción B).\n\nDescartamos evadir el conflicto (A) y capitular (C) porque, de hecho, \"articula su postura\". Y definitivamente no impone visiones (D) ya que respeta los turnos y a la persona.\n\n**Tip Élite:** Las acciones de \"escuchar\" e \"interrogar para entender\" indican siempre participación activa. Nunca las asocies con opciones pasivas como \"evadir\" o \"capitular\"."
+  },
+  {
+    "id": "v_cau_10",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Las copiosas precipitaciones anómalas del frente frío saturaron de humedad el suelo del aeródromo local. Como resultado directo de este anegamiento, se procedió a suspender la totalidad de los vuelos privados y a fijar un itinerario alternativo para el mes entrante.",
+    "q": "¿Cuál es el núcleo estructural de causa y efecto que determina los eventos del texto?",
+    "opts": [
+      "La suspensión aeroportuaria precipitó el clima",
+      "El factor hidrológico forzó la cancelación de itinerarios",
+      "La reprogramación generó las lluvias anómalas",
+      "Los eventos carecen de causalidad fáctica"
+    ],
+    "ans": 1,
+    "exp": "El entendimiento de la causalidad textual requiere identificar el evento desencadenante (causa) y el fenómeno resultante (consecuencia).\n\n* **El evento desencadenante (Causa):** \"Las copiosas precipitaciones\" (lluvias) que anegaron el aeródromo.\n* **El fenómeno resultante (Consecuencia):** La \"suspensión de los vuelos\" y su reprogramación.\n\nPor lo tanto, la relación unívoca es que las condiciones hidrológicas (las lluvias) **forzaron la cancelación** (opción B).\nLas opciones A y C establecen un absurdo lógico, invirtiendo la cronología y asumiendo que un trámite administrativo causa un fenómeno meteorológico.\n\n**Tip Élite:** Busca siempre los nexos consecutivos explícitos (\"Como resultado directo\", \"por eso\", \"en consecuencia\"). Lo que antecede a estos nexos es invariablemente la causa, y lo que sigue es el efecto."
+  },
+  {
+    "id": "v_cau_11",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La investigadora principal prolongó su vigilancia sobre el espectrómetro de masas de manera ininterrumpida por $48$ horas. Al presentarse a defender sus resultados, experimentó lentitud en el procesamiento lógico, iteraba repetitivamente en la lectura de sus propias notas y manifestaba una severa fatiga cognitiva.",
+    "q": "De acuerdo con la sintaxis del párrafo, ¿qué secuela directa derivó de la prolongada privación del sueño?",
+    "opts": [
+      "La validación exitosa de sus postulados por sobreexposición",
+      "El aumento de su vigor analítico",
+      "El notable detrimento de su operatividad mental",
+      "El abandono voluntario de la presentación final"
+    ],
+    "ans": 2,
+    "exp": "La tarea consiste en filtrar una serie de descripciones y agruparlas bajo un concepto general que defina una consecuencia negativa.\n\n* El texto lista efectos claros de la privación del sueño: lentitud lógica, iteración repetitiva de lectura (necesidad de releer por falta de retención) y fatiga cognitiva.\n* Todos estos elementos aglomerados evidencian una marcada caída en su capacidad intelectual, es decir, un **detrimento de su operatividad mental** (opción C).\n\nLas opciones A y B asumen falazmente que trabajar más horas equivale mágicamente a mayor capacidad en el momento, ignorando los síntomas citados. La D asume un evento (abandonar) que no consta en la historia (sí se presentó).\n\n**Tip Élite:** No confundas el *esfuerzo* documentado en un texto con su *resultado*. Un texto puede narrar un esfuerzo titánico (vigilancia de 48 horas) pero cuyo resultado final es un desastre colateral (fatiga). Cíñete a los hechos listados."
+  },
+  {
+    "id": "v_cau_12",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La aplicación sistemática de soluciones de cifrado de extremo a extremo mitiga exponencialmente la vulnerabilidad ante ataques de interceptación de paquetes de datos en redes abiertas.",
+    "q": "¿Qué esquema de causalidad propone la aseveración previa en torno a la seguridad informática?",
+    "opts": [
+      "La vulnerabilidad informática provoca el cifrado por defecto",
+      "El uso de criptografía causa interceptación de datos",
+      "Las vulnerabilidades en redes abiertas son insalvables",
+      "La integración del cifrado disminuye el riesgo de vulneraciones"
+    ],
+    "ans": 3,
+    "exp": "Este ejercicio exige desentrañar la mecánica de una afirmación técnica sobre prevención (causalidad profiláctica).\n\n* **La Causa (acción profiláctica):** \"La aplicación sistemática de soluciones de cifrado\" (usar criptografía).\n* **El Efecto (resultado protector):** \"Mitiga (reduce) exponencialmente la vulnerabilidad\" ante ataques.\n\nLa opción D refleja fielmente este nexo. La opción A invierte la relación (mezclando motivo con causa activa en este contexto particular); la B plantea que la prevención causa el mal, un oxímoron; y la C asume un fatalismo (\"insalvables\") que la premisa inicial busca desmentir.\n\n**Tip Élite:** Las afirmaciones profilácticas (\"hacer X evita/reduce Y\") establecen una causalidad donde el efecto no es crear algo nuevo, sino suprimir o reducir un riesgo. No te confundas por la naturaleza \"negativa\" del efecto."
+  },
+  {
+    "id": "v_sim_8",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Ensamblar un mueble prefabricado demanda apenas seguir un diagrama esquemático e insertar un número limitado de pernos. Por el contrario, edificar una estructura arquitectónica habitacional exige estudios topográficos, la coordinación de cuadrillas especializadas y una supervisión minuciosa de los parámetros de resistencia de materiales.",
+    "q": "¿Qué disparidad categórica ilustra el fragmento entre ambas dinámicas de construcción?",
+    "opts": [
+      "El abismo en los costos monetarios involucrados",
+      "La radical divergencia en la complejidad de sus etapas",
+      "La diferencia de calidad en los materiales utilizados",
+      "El trasfondo estético de las edificaciones finales"
+    ],
+    "ans": 1,
+    "exp": "El texto se construye sobre una antítesis para ilustrar un contraste entre dos tareas, y debemos identificar sobre qué eje gravita ese contraste.\n\n* **Tarea 1 (Mueble):** Se describe con verbos y adjetivos minimizadores (\"apenas\", \"esquemático\", \"limitado\"), implicando un proceso de baja dificultad.\n* **Tarea 2 (Arquitectura):** Se describe como una concatenación de procesos técnicos (\"estudios\", \"coordinación\", \"supervisión\"), lo que evidencia un aumento dramático en la complejidad organizativa.\n\nPor tanto, la divergencia no recae sobre el costo (A), la calidad (C) ni la estética (D), ya que el texto no aporta datos sobre esos ámbitos, sino puramente sobre la **complejidad de sus etapas** (B).\n\n**Tip Élite:** En los textos que utilizan contraste por yuxtaposición, la clave está en los adjetivos y cuantificadores. Lo que diferencia \"limitado/apenas\" de \"coordinación/minuciosa\" es la dificultad inherente del proceso, es decir, su complejidad."
+  }
+]

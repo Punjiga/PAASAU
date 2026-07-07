@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_par_12",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Ante coyunturas de extrema adversidad, la imperturbabilidad analítica tiende a propiciar resoluciones más óptimas que la ofuscación emocional.",
+    "q": "¿Qué aseveración exhibe equivalencia semántica con el postulado anterior?",
+    "opts": [
+      "El desborde emocional cataliza la resolución de conflictos complejos.",
+      "La serenidad reflexiva favorece el hallazgo de alternativas superiores.",
+      "Las crisis severas carecen de vías de escape racionales.",
+      "La evasión cognitiva es la estrategia predilecta ante la adversidad."
+    ],
+    "ans": 1,
+    "exp": "El texto original contrasta la **imperturbabilidad analítica** (calma) con la **ofuscación emocional** (enojo) en situaciones críticas.\n\n* La opción correcta reformula esta relación lógica, indicando que la serenidad favorece hallar alternativas superiores.\n* Las otras opciones incurren en falacias: ensalzar el desborde emocional, negar cualquier solución, o promover la evasión.\n\n**Tip Élite:** Identifica el eje de contraste en las premisas (en este caso, calma vs enojo) y busca la opción que conserve esa misma estructura lógica de superioridad de una sobre la otra."
+  },
+  {
+    "id": "v_par_13",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La procrastinación sistemática de los compromisos no los extingue; por el contrario, propicia su aglomeración y recrudece su onerosidad.",
+    "q": "¿Cuál de los siguientes enunciados encapsula la premisa fundamental esbozada?",
+    "opts": [
+      "La dilación indefinida conduce a la disolución natural de las obligaciones.",
+      "El aplazamiento continuo meramente congrega y agrava los deberes.",
+      "Las responsabilidades eludidas tienden a resolverse de manera autónoma.",
+      "La temporalidad futura siempre ofrece un contexto más propicio para la ejecución."
+    ],
+    "ans": 1,
+    "exp": "El fragmento establece que posponer tareas (procrastinar) produce un efecto doble: **no las elimina** y **agrava su peso**.\n\n* La opción correcta captura ambas dimensiones: la acción de aplazar ('aplazamiento continuo') solo logra acumular ('congrega') y volver más pesados ('agrava') los deberes.\n* Las alternativas opuestas afirman erróneamente que las tareas desaparecen o se resuelven solas.\n\n**Tip Élite:** Cuando un texto establece una relación de 'causa-efecto' negativa, descarta rápidamente cualquier paráfrasis que sugiera resultados positivos o neutrales."
+  },
+  {
+    "id": "v_par_14",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Camarón que se duerme, se lo lleva la corriente.",
+    "q": "¿Qué alternativa desentraña el sentido figurado de la expresión?",
+    "opts": [
+      "El descanso excesivo compromete seriamente las facultades motrices del individuo.",
+      "La negligencia y la falta de vigilancia propician la pérdida de oportunidades vitales.",
+      "Los organismos carentes de adaptación son arrastrados por fuerzas hidráulicas.",
+      "La privación del sueño es la única estrategia para resistir las vicisitudes ambientales."
+    ],
+    "ans": 1,
+    "exp": "Este refrán utiliza una **metáfora** (dormirse / corriente) para ilustrar las consecuencias de la distracción en la vida humana.\n\n* Parafraseado en términos formales, señala que la falta de vigilancia (aletargamiento) provoca la pérdida de oportunidades frente al flujo de los acontecimientos.\n* Las alternativas incorrectas caen en la literalidad biológica o asumen premisas absurdas sobre el sueño.\n\n**Tip Élite:** En paremiología (estudio de refranes), la paráfrasis correcta siempre debe traducir la metáfora figurada a un principio de comportamiento general."
+  },
+  {
+    "id": "v_pro_11",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Toda sustancia ácida altera irreversiblemente la tonalidad del papel tornasol azul. Analice las premisas:\nI. Si una solución acuosa no altera la tonalidad del papel tornasol azul, se colige que no posee carácter ácido.\nII. Ningún compuesto de naturaleza ácida ejerce modificación alguna sobre el papel tornasol.\nIII. El ácido acético, componente principal del vinagre, modifica ineludiblemente la tonalidad de dicho papel.",
+    "q": "¿Cuáles proposiciones se derivan ineludiblemente del enunciado base?",
+    "opts": [
+      "Únicamente la II",
+      "La I y la III",
+      "Únicamente la I",
+      "Todas las anteriores"
+    ],
+    "ans": 1,
+    "exp": "La premisa universal afirmativa es: **'Toda sustancia ácida altera el papel tornasol'**.\n\n* **Proposición I:** Aplica el *Modus Tollens*. Si el papel no se altera, necesariamente la sustancia no puede ser ácida. (Verdadera).\n* **Proposición II:** Niega directamente la premisa universal, afirmando lo opuesto. (Falsa).\n* **Proposición III:** Aplica el *Modus Ponens*. Sabiendo que el ácido acético es ácido, inevitablemente altera el papel. (Verdadera).\n\n**Tip Élite:** En ejercicios deductivos, domina la regla del *Modus Tollens*: 'Si A implica B, entonces la ausencia de B garantiza la ausencia de A'."
+  },
+  {
+    "id": "v_pro_12",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Todo espécimen clasificado dentro de la clase Mammalia posee un sistema respiratorio pulmonar funcional. Analice las premisas:\nI. El orden Cetacea, al pertenecer a la clase Mammalia, exhibe forzosamente respiración pulmonar.\nII. Los integrantes de la clase Mammalia carecen de estructuras pulmonares anatómicamente viables.\nIII. Ningún organismo mamífero lleva a cabo el proceso de respiración aeróbica.",
+    "q": "¿Qué deducción posee rigor lógico basándose en la información suministrada?",
+    "opts": [
+      "Únicamente la I",
+      "Únicamente la II",
+      "La II y la III",
+      "Todas las anteriores"
+    ],
+    "ans": 0,
+    "exp": "El enunciado establece un condicionante biológico estricto: **Ser mamífero implica respiración pulmonar**.\n\n* La **Proposición I** aplica un silogismo deductivo válido: si los cetáceos son mamíferos, heredan la cualidad de poseer pulmones.\n* Las **Proposiciones II y III** son mutuamente excluyentes con la premisa inicial, al negar la existencia de pulmones o del propio proceso respiratorio.\n\n**Tip Élite:** Identifica el conjunto mayor (Mammalia) y el rasgo definitorio (pulmones). Cualquier subconjunto (Cetacea) poseerá ineludiblemente el rasgo definitorio."
+  },
+  {
+    "id": "m_ari_14",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Determine el valor numérico exacto de la siguiente expresión compuesta, considerando la precedencia de operadores: 100 − ( 45 + 15 ) ÷ 6 × 2.",
+    "q": "¿Cuál es el resultado numérico invariable que emana de su resolución?",
+    "opts": [
+      "80",
+      "90",
+      "60",
+      "10"
+    ],
+    "ans": 0,
+    "exp": "La resolución exige aplicar rigurosamente la **jerarquía de operaciones** (PEMDAS/BODMAS).\n\n* Primero, se evalúa el paréntesis: $45 + 15 = 60$.\n* La expresión se reduce a $100 - 60 \\div 6 \\times 2$. Las multiplicaciones y divisiones tienen la misma prioridad y se evalúan de izquierda a derecha: $60 \\div 6 = 10$, y luego $10 \\times 2 = 20$.\n* Finalmente, se ejecuta la sustracción: $100 - 20 = 80$.\n\n**Tip Élite:** Cuando haya divisiones y multiplicaciones continuas, resuélvelas siempre de **izquierda a derecha**. Asumir que la multiplicación precede a la división es un error muy común."
+  },
+  {
+    "id": "m_ari_15",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En un evento social, se dispone de 3 cajas idénticas, cada una con 24 unidades de repostería. Si el total de unidades se distribuye equitativamente entre 6 infantes sin dejar excedentes...",
+    "q": "¿Cuál es la asignación fraccionaria que corresponde de forma per cápita a cada infante?",
+    "opts": [
+      "12 unidades",
+      "15 unidades",
+      "8 unidades",
+      "18 unidades"
+    ],
+    "ans": 0,
+    "exp": "Para resolver este problema, debemos determinar el total de unidades y luego fraccionarlo.\n\n* Calculamos el inventario total multiplicando la cantidad de cajas por unidades: $3 \\times 24 = 72$ unidades de repostería.\n* Luego, dividimos el total entre los beneficiarios: $72 \\div 6 = 12$ unidades por infante.\n\n**Tip Élite:** Optimiza el cálculo mental usando fracciones: $\\frac{3 \\times 24}{6}$. Simplifica el $24$ con el $6$ para obtener $4$, y multiplica por $3$: $3 \\times 4 = 12$. Ahorrarás tiempo crucial."
+  },
+  {
+    "id": "m_ari_16",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Efectúe el cálculo correspondiente a la siguiente serie de sumas y restas con números racionales en notación decimal: 2,5 + 1,75 − 0,25.",
+    "q": "¿Cuál cifra manifiesta el cómputo final de estas transacciones aritméticas?",
+    "opts": [
+      "4,0",
+      "4,5",
+      "3,5",
+      "4,25"
+    ],
+    "ans": 0,
+    "exp": "El ejercicio requiere manejar operaciones aditivas con **números decimales**.\n\n* Es fundamental alinear correctamente las comas decimales. Podemos pensar en $2,5$ como $2,50$.\n* Sumamos: $2,50 + 1,75 = 4,25$.\n* Restamos: $4,25 - 0,25 = 4,00$.\n\n**Tip Élite:** Para agilizar, agrupa los términos que se complementan. Nota que $1,75 - 0,25 = 1,50$. Luego, simplemente suma $2,50 + 1,50 = 4,0$. Busca atajos asociativos."
+  },
+  {
+    "id": "m_mcm_9",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Se dispone de dos varillas metálicas de 24 cm y 30 cm de longitud. Un operario debe seccionarlas en segmentos idénticos de la máxima longitud posible, garantizando que no exista material excedente.",
+    "q": "¿Cuál debe ser la extensión longitudinal óptima de cada sección de corte?",
+    "opts": [
+      "6 cm",
+      "12 cm",
+      "3 cm",
+      "8 cm"
+    ],
+    "ans": 0,
+    "exp": "El problema plantea una división en partes iguales maximizando la longitud sin sobrantes, lo que define el cálculo del **Máximo Común Divisor (MCD)**.\n\n* Descomponemos $24$ en factores primos: $2^3 \\times 3$.\n* Descomponemos $30$ en factores primos: $2 \\times 3 \\times 5$.\n* El MCD toma los factores comunes con el menor exponente: $2^1 \\times 3^1 = 6$.\n\n**Tip Élite:** Ante palabras clave como 'dividir', 'cortar en trozos iguales' y 'la mayor longitud posible', el procedimiento algorítmico directo es calcular el Máximo Común Divisor."
+  },
+  {
+    "id": "m_rel_10",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Analice el siguiente conjunto de magnitudes escalares expresadas en diversas notaciones racionales: $\\frac{3}{5}$ ; $0,58$ ; $\\frac{2}{3}$ ; $0,6$.",
+    "q": "¿Qué elemento del conjunto ostenta primacía en términos de jerarquía de valor?",
+    "opts": [
+      "$\\frac{3}{5}$",
+      "$0,58$",
+      "$\\frac{2}{3}$",
+      "$0,6$"
+    ],
+    "ans": 2,
+    "exp": "Para establecer una relación de orden estricta, es imprescindible homogeneizar la representación matemática, convirtiendo las fracciones a **expansión decimal**.\n\n* $\\frac{3}{5}$ equivale exactamente a $0,60$.\n* $\\frac{2}{3}$ produce una expansión decimal periódica: $0,666\\dots$\n* Comparando el conjunto $\\{0,60 ; 0,58 ; 0,666\\dots ; 0,60\\}$, es evidente que $0,666\\dots$ ($\\frac{2}{3}$) es el supremo del conjunto.\n\n**Tip Élite:** Memoriza las expansiones decimales de fracciones comunes como tercios ($\\approx 0,33$ y $\\approx 0,67$), cuartos y quintos. Esto evita realizar divisiones manuales durante el examen."
+  },
+  {
+    "id": "m_rel_11",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Dada la inecuación lineal estricta $-x > 0$, definida en el conjunto de los números reales $\\mathbb{R}$...",
+    "q": "¿Qué aserción se colige axiomáticamente con respecto a la variable $x$?",
+    "opts": [
+      "$x$ es estrictamente mayor que cero.",
+      "$x$ pertenece al conjunto de los números reales negativos.",
+      "$x$ representa el elemento neutro aditivo.",
+      "La información resulta insuficiente para determinar su signo."
+    ],
+    "ans": 1,
+    "exp": "El problema evalúa las propiedades de las **desigualdades**.\n\n* La inecuación plantea que el opuesto aditivo de $x$ (es decir, $-x$) es un valor positivo ($>0$).\n* Al multiplicar o dividir ambos lados de una desigualdad por un número negativo ($-1$), el sentido de la desigualdad se invierte.\n* Por lo tanto, $(-1)(-x) < (-1)(0) \\implies x < 0$. Esto ubica a $x$ en los reales negativos.\n\n**Tip Élite:** No asumas que una variable con un signo negativo delante ($-x$) es un número negativo. Indica simplemente su opuesto. Si su opuesto es positivo, la variable original forzosamente era negativa."
+  },
+  {
+    "id": "m_cnt_10",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Una heladería artesanal ofrece un menú compuesto por 5 bases de helado y 3 aderezos exclusivos. Si cada cliente debe estructurar su orden seleccionando exactamente una base y un aderezo...",
+    "q": "¿Cuántas configuraciones diferenciadas están a disposición del comensal?",
+    "opts": [
+      "8 combinaciones",
+      "15 combinaciones",
+      "125 combinaciones",
+      "20 combinaciones"
+    ],
+    "ans": 1,
+    "exp": "Para determinar el total de combinaciones, aplicamos el **principio multiplicativo** de la combinatoria.\n\n* El proceso de selección se divide en dos eventos independientes: elegir la base (5 opciones) y elegir el aderezo (3 opciones).\n* El número total de posibilidades es el producto de las opciones de cada evento: $5 \\times 3 = 15$.\n\n**Tip Élite:** Cuando los eventos ocurren de forma simultánea o secuencial obligatoria ('y'), debes multiplicar las posibilidades. Si fueran opciones alternativas excluyentes ('o'), deberías sumarlas."
+  },
+  {
+    "id": "m_cnt_11",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un recipiente hermético contiene 6 fichas indistinguibles al tacto, numeradas secuencialmente del 1 al 6.",
+    "q": "¿Cuál es el piso mínimo de extracciones necesarias para consolidar estadísticamente una suma de índole par?",
+    "opts": [
+      "2 extracciones",
+      "3 extracciones",
+      "4 extracciones",
+      "6 extracciones"
+    ],
+    "ans": 1,
+    "exp": "Este problema exige emplear el **Principio del Palomar (o de Dirichlet)** aplicado a la paridad de los números enteros.\n\n* Existen dos categorías (palomares) según la paridad: pares e impares.\n* La suma de dos números es par únicamente si ambos pertenecen a la misma categoría (par+par o impar+impar).\n* Si extraemos 3 fichas, al haber solo 2 categorías posibles, ineludiblemente al menos 2 fichas pertenecerán a la misma categoría. Su suma garantizará un resultado par.\n\n**Tip Élite:** El Principio del Palomar dictamina que si tienes $N$ categorías y extraes $N+1$ elementos, forzosamente tendrás al menos un par en la misma categoría."
+  },
+  {
+    "id": "m_per_8",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un curador de arte necesita disponer 4 obras pictóricas mutuamente excluyentes en una alineación horizontal sobre un muro de exhibición.",
+    "q": "¿Bajo cuántas modalidades posicionales puede establecerse dicho arreglo expositivo?",
+    "opts": [
+      "12 configuraciones",
+      "24 configuraciones",
+      "16 configuraciones",
+      "256 configuraciones"
+    ],
+    "ans": 1,
+    "exp": "El problema requiere calcular el número total de arreglos posibles donde el orden importa y participan todos los elementos, lo que corresponde a una **permutación lineal** sin repetición.\n\n* Para el primer espacio hay 4 obras disponibles, para el segundo quedan 3, para el tercero 2, y para el último 1.\n* El cálculo se formaliza mediante el factorial: $4! = 4 \\times 3 \\times 2 \\times 1 = 24$.\n\n**Tip Élite:** La palabra clave 'ordenar en fila' con elementos únicos siempre denota una permutación factorial ($n!$). Memoriza los factoriales básicos: $3!=6, 4!=24, 5!=120$."
+  },
+  {
+    "id": "m_geo_11",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "La superficie poligonal de un triángulo abarca una extensión de $24 \\text{ cm}^2$. Si la magnitud de la altura trazada hacia su base principal equivale a $6 \\text{ cm}$...",
+    "q": "¿Cuál es la cuantificación lineal que define el lado de la base mencionada?",
+    "opts": [
+      "$8 \\text{ cm}$",
+      "$4 \\text{ cm}$",
+      "$12 \\text{ cm}$",
+      "$16 \\text{ cm}$"
+    ],
+    "ans": 0,
+    "exp": "El ejercicio evalúa la capacidad de despejar variables en la **fórmula geométrica del área triangular**.\n\n* El modelo matemático es: $Área = \\frac{Base \\times Altura}{2}$.\n* Sustituyendo los valores conocidos: $24 = \\frac{b \\times 6}{2}$.\n* Despejando analíticamente: $24 = 3b \\implies b = \\frac{24}{3} = 8$.\n\n**Tip Élite:** Un error habitual es olvidar el denominador $2$ de la fórmula, lo que llevaría erróneamente a dividir 24 entre 6 (obteniendo 4). Siempre multiplica el área por 2 antes de dividir por la altura."
+  },
+  {
+    "id": "m_geo_12",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Considere una lámina circular cuyo segmento radial posee una longitud de $10 \\text{ cm}$. Asumiendo la constante $\\pi \\approx 3,14$...",
+    "q": "¿Cuál es el guarismo que aproxima el área de confinamiento superficial?",
+    "opts": [
+      "$314 \\text{ cm}^2$",
+      "$31,4 \\text{ cm}^2$",
+      "$62,8 \\text{ cm}^2$",
+      "$100 \\text{ cm}^2$"
+    ],
+    "ans": 0,
+    "exp": "Se nos solicita aplicar la fórmula geométrica que relaciona el radio con la superficie contenida de un **círculo**.\n\n* La fórmula cardinal es: $Área = \\pi \\times r^2$.\n* Sustituimos la longitud del radio: $10^2 = 100$.\n* Al multiplicar por la aproximación de la constante: $3,14 \\times 100 = 314 \\text{ cm}^2$.\n\n**Tip Élite:** Los distractores juegan con confusiones típicas. $62,8$ corresponde a la longitud de la circunferencia ($2\\pi r$), y $31,4$ a un error multiplicativo omitiendo el cuadrado del radio."
+  },
+  {
+    "id": "m_suc_12",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice rigurosamente la siguiente progresión numérica: $2, 6, 12, 20, 30, \\dots$",
+    "q": "¿Qué escalar debe posicionarse en el siguiente peldaño lógico de la secuencia?",
+    "opts": [
+      "42",
+      "40",
+      "38",
+      "44"
+    ],
+    "ans": 0,
+    "exp": "Nos encontramos ante una **sucesión cuadrática**, donde la tasa de cambio no es constante, sino que aumenta de forma aritmética.\n\n* Evaluamos la primera diferencia entre términos contiguos: $+4, +6, +8, +10$.\n* Notamos que estas diferencias progresan de 2 en 2 (segunda diferencia constante).\n* Por tanto, la próxima diferencia será $+12$. Sumamos esto al último término: $30 + 12 = 42$.\n* Alternativamente, el término $n$-ésimo sigue la regla $a_n = n(n+1)$. Para $n=6$: $6 \\times 7 = 42$.\n\n**Tip Élite:** Si la diferencia entre términos no es constante en el primer nivel, cálculala en el segundo nivel. Las secuencias polinómicas siempre estabilizan sus diferencias en niveles más profundos."
+  },
+  {
+    "id": "m_suc_13",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Dada la siguiente serie infinita de números enteros: $1, 1, 2, 3, 5, 8, 13, \\dots$",
+    "q": "¿Cuál es el elemento subsiguiente que prosigue la armónica expansión de la serie?",
+    "opts": [
+      "21",
+      "24",
+      "18",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "Este arreglo corresponde a la clásica **Sucesión de Fibonacci**, una de las progresiones recursivas más relevantes en matemáticas.\n\n* La regla de formación estipula que, a partir del tercer término, cada elemento se obtiene mediante la adición de los dos precursores inmediatos.\n* Verificamos: $1+1=2$; $1+2=3$; $2+3=5$; $3+5=8$; $5+8=13$.\n* Para proyectar el siguiente valor, sumamos $8 + 13 = 21$.\n\n**Tip Élite:** Reconocer inmediatamente la serie de Fibonacci ahorra minutos preciosos, pues impide que te enredes buscando diferencias aritméticas o geométricas inexistentes."
+  },
+  {
+    "id": "m_dat_11",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Un sorteo benéfico emite un total de 200 boletos numerados. Si un participante adquiere 8 participaciones distintas...",
+    "q": "¿Cuál es la probabilidad teórica, expresada en su fracción más irreductible, de que resulte ganador del certamen?",
+    "opts": [
+      "$\\frac{1}{25}$",
+      "$\\frac{4}{100}$",
+      "$\\frac{1}{20}$",
+      "$\\frac{1}{200}$"
+    ],
+    "ans": 0,
+    "exp": "La resolución se fundamenta en la **Ley de Laplace** para experimentos aleatorios con equiprobabilidad.\n\n* Probabilidad teórica = $\\frac{\\text{Casos Favorables}}{\\text{Casos Posibles}}$.\n* Sustituyendo los datos: $P = \\frac{8}{200}$.\n* Para llevar la fracción a su forma irreductible, dividimos numerador y denominador por el MCD, que es 8: $\\frac{8 \\div 8}{200 \\div 8} = \\frac{1}{25}$.\n\n**Tip Élite:** Acostúmbrate a simplificar las fracciones estadísticamente antes de revisar las opciones. Una fracción sin simplificar rara vez será la alternativa correcta en pruebas de admisión."
+  },
+  {
+    "id": "m_dat_12",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "La media aritmética calculada sobre un conjunto de 5 evaluaciones es de 8 puntos. Si los registros parciales indican que cuatro de estas calificaciones fueron 7, 9, 8 y 6...",
+    "q": "¿Cuál valor se le debe imputar obligatoriamente al quinto y último registro?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "ans": 2,
+    "exp": "El cálculo del quinto elemento se efectúa trabajando sobre el concepto de **sumatoria total en promedios**.\n\n* Sabemos que el promedio es la suma total dividida entre el número de datos ($n=5$). Si el promedio es $8$, la sumatoria global de todos los datos es obligatoriamente $5 \\times 8 = 40$.\n* La suma de los cuatro datos conocidos es: $7 + 9 + 8 + 6 = 30$.\n* La calificación restante se obtiene mediante la sustracción del total requerido menos la suma conocida: $40 - 30 = 10$.\n\n**Tip Élite:** Siempre que te proporcionen el promedio y la cantidad de elementos, tu primer instinto debe ser multiplicarlos para encontrar la **suma total**. Es la clave para desbloquear este tipo de problemas."
+  },
+  {
+    "id": "m_not_8",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Transcriba el siguiente postulado lingüístico al lenguaje algebraico estricto: 'el triple de una variable desconocida, incrementada en 6 unidades absolutas'.",
+    "q": "¿Cuál expresión del álgebra formal representa fielmente dicho aserto?",
+    "opts": [
+      "$3x + 6$",
+      "$3(x + 6)$",
+      "$\\frac{x}{3} + 6$",
+      "$6 - 3x$"
+    ],
+    "ans": 0,
+    "exp": "La **traducción al lenguaje algebraico** requiere respetar el orden secuencial y semántico de la premisa verbal.\n\n* 'El triple de una variable' indica multiplicar la incógnita por tres: $3x$.\n* La coma sintáctica ('...,') establece una pausa, lo que significa que la operación anterior se consolida.\n* 'Incrementada en 6' implica una adición sobre el producto ya establecido: $3x + 6$.\n* La opción $3(x+6)$ sería correcta si la frase dijera 'el triple de la suma de un número y 6'.\n\n**Tip Élite:** Presta extrema atención a las comas en los enunciados algebraicos. Una coma separa términos matemáticos e impide que agrupes operaciones erróneamente mediante paréntesis."
+  },
+  {
+    "id": "m_alr_8",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Determine el valor de la incógnita subyacente al siguiente axioma matemático: 'La mitad de una cantidad desconocida, subsecuentemente adicionada en 7 unidades, arroja una equivalencia de 16'.",
+    "q": "¿A qué cifra remite puntualmente el enigma formulado?",
+    "opts": [
+      "18",
+      "25",
+      "46",
+      "32"
+    ],
+    "ans": 0,
+    "exp": "Debemos estructurar una **ecuación lineal de primer grado** partiendo del enunciado.\n\n* Modelización algebraica: $\\frac{x}{2} + 7 = 16$.\n* Para despejar, aislamos el término con la incógnita restando 7 en ambos lados: $\\frac{x}{2} = 16 - 7 \\implies \\frac{x}{2} = 9$.\n* Finalmente, multiplicamos ambos miembros por 2: $x = 9 \\times 2 = 18$.\n\n**Tip Élite:** Comprueba rápidamente tu respuesta sustituyendo: ¿La mitad de 18 (que es 9) sumada a 7 da 16? Sí. La validación inversa toma 3 segundos y garantiza el acierto."
+  },
+  {
+    "id": "m_uni_9",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un ciclista despliega un movimiento rectilíneo uniforme sosteniendo una magnitud de velocidad de $20 \\text{ km/h}$.",
+    "q": "¿Cuántos minutos insumirá en dar por zanjada una distancia de $5 \\text{ km}$?",
+    "opts": [
+      "15 minutos",
+      "25 minutos",
+      "10 minutos",
+      "20 minutos"
+    ],
+    "ans": 0,
+    "exp": "Nos encontramos ante un problema de **Movimiento Rectilíneo Uniforme (MRU)** que requiere conversión de unidades métricas.\n\n* Aplicamos la fórmula cinemática del tiempo: $t = \\frac{d}{v}$.\n* Sustituimos los escalares: $t = \\frac{5 \\text{ km}}{20 \\text{ km/h}} = 0,25 \\text{ horas}$, o lo que es equivalente, $\\frac{1}{4}$ de hora.\n* Puesto que las alternativas están en minutos, multiplicamos por 60: $\\frac{1}{4} \\times 60 = 15 \\text{ minutos}$.\n\n**Tip Élite:** Analiza la relación de proporcionalidad: si 20 km toman 60 minutos, 5 km (que es la cuarta parte de la distancia) tomarán la cuarta parte del tiempo ($60 \\div 4 = 15$)."
+  },
+  {
+    "id": "m_raz_10",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un contratista estipula que se requieren exactamente 5 litros de revestimiento acrílico para impermeabilizar 60 $m^2$ de mampostería. Considerando una tasa de rendimiento constante...",
+    "q": "¿Qué cantidad volumétrica se requiere imperativamente para revestir $84 \\text{ m}^2$?",
+    "opts": [
+      "7 litros",
+      "6 litros",
+      "8 litros",
+      "9 litros"
+    ],
+    "ans": 0,
+    "exp": "El problema plantea una relación de **proporcionalidad directa**, ya que al aumentar el área, crecerá proporcionalmente la pintura necesaria.\n\n* El primer paso estratégico es calcular la **razón unitaria** (rendimiento por litro): $\\frac{60 \\text{ m}^2}{5 \\text{ L}} = 12 \\text{ m}^2/\\text{L}$.\n* Conociendo el rendimiento, dividimos la superficie total deseada por la razón unitaria: $\\frac{84 \\text{ m}^2}{12 \\text{ m}^2/\\text{L}} = 7 \\text{ L}$.\n* También se puede resolver por regla de tres simple directa: $x = \\frac{5 \\times 84}{60} = 7$.\n\n**Tip Élite:** Extraer siempre la tasa unitaria (cuánto cubre un solo litro) es a menudo más transparente e intuitivo que armar fracciones cruzadas de una regla de tres."
+  },
+  {
+    "id": "m_raz_11",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un proceso industrial es ejecutado por un ensamble de 5 maquinarias idénticas, requiriendo 6 horas para su conclusión. Si por motivos técnicos la plantilla se reduce a 3 maquinarias operando a la misma capacidad constante...",
+    "q": "¿Qué volumen temporal será consumido dadas las nuevas restricciones operativas?",
+    "opts": [
+      "10 horas",
+      "3,6 horas",
+      "8 horas",
+      "15 horas"
+    ],
+    "ans": 0,
+    "exp": "Estamos frente a una dinámica de **proporcionalidad inversa**: al disminuir la fuerza laboral (máquinas), forzosamente aumentará el tiempo requerido.\n\n* Determinamos el 'volumen de esfuerzo total' multiplicando ambos factores iniciales: $5 \\text{ máquinas} \\times 6 \\text{ horas} = 30 \\text{ horas-máquina}$. Este es el trabajo absoluto.\n* Para hallar el nuevo tiempo, dividimos ese esfuerzo total entre la cantidad de máquinas operativas: $\\frac{30}{3} = 10 \\text{ horas}$.\n* Una regla de tres directa errónea habría arrojado $3,6$ horas (distractor B).\n\n**Tip Élite:** Identifica el tipo de proporción de inmediato. Variables como 'trabajadores', 'máquinas' o 'velocidad' enfrentadas a 'tiempo' siempre denotan **proporcionalidad inversa** (a menos, más)."
+  },
+  {
+    "id": "v_fin_12",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Un reciente cuerpo legislativo mandata la rotulación ostensible del aporte calórico en productos de ingesta; esto obedece no a un propósito coercitivo ni restrictivo sobre el consumidor, sino a garantizarle el ejercicio de su autonomía fundamentada en datos fehacientes.",
+    "q": "¿Qué finalidad sustantiva se persigue con la promulgación de dicha normativa?",
+    "opts": [
+      "Ejercer censura sobre la circulación de artículos hipercalóricos.",
+      "Empoderar el libre albedrío del ciudadano mediante el acceso a la información.",
+      "Desincentivar la producción masiva de alimentos perjudiciales para la salud.",
+      "Fomentar un gravamen impositivo adicional sobre la dieta insana."
+    ],
+    "ans": 1,
+    "exp": "El texto plantea explícitamente el **teleologismo** (propósito) de una norma jurídica, desmintiendo de entrada un objetivo y confirmando otro.\n\n* La finalidad real declarada es 'garantizarle el ejercicio de su autonomía' con 'datos fehacientes', lo cual empata directamente con la opción sobre el empoderamiento del libre albedrío informativo.\n* El texto descarta explícitamente el 'propósito coercitivo', invalidando cualquier opción relativa a la censura, los gravámenes impositivos o la coerción económica.\n\n**Tip Élite:** Frente a preguntas sobre la 'finalidad' de un texto, concéntrate en los marcadores de intención (para, con el fin de, a fin de) y descarta las implicaciones que el autor deliberadamente excluye."
+  },
+  {
+    "id": "v_com_12",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "A pesar del ritmo vertiginoso que la sociedad contemporánea impone, declino someterme a dicha premura, prefiriendo pausar mi tránsito para reparar en la morfología de la flora, las formaciones atmosféricas y aquellos intersticios temporales que escapan a la percepción ordinaria.",
+    "q": "¿Qué idiosincrasia o actitud vital queda manifiesta por el narrador?",
+    "opts": [
+      "Reaccionaria y beligerante",
+      "Meditativa y contemplativa",
+      "Aislacionista y misantrópica",
+      "Indolente y apática"
+    ],
+    "ans": 1,
+    "exp": "El fragmento describe una postura vital donde el individuo ejerce resistencia pacífica frente a la inercia social, optando por la apreciación de los detalles.\n\n* El hecho de 'reparar en la morfología' (mirar) de fenómenos ordinarios denota una **actitud contemplativa**, en armonía con una observación profunda del entorno.\n* No es apática (indolente) pues hay una decisión activa ('prefiriendo pausar'); ni es beligerante, puesto que no confronta agresivamente a la sociedad, simplemente diverge de su ritmo.\n\n**Tip Élite:** Analiza la carga semántica de los verbos y adjetivos. Verbos de percepción reposada ('reparar', 'observar') apuntan siempre a actitudes reflexivas, estéticas o contemplativas."
+  },
+  {
+    "id": "v_cau_16",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "El deslave y la subsiguiente degradación topográfica no obedecen de modo exclusivo a las precipitaciones pluviales; su génesis estriba en la deforestación indiscriminada, la cual erradica la red radicular encargada de dotar de cohesión estructural al estrato terrestre.",
+    "q": "¿Qué fenómeno se instituye como el factor causal inmanente del desastre geológico?",
+    "opts": [
+      "La intensidad atípica de las precipitaciones torrenciales.",
+      "La anulación de la sujeción estructural subterránea originada por la tala.",
+      "El exceso de saturación hídrica en las cuencas forestales.",
+      "La proliferación descontrolada de especímenes arbóreos que socavan el estrato."
+    ],
+    "ans": 1,
+    "exp": "El párrafo establece una aclaración fundamental sobre la **causalidad primaria** de un fenómeno geológico.\n\n* El autor desecha a la lluvia como causa matriz, posicionando la remoción de la 'red radicular' (raíces) debida a la deforestación como la verdadera responsable de la pérdida de cohesión.\n* Las alternativas incorrectas recaen en el elemento secundario (la lluvia) o introducen falacias biológicas (afirmar que hay exceso de árboles).\n\n**Tip Élite:** Presta minuciosa atención a estructuras sintácticas adversativas o de contraste ('no es solo... sino'). Estas invariablemente apuntalan la verdadera causa o el argumento central que el autor quiere destacar."
+  },
+  {
+    "id": "v_con_14",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Tenía plena conciencia de que la rectitud en sus declaraciones precipitaría irrevocablemente la pérdida de su cargo jerárquico; no obstante, optó por la divulgación de los hechos fácticos.",
+    "q": "¿Qué atributo moral tipifica la conducta de este individuo?",
+    "opts": [
+      "Probidad",
+      "Pragmatismo",
+      "Pusilanimidad",
+      "Apatía"
+    ],
+    "ans": 0,
+    "exp": "Se evalúa la capacidad para conceptualizar una acción humana caracterizada por el apego a un estándar moral a expensas de un sacrificio personal.\n\n* La **probidad** o integridad es la cualidad que define el actuar con rectitud y honradez, incluso cuando ello conlleva un perjuicio inminente.\n* El 'pragmatismo' habría dictado el silencio para conservar el trabajo; la 'pusilanimidad' (cobardía) y la apatía no encajan en un acto voluntario de valentía moral.\n\n**Tip Élite:** Enriquecer el vocabulario es fundamental. Términos formales como *probidad* (integridad), *pusilanimidad* (cobardía), y *pragmatismo* (utilidad práctica) son pilares en la elaboración de distractores y respuestas de exámenes de admisión."
+  },
+  {
+    "id": "v_ese_12",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "De forma análoga a como el instrumento termométrico resulta incapaz de mitigar la condición febril y se limita a cuantificarla, las evaluaciones académicas no engendran la sapiencia, sino que cumplen un rol meramente probatorio.",
+    "q": "¿Qué postulado conceptual sostiene como estandarte el texto previo?",
+    "opts": [
+      "La evaluación académica posee propiedades intrínsecas formativas.",
+      "Los exámenes ostentan una naturaleza exclusiva de constatación, sin impacto causal sobre el aprendizaje.",
+      "La medición de variables médicas es epistemológicamente equivalente a la didáctica.",
+      "Las pruebas estandarizadas carecen de absoluta utilidad pragmática."
+    ],
+    "ans": 1,
+    "exp": "El pasaje se estructura mediante una **analogía funcional** para desmitificar un concepto erróneo sobre los exámenes.\n\n* Así como el termómetro es un instrumento de lectura pasiva (mide, no cura), el examen es un instrumento de constatación (evidencia, no crea).\n* La opción correcta captura esta 'naturaleza de constatación' pasiva, mientras que los distractores asumen falsamente que el examen instruye, o extrapolan la metáfora hasta volver inútiles las pruebas.\n\n**Tip Élite:** En los argumentos por analogía, despoja mentalmente la comparación de su vehículo metafórico (el termómetro) y analiza exclusivamente la relación lógica del objeto principal (el examen y su función)."
+  },
+  {
+    "id": "v_per_13",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Ante los vestigios arquitectónicos en decadencia, el anticuario percibe un testimonio fidedigno; el visitante foráneo, un encuadre estético; y el residente local, una anomalía topográfica inoportuna.",
+    "q": "¿Qué fenómeno de carácter hermenéutico o axiológico demuestra la viñeta provista?",
+    "opts": [
+      "La preservación del patrimonio es intrínsecamente problemática.",
+      "La atribución de significado es un fenómeno sujeto al relativismo de quien observa.",
+      "La superficialidad del turismo atenta contra la genuina valoración arqueológica.",
+      "Las estructuras en ruinas carecen de funcionalidad inherente."
+    ],
+    "ans": 1,
+    "exp": "El texto formula un catálogo de perspectivas divergentes respecto de un mismo objeto material (los vestigios arquitectónicos).\n\n* La iteración de sujetos ('anticuario', 'foráneo', 'residente') y sus respectivas visiones disímiles subraya que el valor de un objeto no radica en sí mismo, sino en la **atribución hermenéutica** del observador.\n* Las opciones que denostan al turismo o a los vestigios introducen juicios de valor ajenos a la objetividad descriptiva del pasaje original.\n\n**Tip Élite:** Cuando un texto enumera múltiples perspectivas divergentes pero válidas sobre un mismo hecho sin favorecer a ninguna, el eje temático invariable es la **subjetividad**, el relativismo o la multiplicidad de enfoques."
+  },
+  {
+    "id": "v_imp_18",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El tribuno reiteró de forma idéntica las promesas articuladas en el ciclo electoral previo; no obstante, el ágora cívica, en esta ocasión, presentó un aforo notoriamente mermado.",
+    "q": "¿Cuál inferencia implícita amalgama lógicamente los eventos narrados?",
+    "opts": [
+      "La infraestructura urbana sufrió remodelaciones que redujeron su capacidad.",
+      "El electorado desarrolló un déficit de credibilidad ante la falta de materialización de sus compromisos.",
+      "Las inclemencias meteorológicas disuadieron la participación multitudinaria.",
+      "El tribuno se retiró prematuramente de la contienda política."
+    ],
+    "ans": 1,
+    "exp": "Se evalúa la comprensión de **inferencias deductivas** derivadas de la yuxtaposición de dos afirmaciones contrastantes.\n\n* Premisa 1: reitera promesas viejas. Premisa 2: la asistencia colapsa. La implicación lógica que unifica ambas premisas es la pérdida de confianza pública generada por el incumplimiento.\n* Factores como el clima, la reducción del tamaño de la plaza o retiros anticipados son externalidades especulativas no fundamentadas en la evidencia textual.\n\n**Tip Élite:** Una idea implícita debe derivar rígidamente y de forma necesaria de las premisas presentadas. Descarta toda opción que introduzca variables contextuales fortuitas que no constan en el relato."
+  },
+  {
+    "id": "v_imp_19",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Ante el incumplimiento generalizado de las asignaciones encomendadas al alumnado, una tenue sonrisa asomó en el semblante del docente: la velada inminente estaría desprovista de labores de corrección.",
+    "q": "¿Qué deducción circunstancial emerge lógicamente a partir del desenlace?",
+    "opts": [
+      "El académico se encontraba presa de una iracundia disimulada.",
+      "La omisión estudiantil derivó en un fortuito periodo de asueto nocturno para el educador.",
+      "El cuerpo estudiantil poseía la certeza de ser evaluado favorablemente de todos modos.",
+      "El docente abdicó de sus responsabilidades institucionales esa misma tarde."
+    ],
+    "ans": 1,
+    "exp": "El micro-relato requiere extraer la **secuencia de causalidad no escrita** que explica la actitud del personaje.\n\n* La sonrisa del profesor ante un acto de desobediencia se explica racionalmente en la segunda proposición: su beneficio colateral inmediato es la liberación de tiempo.\n* Cualquier distractor que apunte a furia encubierta contradice la mención explícita de estar libre de tareas esa noche; asumir su renuncia o el éxito de los alumnos es un salto analítico injustificado.\n\n**Tip Élite:** Aborda los textos narrativos cortos identificando la emoción del sujeto y su justificación. Toda inferencia debe mantener coherencia irrestricta con ambos elementos."
+  },
+  {
+    "id": "v_pri_16",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Contrario a la noción del bosque como un mero agregado de especímenes silvícolas aislados, el subsuelo alberga una vasta interconexión radicular con micelios fúngicos, configurando una intrincada malla de simbiosis que garantiza la homeostasis del ecosistema íntegro.",
+    "q": "¿Cuál tesis subyace como nervio argumental hegemónico del fragmento?",
+    "opts": [
+      "La competencia darwiniana dicta la dominancia de ciertas especies arbóreas sobre otras.",
+      "La biocenosis forestal opera fundamentalmente como un sistema integrado de cooperación biológica.",
+      "Las infestaciones fúngicas representan el vector parasitario más letal para la flora terrestre.",
+      "La extensión de los sistemas de raíces resulta irrelevante frente al impacto del follaje."
+    ],
+    "ans": 1,
+    "exp": "El texto plantea una refutación inicial seguida por el desarrollo de la idea que sustituye el error conceptual: la **cooperación ecosistémica**.\n\n* Al enfatizar la simbiosis, el intercambio nutricional y el sostenimiento colectivo, el mensaje central converge en comprender el bosque como una red unificada e interdependiente.\n* Las opciones erradas asumen un tono conflictivo (parasitismo, competencia letal) o desestiman la relevancia del sustrato radicular.\n\n**Tip Élite:** Cuando un texto inicia desmintiendo una idea ('Contrario a la noción...'), la idea principal suele encontrarse inmediatamente después, constituyendo la tesis afirmativa que sustituye a la idea refutada."
+  },
+  {
+    "id": "v_par_15",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El ejercicio del albedrío despojado de una correlativa imputabilidad ética no califica como auténtica emancipación, sino que degenera en franco libertinaje.",
+    "q": "¿Cuál aserción destila la misma ontología expuesta en el apotegma?",
+    "opts": [
+      "La emancipación humana requiere la abolición de todo condicionamiento moral preexistente.",
+      "La verdadera autonomía del individuo está intrínsecamente supeditada al deber y la conciencia de los actos.",
+      "La imputabilidad legal coarta severamente el desarrollo ontológico del libre albedrío.",
+      "El hedonismo y el arbitrio incondicional constituyen el pináculo de la libertad."
+    ],
+    "ans": 1,
+    "exp": "El autor define la naturaleza legítima de la libertad atándola como binomio indisoluble a la **responsabilidad** (imputabilidad ética).\n\n* La paráfrasis correcta capta este binomio: ser auténticamente autónomo implica forzosamente la conciencia de las consecuencias ('deber y conciencia de los actos').\n* Las alternativas falaces promueven la separación de estos conceptos, viendo a la responsabilidad como un estorbo ('coarta') o ensalzando el mero libertinaje ('hedonismo y arbitrio incondicional').\n\n**Tip Élite:** Ante afirmaciones del tipo 'X sin Y no es verdadero X', la estructura subyacente indica que 'Y es una condición necesaria y sine qua non para X'. Busca la opción que exprese esta interdependencia absoluta."
+  },
+  {
+    "id": "v_pro_13",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El paradigma del desarrollo sostenible se define por procurar la satisfacción de los requerimientos socioeconómicos contemporáneos sin vulnerar las reservas destinadas al usufructo de generaciones venideras. Analice los siguientes postulados deducidos de dicho concepto:\nI. Propugna la administración racional para no extinguir los activos requeridos por la posteridad.\nII. Exige la paralización sistemática de la innovación tecnológica e industrial.\nIII. Articula en su praxis un equilibrio transversal entre las coyunturas del presente y el devenir futuro.\nIV. Desdeña y margina las exigencias coyunturales del paradigma actual.",
+    "q": "¿Cuáles inferencias guardan correspondencia irrestricta con la fundamentación del texto?",
+    "opts": [
+      "I y III",
+      "Únicamente la II",
+      "II y IV",
+      "Todas las anteriores"
+    ],
+    "ans": 0,
+    "exp": "El texto define un **equilibrio intergeneracional**.\n\n* El inciso I traduce fielmente 'sin comprometer las de futuras generaciones'. El inciso III revalida que atiende tanto al presente como al futuro.\n* Por otro lado, los incisos II y IV constituyen lecturas hiperbólicas e infundadas (frenar progreso, ignorar actualidad) que contravienen explícitamente el espíritu del postulado.\n\n**Tip Élite:** Al analizar proposiciones deductivas, cualquier inciso que contenga afirmaciones dogmáticas o absolutas ('frenar todo progreso', 'ignora') suele ser un distractor malicioso. Las deducciones correctas suelen ser ponderadas."
+  },
+  {
+    "id": "v_pro_14",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El ejercicio de la exégesis crítica no estriba en asimilar pasivamente el contenido textual, sino en someterlo a un escrutinio cimentado en la argumentación dialéctica. Analice los postulados inherentes a dicha definición:\nI. Constituye un acto de escepticismo provisto de fundamentación.\nII. Implica un dogma de validación automática sobre lo redactado.\nIII. Conlleva inexorablemente una tasación rigurosa de los planteamientos.\nIV. Representa una postura de rechazo a priori hacia toda narrativa.",
+    "q": "¿Cuáles aseveraciones se colegien deductivamente del axioma provisto?",
+    "opts": [
+      "I y III",
+      "I y II",
+      "III y IV",
+      "Únicamente la IV"
+    ],
+    "ans": 0,
+    "exp": "El análisis establece el propósito de la **exégesis crítica** como un punto medio reflexivo entre dos polos absolutos.\n\n* Los postulados I (escepticismo fundado) y III (tasación rigurosa de argumentos) operativizan a la perfección el 'cuestionar con argumentos' señalado.\n* Los postulados II (creencia ciega) y IV (rechazo sistemático) son polarizaciones absurdas rechazadas por la naturaleza misma de la moderación crítica.\n\n**Tip Élite:** Identifica cómo los examinadores construyen las opciones falsas. Usualmente, toman el concepto central y lo llevan a los extremos lógicos (aceptarlo todo o rechazarlo todo) para atrapar a los candidatos incautos."
+  },
+  {
+    "id": "m_ari_17",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Dentro del dominio de los números enteros positivos compuestos estrictamente por dos dígitos significativos (intervalo [10, 99]), determine la cardinalidad del subconjunto cuyos dígitos constitutivos arrojan una sumatoria exacta de 9.",
+    "q": "¿Cuántos numerales de dicho espectro cumplen con la propiedad estipulada?",
+    "opts": [
+      "8 elementos",
+      "9 elementos",
+      "10 elementos",
+      "7 elementos"
+    ],
+    "ans": 1,
+    "exp": "Este problema apela a la construcción sistemática de combinaciones de dígitos bajo una **restricción aditiva**.\n\n* Estructuramos las unidades y decenas de forma ordenada. Si la decena es 1, la unidad debe ser 8 (para sumar 9).\n* El conjunto resultante es: \\{18, 27, 36, 45, 54, 63, 72, 81, 90\\}.\n* Contabilizando los elementos de esta enumeración exhaustiva, hallamos exactamente 9 números. (Ojo: 09 no cuenta pues no es estrictamente de dos cifras significativas).\n\n**Tip Élite:** Un método infalible es fijar el primer dígito incrementándolo desde el mínimo válido (1) hasta el máximo posible (9), y ajustar el segundo dígito. Así garantizas no omitir ninguno ni realizar duplicaciones."
+  },
+  {
+    "id": "m_cnt_12",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un trío de individuos debe alinearse en sucesión para un retrato. No obstante, por requerimientos estéticos, los sujetos A y B deben permanecer invariablemente contiguos.",
+    "q": "¿Bajo cuántas modalidades posicionales puede establecerse dicho agrupamiento?",
+    "opts": [
+      "4 modalidades",
+      "6 modalidades",
+      "3 modalidades",
+      "12 modalidades"
+    ],
+    "ans": 0,
+    "exp": "Este reto de conteo incorpora una **restricción de adyacencia**, la cual se resuelve mediante la técnica del 'super-bloque'.\n\n* Fusionamos a los sujetos A y B en una sola entidad o bloque. Ahora tenemos 2 elementos para ordenar: el bloque [A,B] y la persona C.\n* Estos 2 elementos pueden permutarse de $2!$ formas ($2 \\times 1 = 2$).\n* Internamente, el bloque puede organizarse como A-B o B-A (otras $2!$ formas).\n* Por el principio multiplicativo: $2 \\times 2 = 4$ modalidades totales.\n\n**Tip Élite:** Cuando un problema exija que ciertos elementos 'estén siempre juntos', agrúpalos como un solo elemento para la permutación principal, y luego multiplica el resultado por la permutación interna de ese grupo cerrado."
+  },
+  {
+    "id": "m_cnt_13",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "A partir de la colección de dígitos \\{1, 2, 3, 4, 5\\}, se requiere construir numerales de tres cifras distintas sin reemplazo.",
+    "q": "¿Cuántos elementos del referido espacio muestral obedecen al criterio de paridad?",
+    "opts": [
+      "24 arreglos",
+      "60 arreglos",
+      "12 arreglos",
+      "36 arreglos"
+    ],
+    "ans": 0,
+    "exp": "La resolución de combinaciones con restricciones específicas exige iniciar siempre el análisis por **la condición limitante**; en este caso, la paridad.\n\n* Para que el numeral sea par, el dígito de las unidades solo puede ser $2$ o $4$ (existen 2 opciones).\n* Una vez fijada la unidad, restan 4 dígitos disponibles para la posición de las centenas (4 opciones).\n* Para la posición de las decenas, quedan 3 dígitos disponibles (3 opciones).\n* Aplicando el principio multiplicativo: $2 \\times 4 \\times 3 = 24$ arreglos pares.\n\n**Tip Élite:** En problemas de formación de números con dígitos, jamás empieces a llenar las casillas de izquierda a derecha sin analizar antes. Resuelve siempre primero las restricciones severas (pares, impares, múltiplos de 5)."
+  },
+  {
+    "id": "m_suc_14",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Inspeccione meticulosamente la cadencia de la siguiente sucesión matemática divergente: $1, 2, 6, 24, 120, \\dots$",
+    "q": "¿Qué magnitud asume el rol del sexto componente de esta cadena?",
+    "opts": [
+      "240",
+      "600",
+      "720",
+      "360"
+    ],
+    "ans": 2,
+    "exp": "El arreglo de la sucesión delata un crecimiento acelerado que sugiere una **progresión multiplicativa progresiva o factorial**.\n\n* Analizamos los factores de incremento entre términos: $1 \\times 2 = 2$; $2 \\times 3 = 6$; $6 \\times 4 = 24$; $24 \\times 5 = 120$.\n* La lógica generativa estipula multiplicar cada término por un factor natural creciente en cada iteración.\n* El sexto término requerirá multiplicar por $6$: $120 \\times 6 = 720$. (Esta es, de hecho, la sucesión de los números factoriales $n!$).\n\n**Tip Élite:** Un incremento vertiginoso (de decenas a cientos en un solo salto) es el indicador irrefutable de que debes abandonar sumas y diferencias para buscar patrones de multiplicación continua o exponenciación."
+  },
+  {
+    "id": "m_suc_15",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "En un sistema lógico de mapeo se observa la correspondencia: $\\Phi(1) = 2$, $\\Phi(2) = 6$, $\\Phi(3) = 12$, y $\\Phi(4) = 20$.",
+    "q": "¿Qué producto numérico se generará al evaluar $\\Phi(5)$ bajo los mismos preceptos?",
+    "opts": [
+      "25",
+      "30",
+      "28",
+      "35"
+    ],
+    "ans": 1,
+    "exp": "El reto demanda descubrir la **regla funcional** $\\Phi(n)$ que relaciona a la variable de entrada con su respectiva salida.\n\n* Observamos la relación: $1 \\to (1\\times 2)=2$; $2 \\to (2\\times 3)=6$; $3 \\to (3\\times 4)=12$; $4 \\to (4\\times 5)=20$.\n* El modelo algebraico subyacente que rige el mapeo es la multiplicación del número por su consecutivo natural inmediato: $\\Phi(n) = n(n+1)$.\n* Por ende, para $\\Phi(5)$ la operación es: $5 \\times 6 = 30$.\n\n**Tip Élite:** Cuando te ofrezcan pares de números pequeños que aumentan moderadamente, intenta siempre sumar el cuadrado del número consigo mismo ($n^2 + n$), lo cual es matemáticamente idéntico a multiplicar por el consecutivo ($n(n+1)$)."
+  }
+]

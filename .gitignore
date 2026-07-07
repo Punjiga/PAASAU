@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.vercel
+*.log
+.env
+.env.local
+
+# Llave de despliegue (no subir)
+.paasau_deploy
+.paasau_deploy.pub

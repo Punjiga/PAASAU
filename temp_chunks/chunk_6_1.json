@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q_pdf6_06",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Una galaxia tiene dos planetas: P y Q. Cada\naño del planeta P tiene 120 días terrestres. Por\notra parte, en el planeta Q, cada año tiene 140\ndías terrestres.\n¿Qué cantidad de años en Q tiene un habitante",
+    "q": "que tiene 7 años en P?",
+    "opts": [
+      "5",
+      "6",
+      "8",
+      "9"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_07",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Digo que una cosa ha cambiado porque puedo\nafirmar que algo de ella no ha cambiado, y me\npermite reconocer el objeto de que se trata.\nAnalice las siguientes proposiciones:\nI. Sin que algo permanezca en el objeto, no hay\ncambio.\nII. Lo permanente reduce el cambio.\nIII. Todo cambio requiere de permanencia.\nSegún el texto anterior, es (son) correcta(s) solo la",
+    "q": "",
+    "opts": [
+      "I.",
+      "II.",
+      "I y la II.",
+      "I y la III.",
+      "II y la III."
+    ],
+    "ans": 3,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_08",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En una caja se colocan siete tiras de papel.\nEn cada una de ellas se ha escrito del 0 al 6 un\nnúmero entero distinto. Se sacan 2 tiras al azar.\n¿Cuál es el mayor número de parejas de tiras que\npueden sacarse tales que la suma de los números",
+    "q": "que las identifican sea 6?",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_09",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La música produce cambios en nosotros;\nasí, por ejemplo, agudiza la capacidad de\npercepción auditiva; por eso, a medida que\nescuchamos música, distinguimos sonidos cada\nvez más __________ y captamos la coherencia de\nimágenes sonoras cada vez más __________.",
+    "q": "",
+    "opts": [
+      "bellos – rápidas",
+      "finos – complejas",
+      "raros – combinadas",
+      "fuertes – pintorescas",
+      "semejantes – armoniosas"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_10",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En las profundidades del mar, dadas sus\ncaracterísticas especiales, existe una fauna\ncompletamente desconocida en otras partes del\nmar.\nDe acuerdo con el texto, ¿cuál opción caracteriza\nla fauna de las profundidades del mar en relación",
+    "q": "con la fauna de otras partes del mar?",
+    "opts": [
+      "Muy compleja.",
+      "Muy variada.",
+      "Distinta.",
+      "Exótica.",
+      "Rara."
+    ],
+    "ans": 2,
+    "exp": ""
+  }
+]

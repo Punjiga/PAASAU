@@ -1,0 +1,96 @@
+[
+  {
+    "id": "q_pdf6_26",
+    "domain": "verbal",
+    "topic": "Completar oraciones",
+    "dif": 3,
+    "stem": "En la mitología griega, las divinidades agrícolas secundarias se caracterizaban por su aspecto __________: mitad ser humano, mitad animal.",
+    "q": "",
+    "opts": [
+      "incompleto",
+      "imperfecto",
+      "ambiguo",
+      "deforme",
+      "mixto"
+    ],
+    "ans": 4,
+    "exp": "",
+    "feedback_socratico": "¿Qué palabra de las opciones describe mejor algo que está formado por la combinación o mezcla de elementos distintos? Si el texto dice 'mitad ser humano, mitad animal', ¿no te sugiere eso una mezcla de dos naturalezas?",
+    "tip_elite": "Busca pistas en el texto después de los dos puntos. La frase 'mitad ser humano, mitad animal' es la definición exacta de la palabra que falta. En ejercicios de completar oraciones, el contexto inmediato siempre te da la respuesta."
+  },
+  {
+    "id": "q_pdf6_27",
+    "domain": "verbal",
+    "topic": "Inferencia lógica",
+    "dif": 3,
+    "stem": "Cuando recibimos elogios de algunas personas, nos quedamos pendientes de sus labios por temer que sus alabanzas no sean sino un antecedente de críticas. Quien pronuncia una alabanza asume, al menos por un momento, la posición de juez.",
+    "q": "Del texto anterior, con certeza, es correcto concluir que quien alaba,",
+    "opts": [
+      "acusa.",
+      "enjuicia.",
+      "censura.",
+      "condena.",
+      "absuelve."
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "¿Qué dice explícitamente el texto sobre quien pronuncia una alabanza? Menciona que asume 'la posición de juez'. ¿Cuál de las opciones es sinónimo o la acción directa que realiza un juez al asumir esa posición?",
+    "tip_elite": "En preguntas de conclusión con certeza, la respuesta suele estar parafraseada directamente en el texto. Aquí, 'posición de juez' es un indicador directo y literal de la acción 'enjuicia'."
+  },
+  {
+    "id": "q_pdf6_28",
+    "domain": "math",
+    "topic": "Análisis combinatorio",
+    "dif": 3,
+    "stem": "Rafael debe digitar una contraseña de 6 dígitos para desbloquear la pantalla de inicio de su computadora, pero no recuerda los últimos 2 dígitos. Lo que recuerda es que al sumar esos 2 dígitos el resultado es 10 y al multiplicarlos el resultado es mayor a 10.",
+    "q": "¿Cuántas posibilidades de contraseña tiene Rafael para digitar?",
+    "opts": [
+      "4",
+      "7",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "¿Cuáles parejas de dígitos del 0 al 9 suman 10? Escríbelas todas. Luego, verifica para cada pareja si al multiplicar ambos dígitos el resultado es estrictamente mayor a 10. ¿Cuántas de esas combinaciones cumplen ambas condiciones?",
+    "tip_elite": "Haz una lista sistemática de las combinaciones que suman 10: (1,9), (2,8)... etc. Recuerda que el orden importa en las contraseñas, por lo que (2,8) y (8,2) son posibilidades distintas. Solo descarta las que dan un producto de 10 o menos."
+  },
+  {
+    "id": "q_pdf6_29",
+    "domain": "math",
+    "topic": "Planteo de ecuaciones y edades",
+    "dif": 3,
+    "stem": "Cierto año, Rebeca tenía 20 años y sus dos hermanos 6 y 7 años.",
+    "q": "¿Cuál es el menor número de años que debe transcurrir, a partir de ese año, para que la edad de Rebeca llegue a ser menor que la suma de las edades que tendrán sus dos hermanos?",
+    "opts": [
+      "28",
+      "16",
+      "9",
+      "8",
+      "7"
+    ],
+    "ans": 3,
+    "exp": "",
+    "feedback_socratico": "Si transcurren 'x' años, Rebeca tendrá 20 + x años. ¿Cómo expresarías la suma de las edades de sus dos hermanos en 'x' años? ¿Qué inecuación se forma si la edad de Rebeca debe ser estrictamente menor que esa nueva suma?",
+    "tip_elite": "En problemas de edades, el tiempo transcurre igual para todos. Si pasan 'x' años, debes sumar 'x' a la edad de CADA hermano, por lo que la suma de sus edades aumentará en '2x'. Plantea 20 + x < (6 + x) + (7 + x) y despeja 'x'."
+  },
+  {
+    "id": "q_pdf6_30",
+    "domain": "math",
+    "topic": "Sucesiones numéricas",
+    "dif": 3,
+    "stem": "Una comerciante compró latas de frutas para vender 10 cada día. Sucedió que el primer día logró vender las 10 latas, sin embargo, en los restantes vendió cada día una menos que el día anterior, razón por la cual, en el tiempo previsto para la venta todavía le quedaban 6 latas.",
+    "q": "¿Cuántos días le tomó vender todas las latas de frutas?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "Si tanteas que el tiempo previsto era de 4 días, ¿cuántas latas compró en total a 10 por día? Al vender 10, 9, 8 y 7 latas, ¿cuántas le quedan al finalizar el cuarto día? Sabiendo que le quedaban 6, ¿cuántas venderá al quinto día y cuándo se le acabarán?",
+    "tip_elite": "Evita ecuaciones cuadráticas complejas y usa los números pequeños a tu favor. Prueba asumiendo que el tiempo previsto eran 4 días: compró 40. Vendió 10+9+8+7 = 34. Le sobran 6, ¡justo lo que dice el problema! El 5to día debe vender 6 (una menos que 7), así que acaba ese mismo día."
+  }
+]

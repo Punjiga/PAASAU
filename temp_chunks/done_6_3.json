@@ -1,0 +1,95 @@
+[
+  {
+    "id": "q_pdf6_16",
+    "domain": "verbal",
+    "topic": "inferencia lógica / comprensión de lectura",
+    "dif": 3,
+    "stem": "La persona en sociedad permanece, básicamente, ella misma; solo experimenta cambios en la medida en que la sociedad ejerce presión sobre ella y, en consecuencia, le concede mayor satisfacción.\nAnalice las siguientes proposiciones:\nI. A mayor presión y más satisfacción, más cambios en la persona.\nII. A mayor presión y más satisfacción, menos cambios en la persona.\nIII. A menor presión y menos satisfacción, menos cambios en la persona.",
+    "q": "Del texto ¿cuál(es) de la(s) siguiente(s) proposición(es) se puede(n) deducir?",
+    "opts": [
+      "Solo la I.",
+      "Solo la II.",
+      "Solo la III.",
+      "Solo la I y la II.",
+      "Solo la I y la III."
+    ],
+    "ans": 4,
+    "exp": "",
+    "feedback_socratico": "El texto plantea que la persona experimenta cambios 'en la medida' en que recibe presión y satisfacción, estableciendo una relación directa. Si esto es así, ¿qué debería suceder lógicamente con los cambios si la presión y la satisfacción aumentan o si ambas disminuyen?",
+    "tip_elite": "Identifica relaciones de proporcionalidad en el texto. Aquí se presenta una relación directamente proporcional: a mayor causa (presión/satisfacción), mayor efecto (cambios), y a menor causa, menor efecto. Por ende, la I y la III son correctas."
+  },
+  {
+    "id": "q_pdf6_17",
+    "domain": "math",
+    "topic": "principio del palomar / razonamiento lógico",
+    "dif": 3,
+    "stem": "En un vivero hay 60 árboles pequeños de diferentes tipos: 31 guanacastes, 19 cenízaros y 10 almendros. Los árboles serán sembrados en una finca por 30 estudiantes. Cada estudiante sembrará dos árboles.",
+    "q": "Según la información anterior, ¿cuál de las siguientes situaciones ocurrirá con certeza?",
+    "opts": [
+      "Uno o más estudiantes sembrarán dos cenízaros.",
+      "Uno o más estudiantes sembrarán dos guanacastes.",
+      "Uno o más estudiantes sembrarán un guanacaste y un cenízaro.",
+      "Uno o más estudiantes sembrarán un guanacaste y un almendro."
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "Piensa en cómo podrías distribuir los guanacastes para evitar que un estudiante reciba dos. Si hay 30 estudiantes y tratas de darle solo un guanacaste a cada uno, ¿cuántos guanacastes has repartido y qué pasa con los que sobran?",
+    "tip_elite": "Aplica el Principio del Palomar. Hay 31 guanacastes para repartir entre 30 estudiantes. Aún si le das exactamente un guanacaste a cada estudiante (30), inevitablemente sobrará 1 guanacaste que debe asignarse a alguien que ya tiene uno. Por tanto, con certeza, al menos un estudiante sembrará dos guanacastes."
+  },
+  {
+    "id": "q_pdf6_18",
+    "domain": "verbal",
+    "topic": "inferencia lógica / comprensión de lectura",
+    "dif": 3,
+    "stem": "La Teoría de la Evolución recuperó la continuidad entre el ser humano y los animales, que había sido negada por Descartes cuando atribuyó alma solo al ser humano.",
+    "q": "Del texto anterior, se concluye que la Teoría de la Evolución",
+    "opts": [
+      "negó la existencia del alma.",
+      "contradijo la teoría de Descartes.",
+      "desprestigió la teoría de Descartes.",
+      "amplió el concepto de continuity entre el ser humano y los animales.",
+      "inventó el concepto de continuidad entre el ser humano y los animales."
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "Si Descartes 'negó' una idea (la continuidad), y luego la Teoría de la Evolución 'recuperó' esa misma idea, ¿qué postura adopta la segunda frente a la primera? ¿No se encuentran en oposición directa?",
+    "tip_elite": "En preguntas de inferencia, busca contrastes explícitos de verbos o acciones. 'Recuperar' lo que otro previamente ha 'negado' significa oponerse lógicamente a esa idea; en otras palabras, contradecir la postura inicial."
+  },
+  {
+    "id": "q_pdf6_19",
+    "domain": "verbal",
+    "topic": "comprensión de lectura / análisis de causa y efecto",
+    "dif": 3,
+    "stem": "En un gas, las moléculas tienen siempre gran libertad de movimiento porque las fuerzas de atracción resultan demasiado débiles para conservarlas unidas entre sí.",
+    "q": "Según el texto anterior, las moléculas que constituyen los gases tienden a",
+    "opts": [
+      "separarse.",
+      "mezclarse.",
+      "expandirse.",
+      "evaporarse.",
+      "multiplicarse."
+    ],
+    "ans": 0,
+    "exp": "",
+    "feedback_socratico": "El texto señala que la debilidad de las fuerzas de atracción hace imposible que las moléculas se conserven 'unidas'. Si el resultado es que no logran mantenerse unidas, ¿cuál es la acción contraria u opuesta que terminará sucediendo?",
+    "tip_elite": "Busca la relación de antonimia implícita. Si la premisa es la incapacidad para mantenerse 'unidas', la consecuencia lógica directa es la tendencia a la acción contraria, es decir, a separarse."
+  },
+  {
+    "id": "q_pdf6_20",
+    "domain": "math",
+    "topic": "sucesiones y patrones",
+    "dif": 3,
+    "stem": "Considere la siguiente secuencia de igualdades:\nN1 = 2\nN2 = 2\nN3 = 6\nN4 = 6\nN5 = 10\nN6 = 10\nSi se continúa la secuencia,",
+    "q": "¿a cuánto equivale N116?",
+    "opts": [
+      "226",
+      "228",
+      "230",
+      "232"
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "¿Notas un patrón entre los números pares (N2=2, N4=6, N6=10)? Intenta relacionar el subíndice (el número de la N) con su valor. Por ejemplo, ¿qué operación matemática puedes aplicarle al subíndice 4 para llegar a 6, o al subíndice 6 para llegar a 10?",
+    "tip_elite": "Encuentra la fórmula de la sucesión. Observa que para cualquier posición par 'n', el valor siempre corresponde a multiplicar la posición por 2 y restarle 2 ($2n - 2$). Así, para $N_{116}$, el cálculo directo es $2(116) - 2 = 232 - 2 = 230$."
+  }
+]

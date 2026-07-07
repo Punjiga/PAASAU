@@ -1,0 +1,674 @@
+[
+  {
+    "id": "m_suc_13",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Considere la secuencia numérica definida por la recurrencia $a_n = a_{n-1} + a_{n-2}$ para $n \\geq 3$, con los términos iniciales $a_1 = 1$ y $a_2 = 1$. Los primeros términos de esta serie son: 1, 1, 2, 3, 5, 8, 13, ...",
+    "q": "Bajo esta regla de formación, ¿cuál es el valor que corresponde al octavo término de la sucesión?",
+    "opts": [
+      "21",
+      "20",
+      "24",
+      "26"
+    ],
+    "ans": 0,
+    "exp": "Para hallar el octavo término, es fundamental comprender la regla de formación de la secuencia proporcionada.\n\n*   Analizamos la recurrencia dada: $a_n = a_{n-1} + a_{n-2}$. Esto significa que cada término, a partir del tercero, se obtiene sumando los dos términos inmediatamente anteriores.\n*   Verificamos los términos dados: $a_3 = 1+1=2$, $a_4 = 1+2=3$, $a_5 = 2+3=5$, $a_6 = 3+5=8$, $a_7 = 5+8=13$.\n*   Aplicamos la regla para el octavo término ($a_8$): sumamos el sexto y el séptimo término, es decir, $8 + 13 = 21$.\n\n**Tip Élite:** Esta famosa secuencia se conoce como la sucesión de Fibonacci. Identificar relaciones aditivas entre términos consecutivos es clave en series no aritméticas ni geométricas."
+  },
+  {
+    "id": "m_dat_11",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Para recaudar fondos, un comité emite un total de 200 boletos numerados para un sorteo, donde cada boleto tiene idéntica probabilidad de resultar premiado. Un participante adquiere 8 de estos boletos.",
+    "q": "¿Cuál es la probabilidad teórica de que este participante resulte ganador del sorteo?",
+    "opts": [
+      "{{1/25}}",
+      "{{1/50}}",
+      "{{4/25}}",
+      "{{8/25}}"
+    ],
+    "ans": 0,
+    "exp": "El problema se resuelve aplicando la regla de Laplace para el cálculo de probabilidades en sucesos equiprobables.\n\n*   **Casos posibles:** Es el número total de boletos emitidos en el sorteo, es decir, 200.\n*   **Casos favorables:** Es la cantidad de boletos que el participante ha comprado y que le darían la victoria, que son 8.\n*   Calculamos la probabilidad dividiendo los casos favorables entre los posibles: $P = \\frac{8}{200}$.\n*   Simplificamos la fracción dividiendo el numerador y el denominador por su máximo común divisor (8): $\\frac{8}{200} = \\frac{1}{25}$.\n\n**Tip Élite:** Al calcular probabilidades en exámenes de admisión, siempre asegúrate de simplificar la fracción resultante hasta su mínima expresión, ya que así suelen presentarse las opciones de respuesta."
+  },
+  {
+    "id": "m_dat_12",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Un estudiante fue evaluado en cinco asignaturas distintas, obteniendo una media aritmética de 8 en el conjunto de sus calificaciones. Si se sabe que cuatro de esas calificaciones fueron 7, 9, 8 y 6.",
+    "q": "¿Cuál debe ser la calificación obtenida en la quinta asignatura para que se mantenga dicho promedio?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "ans": 2,
+    "exp": "Para determinar un dato faltante a partir de un promedio conocido, debes plantear la fórmula de la media aritmética como una ecuación.\n\n*   **Definición de promedio:** La media aritmética es la suma total de los datos dividida por el número de datos ($n$).\n*   Si el promedio de $5$ notas es $8$, la **suma total** de esas $5$ calificaciones debe ser $5 \\times 8 = 40$.\n*   Sumamos las cuatro calificaciones conocidas: $7 + 9 + 8 + 6 = 30$.\n*   Para hallar la nota faltante ($x$), restamos la suma de las notas conocidas a la suma total requerida: $x = 40 - 30 = 10$.\n\n**Tip Élite:** Trabajar con la \"suma total\" ($n \\times \\text{promedio}$) es el método más rápido y directo para resolver problemas de promedios con incógnitas."
+  },
+  {
+    "id": "m_not_8",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "En el contexto de la modelización matemática de enunciados verbales, se plantea la siguiente condición: 'el triple de un número desconocido, aumentado en 6 unidades'.",
+    "q": "¿Cuál de las siguientes expresiones algebraicas traduce correctamente el enunciado anterior?",
+    "opts": [
+      "3x + 6",
+      "3(x + 6)",
+      "x^3 + 6",
+      "3x - 6"
+    ],
+    "ans": 0,
+    "exp": "Traducir del lenguaje común al lenguaje algebraico requiere interpretar el orden de las operaciones según la sintaxis del enunciado.\n\n*   Identificamos la variable: representamos \"un número desconocido\" con la letra $x$.\n*   **\"El triple de un número\"**: Esto implica multiplicar la variable por 3, es decir, $3x$.\n*   **\"...aumentado en 6\"**: Esta frase indica una adición posterior, por lo que sumamos 6 al resultado anterior, quedando $3x + 6$.\n*   **Ojo con los distractores:** La opción $3(x + 6)$ correspondería a \"el triple de, un número aumentado en 6\" o \"el triple de la suma de un número y 6\".\n\n**Tip Élite:** Las comas en el lenguaje escrito son determinantes. \"El triple de un número, aumentado en 6\" ($3x + 6$) es distinto de \"el triple de la suma de un número y 6\" ($3(x + 6)$)."
+  },
+  {
+    "id": "m_alr_8",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Al modelar un problema matemático, se establece la siguiente relación: la mitad de cierto valor desconocido, aumentada en 7 unidades, da como resultado 16.",
+    "q": "¿Cuál es el valor desconocido que satisface dicha relación?",
+    "opts": [
+      "18",
+      "9",
+      "23",
+      "46"
+    ],
+    "ans": 0,
+    "exp": "El primer paso es plantear la ecuación que modele el enunciado y luego proceder a despejar la incógnita sistemáticamente.\n\n*   **Planteamiento:** Sea $x$ el valor desconocido. \"La mitad de un número\" es $\\frac{x}{2}$, y \"aumentada en 7, es igual a 16\" se traduce como $\\frac{x}{2} + 7 = 16$.\n*   **Despeje inicial:** Para aislar el término con la incógnita, restamos 7 a ambos lados de la ecuación: $\\frac{x}{2} = 16 - 7 \\Rightarrow \\frac{x}{2} = 9$.\n*   **Resolución final:** Como el 2 está dividiendo a la $x$, pasa al otro lado multiplicando: $x = 9 \\times 2 = 18$.\n\n**Tip Élite:** Verifica tu respuesta sustituyéndola en el enunciado original: la mitad de $18$ es $9$, y si le sumas $7$, efectivamente obtienes $16$. El auto-chequeo te libra de errores por descuido."
+  },
+  {
+    "id": "m_uni_9",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Durante una sesión de entrenamiento, un ciclista mantiene una rapidez constante de $20\\text{ km/h}$ a lo largo de un trayecto rectilíneo.",
+    "q": "¿Cuánto tiempo le tomará completar un segmento específico de $5\\text{ km}$ bajo estas condiciones?",
+    "opts": [
+      "15 min",
+      "12 min",
+      "25 min",
+      "10 min"
+    ],
+    "ans": 0,
+    "exp": "Para resolver problemas de movimiento uniforme, empleamos la relación fundamental entre distancia, velocidad y tiempo.\n\n*   **Fórmula:** Sabemos que $\\text{Tiempo} = \\frac{\\text{Distancia}}{\\text{Velocidad}}$.\n*   Sustituyendo los valores dados: $\\text{Tiempo} = \\frac{5\\text{ km}}{20\\text{ km/h}} = \\frac{1}{4}\\text{ de hora}$.\n*   **Conversión de unidades:** Dado que las opciones están en minutos, multiplicamos por 60 (la cantidad de minutos en una hora): $\\frac{1}{4} \\times 60 = 15\\text{ minutos}$.\n\n**Tip Élite:** Observa siempre las unidades de las opciones de respuesta. Realizar el cálculo correcto pero olvidar la conversión final es un error muy común en estos exámenes."
+  },
+  {
+    "id": "m_raz_10",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un pintor determina que, utilizando exactamente 5 litros de cierto esmalte, es capaz de cubrir uniformemente una superficie de $60\\text{ m}^2$.",
+    "q": "Bajo el mismo rendimiento, ¿cuántos litros de este esmalte se requerirán para pintar una superficie de $84\\text{ m}^2$?",
+    "opts": [
+      "7 L",
+      "6.5 L",
+      "8 L",
+      "7.5 L"
+    ],
+    "ans": 0,
+    "exp": "Este es un problema de proporcionalidad directa: a mayor superficie a pintar, mayor cantidad de litros se requerirán.\n\n*   **Cálculo del rendimiento (razón unitaria):** Primero determinamos cuántos metros cuadrados se cubren con un solo litro: $\\frac{60\\text{ m}^2}{5\\text{ L}} = 12\\text{ m}^2/\\text{L}$.\n*   **Aplicación a la nueva área:** Ahora, dividimos la superficie total que queremos pintar entre el rendimiento por litro: $\\frac{84\\text{ m}^2}{12\\text{ m}^2/\\text{L}} = 7\\text{ L}$.\n*   **Método alternativo (Regla de tres):** $x = \\frac{84 \\times 5}{60} = \\frac{420}{60} = 7\\text{ L}$.\n\n**Tip Élite:** El cálculo del valor unitario (cuánto rinde 1 litro) suele simplificar mentalmente los problemas de proporcionalidad más rápido que plantear la ecuación formal."
+  },
+  {
+    "id": "m_raz_11",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "En una planta de manufactura, 5 máquinas idénticas operando simultáneamente logran procesar un pedido en exactamente 6 horas.",
+    "q": "Si dos de las máquinas se averían antes de iniciar, ¿cuántas horas tardarán las 3 máquinas restantes en completar un pedido idéntico?",
+    "opts": [
+      "10 horas",
+      "3,6 horas",
+      "12 horas",
+      "15 horas"
+    ],
+    "ans": 0,
+    "exp": "Estamos ante un escenario de proporcionalidad inversa: al disminuir la cantidad de máquinas (trabajadores), el tiempo requerido para hacer el mismo trabajo aumentará.\n\n*   **Esfuerzo total (constante):** Calculamos el trabajo total en términos de \"máquinas-hora\". El trabajo requiere $5\\text{ máquinas} \\times 6\\text{ horas} = 30\\text{ máquinas-hora}$.\n*   **Nuevo escenario:** Este mismo esfuerzo total de 30 máquinas-hora debe ser completado ahora por solo 3 máquinas.\n*   Dividimos el esfuerzo total entre las máquinas disponibles: $\\frac{30}{3} = 10\\text{ horas}$.\n\n**Tip Élite:** Jamás uses una regla de tres directa cuando las variables sean inversamente proporcionales (como trabajadores vs tiempo). Piensa siempre en la constante del \"esfuerzo total\"."
+  },
+  {
+    "id": "v_fin_12",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "La reciente legislación exige el etiquetado frontal advirtiendo sobre el alto contenido calórico o de azúcares en productos procesados. Su propósito explícito no radica en prohibir la comercialización de estos bienes, sino en garantizar que el consumidor posea los datos necesarios para ejercer una elección consciente.",
+    "q": "Según el fragmento, ¿cuál es el objetivo primordial de la legislación mencionada?",
+    "opts": [
+      "Erradicar el consumo de productos hipercalóricos en la población.",
+      "Dotar al consumidor de información para que tome decisiones fundamentadas.",
+      "Penalizar a las industrias que procesan alimentos con alto nivel de azúcar.",
+      "Sustituir la oferta de alimentos procesados por opciones de origen natural."
+    ],
+    "ans": 1,
+    "exp": "El análisis de la finalidad en un texto exige diferenciar entre el medio utilizado (la ley de etiquetado) y el propósito último que declara el autor.\n\n*   El texto presenta un contraste explícito usando la estructura \"no radica en X, sino en Y\".\n*   **Descartando opciones:** Se afirma directamente que el propósito *no* es prohibir (descartando la erradicación del consumo). No se menciona ninguna penalización económica ni una sustitución de oferta.\n*   **Conclusión:** La cláusula afirmativa es \"garantizar que el consumidor posea los datos necesarios para ejercer una elección consciente\", lo cual se parafrasea exactamente como \"dotar al consumidor de información para que tome decisiones fundamentadas\".\n\n**Tip Élite:** Las conectivas adversativas (como \"no... sino...\") son señales críticas de tránsito en la lectura; indican exactamente dónde el autor rechaza una idea común para establecer su verdadera tesis."
+  },
+  {
+    "id": "v_com_12",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "«A pesar de que el torbellino de la urbe moderna me exija una marcha frenética y utilitaria, yo elijo el acto de demorarme; me detengo a observar la asimetría del árbol, la transitoriedad de la nube y ese instante minúsculo que, en la prisa general, resulta invisible para el resto».",
+    "q": "¿Qué actitud frente a la vida caracteriza fundamentalmente al hablante del texto?",
+    "opts": [
+      "Apatía frente a sus responsabilidades ciudadanas.",
+      "Una disposición contemplativa y de apreciación estética.",
+      "Alienación absoluta respecto a la sociedad en la que habita.",
+      "Una postura agresiva en contra de la modernidad."
+    ],
+    "ans": 1,
+    "exp": "La actitud del autor se descubre analizando las acciones que decide priorizar frente a las presiones del entorno.\n\n*   El hablante reconoce la presión externa (\"marcha frenética\", \"torbellino\"), pero decide actuar en oposición: elige \"demorarse\" y \"observar\".\n*   Sus objetos de interés (el árbol, la nube, el instante minúsculo) no tienen una función práctica, sino estética.\n*   **Análisis de opciones:** No es apatía ni alienación absoluta, ya que elige un tipo específico de conexión con su entorno, no un simple aislamiento vacío. Tampoco hay agresividad en su pausa.\n*   Su detención consciente para observar los detalles fugaces de la naturaleza y del momento define exactamente una actitud **contemplativa**.\n\n**Tip Élite:** Cuando te pidan inferir una \"actitud\" o \"tono\", busca los verbos de acción y los adjetivos valorativos del protagonista. \"Observar\", \"detenerse\" y notar lo \"invisible\" son marcadores clásicos de la contemplación."
+  },
+  {
+    "id": "v_cau_16",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La severa erosión que asola las laderas no puede atribuirse meramente al impacto mecánico de las precipitaciones torrenciales; su catalizador fundamental radica en que, mediante la tala indiscriminada, se ha desarticulado la compleja red subterránea de raíces que cohesionaba la tierra.",
+    "q": "¿Qué factor identifica el texto como la causa subyacente que permite la erosión del terreno?",
+    "opts": [
+      "La excepcional intensidad de las precipitaciones torrenciales recientes.",
+      "La deforestación, que suprime la estructura radicular que retenía el suelo.",
+      "La natural fragilidad de las laderas frente a los embates del clima.",
+      "El agotamiento de los nutrientes del suelo debido a la sobreexplotación."
+    ],
+    "ans": 1,
+    "exp": "Para hallar la causa de fondo, debemos distinguir entre los factores mencionados cuál actúa como condición previa que desencadena el problema.\n\n*   El texto menciona la lluvia (\"precipitaciones\"), pero expresamente niega que sea la causa única o principal (\"no puede atribuirse meramente...\").\n*   Introduce el verdadero problema (\"su catalizador fundamental\") apuntando a la acción humana: la \"tala indiscriminada\" (deforestación).\n*   Explica el mecanismo: esta tala \"desarticula la compleja red de raíces que cohesionaba la tierra\", dejando el suelo vulnerable.\n*   Por tanto, la lluvia es solo el agente final, pero la vulnerabilidad (causa subyacente) es producto de la tala y la pérdida de raíces.\n\n**Tip Élite:** Diferenciar entre la causa directa (a menudo natural o inmediata) y la causa estructural (o de fondo) es una habilidad de lectura crítica fundamental en textos científicos y sociales."
+  },
+  {
+    "id": "v_con_14",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Era plenamente consciente de que revelar las irregularidades financieras de la empresa significaba su despido inminente; no obstante, optó por testificar con total apego a los hechos, sin omitir ningún detalle.",
+    "q": "¿Qué principio ético rige la conducta descrita en el fragmento?",
+    "opts": [
+      "Integridad",
+      "Pragmatismo",
+      "Imprudencia",
+      "Insubordinación"
+    ],
+    "ans": 0,
+    "exp": "Para conceptualizar la conducta del sujeto, debemos evaluar el conflicto entre sus intereses personales y su decisión final.\n\n*   **El conflicto:** El personaje se enfrenta a un dilema donde actuar correctamente (decir la verdad) conlleva un alto costo personal (su despido).\n*   **La decisión:** Elige la verdad (\"apego a los hechos\") por encima de su propio beneficio o seguridad.\n*   **Evaluación de términos:** No es pragmatismo (que buscaría la solución más útil para él) ni imprudencia (puesto que era \"plenamente consciente\" de las consecuencias). Tampoco se centra en la rebeldía o insubordinación.\n*   La **integridad** se define precisamente como la cualidad de actuar de acuerdo con principios morales firmes, incluso cuando esto resulta perjudicial para los propios intereses.\n\n**Tip Élite:** Las preguntas de conceptualización ética exigen que conozcas el matiz exacto de virtudes como la integridad, la probidad o la resiliencia frente a conceptos como el pragmatismo o el utilitarismo."
+  },
+  {
+    "id": "v_ese_12",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "De la misma manera que un sismógrafo no tiene la capacidad de producir o evitar un terremoto, sino que se limita a registrar su magnitud; una evaluación académica no es la fuente de la erudición del estudiante, sino apenas el instrumento que certifica su existencia.",
+    "q": "¿Cuál es la premisa fundamental que el autor establece mediante esta analogía?",
+    "opts": [
+      "Las evaluaciones son instrumentos defectuosos para medir la verdadera capacidad intelectual.",
+      "El rol de las evaluaciones se restringe a comprobar el saber, no a originarlo.",
+      "La erudición de un estudiante es independiente de los resultados que obtenga.",
+      "El conocimiento solo puede considerarse válido si es certificado por una evaluación."
+    ],
+    "ans": 1,
+    "exp": "Para interpretar correctamente una analogía, se debe trasladar la relación del ejemplo ilustrativo (sismógrafo/terremoto) al tema central (evaluación/conocimiento).\n\n*   **La analogía:** Sismógrafo es a terremoto como Evaluación es a Conocimiento.\n*   El sismógrafo *registra*, pero *no produce*. El texto declara explícitamente que la evaluación \"no es la fuente\" (no lo origina), sino que \"certifica su existencia\" (comprueba).\n*   **Descarte:** El texto no dice que las evaluaciones sean defectuosas (opción A), ni afirma que el saber sea independiente de los resultados (opción C), ni postula que el examen dé validez al conocimiento (opción D).\n*   La idea central es acotar la función del examen a la mera medición y constatación de algo que ya existe previamente.\n\n**Tip Élite:** En los textos basados en analogías, mapea los elementos (A es a B como C es a D). La conclusión siempre recaerá en afirmar que el vínculo entre C y D comparte las limitaciones o características del vínculo A-B."
+  },
+  {
+    "id": "v_per_13",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Frente a las ruinas del antiguo acueducto, el arqueólogo vislumbra un testimonio invaluable de la ingeniería clásica; el promotor inmobiliario observa con impaciencia un obstáculo legal para su nuevo complejo habitacional; mientras que, para el turista casual, solo representa el telón de fondo pintoresco para una fotografía.",
+    "q": "¿Qué principio ilustra fundamentalmente la situación descrita en el texto?",
+    "opts": [
+      "La inherente falta de valor utilitario de los monumentos antiguos.",
+      "El carácter subjetivo y relativo del significado que atribuimos a un objeto.",
+      "La superioridad de la visión académica sobre las perspectivas comerciales.",
+      "La necesidad de conciliar los intereses económicos con la preservación."
+    ],
+    "ans": 1,
+    "exp": "El texto estructura una serie de juicios sobre un mismo objeto material (el acueducto), demostrando que cada observador concluye algo diferente.\n\n*   Tenemos un solo objeto (la ruina) y tres sujetos distintos (arqueólogo, promotor, turista).\n*   Cada sujeto le otorga un estatus diametralmente distinto: \"testimonio\", \"obstáculo\", \"fondo pintoresco\".\n*   El texto no emite un juicio sobre quién tiene la razón o si una visión es superior (descartando la opción C), ni propone una solución al conflicto (descartando la opción D).\n*   Lo que el autor pretende exhibir es cómo el significado y el valor no residen de forma inmutable en el objeto, sino que dependen de los intereses (perspectiva) de quien lo mira.\n\n**Tip Élite:** Cuando un texto presenta múltiples reacciones contradictorias frente a un mismo fenómeno sin decantarse por ninguna, el propósito suele ser evidenciar el relativismo o la subjetividad humana."
+  },
+  {
+    "id": "v_imp_18",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Desde la tarima, el candidato reiteró con vehemencia idénticas promesas de prosperidad y empleo que enarboló en los comicios de hace cuatro años. Al mirar hacia abajo, constató que la vasta plaza que antes rebosaba de simpatizantes, hoy albergaba apenas a un puñado de asistentes dispersos.",
+    "q": "¿Qué conclusión implícita puede inferirse lógicamente del contraste descrito?",
+    "opts": [
+      "Las promesas del candidato ya han sido cumplidas durante su mandato.",
+      "El electorado ha perdido credibilidad e interés en el discurso del candidato.",
+      "La organización del evento fracasó en la convocatoria de simpatizantes.",
+      "El tamaño de la plaza resultó excesivo para las necesidades de la campaña."
+    ],
+    "ans": 1,
+    "exp": "La lectura inferencial exige extraer la causa subyacente que explica el fenómeno descrito, basándose en las pistas del texto.\n\n*   **Hecho 1:** El candidato repite exactamente las *mismas promesas* de hace cuatro años.\n*   **Hecho 2:** El público pasó de desbordar la plaza (\"antes rebosaba\") a ser \"apenas un puñado\".\n*   La repetición de promesas indica que no se cumplieron (lo que desacredita la opción A).\n*   La marcada caída en la asistencia es la consecuencia directa de escuchar el mismo discurso sin resultados. Por lo tanto, la conexión lógica es que los votantes perdieron la fe o el interés en él tras años de promesas vacías.\n\n**Tip Élite:** En los ejercicios de deducción literaria, las descripciones ambientales (una plaza vacía, una mirada esquiva, un silencio prolongado) siempre simbolizan estados de ánimo, actitudes o reacciones sociales."
+  },
+  {
+    "id": "v_imp_19",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Al recoger el portafolio vacío al final de la clase, el docente constató que ni un solo estudiante había completado la compleja monografía. En lugar de irritarse, esbozó una leve sonrisa al percatarse de cómo luciría su escritorio durante el fin de semana.",
+    "q": "¿Qué inferencia válida se desprende de la reacción del docente?",
+    "opts": [
+      "Experimenta satisfacción porque el fracaso académico valida su nivel de exigencia.",
+      "Siente alivio ante la exención inesperada de la carga de evaluación que le aguardaba.",
+      "Planea castigar a la clase con una prueba sorpresa de mayor dificultad.",
+      "Considera que el nivel de la tarea asignada era excesivo para los estudiantes."
+    ],
+    "ans": 1,
+    "exp": "Para hacer una inferencia válida, debemos conectar la causa (ausencia de monografías) con el efecto emocional (la sonrisa) de manera estricta al contexto.\n\n*   **El evento:** Nadie entregó el trabajo.\n*   **La reacción:** No hay irritación, sino una \"leve sonrisa\" vinculada directamente a pensar en \"cómo luciría su escritorio\".\n*   Un escritorio sin monografías que revisar es un escritorio despejado, lo que equivale a tiempo libre para el profesor.\n*   Por tanto, su reacción positiva no se debe a un deseo sádico de verlos fracasar (descartando la A), sino al alivio pragmático de no tener que dedicar su fin de semana a calificar.\n\n**Tip Élite:** Evita las sobre-inferencias. Las opciones que asumen motivaciones maliciosas o benevolentes ocultas (como la opción A o C) suelen ser incorrectas si el texto señala un motivo mucho más mundano (el exceso de trabajo)."
+  },
+  {
+    "id": "v_pri_16",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La visión tradicional que concibe al bosque como una mera agregación de organismos vegetales independientes es científicamente obsoleta. Bajo la superficie, una intrincada red micelial conecta las raíces de diversas especies, permitiendo un intercambio dinámico de carbono, agua y nutrientes que resulta vital para la resiliencia conjunta del ecosistema.",
+    "q": "¿Cuál es la idea principal que articula el párrafo anterior?",
+    "opts": [
+      "La superioridad evolutiva de los hongos sobre las especies arbóreas.",
+      "El bosque como una macro-entidad ecológica profundamente interconectada.",
+      "La transferencia de carbono como el único mecanismo de supervivencia vegetal.",
+      "La imposibilidad de supervivencia de los árboles en ambientes carentes de hongos."
+    ],
+    "ans": 1,
+    "exp": "La idea principal de un párrafo expositivo suele sintetizar la afirmación global de la que todos los detalles técnicos son simples ejemplos de apoyo.\n\n*   El autor comienza negando una premisa (los árboles no son entidades aisladas/independientes).\n*   Luego proporciona la evidencia: las raíces y la red micelial permiten un intercambio constante.\n*   Concluye con el impacto: esto genera la \"resiliencia conjunta del ecosistema\".\n*   La opción que engloba tanto el rechazo a la visión aislacionista como la afirmación de la conectividad es definir al bosque como una \"macro-entidad interconectada\". Las otras opciones son detalles menores o inferencias no respaldadas en su totalidad.\n\n**Tip Élite:** La frase temática (idea principal) a menudo se halla en la primera o última oración. Busca la proposición más abarcadora; las opciones que detallan procesos específicos (como la transferencia de carbono) suelen ser ideas secundarias."
+  },
+  {
+    "id": "v_par_15",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "«El ejercicio del libre albedrío, cuando es despojado del sentido del deber hacia los demás y de la asunción de las propias consecuencias, degenera de su noble condición para convertirse en un mero acto de libertinaje infantil».",
+    "q": "¿Cuál de las siguientes afirmaciones constituye una paráfrasis fiel del fragmento anterior?",
+    "opts": [
+      "El libre albedrío absoluto es un estado ilusorio e inalcanzable para el ser humano.",
+      "La auténtica libertad está indisolublemente condicionada por la responsabilidad personal.",
+      "Las normas sociales y el sentido del deber limitan el pleno desarrollo de la libertad.",
+      "El libertinaje es una etapa necesaria para alcanzar el verdadero sentido del deber."
+    ],
+    "ans": 1,
+    "exp": "Una paráfrasis correcta mantiene el núcleo semántico de la proposición original alterando la forma lingüística.\n\n*   El texto establece una equivalencia negativa: Libre albedrío $-$ Deber/Consecuencias (Responsabilidad) $=$ Libertinaje (Capricho falso, no libertad).\n*   Esto lógicamente implica que para que la libertad sea genuina (y no degenere), requiere el componente del deber o la responsabilidad.\n*   La opción correcta reformula esta necesidad ineludible: la libertad auténtica está \"indisolublemente condicionada\" por la responsabilidad.\n*   Las opciones alternativas oponen libertad y responsabilidad, lo cual es la postura contraria al autor.\n\n**Tip Élite:** Para resolver preguntas de paráfrasis, identifica la relación lógica central (causa-efecto, condición, oposición). La respuesta correcta debe preservar esa misma relación estructural, no solo contener palabras similares."
+  },
+  {
+    "id": "v_pro_13",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El paradigma del desarrollo sostenible se define metodológicamente como la capacidad de solventar los requerimientos de la población contemporánea, pero imponiendo un límite estricto para no mermar la disponibilidad de recursos y las posibilidades de bienestar de las generaciones venideras. Analice las siguientes inferencias:\nI. Exige garantizar la base de recursos para las poblaciones futuras.\nII. Implica un cese inmediato del crecimiento económico industrial.\nIII. Propugna un equilibrio intergeneracional en el uso del planeta.\nIV. Prioriza las necesidades futuras por encima de las actuales.",
+    "q": "¿Cuáles de las inferencias anteriores se derivan lógicamente del postulado central del texto?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "I, III y IV",
+      "Solo la I"
+    ],
+    "ans": 0,
+    "exp": "Para analizar proposiciones, debemos cotejar estrictamente cada una con las afirmaciones y límites del texto original.\n\n*   **I. Garantizar recursos para el futuro:** Es correcto, se deriva de \"no mermar la disponibilidad de recursos... de las generaciones venideras\".\n*   **II. Cese del crecimiento:** Es falso. El texto habla de \"solventar los requerimientos\" presentes, lo que requiere economía y desarrollo, no paralización.\n*   **III. Equilibrio intergeneracional:** Es correcto. Atender a la \"población contemporánea\" y a las \"generaciones venideras\" es, por definición, buscar un equilibrio entre épocas.\n*   **IV. Priorizar el futuro sobre el presente:** Es falso. El modelo busca \"solventar\" el presente sin dañar el futuro, no sacrificar el presente (equilibrio, no prevalencia).\n*   Por ende, solo las proposiciones I y III son deducciones válidas.\n\n**Tip Élite:** En preguntas de análisis múltiple (I, II, III, IV), descarta rápidamente las opciones que contienen juicios extremos o absolutistas (\"cese inmediato\", \"prioriza por encima de\") que no estén textual y explícitamente defendidos por el autor."
+  },
+  {
+    "id": "v_pro_14",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El ejercicio de la lectura crítica trasciende la mera asimilación pasiva de información; exige un abordaje dialéctico donde el lector somete los postulados del autor a un escrutinio riguroso, oponiéndoles evidencia y razonamientos propios. Analice las siguientes proposiciones:\nI. Consiste en ejercer un escepticismo metodológico frente al texto.\nII. Asume de facto la falsedad de cualquier documento escrito.\nIII. Supone una ponderación activa de la solidez argumentativa del autor.\nIV. Relega a un segundo plano el análisis para priorizar la memorización.",
+    "q": "¿Cuáles proposiciones recogen adecuadamente el sentido del texto?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "I, II y III",
+      "Solo la III"
+    ],
+    "ans": 0,
+    "exp": "Se nos pide validar qué afirmaciones capturan la esencia de la \"lectura crítica\" según la definición elaborada en el texto.\n\n*   **I. Escepticismo metodológico:** Correcto. Someter el texto a un \"escrutinio riguroso\" es otra forma de describir la duda fundamentada o escepticismo razonado.\n*   **II. Asume de facto la falsedad:** Falso. Escrutar no significa rechazar todo automáticamente como falso; significa exigir pruebas antes de aceptar algo como verdadero.\n*   **III. Ponderación activa de la argumentación:** Correcto. \"Oponiéndoles evidencia y razonamientos\" implica evaluar la solidez lógica y argumentativa de la obra.\n*   **IV. Prioriza la memorización:** Falso. El texto explícitamente ataca la \"asimilación pasiva\", donde entra la memoria acrítica.\n*   Solo las proposiciones I y III recogen con precisión el sentido del fragmento.\n\n**Tip Élite:** El vocabulario académico es tu mejor herramienta. Saber que \"dialéctico\", \"escrutinio\", \"escepticismo\" y \"ponderación\" forman parte de un mismo campo semántico te asegura la respuesta correcta sin dudar."
+  },
+  {
+    "id": "m_ari_17",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Sea $S$ el conjunto de todos los números naturales de dos cifras en el sistema decimal (es decir, $n \\in \\mathbb{Z}$ tal que $10 \\leq n \\leq 99$).",
+    "q": "¿Cuál es la cardinalidad del subconjunto de $S$ compuesto por aquellos números cuyos dígitos constitutivos suman exactamente 9?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "ans": 1,
+    "exp": "Para hallar la cardinalidad (cantidad de elementos) del subconjunto, debemos encontrar todas las combinaciones de dos dígitos, $a$ (decenas) y $b$ (unidades), tales que $a + b = 9$.\n\n*   **Restricciones:** Como es un número de dos cifras, el dígito de las decenas ($a$) no puede ser 0. Por tanto, $a \\in \\{1, 2, ..., 9\\}$. El dígito de las unidades ($b$) puede ser cualquier valor del 0 al 9.\n*   **Enlistado sistemático:** Vamos asignando valores a '$a$' desde 1 hasta 9 y determinamos '$b$':\n    *   $a=1 \\Rightarrow b=8$ (Número: 18)\n    *   $a=2 \\Rightarrow b=7$ (Número: 27)\n    *   $a=3 \\Rightarrow b=6$ (Número: 36)\n    *   ...\n    *   $a=9 \\Rightarrow b=0$ (Número: 90)\n*   Al haber exactamente 9 opciones válidas para la primera cifra (del 1 al 9), hay exactamente 9 números que cumplen la condición.\n\n**Tip Élite:** En problemas de conteo con sumas de dígitos, el método más seguro no son fórmulas complejas, sino el \"conteo ordenado\" (empezar desde el 1 y subir uno por uno). Evita olvidar el caso donde las unidades son cero (ej: 90)."
+  },
+  {
+    "id": "m_cnt_12",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Tres delegados, identificados como A, B y C, deben tomar asiento en una mesa con tres sillas dispuestas en hilera. Por protocolo, los delegados A y B requieren sentarse en sillas contiguas.",
+    "q": "¿Cuántas permutaciones posibles satisfacen este requerimiento de protocolo?",
+    "opts": [
+      "4",
+      "6",
+      "8",
+      "2"
+    ],
+    "ans": 0,
+    "exp": "Este es un clásico problema de permutaciones con elementos contiguos obligatorios. Se resuelve usando la técnica del \"bloque\" o \"paquete\".\n\n*   **Crear el bloque:** Puesto que A y B deben estar siempre juntos, los unimos imaginariamente y los tratamos como si fueran una sola 'super-persona'. Ahora tenemos a la entidad (AB) y a la persona C.\n*   **Permutación externa:** Ordenamos estos 2 elementos en la fila: $(AB)$ y $C$. Hay $2! = 2$ formas de ordenarlos: $(AB)C$ o bien $C(AB).\n*   **Permutación interna:** Dentro del bloque indivisible, los delegados A y B también pueden permutar sus lugares entre ellos. Hay $2! = 2$ formas de hacerlo: $AB$ o $BA$.\n*   **Principio multiplicativo:** Multiplicamos el arreglo externo por el interno para obtener el total: $2 \\times 2 = 4$ maneras distintas.\n\n**Tip Élite:** La técnica del \"paquete\" (o super-elemento) es infalible: agrupa los elementos contiguos, calcula el factorial de los grupos totales y multiplícalo por el factorial de los elementos dentro del paquete."
+  },
+  {
+    "id": "m_cnt_13",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "A partir del conjunto de dígitos $D = \\{1, 2, 3, 4, 5\\}$, se desea generar códigos de acceso numéricos de tres cifras. No se permite la repetición de ningún dígito en un mismo código.",
+    "q": "¿Cuántos códigos distintos, que además posean un valor numérico par, pueden configurarse bajo estas restricciones?",
+    "opts": [
+      "24",
+      "30",
+      "36",
+      "12"
+    ],
+    "ans": 0,
+    "exp": "En combinatoria restrictiva, la regla de oro es comenzar siempre satisfaciendo la condición más exigente. En este caso: el número debe ser par.\n\n*   **Restricción de paridad:** Para que un código sea par, su última cifra (las unidades) debe ser par. Del conjunto $\\{1, 2, 3, 4, 5\\}$, solo el $2$ y el $4$ son pares.\n*   **Análisis de posiciones:** Tenemos tres \"cajas\" que llenar: centena, decena, unidad.\n    1.  **Unidad:** Tenemos **$2$** opciones posibles (el 2 o el 4).\n    2.  **Centena:** Nos quedan 4 dígitos disponibles (ya gastamos uno en la unidad). Tenemos **$4$** opciones.\n    3.  **Decena:** Nos quedan 3 dígitos disponibles. Tenemos **$3$** opciones.\n*   **Principio multiplicativo:** Multiplicamos las opciones independientes: $4 \\times 3 \\times 2 = 24$ códigos posibles.\n\n**Tip Élite:** El error más habitual es rellenar las posiciones de izquierda a derecha. Si hay restricciones de paridad o divisibilidad, SIEMPRE comienza asignando las opciones de la última cifra."
+  },
+  {
+    "id": "m_suc_14",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice el comportamiento numérico de la siguiente progresión no lineal: 1, 2, 6, 24, 120, ...",
+    "q": "Si se mantiene inalterado el patrón de crecimiento que gobierna esta progresión, ¿qué valor corresponde al sexto término?",
+    "opts": [
+      "480",
+      "600",
+      "720",
+      "840"
+    ],
+    "ans": 2,
+    "exp": "Para resolver progresiones donde el crecimiento es explosivo, debemos descartar sumas y enfocarnos en razones geométricas multiplicativas u operaciones factoriales.\n\n*   **Prueba multiplicativa:** Verificamos por cuánto se multiplica un término para obtener el siguiente:\n    *   $1 \\times 2 = 2$\n    *   $2 \\times 3 = 6$\n    *   $6 \\times 4 = 24$\n    *   $24 \\times 5 = 120$\n*   **Patrón descubierto:** El factor de multiplicación no es constante, sino que aumenta en una unidad en cada paso consecutivo (es decir, multiplica por $n$).\n*   **Cálculo:** El sexto término se halla multiplicando el quinto término (120) por el factor correspondiente al paso 6. Entonces: $120 \\times 6 = 720$.\n\n**Tip Élite:** Cuando veas un crecimiento tan acelerado (de 1 a 120 en pocos pasos), descarta inmediatamente sumas o restas. Piensa directo en multiplicaciones crecientes, potencias o, como en este caso particular, la sucesión de los números factoriales ($n!$)."
+  },
+  {
+    "id": "m_suc_15",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Una función matemática asocia números naturales de entrada ($n$) con valores de salida ($f(n)$), generando las siguientes parejas: $f(1)=2$, $f(2)=6$, $f(3)=12$, $f(4)=20$.",
+    "q": "Si el modelo algebraico subyacente se mantiene para todo el dominio, ¿cuál será el valor de $f(5)$?",
+    "opts": [
+      "25",
+      "30",
+      "36",
+      "42"
+    ],
+    "ans": 1,
+    "exp": "Descubrir la regla subyacente requiere analizar la relación entre el número de entrada (la posición) y su resultado.\n\n*   **Análisis del patrón multiplicativo:** Observemos cómo se puede factorizar cada resultado usando su número de entrada $n$:\n    *   $f(1) = 2 = 1 \\times 2$\n    *   $f(2) = 6 = 2 \\times 3$\n    *   $f(3) = 12 = 3 \\times 4$\n    *   $f(4) = 20 = 4 \\times 5$\n*   **Generalización (el modelo):** Vemos claramente que cada valor se obtiene multiplicando la entrada por su número consecutivo: $f(n) = n(n + 1)$.\n*   **Aplicación al caso pedido:** Sustituimos $n = 5$ en nuestra fórmula empírica: $f(5) = 5 \\times (5 + 1) = 5 \\times 6 = 30$.\n\n**Tip Élite:** Hay un segundo método si no ves la multiplicación. Busca las diferencias entre los resultados: de 2 a 6 hay $+4$; de 6 a 12 hay $+6$; de 12 a 20 hay $+8$. La siguiente suma debe ser $+10$, y $20 + 10 = 30$. Este es el método de las \"diferencias sucesivas\"."
+  },
+  {
+    "id": "m_rel_12",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere dos variables, $x$ e $y$, pertenecientes al conjunto de los números enteros, las cuales satisfacen la desigualdad estricta $x < y < 0$.",
+    "q": "Basado exclusivamente en esta premisa, ¿cuál de las siguientes relaciones algebraicas es obligatoriamente verdadera?",
+    "opts": [
+      "x^2 < y^2",
+      "x^2 > y^2",
+      "x^2 = y^2",
+      "x + y > 0"
+    ],
+    "ans": 1,
+    "exp": "El análisis de desigualdades con números negativos requiere visualizar la recta numérica o comprender el concepto de valor absoluto.\n\n*   **Análisis de la premisa:** La condición $x < y < 0$ nos dice dos cosas vitales: ambos números son negativos, y $x$ está más a la izquierda (más alejado del cero) que $y$.\n*   **Valor absoluto:** Al estar más lejos del cero, la \"magnitud\" pura de $x$ es mayor que la de $y$. Matemáticamente, esto significa que el valor absoluto $|x| > |y|$.\n*   **Elevación al cuadrado:** El cuadrado de cualquier número es equivalente al cuadrado de su valor absoluto ($x^2 = |x|^2$). Como la magnitud de $x$ es mayor, al elevar ambos al cuadrado, el resultado de $x^2$ será irremediablemente mayor que el de $y^2$.\n*   **Ejemplo rápido para descartar:** Si tomamos $x = -3$ e $y = -2$ (cumplen $-3 < -2 < 0$), obtenemos que $(-3)^2 = 9$ y $(-2)^2 = 4$. Por lo tanto, $9 > 4$, verificando que $x^2 > y^2$.\n\n**Tip Élite:** En preguntas abstractas con letras e inecuaciones ($<, >$), el recurso más rápido y efectivo durante un examen contrarreloj es sustituir las variables por valores numéricos que cumplan la premisa."
+  },
+  {
+    "id": "m_alr_9",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "En el dominio de los números enteros, se establece una premisa fundamental respecto a una variable $k$: el cuadrado de dicha variable, denotado como $k^2$, resulta ser un número par.",
+    "q": "Con base en los axiomas de la teoría de números, ¿qué propiedad inherente se puede afirmar con absoluta certeza respecto a la variable $k$ original?",
+    "opts": [
+      "El valor absoluto de $k$ es un número primo.",
+      "La variable $k$ es, de manera ineludible, un número par.",
+      "La paridad de $k$ es indeterminada sin información adicional.",
+      "La variable $k$ debe ser estrictamente un múltiplo de 4."
+    ],
+    "ans": 1,
+    "exp": "El comportamiento de la paridad en la multiplicación y las potencias obedece a reglas algebraicas cerradas.\n\n*   **Naturaleza de los cuadrados:** El cuadrado de un número ($k \\times k$) conserva intrínsecamente la paridad del número base.\n*   **Demostración por contradicción:** Supongamos que $k$ fuera un número impar. Todo impar se escribe algebraicamente como $2m + 1$. Al elevar al cuadrado, $(2m + 1)^2 = 4m^2 + 4m + 1 = 2(2m^2 + 2m) + 1$, lo cual resulta inevitablemente en un número impar. Esto contradice nuestra premisa (sabemos que $k^2$ es par).\n*   **Conclusión:** Puesto que un impar al cuadrado siempre arroja un impar, la única forma de que $k^2$ sea par es que la base original $k$ poseyera ya el factor 2 en su estructura, es decir, que $k$ sea par.\n\n**Tip Élite:** Memoriza las reglas básicas de paridad en la multiplicación: (Par $\\times$ Par $=$ Par); (Impar $\\times$ Impar $=$ Impar); (Par $\\times$ Impar $=$ Par). Esto agiliza enormemente la resolución mental de estos axiomas."
+  },
+  {
+    "id": "m_raz_12",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "En un laboratorio de alimentos, se cuenta con una disolución base de 20 litros compuesta por un 30% de concentrado de pulpa y un 70% de agua destilada.",
+    "q": "¿Qué volumen exacto de concentrado de pulpa puro debe añadirse a esta solución para incrementar su concentración hasta alcanzar exactamente el 50% de pulpa en la mezcla final?",
+    "opts": [
+      "8 L",
+      "10 L",
+      "14 L",
+      "12 L"
+    ],
+    "ans": 0,
+    "exp": "Los problemas de mezclas con porcentajes requieren llevar el control riguroso de dos variables simultáneas: el soluto (pulpa) y el volumen total.\n\n*   **Estado Inicial:** Calculamos los litros reales de pulpa. El $30\\%$ de $20\\text{ L}$ es $0.30 \\times 20 = 6\\text{ litros}$ de pulpa pura.\n*   **Definición de la incógnita:** Sea '$x$' la cantidad de litros de pulpa extra a añadir. Esta adición altera tanto la cantidad de pulpa final ($6 + x$) como el volumen total de la mezcla ($20 + x$).\n*   **Planteamiento de la ecuación:** Queremos que la concentración final sea del $50\\%$ (es decir, $0.5$ o $\\frac{1}{2}$). Por ende, $\\frac{\\text{Pulpa Final}}{\\text{Volumen Total}} = 0.5$. Así, $\\frac{6 + x}{20 + x} = 0.5$.\n*   **Resolución:** Multiplicamos cruzado: $6 + x = 0.5(20 + x) \\Rightarrow 6 + x = 10 + 0.5x$. Agrupamos las $x$: $0.5x = 4$. Despejamos: $x = \\frac{4}{0.5} = 8\\text{ litros}$.\n\n**Tip Élite:** Al añadir soluto puro a una mezcla, ¡no olvides que el volumen del denominador (la mezcla total) también crece! El error más común es plantear $\\frac{6+x}{20} = 0.5$ ignorando el incremento en el volumen general."
+  },
+  {
+    "id": "m_dat_13",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Una cohorte de 10 estudiantes se somete a una evaluación estandarizada, reportando una nota promedio exacta de 7,0. Por motivos administrativos, se retira de la estadística a un estudiante en particular, cuya calificación individual resultó ser idéntica a la media: 7,0.",
+    "q": "Tras esta exclusión, ¿cuál será el valor del nuevo promedio aritmético para el grupo remanente de 9 estudiantes?",
+    "opts": [
+      "7,0",
+      "6,8",
+      "7,2",
+      "6,3"
+    ],
+    "ans": 0,
+    "exp": "Aunque puedes resolverlo con cálculos largos, este problema evalúa tu comprensión conceptual de la media aritmética como punto de equilibrio.\n\n*   **Análisis Conceptual:** El promedio es el centro de masa o punto de equilibrio de los datos. Si extraes o agregas un dato que tiene *exactamente el mismo valor que el promedio actual*, el equilibrio del conjunto no se altera en lo más mínimo.\n*   **Demostración Algebraica (Opcional pero útil):** \n    1. La suma total original era $10 \\text{ estudiantes} \\times 7\\text{ (promedio)} = 70$ puntos totales.\n    2. Si quitamos al estudiante con nota 7, la nueva suma total desciende a $70 - 7 = 63$ puntos.\n    3. Calculamos el nuevo promedio dividiendo entre los estudiantes que quedan: $\\frac{63}{9} = 7,0$.\n\n**Tip Élite:** Memoriza este axioma: Agregar o quitar elementos cuyo valor es igual a la media aritmética de una muestra deja inalterada dicha media. Ahorrarás minutos valiosos de cálculos."
+  },
+  {
+    "id": "m_geo_13",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "De una lámina cuadrangular de metal cuyas dimensiones exteriores miden 10 cm por lado, un operario emplea un troquel para perforar y extraer limpiamente un recorte cuadrado central de 6 cm de lado.",
+    "q": "¿Cuál es el área neta del remanente metálico, es decir, la superficie de la lámina que no fue eliminada por la perforación?",
+    "opts": [
+      "64 cm²",
+      "36 cm²",
+      "80 cm²",
+      "16 cm²"
+    ],
+    "ans": 0,
+    "exp": "El cálculo de áreas remanentes o \"zonas sombreadas\" siempre se aborda mediante una simple sustracción de áreas geométricas.\n\n*   **Estrategia:** $\\text{Área remanente} = \\text{Área Total Original} - \\text{Área Extraída}$.\n*   **Cálculo del Total:** El área del cuadrado exterior original, donde el lado es $L = 10\\text{ cm}$, se obtiene con $A = L^2 = 10^2 = 100\\text{ cm}^2$.\n*   **Cálculo de la Extracción:** El área del trozo cuadrado eliminado, con lado $l = 6\\text{ cm}$, es $a = l^2 = 6^2 = 36\\text{ cm}^2$.\n*   **Diferencia Final:** Restamos la parte vacía a la superficie total: $100\\text{ cm}^2 - 36\\text{ cm}^2 = 64\\text{ cm}^2$.\n\n**Tip Élite:** Las preguntas de \"área sombreada\" raras veces requieren fórmulas exóticas. Confía en el principio de adición/sustracción de áreas simples (triángulos, círculos o cuadrados básicos)."
+  },
+  {
+    "id": "m_per_9",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un panel de cuatro conferencistas debe ocupar sus lugares en una tribuna con cuatro asientos en hilera. Por razones de jerarquía, un panelista específico (el moderador) está obligado a ocupar uno de los dos asientos en los extremos de la fila.",
+    "q": "Considerando esta restricción protocolaria, ¿cuántos arreglos distintos de asientos son posibles para el grupo completo?",
+    "opts": [
+      "12",
+      "24",
+      "16",
+      "48"
+    ],
+    "ans": 0,
+    "exp": "En este problema de permutaciones hay una condición estricta sobre una posición específica, por lo que debemos separar el análisis en el elemento restringido y el resto del grupo.\n\n*   **Ubicación del elemento restringido:** El moderador tiene una limitación absoluta: solo puede ir en el extremo izquierdo o en el derecho. Esto nos da **2 opciones** para ubicar a esta persona vital.\n*   **Permutación del resto:** Una vez que el moderador se ha sentado (sin importar en cuál de los dos extremos), quedan 3 sillas vacías y 3 panelistas restantes esperando por sentarse. La cantidad de formas de ordenar a $n$ elementos libres en $n$ lugares es $n!$. Así, $3! = 3 \\times 2 \\times 1 = 6$ formas de ordenar al resto del grupo.\n*   **Combinación final:** Aplicando el principio multiplicativo, multiplicamos las opciones del moderador por las opciones del resto: $2 \\times 6 = 12$ arreglos distintos.\n\n**Tip Élite:** Resuelve siempre \"de adentro hacia afuera\" en combinatoria. Trata primero las restricciones más severas y exigentes (como el moderador) y luego asigna posiciones libres a los elementos sin restricciones con factoriales estándar."
+  },
+  {
+    "id": "m_mcm_10",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Tres satélites artificiales orbitan alrededor de un planeta compartiendo un plano ecuatorial. Completan una revolución entera alrededor del cuerpo celeste en periodos de 30, 40 y 60 minutos, respectivamente. En el instante $T_0$, los tres satélites se alinean perfectamente sobre el meridiano de referencia.",
+    "q": "A partir de dicho evento, ¿cuál será el intervalo de tiempo mínimo indispensable para que ocurra una nueva alineación simultánea de los tres satélites sobre ese mismo punto de referencia?",
+    "opts": [
+      "120 minutos",
+      "90 minutos",
+      "240 minutos",
+      "60 minutos"
+    ],
+    "ans": 0,
+    "exp": "Los problemas que buscan el punto temporal donde coinciden eventos cíclicos diferentes se resuelven indefectiblemente hallando el Mínimo Común Múltiplo (MCM).\n\n*   **Interpretación:** Buscamos un número de minutos que sea múltiplo común de los tres tiempos ($30, 40, 60$), pues esto asegurará que los tres satélites hayan dado una cantidad exacta de vueltas (sin fracciones) y coincidan de nuevo.\n*   **Descomposición en factores primos:**\n    *   $30 = 2 \\times 3 \\times 5$\n    *   $40 = 2^3 \\times 5$\n    *   $60 = 2^2 \\times 3 \\times 5$\n*   **Cálculo del MCM:** Tomamos los factores primos comunes y no comunes elevados a su mayor exponente: $2^3 \\times 3 \\times 5 = 8 \\times 3 \\times 5 = 120$.\n*   El próximo encuentro sincrónico se dará a los 120 minutos.\n\n**Tip Élite:** Las frases \"coincidir de nuevo\", \"volver a encontrarse simultáneamente\" o \"el menor tiempo en que ocurre a la vez\" son la firma inconfundible de que debes emplear el Mínimo Común Múltiplo (MCM)."
+  },
+  {
+    "id": "v_pri_17",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El paradigma neurocognitivo actual desmiente la metáfora de la memoria como un archivo inmutable que guarda copias fieles del pasado. Según los hallazgos recientes, cada acto de evocación implica una recreación plástica: ensamblamos los retazos del evento original y rellenamos los vacíos semánticos utilizando nuestro sesgo emocional presente, prejuicios y testimonios de terceros. En consecuencia, la divergencia testimonial ante un mismo evento no es signo de mendacidad, sino un subproducto orgánico del proceso de recordar.",
+    "q": "¿Cuál es la premisa central o tesis que estructura este desarrollo argumentativo?",
+    "opts": [
+      "La fiabilidad testimonial resulta imposible de evaluar sin recurrir a pruebas periciales.",
+      "La rememoración es un proceso reconstructivo influenciado por variables presentes, no una recuperación fotográfica.",
+      "Las divergencias en la memoria se explican exclusivamente por la intervención maliciosa de terceros.",
+      "La memoria humana tiende hacia el deterioro orgánico progresivo al intentar ensamblar eventos pasados."
+    ],
+    "ans": 1,
+    "exp": "Para determinar la tesis principal de un texto expositivo-argumentativo, hay que sintetizar el concepto general que sirve de eje para los distintos argumentos.\n\n*   **Desglose del párrafo:** El autor abre negando la idea popular (la memoria no es un \"archivo inmutable\" ni guarda copias de forma pasiva).\n*   Luego expone la tesis activa: el acto de evocar es una \"recreación plástica\" (ensamblar, rellenar, influenciado por el presente).\n*   Termina explicando la consecuencia de esta tesis: la discrepancia entre testimonios no es mentira, sino el proceso natural operando.\n*   La opción correcta sintetiza fielmente ambos bloques: rechaza el modelo fotográfico y afirma la naturaleza reconstructiva, coincidiendo plenamente con el núcleo semántico expuesto.\n\n**Tip Élite:** Las frases introductorias que derriban un mito o \"desmienten\" una idea tradicional (como en este caso) sirven sistemáticamente como plataforma para instalar la verdadera idea principal en la línea inmediatamente siguiente."
+  },
+  {
+    "id": "v_imp_20",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A lo largo de décadas, la estructura de mampostería del viaducto había tolerado eficientemente el tránsito ligero de carruajes agrícolas. Con el advenimiento de la industria automotriz pesada, la administración optó por mantener operativo el viaducto sin acometer obras de apuntalamiento, amparándose en su prolongado historial de resistencia. Tras un fin de semana de tráfico inusual e intensas precipitaciones, la bóveda central se fracturó fatalmente.",
+    "q": "¿Qué moraleja causal o inferencia profunda se desprende del curso de los acontecimientos relatados?",
+    "opts": [
+      "Las estructuras históricas de mampostería son incompatibles con la humedad.",
+      "El uso del éxito histórico como garantía frente a nuevos factores de estrés constituye una negligencia técnica.",
+      "Las precipitaciones resultan el único vector capaz de derruir cimentaciones centenarias.",
+      "La transición hacia el transporte pesado debió prohibirse para preservar el patrimonio arquitectónico."
+    ],
+    "ans": 1,
+    "exp": "La deducción literaria nos pide ir más allá del accidente físico y extraer la lección subyacente sobre el comportamiento de la \"administración\".\n\n*   **Situación de base:** Un viaducto antiguo que funcionaba bien bajo condiciones antiguas (tránsito ligero).\n*   **Nueva variable:** Surge el \"transporte pesado\".\n*   **El error decisivo:** Las autoridades no adaptaron el puente (no apuntalaron) basando su inacción en que siempre había resistido (amparándose en el \"historial de resistencia\").\n*   La deducción lógica no recae sobre factores secundarios (la lluvia fue solo el desencadenante, no la causa principal de fondo) ni sobre prohibiciones que el texto no sugiere. Subraya el grave error de extrapolar la seguridad del pasado a un escenario de tensiones nuevas y mayores.\n\n**Tip Élite:** Presta extrema atención a las motivaciones humanas en pequeños textos narrativos; la inferencia casi siempre señala la falla en el juicio o la presunción errónea del ser humano, más que el simple fallo del material físico."
+  },
+  {
+    "id": "v_pro_15",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "La matriz epistemológica del método científico moderno renuncia expresamente a la aspiración de alcanzar dogmas irrefutables; por el contrario, concibe el corpus teórico como una serie de aproximaciones explicativas óptimas en un momento histórico dado, pero estructuralmente vulnerables a la refutación ante el surgimiento de nueva data empírica. Paradojalmente, su mayor vigor analítico no reside en la inmunidad al error, sino en su inherente capacidad autocorrectiva. Analice las premisas subyacentes:\nI. Las postulaciones de la ciencia son provisorias y dependientes del flujo empírico.\nII. La meta última de la ciencia es formular leyes eternas e incuestionables.\nIII. La facultad de integrar correcciones dota al sistema de solidez estructural.\nIV. La acumulación de errores de hipótesis invalida la legitimidad del método en su conjunto.",
+    "q": "¿Cuáles de las sentencias listadas reflejan con exactitud el postulado central del autor?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "Solo la I",
+      "I, III y IV"
+    ],
+    "ans": 0,
+    "exp": "La resolución se basa en contrastar cada afirmación con la postura de la \"filosofía de la ciencia\" que describe el párrafo.\n\n*   **I. Explicaciones provisorias y dependientes de data:** Es correcta. Corresponde a \"aproximaciones explicativas óptimas... vulnerables a la refutación ante... nueva data\".\n*   **II. Leyes incuestionables:** Es falsa. El texto explícitamente dice que renuncia a \"dogmas irrefutables\" (verdades absolutas).\n*   **III. La facultad de corrección da solidez:** Es correcta. Es la traducción exacta de \"su mayor vigor analítico no reside en la inmunidad al error, sino en su inherente capacidad autocorrectiva\".\n*   **IV. El error invalida el método:** Es falsa. El error es precisamente lo que permite que el mecanismo autocorrectivo opere, fortaleciéndolo, no invalidándolo.\n*   En conclusión, solo las sentencias I y III se alinean con la postura falibilista defendida por el autor.\n\n**Tip Élite:** Cuidado con los conectores concesivos o paradójicos como \"Paradojalmente... sino en su capacidad...\". Estos anuncian la verdadera tesis del autor, a menudo oponiendo lo que el público general cree (fuerza = no errar nunca) con lo que el autor sostiene (fuerza = saber corregir)."
+  },
+  {
+    "id": "v_per_14",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Ante la majestuosidad de la selva virgen, el consorcio maderero proyecta en sus cálculos una lucrativa reserva de celulosa; un investigador en ecología contempla en asombro un laboratorio evolutivo irremplazable; para el turista citadino es un oasis para el sosiego espiritual, en tanto que para el ingeniero en minas solo representa la cobertura molesta que oculta una promisoria veta de cobre.",
+    "q": "¿Cuál es la premisa antropológica que subyace como núcleo temático de la descripción anterior?",
+    "opts": [
+      "La inminente destrucción del ecosistema por la voracidad económica.",
+      "La plasticidad semántica de la realidad frente a la pluralidad de perspectivas humanas.",
+      "La superioridad moral de las posturas ecologistas sobre las miradas utilitarias.",
+      "La ausencia de valor intrínseco en el medio ambiente."
+    ],
+    "ans": 1,
+    "exp": "El texto ofrece una enumeración descriptiva donde distintos sujetos evalúan un mismo espacio físico, cada uno desde un paradigma completamente distinto.\n\n*   El objeto material (\"la selva virgen\") permanece inalterable en la realidad física.\n*   No obstante, es codificado semánticamente por cada sujeto (\"reserva\", \"laboratorio\", \"oasis\", \"cobertura molesta\") de acuerdo con sus aspiraciones y bagaje particular.\n*   El texto no realiza juicios de valor. No toma partido, ni sugiere que la selva será destruida inminentemente (A), ni que una mirada sea mejor que otra (C).\n*   La afirmación que abarca neutralmente todas estas visiones fragmentadas es la que reconoce la naturaleza puramente subjetiva (plasticidad semántica) del significado de las cosas frente a los distintos intereses (pluralidad de perspectivas).\n\n**Tip Élite:** \"Plasticidad semántica\" o \"polisemia\" son términos de nivel universitario que refieren a la capacidad de un ente u objeto para albergar múltiples significados simultáneamente dependiendo de quién lo analice."
+  },
+  {
+    "id": "v_cau_17",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La extirpación de un depredador ápice o \"especie clave\" del entramado trófico detona invariablemente una explosión demográfica en las poblaciones de hervíboros subordinados. Esta proliferación incontrolada colapsa rápidamente la capacidad de carga del ecosistema al devastar la cobertura vegetal, lo que aboca inexorablemente a la comunidad de presas a una mortalidad masiva por inanición. Paradójicamente, la desaparición de su principal amenaza natural sella la ruina de los supervivientes.",
+    "q": "De acuerdo con el encadenamiento causal del texto, ¿cuál es el estadio último o consecuencia terminal derivada de la supresión del depredador ápice?",
+    "opts": [
+      "Una reestructuración del ecosistema donde la vegetación recupera su predominio.",
+      "Un colapso poblacional severo en la especie de las presas inducido por déficit alimentario.",
+      "La prosperidad ilimitada y permanente de la comunidad herbívora sin restricciones biológicas.",
+      "La adaptación genética de las presas para metabolizar nuevas fuentes de energía."
+    ],
+    "ans": 1,
+    "exp": "Para detectar la \"consecuencia terminal\" es vital seguir la cadena de eventos descrita por el autor hasta llegar al resultado postrero.\n\n*   **Evento Detonante:** Desaparición del depredador ápice.\n*   **Consecuencia de 1.er nivel:** Explosión demográfica de herbíboros (presas).\n*   **Consecuencia de 2.º nivel:** Devastación de la cobertura vegetal (alimento).\n*   **Consecuencia Final / Terminal:** La mortalidad masiva por inanición (hambre) de esas mismas presas.\n*   Las opciones alternativas se quedan a la mitad de la cadena, postulan adaptaciones biológicas inexistentes en el texto o contradicen explícitamente el final planteado.\n\n**Tip Élite:** Las preguntas de \"encadenamiento causal\" exigen que no te quedes con el primer efecto que menciona el texto (la explosión de herbívoros) si la pregunta alude al efecto \"terminal\", \"último\" o \"final\"."
+  },
+  {
+    "id": "v_par_16",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "«Quien circunscribe su estudio de un problema únicamente a la defensa sistemática de sus propios argumentos, apenas posee una comprensión superficial de la cuestión: desprovisto del desafío dialéctico que implica contrastar su tesis frente a contraargumentos adversos, resulta incapaz de diagnosticar las fracturas lógicas de su propio andamiaje conceptual».",
+    "q": "¿Qué aseveración sintetiza con mayor fidelidad el núcleo argumentativo del autor?",
+    "opts": [
+      "Las fracturas lógicas de un argumento provienen inexorablemente de leer opiniones adversas.",
+      "La comprensión exhaustiva de una idea es inviable sin someterla al tamiz crítico de perspectivas antagónicas.",
+      "Sostener convicciones unilaterales protege al pensador de las debilidades del relativismo moderno.",
+      "El estudio aislado de un problema garantiza una mayor pureza argumentativa frente al ruido externo."
+    ],
+    "ans": 1,
+    "exp": "El reto de la paráfrasis académica consiste en capturar la premisa moral o epistémica del texto original usando lenguaje formal y sin desvirtuar su sentido de causalidad.\n\n*   **Premisa del texto:** Aislarse en una sola opinión = Conocimiento deficiente (porque impide ver los propios errores).\n*   **Reverso implícito:** Conocimiento profundo (comprensión exhaustiva) requiere exposición a opiniones opuestas.\n*   Al contrastar esto con las opciones, la opción correcta afirma textualmente que la verdadera comprensión es \"inviable\" (imposible) sin el choque (\"tamiz crítico\") con visiones contrarias (\"perspectivas antagónicas\").\n*   Las otras opciones exaltan el dogmatismo y el aislamiento, defendiendo posturas diametralmente opuestas a la intención del autor, quien valora la dialéctica.\n\n**Tip Élite:** Muchos textos filosóficos defienden el valor del debate, la contraposición de ideas o la empatía cognitiva. Si un autor critica el \"encierro intelectual\", la respuesta correcta siempre incluirá términos que resalten la pluralidad, la fricción sana de ideas o el contraste analítico."
+  },
+  {
+    "id": "v_con_15",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "A pesar de ser blanco reiterado de provocaciones malintencionadas en medio de la asamblea y contando con argumentos de sobra para ejecutar una represalia verbal fulminante, declinó caer en el intercambio de diatribas; por el contrario, mantuvo un silencio reflexivo, no alteró su ecuanimidad y optó por retomar serenamente el orden del día.",
+    "q": "¿Qué virtud o rasgo del carácter logra encarnar de forma inequívoca el sujeto descrito?",
+    "opts": [
+      "Templanza",
+      "Pusilanimidad",
+      "Desapego",
+      "Soberbia"
+    ],
+    "ans": 0,
+    "exp": "En preguntas sobre virtudes o defectos, es imperativo analizar si la acción elegida por el personaje surge de una carencia (como el miedo) o de una fuerza interior.\n\n*   El sujeto posee la capacidad (argumentos) y la motivación aparente (provocaciones) para reaccionar agresivamente.\n*   Sin embargo, él toma una decisión consciente (declinó, optó) para frenar su impulso natural de ira.\n*   **Contraste de conceptos:** No es \"pusilanimidad\" (falta de valor) porque sí podría defenderse; tampoco es \"desapego\" (indiferencia real) porque se reconoce que la ofensa está presente; ni es \"soberbia\" (sentimiento de superioridad altanera).\n*   La **templanza** (o moderación/autocontrol estoico) es la virtud clásica que define el gobierno voluntario de las pasiones y los impulsos, prefiriendo la cordura por encima del desquite.\n\n**Tip Élite:** Distinguir entre inacción por miedo y moderación consciente. Cuando el texto aclara que el sujeto \"contaba con argumentos de sobra\" o \"tenía motivos para enojarse\" te está indicando que su silencio no nace de la debilidad, sino de un férreo control (Templanza)."
+  },
+  {
+    "id": "v_pri_18",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Desmitificando el prejuicio que relega a la literatura de ficción a la categoría de mero escapismo intrascendente, recientes investigaciones cognitivas postulan que la inmersión en narrativas literarias funciona como un simulador socio-emocional. Al obligar al cerebro a habitar psiques diametralmente opuestas y procesar vicisitudes ajenas, la lectura de novelas constituye un entrenamiento riguroso que robustece de forma mesurable las redes neuronales asociadas con la empatía humana.",
+    "q": "¿Cuál es la postulación nuclear o idea directriz que articula el texto precedente?",
+    "opts": [
+      "El escapismo de la realidad constituye el principal beneficio psicológico de consumir literatura.",
+      "El consumo de narrativa ficcional ejerce un impacto comprobable en la maduración de la empatía interpersonal.",
+      "Las narrativas autobiográficas resultan más efectivas que la ficción pura en la simulación emocional.",
+      "El lector experimenta mayor afinidad con aquellos personajes que reflejan sus propios traumas personales."
+    ],
+    "ans": 1,
+    "exp": "La comprensión lectora profunda exige separar la anécdota, el rechazo a un prejuicio previo y la verdadera tesis demostrativa.\n\n*   **Primera parte (el rechazo):** Se niega que la ficción sea \"escapismo intrascendente\".\n*   **Segunda parte (el mecanismo):** Explica cómo funciona (como simulador que obliga a \"habitar psiques diametralmente opuestas\").\n*   **Tercera parte (la tesis central o efecto):** Todo este esfuerzo literario produce como resultado constatable el robustecimiento de la \"empatía humana\".\n*   La opción correcta captura ambos elementos sin agregar invenciones (como sugerir que la autobiografía es mejor, o que los personajes deben reflejar al lector, ideas totalmente foráneas al texto original).\n\n**Tip Élite:** Los textos persuasivos suelen estructurarse en la tríada: problema/prejuicio, mecanismo, resultado. La idea principal siempre, indefectiblemente, gira en torno al \"resultado\" o beneficio final que el autor quiere demostrar."
+  },
+  {
+    "id": "v_imp_21",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A lo largo de la extensa interpelación pública, el aspirante al cargo eludió hábilmente las inyecciones de rigor periodístico recurriendo a una retórica florida, intrincada y de impecable sonoridad, pero hermética en cuanto a datos tangibles. Concluido el evento, los analistas y presentes fueron incapaces de decodificar y enumerar un solo compromiso operativo derivado de sus respuestas.",
+    "q": "¿Qué comportamiento o táctica comunicacional se desprende de manera lógica de la actuación del candidato?",
+    "opts": [
+      "La exposición del aspirante exhibió un diseño programático de alta precisión técnica.",
+      "El individuo empleó deliberadamente el barroquismo discursivo para evadir compromisos específicos.",
+      "El panel de analistas y el público general carecían de la preparación intelectual para comprenderle.",
+      "La brevedad e inmediatez del formato periodístico impidió el desarrollo de sus planteamientos."
+    ],
+    "ans": 1,
+    "exp": "La deducción de comportamientos sociales a partir de descripciones literarias exige mirar la intención detrás del acto, no solo el resultado visible.\n\n*   **Características del acto:** El político usó palabras bonitas pero \"herméticas en cuanto a datos tangibles\".\n*   **Resultado visible:** Nadie pudo entender o apuntar qué diablos planeaba hacer.\n*   ¿Fue un accidente? La conjunción de hablar mucho, sonar muy bien y no decir absolutamente nada rara vez es casual en política; el texto habla de que \"eludió hábilmente\" el rigor. Se colige que es una estrategia deliberada para hablar y quedar bien sin atarse a ninguna promesa real que luego le pueda ser exigida.\n*   No se infiere que el público fuera torpe (C) ni que no hubiera tiempo (D). Tampoco se infiere claridad (A), más bien todo lo contrario.\n\n**Tip Élite:** Si un texto describe a un sujeto empleando un lenguaje rebuscado, florido o abstracto que termina por confundir al oyente experto, la deducción lógica casi siempre apuntará hacia el intento deliberado de ocultamiento, evasión de responsabilidades o demagogia pura."
+  },
+  {
+    "id": "v_pro_16",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "En el marco de la teoría de la elección racional, todo acto volitivo por el que nos decantamos por una alternativa conlleva, per se, el descarte axiomático del abanico de posibilidades restantes. Ergo, la noción de decidir con lucidez no reside en la quimera de evadir los costos de oportunidad, sino en la capacidad de asumir pragmáticamente aquella merma que resulte más provechosa o justificable. Evalue las siguientes proposiciones derivadas:\nI. La naturaleza intrínseca de una elección lleva aparejada la renuncia a las opciones marginadas.\nII. Un individuo sagaz puede orquestar decisiones exentas de cualquier clase de sacrificio subyacente.\nIII. La excelencia en la toma de decisiones radica en gestionar óptimamente el costo de la renuncia.\nIV. Toda decisión acarrea pérdidas de idéntica magnitud, sin importar el camino seleccionado.",
+    "q": "¿Cuáles de las inferencias presentadas mantienen consistencia lógica con el razonamiento del autor?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "Solo la I",
+      "I, III y IV"
+    ],
+    "ans": 0,
+    "exp": "El análisis proposicional demanda desmenuzar las frases del autor y parearlas rigurosamente con las opciones formuladas.\n\n*   **I. Elección implica renuncia:** Textualmente respaldada por \"conlleva, per se, el descarte axiomático... de posibilidades restantes\".\n*   **II. Decidir sin sacrificio:** Totalmente falsa. Contradice frontalmente la idea central de que buscar evadir los costos (sacrificios) es una \"quimera\" (ilusión).\n*   **III. Gestionar óptimamente el costo:** Correcta. \"Asumir pragmáticamente aquella merma [pérdida] que resulte más provechosa\" equivale a gestionar óptimamente la renuncia o pérdida asumida.\n*   **IV. Toda pérdida es idéntica:** Falsa. Si \"unas valen la pena más que otras\", lógicamente poseen diferente magnitud o impacto subjetivo.\n*   Solo las proposiciones I y III encarnan el núcleo conceptual del pasaje.\n\n**Tip Élite:** El término económico \"costo de oportunidad\" (lo que pierdes por no elegir la siguiente mejor alternativa) es el concepto vertebral en ejercicios de lógica sobre renuncias y decisiones. Su asimilación te facilita enormemente el abordaje de textos analíticos."
+  }
+]

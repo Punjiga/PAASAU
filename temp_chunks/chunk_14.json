@@ -1,0 +1,623 @@
+[
+  {
+    "id": "m_rel_12",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Sean a y b enteros con a < b < 0.",
+    "q": "¿Cuál afirmación es siempre verdadera?",
+    "opts": [
+      "a² < b²",
+      "a² > b²",
+      "a² = b²",
+      "a + b > 0"
+    ],
+    "ans": 1,
+    "exp": "Si a < b < 0, entonces a está más lejos de 0, o sea |a| > |b|. Al elevar al cuadrado, a² > b²."
+  },
+  {
+    "id": "m_alr_9",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Sea n un entero tal que n² es par.",
+    "q": "¿Qué se puede afirmar con certeza de n?",
+    "opts": [
+      "n es impar",
+      "n es par",
+      "n es primo",
+      "n puede ser cualquiera"
+    ],
+    "ans": 1,
+    "exp": "Si n fuera impar, n² sería impar. Como n² es par, n tiene que ser par."
+  },
+  {
+    "id": "m_raz_12",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Una mezcla de 20 litros tiene 30% de jugo y el resto agua.",
+    "q": "¿Cuántos litros de jugo hay que agregar para que el jugo sea el 50% de la mezcla?",
+    "opts": [
+      "8 L",
+      "4 L",
+      "10 L",
+      "6 L"
+    ],
+    "ans": 0,
+    "exp": "Jugo inicial: 30% de 20 = 6 L. Agregando x: (6+x)/(20+x) = 0,5 → 6+x = 10+0,5x → 0,5x = 4 → x = 8 L."
+  },
+  {
+    "id": "m_dat_13",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El promedio de las notas de 10 estudiantes es 7. Se retira un estudiante cuya nota era exactamente 7.",
+    "q": "¿Cuál es el nuevo promedio de los 9 que quedan?",
+    "opts": [
+      "7",
+      "6,3",
+      "7,5",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "La suma era 70; al quitar un 7 queda 63, y 63 ÷ 9 = 7. Como el que se fue tenía justo el promedio, este no cambia."
+  },
+  {
+    "id": "m_geo_13",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Dentro de un cuadrado de 10 cm de lado se recorta un cuadrado de 6 cm de lado.",
+    "q": "¿Cuál es el área de la región que queda (lo sombreado)?",
+    "opts": [
+      "64 cm²",
+      "36 cm²",
+      "40 cm²",
+      "100 cm²"
+    ],
+    "ans": 0,
+    "exp": "Área grande menos área pequeña: 10² − 6² = 100 − 36 = 64 cm²."
+  },
+  {
+    "id": "m_per_9",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Cuatro personas se sientan en una fila de 4 sillas, pero una persona específica debe quedar en alguno de los dos extremos.",
+    "q": "¿De cuántas maneras pueden sentarse?",
+    "opts": [
+      "12",
+      "24",
+      "6",
+      "8"
+    ],
+    "ans": 0,
+    "exp": "La persona fija tiene 2 lugares (los extremos); las otras 3 se ordenan de 3! = 6 formas. 2 × 6 = 12."
+  },
+  {
+    "id": "m_mcm_10",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Tres corredores dan vueltas a una pista y tardan 30, 40 y 60 segundos por vuelta. Salen juntos de la meta.",
+    "q": "¿Cada cuántos segundos vuelven a coincidir los tres en la meta?",
+    "opts": [
+      "120 s",
+      "60 s",
+      "240 s",
+      "90 s"
+    ],
+    "ans": 0,
+    "exp": "Coinciden en el MCM(30, 40, 60). 30=2·3·5, 40=2³·5, 60=2²·3·5 → MCM = 2³·3·5 = 120 s."
+  },
+  {
+    "id": "v_pri_17",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La memoria no funciona como una grabadora que reproduce fielmente lo ocurrido. Cada vez que recordamos, reconstruimos el episodio con piezas del presente: nuestro estado de ánimo, lo que aprendimos después, incluso lo que otros nos contaron. Por eso dos personas que vivieron el mismo hecho pueden recordarlo de maneras distintas y ambas estar convencidas de su versión.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "La memoria reproduce los hechos con total fidelidad",
+      "Recordar es reconstruir, no reproducir exactamente lo vivido",
+      "Solo una versión de un recuerdo puede ser verdadera",
+      "La memoria mejora con el paso del tiempo"
+    ],
+    "ans": 1,
+    "exp": "El texto insiste en que al recordar reconstruimos con elementos del presente; por eso no es una copia fiel, sino una reconstrucción."
+  },
+  {
+    "id": "v_imp_20",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Durante años, el puente de madera soportó el paso de carretas y caminantes. Cuando llegaron los primeros camiones, las autoridades siguieron usándolo sin reforzarlo, confiadas en que siempre había aguantado. Una mañana de lluvia, cedió.",
+    "q": "¿Qué se puede deducir del texto?",
+    "opts": [
+      "El puente era indestructible",
+      "Confiar en el pasado sin considerar las nuevas cargas resultó un error",
+      "Los camiones eran demasiado livianos",
+      "La lluvia fue la única causa del colapso"
+    ],
+    "ans": 1,
+    "exp": "Seguir usando el puente sin reforzarlo porque 'siempre aguantó' y que luego ceda implica que confiar en el pasado sin ver las nuevas cargas fue un error (B). A lo niega; los camiones eran más pesados, no livianos (C); y la lluvia fue el detonante, no la única causa (D)."
+  },
+  {
+    "id": "v_pro_15",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El método científico no garantiza verdades absolutas: ofrece las mejores explicaciones disponibles, siempre abiertas a revisión si aparece nueva evidencia. Su fuerza no está en no equivocarse nunca, sino en corregirse. Analice las proposiciones:\nI. La ciencia ofrece explicaciones provisionales, revisables ante nueva evidencia.\nII. La ciencia entrega verdades definitivas e incuestionables.\nIII. La capacidad de corregirse es una de sus fortalezas.\nIV. Equivocarse invalida por completo a la ciencia.",
+    "q": "¿Cuáles proposiciones concuerdan con el texto?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "Solo la I",
+      "Todas"
+    ],
+    "ans": 0,
+    "exp": "La ciencia da explicaciones revisables y se corrige: se deducen la I y la III: por eso A. La II (verdades definitivas) y la IV (equivocarse la invalida) contradicen el texto."
+  },
+  {
+    "id": "v_per_14",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "El mismo bosque que para el leñador es una reserva de madera, para el biólogo es un ecosistema que estudiar, para el excursionista un refugio de paz y para la empresa minera, un obstáculo sobre un yacimiento.",
+    "q": "¿Qué idea central transmite el texto?",
+    "opts": [
+      "El bosque debería talarse",
+      "Un mismo lugar adquiere significados distintos según los intereses de cada quien",
+      "Solo el biólogo comprende el bosque",
+      "Los bosques no tienen valor económico"
+    ],
+    "ans": 1,
+    "exp": "El bosque vale distinto para el leñador, el biólogo, el excursionista y la minera: su significado depende de los intereses de cada quien (B). No propone talarlo (A), no dice que solo el biólogo lo entienda (C) ni que carezca de valor económico (D)."
+  },
+  {
+    "id": "v_cau_17",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Cuando una especie depredadora desaparece de un ecosistema, la población de sus presas suele dispararse. Ese exceso agota la vegetación de la que se alimentan y, con el tiempo, el hambre reduce drásticamente a las propias presas. Así, la ausencia del depredador termina perjudicando a quienes parecían beneficiarse.",
+    "q": "Según el texto, ¿cuál es la consecuencia final de que desaparezca el depredador?",
+    "opts": [
+      "Las presas prosperan para siempre",
+      "Las presas terminan reduciéndose por falta de alimento",
+      "La vegetación crece sin límite",
+      "El ecosistema no sufre cambios"
+    ],
+    "ans": 1,
+    "exp": "Sin depredador, las presas crecen, agotan su alimento y luego disminuyen por hambre (B). Prosperar para siempre (A) y el crecimiento sin límite (C) ignoran ese tope; y sí hay cambios, así que D es falso."
+  },
+  {
+    "id": "v_par_16",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Quien solo conoce su propia postura, en realidad la conoce a medias: sin contrastarla con otras, no puede ver sus puntos débiles.",
+    "q": "¿Cuál opción expresa mejor la idea del texto?",
+    "opts": [
+      "Conviene ignorar las posturas ajenas",
+      "Comprender de verdad una idea exige confrontarla con otras",
+      "Tener una sola postura es lo ideal",
+      "Las posturas ajenas no aportan nada"
+    ],
+    "ans": 1,
+    "exp": "Que conocer solo la propia postura sea conocerla a medias equivale a que entender de verdad una idea exige confrontarla con otras (B). A, C y D defienden quedarse con una sola postura, lo opuesto al texto."
+  },
+  {
+    "id": "v_con_15",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "No reaccionó cuando lo provocaron, no respondió a la burla con otra burla y, aun teniendo motivos de sobra para enojarse, eligió mantener la calma y seguir con su trabajo.",
+    "q": "¿Qué palabra describe mejor su actitud?",
+    "opts": [
+      "Templanza",
+      "Cobardía",
+      "Indiferencia",
+      "Soberbia"
+    ],
+    "ans": 0,
+    "exp": "Dominarse y no caer en la provocación, pudiendo enojarse, es templanza o autocontrol (A). No es cobardía (B: elige no reaccionar), ni indiferencia (C: sí le afecta) ni soberbia (D)."
+  },
+  {
+    "id": "v_pri_18",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Leer ficción no es una fuga inútil de la realidad. Al ponernos en la piel de personajes muy distintos de nosotros, la novela entrena nuestra capacidad de imaginar lo que siente el otro; diversos estudios asocian la lectura literaria con una mayor empatía.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "La ficción es una pérdida de tiempo",
+      "Leer ficción ayuda a desarrollar la empatía",
+      "Solo deberían leerse libros de no ficción",
+      "Los personajes deben parecerse al lector"
+    ],
+    "ans": 1,
+    "exp": "El texto defiende que la ficción, al hacernos sentir lo que sienten otros, desarrolla la empatía (B). A y C la desprecian, y D agrega una condición que el texto no plantea."
+  },
+  {
+    "id": "v_imp_21",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "En la entrevista, el candidato respondió cada pregunta con frases largas que sonaban muy bien pero no decían nada concreto; al terminar, nadie en la sala habría podido explicar qué proponía realmente.",
+    "q": "¿Qué se puede deducir del texto?",
+    "opts": [
+      "El candidato tenía propuestas muy claras",
+      "El candidato evitó comprometerse con ideas concretas",
+      "La entrevista fue muy corta",
+      "El público entendió perfectamente su plan"
+    ],
+    "ans": 1,
+    "exp": "Frases que suenan bien pero no dicen nada concreto implican que el candidato evitó comprometerse con ideas concretas (B). A dice lo contrario; 'entrevista corta' (C) y 'público entendió' (D) contradicen el texto."
+  },
+  {
+    "id": "v_pro_16",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Toda decisión implica renunciar a las demás opciones: elegir un camino es, a la vez, dejar de recorrer los otros. Por eso, decidir bien no es evitar toda pérdida, sino aceptar la pérdida que más vale la pena. Analice las proposiciones:\nI. Elegir una opción supone renunciar a otras.\nII. Es posible decidir sin renunciar a nada.\nIII. Decidir bien implica asumir la mejor pérdida posible.\nIV. Las buenas decisiones no tienen ningún costo.",
+    "q": "¿Cuáles proposiciones se deducen del texto?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "Solo la III",
+      "Todas"
+    ],
+    "ans": 0,
+    "exp": "Toda decisión implica renunciar a otras opciones (I) y decidir bien es asumir la mejor pérdida (III): por eso A. La II (decidir sin renunciar) y la IV (sin ningún costo) niegan la idea central."
+  },
+  {
+    "id": "m_geo_14",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"35\" y=\"15\" width=\"120\" height=\"120\" fill=\"rgba(46,230,166,.20)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><rect x=\"71\" y=\"51\" width=\"48\" height=\"48\" fill=\"var(--ink)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"74\" y=\"153\" fill=\"currentColor\" font-size=\"13\">6 cm</text><text x=\"82\" y=\"79\" fill=\"currentColor\" font-size=\"11\">4 cm</text></svg>",
+    "stem": "La figura es un cuadrado de 6 cm de lado con un cuadrado de 4 cm de lado recortado en su interior.",
+    "q": "¿Cuál es el área de la región sombreada?",
+    "opts": [
+      "20 cm²",
+      "16 cm²",
+      "36 cm²",
+      "52 cm²"
+    ],
+    "ans": 0,
+    "exp": "Área del cuadrado grande menos la del recortado: 6² − 4² = 36 − 16 = 20 cm²."
+  },
+  {
+    "id": "m_cnt_14",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 160 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"80\" y1=\"20\" x2=\"80\" y2=\"140\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"20\" y1=\"80\" x2=\"140\" y2=\"80\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Observe la cuadrícula de 2 × 2 de la figura.",
+    "q": "¿Cuántos cuadrados en total se pueden contar?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Hay 4 cuadrados pequeños más 1 grande que los contiene a todos: 4 + 1 = 5."
+  },
+  {
+    "id": "m_cnt_15",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"15\" width=\"135\" height=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"60\" x2=\"150\" y2=\"60\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"105\" x2=\"150\" y2=\"105\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Observe la cuadrícula de 3 × 3 de la figura.",
+    "q": "¿Cuántos cuadrados en total se pueden contar (de todos los tamaños)?",
+    "opts": [
+      "9",
+      "13",
+      "14",
+      "10"
+    ],
+    "ans": 2,
+    "exp": "9 cuadrados de 1×1, 4 de 2×2 y 1 de 3×3: 9 + 4 + 1 = 14."
+  },
+  {
+    "id": "m_cnt_16",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "En la figura, un triángulo grande está dividido por una línea que va del vértice superior a la base.",
+    "q": "¿Cuántos triángulos hay en total?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "Los dos triángulos pequeños y el grande que ambos forman: 3 en total."
+  },
+  {
+    "id": "m_geo_15",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 195 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,30 120,30 120,75 170,75 170,140 20,140\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"80\" y=\"156\" fill=\"currentColor\" font-size=\"12\">8 cm</text><text x=\"2\" y=\"92\" fill=\"currentColor\" font-size=\"12\">6 cm</text></svg>",
+    "stem": "La figura en forma de L se obtuvo al recortar una esquina rectangular a un rectángulo de 8 cm por 6 cm.",
+    "q": "¿Cuál es el perímetro de la figura?",
+    "opts": [
+      "28 cm",
+      "22 cm",
+      "24 cm",
+      "20 cm"
+    ],
+    "ans": 0,
+    "exp": "Al recortar una esquina, los lados del recorte reemplazan exactamente a los que se quitaron: el contorno sigue midiendo lo mismo que el rectángulo completo, 2·(8+6) = 28 cm."
+  },
+  {
+    "id": "m_geo_16",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 200 120\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"100\" x2=\"180\" y2=\"100\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"100\" y1=\"100\" x2=\"45\" y2=\"32\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"52\" y=\"92\" fill=\"currentColor\" font-size=\"13\">130°</text><text x=\"128\" y=\"92\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "En la figura, los dos ángulos están formados sobre una misma línea recta. Uno mide 130°.",
+    "q": "¿Cuánto mide el otro ángulo?",
+    "opts": [
+      "50°",
+      "60°",
+      "40°",
+      "130°"
+    ],
+    "ans": 0,
+    "exp": "Los ángulos que se forman sobre una línea recta suman 180°. Entonces 180 − 130 = 50°."
+  },
+  {
+    "id": "m_ari_18",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 250 70\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"9\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"37\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"65\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"93\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"121\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"149\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"177\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "La barra de la figura está dividida en partes iguales y algunas están sombreadas.",
+    "q": "¿Qué fracción de la barra está sombreada?",
+    "opts": [
+      "{{3/8}}",
+      "{{3/5}}",
+      "{{5/8}}",
+      "{{1/3}}"
+    ],
+    "ans": 0,
+    "exp": "La barra tiene 8 partes iguales y 3 están sombreadas: {{3/8}}."
+  },
+  {
+    "id": "m_geo_17",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g stroke=\"var(--line)\" stroke-width=\"1\"><line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"120\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"120\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"120\"/><line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"120\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"120\"/><line x1=\"30\" y1=\"30\" x2=\"150\" y2=\"30\"/><line x1=\"30\" y1=\"60\" x2=\"150\" y2=\"60\"/><line x1=\"30\" y1=\"90\" x2=\"150\" y2=\"90\"/><line x1=\"30\" y1=\"120\" x2=\"150\" y2=\"120\"/></g><polygon points=\"30,120 150,120 30,30\" fill=\"rgba(77,163,255,.18)\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "En la figura, cada cuadrito mide 1 cm. El triángulo tiene base 4 cm y altura 3 cm.",
+    "q": "¿Cuál es el área del triángulo?",
+    "opts": [
+      "6 cm²",
+      "12 cm²",
+      "7 cm²",
+      "10 cm²"
+    ],
+    "ans": 0,
+    "exp": "Área del triángulo = base × altura ÷ 2 = 4 × 3 ÷ 2 = 6 cm²."
+  },
+  {
+    "id": "v_lec_1",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Durante mucho tiempo se creyó que el talento era algo con lo que se nacía: o se tenía o no. Investigaciones recientes matizan esa idea: aunque las aptitudes iniciales existen, lo que distingue a quienes llegan lejos es la práctica deliberada —repetir con atención, corregir los errores y buscar retos un poco por encima del nivel actual—. El talento, más que un punto de partida fijo, parece el resultado de años de trabajo bien orientado.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "El talento es algo con lo que simplemente se nace",
+      "Más que innato, el talento se construye con práctica deliberada",
+      "La práctica no influye en los resultados",
+      "Solo quienes nacen con aptitudes pueden llegar lejos"
+    ],
+    "ans": 1,
+    "exp": "El texto matiza la creencia del talento innato y concluye que se construye con práctica bien orientada (B). A y D repiten justo la idea que el texto corrige; C contradice todo el argumento."
+  },
+  {
+    "id": "v_lec_2",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El pueblo entero esperaba la llegada del nuevo médico. Pasaron las semanas y la casa que le habían preparado seguía con las ventanas cerradas; la farmacia, que había encargado medicinas de más, empezó a devolverlas; y en la parada, el cartel de bienvenida se fue despintando con la lluvia.",
+    "q": "¿Qué se puede deducir del texto, aunque no se diga directamente?",
+    "opts": [
+      "El médico llegó y se instaló sin problemas",
+      "El médico, finalmente, no llegó al pueblo",
+      "El pueblo no necesitaba un médico",
+      "La farmacia cerró para siempre"
+    ],
+    "ans": 1,
+    "exp": "Ventanas cerradas, medicinas devueltas y el cartel despintándose son señales de que el médico nunca llegó (B). A lo contradice; C y D inventan cosas que el texto no dice."
+  },
+  {
+    "id": "v_lec_3",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Todos los estudiantes que entrenaron con el simulador aprobaron el examen de manejo. Carlos aprobó el examen de manejo.",
+    "q": "¿Qué se puede concluir con certeza?",
+    "opts": [
+      "Carlos entrenó con el simulador",
+      "Carlos no entrenó con el simulador",
+      "No se puede saber si Carlos entrenó con el simulador",
+      "El simulador no sirve para aprobar"
+    ],
+    "ans": 2,
+    "exp": "Que TODOS los del simulador aprobaran no significa que SOLO ellos aprobaran: Carlos pudo aprobar por otra vía. Por eso no se puede saber si entrenó o no (C). A y B afirman de más; D no se sigue del texto."
+  },
+  {
+    "id": "v_lec_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Para el ingeniero, el viejo puente de hierro es una estructura obsoleta que conviene demoler; para el historiador, un testimonio de la industria de hace un siglo; para los vecinos que cruzan por él cada día, simplemente el camino más corto a la escuela.",
+    "q": "¿Qué idea central transmite el texto?",
+    "opts": [
+      "El puente debe conservarse a toda costa",
+      "Un mismo objeto tiene un valor distinto según los intereses de cada quien",
+      "El ingeniero está equivocado",
+      "Los puentes de hierro ya no le sirven a nadie"
+    ],
+    "ans": 1,
+    "exp": "El puente significa cosas distintas según quién lo mire (B). El texto no toma partido por conservarlo (A) ni dice que el ingeniero se equivoque (C); y D contradice que para los vecinos sí sirve."
+  },
+  {
+    "id": "v_lec_5",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Encender la luz de una habitación parece inmediato: basta mover un interruptor. Detrás, sin embargo, hay represas o plantas que generan la electricidad, miles de kilómetros de cables, transformadores que ajustan el voltaje y un sistema que equilibra la oferta y la demanda en tiempo real para que esa luz, simplemente, encienda.",
+    "q": "¿Qué contraste plantea el texto?",
+    "opts": [
+      "Que la electricidad es peligrosa",
+      "Que detrás de un gesto simple puede haber un sistema muy complejo",
+      "Que encender la luz cuesta mucho dinero",
+      "Que las represas contaminan el ambiente"
+    ],
+    "ans": 1,
+    "exp": "El texto opone un acto simple (mover un interruptor) con todo el sistema complejo que lo hace posible (B). No habla de peligro (A), de costo (C) ni de contaminación (D)."
+  },
+  {
+    "id": "v_lec_6",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Quien promete demasiado y a todos termina por no cumplirle a nadie: las palabras que se reparten sin medida pierden el peso que las hacía valiosas.",
+    "q": "¿Cuál opción expresa mejor la idea del texto?",
+    "opts": [
+      "Hay que prometer mucho para caer bien",
+      "Prometer sin medida hace que las promesas pierdan su valor",
+      "Las promesas siempre se terminan cumpliendo",
+      "Nadie debería hacer ninguna promesa"
+    ],
+    "ans": 1,
+    "exp": "Repartir promesas sin medida las vacía de valor (B). A aconseja lo contrario; C es falso según el texto; D exagera, pues el texto no prohíbe prometer, critica el exceso."
+  },
+  {
+    "id": "v_lec_7",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "En los meses en que más helados se venden también es cuando más gente se ahoga en las playas. Sin embargo, nadie diría que comer helado provoque ahogamientos: ambas cosas suben porque coincide el calor del verano, que llena a la vez las heladerías y las playas.",
+    "q": "¿Qué idea sostiene el texto?",
+    "opts": [
+      "Comer helado causa los ahogamientos",
+      "Dos cosas que aumentan juntas no siempre son causa una de la otra",
+      "Habría que prohibir los helados en verano",
+      "En verano nadie va a la playa"
+    ],
+    "ans": 1,
+    "exp": "El ejemplo muestra que coincidir (subir juntas) no es lo mismo que causar (B): el verdadero factor común es el calor. A confunde justo eso; C y D no se siguen del texto."
+  },
+  {
+    "id": "v_lec_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "En la reunión, todos felicitaron el nuevo plan. Pero cuando el jefe preguntó quién quería encargarse de ejecutarlo, los aplausos se apagaron, las miradas bajaron hacia los cuadernos y, de pronto, varios recordaron compromisos urgentes.",
+    "q": "¿Qué se puede deducir del texto?",
+    "opts": [
+      "Todos querían liderar el plan",
+      "El entusiasmo por el plan no se tradujo en un compromiso real",
+      "El plan fue rechazado por completo",
+      "El jefe canceló la reunión"
+    ],
+    "ans": 1,
+    "exp": "Aplaudir y, al pedir responsables, esquivar la tarea muestra que el entusiasmo no se volvió compromiso (B). A lo contradice; C exagera (sí lo felicitaron) y D no ocurre."
+  },
+  {
+    "id": "m_cnt_17",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"55\" x2=\"145\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"85\" x2=\"145\" y2=\"85\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"115\" x2=\"145\" y2=\"115\" stroke=\"var(--math)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "Observe la cuadrícula de 4 × 4 de la figura.",
+    "q": "¿Cuántos cuadrados en total se pueden contar (de todos los tamaños)?",
+    "opts": [
+      "16",
+      "26",
+      "30",
+      "20"
+    ],
+    "ans": 2,
+    "exp": "16 cuadrados de 1×1, 9 de 2×2, 4 de 3×3 y 1 de 4×4: 16 + 9 + 4 + 1 = 30."
+  },
+  {
+    "id": "m_cnt_18",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.10)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"67\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"113\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "En la figura, un triángulo grande está dividido por dos líneas que bajan desde el vértice superior hasta la base.",
+    "q": "¿Cuántos triángulos hay en total?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "3 triángulos pequeños, 2 que se forman al juntar dos seguidos y 1 grande que junta los tres: 3 + 2 + 1 = 6."
+  },
+  {
+    "id": "m_cnt_19",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 210 90\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"30\" width=\"170\" height=\"40\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"76\" y1=\"30\" x2=\"76\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"133\" y1=\"30\" x2=\"133\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "La figura es una tira dividida en 3 partes iguales.",
+    "q": "¿Cuántos rectángulos en total se pueden contar?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "ans": 3,
+    "exp": "3 rectángulos de una sola parte, 2 de dos partes seguidas y 1 de las tres partes: 3 + 2 + 1 = 6."
+  },
+  {
+    "id": "m_geo_18",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 200 175\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"25,35 145,35 145,80 175,80 175,145 25,145\" fill=\"rgba(46,230,166,.16)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"80\" y=\"163\" fill=\"currentColor\" font-size=\"12\">10 cm</text><text x=\"4\" y=\"95\" fill=\"currentColor\" font-size=\"12\">8 cm</text></svg>",
+    "stem": "La figura en forma de L se formó quitándole a un rectángulo de 10 cm por 8 cm una esquina rectangular de 4 cm por 3 cm.",
+    "q": "¿Cuál es el área de la figura?",
+    "opts": [
+      "68 cm²",
+      "80 cm²",
+      "12 cm²",
+      "92 cm²"
+    ],
+    "ans": 0,
+    "exp": "Es el área del rectángulo completo menos la esquina que se quitó: 10 × 8 − 4 × 3 = 80 − 12 = 68 cm²."
+  },
+  {
+    "id": "m_geo_20",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 180 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"135\" x2=\"40\" y2=\"30\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"155\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"135\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"46\" y=\"80\" fill=\"currentColor\" font-size=\"13\">35°</text><text x=\"92\" y=\"128\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "En la figura, una línea divide un ángulo recto (90°) en dos partes; una de ellas mide 35°.",
+    "q": "¿Cuánto mide la otra parte?",
+    "opts": [
+      "55°",
+      "65°",
+      "45°",
+      "35°"
+    ],
+    "ans": 0,
+    "exp": "Las dos partes juntas forman el ángulo recto, que mide 90°. Entonces la otra mide 90 − 35 = 55°."
+  }
+]

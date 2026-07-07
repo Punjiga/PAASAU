@@ -1,0 +1,87 @@
+[
+  {
+    "id": "q_pdf6_01",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La importancia de la trigonometría en el siglo\npasado derivó de la necesidad de su aplicación a\nla astronomía, a la navegación y a la agrimensura.\nDel texto anterior, es correcto concluir que,\nen el siglo pasado, la trigonometría fue muy\nimportante por su",
+    "q": "",
+    "opts": [
+      "eficacia técnica.",
+      "utilidad práctica.",
+      "importancia social.",
+      "capacidad productiva.",
+      "precisión matemática."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_02",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En una oficina, todos los empleados trabajan\nla misma cantidad de horas semanales. Al\nhacer las anotaciones del caso, el jefe anotó 25\nhoras para el primer empleado, 45 horas para\nel segundo empleado y 50 horas para el tercer\nempleado, como jornada semanal. En cada\nanotación, escribió un dígito correcto, pero se\nequivocó en el otro.\nSegún la información anterior, ¿cuál es la jornada",
+    "q": "semanal de un empleado?",
+    "opts": [
+      "20 horas",
+      "24 horas",
+      "40 horas",
+      "52 horas",
+      "55 horas"
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_03",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Iveth y Marta tienen igual número de monedas\nde 20 gapes. Ambas deciden agruparlas en\nbolsitas, de la siguiente forma:\n• Iveth puso 7 monedas en cada bolsita.\n• Marta puso 5 monedas en cada bolsita.\nSi al final Marta tiene 4 bolsitas más que Iveth,",
+    "q": "¿de cuánto dinero disponía cada una?",
+    "opts": [
+      "2800 gapes",
+      "1400 gapes",
+      "700 gapes",
+      "280 gapes",
+      "200 gapes"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_04",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "El presente es producto del pasado, por lo\ntanto, es vano el intento de presentar lo que\nhoy somos como invento exclusivo de los seres\nhumanos actuales.\n¿A qué se refiere, preferentemente, el texto",
+    "q": "anterior?",
+    "opts": [
+      "Al valor del pasado.",
+      "Al repudio del futuro.",
+      "Al origen del presente.",
+      "Al poderío del pasado.",
+      "Al producto del presente."
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_05",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Cuando la verdad alcanza un plano supremo,\nse convierte en virtud suprema.",
+    "q": "¿Qué se concluye del texto anterior?",
+    "opts": [
+      "Que sin verdad no hay virtud.",
+      "Que a menos verdad, menos virtud.",
+      "Que a menos virtud, menos verdad.",
+      "Que a mínima verdad, mínima virtud.",
+      "Que a máxima verdad, máxima virtud."
+    ],
+    "ans": 4,
+    "exp": ""
+  }
+]

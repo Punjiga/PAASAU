@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_tmp_6",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "El albañil primero mezcla el cemento, luego levanta la pared ladrillo por ladrillo, la deja secar un día y, al final, la pinta.",
+    "q": "¿Qué se hace inmediatamente después de levantar la pared?",
+    "opts": [
+      "Mezclar el cemento",
+      "Dejarla secar",
+      "Pintarla de una vez",
+      "Cavar la zanja"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es mezclar, levantar, dejar secar y pintar. Justo después de levantar la pared se deja secar (B). Mezclar (A) fue antes; pintar (C) va después del secado; cavar (D) no aparece."
+  },
+  {
+    "id": "v_tmp_7",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "En la función: se abren las cortinas, se presenta el primer acto, hay un intermedio y luego viene el segundo acto.",
+    "q": "¿Qué ocurre inmediatamente antes del segundo acto?",
+    "opts": [
+      "El primer acto",
+      "El intermedio",
+      "La apertura de cortinas",
+      "Los aplausos finales"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es cortinas, primer acto, intermedio y segundo acto. Antes del segundo acto está el intermedio (B). El primer acto (A) y la apertura (C) van antes; los aplausos (D), al final."
+  },
+  {
+    "id": "v_ese_4",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Lo propio de un buen médico es escuchar al paciente, examinarlo con cuidado y recetar lo apropiado.",
+    "q": "De acuerdo con la lógica del texto, ¿qué sería propio de un buen mecánico?",
+    "opts": [
+      "Escuchar al cliente, revisar el vehículo y reparar lo necesario",
+      "Cobrar lo más posible",
+      "Cambiar todas las piezas siempre",
+      "Trabajar sin revisar nada"
+    ],
+    "ans": 0,
+    "exp": "Por lógica paralela con el médico (escuchar, examinar, dar lo apropiado), lo propio del mecánico es escuchar, revisar y reparar lo necesario (A). Cobrar de más (B), cambiar todo siempre (C) o no revisar (D) son lo contrario de un buen mecánico."
+  },
+  {
+    "id": "v_ese_5",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 1,
+    "stem": "Un cubo de hielo puede ser grande o pequeño, transparente o turbio; pero si deja de estar frío y sólido, ya no es hielo.",
+    "q": "¿Cuál es la característica esencial del hielo?",
+    "opts": [
+      "Su tamaño",
+      "Estar frío y en estado sólido",
+      "Su transparencia",
+      "Su forma"
+    ],
+    "ans": 1,
+    "exp": "Lo esencial es lo que no puede faltar. Tamaño, transparencia y forma pueden variar (A, C, D); lo que define al hielo es estar frío y sólido (B)."
+  },
+  {
+    "id": "v_ese_6",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 2,
+    "stem": "Así como lo propio de un reloj es marcar el paso del tiempo —no su forma ni su material—, cada instrumento se define por la función que cumple.",
+    "q": "Por esa misma lógica, ¿qué es lo propio de un termómetro?",
+    "opts": [
+      "Marcar la hora",
+      "Medir la temperatura",
+      "Indicar la dirección",
+      "Pesar objetos"
+    ],
+    "ans": 1,
+    "exp": "Lo propio es la FUNCIÓN. La del termómetro es medir la temperatura (B). Marcar la hora (A) es del reloj; indicar dirección (C), de la brújula; pesar (D), de la balanza."
+  },
+  {
+    "id": "v_ese_7",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 2,
+    "stem": "Una llave puede ser de cualquier metal, color o tamaño; lo que la hace ser una llave es que abre y cierra una cerradura determinada.",
+    "q": "¿Qué es lo esencial de una llave?",
+    "opts": [
+      "Su material",
+      "Abrir y cerrar su cerradura",
+      "Su color",
+      "Su peso"
+    ],
+    "ans": 1,
+    "exp": "Material, color y peso pueden cambiar sin que deje de ser llave (A, C, D): son rasgos accidentales. Lo esencial es su función: abrir y cerrar su cerradura (B)."
+  },
+  {
+    "id": "v_per_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "El invierno que arruina las vacaciones del turista es justo la temporada que llena de clientes la tienda de abrigos.",
+    "q": "¿Qué muestra este contraste?",
+    "opts": [
+      "Que el invierno perjudica a todos",
+      "Que un mismo hecho beneficia a unos y perjudica a otros",
+      "Que el turista se queja de más",
+      "Que las tiendas se aprovechan de la gente"
+    ],
+    "ans": 1,
+    "exp": "El mismo invierno tiene efectos opuestos: malo para el turista, bueno para el negocio (B). A generaliza un solo lado; C y D agregan juicios que el texto no plantea."
+  },
+  {
+    "id": "v_per_5",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "Subir la misma montaña es, para el niño lleno de energía, una emocionante aventura; para el anciano de rodillas cansadas, un esfuerzo agotador.",
+    "q": "¿Qué explica que la montaña se viva de forma tan distinta?",
+    "opts": [
+      "La montaña cambia de altura según quién sube",
+      "La experiencia depende de la condición y la mirada de cada quien",
+      "El niño exagera su emoción",
+      "El anciano no debería caminar"
+    ],
+    "ans": 1,
+    "exp": "La montaña no cambia (A es falso); lo que cambia es quién la sube y cómo la vive (B). C y D juzgan a una persona, pero el punto es que un mismo hecho se vive distinto."
+  },
+  {
+    "id": "v_per_6",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Reprobar un examen puede vivirse como un golpe definitivo o como una señal útil de qué temas conviene reforzar.",
+    "q": "¿Qué plantea el texto sobre un mismo hecho?",
+    "opts": [
+      "Que reprobar no tiene remedio",
+      "Que admite lecturas opuestas según cómo se interprete",
+      "Que los exámenes son injustos",
+      "Que da igual aprobar o reprobar"
+    ],
+    "ans": 1,
+    "exp": "El mismo hecho (reprobar) admite dos lecturas: fracaso u oportunidad de mejorar (B). A se queda solo con la lectura negativa; C culpa al examen; D banaliza, y el texto no dice eso."
+  },
+  {
+    "id": "v_per_7",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "La canción que una persona pone a buen volumen para animarse es, para la vecina que intenta dormir, un ruido insoportable.",
+    "q": "¿Qué idea expresa el texto?",
+    "opts": [
+      "La música siempre molesta a los demás",
+      "Un mismo sonido se vive distinto según la situación de cada quien",
+      "Está prohibido escuchar música",
+      "La vecina tiene mal gusto"
+    ],
+    "ans": 1,
+    "exp": "El mismo sonido es disfrute para uno y molestia para otra, según su situación (B). A generaliza; C inventa una prohibición; D descalifica sin que el texto lo diga."
+  },
+  {
+    "id": "v_per_8",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "Un mismo comentario directo, a unas personas les parece una muestra de sinceridad y a otras, una grosería.",
+    "q": "Según el texto, ¿de qué depende que el comentario se tome bien o mal?",
+    "opts": [
+      "De que el comentario sea verdadero",
+      "De cómo lo interpreta quien lo recibe",
+      "De que se diga en voz alta",
+      "De que la persona sea grosera"
+    ],
+    "ans": 1,
+    "exp": "El mismo comentario cambia de sentido según quién lo recibe e interpreta (B). A, C y D señalan rasgos del comentario en sí, pero el texto pone el peso en la interpretación del receptor."
+  },
+  {
+    "id": "v_imp_6",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Cada vez que come en ese restaurante, a Luis le duele el estómago.",
+    "q": "¿Cuál es una idea implícita en el texto?",
+    "opts": [
+      "A Luis no le gusta comer",
+      "Algo de esa comida le hace daño",
+      "El restaurante es caro",
+      "Luis nunca come"
+    ],
+    "ans": 1,
+    "exp": "Que le duela el estómago cada vez que come ahí implica que algo de esa comida le hace daño (B). A contradice que sí va a comer; el precio (C) y 'nunca come' (D) no vienen al caso."
+  },
+  {
+    "id": "v_imp_7",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "La biblioteca siempre se llena durante la época de exámenes.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "La biblioteca es muy pequeña",
+      "En época de exámenes la gente estudia más",
+      "Nadie usa la biblioteca",
+      "Los libros son gratis"
+    ],
+    "ans": 1,
+    "exp": "Que se llene en época de exámenes implica que entonces la gente estudia más (B). El tamaño (A), 'nadie la usa' (C) y 'libros gratis' (D) no se deducen."
+  },
+  {
+    "id": "v_imp_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Antes de salir, Juan tomó paraguas, botas de hule y un abrigo grueso.",
+    "q": "¿Qué idea está implícita en el texto?",
+    "opts": [
+      "Iba a una fiesta",
+      "Esperaba mal tiempo",
+      "Vendía ropa",
+      "Hacía mucho calor"
+    ],
+    "ans": 1,
+    "exp": "Llevar paraguas, botas y abrigo implica que esperaba mal tiempo (B). Una fiesta (A), vender ropa (C) o mucho calor (D) no encajan con ese equipo."
+  },
+  {
+    "id": "v_imp_9",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Llegué a la casa y todo estaba como lo había dejado: el periódico del lunes seguía en la entrada, el tazón del desayuno sin lavar y las luces apagadas en pleno día.",
+    "q": "¿Qué se puede deducir con seguridad?",
+    "opts": [
+      "Hubo una fiesta la noche anterior",
+      "Nadie había estado en la casa desde el lunes",
+      "Acababan de limpiar la casa",
+      "Había mucha gente adentro"
+    ],
+    "ans": 1,
+    "exp": "Periódico del lunes intacto, tazón sin lavar y luces apagadas implican que nadie estuvo ahí desde el lunes (B). Una fiesta (A) o mucha gente (C) dejarían rastros; 'recién limpiado' (D) contradice el desorden."
+  },
+  {
+    "id": "v_imp_10",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Marta revisa tres veces que la puerta esté cerrada antes de dormir.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "Marta es descuidada",
+      "Marta es precavida con la seguridad",
+      "Marta no duerme nunca",
+      "La puerta está rota"
+    ],
+    "ans": 1,
+    "exp": "Revisar tres veces la puerta implica que es precavida con la seguridad (B). Es lo opuesto a descuidada (A); 'no duerme' (C) y 'puerta rota' (D) no se deducen."
+  },
+  {
+    "id": "v_imp_11",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Aunque le ofrecieron más sueldo en otra empresa, decidió quedarse donde estaba.",
+    "q": "¿Qué idea está implícita?",
+    "opts": [
+      "El dinero es lo único que le importa",
+      "Valora algo más que el salario",
+      "No sabe tomar decisiones",
+      "La otra empresa cerró"
+    ],
+    "ans": 1,
+    "exp": "Rechazar más sueldo por quedarse implica que valora algo más que el salario (B). A dice lo contrario; 'no sabe decidir' (C) y 'la empresa cerró' (D) no aparecen."
+  },
+  {
+    "id": "v_pri_4",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "El reciclaje reduce la cantidad de basura que llega a los rellenos, ahorra recursos naturales al reutilizar materiales y disminuye la contaminación del aire y del agua.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "En los rellenos se acumula mucha basura",
+      "El reciclaje aporta varios beneficios ambientales",
+      "El reciclaje reutiliza materiales",
+      "Reciclar limpia el aire"
+    ],
+    "ans": 1,
+    "exp": "A, C y D son detalles ciertos, pero cada uno cubre solo una parte. La idea que los abarca a todos es que el reciclaje trae varios beneficios (B): esa es la principal."
+  },
+  {
+    "id": "v_pri_5",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Las abejas polinizan los cultivos de los que sale buena parte de nuestra comida, producen miel y ayudan a mantener el equilibrio de muchos ecosistemas.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "Las abejas producen miel",
+      "Las abejas cumplen un papel valioso para la naturaleza y las personas",
+      "Las abejas polinizan cultivos",
+      "Las abejas viven en ecosistemas"
+    ],
+    "ans": 1,
+    "exp": "Producir miel y polinizar (A, C) son detalles, no el todo. B resume todos los aportes de las abejas. D es cierto pero trivial y no es el punto central."
+  },
+  {
+    "id": "v_pri_6",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Leer con frecuencia amplía el vocabulario, ejercita la memoria y expone la mente a ideas y puntos de vista nuevos.",
+    "q": "¿Cuál es la idea principal?",
+    "opts": [
+      "Leer amplía el vocabulario",
+      "La lectura aporta varios beneficios para la mente",
+      "Leer ejercita la memoria",
+      "Existen muchas ideas nuevas"
+    ],
+    "ans": 1,
+    "exp": "A y C son beneficios sueltos (detalles); D se va del tema. B reúne todos esos beneficios: es la idea principal."
+  },
+  {
+    "id": "v_pri_7",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El río nace en la montaña, cruza el valle dando agua a los cultivos y desemboca en el mar, sosteniendo la vida a su paso.",
+    "q": "¿Cuál es el tema central del texto?",
+    "opts": [
+      "El color del agua",
+      "El recorrido del río y su aporte a la vida",
+      "La altura de la montaña",
+      "La pesca en el mar"
+    ],
+    "ans": 1,
+    "exp": "Todo el texto sigue el recorrido del río y su aporte a la vida (B). El color del agua (A), la altura de la montaña (C) y la pesca (D) son detalles o ni aparecen."
+  },
+  {
+    "id": "v_pri_8",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Dormir bien mejora la memoria, fortalece las defensas del cuerpo y ayuda a mantener estable el estado de ánimo.",
+    "q": "¿Cuál es la idea principal?",
+    "opts": [
+      "Dormir mejora la memoria",
+      "Un buen descanso beneficia el cuerpo y la mente",
+      "Dormir fortalece las defensas",
+      "El ánimo cambia de a ratos"
+    ],
+    "ans": 1,
+    "exp": "A y C son beneficios concretos (detalles). B los engloba: dormir bien beneficia cuerpo y mente. D es vago y no resume el texto."
+  },
+  {
+    "id": "v_pri_9",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "En Costa Rica conviven el español, el bribri y el inglés criollo limonense, reflejo de su diversidad cultural.",
+    "q": "¿Cuál es el tema central del texto?",
+    "opts": [
+      "La diversidad lingüística de Costa Rica",
+      "La gramática del español",
+      "La población de Limón",
+      "La enseñanza del inglés"
+    ],
+    "ans": 0,
+    "exp": "Las tres lenguas son una muestra de la diversidad lingüística de Costa Rica (A). La gramática (B), la población de Limón (C) y la enseñanza del inglés (D) son temas que el texto no desarrolla."
+  },
+  {
+    "id": "v_par_4",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El conocimiento que no se comparte termina por desvanecerse, como el agua estancada se pudre.",
+    "q": "¿Cuál opción expresa la misma idea?",
+    "opts": [
+      "El conocimiento es inútil",
+      "El saber se mantiene vivo cuando se comparte",
+      "El agua estancada es saludable",
+      "Compartir es una pérdida de tiempo"
+    ],
+    "ans": 1,
+    "exp": "Que el conocimiento no compartido se desvanezca equivale a que el saber se mantiene vivo al compartirse (B). A lo desvaloriza; C malinterpreta la comparación del agua; D contradice la idea de compartir."
+  },
+  {
+    "id": "v_par_5",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 2,
+    "stem": "La crítica, cuando es honesta, no busca herir, sino ayudar a mejorar.",
+    "q": "¿Cuál opción conserva el sentido?",
+    "opts": [
+      "Toda crítica busca herir",
+      "Una crítica honesta tiene la intención de ayudar",
+      "Hay que evitar toda crítica",
+      "Mejorar es imposible"
+    ],
+    "ans": 1,
+    "exp": "El texto distingue la crítica honesta: su fin no es herir, sino ayudar a mejorar."
+  },
+  {
+    "id": "v_par_6",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El hecho de que algo sea muy popular no garantiza que sea bueno.",
+    "q": "¿Cuál opción dice lo mismo con otras palabras?",
+    "opts": [
+      "Lo popular siempre es bueno",
+      "La popularidad no asegura la calidad",
+      "Nada bueno llega a ser popular",
+      "Hay que seguir siempre a la mayoría"
+    ],
+    "ans": 1,
+    "exp": "Que lo popular no garantice calidad equivale a que la popularidad no asegura que algo sea bueno (B). A dice lo contrario; C exagera al negar toda relación; D invita a seguir a la mayoría, lo opuesto al texto."
+  },
+  {
+    "id": "v_par_7",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La libertad de uno termina donde empieza la del otro.",
+    "q": "¿Cuál opción expresa la misma idea?",
+    "opts": [
+      "Nadie es realmente libre",
+      "La libertad propia tiene como límite la de los demás",
+      "La libertad no tiene ningún límite",
+      "Solo una persona puede ser libre"
+    ],
+    "ans": 1,
+    "exp": "Que la libertad de uno termine donde empieza la del otro equivale a que la libertad propia tiene como límite la de los demás (B). A niega la libertad; C dice que no tiene límites; D la reserva a una sola persona."
+  },
+  {
+    "id": "v_par_8",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Quien ignora los pequeños problemas de hoy suele enfrentarse a grandes problemas mañana.",
+    "q": "¿Cuál opción reproduce la idea?",
+    "opts": [
+      "Los problemas pequeños no importan",
+      "Descuidar lo pequeño hoy trae problemas mayores después",
+      "Mañana no existirán los problemas",
+      "Lo mejor es ignorar todo"
+    ],
+    "ans": 1,
+    "exp": "Que ignorar lo pequeño hoy traiga grandes problemas mañana equivale a 'descuidar lo pequeño hoy trae problemas mayores después' (B). A le quita importancia; C y D distorsionan el sentido."
+  },
+  {
+    "id": "v_pro_4",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Todos los metales conducen la electricidad. Analice las proposiciones:\nI. El cobre, que es un metal, conduce electricidad.\nII. Ningún metal conduce electricidad.\nIII. Hay metales que no conducen electricidad.",
+    "q": "¿Cuál(es) proposición(es) se deduce(n) del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "La II y la III",
+      "Las tres"
+    ],
+    "ans": 0,
+    "exp": "De 'todos los metales conducen' se deduce que el cobre, que es metal, conduce: la I (A). La II y la III afirman metales que no conducen, lo que contradice el texto."
+  },
+  {
+    "id": "v_pro_5",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Toda persona inscrita debe presentar su cédula. Analice las proposiciones:\nI. Quien no presenta la cédula no cumple lo exigido.\nII. La cédula es opcional.\nIII. Una persona inscrita sin cédula no cumple el requisito.",
+    "q": "¿Cuáles proposiciones concuerdan con el texto?",
+    "opts": [
+      "Solo la II",
+      "La I y la III",
+      "Solo la III",
+      "Las tres"
+    ],
+    "ans": 1,
+    "exp": "De 'todo inscrito debe presentar cédula' se deducen la I y la III (sin cédula no se cumple): por eso B. La II dice que es opcional, lo contrario del texto."
+  },
+  {
+    "id": "v_pro_6",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 2,
+    "stem": "Cuando llueve, la cancha se moja. Analice las proposiciones:\nI. La lluvia moja la cancha.\nII. La cancha se moja sola, sin lluvia.\nIII. La lluvia seca la cancha.",
+    "q": "¿Cuál proposición se deduce del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "Solo la III",
+      "La I y la III"
+    ],
+    "ans": 0,
+    "exp": "De 'cuando llueve, la cancha se moja' se deduce que la lluvia la moja: la I (A). La II (se moja sola) y la III (la lluvia la seca) no se deducen."
+  },
+  {
+    "id": "v_pro_7",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Ningún estudiante aprobó sin entregar el proyecto. Analice las proposiciones:\nI. Entregar el proyecto fue necesario para aprobar.\nII. Algún estudiante aprobó sin entregar el proyecto.\nIII. Quien no entregó el proyecto no aprobó.",
+    "q": "¿Cuáles proposiciones se deducen del texto?",
+    "opts": [
+      "Solo la I",
+      "La I y la III",
+      "Solo la II",
+      "Las tres"
+    ],
+    "ans": 1,
+    "exp": "De 'ninguno aprobó sin entregar' se deducen la I (entregar fue necesario) y la III (quien no entregó no aprobó): por eso B. La II contradice el texto."
+  },
+  {
+    "id": "v_pro_8",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 2,
+    "stem": "Todas las aves tienen plumas. Analice las proposiciones:\nI. El gorrión, que es un ave, tiene plumas.\nII. Existen aves sin plumas.\nIII. El gorrión no tiene plumas.",
+    "q": "¿Cuál proposición se deduce del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "La II y la III",
+      "Las tres"
+    ],
+    "ans": 0,
+    "exp": "De 'todas las aves tienen plumas' se deduce que el gorrión, que es ave, tiene plumas: la I (A). La II y la III afirman aves sin plumas, contra el texto."
+  },
+  {
+    "id": "m_ari_6",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "En una soda, un casado cuesta ₡2 500 y un fresco ₡900. Marta pide 3 casados y 2 frescos, y paga con ₡10 000.",
+    "q": "¿Cuánto recibe de vuelto?",
+    "opts": [
+      "₡600",
+      "₡700",
+      "₡800",
+      "₡900"
+    ],
+    "ans": 1,
+    "exp": "3·2 500 = 7 500 y 2·900 = 1 800; total 9 300. Vuelto: 10 000 − 9 300 = 700."
+  },
+  {
+    "id": "m_ari_7",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Considere la operación con fracciones: {{3/4}} − {{2/3}} + {{1/2}}.",
+    "q": "¿Cuál es el resultado?",
+    "opts": [
+      "{{7/12}}",
+      "{{1/12}}",
+      "{{5/12}}",
+      "{{2/3}}"
+    ],
+    "ans": 0,
+    "exp": "Con común denominador 12: {{9/12}} − {{8/12}} + {{6/12}} = {{7/12}}."
+  },
+  {
+    "id": "m_ari_8",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "Considere la operación: 5 + 2 × (8 − 3)² ÷ 5.",
+    "q": "¿Cuál es el resultado?",
+    "opts": [
+      "15",
+      "27",
+      "20",
+      "11"
+    ],
+    "ans": 0,
+    "exp": "Primero el paréntesis: 8 − 3 = 5; al cuadrado: 25. Luego 2 × 25 = 50; 50 ÷ 5 = 10; 5 + 10 = 15."
+  },
+  {
+    "id": "m_ari_9",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "En una finca hay 240 árboles y {{3/8}} de ellos son de naranja.",
+    "q": "¿Cuántos árboles de naranja hay?",
+    "opts": [
+      "64",
+      "80",
+      "96",
+      "90"
+    ],
+    "ans": 3,
+    "exp": "240 ÷ 8 = 30; 30 × 3 = 90 árboles de naranja."
+  },
+  {
+    "id": "m_ari_10",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "Considere la operación con enteros: (−6) + (−4) − (−10) + 2.",
+    "q": "¿Cuál es el resultado?",
+    "opts": [
+      "−2",
+      "0",
+      "2",
+      "−12"
+    ],
+    "ans": 2,
+    "exp": "(−6) + (−4) = −10; −10 − (−10) = 0; 0 + 2 = 2."
+  },
+  {
+    "id": "m_mcm_5",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 2,
+    "stem": "Dos luces parpadean: una cada 8 segundos y la otra cada 10 segundos. En este momento parpadean juntas.",
+    "q": "¿Dentro de cuántos segundos vuelven a parpadear juntas por primera vez?",
+    "opts": [
+      "18 s",
+      "40 s",
+      "80 s",
+      "20 s"
+    ],
+    "ans": 1,
+    "exp": "Coinciden en el MCM(8, 10). 8 = 2³ y 10 = 2·5, así que MCM = 2³·5 = 40 s."
+  },
+  {
+    "id": "m_mcm_6",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 2,
+    "stem": "Se quieren repartir 24 lápices y 36 borradores en bolsas iguales, usando la mayor cantidad de bolsas posible y sin que sobre nada.",
+    "q": "¿Cuántas bolsas se forman?",
+    "opts": [
+      "12",
+      "6",
+      "72",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "La mayor cantidad de bolsas iguales es el MCD(24, 36) = 12."
+  },
+  {
+    "id": "m_mcm_7",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Se reparten 36 lápices y 48 cuadernos en paquetes iguales, con la mayor cantidad posible de paquetes y sin que sobre nada.",
+    "q": "¿Cuántos paquetes se forman?",
+    "opts": [
+      "6",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "La mayor cantidad de paquetes iguales es el MCD(36, 48). 36 = 2²·3² y 48 = 2⁴·3, así que MCD = 2²·3 = 12 paquetes."
+  },
+  {
+    "id": "m_rel_4",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 2,
+    "stem": "En una fila, Marta está delante de Luis, Luis delante de Sara y Pedro está detrás de Sara.",
+    "q": "¿Quién va de último en la fila?",
+    "opts": [
+      "Marta",
+      "Luis",
+      "Sara",
+      "Pedro"
+    ],
+    "ans": 3,
+    "exp": "De adelante hacia atrás: Marta, Luis, Sara, Pedro. El último es Pedro."
+  }
+]

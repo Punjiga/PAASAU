@@ -1,0 +1,674 @@
+[
+  {
+    "id": "m_suc_13",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 2,
+    "stem": "Observe la sucesión: 1, 1, 2, 3, 5, 8, 13, …",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "21",
+      "18",
+      "16",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "Cada término es la suma de los dos anteriores (Fibonacci): 8 + 13 = 21."
+  },
+  {
+    "id": "m_dat_11",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 2,
+    "stem": "En una rifa hay 200 números y una persona compró 8 de ellos.",
+    "q": "¿Cuál es la probabilidad de que gane (que salga uno de sus números)?",
+    "opts": [
+      "{{1/25}}",
+      "{{8/100}}",
+      "{{1/8}}",
+      "{{1/200}}"
+    ],
+    "ans": 0,
+    "exp": "Tiene 8 favorables de 200 posibles: {{8/200}}, que simplificado es {{1/25}}."
+  },
+  {
+    "id": "m_dat_12",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El promedio de 5 notas es 8. Cuatro de ellas son 7, 9, 8 y 6.",
+    "q": "¿Cuál es la quinta nota?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "ans": 2,
+    "exp": "La suma total es 5·8 = 40. Las cuatro dadas suman 30, así que la quinta es 40 − 30 = 10."
+  },
+  {
+    "id": "m_not_8",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 2,
+    "stem": "Considere la frase: 'el triple de un número, aumentado en 6'.",
+    "q": "¿Cuál expresión la representa?",
+    "opts": [
+      "3x + 6",
+      "3(x + 6)",
+      "x/3 + 6",
+      "6 − 3x"
+    ],
+    "ans": 0,
+    "exp": "El triple del número es 3x; aumentado en 6 es 3x + 6."
+  },
+  {
+    "id": "m_alr_8",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "La mitad de un número, aumentada en 7, es igual a 16.",
+    "q": "¿Cuál es el número?",
+    "opts": [
+      "18",
+      "9",
+      "23",
+      "32"
+    ],
+    "ans": 0,
+    "exp": "x/2 + 7 = 16 → x/2 = 9 → x = 18."
+  },
+  {
+    "id": "m_uni_9",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un ciclista avanza a 20 km/h de forma constante.",
+    "q": "¿Cuánto tarda en recorrer 5 km?",
+    "opts": [
+      "15 min",
+      "20 min",
+      "25 min",
+      "10 min"
+    ],
+    "ans": 0,
+    "exp": "Tiempo = distancia ÷ velocidad = 5 ÷ 20 = {{1/4}} de hora = 15 minutos."
+  },
+  {
+    "id": "m_raz_10",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Con 5 litros de pintura se cubren 60 m² de pared.",
+    "q": "¿Cuántos litros se necesitan para cubrir 84 m²?",
+    "opts": [
+      "7 L",
+      "6 L",
+      "8 L",
+      "9 L"
+    ],
+    "ans": 0,
+    "exp": "Rendimiento: 60 ÷ 5 = 12 m² por litro. Para 84 m²: 84 ÷ 12 = 7 litros."
+  },
+  {
+    "id": "m_raz_11",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Cinco máquinas iguales hacen un trabajo en 6 horas.",
+    "q": "¿Cuánto tardan 3 máquinas en el mismo trabajo?",
+    "opts": [
+      "10 horas",
+      "3,6 horas",
+      "8 horas",
+      "18 horas"
+    ],
+    "ans": 0,
+    "exp": "Proporción inversa: 5·6 = 30 máquina-horas. Con 3 máquinas: 30 ÷ 3 = 10 horas."
+  },
+  {
+    "id": "v_fin_12",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Una ley obliga a etiquetar el contenido calórico de los alimentos no para prohibir su consumo, sino para que cada persona decida con información.",
+    "q": "¿Cuál es la finalidad de la ley, según el texto?",
+    "opts": [
+      "Prohibir los alimentos calóricos",
+      "Que las personas decidan con información",
+      "Subir el precio de los alimentos",
+      "Cerrar los restaurantes"
+    ],
+    "ans": 1,
+    "exp": "El texto contrapone: no para prohibir, sino para que cada persona decida con información (B). Por eso no es prohibir (A); subir precios (C) y cerrar restaurantes (D) no se plantean."
+  },
+  {
+    "id": "v_com_12",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Aunque el mundo insista en apurarme, yo elijo detenerme a mirar el árbol, la nube, el instante que nadie más nota.",
+    "q": "¿Qué actitud refleja el autor?",
+    "opts": [
+      "Apresurada",
+      "Contemplativa",
+      "Indiferente",
+      "Agresiva"
+    ],
+    "ans": 1,
+    "exp": "Detenerse a mirar el árbol, la nube, el instante que nadie nota, es una actitud contemplativa (B). Es lo opuesto a apresurada (A); no es indiferente (C: sí le importa mirar) ni agresiva (D)."
+  },
+  {
+    "id": "v_cau_16",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La erosión del suelo no es solo consecuencia de la lluvia: ocurre porque, al talar los árboles, se elimina la red de raíces que lo sujetaba.",
+    "q": "¿Qué señala el texto como causa de fondo de la erosión?",
+    "opts": [
+      "Únicamente la lluvia",
+      "La tala, que elimina las raíces que sujetan el suelo",
+      "El exceso de árboles",
+      "El viento"
+    ],
+    "ans": 1,
+    "exp": "El texto aclara que la causa de fondo no es solo la lluvia, sino la tala que quita las raíces."
+  },
+  {
+    "id": "v_con_14",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Sabía que decir la verdad le costaría el puesto, pero aun así la dijo.",
+    "q": "¿Qué palabra describe mejor su actitud?",
+    "opts": [
+      "Integridad",
+      "Conveniencia",
+      "Cobardía",
+      "Indiferencia"
+    ],
+    "ans": 0,
+    "exp": "Decir la verdad aun a costa de perder el puesto es integridad (A). Lo contrario sería buscar la conveniencia (B) o callar por cobardía (C); no es indiferencia (D): justo le importa la verdad."
+  },
+  {
+    "id": "v_ese_12",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Así como el termómetro no cambia la fiebre sino que la mide, el examen no crea el conocimiento: solo lo evidencia.",
+    "q": "¿Qué idea sostiene el texto?",
+    "opts": [
+      "El examen crea el conocimiento",
+      "El examen solo evidencia el conocimiento, no lo genera",
+      "El termómetro cura la fiebre",
+      "Los exámenes son inútiles"
+    ],
+    "ans": 1,
+    "exp": "La analogía muestra que el examen solo evidencia el conocimiento, no lo crea, igual que el termómetro mide la fiebre sin curarla (B). Por eso A es falso; C confunde medir con curar; y D exagera al llamarlos inútiles."
+  },
+  {
+    "id": "v_per_13",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Para el historiador, la ruina es un documento; para el turista, una postal; para el vecino, un estorbo.",
+    "q": "¿Qué muestra el texto?",
+    "opts": [
+      "La ruina debe demolerse",
+      "El valor de algo depende de la mirada de cada quien",
+      "Los turistas no entienden la historia",
+      "Las ruinas no sirven"
+    ],
+    "ans": 1,
+    "exp": "Para el historiador es documento, para el turista postal y para el vecino estorbo: el valor depende de la mirada de cada quien (B). El texto no pide demolerla (A), ni descalifica a los turistas (C) ni niega el valor de la ruina (D)."
+  },
+  {
+    "id": "v_imp_18",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El político prometió exactamente lo mismo que hace cuatro años, y la plaza, esta vez, quedó medio vacía.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "La plaza es muy pequeña",
+      "La gente perdió interés o confianza en él",
+      "Hacía mal clima",
+      "El político renunció"
+    ],
+    "ans": 1,
+    "exp": "Prometer lo mismo y que la plaza quede medio vacía implica que la gente perdió interés o confianza (B). El tamaño de la plaza (A), el clima (C) o una renuncia (D) no se deducen."
+  },
+  {
+    "id": "v_imp_19",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Ningún alumno entregó la tarea; el profesor sonrió: no tendría nada que revisar esa noche.",
+    "q": "¿Qué se deduce del texto?",
+    "opts": [
+      "El profesor estaba furioso",
+      "Al no haber entregas, no tendrá trabajo que revisar",
+      "Todos los alumnos aprobaron",
+      "El profesor renunció"
+    ],
+    "ans": 1,
+    "exp": "Que sonría porque 'no tendrá nada que revisar' implica que, sin entregas, no tendrá trabajo esa noche (B). La furia (A) contradice la sonrisa; aprobar todos (C) y renunciar (D) no se deducen."
+  },
+  {
+    "id": "v_pri_16",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El bosque no es un conjunto de árboles aislados: bajo la tierra, sus raíces se conectan con hongos que intercambian agua y nutrientes, formando una red que sostiene a todo el ecosistema.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "Los árboles compiten entre sí",
+      "El bosque funciona como una red interconectada",
+      "Los hongos son dañinos para los árboles",
+      "Las raíces no cumplen ninguna función"
+    ],
+    "ans": 1,
+    "exp": "Todo el texto describe cómo raíces y hongos se conectan y sostienen el ecosistema: el bosque funciona como una red interconectada (B). A, C y D contradicen esa idea de cooperación."
+  },
+  {
+    "id": "v_par_15",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La libertad sin responsabilidad no es libertad, sino mero capricho.",
+    "q": "¿Cuál opción expresa la misma idea?",
+    "opts": [
+      "La libertad no tiene ningún límite",
+      "Ser verdaderamente libre implica ser responsable",
+      "La responsabilidad impide la libertad",
+      "El capricho es la forma más alta de libertad"
+    ],
+    "ans": 1,
+    "exp": "Que la libertad sin responsabilidad sea capricho equivale a que ser de verdad libre implica ser responsable (B). A niega todo límite; C opone libertad y responsabilidad; D ensalza el capricho, lo contrario del texto."
+  },
+  {
+    "id": "v_pro_13",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El desarrollo sostenible busca satisfacer las necesidades del presente sin comprometer las de las futuras generaciones. Analice las proposiciones:\nI. Propone no agotar los recursos que necesitarán quienes vengan.\nII. Exige frenar todo progreso.\nIII. Toma en cuenta tanto el presente como el futuro.\nIV. Ignora las necesidades actuales.",
+    "q": "¿Cuáles proposiciones son ciertas según el texto?",
+    "opts": [
+      "I y III",
+      "Solo la II",
+      "II y IV",
+      "Todas"
+    ],
+    "ans": 0,
+    "exp": "El texto cuida el presente sin comprometer el futuro: se deducen la I (no agotar recursos futuros) y la III (atiende presente y futuro): por eso A. La II (frenar todo progreso) y la IV (ignorar lo actual) lo contradicen."
+  },
+  {
+    "id": "v_pro_14",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "La lectura crítica no consiste en aceptar lo que se lee, sino en cuestionarlo con argumentos. Analice las proposiciones:\nI. Leer de forma crítica es dudar con fundamento.\nII. Leer de forma crítica es creer todo lo escrito.\nIII. Implica evaluar los argumentos.\nIV. Consiste en rechazar todo lo que se lee.",
+    "q": "¿Cuáles proposiciones se deducen del texto?",
+    "opts": [
+      "I y III",
+      "I y II",
+      "III y IV",
+      "Solo la IV"
+    ],
+    "ans": 0,
+    "exp": "Leer de forma crítica es cuestionar con argumentos: se deducen la I (dudar con fundamento) y la III (evaluar argumentos): por eso A. La II (creer todo) y la IV (rechazar todo) son los extremos que el texto descarta."
+  },
+  {
+    "id": "m_ari_17",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Considere los números de dos cifras (del 10 al 99).",
+    "q": "¿Cuántos de ellos tienen dígitos que suman 9?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "7"
+    ],
+    "ans": 1,
+    "exp": "Son 18, 27, 36, 45, 54, 63, 72, 81 y 90: nueve números en total."
+  },
+  {
+    "id": "m_cnt_12",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Tres personas se ordenan en una fila, pero Ana y Beto deben quedar siempre juntos.",
+    "q": "¿De cuántas maneras distintas pueden ordenarse?",
+    "opts": [
+      "4",
+      "6",
+      "3",
+      "12"
+    ],
+    "ans": 0,
+    "exp": "Tratá a Ana+Beto como un bloque: hay 2 ordenamientos del bloque con la otra persona, y dentro del bloque puede ir Ana-Beto o Beto-Ana: 2 × 2 = 4."
+  },
+  {
+    "id": "m_cnt_13",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Con los dígitos 1, 2, 3, 4 y 5, sin repetir, se forman números de tres cifras.",
+    "q": "¿Cuántos de esos números son pares?",
+    "opts": [
+      "24",
+      "60",
+      "12",
+      "36"
+    ],
+    "ans": 0,
+    "exp": "La última cifra debe ser par (2 o 4): 2 opciones. La primera: 4 restantes; la del medio: 3 restantes. 2 × 4 × 3 = 24."
+  },
+  {
+    "id": "m_suc_14",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Observe la sucesión: 1, 2, 6, 24, 120, …",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "240",
+      "600",
+      "720",
+      "360"
+    ],
+    "ans": 2,
+    "exp": "Cada término se multiplica por uno más: ×2, ×3, ×4, ×5… El siguiente es 120 × 6 = 720."
+  },
+  {
+    "id": "m_suc_15",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Se cumple que 1 da 2, 2 da 6, 3 da 12 y 4 da 20.",
+    "q": "Según ese patrón, ¿qué número corresponde al 5?",
+    "opts": [
+      "25",
+      "30",
+      "28",
+      "35"
+    ],
+    "ans": 1,
+    "exp": "El patrón es n·(n+1): 1·2=2, 2·3=6, 3·4=12, 4·5=20, y 5·6 = 30."
+  },
+  {
+    "id": "m_rel_12",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Sean a y b enteros con a < b < 0.",
+    "q": "¿Cuál afirmación es siempre verdadera?",
+    "opts": [
+      "a² < b²",
+      "a² > b²",
+      "a² = b²",
+      "a + b > 0"
+    ],
+    "ans": 1,
+    "exp": "Si a < b < 0, entonces a está más lejos de 0, o sea |a| > |b|. Al elevar al cuadrado, a² > b²."
+  },
+  {
+    "id": "m_alr_9",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Sea n un entero tal que n² es par.",
+    "q": "¿Qué se puede afirmar con certeza de n?",
+    "opts": [
+      "n es impar",
+      "n es par",
+      "n es primo",
+      "n puede ser cualquiera"
+    ],
+    "ans": 1,
+    "exp": "Si n fuera impar, n² sería impar. Como n² es par, n tiene que ser par."
+  },
+  {
+    "id": "m_raz_12",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Una mezcla de 20 litros tiene 30% de jugo y el resto agua.",
+    "q": "¿Cuántos litros de jugo hay que agregar para que el jugo sea el 50% de la mezcla?",
+    "opts": [
+      "8 L",
+      "4 L",
+      "10 L",
+      "6 L"
+    ],
+    "ans": 0,
+    "exp": "Jugo inicial: 30% de 20 = 6 L. Agregando x: (6+x)/(20+x) = 0,5 → 6+x = 10+0,5x → 0,5x = 4 → x = 8 L."
+  },
+  {
+    "id": "m_dat_13",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El promedio de las notas de 10 estudiantes es 7. Se retira un estudiante cuya nota era exactamente 7.",
+    "q": "¿Cuál es el nuevo promedio de los 9 que quedan?",
+    "opts": [
+      "7",
+      "6,3",
+      "7,5",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "La suma era 70; al quitar un 7 queda 63, y 63 ÷ 9 = 7. Como el que se fue tenía justo el promedio, este no cambia."
+  },
+  {
+    "id": "m_geo_13",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Dentro de un cuadrado de 10 cm de lado se recorta un cuadrado de 6 cm de lado.",
+    "q": "¿Cuál es el área de la región que queda (lo sombreado)?",
+    "opts": [
+      "64 cm²",
+      "36 cm²",
+      "40 cm²",
+      "100 cm²"
+    ],
+    "ans": 0,
+    "exp": "Área grande menos área pequeña: 10² − 6² = 100 − 36 = 64 cm²."
+  },
+  {
+    "id": "m_per_9",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Cuatro personas se sientan en una fila de 4 sillas, pero una persona específica debe quedar en alguno de los dos extremos.",
+    "q": "¿De cuántas maneras pueden sentarse?",
+    "opts": [
+      "12",
+      "24",
+      "6",
+      "8"
+    ],
+    "ans": 0,
+    "exp": "La persona fija tiene 2 lugares (los extremos); las otras 3 se ordenan de 3! = 6 formas. 2 × 6 = 12."
+  },
+  {
+    "id": "m_mcm_10",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Tres corredores dan vueltas a una pista y tardan 30, 40 y 60 segundos por vuelta. Salen juntos de la meta.",
+    "q": "¿Cada cuántos segundos vuelven a coincidir los tres en la meta?",
+    "opts": [
+      "120 s",
+      "60 s",
+      "240 s",
+      "90 s"
+    ],
+    "ans": 0,
+    "exp": "Coinciden en el MCM(30, 40, 60). 30=2·3·5, 40=2³·5, 60=2²·3·5 → MCM = 2³·3·5 = 120 s."
+  },
+  {
+    "id": "v_pri_17",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La memoria no funciona como una grabadora que reproduce fielmente lo ocurrido. Cada vez que recordamos, reconstruimos el episodio con piezas del presente: nuestro estado de ánimo, lo que aprendimos después, incluso lo que otros nos contaron. Por eso dos personas que vivieron el mismo hecho pueden recordarlo de maneras distintas y ambas estar convencidas de su versión.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "La memoria reproduce los hechos con total fidelidad",
+      "Recordar es reconstruir, no reproducir exactamente lo vivido",
+      "Solo una versión de un recuerdo puede ser verdadera",
+      "La memoria mejora con el paso del tiempo"
+    ],
+    "ans": 1,
+    "exp": "El texto insiste en que al recordar reconstruimos con elementos del presente; por eso no es una copia fiel, sino una reconstrucción."
+  },
+  {
+    "id": "v_imp_20",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Durante años, el puente de madera soportó el paso de carretas y caminantes. Cuando llegaron los primeros camiones, las autoridades siguieron usándolo sin reforzarlo, confiadas en que siempre había aguantado. Una mañana de lluvia, cedió.",
+    "q": "¿Qué se puede deducir del texto?",
+    "opts": [
+      "El puente era indestructible",
+      "Confiar en el pasado sin considerar las nuevas cargas resultó un error",
+      "Los camiones eran demasiado livianos",
+      "La lluvia fue la única causa del colapso"
+    ],
+    "ans": 1,
+    "exp": "Seguir usando el puente sin reforzarlo porque 'siempre aguantó' y que luego ceda implica que confiar en el pasado sin ver las nuevas cargas fue un error (B). A lo niega; los camiones eran más pesados, no livianos (C); y la lluvia fue el detonante, no la única causa (D)."
+  },
+  {
+    "id": "v_pro_15",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El método científico no garantiza verdades absolutas: ofrece las mejores explicaciones disponibles, siempre abiertas a revisión si aparece nueva evidencia. Su fuerza no está en no equivocarse nunca, sino en corregirse. Analice las proposiciones:\nI. La ciencia ofrece explicaciones provisionales, revisables ante nueva evidencia.\nII. La ciencia entrega verdades definitivas e incuestionables.\nIII. La capacidad de corregirse es una de sus fortalezas.\nIV. Equivocarse invalida por completo a la ciencia.",
+    "q": "¿Cuáles proposiciones concuerdan con el texto?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "Solo la I",
+      "Todas"
+    ],
+    "ans": 0,
+    "exp": "La ciencia da explicaciones revisables y se corrige: se deducen la I y la III: por eso A. La II (verdades definitivas) y la IV (equivocarse la invalida) contradicen el texto."
+  },
+  {
+    "id": "v_per_14",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "El mismo bosque que para el leñador es una reserva de madera, para el biólogo es un ecosistema que estudiar, para el excursionista un refugio de paz y para la empresa minera, un obstáculo sobre un yacimiento.",
+    "q": "¿Qué idea central transmite el texto?",
+    "opts": [
+      "El bosque debería talarse",
+      "Un mismo lugar adquiere significados distintos según los intereses de cada quien",
+      "Solo el biólogo comprende el bosque",
+      "Los bosques no tienen valor económico"
+    ],
+    "ans": 1,
+    "exp": "El bosque vale distinto para el leñador, el biólogo, el excursionista y la minera: su significado depende de los intereses de cada quien (B). No propone talarlo (A), no dice que solo el biólogo lo entienda (C) ni que carezca de valor económico (D)."
+  },
+  {
+    "id": "v_cau_17",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Cuando una especie depredadora desaparece de un ecosistema, la población de sus presas suele dispararse. Ese exceso agota la vegetación de la que se alimentan y, con el tiempo, el hambre reduce drásticamente a las propias presas. Así, la ausencia del depredador termina perjudicando a quienes parecían beneficiarse.",
+    "q": "Según el texto, ¿cuál es la consecuencia final de que desaparezca el depredador?",
+    "opts": [
+      "Las presas prosperan para siempre",
+      "Las presas terminan reduciéndose por falta de alimento",
+      "La vegetación crece sin límite",
+      "El ecosistema no sufre cambios"
+    ],
+    "ans": 1,
+    "exp": "Sin depredador, las presas crecen, agotan su alimento y luego disminuyen por hambre (B). Prosperar para siempre (A) y el crecimiento sin límite (C) ignoran ese tope; y sí hay cambios, así que D es falso."
+  },
+  {
+    "id": "v_par_16",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Quien solo conoce su propia postura, en realidad la conoce a medias: sin contrastarla con otras, no puede ver sus puntos débiles.",
+    "q": "¿Cuál opción expresa mejor la idea del texto?",
+    "opts": [
+      "Conviene ignorar las posturas ajenas",
+      "Comprender de verdad una idea exige confrontarla con otras",
+      "Tener una sola postura es lo ideal",
+      "Las posturas ajenas no aportan nada"
+    ],
+    "ans": 1,
+    "exp": "Que conocer solo la propia postura sea conocerla a medias equivale a que entender de verdad una idea exige confrontarla con otras (B). A, C y D defienden quedarse con una sola postura, lo opuesto al texto."
+  },
+  {
+    "id": "v_con_15",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "No reaccionó cuando lo provocaron, no respondió a la burla con otra burla y, aun teniendo motivos de sobra para enojarse, eligió mantener la calma y seguir con su trabajo.",
+    "q": "¿Qué palabra describe mejor su actitud?",
+    "opts": [
+      "Templanza",
+      "Cobardía",
+      "Indiferencia",
+      "Soberbia"
+    ],
+    "ans": 0,
+    "exp": "Dominarse y no caer en la provocación, pudiendo enojarse, es templanza o autocontrol (A). No es cobardía (B: elige no reaccionar), ni indiferencia (C: sí le afecta) ni soberbia (D)."
+  },
+  {
+    "id": "v_pri_18",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Leer ficción no es una fuga inútil de la realidad. Al ponernos en la piel de personajes muy distintos de nosotros, la novela entrena nuestra capacidad de imaginar lo que siente el otro; diversos estudios asocian la lectura literaria con una mayor empatía.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "La ficción es una pérdida de tiempo",
+      "Leer ficción ayuda a desarrollar la empatía",
+      "Solo deberían leerse libros de no ficción",
+      "Los personajes deben parecerse al lector"
+    ],
+    "ans": 1,
+    "exp": "El texto defiende que la ficción, al hacernos sentir lo que sienten otros, desarrolla la empatía (B). A y C la desprecian, y D agrega una condición que el texto no plantea."
+  },
+  {
+    "id": "v_imp_21",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "En la entrevista, el candidato respondió cada pregunta con frases largas que sonaban muy bien pero no decían nada concreto; al terminar, nadie en la sala habría podido explicar qué proponía realmente.",
+    "q": "¿Qué se puede deducir del texto?",
+    "opts": [
+      "El candidato tenía propuestas muy claras",
+      "El candidato evitó comprometerse con ideas concretas",
+      "La entrevista fue muy corta",
+      "El público entendió perfectamente su plan"
+    ],
+    "ans": 1,
+    "exp": "Frases que suenan bien pero no dicen nada concreto implican que el candidato evitó comprometerse con ideas concretas (B). A dice lo contrario; 'entrevista corta' (C) y 'público entendió' (D) contradicen el texto."
+  },
+  {
+    "id": "v_pro_16",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Toda decisión implica renunciar a las demás opciones: elegir un camino es, a la vez, dejar de recorrer los otros. Por eso, decidir bien no es evitar toda pérdida, sino aceptar la pérdida que más vale la pena. Analice las proposiciones:\nI. Elegir una opción supone renunciar a otras.\nII. Es posible decidir sin renunciar a nada.\nIII. Decidir bien implica asumir la mejor pérdida posible.\nIV. Las buenas decisiones no tienen ningún costo.",
+    "q": "¿Cuáles proposiciones se deducen del texto?",
+    "opts": [
+      "I y III",
+      "II y IV",
+      "Solo la III",
+      "Todas"
+    ],
+    "ans": 0,
+    "exp": "Toda decisión implica renunciar a otras opciones (I) y decidir bien es asumir la mejor pérdida (III): por eso A. La II (decidir sin renunciar) y la IV (sin ningún costo) niegan la idea central."
+  }
+]

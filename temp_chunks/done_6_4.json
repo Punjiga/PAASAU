@@ -1,0 +1,97 @@
+[
+  {
+    "id": "q_pdf6_21",
+    "domain": "math",
+    "topic": "Álgebra (Proporciones / Ecuaciones de primer grado)",
+    "dif": 3,
+    "stem": "En una fábrica, por cada artículo que termine una persona trabajadora le entregan 2 bonos. Por cada 3 bonos le dan un almuerzo gratis. César tuvo derecho a 18 almuerzos gratis en el año y no le sobraron bonos.",
+    "q": "¿Cuál es el número de artículos que César entregó ese año?",
+    "opts": [
+      "3",
+      "12",
+      "27",
+      "54",
+      "108"
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "¿Qué relación hay entre los almuerzos y los bonos? Si César obtuvo 18 almuerzos, ¿cuántos bonos acumuló en total? Finalmente, con esa cantidad de bonos, ¿cuántos artículos debió terminar sabiendo que cada artículo equivale a 2 bonos?",
+    "tip_elite": "Trabaja de atrás hacia adelante (backward-solving): empieza con el resultado final (18 almuerzos) y usa las equivalencias para regresar paso a paso hasta llegar a la cantidad de artículos."
+  },
+  {
+    "id": "q_pdf6_22",
+    "domain": "math",
+    "topic": "Lógica Matemática / Razonamiento Cuantitativo",
+    "dif": 3,
+    "stem": "Para una fiesta hay tazas verdes, tazas amarillas y tazas blancas. Las blancas son tantas como las verdes y las amarillas juntas. En la fiesta solamente se utilizaron las dos terceras partes del total de las tazas. Según la información anterior, con certeza,",
+    "q": "¿cuáles tazas se usaron?",
+    "opts": [
+      "Algunas tazas verdes.",
+      "Algunas tazas blancas.",
+      "Algunas tazas amarillas.",
+      "Todas las tazas verdes.",
+      "Todas las tazas blancas."
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "Piensa en el total de tazas en función de las blancas. Si las blancas equivalen exactamente a la mitad del total, ¿qué sucede si se utilizan más de la mitad de las tazas (las dos terceras partes)? ¿Podrías alcanzar esa fracción del total sin tocar al menos una taza blanca?",
+    "tip_elite": "Dale valores arbitrarios a las variables para visualizar mejor el problema. Si V = 10 y A = 20, entonces B = 30, sumando un total de 60. Se usan 2/3 de 60, que son 40. Si gastaras todas las V y A, sólo sumarías 30, por lo que obligatoriamente debes usar algunas tazas blancas."
+  },
+  {
+    "id": "q_pdf6_23",
+    "domain": "verbal",
+    "topic": "Comprensión de lectura (Inferencia)",
+    "dif": 3,
+    "stem": "La relación más importante entre el cerebro y los otros órganos internos se establece por medio del sistema nervioso, el cual se divide en tres formaciones principales: el sistema nervioso autónomo, el sistema nervioso central y el sistema nervioso periférico.",
+    "q": "Según lo anterior, ¿cuál de las siguientes opciones es una conclusión lógica del texto?",
+    "opts": [
+      "Es inexistente la posibilidad de otras relaciones interorgánicas, aparte de la que establece el sistema nervioso.",
+      "El sistema nervioso es el producto de la relación que se establece entre el cerebro y los otros órganos internos.",
+      "Si el sistema nervioso se atrofia, se afecta la relación entre el cerebro y los otros órganos internos.",
+      "De las tres formaciones del sistema nervioso, la más importante es la llamada sistema nervioso central.",
+      "Además de las formaciones citadas, hay innumerables formaciones distintas dentro del sistema nervioso."
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "Si el texto afirma que el sistema nervioso es el medio a través del cual se establece la relación más importante entre el cerebro y los órganos internos, ¿qué sucedería lógicamente con esa relación si el sistema nervioso falla o se atrofia?",
+    "tip_elite": "En preguntas de inferencia o conclusión, busca la opción que sea una consecuencia lógica y necesaria de las premisas dadas. Descarta opciones que asuman absolutos (como 'inexistente') o añadan información no mencionada (como establecer cuál formación es la más importante)."
+  },
+  {
+    "id": "q_pdf6_24",
+    "domain": "math",
+    "topic": "Álgebra / Desigualdades",
+    "dif": 3,
+    "stem": "Mirta, Óscar y Gloria son estudiantes universitarios. Gloria ganó 50 créditos más que Óscar. Óscar ganó el triple de créditos que Mirta. Si entre los tres han ganado más de 78 créditos pero menos de 99, entonces, es posible que:",
+    "q": "",
+    "opts": [
+      "Mirta haya ganado 7 créditos.",
+      "Óscar haya ganado 12 créditos.",
+      "Óscar haya ganado 15 créditos.",
+      "Gloria haya ganado 59 créditos.",
+      "Óscar y Mirta juntos hayan ganado 44 créditos."
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "Si expresas los créditos de los tres en función de los créditos de Mirta (llamémoslo 'x'), obtendrás una expresión para el total de créditos. ¿Cómo puedes usar la desigualdad '78 < Total < 99' para encontrar los posibles valores de 'x'? Una vez hallado 'x', ¿cuántos créditos tendría Óscar?",
+    "tip_elite": "Traduce todo a una sola variable: M = x, O = 3x, G = 3x + 50. El total es 7x + 50. Evalúa los extremos: 78 < 7x + 50 < 99 implica que 28 < 7x < 49, por tanto, 4 < x < 7. Sabiendo que los créditos suelen ser enteros, prueba con x=5 o x=6 y verifica las opciones."
+  },
+  {
+    "id": "q_pdf6_25",
+    "domain": "verbal",
+    "topic": "Completar oraciones",
+    "dif": 3,
+    "stem": "Durante mucho tiempo, el ser humano utilizó las partes de su propio cuerpo como instrumentos de medición. Todavía hoy se utilizan unidades como el codo y el pie, pero el ser humano ha preferido otras. La ____________ de tales medidas residía en su variabilidad.",
+    "q": "",
+    "opts": [
+      "ventaja.",
+      "desventaja.",
+      "única ventaja.",
+      "mayor ventaja.",
+      "única desventaja."
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "El texto menciona que el ser humano prefirió otras unidades de medida a pesar de usar antes las partes del cuerpo. Luego señala que estas medidas basadas en el cuerpo tenían 'variabilidad' (cada persona tiene un tamaño diferente de pie o codo). ¿Esa variabilidad sería algo positivo o negativo para una medición precisa?",
+    "tip_elite": "Presta atención al conector 'pero el ser humano ha preferido otras'. Esto indica un contraste y sugiere que el método anterior tenía un problema. La 'variabilidad' en una medida implica inexactitud, lo cual te lleva directamente a buscar una palabra de connotación negativa."
+  }
+]

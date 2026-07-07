@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q_pdf6_26",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En la mitología griega, las divinidades\nagrícolas secundarias se caracterizaban por\nsu aspecto __________: mitad ser humano, mitad\nanimal.",
+    "q": "",
+    "opts": [
+      "incompleto",
+      "imperfecto",
+      "ambiguo",
+      "deforme",
+      "mixto"
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_27",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Cuando recibimos elogios de algunas\npersonas, nos quedamos pendientes de sus\nlabios por temer que sus alabanzas no sean sino\nun antecedente de críticas. Quien pronuncia\nuna alabanza asume, al menos por un momento,\nla posición de juez.\nDel texto anterior, con certeza, es correcto\nconcluir que quien alaba,",
+    "q": "",
+    "opts": [
+      "acusa.",
+      "enjuicia.",
+      "censura.",
+      "condena.",
+      "absuelve."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_28",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Rafael debe digitar una contraseña de 6\ndígitos para desbloquear la pantalla de inicio de\nsu computadora, pero no recuerda los últimos\n2 dígitos. Lo que recuerda es que al sumar esos\n2 dígitos el resultado es 10 y al multiplicarlos el\nresultado es mayor a 10.\n¿Cuántas posibilidades de contraseña tiene",
+    "q": "Rafael para digitar?",
+    "opts": [
+      "4",
+      "7",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_29",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Cierto año, Rebeca tenía 20 años y sus dos\nhermanos 6 y 7 años.\n¿Cuál es el menor número de años que debe\ntranscurrir, a partir de ese año, para que la edad\nde Rebeca llegue a ser menor que la suma de las",
+    "q": "edades que tendrán sus dos hermanos?",
+    "opts": [
+      "28",
+      "16",
+      "9",
+      "8",
+      "7"
+    ],
+    "ans": 3,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_30",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Una comerciante compró latas de frutas\npara vender 10 cada día. Sucedió que el primer\ndía logró vender las 10 latas, sin embargo, en los\nrestantes vendió cada día una menos que el día\nanterior, razón por la cual, en el tiempo previsto\npara la venta todavía le quedaban 6 latas.\n¿Cuántos días le tomó vender todas las latas de",
+    "q": "frutas?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": ""
+  }
+]

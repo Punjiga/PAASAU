@@ -1,0 +1,674 @@
+[
+  {
+    "id": "m_alr_4",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "En el contexto de una ecuación lineal, se establece que 3(x - 2) = 18.",
+    "q": "A partir de esta premisa, ¿cuál es el valor numérico de la expresión algebraica x + 5?",
+    "opts": [
+      "13",
+      "8",
+      "11",
+      "21"
+    ],
+    "ans": 0,
+    "exp": "Para resolver este problema, debemos seguir un orden lógico despejando la incógnita y luego evaluando la expresión solicitada.\n\n*   **Despeje inicial:** Partimos de la ecuación 3(x - 2) = 18. Dividiendo ambos lados entre 3, obtenemos x - 2 = 6.\n*   **Valor de x:** Al sumar 2 en ambos lados, determinamos que x = 8.\n*   **Evaluación final:** El problema no pide el valor de x, sino el de x + 5. Sustituyendo, tenemos 8 + 5 = 13.\n\n**Tip Élite:** En los exámenes de admisión, el valor de la incógnita (en este caso 8) suele aparecer como distractor. Lee siempre detenidamente la pregunta final antes de marcar tu respuesta."
+  },
+  {
+    "id": "m_alr_5",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Considere que n representa un número entero cualquiera.",
+    "q": "¿Cuál de las siguientes expresiones algebraicas garantiza como resultado un número impar en todos los casos posibles?",
+    "opts": [
+      "2n",
+      "n + 2",
+      "2n + 1",
+      "n²"
+    ],
+    "ans": 2,
+    "exp": "Analicemos las propiedades de paridad para cada expresión en función de un entero n cualquiera:\n\n*   **2n:** Por definición, multiplicar cualquier entero por 2 siempre da como resultado un número par.\n*   **2n + 1:** Si a un número par (2n) le sumamos 1, el resultado se desplaza necesariamente al siguiente número, el cual es impar.\n*   **n + 2 y n²:** Dependen de la paridad original de n. Si n es par, ambos serán pares; si n es impar, ambos serán impares.\n\n**Tip Élite:** Cuando te pidan expresiones que \"siempre\" cumplan una condición, puedes probar rápidamente sustituyendo n por un número par (ej. 2) y por uno impar (ej. 1) para descartar distractores."
+  },
+  {
+    "id": "m_alr_6",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Se establece matemáticamente que el producto de dos números enteros a y b da como resultado un número par.",
+    "q": "A partir de esta información, ¿qué conclusión se puede deducir con absoluta certeza?",
+    "opts": [
+      "Ambos números deben ser impares",
+      "Al menos uno de los factores debe ser par",
+      "Ambos números deben ser necesariamente pares",
+      "Ambos números tienen el mismo signo"
+    ],
+    "ans": 1,
+    "exp": "Para determinar la verdad de esta afirmación, evaluemos las reglas de multiplicación según la paridad:\n\n*   **Impar × Impar:** Siempre resulta en un número impar (ej. 3 × 3 = 9).\n*   **Par × Impar o Par × Par:** Siempre resulta en un número par (ej. 2 × 3 = 6; 2 × 4 = 8).\n\nPor lo tanto, para que el producto sea par, basta con que **al menos uno** de los factores lo sea. No es obligatorio que ambos lo sean.\n\n**Tip Élite:** En lógica matemática, la condición \"al menos uno\" es fundamental cuando se analiza la presencia del factor 2 en una multiplicación."
+  },
+  {
+    "id": "m_uni_5",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "La proyección de una obra cinematográfica tiene una duración exacta de 2 horas y 35 minutos sin interrupciones.",
+    "q": "¿A cuántos minutos equivale la duración total de dicha proyección?",
+    "opts": [
+      "155 minutos",
+      "235 minutos",
+      "135 minutos",
+      "150 minutos"
+    ],
+    "ans": 0,
+    "exp": "Para unificar las unidades de tiempo, debemos convertir todo a minutos:\n\n*   **Conversión de horas:** Sabemos que 1 hora = 60 minutos. Por lo tanto, 2 horas = 2 × 60 = 120 minutos.\n*   **Suma final:** Añadimos los minutos restantes a este total: 120 minutos + 35 minutos = 155 minutos.\n\n**Tip Élite:** Evita la trampa visual de simplemente juntar los números (como 2 y 35 para formar 235). Las unidades de tiempo trabajan en base 60, no en base 10."
+  },
+  {
+    "id": "m_uni_6",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un tren de alta velocidad se desplaza manteniendo una velocidad constante de 120 km/h.",
+    "q": "¿Cuál es la distancia exacta que recorrerá este tren en un lapso de 15 minutos?",
+    "opts": [
+      "30 km",
+      "60 km",
+      "18 km",
+      "20 km"
+    ],
+    "ans": 0,
+    "exp": "Para resolver problemas de cinemática básica, es crucial que las unidades de tiempo coincidan. \n\n*   **Conversión de tiempo:** Notemos que 15 minutos equivalen a una cuarta parte de una hora (15/60 = 1/4 hora).\n*   **Cálculo de distancia:** Dado que el tren avanza 120 km en una hora completa, en un cuarto de hora avanzará la cuarta parte de esa distancia.\n*   **Operación:** 120 km × (1/4) = 30 km.\n\n**Tip Élite:** Memorizar fracciones comunes de tiempo (15 min = 1/4 h, 20 min = 1/3 h) agilizará enormemente tus cálculos en el examen."
+  },
+  {
+    "id": "m_uni_7",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un recipiente cilíndrico contiene exactamente 1,5 litros de una solución líquida. De este volumen, se extraen 3 porciones de 250 ml cada una.",
+    "q": "¿Cuántos mililitros de la solución líquida permanecen en el recipiente tras la extracción?",
+    "opts": [
+      "750 ml",
+      "1 250 ml",
+      "500 ml",
+      "250 ml"
+    ],
+    "ans": 0,
+    "exp": "Este problema requiere estandarizar las unidades de volumen antes de realizar las operaciones aritméticas:\n\n*   **Conversión inicial:** Sabemos que 1 litro = 1000 mililitros. Así, 1,5 L = 1500 ml.\n*   **Volumen extraído:** Se retiran 3 porciones de 250 ml, lo que equivale a un total de 3 × 250 = 750 ml.\n*   **Diferencia:** Restamos el volumen extraído al volumen original: 1500 ml - 750 ml = 750 ml.\n\n**Tip Élite:** Trabaja siempre con la unidad más pequeña que presenta el problema (en este caso, mililitros) para evitar lidiar con números decimales que pueden complicar la resta."
+  },
+  {
+    "id": "m_raz_5",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un equipo de 4 obreros puede finalizar el pintado de una edificación en 9 días laborables, manteniendo un ritmo de trabajo constante.",
+    "q": "Si se incorporan más personas para formar un equipo de 6 obreros trabajando al mismo ritmo, ¿cuántos días les tomará completar la misma tarea?",
+    "opts": [
+      "6 días",
+      "13,5 días",
+      "4 días",
+      "12 días"
+    ],
+    "ans": 0,
+    "exp": "Este es un clásico caso de **proporcionalidad inversa**: a mayor cantidad de obreros, menor cantidad de días requeridos.\n\n*   **Cálculo del trabajo total:** El esfuerzo necesario para pintar la casa se mide en \"obrero-días\". Esto es 4 obreros × 9 días = 36 obrero-días.\n*   **Nueva distribución:** Ahora tenemos 6 obreros para realizar esos 36 \"obrero-días\" de trabajo.\n*   **Resolución:** Dividimos el trabajo total entre el nuevo número de trabajadores: 36 / 6 = 6 días.\n\n**Tip Élite:** Nunca apliques una regla de tres directa (multiplicar cruzado) cuando se trate de trabajadores y tiempo; pregúntate siempre primero si la relación es directa o inversa."
+  },
+  {
+    "id": "m_raz_6",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "La elaboración de una receta estándar calculada para 6 porciones requiere exactamente 450 g de harina.",
+    "q": "Bajo la misma proporción, ¿qué cantidad de harina en gramos se necesita para preparar 10 porciones?",
+    "opts": [
+      "750 g",
+      "600 g",
+      "900 g",
+      "720 g"
+    ],
+    "ans": 0,
+    "exp": "Para resolver esta proporción directa, lo más metódico es encontrar primero la cantidad unitaria:\n\n*   **Valor unitario:** Dividimos la cantidad total de harina entre el número de porciones para saber cuánto requiere una sola porción: 450 g ÷ 6 = 75 g por porción.\n*   **Proyección:** Multiplicamos este requerimiento unitario por la nueva cantidad de porciones deseadas: 75 g × 10 = 750 g.\n*   **Alternativa:** También puedes usar una regla de tres simple, que te llevará al mismo resultado matemático.\n\n**Tip Élite:** El método del valor unitario suele ser más intuitivo y menos propenso a errores de planteamiento que organizar una regla de tres a ciegas."
+  },
+  {
+    "id": "m_raz_7",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un vehículo automotor ha demostrado rendir 240 kilómetros consumiendo un total de 16 litros de combustible bajo condiciones normales.",
+    "q": "Asumiendo un rendimiento constante, ¿cuántos litros de combustible requerirá para completar un trayecto de 90 kilómetros?",
+    "opts": [
+      "5 L",
+      "6 L",
+      "8 L",
+      "7,5 L"
+    ],
+    "ans": 1,
+    "exp": "Al igual que en otros problemas de proporción, hallar el rendimiento base facilita los cálculos:\n\n*   **Rendimiento del vehículo:** Dividimos la distancia total entre los litros consumidos: 240 km ÷ 16 L = 15 km/L.\n*   **Cálculo del requerimiento:** Sabiendo que avanza 15 km por cada litro, dividimos la nueva distancia entre este rendimiento para hallar los litros necesarios: 90 km ÷ 15 km/L = 6 L.\n\n**Tip Élite:** Simplificar fracciones antes de multiplicar puede salvarte tiempo en reglas de tres complejas, permitiendo resolver ejercicios de forma mental más rápida."
+  },
+  {
+    "id": "v_fin_8",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Una corporación asume el costo de capacitaciones para sus empleados durante el horario laboral. A pesar del evidente sacrificio económico y temporal, la directiva argumenta que esta política es innegociable, ya que impacta positivamente en la eficiencia operativa a largo plazo.",
+    "q": "¿Cuál es la finalidad principal subyacente a la decisión de la corporación?",
+    "opts": [
+      "Justificar el gasto del presupuesto anual destinado a recursos humanos",
+      "Optimizar el desempeño general y la eficiencia de su personal",
+      "Disminuir progresivamente la carga horaria de la jornada laboral",
+      "Identificar y descartar a los empleados con menor capacidad de aprendizaje"
+    ],
+    "ans": 1,
+    "exp": "Para identificar la finalidad, debemos diferenciar entre el costo de una acción y el propósito que la justifica.\n\n*   **Análisis del contexto:** El texto menciona el tiempo y el dinero como sacrificios que la empresa acepta de manera consciente.\n*   **Identificación del objetivo:** El motivo expreso que justifica este esfuerzo es que \"impacta positivamente en la eficiencia operativa\".\n*   **Conclusión:** Esto se traduce directamente en la intención de mejorar el desempeño del personal.\n\n**Tip Élite:** La finalidad siempre responde al \"¿para qué?\" de una acción, no a las consecuencias secundarias o a los obstáculos superados."
+  },
+  {
+    "id": "v_fin_9",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Durante el período de evaluaciones finales, la biblioteca universitaria extendió su horario hasta la medianoche. La dirección enfatizó que la medida no pretende alterar los ciclos de sueño del estudiantado, sino garantizar un entorno propicio para la concentración académica de quienes carecen de condiciones adecuadas en sus hogares.",
+    "q": "¿Cuál es el propósito central de la extensión del horario en la biblioteca?",
+    "opts": [
+      "Promover la reducción de horas de sueño para incrementar el estudio",
+      "Proveer un espacio óptimo y silencioso para el aprendizaje y concentración",
+      "Incrementar el presupuesto destinado al mantenimiento y la electricidad",
+      "Posicionarse competitivamente frente a otros centros de estudio de la zona"
+    ],
+    "ans": 1,
+    "exp": "El texto es explícito en descartar ciertas intenciones y afirmar otras:\n\n*   **Lo que no es:** Se niega categóricamente que el objetivo sea que los estudiantes duerman menos, lo cual descarta la primera opción.\n*   **El propósito real:** Se menciona que la meta es \"garantizar un entorno propicio para la concentración\", lo que se alinea perfectamente con proveer un espacio óptimo.\n*   **Distractores:** El gasto en electricidad es un efecto colateral indeseado, no un fin; y la competencia no se menciona en absoluto.\n\n**Tip Élite:** En comprensión lectora, presta especial atención a las construcciones de contraste como \"no busca... sino...\". Estas estructuras señalan directamente la finalidad descartando paralelamente los distractores comunes."
+  },
+  {
+    "id": "v_com_8",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "En cuanto el docente distribuyó sin previo aviso los folletos de una evaluación sorpresa, una porción del grupo experimentó taquicardia, sufrió lagunas mentales respecto al material estudiado y permaneció con la mirada fija en el documento intacto.",
+    "q": "¿Qué fenómeno psicológico o conductual describe mejor la reacción de este grupo de estudiantes?",
+    "opts": [
+      "Un estado de hiperconcentración inducida",
+      "Un bloqueo cognitivo provocado por la ansiedad",
+      "Un brote de euforia académica",
+      "Una actitud de estoicismo y calma absoluta"
+    ],
+    "ans": 1,
+    "exp": "El texto detalla una serie de reacciones fisiológicas y cognitivas muy específicas:\n\n*   **Síntomas descritos:** Taquicardia (aceleración del pulso), lagunas mentales (olvido) y parálisis temporal (mirada fija, inacción).\n*   **Interpretación:** Este cuadro sintomatológico corresponde a una respuesta aguda de estrés y ansiedad que impide el funcionamiento cognitivo normal.\n*   **Descarte:** No hay evidencia de concentración, alegría ni calma, sino todo lo contrario; el individuo pierde la capacidad de resolver la prueba.\n\n**Tip Élite:** Relaciona los síntomas físicos descritos en el texto con conceptos abstractos. La inmovilidad ante el estrés se denomina clásicamente como un \"bloqueo\"."
+  },
+  {
+    "id": "v_com_9",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Frente a un interlocutor que sostiene posturas radicalmente opuestas a las suyas, Marcos adopta una actitud receptiva: permite que el otro desarrolle su argumento completo, formula preguntas aclaratorias y, posteriormente, articula su contraargumento sin recurrir a falacias o descalificaciones personales.",
+    "q": "¿Cómo se caracteriza el comportamiento de Marcos ante la divergencia ideológica?",
+    "opts": [
+      "Manifiesta evasión frente al conflicto argumentativo",
+      "Ejerce el diálogo desde una postura de respeto intelectual",
+      "Exhibe una tendencia a la sumisión cediendo terreno inmediatamente",
+      "Demuestra una actitud impositiva y dogmática"
+    ],
+    "ans": 1,
+    "exp": "La actitud de Marcos se describe mediante acciones concretas que denotan apertura y cortesía:\n\n*   **Acciones:** Escuchar completo, preguntar para entender, y responder sin ataques personales.\n*   **Síntesis:** Este conjunto de acciones es la definición misma del diálogo respetuoso y constructivo.\n*   **Falsedades:** No evita el tema (pues responde), no es sumiso (pues presenta su contraargumento) ni es dogmático (pues escucha y no ataca).\n\n**Tip Élite:** La clave aquí es notar que el personaje mantiene firme su posición, pero lo hace validando el derecho del otro a expresarse, lo cual define el \"respeto\" en un contexto argumentativo."
+  },
+  {
+    "id": "v_cau_10",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Las precipitaciones torrenciales que azotaron la región durante el fin de semana provocaron el anegamiento del campo de juego; en consecuencia, el encuentro deportivo fue suspendido y su fecha de realización fue pospuesta para el próximo mes.",
+    "q": "¿Qué secuencia lógica de causa y efecto se extrae directamente del texto?",
+    "opts": [
+      "La suspensión del evento propició las precipitaciones",
+      "Las condiciones meteorológicas adversas originaron la suspensión del evento",
+      "La reprogramación del calendario fue la causa del clima severo",
+      "No existe correlación comprobable entre los eventos mencionados"
+    ],
+    "ans": 1,
+    "exp": "Para establecer la relación causal, debemos seguir el orden cronológico y lógico de los eventos narrados:\n\n*   **Hecho desencadenante (Causa):** Las precipitaciones torrenciales inundaron la cancha.\n*   **Hecho resultante (Efecto):** Al no poder usarse la cancha, se cancela y pospone el encuentro deportivo.\n*   **Conclusión:** Las lluvias son la causa y la suspensión es el efecto directo.\n\n**Tip Élite:** Los conectores lógicos como \"en consecuencia\", \"por eso\" o \"por lo tanto\" siempre introducen el efecto o resultado de la premisa inmediatamente anterior."
+  },
+  {
+    "id": "v_cau_11",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Con el afán de abarcar todo el temario, Marcos decidió omitir sus horas de sueño nocturno. Durante el desarrollo del examen, experimentó serias dificultades para mantener el enfoque, viéndose forzado a releer múltiples veces cada inciso, abrumado por una fatiga persistente.",
+    "q": "¿Cuál fue el impacto directo de la privación de sueño según el texto?",
+    "opts": [
+      "Un incremento significativo en su retención de información",
+      "Un estado óptimo de vigilia durante la evaluación",
+      "Un detrimento en su rendimiento cognitivo derivado de la fatiga",
+      "La deserción y abandono del aula de exámenes"
+    ],
+    "ans": 2,
+    "exp": "El texto establece una conexión directa entre una acción previa y un resultado indeseado:\n\n*   **La acción (Causa):** No dormir para estudiar más.\n*   **Los síntomas descritos:** Dificultad para concentrarse, necesidad de releer, sensación de agotamiento.\n*   **La consecuencia real (Efecto):** Aunque su intención era saber más, la falta de sueño mermó sus capacidades cognitivas (detrimento de su rendimiento).\n\n**Tip Élite:** No confundas la *intención* del personaje (estudiar más para rendir mejor) con el *resultado real* narrado en el texto (fatiga y falta de concentración)."
+  },
+  {
+    "id": "v_cau_12",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La aplicación tópica y frecuente de lociones con factor de protección solar disminuye drásticamente la probabilidad de desarrollar lesiones cutáneas severas por radiación.",
+    "q": "¿Qué tipo de relación causal se establece en este enunciado?",
+    "opts": [
+      "El protector solar es un agente causante de lesiones",
+      "El uso de fotoprotectores actúa como un mitigador de riesgos dérmicos",
+      "La radiación solar carece de impacto en el tejido humano",
+      "El daño tisular por radiación es un fenómeno inevitable"
+    ],
+    "ans": 1,
+    "exp": "El enunciado plantea una relación preventiva clara:\n\n*   **La variable independiente (Causa):** La aplicación constante de protector solar.\n*   **La variable dependiente (Efecto):** La disminución del riesgo de sufrir quemaduras (mitigación del riesgo).\n*   **Análisis de distractores:** El sol sí hace daño (falsificando C), las lesiones no son inevitables (falsificando D), y el protector previene, no causa daño (falsificando A).\n\n**Tip Élite:** Un \"mitigador de riesgos\" es una expresión de nivel avanzado que equivale exactamente a \"reduce el riesgo\"."
+  },
+  {
+    "id": "v_sim_8",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El ensamblaje de un emparedado requiere ejecutar un par de pasos elementales; en contraste, la confección de un pastel nupcial demanda la sincronización de recetas precisas, el monitoreo riguroso de temperaturas y la aplicación meticulosa de elementos ornamentales.",
+    "q": "¿Qué dicotomía fundamental establece el autor entre ambos procesos culinarios?",
+    "opts": [
+      "La disparidad en la inversión económica requerida",
+      "El contraste entre la simplicidad operativa y la alta complejidad estructural",
+      "La distinción basada en el valor organoléptico o sabor del resultado",
+      "La diferenciación por el origen histórico de cada preparación"
+    ],
+    "ans": 1,
+    "exp": "El autor utiliza la comparación para resaltar las características de dos procesos muy distintos:\n\n*   **Sujeto A:** El emparedado (pocos pasos, elemental).\n*   **Sujeto B:** El pastel nupcial (recetas precisas, sincronización, monitoreo, ornamentación).\n*   **La dicotomía:** El contraste no se enfoca en costo, sabor o historia, sino en la cantidad de variables y pasos involucrados. Es decir, la escala va de lo simple a lo muy complejo.\n\n**Tip Élite:** Fíjate en los adjetivos y enumeraciones. Si un sujeto se describe con una frase breve y el otro con una larga lista de requisitos técnicos, el texto contrasta los niveles de complejidad."
+  },
+  {
+    "id": "v_sim_9",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Llevar agua a su punto de ebullición constituye una operación lineal y unitaria. Por el contrario, la orquestación de un banquete de tres tiempos para una veintena de comensales impone la planificación logística de insumos, la sincronización milimétrica de cocciones y la gestión simultánea de múltiples estaciones de trabajo.",
+    "q": "¿Qué perspectiva se obtiene al contrastar la preparación del banquete con la ebullición del agua?",
+    "opts": [
+      "Se subraya su carácter elemental",
+      "Se evidencia un incremento exponencial en su nivel de complejidad",
+      "Se demuestra que es un proceso mucho más veloz",
+      "Se enfoca en la reducción de los costos asociados"
+    ],
+    "ans": 1,
+    "exp": "Nuevamente, estamos ante un análisis comparativo de procesos:\n\n*   **Proceso básico:** Hervir agua (operación lineal de un paso).\n*   **Proceso avanzado:** Hacer un banquete (planificación logística, sincronización, gestión simultánea).\n*   **Interpretación:** La descripción del banquete está cargada de términos que denotan alta dificultad y organización, lo que evidencia que es un proceso sustancialmente más complejo.\n\n**Tip Élite:** En preguntas de \"simple/complejo\", las palabras como \"orquestación\", \"logística\" o \"simultánea\" son indicadores directos de sistemas complejos."
+  },
+  {
+    "id": "v_con_10",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Notó que su colega no disponía de alimentos durante el receso, por lo que decidió fraccionar sus propias provisiones y ofrecérselas, todo ello por iniciativa propia y sin mediar solicitud alguna.",
+    "q": "¿Qué concepto ético o moral encapsula de manera precisa esta forma de actuar?",
+    "opts": [
+      "Solidaridad",
+      "Animadversión",
+      "Indolencia",
+      "Soberbia"
+    ],
+    "ans": 0,
+    "exp": "El enunciado describe un comportamiento altruista específico:\n\n*   **La acción:** Compartir recursos propios con alguien en necesidad, de manera espontánea.\n*   **Conceptualización:** Esta empatía puesta en acción en beneficio del prójimo es la definición exacta de solidaridad.\n*   **Contraste:** Los otros términos describen hostilidad (animadversión), pereza o falta de empatía (indolencia) y exceso de orgullo (soberbia), todos opuestos a la acción narrada.\n\n**Tip Élite:** Enriquecer tu vocabulario es crucial. La \"indolencia\" (falta de sensibilidad) aparece frecuentemente como distractor en reactivos sobre virtudes sociales."
+  },
+  {
+    "id": "v_con_11",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "A lo largo de todo el ciclo, mantuvo una puntualidad inquebrantable, despachó la totalidad de sus asignaciones en los plazos estipulados y respetó escrupulosamente el tiempo ajeno, incluso frente a las exigencias de horarios matutinos severos.",
+    "q": "¿Qué atributo del carácter sintetiza de forma integral el patrón de comportamiento descrito?",
+    "opts": [
+      "Responsabilidad",
+      "Inflexibilidad",
+      "Serendipia",
+      "Codicia"
+    ],
+    "ans": 0,
+    "exp": "El texto enumera una serie de hábitos que apuntan a una misma cualidad:\n\n*   **Evidencia:** Puntualidad constante, entrega de tareas a tiempo y respeto por los acuerdos.\n*   **Concepto:** El cumplimiento sostenido de las obligaciones asumidas se denomina responsabilidad.\n*   **Descarte:** No se menciona que sea cerrado a cambios (inflexibilidad), que dependa de la suerte o el azar (serendipia), ni que busque acumular bienes (codicia).\n\n**Tip Élite:** La clave para conceptualizar recae en abstraer el rasgo común. Cumplir normas y tiempos siempre es un indicador principal de responsabilidad profesional y personal."
+  },
+  {
+    "id": "v_ord_8",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "Históricamente, el área de manufactura padecía de un estado de entropía: los implementos yacían apilados sin criterio, dificultando su localización. Tras una reestructuración intensiva, cada instrumento fue dispuesto en paneles de sujeción, categorizado por su función y debidamente etiquetado.",
+    "q": "¿Qué transición organizativa experimentó específicamente el área de manufactura?",
+    "opts": [
+      "Un desplazamiento desde un sistema estructurado hacia el caos",
+      "Una transición paradigmática del desorden absoluto hacia el orden sistemático",
+      "Una reducción de sus dimensiones espaciales",
+      "Un recambio tecnológico de sus equipos base"
+    ],
+    "ans": 1,
+    "exp": "El enunciado relata un cambio de estado claro a través de un proceso de intervención:\n\n*   **Estado inicial:** Entropía, implementos apilados sin criterio (Desorden).\n*   **Intervención:** Reestructuración intensiva.\n*   **Estado final:** Instrumentos categorizados, etiquetados y en sus paneles (Orden sistemático).\n*   **Conclusión:** Se produjo un tránsito directo del desorden al orden.\n\n**Tip Élite:** La palabra \"entropía\" en contextos verbales suele usarse como sinónimo culto de desorden, caos o tendencia a la desorganización."
+  },
+  {
+    "id": "v_ord_9",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El entorno virtual de trabajo de la analista evolucionó de albergar una miríada de archivos dispersos bajo nomenclaturas ambiguas como 'borrador1' y 'copia_final_v2', a operar mediante una arquitectura de directorios estructurados jerárquicamente por proyecto, cronología y temática.",
+    "q": "¿Qué tipo de transformación estructural ilustra este caso?",
+    "opts": [
+      "El abandono de los esquemas organizativos en favor del caos",
+      "La sistematización de un entorno previamente caótico y desordenado",
+      "La sustitución del formato de carpetas por documentos aislados",
+      "La permanencia en un estado de estancamiento operativo"
+    ],
+    "ans": 1,
+    "exp": "Se describe la evolución en la gestión de la información digital:\n\n*   **Situación original:** Archivos dispersos y nomenclaturas ambiguas (Desorden).\n*   **Nueva situación:** Arquitectura estructurada por proyectos, cronología y temática (Orden).\n*   **Síntesis:** La transformación consiste en la sistematización o instauración de orden donde antes había caos digital.\n\n**Tip Élite:** El término \"miríada\" (cantidad muy grande e indefinida) y las nomenclaturas sin sistema apuntan claramente a la ausencia de una estructura lógica inicial."
+  },
+  {
+    "id": "v_tmp_8",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "El protocolo estándar de preparación requiere: primero, elevar la temperatura del agua hasta el punto de ebullición; segundo, incorporar la molienda de café; tercero, filtrar la infusión resultante; y finalmente, verterla en el recipiente para su consumo.",
+    "q": "De acuerdo con el procedimiento descrito, ¿qué acción antecede inmediatamente al vertido en el recipiente?",
+    "opts": [
+      "Llevar el líquido a punto de ebullición",
+      "Filtrar o colar la infusión",
+      "Incorporar el grano molido",
+      "Higienizar la taza receptora"
+    ],
+    "ans": 1,
+    "exp": "El texto enumera pasos cronológicos precisos:\n\n1.  Ebullición del agua.\n2.  Incorporar el café.\n3.  Filtrar la infusión.\n4.  Verter para el consumo (servir).\n\n*   **Análisis de la pregunta:** Se nos pregunta qué ocurre *justo antes* del paso 4 (verter).\n*   **Respuesta:** El paso 3, que corresponde a filtrar o colar la infusión.\n\n**Tip Élite:** Cuidado con los conectores temporales y ordinales. \"Inmediatamente antes\" o \"antecede\" te exigen identificar el eslabón exacto previo en la cadena, no cualquier evento pasado."
+  },
+  {
+    "id": "v_tmp_9",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "En su rutina de entrenamiento competitivo, el velocista realiza primero ejercicios precompetitivos de activación térmica; procede luego a la ejecución de su prueba en pista; y concluye su jornada ejecutando maniobras de elongación para disipar el ácido láctico muscular.",
+    "q": "¿Qué fase de la rutina ejecuta el deportista en el periodo posterior a la carrera?",
+    "opts": [
+      "La activación térmica precompetitiva",
+      "Las maniobras de elongación o estiramiento",
+      "El proceso administrativo de inscripción",
+      "El periodo de reposo nocturno o sueño"
+    ],
+    "ans": 1,
+    "exp": "Identifiquemos la secuencia de las fases del entrenamiento descritas:\n\n1.  Activación térmica (calentamiento).\n2.  Prueba en pista (carrera).\n3.  Elongación muscular (estiramiento).\n\n*   **Análisis:** Se interroga sobre lo que sucede después del paso 2.\n*   **Respuesta:** La elongación o estiramiento para relajar los músculos.\n\n**Tip Élite:** Distingue bien las fases temporales del texto de los conocimientos generales. Quizás un atleta se inscribe antes y duerme después, pero debes responder *estrictamente* basándote en la información dada en la lectura."
+  },
+  {
+    "id": "v_ese_8",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Así como la propiedad intrínseca e insustituible de una brújula radica en indicar invariablemente el norte magnético —sin importar si está hecha de latón, plástico o incrustada en un reloj—, todo instrumento se define ontológicamente por la función rectora que desempeña.",
+    "q": "Bajo este paradigma funcionalista, ¿cuál es la característica constitutiva que define la esencia de un termómetro?",
+    "opts": [
+      "La capacidad de señalar puntos cardinales",
+      "La facultad de cuantificar la energía térmica o temperatura",
+      "El mecanismo de medición de intervalos temporales",
+      "La graduación utilizada para medir trayectos longitudinales"
+    ],
+    "ans": 1,
+    "exp": "El texto plantea que la esencia de un objeto radica en su función principal (para qué sirve), descartando factores físicos accidentales.\n\n*   **Analogía propuesta:** Brújula = Indicar el norte.\n*   **Aplicación al caso:** Termómetro = Medir temperatura.\n*   **Resolución:** La razón de ser de un termómetro, más allá de su forma de mercurio o digital, es cuantificar la temperatura.\n\n**Tip Élite:** Una propiedad \"intrínseca\" u \"ontológica\" es aquella sin la cual el objeto deja de ser lo que es. Un termómetro que no mide la temperatura ya no es un termómetro."
+  },
+  {
+    "id": "v_ese_9",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Un viaducto puede erigirse mediante la conjunción de maderas nobles, sillares de piedra o vigas de acero pretensado, pudiendo abarcar desde escasos metros hasta kilómetros de extensión; sin embargo, todos ostentan un atributo invariable: la capacidad de habilitar el tránsito al sortear una discontinuidad topográfica, enlazando así dos puntos geográficos.",
+    "q": "¿Cuál de las siguientes opciones describe el rasgo ontológico esencial de todo puente?",
+    "opts": [
+      "La naturaleza de los materiales empleados en su infraestructura",
+      "Su función como nexo estructural sobrepasando un obstáculo",
+      "La magnitud física o longitud total de su tramo",
+      "El periodo histórico en que fue planificado y ejecutado"
+    ],
+    "ans": 1,
+    "exp": "El enunciado contrapone deliberadamente características variables frente a una constante universal.\n\n*   **Variables (Accidentes):** Materiales (madera, piedra, acero), tamaño (metros, kilómetros) e historia.\n*   **Invariante (Esencia):** Habilitar el tránsito sorteando una discontinuidad (unir dos puntos).\n*   **Conclusión:** Lo que hace a un puente ser un puente es su función conectiva sobre un obstáculo, no de qué está hecho o cuánto mide.\n\n**Tip Élite:** Cuando leas estructuras de concesión como \"puede ser X o Y... sin embargo, todos ostentan...\", presta máxima atención a la cláusula principal, ya que allí reside la tesis del autor."
+  },
+  {
+    "id": "v_per_9",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La ausencia absoluta de estímulos sonoros en una residencia deshabitada ejerce un efecto catalizador de sosiego en aquel individuo ávido de introspección, mientras que infunde una aguda zozobra en quien abriga fobia a la soledad y al aislamiento.",
+    "q": "¿Qué principio sobre la cognición humana ilustra el pasaje anterior?",
+    "opts": [
+      "La privación sensorial genera invariablemente cuadros de malestar agudo",
+      "La interpretación emocional de un mismo fenómeno físico es subjetiva y dependiente del fuero interno de cada individuo",
+      "La tolerancia a la ausencia de sonido es nula en la generalidad de la especie humana",
+      "El ambiente acústico carece de impacto mensurable en la psique humana"
+    ],
+    "ans": 1,
+    "exp": "El texto describe un mismo estímulo ambiental provocando dos reacciones diametralmente opuestas.\n\n*   **Estímulo objetivo:** Silencio en una casa vacía.\n*   **Reacción A:** Sosiego (en quien busca paz).\n*   **Reacción B:** Zozobra (en quien teme estar solo).\n*   **Significado:** Esto demuestra que no es el evento en sí el que define la emoción, sino la perspectiva y las necesidades internas de cada persona.\n\n**Tip Élite:** Palabras como \"zozobra\" (angustia) y \"sosiego\" (calma) son antónimos comunes que reflejan la subjetividad de la percepción humana, un tema frecuente en reactivos de perspectiva."
+  },
+  {
+    "id": "v_per_10",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La precipitación nívea inaugural de la temporada representa, a los ojos del viajero foráneo, un despliegue estético digno de contemplación; no obstante, para el residente local constreñido a despejar a pala el acceso a su hogar cada madrugada, constituye una carga logística exasperante.",
+    "q": "¿Cuál es la premisa que subyace a esta dicotomía en las reacciones frente al mismo fenómeno meteorológico?",
+    "opts": [
+      "Existen variaciones geográficas que alteran las propiedades estéticas de los fenómenos climáticos",
+      "El nivel de apreciación de un evento está intrínsecamente ligado al impacto utilitario que este ejerce sobre la cotidianidad del observador",
+      "El transeúnte temporal carece de la agudeza visual para comprender los rigores climáticos",
+      "Los habitantes de zonas gélidas desarrollan patologías asociadas al rechazo del clima invernal"
+    ],
+    "ans": 1,
+    "exp": "Se presenta un contraste de perspectivas basado en la posición del observador respecto al fenómeno.\n\n*   **Observador pasivo (turista):** Lo ve como un espectáculo estético.\n*   **Observador activo (residente):** Lo ve como una obligación física y un estorbo.\n*   **Razón del contraste:** La diferencia radica en si la nieve afecta sus deberes diarios o no; es decir, su impacto utilitario en la vida cotidiana.\n\n**Tip Élite:** Las preguntas de \"perspectiva\" evalúan tu capacidad para inferir *por qué* dos personas ven lo mismo de forma diferente. La respuesta correcta casi siempre aludirá al contexto, los intereses o las necesidades de las partes involucradas."
+  },
+  {
+    "id": "v_imp_12",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El jardinero ha notado empíricamente un patrón ineludible: invariablemente, tras someter a sus plantas a riegos utilizando la fuente hídrica del pozo norte, el follaje desarrolla una severa clorosis (amarillamiento de las hojas).",
+    "q": "¿Qué premisa no explícita puede inferirse legítimamente del enunciado?",
+    "opts": [
+      "Las especies vegetales cultivadas carecen de la necesidad biológica de absorción hídrica",
+      "Existe un componente perjudicial en esa fuente hídrica específica que resulta nocivo para la fisiología vegetal",
+      "La exposición a la radiación solar directa es la causante del deterioro foliar",
+      "El ecosistema del jardín mantiene un estado de salud y vigorosidad óptimos"
+    ],
+    "ans": 1,
+    "exp": "La inferencia se basa en conectar la causa recurrente con el efecto observable.\n\n*   **Hecho:** Cada vez que se riega con *esa* agua en específico, la planta enferma.\n*   **Deducción lógica:** Si la acción de regar con esa agua precede siempre al daño, existe una fuerte probabilidad de que esa agua contenga elementos dañinos.\n*   **Descartes:** El texto no culpa al sol, ni sugiere que no requieran agua. Tampoco sugiere salud, sino enfermedad (clorosis).\n\n**Tip Élite:** Una \"idea implícita\" no está escrita textualmente, pero es la única conclusión lógica que da sentido a la situación narrada. Si A siempre causa B (y B es malo), entonces A contiene algo dañino."
+  },
+  {
+    "id": "v_imp_13",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A pesar de haber inaugurado sus operaciones comerciales hace escasamente treinta días, el establecimiento gastronómico exige a su clientela asegurar su mesa con una antelación mínima de siete jornadas, mientras que la fila de espera presencial para quienes carecen de reserva serpentea hasta dar la vuelta a la manzana.",
+    "q": "¿Qué conclusión lógica puede derivarse válidamente de los datos proporcionados sobre el establecimiento?",
+    "opts": [
+      "La viabilidad financiera del proyecto es insostenible y precipitará su clausura",
+      "El local ha experimentado un ascenso meteórico alcanzando un nivel de popularidad y demanda extraordinario",
+      "Los estándares de excelencia culinaria de la oferta gastronómica son notablemente deficientes",
+      "Existe un boicot generalizado que disuade al público de visitar las instalaciones"
+    ],
+    "ans": 1,
+    "exp": "Los datos aportados en el texto (tiempo de reserva, tamaño de la fila) son indicadores indirectos de una situación subyacente.\n\n*   **Evidencias:** Alta anticipación para reservar (7 días) y largas filas (espera presencial masiva) tras solo un mes abierto.\n*   **Significado:** Estos hechos son los indicadores clásicos de una altísima demanda comercial.\n*   **Conclusión:** Por lo tanto, el restaurante es extremadamente popular. Sería ilógico deducir que va a quebrar o que su comida es mala cuando tanta gente quiere entrar.\n\n**Tip Élite:** Frecuentemente, los textos omiten el adjetivo principal (como \"exitoso\" o \"popular\") y, en su lugar, enumeran síntomas empíricos para que el lector infiera el concepto abstracto."
+  },
+  {
+    "id": "v_imp_14",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Si bien mantiene una política de absoluta discreción y jamás verbaliza frente a terceros las cumbres alcanzadas en su carrera profesional, las paredes de su despacho privado se encuentran tapizadas de acreditaciones académicas, galardones gremiales y reconocimientos a la excelencia acumulados a lo largo de dos décadas de ejercicio continuo.",
+    "q": "¿Qué inferencia válida se extrae de la descripción del despacho y la actitud del profesional?",
+    "opts": [
+      "Su trayectoria profesional ha estado exenta de aportes o logros de significancia real",
+      "Posee una carrera sumamente meritoria y prolífica, independientemente de su manifiesta falta de ostentación",
+      "La adquisición de dichos reconocimientos responde a transacciones de índole pecuniaria y no al mérito",
+      "Se trata de un individuo que se encuentra en los albores de su iniciación laboral"
+    ],
+    "ans": 1,
+    "exp": "El texto presenta un contraste entre la actitud del individuo y la evidencia física a su alrededor.\n\n*   **Evidencia física:** Paredes llenas de diplomas y premios por dos décadas.\n*   **Actitud:** Nunca habla de sus logros (humildad o discreción).\n*   **Síntesis:** Posee una carrera muy destacada y meritoria que respalda su éxito empíricamente, aunque él decida no alardear de ello.\n*   **Falsedades:** Las opciones que sugieren mediocridad, compra de títulos o inexperiencia contradicen directamente la evidencia física de los diplomas de 20 años.\n\n**Tip Élite:** La conjunción \"si bien\" o \"aunque\" establece un contraste que fortalece la veracidad del hecho principal (los logros) al indicar que existen a pesar de no ser promocionados por el sujeto."
+  },
+  {
+    "id": "v_pri_10",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El agua apta para consumo humano constituye un bien hídrico críticamente limitado: impera la necesidad de someterla a rigurosos procesos de potabilización para neutralizar patógenos, orquestar su distribución mediante infraestructuras eficientes y fomentar prácticas de consumo que erradiquen su derroche.",
+    "q": "¿Cuál es la premisa directriz que estructura y da sentido a la totalidad del párrafo?",
+    "opts": [
+      "Los protocolos técnicos para la potabilización del agua son ineludibles",
+      "La escasez inherente del recurso hídrico impone un imperativo de gestión responsable y cuidadosa en todas sus fases",
+      "Las redes de distribución subterráneas son fundamentales para el acceso al líquido",
+      "La sanción del consumo desmedido es la única medida viable para preservar el recurso"
+    ],
+    "ans": 1,
+    "exp": "Debemos distinguir entre los ejemplos específicos (detalles) y la idea integradora (principal).\n\n*   **Detalles (Ejemplos):** Potabilizar, distribuir eficientemente, no derrochar.\n*   **Idea Macro:** ¿Por qué se debe hacer todo esto? Porque el agua potable es un \"bien hídrico críticamente limitado\" (escaso).\n*   **Integración:** La idea principal es que su escasez exige que se cuide en absolutamente todo su ciclo de manejo (tratamiento, distribución y uso).\n\n**Tip Élite:** La idea principal siempre funciona como un \"paraguas\" cognitivo. Si una opción solo menciona una de las fases del proceso (como solo la potabilización o solo el derroche), es una idea secundaria. Busca la que engloba a las demás."
+  },
+  {
+    "id": "v_pri_11",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La práctica metódica de actividad física cardiovascular y de fuerza, la adherencia a regímenes nutricionales ricos en macronutrientes balanceados y la preservación de los ciclos biológicos de sueño conforman, en su conjunto sinérgico, el pilar sobre el cual se erige el bienestar fisiológico de un individuo.",
+    "q": "¿Cuál es la idea central que articula el fragmento expuesto?",
+    "opts": [
+      "El entrenamiento cardiovascular posee primacía jerárquica sobre otras intervenciones de salud",
+      "El bienestar integral depende indefectiblemente de la convergencia y conjunción de múltiples hábitos saludables",
+      "La privación del sueño es el factor patológico de mayor riesgo clínico",
+      "La ingesta calórica debe restringirse exclusivamente a macronutrientes balanceados"
+    ],
+    "ans": 1,
+    "exp": "El texto enumera tres componentes y destaca la interacción entre ellos.\n\n*   **Componentes:** Ejercicio, nutrición y sueño.\n*   **La clave del texto:** Dice que conforman un pilar \"en su conjunto sinérgico\".\n*   **Idea Principal:** La salud no depende de uno solo de forma aislada, sino de la combinación simultánea (convergencia) de estos múltiples hábitos.\n*   **Descartes:** Las opciones que elevan un hábito sobre los otros o que los aíslan no recogen el sentido global del texto.\n\n**Tip Élite:** La palabra \"sinérgico\" indica que el efecto combinado de varios factores es más importante que la suma de sus partes. En lectura comprensiva, esto apunta directamente a la idea de \"conjunción\"."
+  },
+  {
+    "id": "v_pri_12",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El estratovolcán Arenal actúa como un magneto para corrientes turísticas internacionales, funge como un motor primario en la reactivación económica y generación de plazas laborales en las comunidades circundantes, y se ha consolidado en el imaginario colectivo como un emblema de la biodiversidad de Costa Rica.",
+    "q": "¿Qué temática aglutinadora resume el propósito del texto?",
+    "opts": [
+      "El volumen de ingreso de visitantes extranjeros en la zona norte del país",
+      "La convergencia de la relevancia turística, el impacto económico y el peso simbólico del volcán Arenal",
+      "El análisis estadístico de la tasa de empleabilidad en los asentamientos adyacentes al coloso",
+      "Las mediciones geológicas que ratifican la altitud y composición del estratovolcán"
+    ],
+    "ans": 1,
+    "exp": "El autor enumera tres facetas distintas del mismo sujeto geográfico.\n\n*   **Faceta 1:** Turismo internacional (magneto turístico).\n*   **Faceta 2:** Economía local (generación de empleo).\n*   **Faceta 3:** Identidad nacional (emblema de biodiversidad).\n*   **Temática central:** El tema debe abarcar estos tres pilares. La convergencia del impacto turístico, económico y simbólico encapsula a la perfección los tres puntos expuestos sin omitir ninguno.\n\n**Tip Élite:** El tema central de un texto enumerativo nunca será uno solo de los elementos de la lista. Debes buscar la opción que categorice abstractamente la totalidad de los elementos mencionados."
+  },
+  {
+    "id": "v_par_9",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Replicar a cada afrenta verbal únicamente sirve para dotar de vigencia y poder a la provocación ajena; en numerosas ocasiones, la omisión de respuesta se erige como el escudo más formidable y sabio.",
+    "q": "¿Qué opción preserva de manera fidedigna la tesis central del enunciado original?",
+    "opts": [
+      "Es un imperativo moral ofrecer una respuesta contundente ante cualquier agravio para preservar el honor",
+      "Optar por el mutismo frente a la agresión externa representa, frecuentemente, la estrategia de mayor sagacidad",
+      "La ausencia de réplica es un indicador infalible de debilidad de carácter o cobardía",
+      "La incitación activa al conflicto verbal es un mecanismo válido para el fortalecimiento psicológico"
+    ],
+    "ans": 1,
+    "exp": "La paráfrasis requiere decodificar el mensaje y volver a expresarlo sin alterar el sentido.\n\n*   **Premisa original:** Responder empodera al agresor; callar (el silencio) es mejor.\n*   **Decodificación:** No entrar en provocaciones (mutismo) es una decisión inteligente (estrategia de mayor sagacidad).\n*   **Falsos amigos:** Las opciones que sugieren que el silencio es cobardía o que siempre hay que responder, expresan exactamente lo contrario a la tesis del autor.\n\n**Tip Élite:** La paráfrasis correcta muchas veces sustituye palabras clave por definiciones elaboradas. \"Omisión de respuesta\" se convierte en \"mutismo\", y \"sabio\" se transforma en \"sagacidad\"."
+  },
+  {
+    "id": "v_par_10",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Los hitos de mayor envergadura en la historia de las disciplinas rara vez germinan por la mera semilla del talento innato; de manera casi inexorable, demandan el abono de una tenacidad inquebrantable.",
+    "q": "¿Qué alternativa constituye una paráfrasis semánticamente equivalente a la premisa leída?",
+    "opts": [
+      "Las aptitudes congénitas son el único vector determinante para alcanzar la cúspide del éxito",
+      "La perseverancia sistemática es el factor sine qua non que cristaliza los grandes triunfos",
+      "La ausencia de genialidad natural condena inexorablemente al fracaso cualquier iniciativa",
+      "El sacrificio y el esfuerzo sostenido carecen de impacto real frente a la predestinación"
+    ],
+    "ans": 1,
+    "exp": "Analicemos la metáfora utilizada en el texto original para extraer su significado literal.\n\n*   **Texto Original:** Los grandes logros (hitos) no dependen solo del talento innato, sino que exigen constancia (tenacidad).\n*   **Paráfrasis (Opción B):** La perseverancia (tenacidad) es indispensable (sine qua non) para los grandes triunfos (hitos de mayor envergadura).\n*   **¿Por qué las demás fallan?** Todas afirman que el talento lo es todo o que el esfuerzo no sirve, negando por completo la idea central del texto.\n\n**Tip Élite:** \"Sine qua non\" es una locución latina muy usada en exámenes de alto nivel que significa \"condición sin la cual no\". Es equivalente a decir \"requisito indispensable\"."
+  },
+  {
+    "id": "v_par_11",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "\"La arquitectura de la capital imperial, Roma, no se erigió en el transcurso de un único ciclo diurno.\"",
+    "q": "¿Cuál es el corolario proverbial que mejor traduce la metáfora del texto?",
+    "opts": [
+      "La totalidad de las empresas humanas se materializan mediante procesos instantáneos y efímeros",
+      "La cristalización de obras y proyectos de magnitud colosal exige la inversión de periodos prolongados",
+      "Existe un cuestionamiento histórico sobre la veracidad de la existencia de las capitales antiguas",
+      "La edificación de infraestructuras complejas es un proceso exento de dificultades metodológicas"
+    ],
+    "ans": 1,
+    "exp": "Este es un caso de interpretación de lenguaje figurado o proverbial.\n\n*   **El refrán original:** Roma no se hizo en un día.\n*   **Significado subyacente:** Roma representa un \"logro grande y complejo\". \"Un día\" representa \"poco tiempo\". Por tanto, los grandes logros no se consiguen en poco tiempo.\n*   **Traducción formal:** Los proyectos de gran magnitud exigen periodos prolongados. Las opciones que toman el texto literal (cuestionar si Roma existe) o afirman lo opuesto (instantáneo) son distractores absurdos.\n\n**Tip Élite:** Al analizar refranes, busca siempre la opción que exprese el mensaje moral o abstracto, alejándote completamente de los elementos literales (como albañiles, días, o ciudades romanas)."
+  },
+  {
+    "id": "v_pro_9",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "De acuerdo con el registro académico, todos los discentes que lograron acreditar la asignatura cumplieron con la entrega del portafolio final. Analice las siguientes proposiciones lógicas:\nI. Todo aquel individuo que omitió la entrega del portafolio, no logró acreditar la asignatura.\nII. Existió una fracción de discentes que alcanzó la acreditación eximidos de la entrega del portafolio.\nIII. La remisión del portafolio fungió como una condición necesaria para obtener la acreditación.",
+    "q": "Con estricto rigor deductivo, ¿cuáles de las aseveraciones se desprenden obligatoriamente de la premisa rectora?",
+    "opts": [
+      "Solamente la proposición II",
+      "Las proposiciones I y III simultáneamente",
+      "Exclusivamente la proposición I",
+      "Las tres proposiciones en su conjunto"
+    ],
+    "ans": 1,
+    "exp": "Este es un ejercicio clásico de lógica formal condicional. La estructura es: Si Aprobas (A) -> Entregas (B).\n\n*   **Análisis de I:** Por la ley lógica de contraposición (Modus Tollens), si no ocurrió B, es imposible que haya ocurrido A. Si no entregas, no apruebas. (Válida).\n*   **Análisis de II:** Contradice directamente la regla matriz, pues afirma que alguien aprobó sin entregar. (Inválida).\n*   **Análisis de III:** En la condicional A -> B, la consecuencia (B) siempre es una condición necesaria para (A). Entregar es necesario para aprobar. (Válida).\n\n**Tip Élite:** Domina la traducción del lenguaje natural a fórmulas lógicas. \"Todos los A son B\" siempre significa que B es requisito indispensable (condición necesaria) para que exista A."
+  },
+  {
+    "id": "v_pro_10",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Se establece el siguiente postulado meteorológico: Cuando se registra incidencia directa de radiación solar, se produce la deshidratación de las prendas textiles expuestas a la intemperie. Analice:\nI. La radiación solar tiene la capacidad de evaporar la humedad de las prendas textiles.\nII. Las prendas textiles experimentan deshidratación indefectiblemente, incluso en entornos de penumbra.\nIII. La incidencia solar incrementa el grado de saturación acuosa de los tejidos.",
+    "q": "A partir del postulado expuesto, ¿cuál de las proposiciones representa una deducción irrefutable?",
+    "opts": [
+      "La proposición I de manera exclusiva",
+      "Únicamente la proposición II",
+      "Las proposiciones II y III de forma conjunta",
+      "Solamente la proposición III"
+    ],
+    "ans": 0,
+    "exp": "Evaluar proposiciones requiere apegarse de forma estricta a la información brindada, sin asumir conocimientos externos.\n\n*   **Proposición I:** Se deduce directamente de la premisa; afirma que el sol es el agente que causa el secado (deshidratación). Es válida.\n*   **Proposición II:** La premisa indica qué pasa *cuando hay* sol, pero no informa absolutamente nada sobre qué ocurre cuando *no hay* sol. Extrapolar eso es una falacia. Inválida.\n*   **Proposición III:** Afirma que el sol moja la ropa (saturación acuosa), lo cual es diametralmente opuesto al postulado. Inválida.\n\n**Tip Élite:** En lógica proposicional, una regla del tipo \"Si P, entonces Q\" no te permite afirmar que \"Si NO P, entonces NO Q\". Asegúrate de juzgar solo los escenarios definidos en el texto."
+  },
+  {
+    "id": "m_ari_11",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En el contexto de la jerarquía de las operaciones aritméticas elementales, considere la siguiente expresión matemática continua: 7 × 8 - 6 × 5 + 12 ÷ 4.",
+    "q": "Al ejecutar el cómputo respetando el orden algorítmico estandarizado, ¿qué valor se obtiene?",
+    "opts": [
+      "29",
+      "23",
+      "56",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "La resolución de expresiones aritméticas combinadas exige la aplicación estricta de la jerarquía de operaciones (PEMDAS/BODMAS):\n\n*   **Orden prioritario:** En ausencia de paréntesis, las multiplicaciones y divisiones ostentan prelación sobre las sumas y restas, y se resuelven de izquierda a derecha.\n*   **Paso 1 (Operaciones de segundo nivel):**\n    *   7 × 8 = 56\n    *   6 × 5 = 30\n    *   12 ÷ 4 = 3\n*   **Paso 2 (Reconstrucción y sumatorias):** Sustituimos en la ecuación original y procedemos linealmente: 56 - 30 + 3 = 26 + 3 = 29.\n\n**Tip Élite:** Un error extremadamente frecuente es efectuar las sumas antes que las restas (ej. calcular 30 + 3 = 33 y luego 56 - 33 = 23). Recuerda que la suma y la resta tienen exactamente la misma jerarquía; siempre hazlas de izquierda a derecha."
+  },
+  {
+    "id": "m_ari_12",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En un establecimiento de expendio de alimentos, el precio unitario de un menú empaquetado asciende a ₡3 200. Un grupo familiar efectúa la compra de 4 de estos menús y, de manera adicional, adjudica una gratificación voluntaria por concepto de servicio equivalente a ₡1 000.",
+    "q": "¿A cuánto asciende el egreso monetario total que debe sufragar el grupo familiar?",
+    "opts": [
+      "₡13 800",
+      "₡12 800",
+      "₡14 000",
+      "₡13 200"
+    ],
+    "ans": 0,
+    "exp": "Para determinar el costo total (egreso), el proceso matemático consta de dos etapas básicas de agregación de valor:\n\n*   **Costo de consumo base:** Multiplicamos el precio unitario del menú por la cantidad demandada. Esto es: 4 × 3 200 = 12 800 colones.\n*   **Inclusión del cargo adicional:** A la suma anterior le adicionamos el monto fijo otorgado por la gratificación: 12 800 + 1 000 = 13 800 colones.\n*   **Síntesis:** El pago final ampara tanto los bienes adquiridos como el reconocimiento por el servicio.\n\n**Tip Élite:** No confundas los costos que varían según la cantidad (como el precio de la comida) con los costos fijos o únicos de una transacción (como una propina o costo de envío general)."
+  },
+  {
+    "id": "m_ari_13",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Un reservorio cilíndrico de almacenamiento hídrico reporta contener un volumen equivalente a los 3/4 de su aforo máximo. En el transcurso de una jornada industrial, se drena y utiliza un volumen correspondiente a la mitad (1/2) de la capacidad *total* del mencionado reservorio.",
+    "q": "¿Qué fracción matemática representa fielmente el volumen de líquido que persiste almacenado respecto al aforo total del tanque?",
+    "opts": [
+      "1/4",
+      "1/2",
+      "1/3",
+      "3/8"
+    ],
+    "ans": 0,
+    "exp": "La comprensión lectora del lenguaje matemático es clave aquí. El volumen drenado se define en función de la capacidad *total* del tanque, no del remanente existente.\n\n*   **Planteamiento:** Operativamente, enfrentamos la sustracción de fracciones heterogéneas: 3/4 - 1/2.\n*   **Homogeneización:** Para restar, necesitamos un denominador común. El mínimo común múltiplo entre 4 y 2 es 4. Así, amplificamos 1/2 multiplicando por 2, obteniendo 2/4.\n*   **Resolución:** Ahora procedemos con la resta directa de los numeradores: 3/4 - 2/4 = 1/4.\n\n**Tip Élite:** Cuidado con la trampa interpretativa. Si el texto hubiese dicho \"se utiliza la mitad *del agua que había*\", habrías tenido que multiplicar (3/4) × (1/2) = 3/8. ¡Lee con lupa de qué total se está hablando!"
+  }
+]

@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_fin_1",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Desde hace una década, varias municipalidades instalaron reductores de velocidad, semáforos peatonales y pasos elevados cerca de escuelas y hospitales. Estas obras encarecen el mantenimiento y a veces molestan a los conductores, pero las autoridades insisten en conservarlas.",
+    "q": "¿Cuál es la finalidad principal de las autoridades con estas obras?",
+    "opts": [
+      "Recaudar más dinero mediante multas",
+      "Proteger la vida de los peatones en zonas sensibles",
+      "Incomodar a propósito a los conductores",
+      "Reducir el gasto en mantenimiento vial"
+    ],
+    "ans": 1,
+    "exp": "El para qué es proteger a los peatones en zonas sensibles (B). Recaudar con multas (A) o incomodar a los conductores (C) no son fines que el texto plantee; reducir el gasto (D) es lo contrario, pues el texto dice que las obras encarecen el mantenimiento."
+  },
+  {
+    "id": "v_fin_2",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Marta destina una parte fija de su salario a un fondo cada mes. Aunque eso la obliga a renunciar a algunos gustos hoy, ella explica que lo hace pensando en comprar casa propia antes de los cuarenta.",
+    "q": "¿Cuál es la finalidad del ahorro de Marta?",
+    "opts": [
+      "Privarse de gustos en el presente",
+      "Comprar casa propia en el futuro",
+      "Demostrar disciplina a los demás",
+      "Aumentar su salario mensual"
+    ],
+    "ans": 1,
+    "exp": "La finalidad es el para qué: comprar casa propia (B). Privarse de gustos (A) es el medio, no el fin; demostrar disciplina (C) no se menciona; y no busca subir su salario (D), sino ahorrar parte de él."
+  },
+  {
+    "id": "v_fin_3",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 2,
+    "stem": "El profesor repite varias veces los conceptos más difíciles durante la clase para que sus estudiantes los comprendan mejor.",
+    "q": "¿Cuál es la finalidad de repetir los conceptos?",
+    "opts": [
+      "Alargar la clase",
+      "Facilitar la comprensión",
+      "Demostrar su conocimiento",
+      "Evaluar a los estudiantes"
+    ],
+    "ans": 1,
+    "exp": "Repite 'para que comprendan mejor', así que el fin es facilitar la comprensión (B). Alargar la clase (A) o lucir su saber (C) no son el propósito; tampoco evaluar (D): repetir no es examinar."
+  },
+  {
+    "id": "v_com_1",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "Cada vez que recibe una crítica sobre su trabajo, Luis, en lugar de leerla completa, responde al instante defendiéndose y enumerando excusas, sin detenerse a pensar si el comentario tenía algo de razón.",
+    "q": "¿Cómo se comporta Luis ante las críticas?",
+    "opts": [
+      "Las analiza con calma",
+      "Reacciona a la defensiva sin escuchar",
+      "Las agradece y mejora",
+      "Las ignora por completo"
+    ],
+    "ans": 1,
+    "exp": "Responder al instante con excusas, sin considerar la crítica, es reaccionar a la defensiva (B). No la analiza con calma (A) ni la agradece para mejorar (C); y no la ignora (D): al contrario, responde de inmediato."
+  },
+  {
+    "id": "v_com_2",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Ante el menor ruido extraño, el conejo no corre ni intenta atacar: se queda completamente inmóvil, pegado al suelo, confiando en que su quietud lo vuelva difícil de notar para el depredador.",
+    "q": "¿Cómo se comporta el conejo ante una posible amenaza?",
+    "opts": [
+      "Huye a toda velocidad",
+      "Se queda inmóvil para pasar desapercibido",
+      "Ataca al depredador",
+      "Hace ruido para asustarlo"
+    ],
+    "ans": 1,
+    "exp": "El texto dice que no corre ni ataca: se queda inmóvil para no ser notado (B). Por eso no huye (A) ni ataca (C); y quedarse quieto es lo opuesto a hacer ruido (D)."
+  },
+  {
+    "id": "v_com_3",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "Algunas personas, cuando reciben una crítica, en lugar de escuchar responden de inmediato a la defensiva.",
+    "q": "¿Cómo se comportan estas personas ante una crítica?",
+    "opts": [
+      "Reflexionan con calma",
+      "Reaccionan a la defensiva",
+      "La ignoran por completo",
+      "Agradecen el comentario"
+    ],
+    "ans": 1,
+    "exp": "La conducta descrita es responder de inmediato a la defensiva (B). No reflexionan con calma (A) ni agradecen (D); tampoco ignoran la crítica (C): justamente reaccionan a ella."
+  },
+  {
+    "id": "v_cau_1",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La tala excesiva en la parte alta dejó las laderas sin árboles. Sin raíces que retuvieran la tierra, las primeras lluvias fuertes arrastraron el suelo y enturbiaron el río del que bebe la comunidad.",
+    "q": "Según el texto, ¿cuál es una consecuencia de la tala?",
+    "opts": [
+      "El aumento de árboles en la zona",
+      "La contaminación del río por el arrastre de tierra",
+      "La mejora de la calidad del agua",
+      "La llegada de más lluvias"
+    ],
+    "ans": 1,
+    "exp": "Sin raíces que retengan la tierra, la lluvia arrastró el suelo y enturbió el río (B). Más árboles (A) y mejor agua (C) son lo contrario de lo ocurrido; más lluvias (D) no es efecto de la tala."
+  },
+  {
+    "id": "v_cau_2",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "Diversos estudios señalan que dormir mal de manera constante no solo produce cansancio: con el tiempo afecta la memoria, debilita las defensas del cuerpo y aumenta la irritabilidad.",
+    "q": "Según el texto, ¿qué puede causar dormir mal de forma constante?",
+    "opts": [
+      "Mejor memoria",
+      "Problemas de memoria, defensas y ánimo",
+      "Más energía durante el día",
+      "Mayor concentración"
+    ],
+    "ans": 1,
+    "exp": "El texto enumera los efectos de dormir mal: daña memoria, defensas y ánimo (B). Mejor memoria (A), más energía (C) y mayor concentración (D) dicen lo contrario."
+  },
+  {
+    "id": "v_cau_3",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "El equipo no era el más talentoso de la liga, pero entrenó con disciplina todos los días, corrigió sus errores tras cada partido y llegó a la final con la mejor condición física. Al final, se llevó el campeonato.",
+    "q": "Según el texto, ¿qué explica mejor el triunfo del equipo?",
+    "opts": [
+      "El talento natural de sus jugadores",
+      "El trabajo constante y la corrección de errores",
+      "La suerte en los partidos decisivos",
+      "La debilidad de los rivales"
+    ],
+    "ans": 1,
+    "exp": "El texto aclara que NO eran los más talentosos, así que A se descarta. No menciona suerte (C) ni rivales débiles (D). La causa que sí repite es el entreno disciplinado y corregir errores: por eso B."
+  },
+  {
+    "id": "v_cau_4",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "El uso prolongado de pantallas antes de dormir dificulta conciliar el sueño.",
+    "q": "¿Qué relación se establece en el texto?",
+    "opts": [
+      "El sueño causa el uso de pantallas",
+      "El uso de pantallas dificulta el sueño",
+      "Las pantallas mejoran el sueño",
+      "No hay relación entre ambos"
+    ],
+    "ans": 1,
+    "exp": "La causa es el uso de pantallas y la consecuencia, la dificultad para dormir (B). A invierte la relación; C afirma lo contrario; y sí hay relación, así que D es falso."
+  },
+  {
+    "id": "v_sim_1",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 2,
+    "stem": "Un reloj de arena solo mide el tiempo con la caída de granos; en cambio, un reloj digital integra sensores, batería y múltiples funciones.",
+    "q": "Según el texto, ¿en qué se diferencian ambos relojes?",
+    "opts": [
+      "Uno es antiguo y el otro nuevo",
+      "Uno es simple y el otro complejo",
+      "Uno es barato y el otro caro",
+      "Uno es pequeño y el otro grande"
+    ],
+    "ans": 1,
+    "exp": "El contraste es entre un mecanismo de un solo elemento (simple) y otro de muchos componentes (complejo) (B). El texto no los compara por antigüedad (A), precio (C) ni tamaño (D)."
+  },
+  {
+    "id": "v_sim_2",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Encender un fósforo requiere un solo gesto. En cambio, mantener encendida una central termoeléctrica implica coordinar combustible, turbinas, sistemas de enfriamiento, controles de seguridad y decenas de operarios trabajando las 24 horas.",
+    "q": "¿Qué diferencia esencial plantea el texto entre ambas acciones?",
+    "opts": [
+      "Una es más antigua que la otra",
+      "Una es simple y la otra, compleja por sus muchas partes",
+      "Una es más cara que la otra",
+      "Una es más peligrosa que la otra"
+    ],
+    "ans": 1,
+    "exp": "El contraste es entre un acto de un solo paso y otro con muchísimas partes coordinadas: simple frente a complejo (B). No se comparan por antigüedad (A), precio (C) ni peligro (D)."
+  },
+  {
+    "id": "v_sim_3",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 2,
+    "stem": "Una choza se levanta con unos pocos materiales; un rascacielos necesita ingeniería, miles de materiales y años de trabajo.",
+    "q": "¿Cómo se presenta el rascacielos frente a la choza?",
+    "opts": [
+      "Como algo simple",
+      "Como algo complejo",
+      "Como algo inútil",
+      "Como algo económico"
+    ],
+    "ans": 1,
+    "exp": "El rascacielos se describe por su ingeniería, materiales y años de trabajo: como algo complejo (B). No se presenta como simple (A), ni como inútil (C) o económico (D)."
+  },
+  {
+    "id": "v_con_1",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "Quien comparte lo que tiene con los demás, sin esperar nada a cambio, practica una de las virtudes más valoradas.",
+    "q": "Según el texto, ¿cuál palabra describe esa virtud?",
+    "opts": [
+      "Generosidad",
+      "Justicia",
+      "Paciencia",
+      "Humildad"
+    ],
+    "ans": 0,
+    "exp": "Compartir sin esperar nada a cambio es generosidad (A). No es justicia (B: dar a cada quien lo suyo), ni paciencia (C) ni humildad (D), que son otras virtudes."
+  },
+  {
+    "id": "v_con_2",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "El estudiante revisó cada dato, comprobó las fuentes y no aceptó ninguna afirmación sin evidencia.",
+    "q": "¿Cómo puede describirse, en una palabra, su actitud?",
+    "opts": [
+      "Rigurosa",
+      "Indiferente",
+      "Apresurada",
+      "Confiada"
+    ],
+    "ans": 0,
+    "exp": "Verificar cada dato y exigir evidencia es una actitud rigurosa (A). No es indiferente (B) ni confiada (D), pues no acepta nada sin comprobar; tampoco apresurada (C): se toma su tiempo."
+  },
+  {
+    "id": "v_con_3",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "El corredor tropezó y cayó tres veces durante la carrera. Cada vez se levantó, recuperó el ritmo y siguió, hasta cruzar la meta en último lugar pero sin rendirse.",
+    "q": "¿Qué cualidad refleja mejor su actitud?",
+    "opts": [
+      "Velocidad",
+      "Perseverancia",
+      "Ambición",
+      "Talento"
+    ],
+    "ans": 1,
+    "exp": "Llegó último, así que no destaca por velocidad (A) ni talento (D), y no se habla de querer más (ambición, C). Lo que lo define es insistir tras cada caída: perseverancia (B)."
+  },
+  {
+    "id": "v_con_4",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 2,
+    "stem": "Le confiaron un secreto delicado. Aunque varias personas trataron de sonsacárselo e incluso sus amigos le preguntaron con insistencia, no soltó ni una palabra.",
+    "q": "¿Qué palabra describe mejor su actitud?",
+    "opts": [
+      "Discreción",
+      "Timidez",
+      "Indiferencia",
+      "Astucia"
+    ],
+    "ans": 0,
+    "exp": "Guardar lo confiado pese a la presión es discreción (A). No es timidez (B: no calla por miedo), ni indiferencia (C: sí le importa), ni astucia (D: no engaña a nadie)."
+  },
+  {
+    "id": "v_ord_1",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 2,
+    "stem": "Antes de la reunión, los documentos estaban amontonados sin clasificación; después, quedaron archivados por fecha y tema.",
+    "q": "Según el texto, ¿qué cambio experimentaron los documentos?",
+    "opts": [
+      "Del orden al desorden",
+      "Del desorden al orden",
+      "De lo nuevo a lo viejo",
+      "De lo público a lo privado"
+    ],
+    "ans": 1,
+    "exp": "Pasaron de amontonados sin clasificar (desorden) a archivados por fecha y tema (orden): del desorden al orden (B). A invierte el cambio; nuevo/viejo (C) y público/privado (D) no son el criterio del texto."
+  },
+  {
+    "id": "v_ord_2",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 2,
+    "stem": "Antes, las herramientas del taller se amontonaban en cualquier rincón y nadie hallaba nada a tiempo. Tras una jornada de organización, cada una quedó colgada en un panel y rotulada según su uso.",
+    "q": "¿Qué cambio experimentó el taller?",
+    "opts": [
+      "Del orden al desorden",
+      "Del desorden al orden",
+      "De lo nuevo a lo viejo",
+      "De lo barato a lo caro"
+    ],
+    "ans": 1,
+    "exp": "Pasó de herramientas amontonadas (desorden) a cada una rotulada en su lugar (orden): del desorden al orden (B). A es lo contrario; nuevo/viejo (C) y barato/caro (D) no describen el cambio."
+  },
+  {
+    "id": "v_ord_3",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 2,
+    "stem": "Después de la mudanza, las cajas quedaron apiladas sin etiquetas, los libros mezclados con la vajilla y la ropa repartida entre varias habitaciones, sin que nada estuviera en su sitio.",
+    "q": "¿Cómo se describe el estado de la casa tras la mudanza?",
+    "opts": [
+      "En perfecto orden",
+      "En completo desorden",
+      "Totalmente vacía",
+      "Recién pintada"
+    ],
+    "ans": 1,
+    "exp": "Cajas sin etiqueta, cosas mezcladas y nada en su sitio describen desorden (B). No es orden (A); y el texto no dice que la casa quedara vacía (C) ni recién pintada (D)."
+  },
+  {
+    "id": "v_tmp_1",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "Primero se mezclan los ingredientes secos, luego se añade la leche y, por último, se hornea la masa.",
+    "q": "Según el texto, ¿qué se hace inmediatamente antes de hornear?",
+    "opts": [
+      "Mezclar los ingredientes secos",
+      "Añadir la leche",
+      "Servir el pastel",
+      "Encender el horno"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es secos, leche y hornear. Justo antes de hornear se añade la leche (B). Mezclar los secos (A) es el primer paso; servir (C) y encender el horno (D) no son el paso inmediatamente anterior."
+  },
+  {
+    "id": "v_tmp_2",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "La receta indica: primero batir los huevos con el azúcar, luego incorporar la harina poco a poco, después verter la mezcla en el molde y, por último, hornear durante 40 minutos.",
+    "q": "Según la receta, ¿qué se hace inmediatamente antes de hornear?",
+    "opts": [
+      "Batir los huevos",
+      "Verter la mezcla en el molde",
+      "Incorporar la harina",
+      "Servir el postre"
+    ],
+    "ans": 1,
+    "exp": "El orden es batir, harina, verter en el molde y hornear. Lo previo a hornear es verter la mezcla en el molde (B). Batir (A) e incorporar harina (C) van antes; servir (D) es el final."
+  },
+  {
+    "id": "v_tmp_3",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 2,
+    "stem": "La semilla germina, luego crece el tallo, después aparecen las hojas y finalmente brota la flor.",
+    "q": "Según el texto, ¿qué ocurre antes de que aparezcan las hojas?",
+    "opts": [
+      "Brota la flor",
+      "Crece el tallo",
+      "Cae la semilla",
+      "Se seca la planta"
+    ],
+    "ans": 1,
+    "exp": "La secuencia es germinar, tallo, hojas y flor. Antes de las hojas crece el tallo (B). La flor (A) brota al final; caer la semilla (C) es el inicio; secarse (D) no está en el texto."
+  },
+  {
+    "id": "v_ese_1",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Un buen líder se caracteriza, generalmente, por escuchar a su equipo, tomar decisiones justas y dar el ejemplo.",
+    "q": "De acuerdo con la lógica del texto, ¿qué caracteriza generalmente a un buen maestro?",
+    "opts": [
+      "Escuchar a sus estudiantes, evaluar con justicia y enseñar con el ejemplo",
+      "Ordenar a sus estudiantes y exigir resultados",
+      "Dictar la materia y aplicar exámenes difíciles",
+      "Trabajar solo, sin ayuda de nadie"
+    ],
+    "ans": 0,
+    "exp": "Por lógica paralela con el líder (escuchar, justicia, ejemplo), lo propio del maestro es escuchar, evaluar con justicia y enseñar con el ejemplo (A). Ordenar y exigir (B), dictar con exámenes difíciles (C) o trabajar solo (D) no son esas cualidades."
+  },
+  {
+    "id": "v_ese_2",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 2,
+    "stem": "El agua, en su forma líquida, se caracteriza por no tener forma propia y adaptarse al recipiente que la contiene.",
+    "q": "Según el texto, ¿cuál es una característica esencial del agua líquida?",
+    "opts": [
+      "Tener color",
+      "Adaptarse al recipiente",
+      "Tener sabor",
+      "Mantener una forma fija"
+    ],
+    "ans": 1,
+    "exp": "Lo propio del agua líquida es adaptarse al recipiente (B). El color (A) y el sabor (C) no son su rasgo esencial; mantener forma fija (D) es lo contrario de un líquido."
+  },
+  {
+    "id": "v_ese_3",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Lo propio de un desierto es la escasez de agua, las altas temperaturas durante el día y la poca vegetación.",
+    "q": "De acuerdo con la lógica del texto, ¿qué sería propio de una selva tropical?",
+    "opts": [
+      "Abundancia de agua, vegetación densa y mucha vida",
+      "Escasez de agua y poca vegetación",
+      "Frío extremo y nieve",
+      "Ausencia total de animales"
+    ],
+    "ans": 0,
+    "exp": "Por contraste con el desierto (seco, poca vida), lo propio de la selva es abundancia de agua, vegetación densa y mucha vida (A). B describe el desierto; el frío y la nieve (C) y la ausencia de animales (D) no corresponden a una selva."
+  },
+  {
+    "id": "v_per_1",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "Observar un problema desde lejos es una cosa; vivirlo en carne propia es otra muy distinta.",
+    "q": "¿Cuál de las siguientes opciones presenta la idea del texto con otras palabras?",
+    "opts": [
+      "Observar y vivir un problema son experiencias diferentes",
+      "Observar un problema es más difícil que vivirlo",
+      "Vivir un problema no enseña nada",
+      "Observar y vivir son lo mismo"
+    ],
+    "ans": 0,
+    "exp": "El texto contrasta dos experiencias distintas: observar y vivir un problema no es lo mismo (A). No dice que observar sea más difícil (B), ni que vivirlo no enseñe (C), ni que sean iguales (D)."
+  },
+  {
+    "id": "v_per_2",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "Cuando cae un fuerte aguacero, el agricultor lo celebra porque regará sus cultivos; el viajero, en cambio, se lamenta porque le arruina el paseo.",
+    "q": "¿Qué explica mejor que la misma lluvia provoque reacciones opuestas?",
+    "opts": [
+      "La lluvia cae más fuerte para uno que para otro",
+      "Cada quien la juzga según cómo afecta lo que le importa",
+      "El agricultor sabe de clima y el viajero no",
+      "En el fondo a ambos les molesta la lluvia"
+    ],
+    "ans": 1,
+    "exp": "La lluvia es la misma (A es falso). Lo que cambia es el interés de cada uno: al agricultor le sirve y al viajero le estorba (B). C inventa un saber que el texto no menciona; D contradice que el agricultor la celebra."
+  },
+  {
+    "id": "v_per_3",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 2,
+    "stem": "Armar la misma torre de bloques es, para el niño, una aventura fascinante; para el adulto apurado, una forma de perder el tiempo.",
+    "q": "¿Qué idea se desprende del texto?",
+    "opts": [
+      "El juego no tiene ningún valor",
+      "El valor de una actividad cambia según quién la mira y qué busca",
+      "Los adultos no saben jugar",
+      "Los niños siempre pierden el tiempo"
+    ],
+    "ans": 1,
+    "exp": "B recoge la idea: la misma actividad vale distinto según la mirada (el niño disfruta, el adulto mide su tiempo). A y D toman partido por un solo lado; C agrega un juicio que el texto no hace."
+  },
+  {
+    "id": "v_imp_1",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Pedro nunca sale sin paraguas cuando ve el cielo nublado, aunque al final muchas veces no llueva.",
+    "q": "¿Qué idea está implícita en el texto?",
+    "opts": [
+      "Pedro odia mojarse",
+      "Pedro prefiere prevenir, aunque no esté seguro de que lloverá",
+      "A Pedro le gusta cargar el paraguas",
+      "Pedro siempre acierta con el clima"
+    ],
+    "ans": 1,
+    "exp": "Llevar paraguas aunque muchas veces no llueva implica que prefiere prevenir por si acaso (B). A exagera un sentimiento; C es poco probable; D lo contradice, pues a veces no llueve."
+  },
+  {
+    "id": "v_imp_2",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "En esa comunidad, solo las personas que terminaron la universidad consiguen empleos bien pagados.",
+    "q": "¿Cuál es una idea implícita en el texto?",
+    "opts": [
+      "La educación influye en las oportunidades laborales",
+      "Nadie trabaja en esa comunidad",
+      "La universidad es gratuita",
+      "Todos ganan lo mismo"
+    ],
+    "ans": 0,
+    "exp": "Si solo los universitarios consiguen buenos empleos, queda implícito que la educación influye en las oportunidades laborales (A). B, C y D afirman cosas que el texto no dice (que nadie trabaja, que es gratis, que todos ganan igual)."
+  },
+  {
+    "id": "v_imp_3",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Aunque el restaurante es caro, siempre está lleno de clientes.",
+    "q": "¿Qué idea está implícita en el texto?",
+    "opts": [
+      "La comida no gusta a nadie",
+      "El precio alto no ha alejado a los clientes",
+      "El restaurante va a cerrar",
+      "Los clientes no pagan"
+    ],
+    "ans": 1,
+    "exp": "Que esté lleno a pesar de ser caro implica que el precio alto no aleja a los clientes (B). A y D contradicen que esté lleno; que cerrará (C) no se deduce de tener éxito."
+  },
+  {
+    "id": "v_imp_4",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 2,
+    "stem": "Cada vez que María estudia con anticipación, obtiene buenas notas.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "Estudiar con tiempo favorece los buenos resultados",
+      "Las notas no dependen del estudio",
+      "María nunca estudia",
+      "Las buenas notas son por suerte"
+    ],
+    "ans": 0,
+    "exp": "Que con anticipación saque siempre buenas notas implica que estudiar con tiempo favorece los resultados (A). B y D niegan esa relación; C contradice que sí estudia."
+  },
+  {
+    "id": "v_imp_5",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Cuando por fin se apagaron los motores de la fábrica y los últimos trabajadores se marcharon, en todo el valle solo quedó el rumor del viento moviendo las hojas.",
+    "q": "¿Qué se puede deducir con seguridad del texto?",
+    "opts": [
+      "La fábrica reabrirá al día siguiente",
+      "En ese momento reinaba el silencio en el lugar",
+      "Afuera había mucha gente conversando",
+      "Se acercaba una fuerte tormenta"
+    ],
+    "ans": 1,
+    "exp": "Motores apagados, trabajadores idos y solo el rumor del viento implican que reinaba el silencio (B). Reabrir (A), gente conversando (C) o una tormenta (D) no se deducen del texto."
+  },
+  {
+    "id": "v_pri_1",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "Los volcanes pueden ser activos, inactivos o extintos; además, varían en tamaño y en el tipo de material que expulsan.",
+    "q": "¿Cuál es el tema principal del texto?",
+    "opts": [
+      "La clasificación de los volcanes",
+      "El peligro de los volcanes",
+      "La altura de los volcanes",
+      "La formación de los volcanes"
+    ],
+    "ans": 0,
+    "exp": "El texto enumera tipos y variaciones de volcanes: su tema es la clasificación de los volcanes (A). El peligro (B), la altura (C) y la formación (D) no son de lo que trata."
+  },
+  {
+    "id": "v_pri_2",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "El ejercicio regular fortalece el corazón y los músculos, mejora el ánimo al liberar endorfinas, favorece un sueño más profundo y ayuda a mantener un peso saludable; además, practicado en grupo, fortalece los vínculos sociales.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "El ejercicio aporta múltiples beneficios para la salud y la vida",
+      "El ejercicio sirve únicamente para bajar de peso",
+      "Hacer ejercicio en grupo es obligatorio",
+      "Las endorfinas provocan cansancio"
+    ],
+    "ans": 0,
+    "exp": "El texto lista beneficios físicos, anímicos y sociales; la idea que los engloba es que el ejercicio aporta múltiples beneficios (A). B lo reduce a uno solo; C y D afirman cosas que el texto no dice."
+  },
+  {
+    "id": "v_pri_3",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 2,
+    "stem": "El café es una de las principales exportaciones de Costa Rica, genera empleo en muchas zonas rurales y forma parte de la identidad del país.",
+    "q": "¿Cuál es el tema central del texto?",
+    "opts": [
+      "El café da empleo en el campo",
+      "El peso del café en la economía y la cultura de Costa Rica",
+      "El café se exporta a otros países",
+      "El café es una bebida muy popular"
+    ],
+    "ans": 1,
+    "exp": "A y C son detalles ciertos del texto, pero solo una parte; D ni se menciona. La idea que une lo económico y lo cultural es B: el papel del café para el país."
+  },
+  {
+    "id": "v_par_1",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 2,
+    "stem": "El conocimiento es la única herramienta que nos protege de ser engañados.",
+    "q": "¿Cuál opción expresa la misma idea con otras palabras?",
+    "opts": [
+      "Saber nos defiende del engaño",
+      "El engaño es inevitable",
+      "El conocimiento engaña a las personas",
+      "Nadie puede aprender"
+    ],
+    "ans": 0,
+    "exp": "Decir que el conocimiento nos protege del engaño equivale a que saber nos defiende del engaño (A). B, C y D cambian o invierten el sentido (que el engaño es inevitable, que el saber engaña, que nadie aprende)."
+  },
+  {
+    "id": "v_par_2",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 2,
+    "stem": "No basta con desear el éxito; hay que trabajar para alcanzarlo.",
+    "q": "¿Cuál de las siguientes opciones reproduce la idea del texto?",
+    "opts": [
+      "El éxito llega solo con desearlo",
+      "El éxito requiere esfuerzo además de deseo",
+      "Desear el éxito es inútil",
+      "El trabajo no sirve de nada"
+    ],
+    "ans": 1,
+    "exp": "Que no baste desear y haya que trabajar equivale a que el éxito requiere esfuerzo además del deseo (B). A dice lo contrario; C y D niegan el valor del deseo o del trabajo, que el texto sí reconoce."
+  },
+  {
+    "id": "v_par_3",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 2,
+    "stem": "La verdad, aunque incómoda, siempre es preferible a una mentira agradable.",
+    "q": "¿Cuál opción dice lo mismo con otras palabras?",
+    "opts": [
+      "Es mejor una verdad molesta que una mentira cómoda",
+      "Las mentiras son mejores que las verdades",
+      "La verdad nunca incomoda",
+      "Hay que evitar la verdad"
+    ],
+    "ans": 0,
+    "exp": "Preferir la verdad incómoda a la mentira agradable equivale a 'mejor una verdad molesta que una mentira cómoda' (A). B la invierte; C niega que incomode; D aconseja evitar la verdad, lo opuesto al texto."
+  },
+  {
+    "id": "v_pro_1",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Toda planta necesita luz para realizar la fotosíntesis. Analice las proposiciones:\nI. Una planta sin luz no puede realizar fotosíntesis.\nII. La luz es innecesaria para las plantas.\nIII. Algunas plantas hacen fotosíntesis en total oscuridad.",
+    "q": "¿Cuál(es) proposición(es) se deduce(n) del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "Solo la III",
+      "La I y la III"
+    ],
+    "ans": 0,
+    "exp": "De 'toda planta necesita luz' se deduce que sin luz no hay fotosíntesis: la I (A). La II niega esa necesidad y la III afirma fotosíntesis en oscuridad; ambas contradicen el texto."
+  },
+  {
+    "id": "v_pro_2",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Ningún ser humano puede vivir sin agua. Analice las proposiciones:\nI. El agua es indispensable para la vida humana.\nII. Algunos humanos viven sin agua.\nIII. Sin agua, un ser humano no puede sobrevivir.",
+    "q": "¿Cuáles proposiciones concuerdan con el texto?",
+    "opts": [
+      "Solo la II",
+      "La I y la III",
+      "Solo la III",
+      "La I, la II y la III"
+    ],
+    "ans": 1,
+    "exp": "De 'nadie vive sin agua' se deducen la I (el agua es indispensable) y la III (sin agua no se sobrevive): por eso B. La II dice lo contrario del texto."
+  }
+]

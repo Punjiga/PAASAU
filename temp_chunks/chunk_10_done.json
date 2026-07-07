@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_par_6",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La asimilación masiva de una obra cultural por parte del público no constituye, de manera intrínseca, un indicador fiable de su excelencia estética.",
+    "q": "¿Cuál de las siguientes opciones expresa una paráfrasis adecuada del texto anterior?",
+    "opts": [
+      "El rechazo del público es el único criterio válido para determinar el verdadero valor estético de una obra cultural.",
+      "El éxito de recepción multitudinaria de una creación no certifica necesariamente su alto valor o calidad intrínseca.",
+      "La excelencia de una obra de arte se define exclusivamente por su capacidad para mantenerse al margen de la cultura de masas.",
+      "Para que una creación cultural alcance la verdadera excelencia, es imprescindible que sea comprendida y aclamada por las mayorías."
+    ],
+    "ans": 1,
+    "exp": "El texto original sostiene que el éxito masivo (asimilación masiva) no asegura que una obra sea realmente buena o valiosa (excelencia estética).\n\n- **Opción B (Correcta):** Capta exactamente esta idea central, señalando que el éxito multitudinario no es garantía de valor intrínseco.\n- **Opción A:** Tergiversa el texto al afirmar que el rechazo es el indicador válido, extremo que no se sugiere.\n- **Opción C:** Es una exageración absolutista; el texto no dice que deba mantenerse al margen de las masas para ser buena.\n- **Opción D:** Afirma exactamente lo contrario a la premisa original.\n\n**Tip Élite:** En los ejercicios de paráfrasis, desconfía de las opciones que añaden juicios de valor extremos o invierten el sentido lógico de la premisa."
+  },
+  {
+    "id": "v_par_7",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El ejercicio de la autonomía individual encuentra su frontera legítima e insoslayable en el momento exacto en que transgrede las prerrogativas equivalentes de sus semejantes.",
+    "q": "¿Cuál opción parafrasea de forma precisa la premisa expuesta?",
+    "opts": [
+      "La verdadera autonomía consiste en la capacidad de ejercer los derechos propios sin reconocer restricciones impuestas por la sociedad.",
+      "El ámbito de acción libre de un individuo está intrínsecamente limitado por el respeto a los derechos y libertades ajenas.",
+      "La convivencia pacífica exige que los individuos renuncien por completo a su autonomía en beneficio del bienestar colectivo.",
+      "Solo aquellos que carecen de restricciones normativas pueden afirmar que ejercen una libertad auténtica y plena."
+    ],
+    "ans": 1,
+    "exp": "El texto plantea el principio clásico de que la libertad propia no es absoluta, sino que está condicionada por el inicio de la libertad de los demás.\n\n- **Opción B (Correcta):** Traduce fielmente la idea al indicar que el límite de la acción libre propia es el respeto a los derechos ajenos.\n- **Opción A:** Propone una libertad sin restricciones, lo cual contradice la idea de un límite explícito.\n- **Opción C:** Lleva la premisa a un extremo infundado; el texto habla de límites, no de renunciar a la libertad por completo.\n- **Opción D:** Confunde el concepto de autonomía limitada con la ausencia total de restricciones, lo cual es contrario al mensaje.\n\n**Tip Élite:** Una buena paráfrasis mantiene la esencia del mensaje original pero eleva o modifica el vocabulario sin perder las restricciones lógicas impuestas por el autor."
+  },
+  {
+    "id": "v_par_8",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La omisión sistemática de dificultades aparentemente minúsculas en el presente tiene el potencial de germinar en crisis de magnitudes inmanejables en el futuro.",
+    "q": "¿Cuál opción reproduce con mayor fidelidad el sentido del enunciado?",
+    "opts": [
+      "Las contrariedades cotidianas carecen de relevancia si no afectan directamente la estabilidad futura del individuo.",
+      "La negligencia ante inconvenientes menores actuales tiende a desencadenar complicaciones mucho más severas a largo plazo.",
+      "El enfoque preventivo garantiza que los problemas futuros desaparecerán si se enfrentan con diligencia en el presente.",
+      "Es imperativo concentrar todos los esfuerzos en evitar que las crisis futuras alteren la percepción de los problemas de hoy."
+    ],
+    "ans": 1,
+    "exp": "El fragmento original es una advertencia sobre cómo desatender problemas pequeños conlleva consecuencias graves en el futuro.\n\n- **Opción B (Correcta):** Refleja la relación de causa y efecto: descuidar lo menor hoy (negligencia) genera complicaciones mayores mañana.\n- **Opción A:** Minimiza la importancia de los problemas actuales, lo cual contradice la advertencia del texto.\n- **Opción C:** Constituye una inferencia inválida, pues el texto no promete la desaparición total de los problemas.\n- **Opción D:** Invierte el orden lógico de la acción preventiva y distorsiona el enfoque central del texto.\n\n**Tip Élite:** Asegúrate de que la opción correcta mantenga intacta la relación de causa-efecto del texto base, sin agregar promesas no fundamentadas."
+  },
+  {
+    "id": "v_pro_4",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Todo elemento clasificado como conductor metálico facilita el flujo ininterrumpido de electrones. Considere las siguientes proposiciones:\nI. El cobre, al estar categorizado como un conductor metálico, permite el tránsito de electrones.\nII. Carece de sentido afirmar que algún elemento clasificado como metal permita el flujo de electrones.\nIII. Existe al menos un conductor metálico que opone resistencia absoluta al flujo de electrones.",
+    "q": "A partir de la premisa principal, ¿cuál(es) proposición(es) se infiere(n) con certeza lógica?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "La II y la III",
+      "Las tres"
+    ],
+    "ans": 0,
+    "exp": "El texto establece una premisa universal afirmativa: todos los conductores metálicos facilitan el flujo de electrones.\n\n- **Proposición I (Correcta):** Aplica la regla universal a un caso particular (el cobre). Es una deducción válida por silogismo.\n- **Proposición II:** Es una negación universal que contradice frontalmente la premisa original.\n- **Proposición III:** Es una afirmación particular negativa que invalida la regla 'todo elemento', por lo que es lógicamente incompatible.\n\nPor consiguiente, únicamente la primera proposición se sostiene lógicamente.\n\n**Tip Élite:** Ante proposiciones categóricas (del tipo 'Todos los A son B'), recuerda que las conclusiones particulares ('Este A es B') siempre son deducciones directas y válidas."
+  },
+  {
+    "id": "v_pro_5",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "La normativa estipula que es condición ineludible para todo ciudadano empadronado exhibir su documento de identidad vigente. Analice las siguientes proposiciones:\nI. Aquel ciudadano que omita exhibir su documento transgrede el precepto normativo estipulado.\nII. La presentación del documento de identidad queda sujeta a la discrecionalidad del empadronado.\nIII. Un ciudadano debidamente empadronado que carezca de documento al momento del trámite incumple el requerimiento.",
+    "q": "De acuerdo con el texto, ¿cuáles proposiciones son consistentes con la normativa planteada?",
+    "opts": [
+      "Solo la II",
+      "La I y la III",
+      "Solo la III",
+      "Las tres"
+    ],
+    "ans": 1,
+    "exp": "El texto plantea una condición necesaria y obligatoria ('condición ineludible') para un grupo específico ('todo ciudadano empadronado').\n\n- **Proposición I (Correcta):** Se deriva mediante modus tollens; si presentar el documento es ineludible, omitirlo es incumplir.\n- **Proposición II:** Usa la palabra 'discrecionalidad' (opcionalidad), lo cual contradice abiertamente el carácter 'ineludible' del requisito.\n- **Proposición III (Correcta):** Es una aplicación directa de la regla; si está empadronado y no tiene el documento, está en estado de incumplimiento.\n\nLas proposiciones I y III se deducen directamente.\n\n**Tip Élite:** Identifica rápidamente las palabras de obligatoriedad absoluta ('ineludible', 'condición sine qua non') para descartar opciones que sugieran voluntariedad."
+  },
+  {
+    "id": "v_pro_6",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Se observa que, de manera invariable, la precipitación pluvial ocasiona la saturación hídrica de la superficie del campo deportivo. Analice las siguientes proposiciones:\nI. El fenómeno de la precipitación pluvial es la causa directa de la humedad en el campo deportivo.\nII. La superficie del campo deportivo alcanza la saturación hídrica de manera espontánea, ajena a la lluvia.\nIII. La precipitación pluvial genera un efecto de deshidratación en el campo deportivo.",
+    "q": "¿Cuál de las proposiciones se deduce irrebatiblemente del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "Solo la III",
+      "La I y la III"
+    ],
+    "ans": 0,
+    "exp": "El enunciado establece una relación de implicación incondicional entre la lluvia (precipitación pluvial) y el efecto de humedad (saturación hídrica).\n\n- **Proposición I (Correcta):** Conecta directamente la causa explícita del texto con su efecto garantizado.\n- **Proposición II:** Introduce una variable externa y espontánea que no puede deducirse del texto, el cual se centra exclusivamente en el efecto de la lluvia.\n- **Proposición III:** Afirma exactamente lo opuesto al efecto descrito (deshidratación vs. saturación).\n\nPor lo tanto, solo la primera proposición se infiere de la premisa dada.\n\n**Tip Élite:** Evita asumir que una condición dada en el texto es la *única* causa en la realidad, pero cíñete a validar solo aquello que el texto afirma explícitamente."
+  },
+  {
+    "id": "v_pro_7",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El comité evaluador dictaminó que ningún postulante logró la acreditación sin haber sometido previamente su propuesta de investigación. Considere las siguientes aseveraciones:\nI. La presentación de la propuesta de investigación constituyó un requisito indispensable para obtener la acreditación.\nII. Al menos un postulante excepcional consiguió la acreditación a pesar de omitir la entrega de la propuesta.\nIII. Aquel individuo que eludió la entrega de su propuesta fracasó irremediablemente en su intento de acreditarse.",
+    "q": "¿Cuáles aseveraciones se desprenden de forma concluyente del dictamen?",
+    "opts": [
+      "Solo la I",
+      "La I y la III",
+      "Solo la II",
+      "Las tres"
+    ],
+    "ans": 1,
+    "exp": "El texto emplea una negación universal ('ningún... sin haber') para establecer una condición estricta.\n\n- **Proposición I (Correcta):** Traduce la doble negación a una afirmación de necesidad; si nadie aprueba sin él, entregarlo es requisito indispensable.\n- **Proposición II:** Al sugerir que 'al menos un' postulante lo logró sin entregar, contradice la universalidad de la palabra 'ningún'.\n- **Proposición III (Correcta):** Es equivalente a la premisa original; el incumplimiento del requisito deriva necesariamente en la no acreditación.\n\nPor lo tanto, la I y la III son equivalencias lógicas del texto base.\n\n**Tip Élite:** Las estructuras de doble negación (ej. 'nadie aprueba sin estudiar') son equivalencias exactas de sentencias condicionales (ej. 'solo si estudias, apruebas')."
+  },
+  {
+    "id": "v_pro_8",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "La totalidad de los especímenes pertenecientes a la clase Aves poseen una cubierta epidérmica formada por plumaje. Analice las premisas:\nI. El halcón peregrino, clasificado taxonómicamente como ave, cuenta con dicha cubierta epidérmica.\nII. Dentro de la diversidad biológica, se documentan ciertos especímenes de aves que carecen en absoluto de plumaje.\nIII. A pesar de su clasificación, el halcón peregrino está desprovisto de cobertura epidérmica plumosa.",
+    "q": "¿Cuál de las siguientes conclusiones se deriva legítimamente del enunciado inicial?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "La II y la III",
+      "Las tres"
+    ],
+    "ans": 0,
+    "exp": "El texto establece un atributo universal e inherente a toda una categoría biológica.\n\n- **Proposición I (Correcta):** Constituye la aplicación deductiva de la norma general a un miembro particular que pertenece indudablemente a dicho grupo (el halcón).\n- **Proposición II:** Contradice la afirmación original ('la totalidad'), que no admite excepciones.\n- **Proposición III:** Niega la característica fundamental del grupo para uno de sus miembros, violando la premisa.\n\nSolo la I se sostiene bajo los parámetros del texto.\n\n**Tip Élite:** En los ejercicios de deducción silogística, la verdad empírica externa no importa; solo importa lo que se infiere de la regla universal impuesta por el texto."
+  },
+  {
+    "id": "m_ari_6",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En un restaurante de comida gourmet, el menú ejecutivo tiene un valor de ₡8 400 y el jugo natural cuesta ₡1 650. Una ejecutiva ordena 3 menús y 4 jugos naturales. Al momento de cancelar, entrega un billete de ₡20 000 y otro de ₡15 000.",
+    "q": "¿Cuál es el monto exacto del vuelto que debe recibir la ejecutiva?",
+    "opts": [
+      "₡3 800",
+      "₡3 200",
+      "₡2 400",
+      "₡4 200"
+    ],
+    "ans": 1,
+    "exp": "Para resolver el problema, primero determinamos el costo total del pedido y luego lo restamos del monto pagado.\n\n- **Costo de menús:** $3 \\times 8\\ 400 = 25\\ 200$.\n- **Costo de jugos:** $4 \\times 1\\ 650 = 6\\ 600$.\n- **Monto total a pagar:** $25\\ 200 + 6\\ 600 = 31\\ 800$.\n- **Dinero entregado:** La ejecutiva paga con dos billetes: $20\\ 000 + 15\\ 000 = 35\\ 000$.\n- **Cálculo del vuelto:** Restamos el total a pagar del dinero entregado: $35\\ 000 - 31\\ 800 = 3\\ 200$.\n\n**Tip Élite:** En problemas aritméticos de varias etapas, lleva un registro ordenado de los subtotales para no confundir las cifras antes de la resta final."
+  },
+  {
+    "id": "m_ari_7",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Dada la siguiente expresión combinada con números racionales, determine el valor de la operación: $\\frac{7}{6} - \\frac{3}{8} + \\frac{5}{12}$.",
+    "q": "¿Cuál es el resultado simplificado de la expresión?",
+    "opts": [
+      "$\\frac{29}{24}$",
+      "$\\frac{11}{24}$",
+      "$\\frac{13}{12}$",
+      "$\\frac{9}{8}$"
+    ],
+    "ans": 0,
+    "exp": "Para sumar y restar fracciones con diferente denominador, es imperativo encontrar el mínimo común múltiplo (MCM).\n\n- **Paso 1:** Hallar el MCM de los denominadores $6$, $8$ y $12$. Descomponiendo en primos, observamos que el MCM es $24$.\n- **Paso 2:** Amplificar cada fracción para que posean el denominador común de $24$:\n  - $\\frac{7}{6} = \\frac{7 \\times 4}{6 \\times 4} = \\frac{28}{24}$\n  - $\\frac{3}{8} = \\frac{3 \\times 3}{8 \\times 3} = \\frac{9}{24}$\n  - $\\frac{5}{12} = \\frac{5 \\times 2}{12 \\times 2} = \\frac{10}{24}$\n- **Paso 3:** Operar los numeradores: $28 - 9 + 10 = 19 + 10 = 29$.\n- **Resultado final:** $\\frac{29}{24}$.\n\n**Tip Élite:** Acostúmbrate a calcular el mínimo común múltiplo descomponiendo rápidamente los denominadores más grandes, lo cual reduce el riesgo de errores en fracciones equivalentes."
+  },
+  {
+    "id": "m_ari_8",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Considere la siguiente expresión aritmética que involucra jerarquía de operaciones: $12 - 3 \\times (7 - 4)^2 \\div 9 + 5$.",
+    "q": "¿Cuál es el valor final de la expresión?",
+    "opts": [
+      "$14$",
+      "$4$",
+      "$18$",
+      "$10$"
+    ],
+    "ans": 0,
+    "exp": "La resolución adecuada exige el respeto estricto a la jerarquía de las operaciones (PEMDAS).\n\n- **Paréntesis y potencias:** Resolvemos el interior del paréntesis: $(7 - 4) = 3$. Luego, aplicamos el exponente: $3^2 = 9$.\n- **Multiplicación y división (de izquierda a derecha):** La expresión queda así: $12 - 3 \\times 9 \\div 9 + 5$.\n  - Primero, multiplicamos: $3 \\times 9 = 27$.\n  - Después, dividimos: $27 \\div 9 = 3$.\n- **Sumas y restas (de izquierda a derecha):** Ahora, la expresión es: $12 - 3 + 5$.\n  - Restamos: $12 - 3 = 9$.\n  - Sumamos: $9 + 5 = 14$.\n\n**Tip Élite:** Nunca realices sumas o restas ubicadas al inicio de la expresión antes de haber completado las multiplicaciones o divisiones que afecten a los términos involucrados."
+  },
+  {
+    "id": "m_ari_9",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una reserva ecológica se contabilizan un total de $720$ especímenes arbóreos. Se ha determinado que $\\frac{5}{12}$ de estos árboles pertenecen a la especie endémica *Quercus*, mientras que $\\frac{1}{4}$ corresponde a coníferas, y el resto a especies introducidas.",
+    "q": "¿Cuántos árboles de especies introducidas hay en la reserva?",
+    "opts": [
+      "$180$",
+      "$300$",
+      "$360$",
+      "$240$"
+    ],
+    "ans": 3,
+    "exp": "Este ejercicio requiere calcular las partes proporcionales de un total conocido para hallar el remanente.\n\n- **Fracción de *Quercus*:** Se calcula multiplicando el total por la fracción: $720 \\times \\frac{5}{12} = 300$ árboles.\n- **Fracción de coníferas:** Se calcula de manera análoga: $720 \\times \\frac{1}{4} = 180$ árboles.\n- **Suma parcial:** Total de árboles de estas dos especies: $300 + 180 = 480$ especímenes.\n- **Especies introducidas:** Representan el resto, por lo tanto, restamos del total: $720 - 480 = 240$ árboles.\n\n**Tip Élite:** Alternativamente, puedes sumar las fracciones ($\\frac{5}{12} + \\frac{1}{4} = \\frac{8}{12} = \\frac{2}{3}$) y deducir que las especies introducidas representan el $\\frac{1}{3}$ restante. $\\frac{1}{3}$ de $720$ es $240$."
+  },
+  {
+    "id": "m_ari_10",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Analice la siguiente operación combinada con números enteros, prestando especial atención a las reglas de los signos: $-15 - (-8) + (-12) - 4 + (-2)$.",
+    "q": "¿Cuál es el resultado que se obtiene al simplificar completamente la expresión?",
+    "opts": [
+      "$-17$",
+      "$-33$",
+      "$-25$",
+      "$-9$"
+    ],
+    "ans": 2,
+    "exp": "Para resolver la expresión sin errores, es fundamental suprimir adecuadamente los paréntesis respetando las leyes de los signos.\n\n- **Supresión de paréntesis:** Un signo negativo frente a un paréntesis cambia el signo del número interior, mientras que un positivo lo mantiene.\n  - La expresión se transforma en: $-15 + 8 - 12 - 4 - 2$.\n- **Agrupación de términos:** Agrupamos los números negativos y positivos para facilitar la operación.\n  - Negativos: $-15 - 12 - 4 - 2 = -33$.\n  - Positivos: $+8$.\n- **Cálculo final:** Operamos la suma algebraica final: $-33 + 8 = -25$.\n\n**Tip Élite:** Agrupar todos los términos negativos por un lado y los positivos por otro minimiza significativamente la probabilidad de cometer errores aritméticos al cambiar de signo."
+  },
+  {
+    "id": "m_mcm_5",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "En un sistema de señalización marítima, un faro emite destellos cada $18$ segundos, un segundo faro lo hace cada $24$ segundos y un tercero cada $36$ segundos. Si a las 00:00 horas los tres faros emitieron un destello simultáneo.",
+    "q": "¿Cuántos segundos transcurrirán hasta que los tres faros vuelvan a sincronizar sus destellos por primera vez?",
+    "opts": [
+      "$144$ segundos",
+      "$72$ segundos",
+      "$108$ segundos",
+      "$216$ segundos"
+    ],
+    "ans": 1,
+    "exp": "Los eventos periódicos que deben coincidir en el tiempo se resuelven empleando el Mínimo Común Múltiplo (MCM).\n\n- **Descomposición factorial:** Descomponemos los intervalos en sus factores primos:\n  - $18 = 2 \\times 3^2$\n  - $24 = 2^3 \\times 3$\n  - $36 = 2^2 \\times 3^2$\n- **Cálculo del MCM:** Tomamos todos los factores primos distintos elevados a su mayor exponente.\n  - $MCM = 2^3 \\times 3^2 = 8 \\times 9 = 72$.\n- **Interpretación:** Esto significa que los tres faros volverán a coincidir exactamente a los $72$ segundos.\n\n**Tip Élite:** En problemas de repetición cíclica (alarmas, órbitas, luces), la clave es identificar siempre el MCM para hallar el punto de convergencia futura."
+  },
+  {
+    "id": "m_mcm_6",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Una ONG dispone de $120$ mantas térmicas, $180$ raciones de alimento y $240$ botellas de agua para ensamblar kits de supervivencia. Se requiere formar la mayor cantidad posible de kits idénticos, utilizando todos los suministros sin que sobre ninguno.",
+    "q": "¿Cuál es la cantidad máxima de kits que se pueden ensamblar bajo estas condiciones?",
+    "opts": [
+      "$60$",
+      "$120$",
+      "$30$",
+      "$15$"
+    ],
+    "ans": 0,
+    "exp": "El objetivo de dividir cantidades heterogéneas en grupos idénticos más grandes posibles se resuelve calculando el Máximo Común Divisor (MCD).\n\n- **Descomposición factorial:** Analizamos los suministros:\n  - $120 = 2^3 \\times 3 \\times 5$\n  - $180 = 2^2 \\times 3^2 \\times 5$\n  - $240 = 2^4 \\times 3 \\times 5$\n- **Cálculo del MCD:** Se extraen los factores comunes elevados al menor exponente.\n  - $MCD = 2^2 \\times 3^1 \\times 5^1 = 4 \\times 3 \\times 5 = 60$.\n- **Conclusión:** La ONG podrá ensamblar $60$ kits idénticos, conteniendo cada uno $2$ mantas, $3$ raciones y $4$ botellas.\n\n**Tip Élite:** Palabras clave como 'repartir equitativamente', 'mayor cantidad posible' o 'sin que sobre nada' son indicadores infalibles de que se requiere calcular el MCD."
+  },
+  {
+    "id": "m_mcm_7",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Un artesano corta listones de madera de $144$ cm, $192$ cm y $216$ cm de longitud en trozos exactamente iguales. Su objetivo es que estos trozos tengan la mayor longitud posible, sin desperdiciar nada de material.",
+    "q": "¿Cuál es la longitud en centímetros que tendrá cada uno de los trozos cortados?",
+    "opts": [
+      "$48$",
+      "$36$",
+      "$24$",
+      "$12$"
+    ],
+    "ans": 2,
+    "exp": "Cuando se requiere fragmentar o cortar objetos de longitudes diferentes en partes idénticas de tamaño máximo sin dejar residuo, aplicamos el Máximo Común Divisor (MCD).\n\n- **Descomposición en primos:**\n  - $144 = 2^4 \\times 3^2$\n  - $192 = 2^6 \\times 3^1$\n  - $216 = 2^3 \\times 3^3$\n- **Determinación del MCD:** Identificamos los factores comunes al menor exponente:\n  - Factores comunes: $2$ y $3$.\n  - Menores exponentes: $2^3$ y $3^1$.\n  - $MCD = 2^3 \\times 3 = 8 \\times 3 = 24$.\n- **Interpretación:** El artesano deberá cortar todos los listones en segmentos de $24$ cm para cumplir sus requisitos.\n\n**Tip Élite:** No confundas la cantidad de trozos totales con la longitud del trozo. El MCD te otorga directamente la magnitud del divisor máximo (la longitud, en este caso)."
+  },
+  {
+    "id": "m_rel_4",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "En el ranking de eficiencia corporativa, se ha determinado que el departamento de finanzas supera al de marketing. A su vez, logística presenta un desempeño inferior al de marketing, mientras que recursos humanos se ubica por debajo de logística.",
+    "q": "De acuerdo con estos datos, ¿qué departamento se encuentra en la posición más baja de eficiencia?",
+    "opts": [
+      "Finanzas",
+      "Marketing",
+      "Logística",
+      "Recursos humanos"
+    ],
+    "ans": 3,
+    "exp": "Los problemas de relaciones de orden exigen la construcción de una cadena de inecuaciones para establecer una jerarquía clara.\n\n- **Primera relación:** Finanzas supera a marketing: $F > M$.\n- **Segunda relación:** Logística es inferior a marketing: $M > L$.\n- **Tercera relación:** Recursos humanos está por debajo de logística: $L > RH$.\n- **Cadena completa:** Al concatenar, obtenemos: $F > M > L > RH$.\n\nEl departamento de recursos humanos ocupa irrevocablemente la última posición del espectro.\n\n**Tip Élite:** Traduce rápidamente los enunciados verbales ('supera', 'es inferior') a símbolos matemáticos ($>$, $<$) para construir la jerarquía sin confusiones de lectura."
+  },
+  {
+    "id": "m_rel_5",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "En una escala de densidades de fluidos, la sustancia W es más densa que la sustancia X. La sustancia Y, en contraposición, exhibe menor densidad que la sustancia Z. Además, se constata que la sustancia Z es menos densa que la sustancia X.",
+    "q": "¿Cuál de las sustancias presenta la menor densidad del conjunto analizado?",
+    "opts": [
+      "Sustancia W",
+      "Sustancia X",
+      "Sustancia Z",
+      "Sustancia Y"
+    ],
+    "ans": 3,
+    "exp": "Para determinar el elemento con la propiedad mínima, debemos enlazar lógicamente las variables dadas.\n\n- **Dato 1:** Sustancia W es más densa que X ($W > X$).\n- **Dato 2 y 3:** Sustancia Z es menos densa que X ($X > Z$), y la sustancia Y es menos densa que Z ($Z > Y$).\n- **Construcción de la secuencia:** Alineando los datos: $W > X > Z > Y$.\n- **Resolución:** El extremo inferior de la cadena de densidad corresponde inequívocamente a la sustancia Y.\n\n**Tip Élite:** Cuando los datos se presentan en desorden, ubica el término de conexión (en este caso, X y Z) para ensamblar correctamente la desigualdad extendida."
+  },
+  {
+    "id": "m_rel_6",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Dadas las siguientes fracciones y decimales: $\\frac{4}{9}$, $0,48$, $\\frac{11}{20}$ y $0,53$. Se requiere identificar cuál de estas cifras presenta la menor desviación absoluta respecto al valor central de $0,5$.",
+    "q": "¿Cuál de los valores se encuentra a una distancia menor de $0,5$ en la recta numérica?",
+    "opts": [
+      "$\\frac{4}{9}$",
+      "$0,48$",
+      "$\\frac{11}{20}$",
+      "$0,53$"
+    ],
+    "ans": 1,
+    "exp": "Para comparar con precisión, lo más eficiente es convertir todas las expresiones a un formato común, preferiblemente decimal.\n\n- **Conversión:**\n  - $\\frac{4}{9} \\approx 0,444...$\n  - $\\frac{11}{20} = 0,55$\n- **Cálculo de la desviación absoluta respecto a $0,5$:**\n  - Desviación de $0,444...$ es $|0,444 - 0,5| = 0,055...$\n  - Desviación de $0,48$ es $|0,48 - 0,5| = 0,02$\n  - Desviación de $0,55$ es $|0,55 - 0,5| = 0,05$\n  - Desviación de $0,53$ es $|0,53 - 0,5| = 0,03$\n- **Análisis:** El valor que reporta la diferencia absoluta más estrecha es $0,48$.\n\n**Tip Élite:** Transforma siempre las fracciones a notación decimal cuando necesites medir distancias en la recta numérica, y asegúrate de equiparar la cantidad de decimales para una lectura directa."
+  },
+  {
+    "id": "m_rel_7",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "En un análisis termodinámico comparativo, el motor Alpha genera una temperatura operativa superior a la del motor Beta. Simultáneamente, las mediciones revelan que la temperatura del motor Gamma no logra alcanzar los niveles térmicos del motor Beta.",
+    "q": "De las siguientes deducciones lógicas, ¿cuál es irrebatiblemente cierta?",
+    "opts": [
+      "El motor Gamma registra la mayor temperatura operativa.",
+      "El motor Alpha opera a la temperatura más elevada del conjunto.",
+      "El motor Beta es el de menor temperatura operativa.",
+      "El motor Alpha y el motor Gamma operan en idéntico régimen térmico."
+    ],
+    "ans": 1,
+    "exp": "El problema se resuelve organizando la información en una escala de magnitudes.\n\n- **Datos dados:**\n  - Motor Alpha > Motor Beta.\n  - Motor Gamma < Motor Beta (es decir, Motor Beta > Motor Gamma).\n- **Consolidación:** Al fusionar las inecuaciones, obtenemos la secuencia estricta: $Alpha > Beta > Gamma$.\n- **Conclusión:** Queda demostrado de manera concluyente que el motor Alpha ostenta el máximo nivel térmico entre los tres sistemas.\n\n**Tip Élite:** La frase 'no logra alcanzar' o expresiones similares suelen traducirse directamente como el signo de 'menor que' ($<$)."
+  },
+  {
+    "id": "m_cnt_4",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Una empresa de ciberseguridad requiere configurar claves de acceso corporativas que consten de tres componentes: una letra mayúscula elegida de un conjunto de $4$ opciones, un dígito numérico de un subgrupo de $6$ posibles, y un carácter especial seleccionado de un catálogo de $5$ símbolos.",
+    "q": "¿Cuántas combinaciones distintas de contraseñas de tres componentes se pueden estructurar?",
+    "opts": [
+      "$120$",
+      "$15$",
+      "$24$",
+      "$90$"
+    ],
+    "ans": 0,
+    "exp": "Este ejercicio se sustenta en el principio multiplicativo de la combinatoria.\n\n- **Fundamento teórico:** Si un suceso está compuesto por varias etapas independientes, el total de formas posibles de realizar el suceso es el producto del número de opciones de cada etapa.\n- **Análisis de etapas:**\n  - Elección de la letra mayúscula: $4$ alternativas.\n  - Elección del dígito numérico: $6$ alternativas.\n  - Elección del carácter especial: $5$ alternativas.\n- **Cálculo:** $4 \\times 6 \\times 5 = 120$ posibles configuraciones.\n\n**Tip Élite:** Siempre que se requiera formar un 'todo' seleccionando exactamente un elemento de distintos grupos independientes, la multiplicación es el camino directo."
+  },
+  {
+    "id": "m_cnt_5",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En un depósito de suministros médicos, en total oscuridad, se encuentran mezclados en una caja $12$ viales de vacuna de la marca A, $15$ viales de la marca B y $8$ viales de la marca C. Un técnico requiere con urgencia asegurar al menos un par de viales que pertenezcan exactamente al mismo fabricante.",
+    "q": "¿Cuál es el número mínimo indispensable de viales que el técnico debe extraer para garantizar el par del mismo fabricante?",
+    "opts": [
+      "$4$",
+      "$3$",
+      "$16$",
+      "$36$"
+    ],
+    "ans": 0,
+    "exp": "La resolución de este desafío exige aplicar el Principio de las Casillas (Principio del Palomar) en su condición más adversa.\n\n- **Planteamiento del peor escenario:** Supongamos que el técnico tiene una suerte nefasta y extrae un vial de cada marca sin lograr una repetición inmediata.\n  - Extrae $1$ de la marca A.\n  - Extrae $1$ de la marca B.\n  - Extrae $1$ de la marca C.\n- **Punto de inflexión:** Hasta aquí, ha sacado $3$ viales en total, todos diferentes.\n- **Resolución:** El siguiente vial extraído (el cuarto) forzosamente tendrá que coincidir con una de las tres marcas ya sacadas, garantizando el par. Por lo tanto, el mínimo indispensable es $4$.\n\n**Tip Élite:** En problemas de 'garantizar' repeticiones, siempre proyecta el escenario de peor suerte (obtener uno de cada categoría) y súmale $1$ a la extracción final."
+  },
+  {
+    "id": "m_cnt_6",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un protocolo informático debe asignar códigos de seguridad conformados por $4$ caracteres alfanuméricos distintos. Para ello, el sistema tiene a su disposición un repertorio limitado compuesto por $7$ caracteres en total. No se permite la repetición de ningún carácter en un mismo código.",
+    "q": "¿Cuántos códigos de seguridad únicos es capaz de generar el protocolo bajo estas restricciones?",
+    "opts": [
+      "$2401$",
+      "$840$",
+      "$210$",
+      "$35$"
+    ],
+    "ans": 1,
+    "exp": "El problema describe una permutación sin repetición, ya que el orden de los caracteres importa para formar códigos únicos y no se permite reutilizarlos.\n\n- **Plazas disponibles:** El código tiene $4$ posiciones.\n- **Elecciones por posición:**\n  - Posición 1: Cualquiera de los $7$ caracteres disponibles.\n  - Posición 2: Quedan $6$ caracteres (uno ya se usó).\n  - Posición 3: Quedan $5$ caracteres.\n  - Posición 4: Quedan $4$ caracteres.\n- **Cálculo final:** Por principio multiplicativo, el total de códigos es $7 \\times 6 \\times 5 \\times 4 = 840$.\n\n**Tip Élite:** Si el orden no importara (es decir, solo formar grupos de caracteres), usarías combinaciones. Como se trata de 'códigos', el orden es crucial (variaciones/permutaciones parciales)."
+  },
+  {
+    "id": "m_cnt_7",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Una urna opaca contiene $9$ esferas de cuarzo, $11$ esferas de obsidiana y $6$ esferas de jade. Un curador necesita extraer a ciegas esferas de la urna con el propósito de garantizar que, entre las esferas extraídas, haya al menos $3$ esferas de jade.",
+    "q": "¿Cuántas extracciones debe realizar como mínimo para asegurar el requerimiento del curador?",
+    "opts": [
+      "$9$",
+      "$14$",
+      "$23$",
+      "$3$"
+    ],
+    "ans": 2,
+    "exp": "Para resolver con certeza absoluta (garantizar), recurrimos a simular la extracción en el escenario más desafortunado (peor de los casos).\n\n- **El peor escenario:** Asumimos que el curador saca primero todas las esferas que *no* le interesan antes de sacar la primera de jade.\n- **Extracciones desfavorables:**\n  - Saca las $9$ de cuarzo.\n  - Saca las $11$ de obsidiana.\n  - Hasta el momento, ha sacado $20$ esferas y ninguna es de jade.\n- **Extracciones requeridas:** Ahora que la urna solo contiene jade, las próximas $3$ extracciones serán de jade con total seguridad.\n- **Total:** $20 \\text{ (desfavorables)} + 3 \\text{ (jade)} = 23$ extracciones.\n\n**Tip Élite:** Siempre agota la totalidad de las existencias de las categorías no deseadas antes de sumar la cantidad requerida del elemento objetivo."
+  },
+  {
+    "id": "m_per_4",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Una galería de arte va a exhibir $6$ pinturas de diferentes épocas dispuestas en línea recta sobre un muro. El curador desea explorar absolutamente todas las configuraciones espaciales posibles antes de tomar una decisión final.",
+    "q": "¿Cuántas disposiciones lineales diferentes puede estructurar el curador?",
+    "opts": [
+      "$720$",
+      "$120$",
+      "$36$",
+      "$600$"
+    ],
+    "ans": 0,
+    "exp": "El problema consiste en ordenar una totalidad de elementos distintos en una disposición lineal, lo cual se define matemáticamente como una permutación lineal simple.\n\n- **Condiciones:** Hay $6$ pinturas y $6$ espacios disponibles, y el orden en que se colocan genera una exhibición distinta.\n- **Fórmula de permutación:** Se calcula utilizando el factorial del número total de elementos ($n!$).\n- **Cálculo:** $6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720$.\n\nPor consiguiente, el curador tiene ante sí $720$ formas de organizar la galería.\n\n**Tip Élite:** Memorizar los factoriales del $1!$ al $6!$ ($1, 2, 6, 24, 120, 720$) acelera enormemente la resolución de problemas de permutaciones en exámenes de admisión."
+  },
+  {
+    "id": "m_per_5",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un comité directivo integrado por $8$ accionistas necesita designar una junta ejecutiva conformada por tres jerarquías distintas: un Director General, un Jefe de Operaciones y un Tesorero. Ningún accionista puede ejercer más de un cargo simultáneamente.",
+    "q": "¿De cuántas maneras diferentes se puede estructurar esta junta ejecutiva?",
+    "opts": [
+      "$56$",
+      "$336$",
+      "$512$",
+      "$24$"
+    ],
+    "ans": 1,
+    "exp": "Estamos ante una asignación de puestos donde el orden de selección tiene un impacto directo, pues los cargos poseen jerarquías y funciones diferentes (variación sin repetición).\n\n- **Asignación del Director General:** Se elige entre cualquiera de los $8$ accionistas disponibles.\n- **Asignación del Jefe de Operaciones:** Descontando al recién elegido, quedan $7$ candidatos.\n- **Asignación del Tesorero:** Descontando a los dos anteriores, restan $6$ candidatos.\n- **Cálculo combinatorio:** Aplicamos el principio multiplicativo: $8 \\times 7 \\times 6 = 336$ estructuras directivas posibles.\n\n**Tip Élite:** Si los cargos fuesen idénticos (ej. 'elegir un comité de $3$ personas'), el orden no importaría y usarías combinaciones, dividiendo el resultado entre $3!$."
+  },
+  {
+    "id": "m_per_6",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "En un experimento de criptografía, un programa algorítmico tiene la tarea de generar todos los anagramas posibles utilizando las letras de la palabra 'MURAL', sin importar si las combinaciones resultantes poseen sentido en el idioma español.",
+    "q": "¿Qué cantidad exacta de secuencias alfabéticas diferentes arrojará el algoritmo?",
+    "opts": [
+      "$25$",
+      "$120$",
+      "$60$",
+      "$24$"
+    ],
+    "ans": 1,
+    "exp": "Un anagrama sin letras repetidas es, fundamentalmente, una permutación lineal de la totalidad de elementos disponibles.\n\n- **Análisis de la base de datos:** La palabra 'MURAL' se compone de $5$ letras ($M, U, R, A, L$), y todas son fonéticamente y ortográficamente distintas.\n- **Modelo matemático:** Al utilizar todos los elementos para formar nuevas disposiciones lineales, empleamos la permutación de $5$ elementos ($P_5$).\n- **Resolución:** $P_5 = 5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$.\n\nEl algoritmo será capaz de procesar un total de $120$ secuencias.\n\n**Tip Élite:** Antes de calcular anagramas, siempre verifica si hay letras repetidas. Si las hay, deberás dividir el factorial total entre los factoriales de las repeticiones (permutación con repetición)."
+  },
+  {
+    "id": "m_geo_5",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un terreno de forma rectangular, destinado para la siembra industrial, posee una extensión territorial de $315 \\text{ m}^2$. Se tiene conocimiento topográfico de que uno de los linderos perimetrales, correspondiente a la longitud de su base, abarca exactamente $21 \\text{ m}$.",
+    "q": "¿Cuál es la medida longitudinal del lindero perpendicular a dicha base?",
+    "opts": [
+      "$15 \\text{ m}$",
+      "$10 \\text{ m}$",
+      "$14 \\text{ m}$",
+      "$25 \\text{ m}$"
+    ],
+    "ans": 0,
+    "exp": "La métrica bidimensional de una figura rectangular obedece a la fórmula del área, que vincula sus dimensiones ortogonales.\n\n- **Ecuación fundamental:** Sabemos que $\\text{Área} = \\text{base} \\times \\text{altura}$.\n- **Sustitución de variables:** Reemplazamos los datos brindados en el problema: $315 = 21 \\times \\text{altura}$.\n- **Despeje algebraico:** Para encontrar la dimensión faltante, dividimos el área entre la base conocida:\n  - $\\text{Altura} = \\frac{315}{21}$.\n  - Realizando la división (puedes simplificar entre $7$: $\\frac{315}{7} = 45$, $\\frac{21}{7} = 3$, luego $\\frac{45}{3} = 15$), obtenemos $15$.\n\nEl lindero perpendicular mide $15 \\text{ m}$.\n\n**Tip Élite:** Al enfrentar divisiones de dos cifras, simplificar la fracción dividiendo ambos términos por divisores comunes pequeños ($3, 7, 5$) hace el cálculo mental inmediato."
+  },
+  {
+    "id": "m_geo_6",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una placa metálica de geometría rigurosamente cuadrangular reporta una superficie de $144 \\text{ cm}^2$. Un ingeniero requiere instalar un marco de contención de titanio alrededor de todo el borde exterior de la placa.",
+    "q": "¿Qué longitud total de contención de titanio se debe manufacturar para bordear íntegramente la placa?",
+    "opts": [
+      "$48 \\text{ cm}$",
+      "$24 \\text{ cm}$",
+      "$144 \\text{ cm}$",
+      "$72 \\text{ cm}$"
+    ],
+    "ans": 0,
+    "exp": "El problema exige realizar una transición matemática de una medida de superficie (área) a una medida de contorno unidimensional (perímetro).\n\n- **Paso 1: Cálculo del lado.** El área de un cuadrado se define como $\\text{Lado}^2$.\n  - Si $\\text{Lado}^2 = 144$, entonces el $\\text{Lado} = \\sqrt{144} = 12 \\text{ cm}$.\n- **Paso 2: Cálculo del perímetro.** El borde o marco total corresponde a la suma de los cuatro lados idénticos del cuadrado.\n  - $\\text{Perímetro} = 4 \\times \\text{Lado}$.\n  - $\\text{Perímetro} = 4 \\times 12 = 48 \\text{ cm}$.\n\nSe requerirán $48 \\text{ cm}$ de material de titanio.\n\n**Tip Élite:** Reconocer instantáneamente los cuadrados perfectos básicos (del $1^2$ al $15^2$) es obligatorio para economizar tiempo en ejercicios de geometría básica."
+  },
+  {
+    "id": "m_geo_7",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "El diseño de una pieza de velamen para una embarcación obedece a una estructura triangular, cuya área de lona proyectada es de $54 \\text{ m}^2$. Los planos indican que la base de acople inferior ostenta una longitud de $12 \\text{ m}$.",
+    "q": "¿Cuál debe ser la altura del mástil central perpendicular a la base para soportar dicho diseño?",
+    "opts": [
+      "$4,5 \\text{ m}$",
+      "$9 \\text{ m}$",
+      "$18 \\text{ m}$",
+      "$12 \\text{ m}$"
+    ],
+    "ans": 1,
+    "exp": "La geometría plana nos dicta que la superficie de un triángulo está supeditada a su base y su altura mediante una fórmula constante.\n\n- **Ecuación del área:** $\\text{Área} = \\frac{\\text{base} \\times \\text{altura}}{2}$.\n- **Inserción de los datos:** $54 = \\frac{12 \\times \\text{altura}}{2}$.\n- **Simplificación:** Mitad de $12$ es $6$, por ende, la ecuación se reduce a: $54 = 6 \\times \\text{altura}$.\n- **Despeje de la variable:** $\\text{Altura} = \\frac{54}{6} = 9$.\n\nLa altura estructural requerida es de $9 \\text{ m}$.\n\n**Tip Élite:** El error más habitual en el cálculo de triángulos inversos es olvidar el divisor $2$ de la fórmula del área. Simplifica la base entre $2$ antes de despejar la altura para evitar traspiés."
+  },
+  {
+    "id": "m_geo_8",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una turbina eólica proyecta una sombra que circunscribe un área circular de forma perfecta en el terreno. Se ha medido la distancia desde el centro del eje de rotación hasta el límite de la trayectoria de las aspas, registrando $21 \\text{ m}$. (Asuma el valor de $\\pi \\approx \\frac{22}{7}$).",
+    "q": "¿Cuál es la magnitud del área de barrido proyectada por la turbina?",
+    "opts": [
+      "$132 \\text{ m}^2$",
+      "$1386 \\text{ m}^2$",
+      "$1386 \\text{ m}$",
+      "$2772 \\text{ m}^2$"
+    ],
+    "ans": 1,
+    "exp": "Para cuantificar la extensión de una superficie circular, aplicamos la fórmula del área del círculo, procesando con precisión la aproximación de Pi solicitada.\n\n- **Identificación de la medida:** La 'distancia desde el centro al límite' es, por definición geométrica, el radio ($r = 21 \\text{ m}$).\n- **Fórmula del área:** $A = \\pi \\times r^2$.\n- **Sustitución y cálculo preliminar:** $A = \\frac{22}{7} \\times (21)^2 = \\frac{22}{7} \\times 441$.\n- **Técnica de simplificación:** Antes de multiplicar, es más eficiente dividir $441$ entre $7$. Sabemos que $21 = 7 \\times 3$, por lo que $21^2 = 7^2 \\times 3^2$, permitiendo ver fácilmente que $\\frac{441}{7} = 63$.\n- **Multiplicación final:** $22 \\times 63 = 1386 \\text{ m}^2$.\n\n**Tip Élite:** Cuando te soliciten usar $\\pi \\approx \\frac{22}{7}$, es una garantía estructural de que el radio (o su cuadrado) será un múltiplo de $7$. Simplifica el $7$ del denominador antes de multiplicar."
+  },
+  {
+    "id": "m_suc_6",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice el patrón de crecimiento de la siguiente progresión geométrica que describe la expansión de una colonia bacteriana cada hora: $5, 15, 45, 135, \\dots$",
+    "q": "¿Qué cantidad de bacterias compondrá la colonia en el transcurso de la sexta hora (es decir, el sexto término de la sucesión)?",
+    "opts": [
+      "$1215$",
+      "$405$",
+      "$3645$",
+      "$1005$"
+    ],
+    "ans": 0,
+    "exp": "Una progresión geométrica se fundamenta en el crecimiento exponencial mediante la multiplicación constante de sus términos por una 'razón' común.\n\n- **Identificación de la razón ($r$):** Al dividir cualquier término entre su antecesor (ej. $15 \\div 5$, o $45 \\div 15$), constatamos que la razón es $3$. El patrón consiste en triplicar.\n- **Desarrollo de los términos:**\n  - $a_1 = 5$\n  - $a_2 = 15$\n  - $a_3 = 45$\n  - $a_4 = 135$\n  - $a_5 = 135 \\times 3 = 405$\n  - $a_6 = 405 \\times 3 = 1215$\n- **Resultado:** En la sexta iteración, la colonia albergará $1215$ bacterias.\n\n**Tip Élite:** Para términos cercanos (como el sexto), realizar la multiplicación manual paso a paso suele ser más rápido y seguro que estructurar la fórmula de $a_n = a_1 \\cdot r^{(n-1)}$."
+  },
+  {
+    "id": "m_suc_7",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Una secuencia estructural obedece a la progresión aritmética $7, 13, 19, 25, \\dots$, donde cada número representa la carga máxima soportada en kilonewtons (kN) por las vigas en sucesión.",
+    "q": "¿En qué posición de la estructura se ubicará la viga diseñada para soportar exactamente una carga de $115 \\text{ kN}$?",
+    "opts": [
+      "$19$",
+      "$18$",
+      "$20$",
+      "$21$"
+    ],
+    "ans": 0,
+    "exp": "Para determinar la ubicación (n) de un valor específico en una progresión aritmética, es necesario decodificar su fórmula general de formación.\n\n- **Hallar la diferencia ($d$):** La variación constante entre los elementos es de $+6$ (por ejemplo, $13 - 7 = 6$).\n- **Plantear la ecuación:** La fórmula del enésimo término es $a_n = a_1 + (n-1)d$. Sustituyendo nuestros datos:\n  - $115 = 7 + (n - 1) \\times 6$\n- **Despejar la incógnita ($n$):**\n  - Restamos el $7$ base: $115 - 7 = 108$.\n  - Dividimos entre el salto de $6$: $108 \\div 6 = 18$.\n  - Esto significa que hay $18$ saltos. Sumando la posición inicial ($18 + 1$), obtenemos $n = 19$.\n\n**Tip Élite:** El cálculo rápido para la posición es: $\\frac{\\text{Valor Final} - \\text{Primer Término}}{\\text{Diferencia}} + 1$. Al aplicarlo: $\\frac{115 - 7}{6} + 1 = 18 + 1 = 19$."
+  },
+  {
+    "id": "m_suc_8",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice el comportamiento numérico de la siguiente serie abstracta: $2, 4, 8, 14, 22, 32, \\dots$",
+    "q": "¿Cuál es el valor del elemento que prosigue de forma lógica en la secuencia?",
+    "opts": [
+      "$40$",
+      "$42$",
+      "$44$",
+      "$46$"
+    ],
+    "ans": 2,
+    "exp": "Esta sucesión no es lineal simple, sino de segundo orden; su patrón de crecimiento aumenta de manera escalonada y progresiva.\n\n- **Análisis de la primera diferencia:**\n  - De $2$ a $4$ hay $+2$\n  - De $4$ a $8$ hay $+4$\n  - De $8$ a $14$ hay $+6$\n  - De $14$ a $22$ hay $+8$\n  - De $22$ a $32$ hay $+10$\n- **Descubrir el sub-patrón:** Observamos que los incrementos ($2, 4, 6, 8, 10$) forman su propia sucesión aritmética de números pares (creciendo de $2$ en $2$).\n- **Predicción y resolución:** El incremento sucesivo será lógicamente $+12$. Sumando este salto al último número de la serie base: $32 + 12 = 44$.\n\n**Tip Élite:** Siempre que una sucesión parezca errática, escribe las diferencias entre términos adyacentes justo debajo de los números. A menudo, el verdadero patrón se esconde en ese 'segundo piso' de la sucesión."
+  },
+  {
+    "id": "m_suc_9",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "La criptografía algorítmica genera una cadena de encriptación bajo la siguiente secuencia cíclica: $2, 5, 11, 23, 47, \\dots$",
+    "q": "¿Cuál es la cifra que ocupará la próxima posición en el algoritmo?",
+    "opts": [
+      "$95$",
+      "$71$",
+      "$94$",
+      "$83$"
+    ],
+    "ans": 0,
+    "exp": "Las progresiones recursivas combinan dos tipos de operaciones aritméticas en una sola regla matemática inalterable.\n\n- **Observación analítica:** Para transitar de $2$ a $5$, y de $5$ a $11$, un salto sumatorio simple no es suficiente ni consistente. Si evaluamos el crecimiento casi duplicado, la regla se desvela.\n- **Comprobación de la regla:** 'El doble del término anterior, más la unidad'.\n  - $2 \\times 2 + 1 = 5$\n  - $5 \\times 2 + 1 = 11$\n  - $11 \\times 2 + 1 = 23$\n  - $23 \\times 2 + 1 = 47$\n- **Extrapolación final:** Aplicamos la mecánica confirmada al último dígito para deducir el sucesor: $47 \\times 2 + 1 = 94 + 1 = 95$.\n\n**Tip Élite:** Si notas que una sucesión experimenta un salto de crecimiento sustancial (casi exponencial) pero no es un múltiplo exacto, prueba la técnica de 'multiplicar y sumar/restar un número constante'."
+  },
+  {
+    "id": "m_dat_5",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Una investigadora ha registrado mediciones de emisión de gases de $12, 15$ y $11$ unidades en tres pruebas consecutivas. Está a punto de realizar un cuarto y último ensayo calibrado.",
+    "q": "¿Qué valor de emisión debe arrojar la cuarta prueba para que el promedio global de los cuatro ensayos se fije exactamente en $14$ unidades?",
+    "opts": [
+      "$18$",
+      "$16$",
+      "$14$",
+      "$20$"
+    ],
+    "ans": 0,
+    "exp": "El promedio o media aritmética nos permite trabajar el conjunto de datos como una suma total teórica distribuida en partes iguales.\n\n- **Despeje de la suma total:** Si el promedio deseado para $4$ pruebas es $14$, la suma conjunta e indiscutible de las mediciones debe ser $4 \\times 14 = 56$ unidades.\n- **Acumulación actual:** Sumamos el rendimiento real de las mediciones ejecutadas: $12 + 15 + 11 = 38$ unidades.\n- **Cálculo de la diferencia:** La medición necesaria en el último ensayo será el déficit para alcanzar el total teórico: $56 - 38 = 18$ unidades.\n\n**Tip Élite:** Domina la relación bidireccional del promedio: $\\text{Promedio} = \\frac{\\text{Suma Total}}{N}$, y su corolario más útil para los exámenes: $\\text{Suma Total} = \\text{Promedio} \\times N$."
+  },
+  {
+    "id": "m_dat_6",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El inventario de un lote de componentes electrónicos defectuosos revela la existencia de $6$ capacitores, $10$ resistencias y $4$ transistores, todos mezclados en un contenedor de reciclaje. Un supervisor extrae de forma aleatoria un solo componente.",
+    "q": "¿Cuál es la probabilidad empírica de que el componente extraído resulte ser un transistor?",
+    "opts": [
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{1}{10}$"
+    ],
+    "ans": 0,
+    "exp": "El cálculo probabilístico simple se basa en la Regla de Laplace, que compara los casos favorables con el universo de casos posibles.\n\n- **Espacio muestral (Casos posibles):** Consiste en la acumulación de todos los elementos presentes en el sistema: $6 \\text{ (capacitores)} + 10 \\text{ (resistencias)} + 4 \\text{ (transistores)} = 20$ componentes.\n- **Casos favorables:** El evento buscado es extraer un transistor. Existen exactamente $4$ en el contenedor.\n- **Aplicación matemática:** La probabilidad es $\\frac{4}{20}$.\n- **Simplificación obligatoria:** Dividiendo numerador y denominador entre $4$, la fracción irreducible resultante es $\\frac{1}{5}$.\n\n**Tip Élite:** Las opciones de respuesta en exámenes siempre se presentan en su forma simplificada más pura. Acostúmbrate a reducir la fracción tan pronto como la armes."
+  },
+  {
+    "id": "m_dat_7",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "En el desarrollo de un algoritmo de juegos de azar, se programa un generador numérico para seleccionar aleatoriamente un número entero natural contenido en el intervalo continuo del $1$ al $8$, ambos extremos inclusivos.",
+    "q": "¿Cuál es la probabilidad matemática de que el número generado pertenezca al subconjunto de los números primos?",
+    "opts": [
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{1}{4}$"
+    ],
+    "ans": 0,
+    "exp": "La precisión en este ejercicio depende de poseer un conocimiento riguroso de las definiciones básicas de la teoría de números.\n\n- **Definición del universo:** El intervalo comprende $8$ resultados equiprobables: $\\{1, 2, 3, 4, 5, 6, 7, 8\\}$.\n- **Criba de los números primos:** Un número primo es aquel que es divisible únicamente por sí mismo y por la unidad.\n  - *Atención:* El número $1$ **no** se clasifica matemáticamente como número primo.\n  - Los primos dentro del rango son: $2, 3, 5$ y $7$. Esto arroja un subconjunto de $4$ casos favorables.\n- **Probabilidad:** La razón de probabilidad es $\\frac{4}{8}$, que debidamente simplificada (dividiendo entre $4$) se condensa a $\\frac{1}{2}$.\n\n**Tip Élite:** El tropiezo universal en este tipo de consignas es considerar al '$1$' como número primo. Recuérdalo siempre: la serie de primos comienza invariablemente en el $2$."
+  },
+  {
+    "id": "m_dat_8",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El departamento de control de calidad determina que la masa promedio de $5$ piezas metálicas mecanizadas debe ser exactamente de $40 \\text{ g}$. Al registrar las mediciones, se obtienen valores de $35 \\text{ g}, 48 \\text{ g}, 37 \\text{ g}$ y $42 \\text{ g}$ para las primeras cuatro piezas.",
+    "q": "¿Cuál debe ser la masa exacta de la quinta pieza para mantener la integridad del promedio estipulado?",
+    "opts": [
+      "$36 \\text{ g}$",
+      "$40 \\text{ g}$",
+      "$38 \\text{ g}$",
+      "$42 \\text{ g}$"
+    ],
+    "ans": 2,
+    "exp": "Al poseer el promedio final como dato duro, debemos reconstruir retrospectivamente la matriz de los datos originales usando su sumatoria.\n\n- **Proyección total:** Si las $5$ piezas lograran sostener juntas un promedio de $40 \\text{ g}$, el peso global de la masa combinada equivaldría inexorablemente a: $5 \\times 40 = 200 \\text{ g}$.\n- **Tabulación de los datos verificados:** Sumamos el peso documentado de los cuatro componentes ya fabricados: $35 + 48 + 37 + 42 = 162 \\text{ g}$.\n- **Hallazgo del valor faltante:** La quinta pieza asume toda la responsabilidad de completar la masa faltante, producto de la resta: $200 - 162 = 38 \\text{ g}$.\n\n**Tip Élite:** Un método alternativo y audaz es usar 'diferencias contra el promedio': $(-5) + (+8) + (-3) + (+2) = +2$. Como las $4$ piezas pesan $2 \\text{ g}$ más del promedio teórico agrupadas, la quinta pieza debe pesar $2 \\text{ g}$ *menos* que el promedio ($40 - 2 = 38$). ¡Magia matemática!"
+  },
+  {
+    "id": "m_not_4",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Analice con minuciosidad la siguiente construcción lingüístico-matemática: 'el cociente de una variable cualquiera entre dos, severamente incrementado por siete unidades'.",
+    "q": "¿Cuál de las siguientes ecuaciones algebraicas modela con total precisión el enunciado anterior?",
+    "opts": [
+      "$\\frac{x}{2} + 7$",
+      "$2x + 7$",
+      "$\\frac{x + 7}{2}$",
+      "$7 - \\frac{x}{2}$"
+    ],
+    "ans": 0,
+    "exp": "La traducción del lenguaje natural al lenguaje algebraico requiere diseccionar cuidadosamente la estructura gramatical del enunciado para respetar su jerarquía, identificando las pausas lógicas (comas o inflexiones).\n\n- **Primera cláusula:** 'el cociente de una variable cualquiera entre dos' (o la mitad de un número) establece una operación divisional cerrada sobre la variable incognoscible. Algebraicamente: $\\frac{x}{2}$.\n- **Segunda cláusula:** 'incrementado por siete unidades' indica una adición posterior, extrínseca a la fracción inicial. Algebraicamente: $+ 7$.\n- **Modelaje integral:** Al amalgamar ambas expresiones, respetando que el incremento ocurre *después* y de manera independiente de la división, la sintaxis correcta es $\\frac{x}{2} + 7$.\n\n**Tip Élite:** La clave absoluta para no seleccionar $\\frac{x + 7}{2}$ radica en el orden gramatical. Si el texto pretendiera esa fórmula, habría sido redactado como: 'la mitad *de* la suma de un número con siete'."
+  },
+  {
+    "id": "m_not_5",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "La variable $k$ condensa la magnitud de los ingresos de una startup en su primer trimestre. Por otro lado, la corporación rival reporta una facturación equivalente a $12$ millones menos que el triple de los ingresos de dicha startup.",
+    "q": "¿Qué estructura algebraica traduce fidedignamente la facturación de la corporación rival?",
+    "opts": [
+      "$3k - 12$",
+      "$3(k - 12)$",
+      "$12 - 3k$",
+      "$\\frac{k}{3} - 12$"
+    ],
+    "ans": 0,
+    "exp": "La sintaxis de las restas en el lenguaje algebraico representa uno de los obstáculos más traicioneros si no se domina la estructura de sujeción.\n\n- **Definición del múltiplo:** 'el triple de los ingresos de dicha startup' define claramente la base multiplicativa como $3k$.\n- **Análisis de la sustracción:** La locución '$12$ millones *menos que*' especifica que a esa base multiplicativa preconcebida ($3k$) se le debe sustraer o restar la cantidad de $12$. No significa que se deba restar desde $12$.\n- **Síntesis matemática:** La acción de sustraer $12$ de la magnitud original $3k$ se articula impecablemente como $3k - 12$.\n\n**Tip Élite:** La frase verbal 'X menos que Y' es contra-intuitiva y engañosa al leer de izquierda a derecha. En álgebra, siempre invierte el orden estructural para restarlo correctamente: $Y - X$."
+  },
+  {
+    "id": "m_not_6",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "En un texto de geometría analítica se halla la siguiente prescripción: 'la potencia de exponente dos que afecta globalmente a la suma de un valor desconocido y la constante tres'.",
+    "q": "¿Qué representación simbólica plasma de forma irrefutable este precepto?",
+    "opts": [
+      "$x^2 + 3$",
+      "$(x + 3)^2$",
+      "$x^2 + 9$",
+      "$2(x + 3)$"
+    ],
+    "ans": 1,
+    "exp": "El reto interpretativo en esta redacción recae en desentrañar la jerarquía operativa a través del uso de la palabra 'globalmente' (o su equivalente clásico 'de la suma').\n\n- **Estructuración del binomio:** El fragmento 'la suma de un valor desconocido y la constante tres' obliga a encapsular la adición, priorizándola jerárquicamente: $(x + 3)$.\n- **Aplicación de la potencia:** El modificador exterior 'la potencia de exponente dos que afecta globalmente...' sentencia que todo el bloque previo (el binomio completo) es la base de la potenciación.\n- **Resolución representativa:** Todo el paquete se eleva al cuadrado, plasmándose de manera exacta como $(x + 3)^2$.\n\n**Tip Élite:** La omisión de los paréntesis produce el fatal error de $x^2 + 3$, lo cual obedece a un enunciado diametralmente distinto: 'la suma entre el cuadrado de un número y tres'."
+  }
+]

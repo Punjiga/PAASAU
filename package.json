@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jsdom": "^27.0.1",
+    "pdf-parse": "^2.4.5"
+  }
+}

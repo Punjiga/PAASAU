@@ -1,0 +1,675 @@
+[
+  {
+    "id": "m_raz_1",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un laboratorio químico prepara una solución salina donde la proporción de soluto a solvente es estrictamente de 2 a 3 por cada mililitro.",
+    "q": "Si se emplean 8 mililitros de soluto para una nueva mezcla, ¿qué cantidad de solvente será necesaria para mantener la proporción exacta?",
+    "opts": [
+      "9 mililitros",
+      "12 mililitros",
+      "16 mililitros",
+      "6 mililitros"
+    ],
+    "ans": 1,
+    "exp": "¿Notaste que la relación base es una proporción directa?\n\nSi la regla establece que por cada 2 partes de soluto hay 3 de solvente, al usar 8 partes de soluto estamos cuadruplicando la cantidad inicial (8 ÷ 2 = 4).\n\n- Por tanto, el solvente también debe cuadruplicarse.\n- Multiplicamos la base del solvente (3) por 4, obteniendo 12.\n\nLa respuesta correcta es **12 mililitros**.\n\n**Tip Élite:** En problemas de proporciones directas con cantidades abstractas o químicas, asegúrate de alinear correctamente el orden (soluto:solvente) para no invertir los multiplicadores."
+  },
+  {
+    "id": "m_raz_2",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un plano arquitectónico está diseñado a una escala donde 2 centímetros equivalen a 50 metros en el terreno real. El borde de un edificio y la zona de parqueo aparecen separados por una distancia de 7 centímetros en dicho plano.",
+    "q": "¿Cuál es la separación real en metros entre ambas estructuras?",
+    "opts": [
+      "175 metros",
+      "100 metros",
+      "350 metros",
+      "125 metros"
+    ],
+    "ans": 0,
+    "exp": "Este es un ejercicio clásico de conversiones de escala. Detengámonos a encontrar el valor unitario.\n\nSi 2 cm equivalen a 50 metros reales, la relación por centímetro es:\n- 1 cm = 25 metros (50 ÷ 2).\n\nDado que la separación en el plano es de 7 cm, solo multiplicamos:\n- 7 cm × 25 metros/cm = 175 metros.\n\nLas opciones con 350 o 100 surgen de multiplicar erróneamente por 50 o dividir entre dos de nuevo.\n\n**Tip Élite:** Hallar el 'valor unitario' (cuánto vale 1 unidad) simplifica enormemente cualquier problema de mapas o planos cartográficos."
+  },
+  {
+    "id": "m_raz_3",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un equipo de tres programadores experimentados logra desarrollar un módulo de software en 12 días laborables.",
+    "q": "Si la gerencia asigna seis programadores de igual eficiencia para replicar el mismo módulo, ¿cuántos días tomará la ejecución completa?",
+    "opts": [
+      "24 días",
+      "6 días",
+      "18 días",
+      "4 días"
+    ],
+    "ans": 1,
+    "exp": "Aquí nos enfrentamos a una **proporción inversa**. ¿Por qué? Porque a mayor cantidad de trabajadores, *menor* tiempo tomará el proyecto.\n\nPodemos calcular el total de 'días-programador' requeridos para la tarea:\n- 3 programadores × 12 días = 36 días-programador en total.\n\nAl duplicar la fuerza laboral a 6 programadores, dividimos el trabajo total entre el nuevo equipo:\n- 36 ÷ 6 = 6 días.\n\n**Tip Élite:** Cuando veas preguntas sobre obreros, máquinas o velocidad, alerta tus sentidos lógicos: ¡casi siempre se trata de relaciones inversamente proporcionales! Si duplicas los recursos, el tiempo se reduce a la mitad."
+  },
+  {
+    "id": "m_raz_4",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un grupo de seis ingenieros mecánicos ensambla una turbina industrial en un lapso de 10 días.",
+    "q": "Si la empresa se ve obligada a operar con solo cuatro ingenieros debido a recortes, asumiendo idéntico rendimiento, ¿cuántos días tomará finalizar la turbina?",
+    "opts": [
+      "15 días",
+      "6,7 días",
+      "12 días",
+      "20 días"
+    ],
+    "ans": 0,
+    "exp": "Vamos a desglosar este problema de rendimiento de equipo.\n\nEl trabajo total necesario es el producto del número de individuos por los días de labor:\n- 6 ingenieros × 10 días = 60 días-ingeniero (esfuerzo total).\n\nSi ahora disponemos de solo 4 ingenieros, distribuimos el esfuerzo total entre ellos:\n- 60 ÷ 4 = 15 días.\n\nEl distractor 6,7 días resulta de aplicar equivocadamente una regla de tres directa, lo cual carece de sentido práctico al haber menos personal.\n\n**Tip Élite:** Nunca apliques regla de tres directa (multiplicar cruzado) ciegamente. Si al disminuir el personal el tiempo debe lógicamente aumentar, entonces es una regla inversa: multiplica en línea y divide."
+  },
+  {
+    "id": "v_elite_01",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La trayectoria histórica de la ciencia no obedece a un proceso acumulativo y lineal de dogmas inmutables, tal y como se difunde en los programas académicos tradicionales. El filósofo Thomas Kuhn postuló que la evolución científica se fundamenta en disrupciones denominadas revoluciones.\n\nDurante la fase de 'ciencia normal', la comunidad investigativa se subordina a un paradigma establecido, solucionando enigmas sin cuestionar sus axiomas de base. No obstante, al presentarse numerosas anomalías que el modelo vigente no logra descifrar, emerge una crisis sistémica. Dicha crisis únicamente se solventa mediante la consolidación de un paradigma emergente que reescribe drásticamente las normativas previas, desfasando al anterior mediante un quiebre abrupto.",
+    "q": "¿Cuál proposición recoge de manera más certera la tesis medular expuesta en el fragmento?",
+    "opts": [
+      "La dinámica de la ciencia normal radica en la constante refutación de sus propios principios.",
+      "El progreso científico se sustenta intrínsecamente en la acumulación paulatina e ininterrumpida de hallazgos.",
+      "El avance en el campo científico ocurre a raíz de transformaciones radicales que derrocan esquemas teóricos consolidados.",
+      "La manifestación de anomalías irreconciliables indica que el desarrollo científico de una época ha cesado de modo definitivo."
+    ],
+    "ans": 2,
+    "exp": "¡Debemos distinguir la idea principal de los detalles secundarios o las falacias lógicas!\n\nDesde el principio, el autor es claro en su premisa: la ciencia **no** es un proceso de acumulación lineal. Más bien, avanza mediante **revoluciones** (cambios disruptivos).\n\nAnalicemos qué ocurre con los distractores:\n- **Opción A:** Tergiversa el texto. La 'ciencia normal', según el autor, precisamente *evita* cuestionar los axiomas.\n- **Opción B:** Refleja la visión tradicional que el autor está criticando explícitamente en la primera línea.\n- **Opción D:** Contiene una afirmación categórica ('ha cesado de modo definitivo') que exagera la idea de 'crisis'.\n\nLa **opción C** capta la esencia del texto: los modelos avanzan por medio de rupturas que redefinen las reglas del juego.\n\n**Tip Élite:** Las ideas principales suelen encontrarse en la tesis introductoria o en la conclusión del texto. Desconfía de opciones con términos totalizadores como 'nunca', 'siempre' o 'definitivo'."
+  },
+  {
+    "id": "v_elite_02",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "A lo largo del siglo XIX, las corrientes del urbanismo higienista promovieron el trazado de monumentales bulevares en diversas capitales europeas. El argumento central sostenía que estas arterias viales anchas y lineales facilitarían corrientes de aire, disipando así los denominados 'miasmas', emanaciones fétidas del suelo a las cuales se atribuía el origen de brotes epidémicos.\n\nAun cuando la teoría miasmática terminaría siendo desmontada por la microbiología pasteuriana décadas más tarde, dicha planificación urbana persistió. Paradójicamente, esta configuración facilitó de gran manera el soterramiento de complejas redes de saneamiento y alcantarillado, un beneficio estructural que los promotores higienistas iniciales no concibieron dentro de sus propósitos originales.",
+    "q": "¿Cuál fue la meta principal que impulsó la concepción de bulevares por parte de los planificadores del siglo XIX?",
+    "opts": [
+      "Anticipar el desarrollo tecnológico de infraestructuras subterráneas de tratamiento hídrico.",
+      "Neutralizar los microorganismos patógenos recientemente teorizados por investigadores contemporáneos.",
+      "Propiciar la ventilación de los espacios citadinos para desvanecer supuestas exhalaciones nocivas.",
+      "Implementar una estética monumental que transformara el paisaje urbano mediante avenidas arboladas."
+    ],
+    "ans": 2,
+    "exp": "¡Pongamos en práctica el análisis de contexto temporal!\n\nLa interrogante exige identificar el propósito de los arquitectos del **siglo XIX**, no el resultado posterior.\n\n- Según el texto, su objetivo expreso era crear vías anchas para que el viento disipara las 'miasmas' (emanaciones fétidas). Esto valida instantáneamente la **opción C**.\n- La **opción A** es un anacronismo engañoso. El texto indica que el alcantarillado fue un beneficio posterior que los higienistas *no concibieron*.\n- La **opción B** introduce la microbiología moderna, la cual precisamente *refutó* las ideas de ese siglo.\n\n**Tip Élite:** En preguntas de comprensión lectora histórica, subraya las fechas o épocas y ciñe tu respuesta exclusivamente a las creencias o conocimientos vigentes en el periodo por el que se pregunta."
+  },
+  {
+    "id": "v_elite_03",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El fenómeno de la neuroplasticidad trasciende las etapas tempranas del desarrollo humano. Investigaciones clínicas recientes con sobrevivientes de eventos cerebrovasculares han documentado que el cerebro en la etapa adulta conserva la facultad de reestructurar y compensar sus redes sinápticas tras la pérdida de tejido funcional.\n\nAnalice críticamente los siguientes enunciados:\nI. El parénquima cerebral adulto posee una naturaleza inmutable, impidiendo la generación de sinapsis inéditas.\nII. El daño en el tejido nervioso adulto resulta en deficiencias irrevocables, dada la nula capacidad de adaptación fisiológica.\nIII. La competencia para modificar la arquitectura neuronal perdura, aunque sea de forma parcial, durante la madurez del individuo.",
+    "q": "¿Cuál o cuáles de los enunciados propuestos pueden inferirse lógicamente del texto base?",
+    "opts": [
+      "Únicamente el enunciado I.",
+      "Únicamente el enunciado II.",
+      "Únicamente el enunciado III.",
+      "Los enunciados I y II."
+    ],
+    "ans": 2,
+    "exp": "No te dejes intimidar por la terminología científica; enfoquémonos en las proposiciones lógicas.\n\nEl postulado principal del fragmento es claro: el cerebro adulto *conserva la facultad de reestructurar* sus redes tras un daño.\n\n- **Enunciado I:** Sostiene que el cerebro adulto es inmutable (estático). Esto choca frontalmente con la premisa del texto.\n- **Enunciado II:** Asegura que los daños son 'irrevocables' por nula adaptación. Nuevamente, contradice la capacidad de compensación mencionada.\n- **Enunciado III:** Afirma que la competencia de modificación perdura en la madurez. Esto es exactamente lo que el texto sostiene mediante el concepto de 'neuroplasticidad'.\n\nPor ende, solo la afirmación III es válida.\n\n**Tip Élite:** Las afirmaciones absolutas y deterministas ('nula', 'inmutable', 'irrevocables') en opciones de lectura suelen ser trampas que contradicen los matices del texto."
+  },
+  {
+    "id": "v_elite_04",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura aplicada desde el aparato institucional, en su intento por sofocar una ideología percibida como subversiva, frecuentemente funge como una cámara de resonancia que proyecta su alcance muy por encima del público originalmente pretendido, invistiéndola de un halo de martirio intelectual inusitado.",
+    "q": "¿Qué alternativa reformula de manera más precisa la proposición medular del texto?",
+    "opts": [
+      "El aparato institucional posee las herramientas más idóneas para extirpar radicalmente doctrinas peligrosas del tejido social.",
+      "La represión oficial de un pensamiento discordante acostumbra desencadenar una amplificación de su influencia y prestigio.",
+      "Los ideólogos radicales persiguen la censura gubernamental como estrategia primordial para asegurar financiamiento a su causa.",
+      "Las doctrinas subversivas son incapaces de masificarse a menos que logren alguna clase de aval de los entes reguladores."
+    ],
+    "ans": 1,
+    "exp": "¿Conoces el concepto del 'efecto bumerán' o 'Efecto Streisand'? De esto trata el texto.\n\nEl autor plantea una ironía: el acto de censurar algo para silenciarlo termina logrando lo contrario (darle mayor resonancia y un aura de martirio).\n\n- La **opción A** contradice el texto, asumiendo que la censura sí funciona para eliminar ideas.\n- La **opción C** introduce una motivación económica ('financiamiento') que el texto jamás menciona.\n- La **opción D** malinterpreta la premisa, sugiriendo que las ideas necesitan 'aval' institucional, cuando la tesis trata sobre la censura institucional.\n\nLa **opción B** encapsula perfectamente la idea de que reprimir un pensamiento lo amplifica.\n\n**Tip Élite:** Las paráfrasis correctas no deben añadir información nueva ni omitir el mensaje irónico del texto original. Busca siempre el equivalente conceptual exacto."
+  },
+  {
+    "id": "v_elite_05",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Ante el colapso financiero de la última década, la junta directiva adoptó una resolución gerencial inusitada: lejos de someter a la base operativa a despidos masivos—como pregonaban los compendios corporativos tradicionales—, implementó una reducción del 40% en los paquetes salariales de la cúpula ejecutiva, a la par de instaurar una jornada laboral condensada en cuatro días.\n\nSemejante directriz, pese al escepticismo primigenio de los accionistas ante una potencial merma en la productividad, forjó una fidelidad organizacional inédita entre los colaboradores, desplomando el índice de deserción de capital humano a niveles marginales.",
+    "q": "¿Qué adjetivo califica con mayor precisión la respuesta estratégica de la gerencia frente a la adversidad económica?",
+    "opts": [
+      "Ortodoxa, al apegarse a los lineamientos estipulados por los manuales corporativos de crisis.",
+      "Deplorable, al anteponer los intereses de la junta directiva por sobre los dividendos de los inversores.",
+      "Insensata, al desatender voluntariamente el riesgo latente de fuga de talento especializado.",
+      "Heterodoxa, privilegiando la cohesión y retención del recurso humano por medio del sacrificio de las altas esferas."
+    ],
+    "ans": 3,
+    "exp": "Vamos a descartar opciones usando el poder del vocabulario y la evidencia textual.\n\n- ¿Fue una medida **ortodoxa** (tradicional)? No, el texto especifica que actuaron 'lejos de... como pregonaban los compendios tradicionales'. La opción A es falsa.\n- ¿Fue **deplorable** por favorecer a la directiva? ¡Para nada! La cúpula ejecutiva sufrió un recorte del 40%. La B es incorrecta.\n- ¿Fue **insensata** ante la fuga de talentos? El texto indica que el índice de deserción cayó 'a niveles marginales' (se redujo casi a cero). La C es absurda.\n\nLa **opción D** es la única consistente: fue una medida heterodoxa (fuera del estándar) que sacrificó a la cúpula para mantener la lealtad del personal.\n\n**Tip Élite:** Las preguntas que evalúan 'comportamiento' o 'tono' requieren que domines adjetivos como *ortodoxo, heterodoxo, pragmático, utópico*. Ampliar tu léxico es tu mejor arma en la sección verbal."
+  },
+  {
+    "id": "m_elite_01",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Un hacendado planea adquirir ganado bovino y equino para su rancho. Por cada caballo que incorpora a su propiedad, se compromete a comprar exactamente tres vacas. Considere que el número total de cabezas de ganado adquiridas, denotado por 'T', corresponde a un número **par positivo estrictamente inferior a 20**.",
+    "q": "¿Cuál es el número MÁXIMO de caballos que el hacendado podría haber integrado a su rancho?",
+    "opts": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "A simple vista, puede parecer tentador usar los números de las opciones, pero una deducción algebraica te salvará de trampas lógicas.\n\n1. Sea 'C' el número de caballos y 'V' el número de vacas. La regla dictamina: **V = 3C**.\n2. El total de animales (T) es la suma de ambos: T = C + V.\n3. Sustituyendo V, tenemos que T = C + 3C = **4C**.\n\nEsto nos revela algo crucial: el total T debe ser un **múltiplo de 4** (ej. 4, 8, 12, 16, 20...).\n\nEl problema impone que T debe ser estrictamente *inferior a 20*. El mayor múltiplo de 4 menor a 20 es **16**.\n\nSi el máximo es 16 y sabemos que T = 4C:\n16 = 4C\n**C = 4 caballos**.\n\n**Tip Élite:** Muchos estudiantes leen 'menor a 20' y calculan automáticamente sobre 20, marcando la opción de 5. En matemáticas, 'estrictamente menor' nunca incluye el límite superior."
+  },
+  {
+    "id": "m_elite_02",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En un catálogo de suministros electrónicos, un fusible cuesta ₡75 y un relé cuesta ₡120. Un técnico requiere comprar 8 fusibles y un lote de 'x' relés, donde 'x' representa una cantidad entera positiva.\n\nSi el técnico abona su cuenta entregando un billete de ₡2 000 y el sistema automático le despacha exactamente ₡680 de cambio.",
+    "q": "¿Cuántos relés adquirió finalmente el técnico para su inventario?",
+    "opts": [
+      "3",
+      "6",
+      "8",
+      "960"
+    ],
+    "ans": 1,
+    "exp": "Este ejercicio busca atrapar a quienes operan sin planificar. Construyamos la ecuación del gasto real.\n\nPrimero, averigüemos cuánto dinero se gastó efectivamente en la tienda:\n**Gasto Total:** 2000 (billete) - 680 (cambio) = **1320 colones**.\n\nLuego, deducimos el costo fijo de los fusibles:\n**Costo de fusibles:** 8 unidades × ₡75 = **600 colones**.\n\nEl dinero sobrante del gasto se invirtió completamente en relés:\n**Dinero para relés:** 1320 - 600 = **720 colones**.\n\nSi cada relé cuesta ₡120, dividimos para obtener la cantidad:\n720 ÷ 120 = **6 relés**.\n\n**Tip Élite:** Los distractores como '960' se diseñan usando cálculos parciales (como 2000 - 680) para engañar al estudiante apresurado. Nunca dejes un cálculo a medias."
+  },
+  {
+    "id": "m_elite_03",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Analice el comportamiento de tres variables abstractas P, Q y R. Se ha establecido bajo premisas axiomáticas que:\n- La variable P es mayor que Q.\n- La variable Q posee un valor estrictamente menor a cero.\n- El valor absoluto de Q supera con creces el valor absoluto de P.",
+    "q": "¿Cuál de las siguientes conclusiones se cumple INVARIABLEMENTE?",
+    "opts": [
+      "P + Q > 0",
+      "P + Q < 0",
+      "P es obligatoriamente un número negativo",
+      "P = 0"
+    ],
+    "ans": 1,
+    "exp": "Las variables sin números paralizan a muchos. ¡No seas uno de ellos! Asignar valores de prueba es la estrategia definitiva.\n\n1. Q es negativo y su valor absoluto es muy grande. Asumamos **Q = -100**.\n2. P es mayor que Q (ej. P = -50, o P = 10).\n3. Condición clave: el valor absoluto de Q (100) es mayor que el valor absoluto de P. Esto significa que P debe estar más cerca del cero. (Ej. P = 5 o P = -2, ambos cumplen).\n\nAhora evaluemos la suma (P + Q):\n- Si P es positivo (5): 5 + (-100) = -95.\n- Si P es negativo (-2): -2 + (-100) = -102.\n\nDado que el 'peso' del número negativo (Q) es siempre mayor que la magnitud de P, su suma estará condicionada irremediablemente hacia los números negativos. Por lo tanto, **P + Q < 0** es la única certeza absoluta.\n\n**Tip Élite:** Cuando te pidan una afirmación 'SIEMPRE verdadera', un solo contraejemplo que encuentres probará que una opción es falsa. Usa valores extremos para descartar."
+  },
+  {
+    "id": "m_elite_04",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox='0 0 200 100' style='background:#121B24; border: 1px solid #25333F; max-width:100%; border-radius: 8px;'><rect x='10' y='10' width='180' height='80' fill='none' stroke='#C792EA' stroke-width='2'/><rect x='10' y='10' width='80' height='80' fill='#2EE6A6' opacity='0.2' stroke='#2EE6A6' stroke-width='2'/><text x='100' y='55' fill='#EAF2F4' font-family='sans-serif' font-size='12' text-anchor='middle'>Sobrante = 50 m²</text></svg>",
+    "stem": "Un consorcio evalúa la compra de un terreno rectangular en el que su longitud duplica exactamente su amplitud. Los planos indican que se destinará una sección cuadrada (zona sombreada verde) para una instalación de paneles solares, cuyo lado coincide con la amplitud del terreno original. Se certifica que el área de la franja restante (zona no sombreada) es de 50 metros cuadrados.",
+    "q": "¿Cuál es la medida en metros del perímetro exterior del terreno rectangular completo?",
+    "opts": [
+      "30 metros",
+      "42.4 metros (aprox.)",
+      "50 metros",
+      "60 metros"
+    ],
+    "ans": 1,
+    "exp": "Para los problemas geométricos descritos con texto, tu primer instinto debe ser esquematizar mental o gráficamente.\n\nSi el largo es exactamente el doble del ancho (L = 2A), el rectángulo puede dividirse perfectamente en **dos cuadrados adyacentes**.\n\nSi la instalación solar (cuadrado) ocupa la mitad del terreno, el 'sobrante' es el otro cuadrado. El texto nos dice que el sobrante tiene un área de 50 m².\n- El área de un cuadrado es A². Por ende, A² = 50.\n- Despejando el ancho: **A = √50** (que es aproximadamente 7.07).\n\nEl perímetro de un rectángulo se calcula como 2(Largo) + 2(Ancho).\n- Sustituyendo L = 2A: 2(2A) + 2A = 4A + 2A = **6A**.\n- Perímetro total: 6 × √50 ≈ 6 × 7.07 ≈ **42.4 metros**.\n\n**Tip Élite:** Reconocer que un rectángulo de proporción 2:1 son simplemente dos cuadrados idénticos unidos simplificará enormemente tus cálculos de área y perímetro."
+  },
+  {
+    "id": "m_elite_05",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un protocolo criptográfico exige la creación de un PIN de 3 dígitos (empleando caracteres del 0 al 9). La arquitectura del sistema impone dos restricciones de seguridad inexcusables:\n1) El dígito inicial no puede ser el número 0.\n2) Ningún dígito puede repetirse a lo largo de la secuencia.",
+    "q": "¿Cuál es el volumen máximo de secuencias PIN válidas que el sistema puede admitir?",
+    "opts": [
+      "648",
+      "729",
+      "1000",
+      "504"
+    ],
+    "ans": 0,
+    "exp": "Este ejercicio evalúa tu dominio del **Principio Fundamental de Conteo** y el orden de aplicación de las restricciones.\n\nImagina tres casillas vacías: [ _ ] [ _ ] [ _ ]\n\n1. **Primera casilla:** Tenemos 10 dígitos posibles, pero el '0' está prohibido. Esto nos deja con **9 opciones viables**.\n2. **Segunda casilla:** Ahora sí podemos usar el '0', volviendo a tener 10 dígitos. Sin embargo, no podemos repetir el número que usamos en la casilla inicial. Por tanto, tenemos 10 - 1 = **9 opciones viables**.\n3. **Tercera casilla:** De los 10 dígitos originales, ya hemos 'quemado' dos diferentes. Nos quedan 10 - 2 = **8 opciones viables**.\n\nMultiplicando las opciones de cada etapa: 9 × 9 × 8 = **648 secuencias**.\n\n**Tip Élite:** En combinatoria, las restricciones más severas (como 'el primero no es 0') deben resolverse antes que las generales (como 'sin repetición'). Alterar este orden provocará un fallo matemático grave."
+  },
+  {
+    "id": "v_fin_4",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "La administración cantonal desplegó contenedores de polímeros pigmentados en las plazas públicas, clasificando su uso mediante iconografía especializada. La directriz pretendía que la ciudadanía ejecutara una segregación de origen, optimizando así los volúmenes de material reincorporado al ciclo productivo.",
+    "q": "¿Cuál es el objetivo primordial que persigue esta política cantonal?",
+    "opts": [
+      "Revitalizar estéticamente el mobiliario urbano de los espacios públicos.",
+      "Favorecer la clasificación ciudadana de residuos para potenciar el reciclaje.",
+      "Generar nuevas plazas laborales en el sector de la recolección de desechos.",
+      "Minimizar la presencia física de contenedores en las áreas de esparcimiento."
+    ],
+    "ans": 1,
+    "exp": "Analicemos la estructura lógica de la acción institucional.\n\nEl texto indica explícitamente que la meta era lograr que los vecinos 'ejecutaran una segregación de origen' (clasificaran) para 'optimizar el material reincorporado' (reciclar).\n\n- La **opción B** encapsula exactamente esta doble intención.\n- Los colores y la iconografía son apenas el medio táctico, no la finalidad (descartamos la A).\n- La creación de empleos (C) y la reducción de contenedores (D) son inferencias que carecen de asidero en el texto.\n\n**Tip Élite:** La 'finalidad' en un texto siempre responde a la pregunta de orden superior '¿Para qué se implementó el medio?'. No confundas la herramienta con la meta."
+  },
+  {
+    "id": "v_fin_5",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Previo a cualquier expedición transcontinental, la científica redacta un inventario pormenorizado del equipamiento técnico requerido, sometiendo el contenido de su equipaje a una verificación exhaustiva antes del cierre del mismo.",
+    "q": "¿Qué finalidad persigue la científica al protocolizar esta verificación?",
+    "opts": [
+      "Exhibir una meticulosidad superior ante sus colegas de expedición.",
+      "Garantizar la inclusión de la totalidad del equipo logístico y científico.",
+      "Optimizar el tiempo de embalaje por encima del estándar de su equipo.",
+      "Restringir el volumen de carga para evitar sobrecargos en aeropuertos."
+    ],
+    "ans": 1,
+    "exp": "Este fragmento ilustra una acción metódica con un fin práctico evidente.\n\nEl propósito de hacer un inventario pormenorizado y verificarlo es, sin lugar a dudas, asegurar que no quede nada por fuera de lo planeado (Garantizar la inclusión total del equipo).\n\n- Las opciones A (presumir), C (rapidez) y D (reducir carga) atribuyen motivaciones secundarias que el texto no menciona ni insinúa.\n- La **opción B** se alinea estrictamente con el acto racional de revisar una lista.\n\n**Tip Élite:** No sobre-analices añadiendo intenciones psicológicas (como impresionar o competir) si el autor solo describe un procedimiento logístico."
+  },
+  {
+    "id": "v_fin_6",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El cuerpo legislativo promulgó una exención tributaria escalonada sobre la importación de vehículos de cero emisiones, con el afán de dinamizar su adquisición en el mercado local y aplacar los índices de polución en los núcleos urbanos.",
+    "q": "¿Qué propósito fundamental motiva la aprobación de esta exención tributaria?",
+    "opts": [
+      "Incrementar las arcas fiscales a través de nuevos mecanismos de importación.",
+      "Fomentar la adopción de tecnologías de transporte amigables con la biosfera.",
+      "Penalizar económicamente a los usuarios de motores de combustión interna.",
+      "Subsidiar la infraestructura vial necesaria para la movilidad eléctrica."
+    ],
+    "ans": 1,
+    "exp": "Identificar la finalidad requiere distinguir entre las causas de fondo y las políticas colaterales.\n\nEl texto enuncia dos intenciones claras tras la exención: dinamizar la compra de vehículos eléctricos (cero emisiones) y bajar la contaminación (polución).\n\n- La **opción B** sintetiza ambos propósitos bajo el concepto de 'tecnologías amigables'.\n- La opción A es ilógica porque reducir impuestos *disminuye* la recaudación directa.\n- La opción C (penalizar a otros) y la D (infraestructura) no figuran como objetivos de la ley en el texto.\n\n**Tip Élite:** Las preguntas de finalidad gubernamental o corporativa suelen estar escritas en jerga. Identifica los verbos de acción ('dinamizar', 'aplacar') para encontrar el verdadero norte de la política."
+  },
+  {
+    "id": "v_fin_7",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El estudiante de medicina programa tres temporizadores con intervalos de cinco minutos cada madrugada. Argumenta que esta configuración no obedece a una preferencia por la estridencia, sino a la certidumbre de que un único llamado lo induciría a prolongar su sueño y faltar a su guardia clínica.",
+    "q": "¿Cuál es el fin último de establecer temporizadores escalonados?",
+    "opts": [
+      "Experimentar con los ciclos de sueño a través de estímulos acústicos.",
+      "Asegurar un despertar efectivo para cumplir con sus responsabilidades.",
+      "Alertar al resto de residentes en los dormitorios del hospital.",
+      "Apegarse a un ritual obsesivo-compulsivo exento de valor práctico."
+    ],
+    "ans": 1,
+    "exp": "El texto es explícito en descartar motivaciones erróneas y confirmar la verdadera causa.\n\nEl estudiante rechaza que lo haga por gusto al ruido, y confiesa que el miedo a quedarse dormido ('prolongar su sueño') y fallar a su guardia es lo que lo mueve a usar tres alarmas.\n\n- La **opción B** captura esta necesidad de 'despertar efectivo' para cumplir.\n- La opción A inventa un propósito científico.\n- La opción C involucra a terceros no mencionados.\n- La opción D es un juicio psiquiátrico que el texto descarta al decir que hay una razón lógica.\n\n**Tip Élite:** Cuando un texto explica lo que *no* es ('no obedece a...'), úsalo inmediatamente para tachar las opciones trampa que sugieren exactamente eso."
+  },
+  {
+    "id": "v_com_4",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "En las mesas de debate, al menor atisbo de una perspectiva disidente, el moderador eleva su registro vocal, superpone sus intervenciones e impide que sus interlocutores concluyan sus premisas; invariablemente, la única narrativa que prevalece es la suya.",
+    "q": "¿Qué calificativo define el comportamiento del moderador ante la disidencia?",
+    "opts": [
+      "Receptivo",
+      "Autoritario",
+      "Apático",
+      "Aprensivo"
+    ],
+    "ans": 1,
+    "exp": "El comportamiento descrito revela una clara intención de dominio y supresión del diálogo.\n\nElevar la voz, interrumpir y asegurar que solo su versión impere son acciones que bloquean la participación y controlan el espacio.\n\n- Esto se enmarca en una actitud **autoritaria** (opción B).\n- Es exactamente lo opuesto a ser 'receptivo' (opción A).\n- No puede ser 'apático' (opción C) porque muestra gran intensidad en imponerse.\n- Tampoco es 'aprensivo' (tímido o temeroso, opción D).\n\n**Tip Élite:** Domina la clasificación de tonos y actitudes. 'Autoritario' o 'Impositivo' son respuestas frecuentes cuando un personaje silencia a otros o actúa de forma unilateral."
+  },
+  {
+    "id": "v_com_5",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Frente a un instrumento de evaluación de alta complejidad, la estudiante de leyes respira con sosiego, escruta el documento en su totalidad y aborda preliminarmente las secciones que domina para afianzar su puntuación, relegando las disyuntivas ambiguas para el bloque final del tiempo asignado.",
+    "q": "¿Qué descriptor perfila la estrategia de resolución de la estudiante?",
+    "opts": [
+      "Improvisada y exenta de metodología",
+      "Analítica y dotada de serenidad",
+      "Paralizada por la presión académica",
+      "Impulsiva y basada en el azar"
+    ],
+    "ans": 1,
+    "exp": "El fragmento ilustra a un sujeto en total control de la situación.\n\nLas acciones de respirar con sosiego, revisar todo antes de empezar y priorizar lo que domina demuestran una mente que no entra en pánico, sino que aplica un método calculado.\n\n- Todo esto apunta a una actitud **analítica y dotada de serenidad** (opción B).\n- La improvisación (A) o actuar por azar (D) contradicen el hecho de que ella tiene un plan de ataque ('priorizar lo que domina').\n- La parálisis (C) es refutada por su avance sistemático.\n\n**Tip Élite:** En preguntas de comportamiento estratégico, presta atención a cómo el sujeto maneja los tiempos y los recursos. Esa suele ser la clave de la respuesta correcta."
+  },
+  {
+    "id": "v_com_6",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Con el marcador desfavorable y el cronómetro en contra, la capitana del seleccionado rehúsa capitular; en su lugar, congrega a sus compañeras, reestructura el esquema táctico y las exhorta a sostener la ofensiva hasta el pitazo final.",
+    "q": "¿Qué actitud asume la capitana ante la inminencia de la derrota?",
+    "opts": [
+      "Desiste tácitamente de cualquier remontada.",
+      "Ejerce un liderazgo resiliente y motivacional.",
+      "Transfiere la responsabilidad a los fallos de su equipo.",
+      "Incurre en confrontaciones inútiles con las autoridades."
+    ],
+    "ans": 1,
+    "exp": "Este caso evalúa la reacción de un personaje ante la adversidad máxima.\n\nEn lugar de claudicar ('rehúsa capitular'), la líder toma acciones proactivas: agrupa, rediseña tácticas y da ánimo.\n\n- Esta conducta se tipifica como un **liderazgo resiliente y motivacional** (opción B).\n- La opción A dice que se rinde, lo cual el texto niega expresamente.\n- Las opciones C y D sugieren actitudes tóxicas (culpar, pelear) de las que no hay ninguna evidencia textual.\n\n**Tip Élite:** La palabra 'resiliencia' aparece frecuentemente en exámenes de admisión. Significa la capacidad de sobreponerse a circunstancias adversas. ¡Apréndela!"
+  },
+  {
+    "id": "v_com_7",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "A pesar de haber sucumbido en el certamen definitivo, el maestro de ajedrez se aproximó a estrechar la mano de su oponente, elogió el esfuerzo de sus entrenadores y declaró ante la prensa que extraería valiosas lecciones tácticas de este revés.",
+    "q": "¿Qué disposición manifiesta el maestro de ajedrez frente al fracaso?",
+    "opts": [
+      "Hostilidad manifiesta",
+      "Integridad deportiva",
+      "Conformismo crónico",
+      "Desapego emocional"
+    ],
+    "ans": 1,
+    "exp": "El comportamiento descrito refleja una gran madurez emocional tras un fracaso.\n\nSaludar al rival ganador, agradecer y buscar aprender de los errores son los pilares de lo que se conoce como 'buen perdedor' o persona con **integridad deportiva** (opción B).\n\n- No hay 'hostilidad' (opción A); el trato fue cortés.\n- No es 'conformismo' (opción C) porque afirma que aprenderá para mejorar (no se estanca).\n- No es 'desapego' (opción D); simplemente canaliza la pérdida de forma constructiva.\n\n**Tip Élite:** Distingue entre *conformismo* (aceptar el destino sin querer cambiar) y *aceptación constructiva* (reconocer el error para mejorar). Los exámenes suelen poner ambos para confundirte."
+  },
+  {
+    "id": "v_cau_5",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Durante un período prolongado, el vivero botánico careció de irrigación artificial. Si bien se registraron lloviznas esporádicas, estas no aportaron el volumen hídrico requerido, ocasionando que, paulatinamente, la flora sufriera una desecación letal.",
+    "q": "¿Cuál es el agente causal principal de la desecación de la flora?",
+    "opts": [
+      "La presencia de lloviznas esporádicas.",
+      "La ausencia de un suministro hídrico sustancial.",
+      "La saturación excesiva de humedad en el suelo.",
+      "La fragilidad genética de las especies plantadas."
+    ],
+    "ans": 1,
+    "exp": "Analicemos la cadena de eventos del vivero.\n\nEl texto indica que las lluvias fueron insuficientes y que el problema central fue que 'careció de irrigación artificial' prolongada.\n\n- Esta 'ausencia de suministro sustancial' es la causa principal del deterioro (opción B).\n- La opción A menciona las lloviznas, pero fueron insuficientes, no la causa del daño.\n- La opción C (exceso de agua) es exactamente lo contrario a una desecación.\n- La opción D inventa factores genéticos que no se discuten.\n\n**Tip Élite:** En preguntas de causa y consecuencia, identifica cuál evento desata o agrava la situación. Aquí, la falta de riego humano fue el detonante innegable."
+  },
+  {
+    "id": "v_cau_6",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La escalada abrupta en las tarifas de los hidrocarburos desencadenó una presión inflacionaria, provocando que la mayoría de los bienes de consumo experimentaran un alza significativa en sus precios de mercado.",
+    "q": "De acuerdo con el fragmento, ¿cuál es un efecto directo del incremento en los hidrocarburos?",
+    "opts": [
+      "La depreciación generalizada de los bienes de consumo.",
+      "El encarecimiento sustancial de los productos comerciales.",
+      "El agotamiento de las reservas de combustibles fósiles.",
+      "El ajuste alcista en las remuneraciones salariales."
+    ],
+    "ans": 1,
+    "exp": "Este texto establece una relación económica simple de causa (gasolina cara) a consecuencia (inflación en productos).\n\n- El texto señala que los bienes sufrieron un 'alza significativa'.\n- Esto se traduce directamente en la **opción B**: encarecimiento de productos.\n- La opción A dice 'depreciación' (bajar precio), lo cual es lo contrario.\n- La escasez (C) y los sueldos (D) son fenómenos ajenos al fragmento analizado.\n\n**Tip Élite:** Asegúrate de leer cuidadosamente si te preguntan por la 'causa' (origen) o el 'efecto/consecuencia' (resultado). Confundir la dirección del impacto es un error muy común."
+  },
+  {
+    "id": "v_cau_7",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "En virtud de haber mantenido un régimen de estudio riguroso e ininterrumpido a lo largo del ciclo lectivo, la postulante logró asegurar su cupo en el examen de admisión universitario.",
+    "q": "¿Cuál fue el factor determinante para el éxito de la postulante?",
+    "opts": [
+      "La benevolencia del sistema de evaluación.",
+      "La persistencia en su preparación académica.",
+      "La indulgencia de la prueba de admisión.",
+      "La intervención de tutores especializados."
+    ],
+    "ans": 1,
+    "exp": "El nexo 'En virtud de...' nos indica claramente de dónde proviene la causa del éxito.\n\nEl texto atribuye el logro a que mantuvo un 'régimen de estudio riguroso e ininterrumpido'.\n\n- Esto es sinónimo de **persistencia en la preparación** (opción B).\n- No se hace mención a que el examen fuera fácil (A, C) ni a la ayuda de terceros o tutores (D).\n\n**Tip Élite:** Las frases introductorias como 'En virtud de', 'A raíz de', o 'Debido a' siempre introducen la premisa causal en una estructura argumentativa."
+  },
+  {
+    "id": "v_cau_8",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La deforestación intensiva de las laderas despojó al estrato geológico de las redes radiculares que le conferían cohesión estructural; por ende, al suscitarse precipitaciones torrenciales, se desencadenaron aludes de tierra masivos.",
+    "q": "Según la estructura del texto, ¿cuál es la causa subyacente que propició los aludes?",
+    "opts": [
+      "La fuerza inherente de las precipitaciones aisladas.",
+      "La tala indiscriminada que vulneró el soporte del suelo.",
+      "La proliferación de asentamientos habitacionales.",
+      "La sequía prolongada que antecedió a las lluvias."
+    ],
+    "ans": 1,
+    "exp": "Tenemos un escenario de causas concatenadas (efecto dominó). ¿Cuál es la raíz de todo?\n\nLas lluvias fueron el detonante, pero el texto especifica que el suelo falló porque la **deforestación (tala)** lo dejó sin raíces de cohesión.\n\n- La verdadera causa que preparó el desastre fue la **tala que vulneró el suelo** (opción B).\n- La lluvia (A) por sí sola no habría causado el alud si el suelo hubiera estado firme.\n- La urbanización (C) y la sequía (D) son distractores que no existen en el fragmento.\n\n**Tip Élite:** Cuando un texto presenta una causa remota (tala) y una causa próxima (lluvia), las preguntas de inferencia profunda siempre te pedirán la causa remota o subyacente que originó el problema estructural."
+  },
+  {
+    "id": "v_cau_9",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La gestión racional y mesurada del recurso hídrico garantiza la disponibilidad de reservas estratégicas para solventar las crisis durante la estación de estiaje.",
+    "q": "¿Qué vínculo de causa-consecuencia fundamenta la premisa anterior?",
+    "opts": [
+      "El uso cauteloso del agua asegura provisiones para los períodos de sequía.",
+      "Las temporadas de estiaje multiplican el rendimiento de los acuíferos.",
+      "Los recursos hídricos son inmanejables mediante el almacenamiento.",
+      "Las fluctuaciones estacionales carecen de impacto en el suministro."
+    ],
+    "ans": 0,
+    "exp": "Este texto establece una relación protectora directa.\n\nLa 'gestión racional' (uso responsable) funciona como la causa que permite el efecto de 'garantizar reservas' para el estiaje (sequía).\n\n- La **opción A** reformula perfectamente esta dinámica de prevención.\n- Las opciones B, C y D proponen absurdos lógicos (la sequía no produce agua, sí se puede almacenar, y el clima sí afecta el suministro).\n\n**Tip Élite:** 'Estiaje' es una palabra de nivel superior para referirse a la época de sequía o al caudal mínimo de los ríos. Conocerla te da una ventaja competitiva."
+  },
+  {
+    "id": "v_sim_4",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Deflagrar una vela demanda únicamente la fricción de una cerilla; en contraste, reactivar un complejo hidroeléctrico conlleva la sincronización de turbinas, calibración de presiones y la orquestación de un escuadrón de ingenieros.",
+    "q": "¿Qué criterio distingue fundamentalmente a ambas operaciones?",
+    "opts": [
+      "Su relevancia histórica e industrial.",
+      "El volumen y sofisticación de sus procesos.",
+      "La visibilidad de su espectro luminoso.",
+      "El costo económico del material empleado."
+    ],
+    "ans": 1,
+    "exp": "El texto realiza una comparación entre un acto rudimentario y una operación altamente técnica.\n\nDe un lado tenemos 'una cerilla' (simple); del otro, turbinas, presiones, sincronización e ingenieros (complejo).\n\n- La distinción radica en **el volumen y la sofisticación de los elementos** involucrados (opción B).\n- Aunque la hidroeléctrica es más costosa (D), el texto se centra en *cómo* se encienden, no en cuánto valen.\n- La historia (A) o la luz (C) no son el foco del argumento comparativo.\n\n**Tip Élite:** Identifica el eje de la comparación. Si el autor enumera pasos y piezas, el eje es la complejidad/simplicidad funcional, no el valor monetario."
+  },
+  {
+    "id": "v_sim_5",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El ensamblaje de un velocípedo infantil consta de un puñado de piezas mecánicas elementales; por su parte, un vehículo autónomo contemporáneo aglomera miles de circuitos electrónicos, sensores ópticos y algoritmos de navegación.",
+    "q": "¿Cómo se tipifica la naturaleza del vehículo autónomo en contraposición al velocípedo?",
+    "opts": [
+      "Como un mecanismo de mayor rudimentarismo.",
+      "Como un artefacto de extrema complejidad.",
+      "Como un sistema de movilidad más pausada.",
+      "Como un bien de consumo más accesible."
+    ],
+    "ans": 1,
+    "exp": "El contraste vuelve a estar centrado en la cantidad de componentes y tecnología.\n\nFrente al 'puñado de piezas' del triciclo (velocípedo), el auto autónomo presenta 'miles de circuitos, sensores y algoritmos'.\n\n- El término preciso para describir el automóvil frente al triciclo es **mayor complejidad** (opción B).\n- La opción A ('rudimentarismo') diría exactamente lo contrario.\n- Las opciones de velocidad (C) o economía (D) son deducciones erradas que no provienen de la premisa textual.\n\n**Tip Élite:** Un error fatal es dejarse llevar por el sentido común (ej. 'los autos son más caros'). Siempre debes responder basándote *únicamente* en las variables que el autor decidió incluir en el texto."
+  },
+  {
+    "id": "v_sim_6",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Extender la mano en señal de saludo constituye un reflejo motor que la mayoría ejecuta casi de forma autómata. Dominar la lengua de señas, por el contrario, demanda la asimilación de cientos de gesticulaciones, una alta consciencia espacial y una sintaxis estrictamente reglamentada.",
+    "q": "¿Qué atributo diferencia al aprendizaje de la lengua de señas frente al saludo cotidiano?",
+    "opts": [
+      "Representa un nivel de exigencia trivial.",
+      "Encarna un sistema de comunicación mucho más complejo.",
+      "Constituye una práctica con mayor antigüedad antropológica.",
+      "Carece de utilidad práctica en la cotidianidad."
+    ],
+    "ans": 1,
+    "exp": "El texto contrasta lo instintivo versus lo académico o altamente regulado.\n\nMientras el saludo es un acto autómata, la lengua de señas exige memoria, espacio y reglas sintácticas.\n\n- Por definición, esto la convierte en un **sistema mucho más complejo** (opción B).\n- 'Trivial' (opción A) significa fácil o poco importante, lo cual choca con la descripción.\n- Las opiniones sobre antigüedad (C) o utilidad (D) no forman parte del análisis comparativo del autor.\n\n**Tip Élite:** Al analizar contrastes, busca el conector de oposición (ej. 'por el contrario', 'en cambio'). Todo lo que siga a ese conector será la base de la respuesta correcta."
+  },
+  {
+    "id": "v_sim_7",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "La fritura de una proteína básica implica un procedimiento unilineal de escasos minutos; ejecutar la coreografía de un banquete de degustación requiere orquestar tiempos de cocción, temperaturas contrastantes y decenas de guarniciones simultáneamente.",
+    "q": "Desde el punto de vista logístico, ¿cómo se percibe la elaboración del banquete frente a la fritura básica?",
+    "opts": [
+      "De una simplicidad análoga.",
+      "Dotada de una complejidad superior.",
+      "Deplorable en su carga nutricional.",
+      "Superior en su inmediatez ejecutiva."
+    ],
+    "ans": 1,
+    "exp": "Nuevamente, el contraste se establece entre algo de un solo paso (unilineal) y algo con múltiples variables simultáneas (orquestación).\n\n- Esto sitúa al banquete en un plano de **complejidad superior** (opción B).\n- No son de 'simplicidad análoga' (A) ya que son claramente distintos.\n- La rapidez (D) está descartada porque el huevo toma 'escasos minutos'.\n- La nutrición (C) es irrelevante para la lectura.\n\n**Tip Élite:** 'Unilineal' significa de una sola línea o paso; entender que se opone a 'orquestación simultánea' te entrega la respuesta sin mayor esfuerzo."
+  },
+  {
+    "id": "v_con_5",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Halló un maletín de cuero abandonado con miles de billetes en su interior y, mediante las identificaciones, lo devolvió íntegramente a su titular, pese a hallarse en un paraje desolado y sin testigos que pudiesen escudriñarlo.",
+    "q": "¿Qué concepto ético encarna de manera más precisa el accionar de este individuo?",
+    "opts": [
+      "Integridad y honradez",
+      "Astucia mercantil",
+      "Aislamiento social",
+      "Apatía cívica"
+    ],
+    "ans": 0,
+    "exp": "Debemos etiquetar una conducta moral en base a las acciones descritas.\n\nDevolver dinero ajeno de forma completa, especialmente cuando nadie vigila ('sin testigos'), es la definición universal de **integridad y honradez** (opción A).\n\n- No se busca sacar provecho, por lo que no es 'astucia mercantil' (B).\n- No tiene relación con su grado de sociabilidad o introversión (C).\n- Y ciertamente no es 'apatía' (D), pues tomó acción proactiva para devolverlo.\n\n**Tip Élite:** En preguntas de conceptualización moral, fíjate en los atenuantes o agravantes. El hecho de estar 'sin testigos' eleva la acción de simple deber a verdadera integridad."
+  },
+  {
+    "id": "v_con_6",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "El desarrollador prolongó voluntariamente su jornada, absteniéndose de emitir quejas o reclamos, con el propósito inquebrantable de tener lista la plataforma tecnológica antes del plazo crítico pactado con los inversores.",
+    "q": "¿Qué sustantivo sintetiza la disposición laboral del desarrollador?",
+    "opts": [
+      "Apatía",
+      "Compromiso",
+      "Vanagloria",
+      "Fortuna"
+    ],
+    "ans": 1,
+    "exp": "Evalúa la motivación detrás de las horas extra y el silencio.\n\nTrabajar más de lo exigido, sin quejarse y por el deseo de cumplir con una fecha acordada, es la máxima expresión del **compromiso** laboral o responsabilidad (opción B).\n\n- La 'apatía' (A) significaría desinterés total.\n- La 'vanagloria' (C) implicaría que lo hizo para presumir, pero el texto dice que no emitió reclamos.\n- La 'fortuna' (D) sugiere suerte, desmeritando el esfuerzo deliberado del desarrollador.\n\n**Tip Élite:** El 'compromiso' siempre va ligado a asumir sacrificios temporales o comodidades en pro de un objetivo mayor pactado."
+  },
+  {
+    "id": "v_con_7",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Durante la crisis emocional de su colega, optó por silenciar sus propios prejuicios, sumergiéndose en el relato ajeno para asimilar y experimentar genuinamente la angustia que la otra persona padecía.",
+    "q": "¿Qué término psicológico define con exactitud este comportamiento?",
+    "opts": [
+      "Empatía",
+      "Rivalidad",
+      "Morbosidad",
+      "Egocentrismo"
+    ],
+    "ans": 0,
+    "exp": "Este es el concepto clásico de resonancia emocional.\n\nPonerse en los zapatos del otro ('sumergiéndose en el relato ajeno') para sentir su dolor, dejando de lado los prejuicios, es la definición académica de **empatía** (opción A).\n\n- No existe 'rivalidad' (B).\n- La 'morbosidad' (C) implicaría un interés malsano o chismoso, pero el texto dice que buscó asimilar la angustia.\n- El 'egocentrismo' (D) es exactamente lo contrario: centrarse solo en uno mismo.\n\n**Tip Élite:** Domina la tríada psicológica básica de los exámenes: Empatía (sentir con el otro), Apatía (no sentir ni importar) y Simpatía (agradar el otro)."
+  },
+  {
+    "id": "v_con_8",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Tras ser galardonada con la máxima distinción científica, declinó realizar alabanzas propias: consagró su discurso a honrar el respaldo de su laboratorio, ponderó la labor de sus mentores y reiteró vehementemente que el triunfo era un logro colectivo.",
+    "q": "¿Qué virtud destaca preponderantemente en la reacción de la galardonada?",
+    "opts": [
+      "Humildad",
+      "Prodigalidad",
+      "Inhibición",
+      "Desconfianza"
+    ],
+    "ans": 0,
+    "exp": "Este escenario evalúa cómo se maneja el ego en momentos de victoria.\n\nEl acto de rechazar los elogios individuales para atribuir el éxito a las bases, al equipo y a los mentores, es el reflejo directo de la **humildad** (opción A).\n\n- No se trata de 'prodigalidad' (B), que significa derrochar bienes materiales.\n- No es 'inhibición' (C), puesto que dio un discurso vehemente, no fue tímida.\n- Mucho menos denota 'desconfianza' (D) hacia su equipo, sino total gratitud.\n\n**Tip Élite:** El léxico avanzado es vital. Opciones como 'prodigalidad', 'inmanencia' o 'altruismo' aparecen a menudo. Asegúrate de saber qué significan para poder descartarlas rápidamente."
+  },
+  {
+    "id": "v_con_9",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Incluso después de registrar una docena de prototipos fallidos, la ingeniera reconfiguró los parámetros con serenidad implacable, retomando los ensayos sin ceder un ápice a la frustración.",
+    "q": "¿Qué rasgo de carácter rige el proceder de la ingeniera?",
+    "opts": [
+      "Tenacidad",
+      "Indolencia",
+      "Azar",
+      "Dispersión"
+    ],
+    "ans": 0,
+    "exp": "Evalúa la respuesta ante el fracaso repetitivo.\n\nMantener el esfuerzo tras múltiples fallos ('docena de prototipos fallidos') sin perder la calma es una muestra férrea de perseverancia o **tenacidad** (opción A).\n\n- La 'indolencia' (B) es pereza o insensibilidad total, lo opuesto a su esfuerzo activo.\n- El 'azar' (C) sugiere que confía en la suerte, no en su reconfiguración de parámetros.\n- La 'dispersión' (D) indica falta de enfoque, mientras ella está absolutamente concentrada en su objetivo.\n\n**Tip Élite:** Tenacidad, resiliencia y perseverancia son sinónimos casi intercambiables en contextos de superación de obstáculos. Si ves una de ellas en un contexto de persistencia, suele ser la respuesta."
+  },
+  {
+    "id": "v_ord_4",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El hangar naval se encontraba plagado de aparejos desperdigados caóticamente; luego de la intervención del capataz, cada herramienta yacía fijada en su anclaje correspondiente con su debida nomenclatura.",
+    "q": "¿Qué transición estructural experimentó el recinto?",
+    "opts": [
+      "De una disposición ordenada a una configuración caótica.",
+      "De un estado de desorden hacia una organización sistémica.",
+      "De una infraestructura vetusta a un reacondicionamiento moderno.",
+      "De una ampliación volumétrica a una reducción del espacio."
+    ],
+    "ans": 1,
+    "exp": "Es un ejercicio de reconocimiento de estados antes y después.\n\nEl estado inicial era caótico ('desperdigados caóticamente'). El estado final fue estructurado ('fijada en su anclaje con nomenclatura').\n\n- Esto describe un paso innegable **del desorden hacia la organización** (opción B).\n- La opción A invierte completamente el sentido de la acción.\n- El texto no menciona ni antigüedades/modernidad (C) ni cambios en el tamaño físico del hangar (D).\n\n**Tip Élite:** Cuidado con las opciones que invierten el orden temporal de los sucesos. Siempre verifica la dirección de la flecha de cambio (Estado Inicial → Estado Final)."
+  },
+  {
+    "id": "v_ord_5",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "En el repositorio histórico, cada pergamino ostenta un serial alfanumérico, se encuentra clasificado por período sociopolítico y retorna indefectiblemente a su nicho climatizado; permitiendo la localización instantánea de cualquier manuscrito.",
+    "q": "¿Qué atributo cualitativo rige el funcionamiento de este repositorio?",
+    "opts": [
+      "La anarquía documental",
+      "La organización meticulosa",
+      "La improvisación logística",
+      "La obsolescencia material"
+    ],
+    "ans": 1,
+    "exp": "El texto acumula pruebas descriptivas que apuntan a una sola conclusión.\n\n'Serial alfanumérico', 'clasificado por período', y que retorne 'indefectiblemente a su nicho' son señales de control absoluto sobre los elementos.\n\n- Esto califica como una **organización meticulosa** (opción B).\n- La 'anarquía' (A) o 'improvisación' (C) son antónimos directos de este estado.\n- La 'obsolescencia' (D) se refiere a que los pergaminos estén viejos, pero la pregunta es sobre el *funcionamiento* del sistema, no sobre el material.\n\n**Tip Élite:** No confundas las características de los objetos (viejos, nuevos) con las características del sistema que los contiene (organizado, desordenado)."
+  },
+  {
+    "id": "v_ord_6",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "Al concluir la gala, la mansión presentaba copas de cristal volcadas sobre las alfombras, cojines arrojados por las escalinatas y candelabros esparcidos asimétricamente por el salón principal.",
+    "q": "¿Qué término engloba adecuadamente la condición visual del espacio descrito?",
+    "opts": [
+      "Inmaculabilidad",
+      "Desbarajuste",
+      "Desolación",
+      "Simetría"
+    ],
+    "ans": 1,
+    "exp": "Revisemos las imágenes que pinta el texto: cosas volcadas, arrojadas y esparcidas.\n\nTodo esto conforma una escena clásica de pérdida de orden tras un evento.\n\n- El término que mejor engloba esto es **desbarajuste** (sinónimo de desorden severo, opción B).\n- 'Inmaculabilidad' (A) y 'simetría' (D) son exactamente lo opuesto: limpieza extrema y orden.\n- 'Desolación' (C) implica tristeza o vacío, pero la sala estaba llena de objetos caóticos.\n\n**Tip Élite:** Aumenta tu vocabulario. Palabras como *desbarajuste, caos, entropía o desaliño* son preferidas por los creadores de exámenes para evitar usar la palabra fácil 'desorden'."
+  },
+  {
+    "id": "v_ord_7",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "La base de datos departamental migró de un conglomerado de ficheros sin etiquetar y registros huérfanos, hacia una arquitectura jerárquica con metadatos rigurosamente indizados.",
+    "q": "¿Qué concepto refleja la transformación sufrida por la base de datos?",
+    "opts": [
+      "Una proliferación descontrolada de la entropía digital.",
+      "La sistematización formal de un entorno de datos previamente caótico.",
+      "La supresión definitiva de los archivos históricos de la empresa.",
+      "Una mutación en la paleta cromática de la interfaz de usuario."
+    ],
+    "ans": 1,
+    "exp": "Analicemos la evolución del sistema informático.\n\nEl punto de partida era malo ('ficheros sin etiquetar, registros huérfanos'). El punto de llegada es óptimo ('arquitectura jerárquica, metadatos indizados').\n\n- Esto evidencia la **sistematización formal de un entorno caótico** (opción B).\n- La opción A asume que la 'entropía' (desorden) aumentó, cuando ocurrió lo contrario.\n- El texto no dice que se borraron (C) ni menciona cambios visuales en colores (D).\n\n**Tip Élite:** Reconocer palabras clave como 'arquitectura jerárquica' e 'indizados' te dice inmediatamente que estás ante un texto de orden superior. No te asustes por la jerga técnica, busca la relación básica subyacente."
+  },
+  {
+    "id": "v_tmp_4",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "Para culminar el proceso textil, la fibra primero se somete a una limpieza química, subsecuentemente se expone al proceso de secado térmico, después se alisa con prensas de vapor y, en la última etapa, se empaqueta herméticamente en el almacén.",
+    "q": "¿Cuál operación se ejecuta inmediatamente con antelación al empaquetado hermético?",
+    "opts": [
+      "El secado térmico",
+      "El alisado con vapor",
+      "La limpieza química",
+      "La venta al proveedor"
+    ],
+    "ans": 1,
+    "exp": "Este es un ejercicio de rastreo secuencial puro. Ubica la etapa final y retrocede un paso.\n\nLa secuencia es: Limpieza → Secado → Alisado → Empaquetado.\n\n- Se nos pregunta qué ocurre *inmediatamente antes* del empaquetado.\n- Retrocediendo una casilla en nuestra secuencia, encontramos el **alisado con prensas de vapor** (opción B).\n- Limpieza (C) y Secado (A) ocurren mucho antes.\n- Venta (D) es un paso inventado que no existe en el texto.\n\n**Tip Élite:** En secuencias temporales, subraya palabras como 'inmediatamente antes' o 'posterior a'. No confíes en tu memoria, mapea la cadena: 1, 2, 3, 4."
+  },
+  {
+    "id": "v_tmp_5",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "En la fase de posproducción, la editora primero captura el metraje en crudo, posteriormente depura los fotogramas defectuosos en la línea de tiempo, a continuación sincroniza los subtítulos multilingües y, como paso definitivo, compila y exporta el archivo a los servidores globales.",
+    "q": "¿Qué tarea realiza la editora justo al culminar la depuración de fotogramas?",
+    "opts": [
+      "Capturar el metraje",
+      "Sincronizar los subtítulos",
+      "Exportar a los servidores",
+      "Eliminar el proyecto"
+    ],
+    "ans": 1,
+    "exp": "Volvemos a armar la línea de tiempo cronológica del texto.\n\nLos pasos son: Captura → Depuración → Sincronización de subtítulos → Exportación.\n\n- Nos piden la acción que va 'justo al culminar la depuración'. Esto significa el paso siguiente.\n- El paso tres es la **sincronización de subtítulos** (opción B).\n- La captura (A) es anterior.\n- La exportación (C) es el último paso, no el inmediato posterior.\n- Eliminar (D) no es parte del proceso.\n\n**Tip Élite:** Mapear procesos te protege de distractores que incluyen información verdadera del texto, pero ubicada en el orden temporal incorrecto."
+  }
+]

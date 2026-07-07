@@ -1,0 +1,96 @@
+[
+  {
+    "id": "q_pdf6_06",
+    "domain": "math",
+    "topic": "Proporcionalidad",
+    "dif": 3,
+    "stem": "Una galaxia tiene dos planetas: P y Q. Cada año del planeta P tiene 120 días terrestres. Por otra parte, en el planeta Q, cada año tiene 140 días terrestres.",
+    "q": "¿Qué cantidad de años en Q tiene un habitante que tiene 7 años en P?",
+    "opts": [
+      "5",
+      "6",
+      "8",
+      "9"
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "¿Cuántos días terrestres en total ha vivido el habitante si tiene 7 años en el planeta P? Una vez que tengas ese total, ¿cómo podrías determinar a cuántos años equivale eso en el planeta Q, sabiendo que allí un año dura 140 días terrestres?",
+    "tip_elite": "Calcula el total de días multiplicando la edad en P por los días que tiene un año en P. Luego divide ese gran total entre los días que dura el año en Q. ¡Organiza los datos para no confundir de qué planeta es cada medida!"
+  },
+  {
+    "id": "q_pdf6_07",
+    "domain": "verbal",
+    "topic": "Análisis lógico",
+    "dif": 3,
+    "stem": "Digo que una cosa ha cambiado porque puedo afirmar que algo de ella no ha cambiado, y me permite reconocer el objeto de que se trata.\n\nAnalice las siguientes proposiciones:\nI. Sin que algo permanezca en el objeto, no hay cambio.\nII. Lo permanente reduce el cambio.\nIII. Todo cambio requiere de permanencia.",
+    "q": "Según el texto anterior, es (son) correcta(s) solo la",
+    "opts": [
+      "I.",
+      "II.",
+      "I y la II.",
+      "I y la III.",
+      "II y la III."
+    ],
+    "ans": 3,
+    "exp": "",
+    "feedback_socratico": "El texto afirma que para reconocer un cambio, algo debe permanecer inalterado para reconocer el objeto. Revisa las opciones: ¿Acaso la afirmación I dice lo mismo con otras palabras? ¿Qué opinas de la afirmación III, no es una consecuencia directa de la premisa principal? ¿El texto menciona que la permanencia 'reduce' el cambio o solo que es necesaria para reconocerlo?",
+    "tip_elite": "En problemas de análisis de proposiciones, busca parafraseos de la idea central. La afirmación principal 'Digo que una cosa ha cambiado porque... algo de ella no ha cambiado' se traduce como 'el cambio necesita permanencia' (I y III). Elimina las opciones que introduzcan juicios no mencionados, como 'reduce el cambio'."
+  },
+  {
+    "id": "q_pdf6_08",
+    "domain": "math",
+    "topic": "Conteo",
+    "dif": 3,
+    "stem": "En una caja se colocan siete tiras de papel. En cada una de ellas se ha escrito del 0 al 6 un número entero distinto. Se sacan 2 tiras al azar.",
+    "q": "¿Cuál es el mayor número de parejas de tiras que pueden sacarse tales que la suma de los números que las identifican sea 6?",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "Imagina los números disponibles: 0, 1, 2, 3, 4, 5, y 6. ¿Qué parejas de números diferentes de este conjunto suman exactamente 6? Intenta listarlas sistemáticamente empezando desde el 0.",
+    "tip_elite": "Un método seguro en combinatoria básica es la lista sistemática: junta el número más bajo con el más alto (0+6), luego el siguiente (1+5), y así sucesivamente (2+4). El 3+3 no es válido porque se sacan dos tiras con números distintos."
+  },
+  {
+    "id": "q_pdf6_09",
+    "domain": "verbal",
+    "topic": "Completar oraciones",
+    "dif": 3,
+    "stem": "La música produce cambios en nosotros; así, por ejemplo, agudiza la capacidad de percepción auditiva; por eso, a medida que escuchamos música, distinguimos sonidos cada vez más __________ y captamos la coherencia de imágenes sonoras cada vez más __________.",
+    "q": "Seleccione la opción que completa correctamente el texto.",
+    "opts": [
+      "bellos – rápidas",
+      "finos – complejas",
+      "raros – combinadas",
+      "fuertes – pintorescas",
+      "semejantes – armoniosas"
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "El texto indica que la música 'agudiza la percepción auditiva'. Si tu percepción se agudiza, ¿qué tipo de sonidos eres capaz de distinguir? ¿Serían simplemente 'bellos' o 'fuertes', o más bien sonidos sutiles o 'finos'? Y si desarrollas tu oído, ¿qué nivel de imágenes sonoras podrías captar mejor?",
+    "tip_elite": "Presta atención a las pistas de contexto. 'Agudizar la percepción' implica notar detalles más sutiles (finos) y procesar estructuras más elaboradas (complejas). Las demás opciones no tienen relación directa con el aumento en la agudeza sensorial."
+  },
+  {
+    "id": "q_pdf6_10",
+    "domain": "verbal",
+    "topic": "Comprensión de lectura",
+    "dif": 3,
+    "stem": "En las profundidades del mar, dadas sus características especiales, existe una fauna completamente desconocida en otras partes del mar.",
+    "q": "De acuerdo con el texto, ¿cuál opción caracteriza la fauna de las profundidades del mar en relación con la fauna de otras partes del mar?",
+    "opts": [
+      "Muy compleja.",
+      "Muy variada.",
+      "Distinta.",
+      "Exótica.",
+      "Rara."
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "El texto utiliza la frase 'completamente desconocida en otras partes del mar'. De las opciones disponibles, ¿qué palabra es el sinónimo más directo para describir algo que no se encuentra en otras partes, siendo así diferente al resto? ¿El texto menciona que sea 'compleja' o 'variada'?",
+    "tip_elite": "Cíñete estrictamente a la información del texto. 'Completamente desconocida en otras partes' solo implica que no es igual a la de otras partes, es decir, es 'distinta'. Palabras como 'exótica', 'rara' o 'compleja' asumen información que no está escrita explícitamente."
+  }
+]

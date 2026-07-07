@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_sim_9",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Preparar una infusión tradicional constituye un proceso lineal y elemental. En contraste, orquestar un banquete de tres tiempos para dos decenas de comensales requiere una planificación meticulosa de insumos, un cronograma riguroso y la sincronización simultánea de múltiples técnicas culinarias.",
+    "q": "¿Cómo se clasifica el nivel de exigencia de orquestar el banquete respecto a preparar la infusión?",
+    "opts": [
+      "De menor grado de articulación",
+      "De mayor grado de complejidad",
+      "De menor eficiencia temporal",
+      "De mayor viabilidad económica"
+    ],
+    "ans": 1,
+    "exp": "La preparación del banquete exige planificar, cronometrar y sincronizar varias técnicas, lo cual implica un esquema logístico de múltiples variables, denotando una naturaleza más compleja frente a un proceso lineal.\n\n* **Opción A (Incorrecta):** Minimiza la naturaleza intrincada del banquete, asumiendo erróneamente un nivel menor de articulación.\n* **Opción B (Correcta):** Sintetiza la diferencia de variables y requerimientos logísticos de ambas situaciones.\n* **Opciones C y D (Incorrectas):** Introducen criterios de tiempo y costos, los cuales no son el enfoque de la premisa planteada.\n\n**Tip Élite:** En preguntas de comparación cualitativa, enfócate en la cantidad de variables operativas que se describen para determinar el grado de complejidad de la acción."
+  },
+  {
+    "id": "v_con_10",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Ante la inadvertencia de un colega que extravió sus provisiones, el individuo optó por fraccionar sus propias raciones para compartirlas, actuando por iniciativa propia y sin mediación de ninguna solicitud explícita.",
+    "q": "¿Qué concepto abstracto describe con mayor precisión la conducta exhibida?",
+    "opts": [
+      "Solidaridad desinteresada",
+      "Calculada reciprocidad",
+      "Altruismo fingido",
+      "Conveniencia implícita"
+    ],
+    "ans": 0,
+    "exp": "El acto de compartir los propios recursos con alguien en necesidad, por motivación intrínseca y sin requerir persuasión, encarna el concepto de solidaridad.\n\n* **Opción A (Correcta):** Captura la esencia de compartir voluntariamente para paliar la necesidad ajena sin mediar una solicitud.\n* **Opciones B, C y D (Incorrectas):** Sugieren motivaciones ocultas o expectativas de retorno, desvirtuando la espontaneidad y la nobleza tácita descrita en el escenario.\n\n**Tip Élite:** Al inferir cualidades a partir de acciones, analiza la motivación primaria y la presencia (o ausencia) de factores condicionantes o expectativas."
+  },
+  {
+    "id": "v_con_11",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "A lo largo del ciclo anual, el individuo demostró una puntualidad cronométrica en cada compromiso, cumplió indefectiblemente con los plazos de entrega estipulados y jamás generó demoras a terceros, incluso cuando ello implicaba sacrificar sus horas de descanso matutino.",
+    "q": "¿Cuál rasgo de carácter sintetiza idóneamente este patrón de comportamiento?",
+    "opts": [
+      "Responsabilidad irrestricta",
+      "Inflexibilidad metódica",
+      "Subordinación incondicional",
+      "Ambición desmedida"
+    ],
+    "ans": 0,
+    "exp": "El cumplimiento sistemático de horarios y deberes, manteniendo la consistencia incluso frente a sacrificios personales (como madrugar), evidencia un alto grado de compromiso con las propias obligaciones.\n\n* **Opción A (Correcta):** Identifica el sentido del deber y la capacidad de responder a los compromisos de manera sostenida.\n* **Opción B (Incorrecta):** La 'inflexibilidad' conlleva una connotación negativa de incapacidad para adaptarse, lo cual no se infiere del texto.\n* **Opciones C y D (Incorrectas):** Asumen motivaciones (subordinación o ambición) que exceden la información factual sobre su desempeño y respeto por el tiempo ajeno.\n\n**Tip Élite:** Céntrate en las acciones objetivas presentadas en la premisa y evita atribuir interpretaciones subjetivas extremas que no estén sustentadas por el texto."
+  },
+  {
+    "id": "v_ord_8",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "Históricamente, el recinto de trabajo operaba bajo un estado entrópico: los instrumentos de labor yacían dispersos y superpuestos sobre el pavimento, dificultando su localización. Posterior a una exhaustiva intervención de acondicionamiento, cada pieza fue dispuesta en paneles, categorizada según su función y debidamente etiquetada.",
+    "q": "¿Qué transformación estructural experimentó la dinámica del recinto?",
+    "opts": [
+      "De una configuración taxonómica a una dispersión asimétrica",
+      "De un estado de caos perceptivo a una disposición sistemática",
+      "De un enfoque analítico a uno pragmático",
+      "De una obsolescencia funcional a una innovación tecnológica"
+    ],
+    "ans": 1,
+    "exp": "El texto describe una transición clara desde una acumulación desestructurada (entropía, caos) hacia una organización basada en categorías y etiquetas (sistema ordenado).\n\n* **Opción A (Incorrecta):** Plantea la dirección inversa, sugiriendo un paso del orden al desorden.\n* **Opción B (Correcta):** Refleja fielmente el paso de la dispersión desordenada a un método de agrupación lógica y rotulación.\n* **Opciones C y D (Incorrectas):** Desvían el enfoque hacia conceptos epistemológicos o temporales que no guardan relación con la reestructuración física mencionada.\n\n**Tip Élite:** En secuencias de transformación, identifica los descriptores del 'antes' y del 'después' para asegurar que la opción elegida respete la direccionalidad del cambio."
+  },
+  {
+    "id": "v_ord_9",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El repositorio virtual de la analista transitó de albergar decenas de documentos huérfanos con nomenclaturas genéricas como 'documento1' y 'nuevo (2)', a exhibir una arquitectura de directorios jerarquizados por iniciativa, incorporando metadatos temáticos y cronológicos.",
+    "q": "¿Cuál es la naturaleza del cambio documentado en el sistema virtual?",
+    "opts": [
+      "De la clasificación rigurosa a la aleatoriedad nominal",
+      "De la desestructuración informática a la estructuración taxonómica",
+      "De la compresión de archivos a la fragmentación de datos",
+      "No se evidencia una alteración en la accesibilidad de la información"
+    ],
+    "ans": 1,
+    "exp": "La premisa describe el reemplazo de una proliferación de archivos sin esquema de nombrado ni categorización (desorden) por un esquema jerárquico estructurado (orden).\n\n* **Opción B (Correcta):** Captura el cambio cualitativo desde un caos de datos hacia un sistema lógico y organizado.\n* **Opción A (Incorrecta):** Invierte por completo la secuencia lógica de los hechos descritos.\n* **Opción C (Incorrecta):** Utiliza jerga técnica irrelevante que no representa el proceso de organización.\n* **Opción D (Incorrecta):** Contradice directamente el texto, el cual expone un cambio drástico en el manejo de la información.\n\n**Tip Élite:** Presta atención al vocabulario utilizado para describir los estados. Palabras como 'jerarquizados' o 'taxonómica' son sinónimos sofisticados para describir el 'orden'."
+  },
+  {
+    "id": "v_tmp_8",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "El protocolo para la preparación óptima de una infusión de café requiere: llevar el solvente a punto de ebullición, incorporar el grano molido, filtrar la mezcla resultante y, finalmente, dispensar la bebida.",
+    "q": "¿Qué procedimiento precede inmediatamente a la fase de dispensación de la bebida?",
+    "opts": [
+      "Alcanzar el punto de ebullición",
+      "Efectuar la filtración de la mezcla",
+      "Incorporar la materia prima",
+      "Acondicionar los recipientes receptores"
+    ],
+    "ans": 1,
+    "exp": "El texto detalla una secuencia lineal de cuatro pasos: ebullición, incorporación, filtración y dispensación (servir).\n\n* **Opción B (Correcta):** Establece que la filtración ('colar') es el evento que sucede inmediatamente antes de dispensar.\n* **Opciones A y C (Incorrectas):** Son pasos anteriores en la secuencia, pero no preceden de forma inmediata a la fase final.\n* **Opción D (Incorrecta):** Introduce un paso ajeno al protocolo explícito detallado en el texto.\n\n**Tip Élite:** En preguntas de secuencias cronológicas, la palabra 'inmediatamente' o 'justo antes' restringe la respuesta al eslabón previo exacto, descartando otros eventos anteriores."
+  },
+  {
+    "id": "v_tmp_9",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "El fondista ejecuta una fase de activación térmica, procede a completar el recorrido competitivo y, posteriormente, realiza ejercicios de elongación orientados a la recuperación de las fibras musculares.",
+    "q": "¿Qué acción emprende el atleta a continuación de la fase competitiva?",
+    "opts": [
+      "La activación térmica inicial",
+      "La elongación de las fibras musculares",
+      "La inscripción en la justa deportiva",
+      "El reposo absoluto en estado de sueño"
+    ],
+    "ans": 1,
+    "exp": "El texto traza una progresión de tres etapas: activación (calentamiento), competencia (carrera) y elongación (estiramiento).\n\n* **Opción B (Correcta):** Precisa que la acción subsecuente a la carrera es la elongación.\n* **Opción A (Incorrecta):** Representa una acción que antecede a la competencia, no que la sucede.\n* **Opciones C y D (Incorrectas):** Presentan acciones plausibles en el contexto deportivo, pero que están ausentes en el marco temporal delimitado por el enunciado.\n\n**Tip Élite:** Limítate estrictamente a las acciones declaradas en la narrativa textual; evita inferir pasos lógicos adicionales que no estén explícitamente escritos."
+  },
+  {
+    "id": "v_ese_8",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Así como el atributo inherente e ineludible de una brújula radica en indicar invariablemente el norte magnético —prescindiendo de sus dimensiones o diseño—, la identidad de cualquier instrumento técnico se fundamenta en su propósito operativo.",
+    "q": "Bajo este razonamiento axiológico, ¿cuál es el atributo definitorio de un termómetro?",
+    "opts": [
+      "Orientar espacialmente al usuario",
+      "Cuantificar las variaciones térmicas",
+      "Registrar el transcurso cronológico",
+      "Determinar magnitudes longitudinales"
+    ],
+    "ans": 1,
+    "exp": "El texto establece que la 'esencia' de un instrumento es su función principal y específica, independientemente de sus características físicas secundarias.\n\n* **Opción B (Correcta):** Identifica la función esencial e insustituible del termómetro: la medición de la temperatura.\n* **Opción A (Incorrecta):** Describe la función de la brújula, utilizada como analogía, no del termómetro.\n* **Opciones C y D (Incorrectas):** Describen las funciones del reloj y la regla, respectivamente, errando en el propósito del instrumento interrogado.\n\n**Tip Élite:** La analogía inicial sirve para definir el criterio de análisis (la función utilitaria). Aplica ese mismo criterio de forma aislada al nuevo sujeto por el que se te pregunta."
+  },
+  {
+    "id": "v_ese_9",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Una estructura viaductiva puede estar erigida con mampostería, polímeros o acero estructural; poseer luces cortas o extensiones kilométricas. No obstante, todas estas variantes convergen en una finalidad primordial: habilitar el tránsito sobre un accidente geográfico enlazando dos vectores distanciados.",
+    "q": "¿Cuál constituye la característica ontológica esencial de dicha estructura?",
+    "opts": [
+      "La composición de sus materiales constructivos",
+      "La capacidad de enlazar dos puntos franqueando un obstáculo",
+      "La magnitud longitudinal de sus vanos",
+      "La perdurabilidad histórica de su diseño"
+    ],
+    "ans": 1,
+    "exp": "El texto hace una distinción clara entre características accidentales (material, tamaño) y la función definitoria que subyace a todas las variaciones de la estructura.\n\n* **Opción B (Correcta):** Destila el propósito unificador y abstracto que define a todo puente: superar un obstáculo para conectar dos puntos.\n* **Opciones A, C y D (Incorrectas):** Enumeran precisamente las propiedades físicas e históricas que el autor cataloga como variables o secundarias frente al propósito común.\n\n**Tip Élite:** Cuando un texto contrasta elementos variables con un elemento constante, este último representa la 'esencia' u 'ontología' del concepto discutido."
+  },
+  {
+    "id": "v_per_9",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "El mutismo ambiental de una residencia deshabitada ejerce un efecto balsámico sobre aquel individuo urgido de sosiego, mientras que instiga episodios de ansiedad en quien alberga aversión al aislamiento.",
+    "q": "¿Qué principio sobre la percepción humana ilustra el enunciado?",
+    "opts": [
+      "La privación sensorial invariablemente genera estados de disonancia cognitiva",
+      "Un estímulo idéntico suscita reacciones disímiles condicionadas por la psique del receptor",
+      "La resiliencia ante el aislamiento es inexistente en la condición humana moderna",
+      "Las variables ambientales carecen de impacto sustancial sobre el estado anímico"
+    ],
+    "ans": 1,
+    "exp": "El enunciado demuestra cómo un mismo fenómeno objetivo (el silencio de una casa) produce dos respuestas emocionales diametralmente opuestas basadas en las necesidades y temores subjetivos de quien lo experimenta.\n\n* **Opción B (Correcta):** Sintetiza la idea de que la valoración de un hecho está sujeta al estado emocional y cognitivo del individuo que lo percibe.\n* **Opciones A y C (Incorrectas):** Incurren en falacias de generalización excesiva, asumiendo respuestas universales que el texto precisamente busca desmentir.\n* **Opción D (Incorrecta):** Afirma lo contrario a lo planteado, ya que el ambiente sí tiene un impacto profundo, solo que es variable.\n\n**Tip Élite:** Presta atención a las estructuras contrastantes ('mientras que', 'por un lado...'). Estas estructuras suelen apuntar a la subjetividad y relatividad de las experiencias."
+  },
+  {
+    "id": "v_per_10",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La primera precipitación nival representa, para el visitante estacional, un fenómeno estético cautivador; en contraste, para el residente local constreñido a despejar su acceso vehicular cada alborada, se perfila como una carga operativa insidiosa.",
+    "q": "¿Qué subyace a esta divergencia en la apreciación del fenómeno meteorológico?",
+    "opts": [
+      "Una discrepancia en la conformación geográfica de los lugares de origen",
+      "La disparidad en el impacto pragmático que el evento ejerce sobre la cotidianidad del sujeto",
+      "La incapacidad del visitante para comprender la termodinámica del invierno",
+      "Una aversión patológica del residente hacia las estaciones gélidas"
+    ],
+    "ans": 1,
+    "exp": "El texto contrapone la experiencia contemplativa de un turista frente a la obligación laboral que el mismo clima impone a un residente, revelando por qué lo perciben de forma diferente.\n\n* **Opción B (Correcta):** Identifica certeramente que es el involucramiento práctico y cotidiano (o la falta de él) lo que moldea la valoración de cada individuo.\n* **Opción A (Incorrecta):** Deriva hacia factores geográficos abstractos no mencionados en la premisa.\n* **Opciones C y D (Incorrectas):** Realizan juicios de valor infundados sobre la inteligencia del turista o la salud mental del habitante, excediendo los límites del texto.\n\n**Tip Élite:** Cuando se presentan dos roles sociales ante un mismo evento (ej. turista vs. habitante), la diferencia interpretativa suele radicar en la función o el impacto práctico que el evento tiene en la rutina de cada uno."
+  },
+  {
+    "id": "v_imp_12",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Sistemáticamente, cada vez que somete a su vegetación al riego con el suministro hídrico de aquella particular fuente, el follaje adquiere una palidez amarillenta.",
+    "q": "¿Qué premisa subyacente se infiere lógicamente del escenario descrito?",
+    "opts": [
+      "La flora en cuestión es inherentemente resistente a la hidratación",
+      "Existe un componente nocivo en dicho suministro hídrico específico",
+      "La sobreexposición a la radiación solar está necrosando los tejidos",
+      "El estado fitosanitario de las plantas es inmejorable"
+    ],
+    "ans": 1,
+    "exp": "El uso del adverbio 'sistemáticamente' junto a la consecuencia observable (follaje amarillento) establece una correlación directa entre una fuente de agua particular y el daño vegetal.\n\n* **Opción B (Correcta):** Infiere lógicamente que, dado que el agua específica causa daño consistente, esta debe contener algún elemento perjudicial para la planta.\n* **Opción A (Incorrecta):** Contradice las necesidades biológicas básicas y no se sostiene lógicamente.\n* **Opción C (Incorrecta):** Introduce una variable externa (el sol) que no figura en la relación causal descrita.\n* **Opción D (Incorrecta):** Es diametralmente opuesta al síntoma descrito, pues la clorosis (amarillamiento) indica un detrimento en la salud.\n\n**Tip Élite:** Una inferencia debe surgir como la causa lógica no declarada de un efecto consistente que el texto sí describe explícitamente."
+  },
+  {
+    "id": "v_imp_13",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A pesar de haber inaugurado sus instalaciones hace escasos treinta días, el establecimiento gastronómico exige reservas con una antelación semanal, mientras que la aglomeración de comensales sin cita previa circunvala la cuadra entera.",
+    "q": "¿Qué conclusión inexorable se deriva de los indicadores proporcionados?",
+    "opts": [
+      "El emprendimiento se enfrenta a una inminente quiebra operativa",
+      "La oferta culinaria ha suscitado un nivel de demanda excepcional y acelerado",
+      "La calidad de los insumos es inversamente proporcional a la espera",
+      "Existe un boicot generalizado hacia la propuesta del chef"
+    ],
+    "ans": 1,
+    "exp": "Los hechos planteados (corta vida del negocio, alta anticipación para reservas, filas masivas) son indicadores clásicos de un éxito comercial abrumador y rápido.\n\n* **Opción B (Correcta):** Deduce que la conjunción de estos fenómenos demuestra una popularidad altísima e inusual para un negocio tan reciente.\n* **Opciones A y D (Incorrectas):** Contradicen flagrantemente las señales de alta concurrencia y rentabilidad que expone el texto.\n* **Opción C (Incorrecta):** Asume una relación sobre la calidad que no puede comprobarse únicamente con base en el tiempo de espera.\n\n**Tip Élite:** Las cifras o datos extremos ('semana de anticipación', 'circunvala la cuadra') funcionan como evidencia hiperbólica para que deduzcas el estado general de la situación."
+  },
+  {
+    "id": "v_imp_14",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Pese a que el individuo elude cualquier alocución sobre sus méritos profesionales, los muros de su despacho se encuentran tapizados de certificaciones y galardones recabados a lo largo de dos décadas de ejercicio ininterrumpido.",
+    "q": "¿Qué deducción válida se desprende del contraste descrito?",
+    "opts": [
+      "Su trayectoria se ha caracterizado por la intrascendencia absoluta",
+      "Posee un historial de excelencia probada acompañado de una actitud modesta",
+      "La obtención de los galardones fue producto de transacciones ilícitas",
+      "Su carrera profesional se encuentra en una fase embrionaria"
+    ],
+    "ans": 1,
+    "exp": "El texto expone una contradicción aparente entre la actitud del individuo (no hablar de sus logros) y la evidencia física de su entorno (diplomas acumulados por décadas).\n\n* **Opción B (Correcta):** Sintetiza lógicamente que la evidencia física prueba su excelencia, mientras que su actitud demuestra modestia o reserva.\n* **Opción A (Incorrecta):** Ignora completamente la existencia de las certificaciones que avalan su éxito.\n* **Opción C (Incorrecta):** Introduce una especulación maliciosa sin ningún sustento en el fragmento.\n* **Opción D (Incorrecta):** Choca directamente con la información temporal proporcionada ('dos décadas').\n\n**Tip Élite:** Cuando un texto presenta una paradoja o un contraste entre actitud y evidencia, la inferencia correcta suele reconciliar ambos elementos reconociéndolos como coexistentes."
+  },
+  {
+    "id": "v_pri_10",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El recurso hídrico apto para consumo humano reviste un carácter de extrema finitud: demanda procesos de potabilización para garantizar su salubridad, requiere una logística de distribución minuciosa y exige la mitigación absoluta de prácticas de dispendio.",
+    "q": "¿Cuál postulado articula la idea central del fragmento?",
+    "opts": [
+      "Los procesos de potabilización garantizan la salubridad del agua",
+      "La escasez inherente del recurso hídrico condiciona una gestión rigurosa y conservadora en cada fase",
+      "La infraestructura de distribución hídrica es el componente más oneroso",
+      "La erradicación del dispendio debe ser la única prioridad gubernamental"
+    ],
+    "ans": 1,
+    "exp": "El texto enumera tres acciones (potabilizar, distribuir con cuidado, no desperdiciar) y las subordina a una premisa mayor: el recurso es escaso y finito.\n\n* **Opción B (Correcta):** Engloba tanto la premisa inicial (escasez) como la necesidad transversal de cuidado que justifica todas las acciones enumeradas.\n* **Opciones A y D (Incorrectas):** Seleccionan elementos individuales de la lista (potabilización y ahorro), que operan como ideas secundarias.\n* **Opción C (Incorrecta):** Introduce conceptos económicos que no se infieren directamente de la lectura.\n\n**Tip Élite:** La idea principal suele ser la 'sombrilla' conceptual que cobija y da sentido a todos los ejemplos o procesos listados a continuación."
+  },
+  {
+    "id": "v_pri_11",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La actividad física recurrente, una ingesta nutricional simétrica y periodos de recuperación somática adecuados constituyen, en su sinergia indivisible, la arquitectura fundamental de un estado de bienestar óptimo.",
+    "q": "¿Cuál constituye la tesis central del enunciado?",
+    "opts": [
+      "La actividad física posee supremacía sobre otros hábitos saludables",
+      "La convergencia simultánea de múltiples hábitos positivos cimienta la salud integral",
+      "La alteración de los periodos de recuperación somática es letal",
+      "La asimetría nutricional invalida cualquier otro esfuerzo fisiológico"
+    ],
+    "ans": 1,
+    "exp": "El texto resalta tres elementos diferentes y utiliza la expresión 'en su sinergia indivisible' para enfatizar que es la combinación de ellos lo que resulta efectivo.\n\n* **Opción B (Correcta):** Captura con precisión la idea de que la base de la salud no recae en un factor aislado, sino en la integración conjunta de varios hábitos.\n* **Opción A (Incorrecta):** Eleva un elemento secundario por encima de los demás, contradiciendo el mensaje de interdependencia.\n* **Opciones C y D (Incorrectas):** Plantean consecuencias negativas fatalistas que el texto original, de tono descriptivo y positivo, no asume explícitamente.\n\n**Tip Élite:** Términos como 'juntos', 'sinergia' o 'combinación' revelan que el autor prioriza el sistema completo por encima de cualquiera de sus partes aisladas."
+  },
+  {
+    "id": "v_pri_12",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El coloso del Arenal magnetiza a exploradores de latitudes globales, dinamiza la estructura laboral de los asentamientos periféricos y se ha consolidado como un emblema identitario de la biodiversidad costarricense.",
+    "q": "¿Cuál es el núcleo temático del texto?",
+    "opts": [
+      "La capacidad magnética del Arenal para atraer divisas internacionales",
+      "La multidimensionalidad del volcán Arenal como activo turístico, motor económico y referente identitario",
+      "La reestructuración laboral de los asentamientos rurales aledaños al volcán",
+      "La predominancia altitudinal del volcán en el relieve centroamericano"
+    ],
+    "ans": 1,
+    "exp": "El fragmento expone tres impactos distintos de un mismo sujeto: atracción global (turismo), empleo local (economía) y su rol como símbolo (identidad).\n\n* **Opción B (Correcta):** Sintetiza las tres dimensiones de impacto mencionadas sin excluir ninguna, configurando así el panorama completo de la oración.\n* **Opciones A y C (Incorrectas):** Reducen el alcance del texto enfocándose exclusivamente en una sola de sus vertientes (turismo o economía).\n* **Opción D (Incorrecta):** Inserta un dato geográfico que, aunque pudiese ser cierto, es ajeno al análisis propuesto en el párrafo.\n\n**Tip Élite:** Cuando un texto emplea enumeraciones para describir el impacto de un sujeto, la idea central debe abarcar todas las categorías de impacto, constituyendo una visión 'multidimensional'."
+  },
+  {
+    "id": "v_par_9",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Replicar ante cada incitación beligerante únicamente retroalimenta la hostilidad; en ocasiones, la abstención verbal constituye la maniobra estratégica más sofisticada.",
+    "q": "¿Cuál opción parafrasea de manera fiel el postulado original?",
+    "opts": [
+      "La confrontación directa es un imperativo categórico ante la hostilidad",
+      "El mutismo táctico ante la provocación suele resultar superior a la reacción reactiva",
+      "La abstención verbal es un síntoma ineludible de flaqueza moral",
+      "Incentivar la beligerancia ajena consolida el estatus jerárquico"
+    ],
+    "ans": 1,
+    "exp": "El autor argumenta que responder a ataques los fortalece, sugiriendo que optar por no responder (el silencio) es, a menudo, la mejor alternativa.\n\n* **Opción B (Correcta):** Traduce con exactitud la idea de que callar (mutismo táctico) es preferible a enfrascarse en la provocación.\n* **Opción A (Incorrecta):** Propone un mandato de confrontación, lo cual es la antítesis de la propuesta original.\n* **Opción C (Incorrecta):** Asocia negativamente el silencio con la debilidad, mientras que el texto lo ensalza como una virtud estratégica.\n* **Opción D (Incorrecta):** Promueve la provocación, concepto que el texto original repudia.\n\n**Tip Élite:** La paráfrasis idónea preserva no solo la semántica superficial, sino también la intención pragmática del autor (en este caso, una recomendación táctica)."
+  },
+  {
+    "id": "v_par_10",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Las conquistas de notable envergadura raramente emergen como producto exclusivo de la aptitud innata; por regla general, demandan una tenacidad inquebrantable.",
+    "q": "¿Cuál proposición mantiene intacto el sentido de la aseveración?",
+    "opts": [
+      "La aptitud innata constituye el único vector determinante del éxito",
+      "La perseverancia sostenida es un requisito ineludible para la cristalización de grandes hitos",
+      "La carencia de destrezas naturales anula cualquier posibilidad de trascendencia",
+      "El despliegue de esfuerzo resulta estéril frente a la genialidad"
+    ],
+    "ans": 1,
+    "exp": "El texto relativiza el valor del talento puro ('aptitud innata') y subraya que la constancia ('tenacidad inquebrantable') es el verdadero requisito de las grandes metas.\n\n* **Opción B (Correcta):** Transmite la misma jerarquía de valores, ponderando la perseverancia como factor crítico para alcanzar el éxito.\n* **Opciones A y C (Incorrectas):** Otorgan al talento natural un peso absoluto, contradiciendo frontalmente la advertencia del texto.\n* **Opción D (Incorrecta):** Menosprecia el valor del esfuerzo continuo, justo lo que el autor intenta ensalzar.\n\n**Tip Élite:** Al analizar paráfrasis, identifica el 'pesaje' que el autor hace de los conceptos. Si el texto valora más el esfuerzo que el talento, la respuesta correcta debe reflejar ese mismo balance."
+  },
+  {
+    "id": "v_par_11",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Roma no se edificó en una sola jornada.",
+    "q": "¿Cuál máxima refleja con mayor agudeza el trasfondo alegórico de esta sentencia?",
+    "opts": [
+      "La inmediatez es la marca de fábrica de los proyectos contemporáneos",
+      "Las empresas de gran calado exigen un proceso de maduración temporal",
+      "La capital del imperio fue un mito historiográfico",
+      "La labor constructiva carece de obstáculos significativos"
+    ],
+    "ans": 1,
+    "exp": "Este célebre aforismo emplea una metáfora histórica para ilustrar un principio general sobre la naturaleza del trabajo y el tiempo.\n\n* **Opción B (Correcta):** Interpreta correctamente la metáfora, estableciendo que los objetivos magnos (Roma) requieren paciencia y tiempo prolongado (no un día).\n* **Opción A (Incorrecta):** Promueve el valor de la rapidez y lo instantáneo, lo opuesto a la lección de paciencia del aforismo.\n* **Opciones C y D (Incorrectas):** Fallan al entender el carácter figurado de la expresión, reduciéndola a una afirmación literal y errónea sobre arquitectura o historia.\n\n**Tip Élite:** En paremias y aforismos, evita sistemáticamente las opciones que interpreten la oración de forma literal; busca la abstracción conceptual que encierra."
+  },
+  {
+    "id": "v_pro_9",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Absolutamente todos los candidatos que superaron el umbral de aprobación consignaron el expediente requerido. Analice las siguientes inferencias lógicas:\nI. Quien se abstuvo de entregar el expediente reprobó.\nII. Existen perfiles que sortearon la evaluación sin haber entregado el expediente.\nIII. La entrega del expediente figuró como condición necesaria para la aprobación.",
+    "q": "¿Cuáles proposiciones se coligen irrefutablemente de la premisa?",
+    "opts": [
+      "Únicamente la II",
+      "Exclusivamente la I y la III",
+      "Solamente la I",
+      "La totalidad de las opciones presentadas"
+    ],
+    "ans": 1,
+    "exp": "La premisa plantea una condición: si apruebas, entonces entregaste el expediente (Aprobar → Entregar).\n\n* **Proposición I (Válida):** Por modus tollens (negación del consecuente), si no entregaste, lógicamente no pudiste aprobar (~Entregar → ~Aprobar).\n* **Proposición II (Inválida):** Contradice la regla universal de que 'todos los que aprobaron' sí lo hicieron.\n* **Proposición III (Válida):** Al establecerse que todo el que aprueba tuvo que entregar, la entrega asume el rol de condición necesaria.\n* **Conclusión:** La opción que agrupa las inferencias lógicas válidas es la B.\n\n**Tip Élite:** Traduce mentalmente las oraciones categóricas ('Todos los A son B') a lenguaje de condición ('Si A, entonces B'). Esto facilita aplicar reglas de lógica clásica como la contrapositiva."
+  },
+  {
+    "id": "v_pro_10",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "En presencia de irradiación solar, los tejidos textiles logran evaporar la humedad retenida. Evalúe las siguientes deducciones:\nI. La irradiación solar posee la propiedad de deshidratar los tejidos.\nII. Los tejidos se deshidratan invariablemente, aun en ausencia de irradiación.\nIII. La irradiación solar incrementa la retención hídrica del tejido.",
+    "q": "¿Qué proposición se sustenta legítimamente en la formulación inicial?",
+    "opts": [
+      "Únicamente la I",
+      "Solamente la II",
+      "La convergencia de la II y la III",
+      "Exclusivamente la III"
+    ],
+    "ans": 0,
+    "exp": "La afirmación establece un vínculo de suficiencia: el sol ('irradiación solar') basta para causar el secado ('evaporar la humedad') de la ropa.\n\n* **Proposición I (Válida):** Reconoce correctamente la relación causal explícita donde el sol funge como agente desecante.\n* **Proposición II (Inválida):** La premisa no informa sobre lo que ocurre cuando no hay sol, por lo que afirmar que se secará siempre es una inferencia no garantizada.\n* **Proposición III (Inválida):** Sostiene lo diametralmente opuesto al texto, sugiriendo que el sol humedece ('retiene').\n* **Conclusión:** Solo la I se deriva con validez estricta.\n\n**Tip Élite:** Una proposición condicional ('Cuando A, ocurre B') asegura qué pasa si A está presente, pero no permite afirmar nada definitivo sobre lo que pasa si A está ausente."
+  },
+  {
+    "id": "m_ari_11",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Evalúe la siguiente expresión aritmética respetando la jerarquía de operadores: 7 × 8 − 6 × 5 + 12 ÷ 4.",
+    "q": "¿Qué magnitud numérica resulta tras la simplificación exhaustiva?",
+    "opts": [
+      "29",
+      "23",
+      "56",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "La convención matemática dicta que los productos y cocientes preceden a las sumas y restas en la resolución de expresiones combinadas.\n\n* **Paso 1 (Multiplicaciones y divisiones):** Procesamos de izquierda a derecha. (7 × 8) = 56; (6 × 5) = 30; (12 ÷ 4) = 3.\n* **Paso 2 (Sustituyendo en la expresión):** 56 − 30 + 3.\n* **Paso 3 (Sumas y restas):** Siguiendo el orden lineal, 56 − 30 = 26; posteriormente 26 + 3 = 29.\n* **Conclusión:** El resultado ineludible es 29.\n\n**Tip Élite:** Un error frecuente es sumar antes de restar al final (hacer 30+3=33 y luego 56-33=23). Recuerda que sumas y restas tienen igual jerarquía, operándose estrictamente de izquierda a derecha."
+  },
+  {
+    "id": "m_ari_12",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En un establecimiento gastronómico, el menú ejecutivo ostenta un precio de ₡3 200. Una comitiva familiar adquiere 4 de estos menús y, de manera adicional, asigna una gratificación voluntaria de ₡1 000 por el servicio.",
+    "q": "¿A cuánto asciende la liquidación monetaria total de la comitiva?",
+    "opts": [
+      "₡13 800",
+      "₡12 800",
+      "₡14 000",
+      "₡13 200"
+    ],
+    "ans": 0,
+    "exp": "El cálculo del gasto total demanda obtener primero el subtotal del consumo para luego adicionar recargos externos.\n\n* **Cálculo del consumo base:** Multiplicamos el costo unitario por la cantidad adquirida: 4 × 3 200 = 12 800.\n* **Inclusión de variables adicionales:** Se suma el monto fijo de la gratificación (propina) al subtotal calculado: 12 800 + 1 000 = 13 800.\n* **Conclusión:** El egreso total se cifra en 13 800.\n\n**Tip Élite:** Separa el modelo matemático en 'gastos variables' (dependen de la cantidad comprada) y 'gastos fijos' (propinas, envíos) para evitar multiplicar elementos exentos."
+  },
+  {
+    "id": "m_ari_13",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Un contenedor cisterna registra un nivel de almacenamiento equivalente a {{3/4}} de su capacidad volumétrica máxima. Tras un proceso de trasiego, se extrae una porción equivalente a {{1/2}} de la capacidad total del contenedor.",
+    "q": "¿Qué proporción fraccionaria del volumen total permanece albergada en el contenedor?",
+    "opts": [
+      "{{1/4}}",
+      "{{1/2}}",
+      "{{1/3}}",
+      "{{3/8}}"
+    ],
+    "ans": 0,
+    "exp": "El problema plantea una sustracción de fracciones heterogéneas, donde ambas proporciones se referencian a la misma base (el contenedor total).\n\n* **Planteamiento de la ecuación:** Volumen restante = Nivel inicial − Volumen extraído, lo que se traduce como {{3/4}} − {{1/2}}.\n* **Homogeneización:** Hallamos el común denominador, que es 4. Transformamos {{1/2}} multiplicando numerador y denominador por 2, obteniendo {{2/4}}.\n* **Resolución:** Operamos los numeradores manteniendo el denominador constante: {{3/4}} − {{2/4}} = {{1/4}}.\n\n**Tip Élite:** Es fundamental discernir si el problema dice '{{1/2}} del total' o '{{1/2}} del resto'. En este caso, al ser del total, la resta es directa."
+  },
+  {
+    "id": "m_mcm_8",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Dos dispositivos acústicos de señalización operan con secuencias temporales dispares: el primero percute cada 6 minutos exactos, mientras que el segundo lo hace cada 9 minutos. En este preciso instante, ambas percusiones han sincronizado.",
+    "q": "¿Cuál es el lapso mínimo, expresado en minutos, que debe transcurrir para que acaezca una nueva sincronización simultánea?",
+    "opts": [
+      "12",
+      "18",
+      "54",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "Las coincidencias futuras de eventos cíclicos se determinan mediante el hallazgo del Mínimo Común Múltiplo (MCM) de las frecuencias dadas.\n\n* **Descomposición prima:** Expresamos las frecuencias en sus factores primarios: 6 = 2 × 3 y 9 = 3².\n* **Regla del MCM:** Se seleccionan todos los factores primos presentes, con su mayor exponente: 2¹ × 3².\n* **Cálculo:** Resolvemos el producto: 2 × 9 = 18.\n* **Conclusión:** Los ciclos volverán a interceptarse a los 18 minutos.\n\n**Tip Élite:** Si las opciones son muy evidentes, un truco rápido es tomar el número mayor (9) e ir probando sus múltiplos secuencialmente (9, 18, 27) hasta encontrar uno divisible por el menor (6)."
+  },
+  {
+    "id": "m_rel_8",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Se dispone de la siguiente terna de magnitudes numéricas: 0,7 ; {{3/4}} ; 0,72.",
+    "q": "Si se procediera a su tabulación en orden estrictamente ascendente, ¿qué magnitud ocuparía la posición central del arreglo?",
+    "opts": [
+      "0,7",
+      "0,72",
+      "{{3/4}}",
+      "Las tres magnitudes poseen el mismo valor cardinal"
+    ],
+    "ans": 1,
+    "exp": "Para establecer relaciones de orden precisas, resulta imperativo homogeneizar el formato de las magnitudes, preferiblemente a notación decimal.\n\n* **Conversión:** Transformamos la fracción {{3/4}} efectuando la división (3 ÷ 4), lo que arroja 0,75.\n* **Estandarización visual:** Añadimos ceros a la derecha para igualar decimales: 0,70 ; 0,75 ; 0,72.\n* **Ordenamiento ascendente:** Comparamos los valores: 0,70 < 0,72 < 0,75.\n* **Conclusión:** La magnitud que ocupa el centro de la secuencia (la mediana posicional) es 0,72.\n\n**Tip Élite:** Evita juzgar fracciones a simple vista. Llevar todo a decimales con la misma cantidad de cifras significativas elimina la incertidumbre en comparaciones estrechas."
+  },
+  {
+    "id": "m_rel_9",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Sea x un elemento perteneciente al conjunto de los números enteros (Z). Asimismo, se establece la restricción de que x satisface la inecuación doble: −5 < x < −2.",
+    "q": "¿Cuál de las siguientes propuestas numéricas constituye una solución admisible para x?",
+    "opts": [
+      "−5",
+      "−4",
+      "−2",
+      "−1"
+    ],
+    "ans": 1,
+    "exp": "La inecuación dada impone un intervalo estrictamente abierto en la recta numérica negativa, lo que excluye los extremos proporcionados.\n\n* **Delimitación del conjunto solución:** Al ser enteros y utilizarse el símbolo 'menor que' (<) estricto, las únicas soluciones posibles residen entre −5 y −2 excluyéndolos.\n* **Posibilidades reales:** El conjunto solución factible es S = {−4, −3}.\n* **Evaluación de alternativas:** '−5' y '−2' se descartan por ser los propios límites no inclusivos. '−1' se rechaza por ubicarse a la derecha de −2 (fuera del rango).\n* **Conclusión:** La única opción que coincide con un elemento del conjunto solución S es −4.\n\n**Tip Élite:** Presta extrema atención a si el símbolo de desigualdad incluye la igualdad (≤) o no (<). Esa es la diferencia entre aceptar o descartar los números límite."
+  },
+  {
+    "id": "m_cnt_8",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un sistema de rutas terrestres articula cuatro nodos (A, B, C, D). Se sabe que de A hacia B existen 3 alternativas viales; de B hacia C, se ramifican 4 trayectos; y de C hacia D, operan 2 corredores exclusivos.",
+    "q": "¿Bajo cuántas combinaciones de ruta viables se puede materializar el desplazamiento desde A hasta D, transitando secuencialmente por B y C?",
+    "opts": [
+      "24 combinaciones",
+      "9 combinaciones",
+      "18 combinaciones",
+      "14 combinaciones"
+    ],
+    "ans": 0,
+    "exp": "El escenario constituye un problema clásico aplicable al Principio Multiplicativo de conteo, donde decisiones secuenciales e independientes deben tomarse de forma sucesiva.\n\n* **Identificación del principio:** Para que ocurra el viaje A→D, deben completarse obligatoriamente las tres etapas (es un escenario de 'Y').\n* **Cálculo:** Se multiplica la cantidad de opciones disponibles en cada etapa independiente: (Opciones A→B) × (Opciones B→C) × (Opciones C→D).\n* **Resolución:** 3 × 4 × 2 = 24 posibles permutaciones de ruta.\n\n**Tip Élite:** Si las acciones ocurren una después de la otra de forma obligatoria, multiplica. Si fuesen opciones mutuamente excluyentes (es decir, tomar un tren o un bus alternativos), se sumarían."
+  },
+  {
+    "id": "m_cnt_9",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En el interior de un receptáculo opaco, yacen desordenadamente 4 guantes de perfil zurdo y 4 guantes de perfil diestro, todos de idéntica textura.",
+    "q": "¿Cuál es el umbral mínimo de extracciones aleatorias requeridas para garantizar, con absoluta certeza matemática, la obtención de un par funcional (uno zurdo y uno diestro)?",
+    "opts": [
+      "2 extracciones",
+      "5 extracciones",
+      "4 extracciones",
+      "8 extracciones"
+    ],
+    "ans": 1,
+    "exp": "Este acertijo se resuelve aplicando el Principio del Palomar (o Principio de Dirichlet), analizando rigurosamente el 'peor de los escenarios' posibles.\n\n* **El peor escenario:** Asumimos la racha de suerte más adversa: sacar consecutivamente guantes de un solo perfil.\n* **Agotamiento de la clase:** En el peor caso, extraerás los 4 guantes izquierdos seguidos (o los 4 derechos). Llevas 4 intentos y aún no tienes un par funcional.\n* **La garantía:** Una vez agotados todos los de un tipo, la siguiente extracción (el intento número 5) será forzosamente del tipo opuesto restante.\n* **Conclusión:** 4 (peor racha) + 1 (la certeza) = 5 extracciones.\n\n**Tip Élite:** En problemas de 'certeza absoluta', siempre asume que tienes la peor suerte del mundo hasta que las matemáticas te obliguen a acertar."
+  },
+  {
+    "id": "m_per_7",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un certamen académico somete a escrutinio a 5 finalistas, de los cuales únicamente se galardonará al triunfador, al subcampeón y a la tercera posición de honor.",
+    "q": "¿A cuántas configuraciones jerárquicas distintas puede ascender la conformación de este podio oficial?",
+    "opts": [
+      "15 configuraciones",
+      "60 configuraciones",
+      "125 configuraciones",
+      "10 configuraciones"
+    ],
+    "ans": 1,
+    "exp": "Se trata de un problema de variaciones o permutaciones parciales, ya que no se seleccionan todos los elementos (solo 3 de 5) y el orden de extracción es determinativo (1°, 2° y 3° no son equivalentes).\n\n* **Plazas disponibles:** Tenemos 3 posiciones que llenar de forma secuencial.\n* **Asignación del primer lugar:** Hay 5 candidatos posibles.\n* **Asignación del segundo lugar:** Habiendo premiado al primero, restan 4 candidatos.\n* **Asignación del tercer lugar:** Restan 3 candidatos.\n* **Cálculo multiplicativo:** 5 × 4 × 3 = 60 configuraciones diferentes.\n\n**Tip Élite:** Pregúntate siempre: '¿Importa el orden?'. Si ser primero es diferente a ser tercero, usa variaciones (multiplicación decreciente). Si no importara (ej. escoger un comité sin cargos), serían combinaciones y requeriría dividir."
+  },
+  {
+    "id": "m_geo_9",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "La proyección plana de un polígono rectangular evidencia una magnitud longitudinal de 12 centímetros y una amplitud transversal de 7 centímetros.",
+    "q": "¿A cuánto asciende el cálculo métrico de su perímetro?",
+    "opts": [
+      "38 centímetros",
+      "84 centímetros",
+      "19 centímetros",
+      "40 centímetros"
+    ],
+    "ans": 0,
+    "exp": "El perímetro de una figura plana rectilínea se define como la suma de las longitudes de todos los segmentos que conforman su contorno.\n\n* **Propiedad del rectángulo:** Posee dos pares de lados paralelos e iguales (dos largos y dos anchos).\n* **Fórmula:** Perímetro = 2 × (Largo + Ancho).\n* **Sustitución y cálculo:** P = 2 × (12 + 7). Primero resolvemos el paréntesis: 12 + 7 = 19.\n* **Resultado final:** 2 × 19 = 38 centímetros.\n\n**Tip Élite:** No confundas perímetro (suma de lados, contorno) con área (multiplicación de largo por ancho, superficie). La opción 84 cm busca atrapar a quienes cometan este error."
+  },
+  {
+    "id": "m_geo_10",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un paralelogramo rectangular arroja un perímetro total de 48 centímetros. Se ha determinado por medición que la magnitud de su largo duplica exactamente a la de su ancho.",
+    "q": "¿Cuál es la cuantificación exacta, en centímetros, correspondiente a la amplitud transversal (ancho) de dicha figura?",
+    "opts": [
+      "8 centímetros",
+      "16 centímetros",
+      "12 centímetros",
+      "6 centímetros"
+    ],
+    "ans": 0,
+    "exp": "El problema requiere modelar algebraicamente las relaciones métricas provistas en el enunciado para despejar una incógnita geométrica.\n\n* **Ecuación base:** El perímetro es 2 × (Largo + Ancho) = 48. Dividiendo todo entre 2, sabemos que el semiperímetro (Largo + Ancho) = 24.\n* **Sustitución relacional:** El enunciado dictamina que Largo = 2 × Ancho.\n* **Sistema de ecuaciones:** Reemplazamos el Largo en la primera ecuación: (2 × Ancho) + Ancho = 24.\n* **Resolución:** 3 × Ancho = 24, por ende, Ancho = 24 ÷ 3 = 8 cm.\n\n**Tip Élite:** Trabajar con el semiperímetro (L + A = P/2) simplifica enormemente los cálculos algebraicos al eliminar el coeficiente multiplicador '2'."
+  },
+  {
+    "id": "m_suc_10",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice con rigor lógico el comportamiento numérico de la siguiente progresión decreciente: 100, 50, 25, …",
+    "q": "Asumiendo la conservación del patrón intrínseco, ¿qué magnitud corresponde al subsecuente eslabón de la serie?",
+    "opts": [
+      "10",
+      "12,5",
+      "20",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "La resolución exige decodificar la regla operatoria (aritmética o geométrica) que vincula un término con su inmediato predecesor.\n\n* **Deducción del patrón:** Al examinar la transición de 100 a 50, se observa una división entre 2 (o multiplicación por {{1/2}}).\n* **Verificación:** Aplicamos la hipótesis al siguiente par: 50 ÷ 2 = 25. La regla de progresión geométrica de razón 0.5 se confirma.\n* **Proyección:** Aplicamos la regla ratificada al último término conocido: 25 ÷ 2.\n* **Conclusión:** El cociente resultante es 12,5.\n\n**Tip Élite:** Al enfrentar sucesiones decrecientes rápidas, comprueba primero divisiones (progresión geométrica) antes que restas (progresión aritmética), pues las restas rara vez generan un decrecimiento tan drástico."
+  },
+  {
+    "id": "m_suc_11",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Inspecione cuidadosamente el despliegue numérico de la presente secuencia: 1, 8, 27, 64, …",
+    "q": "¿Cuál guarismo ocupa legítimamente el quinto escaño posicional de esta sucesión?",
+    "opts": [
+      "125",
+      "100",
+      "81",
+      "96"
+    ],
+    "ans": 0,
+    "exp": "A diferencia de las progresiones con diferencias o razones constantes, esta serie responde a una función exponencial directamente ligada a la posición (n) del término.\n\n* **Análisis posicional:** Relacionamos el valor del término con su posición:\n  Posición 1 → Valor 1 (1³)\n  Posición 2 → Valor 8 (2³)\n  Posición 3 → Valor 27 (3³)\n  Posición 4 → Valor 64 (4³)\n* **Identificación del patrón:** La sucesión está conformada por los cubos perfectos de los números naturales consecutivos (n³).\n* **Cálculo solicitado:** Se requiere el quinto término, es decir, 5³. Resolviendo 5 × 5 × 5 = 125.\n\n**Tip Élite:** Memoriza las series de potencias básicas (cuadrados perfectos y cubos perfectos) de los primeros 10 números naturales. Son estructuras recurrentes que ocultan su patrón a simple vista."
+  },
+  {
+    "id": "m_dat_9",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Un recipiente cerrado alberga en su interior 8 grageas de similar morfología: 3 confeccionadas con esencia de menta y 5 con saborizante a fresa. Se procede a realizar una extracción completamente a ciegas.",
+    "q": "¿Qué fracción probabilística cuantifica la viabilidad de obtener una gragea de menta?",
+    "opts": [
+      "{{3/8}}",
+      "{{5/8}}",
+      "{{3/5}}",
+      "{{1/3}}"
+    ],
+    "ans": 0,
+    "exp": "El cálculo probabilístico fundamental (Regla de Laplace) opera sobre la relación entre eventos deseados frente al espectro total de eventos equiprobables.\n\n* **Espacio muestral (denominador):** El total de entidades sujetas a extracción es de 8 unidades.\n* **Eventos favorables (numerador):** La condición de éxito (obtener menta) es satisfecha por 3 unidades concretas.\n* **Construcción del ratio:** Probabilidad (P) = Favorables ÷ Posibles = 3 ÷ 8.\n* **Conclusión:** La probabilidad matemática asciende a {{3/8}}.\n\n**Tip Élite:** Cerciórate de colocar siempre el total general en el denominador. Las trampas comunes involucran construir razones engañosas, como comparar favorables contra no favorables ({{3/5}})."
+  },
+  {
+    "id": "m_dat_10",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El estadígrafo central (media aritmética) correspondiente a un conjunto tripartito de números equivale a 20. Se ha divulgado la identidad de dos de los integrantes del conjunto: 15 y 22.",
+    "q": "¿A qué guarismo asciende el elemento restante de la tríada numérica?",
+    "opts": [
+      "23",
+      "20",
+      "18",
+      "25"
+    ],
+    "ans": 0,
+    "exp": "Para deducir un valor particular a partir de un promedio conocido, es imperativo transitar del concepto de media a la sumatoria total de los elementos.\n\n* **Principio sumatorio:** Si el promedio de tres valores es 20, la suma agregada de los tres debe ser obligatoriamente 3 × 20 = 60.\n* **Suma parcial conocida:** Integramos los datos revelados: 15 + 22 = 37.\n* **Despeje de la incógnita:** Planteamos que 37 + Tercer Valor = 60. Por tanto, Tercer Valor = 60 − 37.\n* **Resolución final:** 60 − 37 = 23.\n\n**Tip Élite:** La técnica más expedita para resolver problemas de promedios incompletos es multiplicar el promedio por la cantidad de elementos ('n') para obtener la 'Bolsa Total', y luego restarle los datos conocidos."
+  },
+  {
+    "id": "m_not_7",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Efectúe la transposición al rigor del lenguaje algebraico de la siguiente locución lingüística: 'el resultado de mermar una variable en nueve unidades, sometiendo la totalidad de dicha diferencia a una duplicación'.",
+    "q": "¿Qué expresión matemática encarna fidedignamente tal directriz?",
+    "opts": [
+      "2(x − 9)",
+      "2x − 9",
+      "x − 18",
+      "2x + 9"
+    ],
+    "ans": 0,
+    "exp": "La traducción del lenguaje natural al simbólico requiere un análisis sintáctico cuidadoso para respetar la precedencia de las operaciones que sugiere el texto.\n\n* **Interpretación de la merma inicial:** 'Mermar una variable en nueve unidades' se codifica directamente como (x − 9).\n* **Amplitud de la afectación:** La frase clave 'sometiendo la totalidad de dicha diferencia' fuerza el uso de signos de agrupación (paréntesis) sobre el binomio recién creado.\n* **Aplicación del factor:** La 'duplicación' exige multiplicar ese bloque íntegro por 2, resultando en 2(x − 9).\n\n**Tip Élite:** La presencia de términos como 'la totalidad', 'todo' o 'el resultado de' antes de una segunda operación es el mandato implícito e inquebrantable para colocar paréntesis."
+  },
+  {
+    "id": "m_alr_7",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Considere la validez de la presente identidad algebraica lineal: 4x + 3 = 2x + 19.",
+    "q": "¿Qué raíz numérica satisface las condiciones de la ecuación planteada?",
+    "opts": [
+      "8",
+      "11",
+      "16",
+      "4"
+    ],
+    "ans": 0,
+    "exp": "La resolución exige agrupar los términos semejantes a lados opuestos de la igualdad, empleando las propiedades inversas de las operaciones.\n\n* **Transposición de literales:** Trasladamos el 2x hacia el miembro izquierdo restando: 4x − 2x = 2x.\n* **Transposición de constantes:** Simultáneamente, movemos el 3 hacia el miembro derecho, también restando: 19 − 3 = 16.\n* **Aislamiento de la incógnita:** La ecuación se reduce a 2x = 16. Se divide 16 entre el coeficiente 2.\n* **Despeje final:** x = 8.\n\n**Tip Élite:** Para mitigar errores de signo, agrupa siempre las variables hacia el lado donde el coeficiente resultante vaya a quedar positivo (en este caso, 4x > 2x, así que se mueve hacia la izquierda)."
+  },
+  {
+    "id": "m_uni_8",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un envase dosificador confina en su interior 2 litros exactos de reactivo acuoso. Se pretende trasegar su totalidad hacia receptáculos individuales estandarizados en 250 mililitros.",
+    "q": "¿Cuántos de dichos receptáculos se colmarán hasta el tope sin registrar sobrantes?",
+    "opts": [
+      "4 receptáculos",
+      "8 receptáculos",
+      "5 receptáculos",
+      "10 receptáculos"
+    ],
+    "ans": 1,
+    "exp": "Las operaciones entre magnitudes físicas exigen, de manera insoslayable, la homogeneización previa de los prefijos del sistema métrico involucrado.\n\n* **Conversión de unidades:** Sabiendo que 1 litro equivale a 1 000 mililitros, el envase principal ostenta un volumen de 2 000 ml.\n* **Cálculo de la distribución:** Dividimos el volumen total homogenizado entre la capacidad nominal de cada receptáculo menor: 2 000 ÷ 250.\n* **Resolución aritmética:** La división exacta arroja un cociente de 8.\n* **Conclusión:** Se logra llenar un total de 8 receptáculos.\n\n**Tip Élite:** Frente a divisiones con ceros al final, aplasta la fracción simplificando: 2000/250 = 200/25 = 8. Las cuentas mentales se facilitan dramáticamente."
+  },
+  {
+    "id": "m_raz_8",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "La tasación comercial dictamina que un paquete cerrado de cuatro bitácoras idénticas requiere un desembolso de ₡5 000.",
+    "q": "Asumiendo una proporcionalidad lineal sin descuentos por volumen, ¿cuál será el desembolso asociado a la adquisición de una decena de estos artículos?",
+    "opts": [
+      "₡12 500",
+      "₡10 000",
+      "₡15 000",
+      "₡11 250"
+    ],
+    "ans": 0,
+    "exp": "Este dilema económico se fundamenta en un modelo de proporción directa (a mayor cantidad de bienes, mayor desembolso), resoluble hallando el valor unitario.\n\n* **Reducción a la unidad:** Se divide el costo base entre la cantidad estipulada para hallar el costo marginal de un ejemplar: 5 000 ÷ 4 = 1 250.\n* **Escalamiento de la proporción:** Multiplicamos el valor unitario por la cantidad objetivo planteada: 1 250 × 10.\n* **Resultado operativo:** Al multiplicar por 10, basta desplazar la posición, resultando en 12 500.\n\n**Tip Élite:** Alternativamente, si 4 cuestan 5 000, 8 cuestan 10 000. Faltan 2 (la mitad de 4, que serían 2 500). 10 000 + 2 500 = 12 500. El cálculo mental de fracciones de base ahorra tiempo."
+  },
+  {
+    "id": "m_raz_9",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Un mecanismo único de inyección hidráulica demora 8 horas cronometradas en saturar la capacidad de un aljibe.",
+    "q": "Si se habilita el funcionamiento en paralelo de dos mecanismos de idénticas especificaciones técnicas, ¿qué tiempo insumirá la saturación del mismo contenedor operando de forma simultánea?",
+    "opts": [
+      "4 horas",
+      "16 horas",
+      "6 horas",
+      "10 horas"
+    ],
+    "ans": 0,
+    "exp": "La interacción entre el caudal de inyección y el tiempo de llenado configura una proporción inversa clásica: la adición de fuerza laboral reduce el tiempo insumido.\n\n* **Identificación del modelo:** Al duplicarse la tasa de entrada de agua (de 1 grifo a 2), el tiempo requerido debe dividirse por ese mismo factor (2).\n* **Operación matemática:** Tomamos el tiempo original y lo afectamos por el factor de reducción inversa: 8 ÷ 2.\n* **Resultado final:** El tiempo se contrae dramáticamente a tan solo 4 horas.\n\n**Tip Élite:** Distingue agudamente entre reglas de tres directas e inversas. Problemas que impliquen velocidades, tasas de trabajo o obreros casi siempre demandan proporción inversa."
+  }
+]

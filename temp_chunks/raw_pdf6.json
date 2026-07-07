@@ -1,0 +1,508 @@
+[
+  {
+    "id": "q_pdf6_01",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La importancia de la trigonometría en el siglo\npasado derivó de la necesidad de su aplicación a\nla astronomía, a la navegación y a la agrimensura.\nDel texto anterior, es correcto concluir que,\nen el siglo pasado, la trigonometría fue muy\nimportante por su",
+    "q": "",
+    "opts": [
+      "eficacia técnica.",
+      "utilidad práctica.",
+      "importancia social.",
+      "capacidad productiva.",
+      "precisión matemática."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_02",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En una oficina, todos los empleados trabajan\nla misma cantidad de horas semanales. Al\nhacer las anotaciones del caso, el jefe anotó 25\nhoras para el primer empleado, 45 horas para\nel segundo empleado y 50 horas para el tercer\nempleado, como jornada semanal. En cada\nanotación, escribió un dígito correcto, pero se\nequivocó en el otro.\nSegún la información anterior, ¿cuál es la jornada",
+    "q": "semanal de un empleado?",
+    "opts": [
+      "20 horas",
+      "24 horas",
+      "40 horas",
+      "52 horas",
+      "55 horas"
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_03",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Iveth y Marta tienen igual número de monedas\nde 20 gapes. Ambas deciden agruparlas en\nbolsitas, de la siguiente forma:\n• Iveth puso 7 monedas en cada bolsita.\n• Marta puso 5 monedas en cada bolsita.\nSi al final Marta tiene 4 bolsitas más que Iveth,",
+    "q": "¿de cuánto dinero disponía cada una?",
+    "opts": [
+      "2800 gapes",
+      "1400 gapes",
+      "700 gapes",
+      "280 gapes",
+      "200 gapes"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_04",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "El presente es producto del pasado, por lo\ntanto, es vano el intento de presentar lo que\nhoy somos como invento exclusivo de los seres\nhumanos actuales.\n¿A qué se refiere, preferentemente, el texto",
+    "q": "anterior?",
+    "opts": [
+      "Al valor del pasado.",
+      "Al repudio del futuro.",
+      "Al origen del presente.",
+      "Al poderío del pasado.",
+      "Al producto del presente."
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_05",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Cuando la verdad alcanza un plano supremo,\nse convierte en virtud suprema.",
+    "q": "¿Qué se concluye del texto anterior?",
+    "opts": [
+      "Que sin verdad no hay virtud.",
+      "Que a menos verdad, menos virtud.",
+      "Que a menos virtud, menos verdad.",
+      "Que a mínima verdad, mínima virtud.",
+      "Que a máxima verdad, máxima virtud."
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_06",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Una galaxia tiene dos planetas: P y Q. Cada\naño del planeta P tiene 120 días terrestres. Por\notra parte, en el planeta Q, cada año tiene 140\ndías terrestres.\n¿Qué cantidad de años en Q tiene un habitante",
+    "q": "que tiene 7 años en P?",
+    "opts": [
+      "5",
+      "6",
+      "8",
+      "9"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_07",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Digo que una cosa ha cambiado porque puedo\nafirmar que algo de ella no ha cambiado, y me\npermite reconocer el objeto de que se trata.\nAnalice las siguientes proposiciones:\nI. Sin que algo permanezca en el objeto, no hay\ncambio.\nII. Lo permanente reduce el cambio.\nIII. Todo cambio requiere de permanencia.\nSegún el texto anterior, es (son) correcta(s) solo la",
+    "q": "",
+    "opts": [
+      "I.",
+      "II.",
+      "I y la II.",
+      "I y la III.",
+      "II y la III."
+    ],
+    "ans": 3,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_08",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En una caja se colocan siete tiras de papel.\nEn cada una de ellas se ha escrito del 0 al 6 un\nnúmero entero distinto. Se sacan 2 tiras al azar.\n¿Cuál es el mayor número de parejas de tiras que\npueden sacarse tales que la suma de los números",
+    "q": "que las identifican sea 6?",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_09",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La música produce cambios en nosotros;\nasí, por ejemplo, agudiza la capacidad de\npercepción auditiva; por eso, a medida que\nescuchamos música, distinguimos sonidos cada\nvez más __________ y captamos la coherencia de\nimágenes sonoras cada vez más __________.",
+    "q": "",
+    "opts": [
+      "bellos – rápidas",
+      "finos – complejas",
+      "raros – combinadas",
+      "fuertes – pintorescas",
+      "semejantes – armoniosas"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_10",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En las profundidades del mar, dadas sus\ncaracterísticas especiales, existe una fauna\ncompletamente desconocida en otras partes del\nmar.\nDe acuerdo con el texto, ¿cuál opción caracteriza\nla fauna de las profundidades del mar en relación",
+    "q": "con la fauna de otras partes del mar?",
+    "opts": [
+      "Muy compleja.",
+      "Muy variada.",
+      "Distinta.",
+      "Exótica.",
+      "Rara."
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_11",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En las sociedades agrícolas o recolectoras, la\ntransmisión oral de leyendas, mitos y anécdotas\nes una actividad importante: sirve tanto para\neducar como para entretener.\nLos tres procesos centrales que expone el texto\nanterior son:",
+    "q": "",
+    "opts": [
+      "leyendas - mitos - anécdotas.",
+      "anécdotas - educación - entretenimiento.",
+      "recolección - transmisión oral - leyendas.",
+      "agricultura - recolección - transmisión oral.",
+      "transmisión oral - educación - entretenimiento."
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_12",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Un sastre pretendía cortar de un pedazo\nde tela un mantel de cierta área y de forma\ncuadrada, pero no fue posible obtenerlo así.\nPor esto, decidió cortarlo en forma rectangular,\nde tal manera que tuviera por ancho el lado del\ncuadrado disminuido en 2 y por largo el lado del\ncuadrado aumentado en 2.\nEntonces, el área del mantel rectangular resultó\ncon respecto a la del cuadrangular",
+    "q": "",
+    "opts": [
+      "igual.",
+      "2 unidades menor.",
+      "4 unidades menor.",
+      "2 unidades mayor.",
+      "4 unidades mayor."
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_13",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "El ser humano puede sobrevivir tres semanas\nsin alimentos y tres días sin agua, pero será\nafortunado quien dure tres horas sin el calor\nnecesario.\nSegún el texto anterior, el ser humano es",
+    "q": "",
+    "opts": [
+      "más resistente al frío que al hambre.",
+      "más resistente al hambre que al frío.",
+      "menos resistente a la sed que al frío.",
+      "más resistente a la sed que al hambre.",
+      "menos resistente al hambre que al frío."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_14",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Analice las siguientes igualdades y descubra\nla ley que se da en ellas:\n• 22 – 12 = 2 • 1 + 1.\n• 32 – 22 = 2 • 2 + 1.\n• 42 – 32 = 2 • 3 + 1.\n• 52 – 42 = 2 • 4 + 1.\nDe acuerdo con la ley, ¿cuál de las siguientes",
+    "q": "expresiones es equivalente a 1002 – 992?",
+    "opts": [
+      "2 • 98 + 1",
+      "2 • 99 + 1",
+      "2 • 992 + 1",
+      "2 • 100 + 1",
+      "2 • 1002 +1"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_15",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Un cuadrilátero P tiene 32 cm de perímetro\ny 48 cm2 de área. Un cuadrado Q posee un\nperímetro igual a la cuarta parte del perímetro\ndel cuadrilátero P.\n¿Cuál es la diferencia entre las áreas del",
+    "q": "cuadrilátero P y el cuadrado Q?",
+    "opts": [
+      "12 cm2",
+      "23 cm2",
+      "28 cm2",
+      "39 cm2",
+      "44 cm2"
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_16",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La persona en sociedad permanece,\nbásicamente, ella misma; solo experimenta\ncambios en la medida en que la sociedad\nejerce presión sobre ella y, en consecuencia, le\nconcede mayor satisfacción.\nAnalice las siguientes proposiciones:\nI. A mayor presión y más satisfacción, más\ncambios en la persona.\nII. A mayor presión y más satisfacción, menos\ncambios en la persona.\nIII. A menor presión y menos satisfacción, menos\ncambios en la persona.\nDel texto ¿cuál(es) de la(s) siguiente(s)",
+    "q": "proposición(es) se puede(n) deducir?",
+    "opts": [
+      "Solo la I.",
+      "Solo la II.",
+      "Solo la III.",
+      "Solo la I y la II.",
+      "Solo la I y la III."
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_17",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En un vivero hay 60 árboles pequeños de\ndiferentes tipos: 31 guanacastes, 19 cenízaros y\n10 almendros. Los árboles serán sembrados en\nuna finca por 30 estudiantes. Cada estudiante\nsembrará dos árboles.\nSegún la información anterior, ¿cuál de las\nsiguientes situaciones ocurrirá con certeza?\ncenízaros.\nguanacastes.\nguanacaste y un cenízaro.\nguanacaste y un almendro.",
+    "q": "",
+    "opts": [
+      "Uno o más estudiantes sembrarán dos",
+      "Uno o más estudiantes sembrarán dos",
+      "Uno o más estudiantes sembrarán un",
+      "Uno o más estudiantes sembrarán un"
+    ],
+    "ans": 3,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_18",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La Teoría de la Evolución recuperó la\ncontinuidad entre el ser humano y los animales,\nque había sido negada por Descartes cuando\natribuyó alma solo al ser humano.\nDel texto anterior, se concluye que la Teoría de la\nEvolución\nhumano y los animales.\nser humano y los animales.",
+    "q": "",
+    "opts": [
+      "negó la existencia del alma.",
+      "contradijo la teoría de Descartes.",
+      "desprestigió la teoría de Descartes.",
+      "amplió el concepto de continuidad entre el ser",
+      "inventó el concepto de continuidad entre el"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_19",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En un gas, las moléculas tienen siempre\ngran libertad de movimiento porque las fuerzas\nde atracción resultan demasiado débiles para\nconservarlas unidas entre sí.\nSegún el texto anterior, las moléculas que\nconstituyen los gases tienden a",
+    "q": "",
+    "opts": [
+      "separarse.",
+      "mezclarse.",
+      "expandirse.",
+      "evaporarse.",
+      "multiplicarse."
+    ],
+    "ans": 0,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_20",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Considere la siguiente secuencia de\nigualdades:\nN1 = 2\nN2 = 2\nN3 = 6\nN4 = 6\nN5 = 10\nN6 = 10\nSi se continúa la secuencia, ¿a cuánto equivale",
+    "q": "N116?",
+    "opts": [
+      "226",
+      "228",
+      "230",
+      "232"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_21",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En una fábrica, por cada artículo que termine\nuna persona trabajadora le entregan 2 bonos.\nPor cada 3 bonos le dan un almuerzo gratis.\nCésar tuvo derecho a 18 almuerzos gratis en el\naño y no le sobraron bonos.\n¿Cuál es el número de artículos que César",
+    "q": "entregó ese año?",
+    "opts": [
+      "3",
+      "12",
+      "27",
+      "54",
+      "108"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_22",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Para una fiesta hay tazas verdes, tazas\namarillas y tazas blancas. Las blancas son tantas\ncomo las verdes y las amarillas juntas. En la\nfiesta solamente se utilizaron las dos terceras\npartes del total de las tazas.\nSegún la información anterior, con certeza,",
+    "q": "¿cuáles tazas se usaron?",
+    "opts": [
+      "Algunas tazas verdes.",
+      "Algunas tazas blancas.",
+      "Algunas tazas amarillas.",
+      "Todas las tazas verdes.",
+      "Todas las tazas blancas."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_23",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La relación más importante entre el cerebro\ny los otros órganos internos se establece por\nmedio del sistema nervioso, el cual se divide\nen tres formaciones principales: el sistema\nnervioso autónomo, el sistema nervioso central\ny el sistema nervioso periférico.\nSegún lo anterior, ¿cuál de las siguientes\nopciones es una conclusión del texto?\ninterorgánicas, aparte de la que establece el\nsistema nervioso.\nrelación que se establece entre el cerebro y los\notros órganos internos.\nrelación entre el cerebro y los otros órganos\ninternos.\nla más importante es la llamada sistema\nnervioso central.\ninnumerables formaciones distintas dentro del\nsistema nervioso.",
+    "q": "",
+    "opts": [
+      "Es inexistente la posibilidad de otras relaciones",
+      "El sistema nervioso es el producto de la",
+      "Si el sistema nervioso se atrofia, se afecta la",
+      "De las tres formaciones del sistema nervioso,",
+      "Además de las formaciones citadas, hay"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_24",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Mirta, Óscar y Gloria son estudiantes\nuniversitarios. Gloria ganó 50 créditos más que\nÓscar. Óscar ganó el triple de créditos que Mirta.\nSi entre los tres han ganado más de 78 créditos\npero menos de 99, entonces, es posible que\nmás que Gloria.",
+    "q": "",
+    "opts": [
+      "Mirta haya ganado 7 créditos.",
+      "Óscar haya ganado 12 créditos.",
+      "Óscar haya ganado 15 créditos.",
+      "Gloria haya ganado 59 créditos.",
+      "Óscar y Mirta juntos hayan ganado 44 créditos"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_25",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Durante mucho tiempo, el ser humano\nutilizó las partes de su propio cuerpo como\ninstrumentos de medición. Todavía hoy se\nutilizan unidades como el codo y el pie, pero el\nser humano ha preferido otras. La ____________ de\ntales medidas residía en su variabilidad.",
+    "q": "",
+    "opts": [
+      "ventaja.",
+      "desventaja.",
+      "única ventaja.",
+      "mayor ventaja.",
+      "única desventaja."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_26",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En la mitología griega, las divinidades\nagrícolas secundarias se caracterizaban por\nsu aspecto __________: mitad ser humano, mitad\nanimal.",
+    "q": "",
+    "opts": [
+      "incompleto",
+      "imperfecto",
+      "ambiguo",
+      "deforme",
+      "mixto"
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_27",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Cuando recibimos elogios de algunas\npersonas, nos quedamos pendientes de sus\nlabios por temer que sus alabanzas no sean sino\nun antecedente de críticas. Quien pronuncia\nuna alabanza asume, al menos por un momento,\nla posición de juez.\nDel texto anterior, con certeza, es correcto\nconcluir que quien alaba,",
+    "q": "",
+    "opts": [
+      "acusa.",
+      "enjuicia.",
+      "censura.",
+      "condena.",
+      "absuelve."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_28",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Rafael debe digitar una contraseña de 6\ndígitos para desbloquear la pantalla de inicio de\nsu computadora, pero no recuerda los últimos\n2 dígitos. Lo que recuerda es que al sumar esos\n2 dígitos el resultado es 10 y al multiplicarlos el\nresultado es mayor a 10.\n¿Cuántas posibilidades de contraseña tiene",
+    "q": "Rafael para digitar?",
+    "opts": [
+      "4",
+      "7",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_29",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Cierto año, Rebeca tenía 20 años y sus dos\nhermanos 6 y 7 años.\n¿Cuál es el menor número de años que debe\ntranscurrir, a partir de ese año, para que la edad\nde Rebeca llegue a ser menor que la suma de las",
+    "q": "edades que tendrán sus dos hermanos?",
+    "opts": [
+      "28",
+      "16",
+      "9",
+      "8",
+      "7"
+    ],
+    "ans": 3,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_30",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Una comerciante compró latas de frutas\npara vender 10 cada día. Sucedió que el primer\ndía logró vender las 10 latas, sin embargo, en los\nrestantes vendió cada día una menos que el día\nanterior, razón por la cual, en el tiempo previsto\npara la venta todavía le quedaban 6 latas.\n¿Cuántos días le tomó vender todas las latas de",
+    "q": "frutas?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": ""
+  }
+]

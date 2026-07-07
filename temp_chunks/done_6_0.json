@@ -1,0 +1,97 @@
+[
+  {
+    "id": "q_pdf6_01",
+    "domain": "verbal",
+    "topic": "Comprensión de lectura / Inferencia",
+    "dif": 3,
+    "stem": "La importancia de la trigonometría en el siglo pasado derivó de la necesidad de su aplicación a la astronomía, a la navegación y a la agrimensura.\nDel texto anterior, es correcto concluir que, en el siglo pasado, la trigonometría fue muy importante por su...",
+    "q": "",
+    "opts": [
+      "eficacia técnica.",
+      "utilidad práctica.",
+      "importancia social.",
+      "capacidad productiva.",
+      "precisión matemática."
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "¿Qué significa que la trigonometría fue importante por la 'necesidad de su aplicación'? Piensa en cómo se relaciona aplicar un conocimiento a la realidad con ser útil en la práctica.",
+    "tip_elite": "En preguntas de inferencia, busca sinónimos o frases equivalentes en las opciones. 'Aplicación a...' equivale a 'utilidad práctica'."
+  },
+  {
+    "id": "q_pdf6_02",
+    "domain": "math",
+    "topic": "Lógica matemática / Análisis de dígitos",
+    "dif": 3,
+    "stem": "En una oficina, todos los empleados trabajan la misma cantidad de horas semanales. Al hacer las anotaciones del caso, el jefe anotó 25 horas para el primer empleado, 45 horas para el segundo empleado y 50 horas para el tercer empleado, como jornada semanal. En cada anotación, escribió un dígito correcto, pero se equivocó en el otro.",
+    "q": "Según la información anterior, ¿cuál es la jornada semanal de un empleado?",
+    "opts": [
+      "20 horas",
+      "24 horas",
+      "40 horas",
+      "52 horas",
+      "55 horas"
+    ],
+    "ans": 4,
+    "exp": "",
+    "feedback_socratico": "Si en cada anotación (25, 45, 50) hay exactamente un dígito correcto de la jornada real, y el otro es incorrecto, ¿qué dígito se repite de manera que pueda estar presente una sola vez en cada uno de estos números?",
+    "tip_elite": "Prueba las opciones con las condiciones del problema. La jornada de 55 horas comparte un '5' con 25, un '5' con 45 y un '5' con 50. Así validas rápidamente el resultado sin ecuaciones complejas."
+  },
+  {
+    "id": "q_pdf6_03",
+    "domain": "math",
+    "topic": "Planteo de ecuaciones / MCM",
+    "dif": 3,
+    "stem": "Iveth y Marta tienen igual número de monedas de 20 gapes. Ambas deciden agruparlas en bolsitas, de la siguiente forma:\n• Iveth puso 7 monedas en cada bolsita.\n• Marta puso 5 monedas en cada bolsita.\nSi al final Marta tiene 4 bolsitas más que Iveth,",
+    "q": "¿de cuánto dinero disponía cada una?",
+    "opts": [
+      "2800 gapes",
+      "1400 gapes",
+      "700 gapes",
+      "280 gapes",
+      "200 gapes"
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "Si ambas tienen la misma cantidad de monedas y Marta usa menos monedas por bolsita, es lógico que tenga más bolsitas. ¿Cómo puedes encontrar una cantidad total de monedas que sea divisible entre 5 y 7, y cuya diferencia al dividir sea 4?",
+    "tip_elite": "Usa el MCM de 5 y 7 (35). Si cada una tuviera 35 monedas, Iveth tendría 5 bolsitas y Marta 7 (diferencia de 2). Para que la diferencia sea 4 (el doble), deben tener el doble de monedas: 70. Como cada moneda vale 20 gapes, 70 × 20 = 1400."
+  },
+  {
+    "id": "q_pdf6_04",
+    "domain": "verbal",
+    "topic": "Comprensión de lectura / Idea principal",
+    "dif": 3,
+    "stem": "El presente es producto del pasado, por lo tanto, es vano el intento de presentar lo que hoy somos como invento exclusivo de los seres humanos actuales.",
+    "q": "¿A qué se refiere, preferentemente, el texto anterior?",
+    "opts": [
+      "Al valor del pasado.",
+      "Al repudio del futuro.",
+      "Al origen del presente.",
+      "Al poderío del pasado.",
+      "Al producto del presente."
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "El texto afirma que el presente es 'producto del pasado' y critica pensar que somos un 'invento exclusivo' actual. ¿De dónde viene entonces lo que somos hoy? Piensa en el concepto de procedencia.",
+    "tip_elite": "Identifica la tesis central del autor. La frase 'el presente es producto del pasado' enfatiza cómo el pasado origina nuestra realidad actual, desmintiendo que seamos solo creación del presente."
+  },
+  {
+    "id": "q_pdf6_05",
+    "domain": "verbal",
+    "topic": "Comprensión de lectura / Inferencia lógica",
+    "dif": 3,
+    "stem": "Cuando la verdad alcanza un plano supremo, se convierte en virtud suprema.",
+    "q": "¿Qué se concluye del texto anterior?",
+    "opts": [
+      "Que sin verdad no hay virtud.",
+      "Que a menos verdad, menos virtud.",
+      "Que a menos virtud, menos verdad.",
+      "Que a mínima verdad, mínima virtud.",
+      "Que a máxima verdad, máxima virtud."
+    ],
+    "ans": 4,
+    "exp": "",
+    "feedback_socratico": "Si el texto establece una relación directa donde la verdad 'suprema' genera una virtud 'suprema', ¿cómo describirías esa proporción entre el nivel de la verdad y el de la virtud usando otras palabras?",
+    "tip_elite": "Supremo significa 'lo más alto' o 'máximo'. Si sustituyes 'supremo' por 'máximo' en el texto, obtienes la respuesta correcta casi de forma directa (máxima verdad = máxima virtud)."
+  }
+]

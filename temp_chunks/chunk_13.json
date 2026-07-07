@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_par_12",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Mantener la calma en los momentos difíciles suele abrir mejores soluciones que dejarse llevar por el enojo.",
+    "q": "¿Cuál opción dice lo mismo?",
+    "opts": [
+      "El enojo resuelve los problemas",
+      "La calma ayuda a encontrar mejores soluciones",
+      "Los momentos difíciles no tienen salida",
+      "Conviene no pensar en los problemas"
+    ],
+    "ans": 1,
+    "exp": "Que la calma abra mejores soluciones que el enojo equivale a que la calma ayuda a encontrar mejores soluciones (B). A ensalza el enojo; C niega toda salida; D aconseja no pensar, lo opuesto al texto."
+  },
+  {
+    "id": "v_par_13",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 2,
+    "stem": "Posponer una y otra vez las tareas no las elimina: solo las acumula y las vuelve más pesadas.",
+    "q": "¿Cuál opción reproduce la idea?",
+    "opts": [
+      "Posponer hace desaparecer las tareas",
+      "Aplazar las tareas solo las acumula",
+      "Las tareas se resuelven solas",
+      "Mañana es mejor momento que hoy"
+    ],
+    "ans": 1,
+    "exp": "Que posponer no elimine las tareas sino que las acumule y agrave equivale a que aplazarlas solo las acumula (B). A dice lo contrario; C y D minimizan el problema, contra el texto."
+  },
+  {
+    "id": "v_par_14",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Camarón que se duerme, se lo lleva la corriente.",
+    "q": "¿Cuál opción dice lo mismo con otras palabras?",
+    "opts": [
+      "Dormir es muy saludable",
+      "Quien se descuida pierde oportunidades",
+      "Los camarones nadan rápido",
+      "Hay que dormir más"
+    ],
+    "ans": 1,
+    "exp": "'Camarón que se duerme se lo lleva la corriente' equivale a que quien se descuida pierde oportunidades (B). A, C y D toman el refrán al pie de la letra y pierden su sentido figurado."
+  },
+  {
+    "id": "v_pro_11",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Toda sustancia ácida cambia el color del papel tornasol. Analice las proposiciones:\nI. Si una sustancia no cambia el color del papel, no es ácida.\nII. Ninguna sustancia ácida afecta el papel tornasol.\nIII. El vinagre, que es ácido, cambia el color del papel.",
+    "q": "¿Cuáles proposiciones se deducen del texto?",
+    "opts": [
+      "Solo la II",
+      "La I y la III",
+      "Solo la I",
+      "Las tres"
+    ],
+    "ans": 1,
+    "exp": "De 'toda sustancia ácida cambia el papel' se deducen la I (si no lo cambia, no es ácida) y la III (el vinagre ácido lo cambia): por eso B. La II niega el efecto, contra el texto."
+  },
+  {
+    "id": "v_pro_12",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 2,
+    "stem": "Si un animal es mamífero, respira con pulmones. Analice las proposiciones:\nI. La ballena, que es mamífero, respira con pulmones.\nII. Los mamíferos no tienen pulmones.\nIII. Ningún mamífero respira.",
+    "q": "¿Cuál proposición se deduce del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "La II y la III",
+      "Las tres"
+    ],
+    "ans": 0,
+    "exp": "De 'si es mamífero, respira con pulmones' se deduce que la ballena, que es mamífero, respira con pulmones: la I (A). La II y la III niegan los pulmones o la respiración, contra el texto."
+  },
+  {
+    "id": "m_ari_14",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "Considere la operación: 100 − (45 + 15) ÷ 6 × 2.",
+    "q": "¿Cuál es el resultado?",
+    "opts": [
+      "80",
+      "90",
+      "70",
+      "60"
+    ],
+    "ans": 0,
+    "exp": "Paréntesis: 45 + 15 = 60. Luego 60 ÷ 6 = 10 y 10 × 2 = 20. Por último 100 − 20 = 80."
+  },
+  {
+    "id": "m_ari_15",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "Un paquete trae 24 galletas. En una fiesta, 6 niños se reparten en partes iguales 3 paquetes completos.",
+    "q": "¿Cuántas galletas recibe cada niño?",
+    "opts": [
+      "12",
+      "8",
+      "4",
+      "18"
+    ],
+    "ans": 0,
+    "exp": "3 paquetes son 3 × 24 = 72 galletas. 72 ÷ 6 = 12 por niño."
+  },
+  {
+    "id": "m_ari_16",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "Considere la operación con decimales: 2,5 + 1,75 − 0,25.",
+    "q": "¿Cuál es el resultado?",
+    "opts": [
+      "4",
+      "4,5",
+      "3,5",
+      "4,25"
+    ],
+    "ans": 0,
+    "exp": "2,5 + 1,75 = 4,25; luego 4,25 − 0,25 = 4."
+  },
+  {
+    "id": "m_mcm_9",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Se quieren cortar dos listones de 24 cm y 30 cm en trozos iguales lo más largos posible, sin desperdicio.",
+    "q": "¿Cuánto mide cada trozo?",
+    "opts": [
+      "6 cm",
+      "12 cm",
+      "3 cm",
+      "2 cm"
+    ],
+    "ans": 0,
+    "exp": "El trozo más largo que divide a ambos es el MCD(24, 30) = 6 cm."
+  },
+  {
+    "id": "m_rel_10",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere los valores {{3/5}} ; 0,58 ; {{2/3}} ; 0,6.",
+    "q": "¿Cuál es el mayor?",
+    "opts": [
+      "{{3/5}}",
+      "0,58",
+      "{{2/3}}",
+      "0,6"
+    ],
+    "ans": 2,
+    "exp": "En decimales: 0,60 ; 0,58 ; 0,666… ; 0,60. El mayor es {{2/3}} ≈ 0,67."
+  },
+  {
+    "id": "m_rel_11",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Se sabe que −x > 0.",
+    "q": "¿Qué se puede concluir del número x?",
+    "opts": [
+      "x es positivo",
+      "x es negativo",
+      "x es igual a cero",
+      "No se puede saber"
+    ],
+    "ans": 1,
+    "exp": "Si el opuesto de x es positivo, entonces x es negativo (por ejemplo, si x=−3, −x=3>0)."
+  },
+  {
+    "id": "m_cnt_10",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 2,
+    "stem": "Un helado se arma eligiendo 1 sabor (de 5) y 1 topping (de 3).",
+    "q": "¿Cuántas combinaciones distintas se pueden armar?",
+    "opts": [
+      "8",
+      "15",
+      "5",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "Principio multiplicativo: 5 × 3 = 15."
+  },
+  {
+    "id": "m_cnt_11",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En una urna hay 6 fichas numeradas del 1 al 6 (tres pares y tres impares).",
+    "q": "¿Cuántas fichas se deben sacar como mínimo para asegurar que dos de ellas sumen un número par?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "Dos números suman par si son del mismo tipo (par+par o impar+impar). Hay 2 tipos: con 3 fichas, por fuerza dos comparten tipo y su suma es par."
+  },
+  {
+    "id": "m_per_8",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 2,
+    "stem": "Se quieren ordenar en fila 4 cuadros distintos en una pared.",
+    "q": "¿De cuántas maneras se pueden ordenar?",
+    "opts": [
+      "12",
+      "24",
+      "16",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Ordenar 4 elementos distintos: 4! = 24."
+  },
+  {
+    "id": "m_geo_11",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un triángulo tiene un área de 24 cm² y una altura de 6 cm.",
+    "q": "¿Cuánto mide su base?",
+    "opts": [
+      "8 cm",
+      "4 cm",
+      "12 cm",
+      "6 cm"
+    ],
+    "ans": 0,
+    "exp": "Área = base × altura ÷ 2 → 24 = base × 6 ÷ 2 = 3·base → base = 8 cm."
+  },
+  {
+    "id": "m_geo_12",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una pizza circular tiene radio de 10 cm. Use π ≈ 3,14.",
+    "q": "¿Cuál es su área aproximada?",
+    "opts": [
+      "314 cm²",
+      "31,4 cm²",
+      "62,8 cm²",
+      "100 cm²"
+    ],
+    "ans": 0,
+    "exp": "Área = π·r² = 3,14 × 10² = 3,14 × 100 = 314 cm²."
+  },
+  {
+    "id": "m_suc_12",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Observe la sucesión: 2, 6, 12, 20, 30, …",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "42",
+      "40",
+      "38",
+      "44"
+    ],
+    "ans": 0,
+    "exp": "Las diferencias crecen: +4, +6, +8, +10. La siguiente es +12: 30 + 12 = 42. (También n·(n+1): 6·7 = 42.)"
+  },
+  {
+    "id": "m_suc_13",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 2,
+    "stem": "Observe la sucesión: 1, 1, 2, 3, 5, 8, 13, …",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "21",
+      "18",
+      "16",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "Cada término es la suma de los dos anteriores (Fibonacci): 8 + 13 = 21."
+  },
+  {
+    "id": "m_dat_11",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 2,
+    "stem": "En una rifa hay 200 números y una persona compró 8 de ellos.",
+    "q": "¿Cuál es la probabilidad de que gane (que salga uno de sus números)?",
+    "opts": [
+      "{{1/25}}",
+      "{{8/100}}",
+      "{{1/8}}",
+      "{{1/200}}"
+    ],
+    "ans": 0,
+    "exp": "Tiene 8 favorables de 200 posibles: {{8/200}}, que simplificado es {{1/25}}."
+  },
+  {
+    "id": "m_dat_12",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El promedio de 5 notas es 8. Cuatro de ellas son 7, 9, 8 y 6.",
+    "q": "¿Cuál es la quinta nota?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "ans": 2,
+    "exp": "La suma total es 5·8 = 40. Las cuatro dadas suman 30, así que la quinta es 40 − 30 = 10."
+  },
+  {
+    "id": "m_not_8",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 2,
+    "stem": "Considere la frase: 'el triple de un número, aumentado en 6'.",
+    "q": "¿Cuál expresión la representa?",
+    "opts": [
+      "3x + 6",
+      "3(x + 6)",
+      "x/3 + 6",
+      "6 − 3x"
+    ],
+    "ans": 0,
+    "exp": "El triple del número es 3x; aumentado en 6 es 3x + 6."
+  },
+  {
+    "id": "m_alr_8",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "La mitad de un número, aumentada en 7, es igual a 16.",
+    "q": "¿Cuál es el número?",
+    "opts": [
+      "18",
+      "9",
+      "23",
+      "32"
+    ],
+    "ans": 0,
+    "exp": "x/2 + 7 = 16 → x/2 = 9 → x = 18."
+  },
+  {
+    "id": "m_uni_9",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un ciclista avanza a 20 km/h de forma constante.",
+    "q": "¿Cuánto tarda en recorrer 5 km?",
+    "opts": [
+      "15 min",
+      "20 min",
+      "25 min",
+      "10 min"
+    ],
+    "ans": 0,
+    "exp": "Tiempo = distancia ÷ velocidad = 5 ÷ 20 = {{1/4}} de hora = 15 minutos."
+  },
+  {
+    "id": "m_raz_10",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Con 5 litros de pintura se cubren 60 m² de pared.",
+    "q": "¿Cuántos litros se necesitan para cubrir 84 m²?",
+    "opts": [
+      "7 L",
+      "6 L",
+      "8 L",
+      "9 L"
+    ],
+    "ans": 0,
+    "exp": "Rendimiento: 60 ÷ 5 = 12 m² por litro. Para 84 m²: 84 ÷ 12 = 7 litros."
+  },
+  {
+    "id": "m_raz_11",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "Cinco máquinas iguales hacen un trabajo en 6 horas.",
+    "q": "¿Cuánto tardan 3 máquinas en el mismo trabajo?",
+    "opts": [
+      "10 horas",
+      "3,6 horas",
+      "8 horas",
+      "18 horas"
+    ],
+    "ans": 0,
+    "exp": "Proporción inversa: 5·6 = 30 máquina-horas. Con 3 máquinas: 30 ÷ 3 = 10 horas."
+  },
+  {
+    "id": "v_fin_12",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "Una ley obliga a etiquetar el contenido calórico de los alimentos no para prohibir su consumo, sino para que cada persona decida con información.",
+    "q": "¿Cuál es la finalidad de la ley, según el texto?",
+    "opts": [
+      "Prohibir los alimentos calóricos",
+      "Que las personas decidan con información",
+      "Subir el precio de los alimentos",
+      "Cerrar los restaurantes"
+    ],
+    "ans": 1,
+    "exp": "El texto contrapone: no para prohibir, sino para que cada persona decida con información (B). Por eso no es prohibir (A); subir precios (C) y cerrar restaurantes (D) no se plantean."
+  },
+  {
+    "id": "v_com_12",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Aunque el mundo insista en apurarme, yo elijo detenerme a mirar el árbol, la nube, el instante que nadie más nota.",
+    "q": "¿Qué actitud refleja el autor?",
+    "opts": [
+      "Apresurada",
+      "Contemplativa",
+      "Indiferente",
+      "Agresiva"
+    ],
+    "ans": 1,
+    "exp": "Detenerse a mirar el árbol, la nube, el instante que nadie nota, es una actitud contemplativa (B). Es lo opuesto a apresurada (A); no es indiferente (C: sí le importa mirar) ni agresiva (D)."
+  },
+  {
+    "id": "v_cau_16",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La erosión del suelo no es solo consecuencia de la lluvia: ocurre porque, al talar los árboles, se elimina la red de raíces que lo sujetaba.",
+    "q": "¿Qué señala el texto como causa de fondo de la erosión?",
+    "opts": [
+      "Únicamente la lluvia",
+      "La tala, que elimina las raíces que sujetan el suelo",
+      "El exceso de árboles",
+      "El viento"
+    ],
+    "ans": 1,
+    "exp": "El texto aclara que la causa de fondo no es solo la lluvia, sino la tala que quita las raíces."
+  },
+  {
+    "id": "v_con_14",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Sabía que decir la verdad le costaría el puesto, pero aun así la dijo.",
+    "q": "¿Qué palabra describe mejor su actitud?",
+    "opts": [
+      "Integridad",
+      "Conveniencia",
+      "Cobardía",
+      "Indiferencia"
+    ],
+    "ans": 0,
+    "exp": "Decir la verdad aun a costa de perder el puesto es integridad (A). Lo contrario sería buscar la conveniencia (B) o callar por cobardía (C); no es indiferencia (D): justo le importa la verdad."
+  },
+  {
+    "id": "v_ese_12",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Así como el termómetro no cambia la fiebre sino que la mide, el examen no crea el conocimiento: solo lo evidencia.",
+    "q": "¿Qué idea sostiene el texto?",
+    "opts": [
+      "El examen crea el conocimiento",
+      "El examen solo evidencia el conocimiento, no lo genera",
+      "El termómetro cura la fiebre",
+      "Los exámenes son inútiles"
+    ],
+    "ans": 1,
+    "exp": "La analogía muestra que el examen solo evidencia el conocimiento, no lo crea, igual que el termómetro mide la fiebre sin curarla (B). Por eso A es falso; C confunde medir con curar; y D exagera al llamarlos inútiles."
+  },
+  {
+    "id": "v_per_13",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Para el historiador, la ruina es un documento; para el turista, una postal; para el vecino, un estorbo.",
+    "q": "¿Qué muestra el texto?",
+    "opts": [
+      "La ruina debe demolerse",
+      "El valor de algo depende de la mirada de cada quien",
+      "Los turistas no entienden la historia",
+      "Las ruinas no sirven"
+    ],
+    "ans": 1,
+    "exp": "Para el historiador es documento, para el turista postal y para el vecino estorbo: el valor depende de la mirada de cada quien (B). El texto no pide demolerla (A), ni descalifica a los turistas (C) ni niega el valor de la ruina (D)."
+  },
+  {
+    "id": "v_imp_18",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El político prometió exactamente lo mismo que hace cuatro años, y la plaza, esta vez, quedó medio vacía.",
+    "q": "¿Cuál es una idea implícita?",
+    "opts": [
+      "La plaza es muy pequeña",
+      "La gente perdió interés o confianza en él",
+      "Hacía mal clima",
+      "El político renunció"
+    ],
+    "ans": 1,
+    "exp": "Prometer lo mismo y que la plaza quede medio vacía implica que la gente perdió interés o confianza (B). El tamaño de la plaza (A), el clima (C) o una renuncia (D) no se deducen."
+  },
+  {
+    "id": "v_imp_19",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Ningún alumno entregó la tarea; el profesor sonrió: no tendría nada que revisar esa noche.",
+    "q": "¿Qué se deduce del texto?",
+    "opts": [
+      "El profesor estaba furioso",
+      "Al no haber entregas, no tendrá trabajo que revisar",
+      "Todos los alumnos aprobaron",
+      "El profesor renunció"
+    ],
+    "ans": 1,
+    "exp": "Que sonría porque 'no tendrá nada que revisar' implica que, sin entregas, no tendrá trabajo esa noche (B). La furia (A) contradice la sonrisa; aprobar todos (C) y renunciar (D) no se deducen."
+  },
+  {
+    "id": "v_pri_16",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El bosque no es un conjunto de árboles aislados: bajo la tierra, sus raíces se conectan con hongos que intercambian agua y nutrientes, formando una red que sostiene a todo el ecosistema.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "Los árboles compiten entre sí",
+      "El bosque funciona como una red interconectada",
+      "Los hongos son dañinos para los árboles",
+      "Las raíces no cumplen ninguna función"
+    ],
+    "ans": 1,
+    "exp": "Todo el texto describe cómo raíces y hongos se conectan y sostienen el ecosistema: el bosque funciona como una red interconectada (B). A, C y D contradicen esa idea de cooperación."
+  },
+  {
+    "id": "v_par_15",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La libertad sin responsabilidad no es libertad, sino mero capricho.",
+    "q": "¿Cuál opción expresa la misma idea?",
+    "opts": [
+      "La libertad no tiene ningún límite",
+      "Ser verdaderamente libre implica ser responsable",
+      "La responsabilidad impide la libertad",
+      "El capricho es la forma más alta de libertad"
+    ],
+    "ans": 1,
+    "exp": "Que la libertad sin responsabilidad sea capricho equivale a que ser de verdad libre implica ser responsable (B). A niega todo límite; C opone libertad y responsabilidad; D ensalza el capricho, lo contrario del texto."
+  },
+  {
+    "id": "v_pro_13",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El desarrollo sostenible busca satisfacer las necesidades del presente sin comprometer las de las futuras generaciones. Analice las proposiciones:\nI. Propone no agotar los recursos que necesitarán quienes vengan.\nII. Exige frenar todo progreso.\nIII. Toma en cuenta tanto el presente como el futuro.\nIV. Ignora las necesidades actuales.",
+    "q": "¿Cuáles proposiciones son ciertas según el texto?",
+    "opts": [
+      "I y III",
+      "Solo la II",
+      "II y IV",
+      "Todas"
+    ],
+    "ans": 0,
+    "exp": "El texto cuida el presente sin comprometer el futuro: se deducen la I (no agotar recursos futuros) y la III (atiende presente y futuro): por eso A. La II (frenar todo progreso) y la IV (ignorar lo actual) lo contradicen."
+  },
+  {
+    "id": "v_pro_14",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "La lectura crítica no consiste en aceptar lo que se lee, sino en cuestionarlo con argumentos. Analice las proposiciones:\nI. Leer de forma crítica es dudar con fundamento.\nII. Leer de forma crítica es creer todo lo escrito.\nIII. Implica evaluar los argumentos.\nIV. Consiste en rechazar todo lo que se lee.",
+    "q": "¿Cuáles proposiciones se deducen del texto?",
+    "opts": [
+      "I y III",
+      "I y II",
+      "III y IV",
+      "Solo la IV"
+    ],
+    "ans": 0,
+    "exp": "Leer de forma crítica es cuestionar con argumentos: se deducen la I (dudar con fundamento) y la III (evaluar argumentos): por eso A. La II (creer todo) y la IV (rechazar todo) son los extremos que el texto descarta."
+  },
+  {
+    "id": "m_ari_17",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Considere los números de dos cifras (del 10 al 99).",
+    "q": "¿Cuántos de ellos tienen dígitos que suman 9?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "7"
+    ],
+    "ans": 1,
+    "exp": "Son 18, 27, 36, 45, 54, 63, 72, 81 y 90: nueve números en total."
+  },
+  {
+    "id": "m_cnt_12",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Tres personas se ordenan en una fila, pero Ana y Beto deben quedar siempre juntos.",
+    "q": "¿De cuántas maneras distintas pueden ordenarse?",
+    "opts": [
+      "4",
+      "6",
+      "3",
+      "12"
+    ],
+    "ans": 0,
+    "exp": "Tratá a Ana+Beto como un bloque: hay 2 ordenamientos del bloque con la otra persona, y dentro del bloque puede ir Ana-Beto o Beto-Ana: 2 × 2 = 4."
+  },
+  {
+    "id": "m_cnt_13",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Con los dígitos 1, 2, 3, 4 y 5, sin repetir, se forman números de tres cifras.",
+    "q": "¿Cuántos de esos números son pares?",
+    "opts": [
+      "24",
+      "60",
+      "12",
+      "36"
+    ],
+    "ans": 0,
+    "exp": "La última cifra debe ser par (2 o 4): 2 opciones. La primera: 4 restantes; la del medio: 3 restantes. 2 × 4 × 3 = 24."
+  },
+  {
+    "id": "m_suc_14",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Observe la sucesión: 1, 2, 6, 24, 120, …",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "240",
+      "600",
+      "720",
+      "360"
+    ],
+    "ans": 2,
+    "exp": "Cada término se multiplica por uno más: ×2, ×3, ×4, ×5… El siguiente es 120 × 6 = 720."
+  },
+  {
+    "id": "m_suc_15",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Se cumple que 1 da 2, 2 da 6, 3 da 12 y 4 da 20.",
+    "q": "Según ese patrón, ¿qué número corresponde al 5?",
+    "opts": [
+      "25",
+      "30",
+      "28",
+      "35"
+    ],
+    "ans": 1,
+    "exp": "El patrón es n·(n+1): 1·2=2, 2·3=6, 3·4=12, 4·5=20, y 5·6 = 30."
+  }
+]

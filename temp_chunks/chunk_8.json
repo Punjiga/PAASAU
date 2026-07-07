@@ -1,0 +1,688 @@
+[
+  {
+    "id": "m_geo_14",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"35\" y=\"15\" width=\"120\" height=\"120\" fill=\"rgba(46,230,166,.20)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><rect x=\"71\" y=\"51\" width=\"48\" height=\"48\" fill=\"var(--ink)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"74\" y=\"153\" fill=\"currentColor\" font-size=\"13\">6 cm</text><text x=\"82\" y=\"79\" fill=\"currentColor\" font-size=\"11\">4 cm</text></svg>",
+    "stem": "La figura es un cuadrado de 6 cm de lado con un cuadrado de 4 cm de lado recortado en su interior.",
+    "q": "¿Cuál es el área de la región sombreada?",
+    "opts": [
+      "20 cm²",
+      "16 cm²",
+      "36 cm²",
+      "52 cm²"
+    ],
+    "ans": 0,
+    "exp": "Área del cuadrado grande menos la del recortado: 6² − 4² = 36 − 16 = 20 cm²."
+  },
+  {
+    "id": "m_cnt_14",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 160 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"80\" y1=\"20\" x2=\"80\" y2=\"140\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"20\" y1=\"80\" x2=\"140\" y2=\"80\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Observe la cuadrícula de 2 × 2 de la figura.",
+    "q": "¿Cuántos cuadrados en total se pueden contar?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Hay 4 cuadrados pequeños más 1 grande que los contiene a todos: 4 + 1 = 5."
+  },
+  {
+    "id": "m_cnt_15",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"15\" width=\"135\" height=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"60\" x2=\"150\" y2=\"60\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"105\" x2=\"150\" y2=\"105\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Observe la cuadrícula de 3 × 3 de la figura.",
+    "q": "¿Cuántos cuadrados en total se pueden contar (de todos los tamaños)?",
+    "opts": [
+      "9",
+      "13",
+      "14",
+      "10"
+    ],
+    "ans": 2,
+    "exp": "9 cuadrados de 1×1, 4 de 2×2 y 1 de 3×3: 9 + 4 + 1 = 14."
+  },
+  {
+    "id": "m_cnt_16",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "En la figura, un triángulo grande está dividido por una línea que va del vértice superior a la base.",
+    "q": "¿Cuántos triángulos hay en total?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": 1,
+    "exp": "Los dos triángulos pequeños y el grande que ambos forman: 3 en total."
+  },
+  {
+    "id": "m_geo_15",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 195 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,30 120,30 120,75 170,75 170,140 20,140\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"80\" y=\"156\" fill=\"currentColor\" font-size=\"12\">8 cm</text><text x=\"2\" y=\"92\" fill=\"currentColor\" font-size=\"12\">6 cm</text></svg>",
+    "stem": "La figura en forma de L se obtuvo al recortar una esquina rectangular a un rectángulo de 8 cm por 6 cm.",
+    "q": "¿Cuál es el perímetro de la figura?",
+    "opts": [
+      "28 cm",
+      "22 cm",
+      "24 cm",
+      "20 cm"
+    ],
+    "ans": 0,
+    "exp": "Al recortar una esquina, los lados del recorte reemplazan exactamente a los que se quitaron: el contorno sigue midiendo lo mismo que el rectángulo completo, 2·(8+6) = 28 cm."
+  },
+  {
+    "id": "m_geo_16",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 200 120\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"100\" x2=\"180\" y2=\"100\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"100\" y1=\"100\" x2=\"45\" y2=\"32\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"52\" y=\"92\" fill=\"currentColor\" font-size=\"13\">130°</text><text x=\"128\" y=\"92\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "En la figura, los dos ángulos están formados sobre una misma línea recta. Uno mide 130°.",
+    "q": "¿Cuánto mide el otro ángulo?",
+    "opts": [
+      "50°",
+      "60°",
+      "40°",
+      "130°"
+    ],
+    "ans": 0,
+    "exp": "Los ángulos que se forman sobre una línea recta suman 180°. Entonces 180 − 130 = 50°."
+  },
+  {
+    "id": "m_ari_18",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 250 70\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"9\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"37\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"65\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"93\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"121\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"149\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"177\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "La barra de la figura está dividida en partes iguales y algunas están sombreadas.",
+    "q": "¿Qué fracción de la barra está sombreada?",
+    "opts": [
+      "{{3/8}}",
+      "{{3/5}}",
+      "{{5/8}}",
+      "{{1/3}}"
+    ],
+    "ans": 0,
+    "exp": "La barra tiene 8 partes iguales y 3 están sombreadas: {{3/8}}."
+  },
+  {
+    "id": "m_geo_17",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g stroke=\"var(--line)\" stroke-width=\"1\"><line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"120\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"120\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"120\"/><line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"120\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"120\"/><line x1=\"30\" y1=\"30\" x2=\"150\" y2=\"30\"/><line x1=\"30\" y1=\"60\" x2=\"150\" y2=\"60\"/><line x1=\"30\" y1=\"90\" x2=\"150\" y2=\"90\"/><line x1=\"30\" y1=\"120\" x2=\"150\" y2=\"120\"/></g><polygon points=\"30,120 150,120 30,30\" fill=\"rgba(77,163,255,.18)\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "En la figura, cada cuadrito mide 1 cm. El triángulo tiene base 4 cm y altura 3 cm.",
+    "q": "¿Cuál es el área del triángulo?",
+    "opts": [
+      "6 cm²",
+      "12 cm²",
+      "7 cm²",
+      "10 cm²"
+    ],
+    "ans": 0,
+    "exp": "Área del triángulo = base × altura ÷ 2 = 4 × 3 ÷ 2 = 6 cm²."
+  },
+  {
+    "id": "v_lec_1",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Durante mucho tiempo se creyó que el talento era algo con lo que se nacía: o se tenía o no. Investigaciones recientes matizan esa idea: aunque las aptitudes iniciales existen, lo que distingue a quienes llegan lejos es la práctica deliberada —repetir con atención, corregir los errores y buscar retos un poco por encima del nivel actual—. El talento, más que un punto de partida fijo, parece el resultado de años de trabajo bien orientado.",
+    "q": "¿Cuál es la idea principal del texto?",
+    "opts": [
+      "El talento es algo con lo que simplemente se nace",
+      "Más que innato, el talento se construye con práctica deliberada",
+      "La práctica no influye en los resultados",
+      "Solo quienes nacen con aptitudes pueden llegar lejos"
+    ],
+    "ans": 1,
+    "exp": "El texto matiza la creencia del talento innato y concluye que se construye con práctica bien orientada (B). A y D repiten justo la idea que el texto corrige; C contradice todo el argumento."
+  },
+  {
+    "id": "v_lec_2",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "El pueblo entero esperaba la llegada del nuevo médico. Pasaron las semanas y la casa que le habían preparado seguía con las ventanas cerradas; la farmacia, que había encargado medicinas de más, empezó a devolverlas; y en la parada, el cartel de bienvenida se fue despintando con la lluvia.",
+    "q": "¿Qué se puede deducir del texto, aunque no se diga directamente?",
+    "opts": [
+      "El médico llegó y se instaló sin problemas",
+      "El médico, finalmente, no llegó al pueblo",
+      "El pueblo no necesitaba un médico",
+      "La farmacia cerró para siempre"
+    ],
+    "ans": 1,
+    "exp": "Ventanas cerradas, medicinas devueltas y el cartel despintándose son señales de que el médico nunca llegó (B). A lo contradice; C y D inventan cosas que el texto no dice."
+  },
+  {
+    "id": "v_lec_3",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Todos los estudiantes que entrenaron con el simulador aprobaron el examen de manejo. Carlos aprobó el examen de manejo.",
+    "q": "¿Qué se puede concluir con certeza?",
+    "opts": [
+      "Carlos entrenó con el simulador",
+      "Carlos no entrenó con el simulador",
+      "No se puede saber si Carlos entrenó con el simulador",
+      "El simulador no sirve para aprobar"
+    ],
+    "ans": 2,
+    "exp": "Que TODOS los del simulador aprobaran no significa que SOLO ellos aprobaran: Carlos pudo aprobar por otra vía. Por eso no se puede saber si entrenó o no (C). A y B afirman de más; D no se sigue del texto."
+  },
+  {
+    "id": "v_lec_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Para el ingeniero, el viejo puente de hierro es una estructura obsoleta que conviene demoler; para el historiador, un testimonio de la industria de hace un siglo; para los vecinos que cruzan por él cada día, simplemente el camino más corto a la escuela.",
+    "q": "¿Qué idea central transmite el texto?",
+    "opts": [
+      "El puente debe conservarse a toda costa",
+      "Un mismo objeto tiene un valor distinto según los intereses de cada quien",
+      "El ingeniero está equivocado",
+      "Los puentes de hierro ya no le sirven a nadie"
+    ],
+    "ans": 1,
+    "exp": "El puente significa cosas distintas según quién lo mire (B). El texto no toma partido por conservarlo (A) ni dice que el ingeniero se equivoque (C); y D contradice que para los vecinos sí sirve."
+  },
+  {
+    "id": "v_lec_5",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "Encender la luz de una habitación parece inmediato: basta mover un interruptor. Detrás, sin embargo, hay represas o plantas que generan la electricidad, miles de kilómetros de cables, transformadores que ajustan el voltaje y un sistema que equilibra la oferta y la demanda en tiempo real para que esa luz, simplemente, encienda.",
+    "q": "¿Qué contraste plantea el texto?",
+    "opts": [
+      "Que la electricidad es peligrosa",
+      "Que detrás de un gesto simple puede haber un sistema muy complejo",
+      "Que encender la luz cuesta mucho dinero",
+      "Que las represas contaminan el ambiente"
+    ],
+    "ans": 1,
+    "exp": "El texto opone un acto simple (mover un interruptor) con todo el sistema complejo que lo hace posible (B). No habla de peligro (A), de costo (C) ni de contaminación (D)."
+  },
+  {
+    "id": "v_lec_6",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Quien promete demasiado y a todos termina por no cumplirle a nadie: las palabras que se reparten sin medida pierden el peso que las hacía valiosas.",
+    "q": "¿Cuál opción expresa mejor la idea del texto?",
+    "opts": [
+      "Hay que prometer mucho para caer bien",
+      "Prometer sin medida hace que las promesas pierdan su valor",
+      "Las promesas siempre se terminan cumpliendo",
+      "Nadie debería hacer ninguna promesa"
+    ],
+    "ans": 1,
+    "exp": "Repartir promesas sin medida las vacía de valor (B). A aconseja lo contrario; C es falso según el texto; D exagera, pues el texto no prohíbe prometer, critica el exceso."
+  },
+  {
+    "id": "v_lec_7",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "En los meses en que más helados se venden también es cuando más gente se ahoga en las playas. Sin embargo, nadie diría que comer helado provoque ahogamientos: ambas cosas suben porque coincide el calor del verano, que llena a la vez las heladerías y las playas.",
+    "q": "¿Qué idea sostiene el texto?",
+    "opts": [
+      "Comer helado causa los ahogamientos",
+      "Dos cosas que aumentan juntas no siempre son causa una de la otra",
+      "Habría que prohibir los helados en verano",
+      "En verano nadie va a la playa"
+    ],
+    "ans": 1,
+    "exp": "El ejemplo muestra que coincidir (subir juntas) no es lo mismo que causar (B): el verdadero factor común es el calor. A confunde justo eso; C y D no se siguen del texto."
+  },
+  {
+    "id": "v_lec_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "En la reunión, todos felicitaron el nuevo plan. Pero cuando el jefe preguntó quién quería encargarse de ejecutarlo, los aplausos se apagaron, las miradas bajaron hacia los cuadernos y, de pronto, varios recordaron compromisos urgentes.",
+    "q": "¿Qué se puede deducir del texto?",
+    "opts": [
+      "Todos querían liderar el plan",
+      "El entusiasmo por el plan no se tradujo en un compromiso real",
+      "El plan fue rechazado por completo",
+      "El jefe canceló la reunión"
+    ],
+    "ans": 1,
+    "exp": "Aplaudir y, al pedir responsables, esquivar la tarea muestra que el entusiasmo no se volvió compromiso (B). A lo contradice; C exagera (sí lo felicitaron) y D no ocurre."
+  },
+  {
+    "id": "m_cnt_17",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"55\" x2=\"145\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"85\" x2=\"145\" y2=\"85\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"115\" x2=\"145\" y2=\"115\" stroke=\"var(--math)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "Observe la cuadrícula de 4 × 4 de la figura.",
+    "q": "¿Cuántos cuadrados en total se pueden contar (de todos los tamaños)?",
+    "opts": [
+      "16",
+      "26",
+      "30",
+      "20"
+    ],
+    "ans": 2,
+    "exp": "16 cuadrados de 1×1, 9 de 2×2, 4 de 3×3 y 1 de 4×4: 16 + 9 + 4 + 1 = 30."
+  },
+  {
+    "id": "m_cnt_18",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.10)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"67\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"113\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "En la figura, un triángulo grande está dividido por dos líneas que bajan desde el vértice superior hasta la base.",
+    "q": "¿Cuántos triángulos hay en total?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "3 triángulos pequeños, 2 que se forman al juntar dos seguidos y 1 grande que junta los tres: 3 + 2 + 1 = 6."
+  },
+  {
+    "id": "m_cnt_19",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 210 90\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"30\" width=\"170\" height=\"40\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"76\" y1=\"30\" x2=\"76\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"133\" y1=\"30\" x2=\"133\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "La figura es una tira dividida en 3 partes iguales.",
+    "q": "¿Cuántos rectángulos en total se pueden contar?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "ans": 3,
+    "exp": "3 rectángulos de una sola parte, 2 de dos partes seguidas y 1 de las tres partes: 3 + 2 + 1 = 6."
+  },
+  {
+    "id": "m_geo_18",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 200 175\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"25,35 145,35 145,80 175,80 175,145 25,145\" fill=\"rgba(46,230,166,.16)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"80\" y=\"163\" fill=\"currentColor\" font-size=\"12\">10 cm</text><text x=\"4\" y=\"95\" fill=\"currentColor\" font-size=\"12\">8 cm</text></svg>",
+    "stem": "La figura en forma de L se formó quitándole a un rectángulo de 10 cm por 8 cm una esquina rectangular de 4 cm por 3 cm.",
+    "q": "¿Cuál es el área de la figura?",
+    "opts": [
+      "68 cm²",
+      "80 cm²",
+      "12 cm²",
+      "92 cm²"
+    ],
+    "ans": 0,
+    "exp": "Es el área del rectángulo completo menos la esquina que se quitó: 10 × 8 − 4 × 3 = 80 − 12 = 68 cm²."
+  },
+  {
+    "id": "m_geo_20",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 2,
+    "fig": "<svg viewBox=\"0 0 180 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"135\" x2=\"40\" y2=\"30\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"155\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"135\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"46\" y=\"80\" fill=\"currentColor\" font-size=\"13\">35°</text><text x=\"92\" y=\"128\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "En la figura, una línea divide un ángulo recto (90°) en dos partes; una de ellas mide 35°.",
+    "q": "¿Cuánto mide la otra parte?",
+    "opts": [
+      "55°",
+      "65°",
+      "45°",
+      "35°"
+    ],
+    "ans": 0,
+    "exp": "Las dos partes juntas forman el ángulo recto, que mide 90°. Entonces la otra mide 90 − 35 = 55°."
+  },
+  {
+    "id": "v_elite_01",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La historia de la ciencia no es una acumulación lineal de verdades indiscutibles, como a menudo se enseña en las escuelas. El filósofo Thomas Kuhn argumentó que el progreso científico ocurre a través de revoluciones.\n\nDurante períodos de 'ciencia normal', los investigadores operan bajo un paradigma aceptado, resolviendo enigmas sin cuestionar las reglas fundamentales. Sin embargo, cuando se acumulan suficientes anomalías que el modelo actual no puede explicar, se desata una crisis. Esta crisis solo se resuelve cuando surge un nuevo paradigma que redefine completamente las reglas del juego, sustituyendo al anterior de forma abrupta y no gradual.",
+    "q": "¿Cuál de las siguientes afirmaciones sintetiza mejor la tesis central del texto?",
+    "opts": [
+      "La ciencia normal se caracteriza por el cuestionamiento constante de las reglas fundamentales.",
+      "El progreso de la ciencia depende exclusivamente de la acumulación lineal de verdades.",
+      "El avance científico se produce mediante rupturas radicales de modelos establecidos.",
+      "La aparición de anomalías en un modelo indica que la ciencia ha dejado de progresar para siempre."
+    ],
+    "ans": 2,
+    "exp": "¡Esta es una clásica trampa de idea principal vs detalle!\n\n¿Qué nos dice el texto desde la primera línea? Nos advierte expresamente que la ciencia **no** es lineal. Inmediatamente nos dice que avanza por **revoluciones** (es decir, rupturas abruptas).\n\nRevisemos los distractores:\n- **Opción B:** Afirma exactamente lo contrario a la tesis del autor.\n- **Opción A:** Confunde lo que ocurre en la 'ciencia normal', donde el texto afirma que *no* se cuestionan las reglas.\n- **Opción D:** Exagera el punto diciendo que la ciencia deja de progresar 'para siempre'.\n\nLa **opción C** captura perfectamente este concepto de 'sustitución abrupta' de los modelos.\n\n**Tip Élite:** En preguntas de idea principal, busca la frase que el autor defiende como su premisa global, no un simple hecho intermedio o una exageración absoluta."
+  },
+  {
+    "id": "v_elite_02",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "En el siglo XIX, los arquitectos higienistas promovieron la construcción de amplios bulevares en las capitales europeas. Argumentaban que las calles anchas y rectas permitirían la libre circulación de los vientos, disipando las 'miasmas' o vapores nocivos que, según creían, emanaban del suelo y causaban epidemias.\n\nAunque la teoría miasmática fue refutada décadas después por la microbiología moderna de Pasteur, el rediseño urbano perduró, facilitando paradójicamente la instalación de redes de alcantarillado subterráneo, algo que los higienistas originales no habían anticipado como prioridad estructural.",
+    "q": "¿Cuál era la finalidad primordial de la construcción de bulevares según los arquitectos del siglo XIX?",
+    "opts": [
+      "Facilitar la instalación futura de redes modernas de alcantarillado subterráneo.",
+      "Erradicar los patógenos microscópicos descubiertos por el biólogo Pasteur.",
+      "Permitir la ventilación urbana para dispersar supuestos vapores tóxicos.",
+      "Embellecer la ciudad mediante un diseño de calles rectas, anchas y arboladas."
+    ],
+    "ans": 2,
+    "exp": "¡Analicemos esto como un detective! El texto tiene una trampa temporal. Nos pregunta por la finalidad de los arquitectos del **siglo XIX**.\n\n¿Qué dice el primer párrafo? Que querían que el viento disipara las 'miasmas' (vapores nocivos). Por tanto, la opción correcta es la **C**.\n\nMuchos estudiantes marcan la **A** porque el texto menciona alcantarillas al final, pero nota que dice *'algo que los higienistas originales no habían anticipado'*. Siempre debes responder desde la perspectiva temporal que pide la pregunta.\n\n**Tip Élite:** Cuando un texto contrasta dos épocas o dos teorías científicas distintas, asegúrate de aislar exactamente qué creía cada bando para no cruzar la información."
+  },
+  {
+    "id": "v_elite_03",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "La neuroplasticidad no se limita a las primeras etapas de la infancia. Estudios recientes en pacientes con accidentes cerebrovasculares han demostrado que el cerebro adulto retiene la capacidad de reorganizar sus redes neuronales para compensar funciones perdidas.\n\nAnalice las siguientes proposiciones:\nI. El cerebro adulto es estático y no puede generar nuevas conexiones bajo ninguna circunstancia.\nII. Las lesiones cerebrales en adultos son completamente irreversibles debido a la falta de plasticidad.\nIII. La capacidad de reorganización neuronal se mantiene, al menos parcialmente, durante la etapa adulta.",
+    "q": "¿Cuál(es) de las proposiciones se deduce(n) lógicamente del texto anterior?",
+    "opts": [
+      "Solo la I.",
+      "Solo la II.",
+      "Solo la III.",
+      "La I y la II."
+    ],
+    "ans": 2,
+    "exp": "Sé que la lectura científica asusta a veces, pero analicémoslo paso a paso.\n\nEl texto afirma claramente que el cerebro adulto *retiene la capacidad de reorganizar sus redes*.\n\n- **Proposición I:** Dice que el cerebro adulto es 'estático'. Esto **contradice** directamente al texto.\n- **Proposición II:** Dice que las lesiones son 'completamente irreversibles' por falta de plasticidad. De nuevo, el texto afirma que hay plasticidad para *compensar*.\n- **Proposición III:** Afirma que la reorganización neuronal se mantiene en la adultez, lo cual es exactamente la premisa del texto.\n\nPor lo tanto, la única opción válida es **Solo la III (C)**.\n\n**Tip Élite:** Las opciones con palabras absolutistas como 'completamente' o 'bajo ninguna circunstancia' suelen ser falsas en exámenes de razonamiento."
+  },
+  {
+    "id": "v_elite_04",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "La censura institucional, al intentar sofocar una idea subversiva, a menudo actúa como una caja de resonancia que amplifica su alcance mucho más allá de su audiencia original, otorgándole un aura de martirio intelectual.",
+    "q": "¿Cuál de las siguientes opciones expresa mejor el mismo concepto utilizando otras palabras?",
+    "opts": [
+      "La censura institucional es la herramienta más eficaz para eliminar definitivamente ideas peligrosas de la sociedad.",
+      "El intento oficial de silenciar un pensamiento rebelde suele provocar que este gane mayor visibilidad y prestigio.",
+      "Los pensadores subversivos buscan ser censurados porque es la única forma de conseguir ingresos económicos reales.",
+      "Las ideas subversivas nunca logran llegar a una audiencia amplia a menos que las instituciones las aprueben."
+    ],
+    "ans": 1,
+    "exp": "¿Has oído hablar del 'Efecto Streisand'? Este texto lo describe a la perfección.\n\nEl texto dice que intentar sofocar (silenciar) una idea subversiva, paradójicamente actúa como una 'caja de resonancia que amplifica su alcance' (le da visibilidad).\n\n- La opción **A** dice lo contrario (que la censura elimina la idea).\n- La opción **C** inventa una motivación económica ('ingresos económicos') que jamás se menciona en el texto.\n- La opción **D** tergiversa todo asumiendo que las ideas necesitan 'aprobación', cuando el texto habla de 'censura'.\n\nLa **opción B** es la paráfrasis exacta de la premisa principal."
+  },
+  {
+    "id": "v_elite_05",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 3,
+    "stem": "Frente a la crisis económica de la década, la gerencia optó por una estrategia inusual: en lugar de reducir la plantilla como dictaban los manuales tradicionales, recortó los salarios directivos en un 40% e instauró una jornada de cuatro días.\n\nEsta medida, aunque inicialmente impopular entre los accionistas que temían una caída en productividad, generó un sentido de lealtad sin precedentes en la base laboral, lo que redujo la fuga de talentos a casi cero.",
+    "q": "¿Cómo se puede caracterizar el comportamiento de la gerencia frente a la crisis?",
+    "opts": [
+      "Ortodoxo, al seguir estrictamente los manuales corporativos de su sector.",
+      "Deplorable, al priorizar los intereses de los directivos sobre los accionistas.",
+      "Imprudente, al ignorar de forma deliberada la inminente fuga de talentos.",
+      "Heterodoxo, priorizando la retención del talento humano mediante sacrificios cúpula."
+    ],
+    "ans": 3,
+    "exp": "Vamos a desarmar las opciones falsas. \n\n- ¿Fue **ortodoxo** (es decir, seguir las reglas tradicionales)? No, el texto dice expresamente 'en lugar de... como dictaban los manuales'. Así descartamos la A.\n- ¿Fue **imprudente** respecto a la fuga de talentos? Al contrario, la redujo a cero, así que la C es falsa.\n- ¿Priorizó a los **directivos**? No, les recortó el salario un 40%.\n\nLa única que calza lógicamente es la **D**: fue un movimiento heterodoxo (fuera de la norma) que priorizó la retención del talento.\n\n**Tip Élite:** El examen PAA asume que dominas vocabulario académico medio. Conocer la diferencia entre *ortodoxo* y *heterodoxo* te ahorrará mucho tiempo de lectura."
+  },
+  {
+    "id": "m_elite_01",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Un granjero decide comprar cerdos y gallinas. Por cada cerdo que compra, adquiere exactamente tres gallinas. Si sabemos que la cantidad total de animales comprados, denotada por 'T', es un número **par positivo estrictamente menor a 20**.",
+    "q": "¿Cuál es la cantidad MÁXIMA de cerdos que el granjero pudo haber comprado?",
+    "opts": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "ans": 0,
+    "exp": "Sé que es tentador probar números al azar usando las respuestas, pero analicémoslo matemáticamente para no caer en la trampa.\n\n1. Si 'c' son los cerdos y 'g' las gallinas, el problema impone que: **g = 3c**.\n2. El total de animales es T = c + g.\n3. Sustituyendo, tenemos: T = c + 3c = **4c**.\n\nEsto significa que el total T debe ser un **múltiplo de 4** (4, 8, 12, 16, 20...).\n\nEl problema dice explícitamente que T es estrictamente menor a 20. Por lo tanto, el T máximo posible es **16**.\n\nSi T = 16, y sabemos que T = 4c:\n16 = 4c  \n**c = 4 cerdos** (Opción A).\n\n**El Anzuelo:** Muchos eligen 5 porque 5x4=20, ¡pero la restricción dice *menor* a 20, no menor o igual!"
+  },
+  {
+    "id": "m_elite_02",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una tienda, un confite cuesta ₡75 y un chocolate cuesta ₡120. Andrés desea comprar 8 confites y una cantidad 'x' de chocolates, donde 'x' es un número entero positivo.\n\nSi Andrés paga con un billete de ₡2 000 y el dependiente le devuelve exactamente ₡680 de vuelto.",
+    "q": "¿Cuántos chocolates compró Andrés?",
+    "opts": [
+      "3",
+      "6",
+      "8",
+      "960"
+    ],
+    "ans": 1,
+    "exp": "¡Cuidado aquí! Detengámonos un momento a hacer ingeniería inversa.\n\nSi pagó con ₡2 000 y le devolvieron ₡680, ¿cuánto gastó en total el señor Andrés?\n**Gasto Total:** 2000 - 680 = **1320**.\n\nAhora, sabemos que compró 8 confites a ₡75 cada uno:\n**Gasto en confites:** 8 × 75 = **600**.\n\n¿Cuánto dinero de ese gasto total corresponde a los chocolates?\n**Gasto en chocolates:** 1320 - 600 = **720**.\n\nSi cada chocolate vale 120, entonces:\n720 ÷ 120 = **6 chocolates**.\n\n**Tip Élite:** La opción '960' es un distractor diseñado para cazar a quienes olvidan restar el vuelto del billete inicial. ¡Lee despacio y triunfarás!"
+  },
+  {
+    "id": "m_elite_03",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere tres variables numéricas desconocidas: P, Q y R. Se sabe con absoluta certeza que:\n- P es mayor que Q.\n- Q es un número estrictamente negativo.\n- El valor absoluto de Q es mayor que el valor absoluto de P.",
+    "q": "¿Cuál de las siguientes afirmaciones es SIEMPRE verdadera?",
+    "opts": [
+      "P + Q > 0",
+      "P + Q < 0",
+      "P es un número negativo",
+      "P = 0"
+    ],
+    "ans": 1,
+    "exp": "¿Te confunde ver tantas letras sin números? ¡Esa es exactamente la intención del examen! Hagámoslo fácil asignando valores hipotéticos que cumplan las reglas:\n\n1. Q es negativo. Digamos que **Q = -10**.\n2. P es mayor que Q. Podría ser P = 5 o P = -2.\n3. PERO el valor absoluto de Q (10) debe ser mayor que el valor absoluto de P.\n\nEsto significa que P es un número 'más pequeño en tamaño' (ej. 5 o -2). \n\n¿Qué pasa si sumamos P + Q?\nYa sea (5 + -10 = -5) o (-2 + -10 = -12), el resultado **siempre será negativo** porque el peso del negativo (Q) es abrumadoramente mayor que cualquier valor que pueda tomar P.\n\nPor tanto, **P + Q < 0** es la única verdad absoluta."
+  },
+  {
+    "id": "m_elite_04",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox='0 0 200 100' style='background:#121B24; border: 1px solid #25333F; max-width:100%; border-radius: 8px;'><rect x='10' y='10' width='180' height='80' fill='none' stroke='#C792EA' stroke-width='2'/><rect x='10' y='10' width='80' height='80' fill='#2EE6A6' opacity='0.2' stroke='#2EE6A6' stroke-width='2'/><text x='100' y='55' fill='#EAF2F4' font-family='sans-serif' font-size='12' text-anchor='middle'>Sobrante = 50 m²</text></svg>",
+    "stem": "Considere el terreno rectangular de la figura, cuyo largo mide exactamente el doble que su ancho. El propietario decide construir una piscina cuadrada (zona sombreada verde) cuyo lado es igual al ancho del terreno original. Se indica que el área del terreno sobrante (zona vacía) es de 50 metros cuadrados.",
+    "q": "¿Cuál es el perímetro total del terreno rectangular original?",
+    "opts": [
+      "30 metros",
+      "42.4 metros (aprox.)",
+      "50 metros",
+      "60 metros"
+    ],
+    "ans": 1,
+    "exp": "¡Visualicémoslo juntos usando la figura!\n\nSi el largo es el doble del ancho (L = 2A), significa que el terreno total está compuesto literalmente por **dos cuadrados perfectos** pegados uno junto al otro.\n\nSi la piscina cuadrada (área verde) ocupa uno de esos cuadrados, el 'sobrante' (zona vacía) es idéntico: es el otro cuadrado.\n\nEl problema dice que el sobrante mide 50 m². Por ende, el área de un cuadrado es A² = 50.\nSi A² = 50, entonces el ancho es **A = √50** (aproximadamente 7.07).\n\nNos piden el **perímetro del rectángulo original**:\nFórmula: 2L + 2A.\nSustituyendo: 2(2A) + 2A = 4A + 2A = **6A**.\n\nMultiplicamos: 6 × 7.07 ≈ **42.4 metros**.\n\n**Tip Élite:** No entres en pánico si no tienes calculadora y ves una raíz. El examen a menudo te dará aproximaciones o raíces inexactas para medir tu capacidad de deducir, no tu capacidad de usar la calculadora."
+  },
+  {
+    "id": "m_elite_05",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un dispositivo de seguridad requiere una contraseña de 3 dígitos (del 0 al 9). El manual especifica dos restricciones fundamentales:\n1) El primer dígito NO puede ser 0.\n2) Todos los dígitos deben ser distintos entre sí.",
+    "q": "¿Cuántas contraseñas diferentes es posible configurar en este dispositivo?",
+    "opts": [
+      "648",
+      "729",
+      "1000",
+      "504"
+    ],
+    "ans": 0,
+    "exp": "Este es un clásico problema del **Principio Multiplicativo** con restricciones. Vamos a llenar 3 'casillas' mentales: [ _ ] [ _ ] [ _ ]\n\n1. **Primera casilla:** Tiene los dígitos del 0 al 9 (10 opciones). PERO la regla dice que no puede ser 0. Así que tenemos **9 opciones válidas** (del 1 al 9).\n\n2. **Segunda casilla:** De nuevo, los dígitos del 0 al 9 (10 opciones). Esta vez *sí* podemos usar el 0, PERO la regla dice que no podemos repetir el dígito que usamos en la primera casilla. Así que tenemos 10 - 1 = **9 opciones válidas**.\n\n3. **Tercera casilla:** Teníamos 10 dígitos, pero ya quemamos dos distintos en las casillas anteriores. Así que nos quedan 10 - 2 = **8 opciones válidas**.\n\nMultiplicamos las posibilidades: 9 × 9 × 8 = **648**.\n\n**Tip Élite:** Siempre resuelve las restricciones más estrictas primero (como el 'primer dígito no puede ser 0'). Si ignoras esto y asumes 10x9x8, marcarías erróneamente la opción 720 (que ni siquiera está para salvarte) o la 729."
+  },
+  {
+    "id": "v_fin_4",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 2,
+    "stem": "La municipalidad instaló basureros de colores en cada parque y los rotuló por tipo de material. Buscaba que los vecinos separaran los desechos desde el inicio y así reciclar más.",
+    "q": "¿Cuál es la finalidad principal de la medida?",
+    "opts": [
+      "Decorar los parques con colores",
+      "Facilitar la separación de desechos para reciclar",
+      "Dar trabajo a los recolectores",
+      "Reducir la cantidad de basureros"
+    ],
+    "ans": 1,
+    "exp": "La finalidad es el para qué: que se separen los desechos y se recicle más (B). Los colores son el medio, no el fin (A); C y D no aparecen en el texto."
+  },
+  {
+    "id": "v_fin_5",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 1,
+    "stem": "Antes de un viaje largo, Lucía anota en una lista todo lo que debe empacar y la revisa al cerrar la maleta.",
+    "q": "¿Con qué finalidad hace y revisa la lista?",
+    "opts": [
+      "Presumir lo organizada que es",
+      "Asegurarse de no olvidar nada",
+      "Empacar más rápido que otros",
+      "Llevar menos cosas"
+    ],
+    "ans": 1,
+    "exp": "El fin es asegurarse de no olvidar nada (B). Revisar la lista no busca presumir (A) ni competir en rapidez (C), y no dice que quiera llevar menos (D)."
+  },
+  {
+    "id": "v_fin_6",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 3,
+    "stem": "El gobierno reduce los impuestos a los carros eléctricos para incentivar su compra y disminuir la contaminación.",
+    "q": "¿Cuál es la finalidad de reducir esos impuestos?",
+    "opts": [
+      "Recaudar más dinero",
+      "Promover vehículos menos contaminantes",
+      "Encarecer los carros de gasolina",
+      "Construir más carreteras"
+    ],
+    "ans": 1,
+    "exp": "El propósito es incentivar la compra de eléctricos y bajar la contaminación: promover vehículos menos contaminantes (B). No busca recaudar (A): de hecho baja impuestos; tampoco encarecer la gasolina (C) ni hacer carreteras (D)."
+  },
+  {
+    "id": "v_fin_7",
+    "domain": "verbal",
+    "topic": "finalidad",
+    "dif": 2,
+    "stem": "Pedro programa tres alarmas con cinco minutos de diferencia cada mañana. Dice que no lo hace porque le guste el ruido, sino porque sabe que con una sola se volvería a dormir y llegaría tarde.",
+    "q": "¿Cuál es la finalidad de poner varias alarmas?",
+    "opts": [
+      "Disfrutar el sonido de las alarmas",
+      "Asegurarse de despertar y no llegar tarde",
+      "Despertar a toda la casa",
+      "Cumplir una costumbre sin sentido"
+    ],
+    "ans": 1,
+    "exp": "El para qué es despertar y no llegar tarde (B). El texto descarta que sea por el sonido (A); no busca despertar a la casa (C) ni es una costumbre sin sentido (D), pues explica su razón."
+  },
+  {
+    "id": "v_com_4",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "En las reuniones, apenas alguien opina distinto, Daniel sube la voz, interrumpe y no deja terminar a los demás; al final, solo se escucha su versión.",
+    "q": "¿Cómo se comporta Daniel frente a las opiniones distintas?",
+    "opts": [
+      "Con apertura",
+      "De forma autoritaria",
+      "Con indiferencia",
+      "Con timidez"
+    ],
+    "ans": 1,
+    "exp": "Imponer su voz e impedir que otros hablen es una actitud autoritaria (B). No es apertura (A, lo contrario), ni indiferencia (C: sí reacciona), ni timidez (D: no se calla)."
+  },
+  {
+    "id": "v_com_5",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "Al recibir un examen difícil, Sofía respira hondo, lee todo antes de empezar y resuelve primero lo que domina para asegurar puntos, dejando lo dudoso para el final.",
+    "q": "¿Qué describe mejor la manera en que Sofía enfrenta el examen?",
+    "opts": [
+      "Improvisa sin un plan",
+      "Actúa con calma y estrategia",
+      "Se paraliza por los nervios",
+      "Responde al azar"
+    ],
+    "ans": 1,
+    "exp": "Leer todo y resolver primero lo seguro es una estrategia con calma (B). No improvisa (A) ni va al azar (D), y no se paraliza (C): justamente controla los nervios."
+  },
+  {
+    "id": "v_com_6",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "Cuando su equipo va perdiendo, en vez de bajar los brazos, la capitana habla con sus compañeras, reacomoda las posiciones y las anima a seguir intentándolo hasta el último minuto.",
+    "q": "¿Cómo se comporta la capitana cuando van perdiendo?",
+    "opts": [
+      "Se rinde y deja de jugar",
+      "Asume el liderazgo y motiva al equipo",
+      "Culpa a sus compañeras",
+      "Discute con la árbitra"
+    ],
+    "ans": 1,
+    "exp": "Reorganizar posiciones y animar al equipo en la adversidad es asumir el liderazgo y motivar (B). No se rinde (A) ni culpa a nadie (C); y no discute con la árbitra (D), eso no aparece."
+  },
+  {
+    "id": "v_com_7",
+    "domain": "verbal",
+    "topic": "comportamiento",
+    "dif": 2,
+    "stem": "Aunque acababa de perder la final, el jugador se acercó a felicitar al rival, agradeció a su equipo y dijo que aprendería de la derrota.",
+    "q": "¿Qué actitud muestra ante la derrota?",
+    "opts": [
+      "Resentimiento",
+      "Deportividad",
+      "Conformismo",
+      "Indiferencia"
+    ],
+    "ans": 1,
+    "exp": "Reconocer al rival y querer aprender de la derrota es deportividad (B). No hay resentimiento (A); no es conformismo (C: sí busca mejorar) ni indiferencia (D: le importa)."
+  },
+  {
+    "id": "v_cau_5",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "Durante semanas nadie regó el jardín. Hubo algunas lluvias ligeras, pero no fueron suficientes, y poco a poco las plantas se marchitaron hasta secarse por completo.",
+    "q": "¿Cuál fue la causa principal de que el jardín se secara?",
+    "opts": [
+      "Las lluvias ligeras",
+      "La falta de riego suficiente",
+      "El exceso de agua",
+      "El tipo de plantas"
+    ],
+    "ans": 1,
+    "exp": "Hubo algo de lluvia, así que no fue exceso de agua (C) ni la lluvia la culpable (A). El texto insiste en que nadie regó lo suficiente: esa es la causa (B). El tipo de planta (D) no se menciona."
+  },
+  {
+    "id": "v_cau_6",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "El aumento del precio del combustible provocó que muchos productos se encarecieran.",
+    "q": "Según el texto, ¿cuál es una consecuencia del aumento del combustible?",
+    "opts": [
+      "Los productos bajaron de precio",
+      "Muchos productos se encarecieron",
+      "El combustible se agotó",
+      "Los salarios subieron"
+    ],
+    "ans": 1,
+    "exp": "El aumento del combustible provocó que los productos se encarecieran (B). Bajar de precio (A) y subir los salarios (D) son lo contrario; que el combustible se agote (C) no se dice."
+  },
+  {
+    "id": "v_cau_7",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 2,
+    "stem": "Gracias a que estudió con constancia todo el año, Karla aprobó el examen de admisión.",
+    "q": "¿Cuál fue la causa de que Karla aprobara?",
+    "opts": [
+      "La suerte",
+      "El estudio constante",
+      "La facilidad del examen",
+      "La ayuda de sus amigos"
+    ],
+    "ans": 1,
+    "exp": "'Gracias a que estudió con constancia' señala la causa: el estudio constante (B). No fue la suerte (A) ni la facilidad del examen (C); la ayuda de amigos (D) no se menciona."
+  }
+]

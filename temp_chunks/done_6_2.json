@@ -1,0 +1,97 @@
+[
+  {
+    "id": "q_pdf6_11",
+    "domain": "verbal",
+    "topic": "Comprensión de lectura",
+    "dif": 3,
+    "stem": "En las sociedades agrícolas o recolectoras, la transmisión oral de leyendas, mitos y anécdotas es una actividad importante: sirve tanto para educar como para entretener. Los tres procesos centrales que expone el texto anterior son:",
+    "q": "",
+    "opts": [
+      "leyendas - mitos - anécdotas.",
+      "anécdotas - educación - entretenimiento.",
+      "recolección - transmisión oral - leyendas.",
+      "agricultura - recolección - transmisión oral.",
+      "transmisión oral - educación - entretenimiento."
+    ],
+    "ans": 4,
+    "exp": "",
+    "feedback_socratico": "¿Qué acciones o dinámicas se mencionan explícitamente en el texto como funciones clave de la transmisión oral? Si la transmisión oral se usa para enseñar y divertir, ¿qué conceptos resumen mejor estas ideas?",
+    "tip_elite": "Identifica los conceptos o acciones principales en el texto. A menudo, la respuesta correcta es simplemente una generalización o sustantivación directa de las acciones (educar = educación, entretener = entretenimiento)."
+  },
+  {
+    "id": "q_pdf6_12",
+    "domain": "math",
+    "topic": "Álgebra y geometría",
+    "dif": 3,
+    "stem": "Un sastre pretendía cortar de un pedazo de tela un mantel de cierta área y de forma cuadrada, pero no fue posible obtenerlo así. Por esto, decidió cortarlo en forma rectangular, de tal manera que tuviera por ancho el lado del cuadrado disminuido en 2 y por largo el lado del cuadrado aumentado en 2. Entonces, el área del mantel rectangular resultó con respecto a la del cuadrangular",
+    "q": "",
+    "opts": [
+      "igual.",
+      "2 unidades menor.",
+      "4 unidades menor.",
+      "2 unidades mayor.",
+      "4 unidades mayor."
+    ],
+    "ans": 2,
+    "exp": "",
+    "feedback_socratico": "Si el lado original del cuadrado es 'x', ¿cómo expresarías matemáticamente su área inicial? Luego, si el ancho es 'x - 2' y el largo es 'x + 2', ¿cuál es la nueva área? ¿Recuerdas la fórmula de los productos notables para (x + 2)(x - 2)?",
+    "tip_elite": "En problemas de áreas modificadas, usa productos notables. La diferencia de cuadrados (x + a)(x - a) = x² - a² te indicará rápidamente que la nueva área siempre será a² unidades menor que el cuadrado original."
+  },
+  {
+    "id": "q_pdf6_13",
+    "domain": "verbal",
+    "topic": "Inferencia lógica",
+    "dif": 3,
+    "stem": "El ser humano puede sobrevivir tres semanas sin alimentos y tres días sin agua, pero será afortunado quien dure tres horas sin el calor necesario. Según el texto anterior, el ser humano es",
+    "q": "",
+    "opts": [
+      "más resistente al frío que al hambre.",
+      "más resistente al hambre que al frío.",
+      "menos resistente a la sed que al frío.",
+      "más resistente a la sed que al hambre.",
+      "menos resistente al hambre que al frío."
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "Analiza los tiempos de supervivencia que menciona el texto: 3 semanas, 3 días y 3 horas. Si el ser humano sobrevive 3 semanas sin comida (hambre) pero solo 3 horas sin calor (frío), ¿ante cuál de las dos carencias tiene mayor tolerancia y ante cuál es más vulnerable?",
+    "tip_elite": "En preguntas de comparación, establece una escala ordenada. A mayor tiempo de supervivencia, mayor resistencia. Así evitas confundirte con los términos 'más' y 'menos' al evaluar las opciones."
+  },
+  {
+    "id": "q_pdf6_14",
+    "domain": "math",
+    "topic": "Razonamiento inductivo",
+    "dif": 3,
+    "stem": "Analice las siguientes igualdades y descubra la ley que se da en ellas:\n• 2² – 1² = 2 • 1 + 1\n• 3² – 2² = 2 • 2 + 1\n• 4² – 3² = 2 • 3 + 1\n• 5² – 4² = 2 • 4 + 1\nDe acuerdo con la ley, ¿cuál de las siguientes",
+    "q": "expresiones es equivalente a 100² – 99²?",
+    "opts": [
+      "2 • 98 + 1",
+      "2 • 99 + 1",
+      "2 • 99² + 1",
+      "2 • 100 + 1",
+      "2 • 100² + 1"
+    ],
+    "ans": 1,
+    "exp": "",
+    "feedback_socratico": "Observa el patrón en la parte derecha de las igualdades: ¿de dónde sale el número que se multiplica por 2? En la expresión a² - b², nota que siempre se usa 'b'. En 100² - 99², ¿cuál número corresponde a 'b' y debería multiplicarse por 2?",
+    "tip_elite": "No calcules potencias grandes en preguntas de series. Tu único trabajo es identificar a qué elemento del lado izquierdo corresponde el factor variable del lado derecho, y replicarlo."
+  },
+  {
+    "id": "q_pdf6_15",
+    "domain": "math",
+    "topic": "Geometría (Áreas y Perímetros)",
+    "dif": 3,
+    "stem": "Un cuadrilátero P tiene 32 cm de perímetro y 48 cm² de área. Un cuadrado Q posee un perímetro igual a la cuarta parte del perímetro del cuadrilátero P. ¿Cuál es la diferencia entre las áreas del",
+    "q": "cuadrilátero P y el cuadrado Q?",
+    "opts": [
+      "12 cm²",
+      "23 cm²",
+      "28 cm²",
+      "39 cm²",
+      "44 cm²"
+    ],
+    "ans": 4,
+    "exp": "",
+    "feedback_socratico": "Si el perímetro del cuadrado Q es la cuarta parte del perímetro de P (32 cm), ¿cuánto mide el perímetro de Q? Sabiendo el perímetro de un cuadrado, ¿cómo encuentras la longitud de su lado y luego su área? Finalmente, ¿qué operación debes hacer para hallar la diferencia pedida?",
+    "tip_elite": "Subraya si te piden área o perímetro en la pregunta final. Es común calcular el lado (2) o el área (4) y buscar esa respuesta entre las opciones, pero aquí piden la diferencia de las áreas (48 - 4). ¡Lee siempre la pregunta antes de marcar!"
+  }
+]

@@ -1,0 +1,623 @@
+[
+  {
+    "id": "m_rel_12",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Sean $a$ y $b$ números enteros que satisfacen la inecuación $a < b < 0$.",
+    "q": "Bajo las condiciones dadas, ¿cuál de las siguientes proposiciones matemáticas es indefectiblemente verdadera?",
+    "opts": [
+      "$a^2 < b^2$",
+      "$a^2 > b^2$",
+      "$a^2 = b^2$",
+      "$a + b > 0$"
+    ],
+    "ans": 1,
+    "exp": "Al analizar la restricción $a < b < 0$, observamos que tanto $a$ como $b$ son números enteros negativos, donde $a$ se encuentra a una mayor distancia del cero en la recta numérica que $b$.\n\n* En términos de valor absoluto, esto implica que $|a| > |b|$.\n* Al elevar al cuadrado ambos lados de la desigualdad $|a| > |b|$ (dado que los cuadrados de números reales son siempre no negativos), la relación de orden se preserva, resultando en $a^2 > b^2$.\n* Por ejemplo, si $a = -3$ y $b = -2$, se cumple que $-3 < -2 < 0$, y sus cuadrados serían $(-3)^2 = 9$ y $(-2)^2 = 4$, verificando que $9 > 4$.\n\n**Tip Élite:** Cuando trabajes con desigualdades que involucran números negativos, recuerda que la operación de elevar al cuadrado invierte la relación de orden original si los valores absolutos son mayores (es decir, $a < b < 0 \\implies a^2 > b^2$)."
+  },
+  {
+    "id": "m_alr_9",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Considere un número entero $n$ del cual se sabe que su cuadrado, $n^2$, es un número par.",
+    "q": "Con base en esta premisa, ¿qué propiedad intrínseca se puede deducir rigurosamente acerca de $n$?",
+    "opts": [
+      "$n$ es necesariamente un número impar.",
+      "$n$ es inherentemente un número par.",
+      "$n$ debe ser un número primo.",
+      "$n$ puede ser cualquier número entero sin restricción."
+    ],
+    "ans": 1,
+    "exp": "Para demostrar esta propiedad de manera rigurosa, podemos utilizar una demostración por reducción al absurdo o contrapositiva.\n\n* Supongamos lo contrario: que $n$ es un número impar. Si $n$ es impar, puede expresarse de la forma $n = 2k + 1$, donde $k$ es un número entero.\n* Al calcular el cuadrado de $n$, obtenemos: $n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$.\n* Dado que $2k^2 + 2k$ es un entero, la expresión resultante, $2(\\text{entero}) + 1$, es la definición matemática de un número impar. Esto contradice nuestra premisa inicial de que $n^2$ es par.\n* Por lo tanto, nuestra suposición original es falsa y concluimos inexorablemente que $n$ debe ser un número par.\n\n**Tip Élite:** Recuerda que la paridad de un número entero es un invariante multiplicativo: el producto de números impares es impar y basta con que un factor sea par para que el producto total sea par."
+  },
+  {
+    "id": "m_raz_12",
+    "domain": "math",
+    "topic": "razon_proporcion",
+    "dif": 3,
+    "stem": "En un laboratorio químico, se dispone de $20$ litros de una solución acuosa en la cual un soluto (jugo concentrado) representa el $30\\%$ del volumen total.",
+    "q": "¿Qué volumen exacto de soluto puro debe añadirse a la solución para que la concentración final del mismo alcance el $50\\%$ de la mezcla total?",
+    "opts": [
+      "$8\\text{ litros}$",
+      "$4\\text{ litros}$",
+      "$10\\text{ litros}$",
+      "$6\\text{ litros}$"
+    ],
+    "ans": 0,
+    "exp": "Para resolver este problema, es crucial plantear un balance de masa (o volumen, asumiendo volúmenes aditivos) para el soluto.\n\n* **Paso 1:** Determinar el volumen inicial de soluto. El $30\\%$ de $20\\text{ L}$ es $0.30 \\times 20 = 6\\text{ L}$. El resto ($14\\text{ L}$) es agua.\n* **Paso 2:** Definir la variable. Sea $x$ la cantidad de soluto puro a agregar. El nuevo volumen de soluto será $6 + x$ y el nuevo volumen total de la solución será $20 + x$.\n* **Paso 3:** Establecer la ecuación de concentración. Se desea que la nueva concentración sea del $50\\%$, es decir, una proporción de $0.5$ o $1/2$:\n  $\\frac{6 + x}{20 + x} = \\frac{1}{2}$\n* **Paso 4:** Resolver la ecuación. Multiplicando en cruz:\n  $2(6 + x) = 20 + x \\implies 12 + 2x = 20 + x \\implies x = 8\\text{ L}$.\n\n**Tip Élite:** Plantea las ecuaciones de mezclas enfocándote siempre en el soluto o en el solvente. Una ecuación algebraica sólida evita confusiones al interpretar los porcentajes de una mezcla cambiante."
+  },
+  {
+    "id": "m_dat_13",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El promedio aritmético (media) de las calificaciones obtenidas por un grupo de $10$ estudiantes en una evaluación es exactamente $7.0$. Posteriormente, se retira del grupo un estudiante cuya calificación individual era precisamente $7.0$.",
+    "q": "¿Cuál es el impacto en la media aritmética de las calificaciones de los $9$ estudiantes restantes?",
+    "opts": [
+      "La nueva media aritmética se mantiene invariante en $7.0$.",
+      "La media desciende a $6.3$.",
+      "La media experimenta un aumento a $7.5$.",
+      "La media desciende drásticamente a $6.0$."
+    ],
+    "ans": 0,
+    "exp": "La media aritmética se calcula dividiendo la suma total de los valores entre la cantidad de elementos.\n\n* **Paso 1:** Calcular la suma inicial. Si la media de $10$ estudiantes es $7.0$, la suma total de sus calificaciones es $10 \\times 7.0 = 70$.\n* **Paso 2:** Ajustar la suma y la cantidad de elementos. Al retirar a un estudiante con calificación de $7.0$, la nueva suma total es $70 - 7 = 63$, y la nueva cantidad de estudiantes es $10 - 1 = 9$.\n* **Paso 3:** Calcular la nueva media. La nueva media es $63 / 9 = 7.0$.\n\n**Tip Élite:** Comprende la propiedad fundamental de la media: si agregas o quitas un elemento cuyo valor coincide exactamente con el promedio actual, la media global del conjunto de datos no sufre ninguna alteración."
+  },
+  {
+    "id": "m_geo_13",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "A partir de una lámina metálica cuadrada cuyos lados miden $10\\text{ cm}$, se realiza un corte mediante el cual se extrae una sección central también cuadrada, de $6\\text{ cm}$ de lado.",
+    "q": "¿Cuál es el área de la superficie remanente de la lámina metálica tras la substracción de la pieza interior?",
+    "opts": [
+      "$64\\text{ cm}^2$",
+      "$36\\text{ cm}^2$",
+      "$40\\text{ cm}^2$",
+      "$100\\text{ cm}^2$"
+    ],
+    "ans": 0,
+    "exp": "El cálculo de áreas de regiones compuestas a menudo implica la diferencia entre áreas de figuras geométricas fundamentales.\n\n* **Paso 1:** Calcular el área total de la lámina original. El área de un cuadrado de lado $10\\text{ cm}$ es $10^2 = 100\\text{ cm}^2$.\n* **Paso 2:** Calcular el área de la sección extraída. El área del cuadrado de $6\\text{ cm}$ de lado es $6^2 = 36\\text{ cm}^2$.\n* **Paso 3:** Calcular el área remanente. Se substrae el área extraída del área total: $100\\text{ cm}^2 - 36\\text{ cm}^2 = 64\\text{ cm}^2$.\n\n**Tip Élite:** Visualiza los problemas de áreas sombreadas o remanentes como un proceso de suma y resta de áreas de figuras geométricas conocidas. Este enfoque analítico simplifica considerablemente el cálculo."
+  },
+  {
+    "id": "m_per_9",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un comité integrado por cuatro personas requiere acomodarse en una hilera de cuatro asientos contiguos. Por un protocolo específico, un individuo en particular debe ocupar inexcusablemente uno de los dos asientos situados en los extremos de la fila.",
+    "q": "Considerando esta restricción de acomodo, ¿cuántas permutaciones distintas son posibles para sentar a los cuatro miembros del comité?",
+    "opts": [
+      "$12$",
+      "$24$",
+      "$6$",
+      "$8$"
+    ],
+    "ans": 0,
+    "exp": "Para determinar el número total de arreglos posibles bajo una condición restrictiva, es recomendable desglosar el problema empleando el principio multiplicativo.\n\n* **Decisión 1:** Ubicar a la persona con restricción. Esta persona puede ocupar únicamente el primer o el último asiento, lo que nos da $2$ opciones posibles.\n* **Decisión 2:** Ubicar a las $3$ personas restantes. Una vez sentado el individuo condicionado, quedan $3$ asientos disponibles para las $3$ personas restantes. Estas pueden ordenarse de $3!$ (tres factorial) formas distintas: $3 \\times 2 \\times 1 = 6$ permutaciones.\n* **Resultado:** Multiplicamos las opciones de ambas decisiones independientes: $2 \\times 6 = 12$ arreglos posibles.\n\n**Tip Élite:** Cuando te enfrentes a problemas de permutaciones con restricciones, asigna siempre las posiciones limitadas primero. Al aislar las restricciones, el conteo de los elementos restantes se reduce a una permutación estándar."
+  },
+  {
+    "id": "m_mcm_10",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Tres atletas completan una vuelta en una pista circular en tiempos de $30$, $40$ y $60$ segundos respectivamente. Ambos inician su entrenamiento de manera simultánea desde la misma línea de partida y mantienen un ritmo constante.",
+    "q": "¿Cuál es el lapso mínimo de tiempo transcurrido para que los tres atletas vuelvan a cruzar de manera concurrente la línea de partida?",
+    "opts": [
+      "$120\\text{ s}$",
+      "$60\\text{ s}$",
+      "$240\\text{ s}$",
+      "$90\\text{ s}$"
+    ],
+    "ans": 0,
+    "exp": "El problema demanda encontrar un momento futuro en el que los ciclos individuales de cada atleta se sincronicen, lo cual se resuelve matemáticamente mediante el Mínimo Común Múltiplo (MCM).\n\n* **Paso 1:** Descomposición en factores primos de los tiempos dados:\n  * $30 = 2 \\times 3 \\times 5$\n  * $40 = 2^3 \\times 5$\n  * $60 = 2^2 \\times 3 \\times 5$\n* **Paso 2:** Cálculo del MCM. Seleccionamos los factores primos comunes y no comunes, elevados a su mayor exponente:\n  * Factores primos involucrados: $2, 3, 5$\n  * Mayores exponentes: $2^3, 3^1, 5^1$\n  * $\\text{MCM}(30, 40, 60) = 2^3 \\times 3 \\times 5 = 8 \\times 15 = 120$\n* **Conclusión:** Los atletas coincidirán nuevamente en la línea de meta a los $120$ segundos.\n\n**Tip Élite:** Problemas de ciclicidad o eventos concurrentes se abordan directamente utilizando el Mínimo Común Múltiplo (MCM). Asegúrate de realizar la descomposición prima correctamente para evitar cálculos erróneos."
+  },
+  {
+    "id": "v_pri_17",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La memoria episódica humana dista de fungir como un registro fonográfico inalterable que reproduce fidedignamente la realidad pasada. Cada vez que evocamos un suceso, orquestamos una reconstrucción del episodio primigenio empleando amalgamas del presente: nuestra labilidad emocional actual, paradigmas cognitivos adquiridos a posteriori e, incluso, relatos ajenos que se infiltran en nuestro entramado mnemotécnico. Ergo, resulta plausible que dos individuos que testificaron un mismo acontecimiento lo narren con divergencias notables, albergando ambos una convicción inquebrantable en la veracidad de su reconstrucción.",
+    "q": "¿Cuál es el postulado central que articula el fragmento anterior?",
+    "opts": [
+      "La memoria opera como un dispositivo analógico que reproduce hechos empíricos con absoluta fidelidad histórica.",
+      "El acto de recordar constituye un proceso reconstructivo influenciado por el presente, no una reproducción estática del pasado.",
+      "La discrepancia de memorias demuestra inequívocamente que solo una versión fenomenológica puede ostentar el carácter de verdad absoluta.",
+      "Las capacidades mnemotécnicas experimentan un refinamiento progresivo mediante la maduración cognitiva temporal."
+    ],
+    "ans": 1,
+    "exp": "La idea principal del texto subraya el carácter dinámico y maleable de la memoria, argumentando que recordar implica necesariamente una reconstrucción activa y subjetiva.\n\n* **Análisis de la tesis:** El autor afirma explícitamente que la memoria no es una \"grabadora\" inalterable, sino un ente que se reconstruye con \"piezas del presente\".\n* **Justificación de la opción B:** Esta opción sintetiza perfectamente esta premisa, al oponer la \"reproducción estática\" (la metáfora de la grabadora) al \"proceso reconstructivo\" influenciado por el estado actual del individuo.\n* **Descarte de distractores:** La opción A representa exactamente la tesis que el autor busca refutar. La opción C introduce una falsa disyuntiva sobre la \"verdad absoluta\", mientras que el texto enfatiza la convicción subjetiva de los narradores, no la verdad objetiva. La opción D introduce una conjetura sobre la mejora de la memoria que no se aborda en el fragmento.\n\n**Tip Élite:** En los ejercicios de idea principal, busca la formulación que englobe tanto la premisa inicial como la conclusión lógica del argumento. Las opciones que contradicen la premisa o se enfocan en detalles secundarios deben descartarse sistemáticamente."
+  },
+  {
+    "id": "v_imp_20",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Durante décadas inmemoriales, el viejo puente de roble resistió el tránsito parsimonioso de carretas y viandantes sin acusar fatiga. Sin embargo, con el advenimiento de los primeros vehículos motorizados de carga pesada, la administración local persistió en habilitarlo sin ejecutar refuerzo estructural alguno, escudándose en la inveterada tradición de su solidez. Una mañana aciaga, bajo una precipitación torrencial persistente, la estructura colapsó estrepitosamente.",
+    "q": "¿Qué inferencia lógica se desprende inexorablemente de la secuencia de eventos narrada?",
+    "opts": [
+      "La estructura original del puente ostentaba un carácter de indestructibilidad inherente frente a cualquier estímulo.",
+      "La fe ciega en un precedente histórico para desestimar condiciones novedosas y adversas constituye una negligencia fáctica.",
+      "La masa inercial de los vehículos motorizados resultaba intrínsecamente inferior a la capacidad de soporte proyectada.",
+      "El colapso estructural fue producto exclusivo e ineludible de la inclemencia meteorológica."
+    ],
+    "ans": 1,
+    "exp": "El texto plantea un escenario donde la inercia institucional y la complacencia frente a un cambio de paradigma (la llegada de camiones) resultan en un desastre.\n\n* **Análisis de la premisa:** Las autoridades no reforzaron el puente confiando en que \"siempre había aguantado\", ignorando por completo la introducción de una variable crítica nueva (camiones de carga pesada).\n* **Justificación de la opción B:** El colapso del puente (consecuencia) permite inferir lógicamente que la decisión de las autoridades —basada en un historial estático y no en las nuevas cargas dinámicas— fue un error grave o negligencia.\n* **Descarte de distractores:** La opción A es patentemente falsa a la luz del colapso. La opción C es un error fáctico, pues los camiones sobrepasaron la capacidad (de lo contrario no habría colapsado). La opción D asume que la lluvia fue la *única* causa, omitiendo la vulnerabilidad estructural previa descrita por el autor (las nuevas cargas).\n\n**Tip Élite:** Para identificar la idea implícita o inferencia, busca la conexión causal profunda que el autor no declara explícitamente pero que orquesta todo el sentido de la narración (en este caso, la inacción frente a un riesgo evidente)."
+  },
+  {
+    "id": "v_pro_15",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "El paradigma científico dista de erigirse como un dispensador de verdades absolutas e inmutables; más bien, provee las aproximaciones explicativas de mayor solidez empírica disponibles en un momento dado, las cuales mantienen una permeabilidad sistemática a la rectificación ante el escrutinio de evidencia novedosa. Su vigor epistemológico no reside en una pretendida infalibilidad apriorística, sino en su sofisticado mecanismo de autocorrección.\nAnalice las siguientes proposiciones derivadas del texto:\nI. El corpus científico ofrece postulados explicativos de naturaleza provisional, sujetos a revisión empírica continua.\nII. El objetivo teleológico de la ciencia es la enunciación de verdades definitivas y dogmáticas.\nIII. La resiliencia del método científico radica intrínsecamente en su capacidad de autocorrección estructurada.\nIV. La emergencia de una hipótesis refutada invalida de forma holística el proyecto científico.",
+    "q": "¿Qué combinación de proposiciones exhibe una congruencia absoluta con los postulados del fragmento?",
+    "opts": [
+      "Exclusivamente las proposiciones I y III.",
+      "Exclusivamente las proposiciones II y IV.",
+      "Únicamente la proposición I.",
+      "El conjunto integral de las proposiciones enumeradas."
+    ],
+    "ans": 0,
+    "exp": "El texto se enfoca en delimitar la naturaleza epistemológica de la ciencia, enfatizando su carácter falibilista y su método de revisión constante.\n\n* **Análisis de la proposición I:** Congruente. El texto afirma que la ciencia \"ofrece las mejores explicaciones disponibles, siempre abiertas a revisión\". Esto es sinónimo de explicaciones \"provisionales\" y \"sujetas a revisión\".\n* **Análisis de la proposición II:** Incongruente. Contradice directamente la primera línea: \"El método científico no garantiza verdades absolutas\".\n* **Análisis de la proposición III:** Congruente. Se alinea con la afirmación central: \"Su fuerza no está en no equivocarse nunca, sino en corregirse\".\n* **Análisis de la proposición IV:** Incongruente. El texto sostiene exactamente lo contrario; el error no invalida a la ciencia, sino que el proceso de corrección es su mayor fortaleza.\n* **Conclusión:** Por lo tanto, solo las proposiciones I y III son consistentes con el texto.\n\n**Tip Élite:** Evalúa cada proposición de manera aislada contra el texto original buscando equivalencias semánticas o contradicciones frontales. Ten especial cuidado con términos absolutos como \"definitivas\", \"dogmáticas\" o \"invalida por completo\", que suelen ser marcadores de opciones incorrectas."
+  },
+  {
+    "id": "v_per_14",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Ese mismo dosel forestal que ante los ojos del maderero se erige como una reserva de celulosa capitalizable, constituye para el ecólogo un complejo entramado de interdependencias tróficas, se transforma para el excursionista en un santuario catártico de serenidad inexplorada, y transmuta para el consorcio extractivo en una barrera topográfica superpuesta sobre un codiciado filón geológico.",
+    "q": "¿Qué postulado conceptual vehicula transversalmente el argumento presentado?",
+    "opts": [
+      "La explotación forestal es un imperativo categórico que debe supeditarse a las lógicas del capital.",
+      "La significación axiológica de un espacio físico es polivalente y contingente a los esquemas de interés del observador.",
+      "La hermenéutica ecológica es la única aproximación epistémicamente válida para comprender el ecosistema.",
+      "Los biomas boscosos carecen de cualquier dimensión económica tasable en la contemporaneidad."
+    ],
+    "ans": 1,
+    "exp": "El fragmento ilustra cómo un único objeto material (el bosque) es interpretado de maneras radicalmente diferentes dependiendo del observador.\n\n* **Análisis de la tesis:** El texto no evalúa moral ni económicamente el valor del bosque per se, sino que expone la coexistencia simultánea de valoraciones divergentes (comercial, científica, espiritual y de obstáculo).\n* **Justificación de la opción B:** Esta opción encapsula el concepto de \"polivalencia\" (múltiples significados) que está sujeta o \"contingente\" a la perspectiva o \"interés\" de cada individuo o entidad mencionada.\n* **Descarte de distractores:** La opción A asume una postura pro-tala que el texto no propone. La opción C eleva erróneamente la perspectiva del biólogo (ecólogo) a una verdad única, invalidando la intención del texto. La opción D contradice la perspectiva del leñador y la minera, para quienes sí tiene un valor económico (directo o indirecto).\n\n**Tip Élite:** Cuando un texto presenta una enumeración de perspectivas contrastantes sobre un mismo objeto, la idea central rara vez favorece a una sola; más bien, resalta la subjetividad o la multiplicidad interpretativa de la realidad observada."
+  },
+  {
+    "id": "v_cau_17",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "Cuando el depredador ápice es erradicado de un bioma, la densidad poblacional de sus taxones presa suele experimentar un incremento exponencial inmediato. Esta superpoblación induce a un sobrepastoreo sistémico que diezma la cobertura vegetal de sustento. Inexorablemente, este colapso en la base de recursos desencadena una hambruna generalizada que diezma, en un efecto de rebote, a las propias poblaciones herbívoras. Paradójicamente, la supresión del depredador termina socavando la viabilidad demográfica de quienes, a priori, parecían ser los directos beneficiados.",
+    "q": "Conforme a la dinámica ecológica expuesta, ¿cuál es el desenlace terminal ocasionado por la extirpación del depredador ápice?",
+    "opts": [
+      "Las especies herbívoras alcanzan un estadio de prosperidad biológica perpetua e inalterable.",
+      "Las poblaciones presa sufren un colapso demográfico severo derivado del agotamiento trófico.",
+      "La biomasa vegetal experimenta un desarrollo descontrolado exento de presiones herbívoras.",
+      "La homeostasis del ecosistema se mantiene estoicamente sin acusar perturbaciones significativas."
+    ],
+    "ans": 1,
+    "exp": "El texto expone una cadena de causa y consecuencia ecológica bien definida, donde el beneficio inicial resulta en un perjuicio final.\n\n* **Análisis de la secuencia:** 1) Desaparece el depredador $\\implies$ 2) Las presas aumentan $\\implies$ 3) Las presas agotan la vegetación (sobrepastoreo) $\\implies$ 4) El hambre diezma a las presas.\n* **Justificación de la opción B:** La pregunta indaga sobre el \"desenlace terminal\". El último eslabón de la cadena descrita es la drástica reducción poblacional de las presas a causa del hambre (agotamiento trófico o de recursos).\n* **Descarte de distractores:** La opción A es una visión a corto plazo (el beneficio inicial) que el texto desmiente como desenlace. La opción C contradice el texto (la vegetación es diezmada, no crece sin límite). La opción D es patentemente falsa, ya que se describen perturbaciones mayúsculas en el bioma.\n\n**Tip Élite:** En los ejercicios de causa-efecto complejos, mapea mentalmente (o anota) la cadena de sucesos. Asegúrate de distinguir entre efectos inmediatos, efectos secundarios y la conclusión final (desenlace terminal) que solicita la pregunta."
+  },
+  {
+    "id": "v_par_16",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "Aquel individuo cuya comprensión se halla constreñida exclusivamente a los linderos de su propio postulado ideológico, en rigor, adolece de una aprehensión fragmentaria: al eximirse del ejercicio de contrastación dialéctica con tesis divergentes, se condena a una ceguera epistémica respecto a las fisuras inherentes de su propia arquitectura argumentativa.",
+    "q": "¿Cuál de las siguientes alternativas consolida de manera más fidedigna la premisa discursiva del texto?",
+    "opts": [
+      "La profilaxis intelectual demanda una segregación sistemática frente a idearios ajenos y disonantes.",
+      "La asimilación profunda e integral de un constructo propio exige, ineludiblemente, someterlo a la fricción con paradigmas opuestos.",
+      "El clímax de la convicción intelectual se alcanza al atrincherarse en un solipsismo ideológico hermético.",
+      "Las proposiciones exógenas carecen de cualquier utilidad instrumental en la conformación del conocimiento riguroso."
+    ],
+    "ans": 1,
+    "exp": "El autor plantea que el conocimiento aislado de una idea es incompleto; la verdadera comprensión requiere someter esa idea al contraste con perspectivas ajenas.\n\n* **Análisis del fragmento:** Conocer solo lo propio es conocer \"a medias\" (aprehensión fragmentaria). No se ven los \"puntos débiles\" (fisuras) sin la \"contrastación dialéctica\".\n* **Justificación de la opción B:** Esta opción captura la esencia del argumento: para comprender algo \"de verdad\" (asimilación profunda), se debe someter a la \"fricción con paradigmas opuestos\" (contrastar con tesis divergentes).\n* **Descarte de distractores:** Las opciones A, C y D recomiendan el aislamiento intelectual (ignorar lo ajeno o atrincherarse), actitudes que el texto critica fuertemente como causas de una comprensión defectuosa.\n\n**Tip Élite:** La paráfrasis no solo debe coincidir temáticamente, sino que debe mantener el tono argumentativo y la relación lógica central (condición-resultado) de la premisa original. Identifica los sinónimos cultos utilizados en las opciones para asegurar la equivalencia semántica."
+  },
+  {
+    "id": "v_con_15",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "A pesar de la virulencia de los embates dialécticos dirigidos en su contra, no ofreció retórica encendida alguna; declinó descender al fango del agravio recíproco y, aún esgrimiendo una plétora de justificaciones para dejarse arrastrar por la indignación, optó deliberadamente por preservar una imperturbabilidad estoica y proseguir con sus deberes inalterado.",
+    "q": "¿Qué sustantivo encapsula con mayor precisión axiológica la disposición anímica descrita?",
+    "opts": [
+      "Templanza.",
+      "Pusilanimidad.",
+      "Apatía.",
+      "Hibris."
+    ],
+    "ans": 0,
+    "exp": "El texto describe a un individuo que, frente a un estímulo externo altamente negativo (provocación, burla), ejerce un control racional sobre sus impulsos emocionales.\n\n* **Análisis de la actitud:** La persona tenía \"motivos de sobra para enojarse\" pero eligió \"mantener la calma\". Esto implica una gestión activa de las pasiones y el autocontrol.\n* **Justificación de la opción A:** La *templanza* se define exactamente como la virtud cardinal que aconseja moderar los apetitos y el uso excesivo de los sentidos, sujetándolos a la razón (dominio propio ante la adversidad o tentación).\n* **Descarte de distractores:** La *pusilanimidad* (cobardía, opción B) implica miedo, pero el texto no sugiere miedo, sino decisión activa. La *apatía* (indiferencia, opción C) indica ausencia de sentimiento, mientras que aquí se sugiere que hubo motivos para sentir enojo, pero se controló. La *hibris* (soberbia/desmesura, opción D) es el antónimo del autocontrol mostrado.\n\n**Tip Élite:** Amplía tu vocabulario sobre virtudes, vicios y actitudes (taxonomía axiológica). Diferenciar sutilmente entre términos afines como apatía (no sentir) y templanza (sentir pero controlar) es clave en reactivos de nivel superior."
+  },
+  {
+    "id": "v_pri_18",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La inmersión en la literatura de ficción dista de ser un mero escapismo hedonista hacia realidades ilusorias. Al forzarnos a transmigrar cognitivamente hacia las idiosincrasias de personajes radicalmente disímiles a nuestro propio esquema, la narrativa literaria opera como un gimnasio de la cognición social: entrena nuestra maleabilidad para proyectar los estados afectivos ajenos. De hecho, múltiples investigaciones de neurociencia cognitiva han correlacionado de forma robusta la voracidad literaria con un ensanchamiento mensurable de la capacidad empática.",
+    "q": "¿Cuál es la premisa nuclear que vertebra el pasaje anterior?",
+    "opts": [
+      "El consumo de narrativa ficcional constituye un refugio estéril frente a las exigencias de la cotidianidad empírica.",
+      "La lectura de obras literarias ficcionales actúa como un catalizador instrumental para el refinamiento de la empatía humana.",
+      "La pedagogía moderna debería proscribir la ficción en favor de la literatura de ensayo para garantizar una cognición sana.",
+      "La eficacia inmersiva de una novela está estrictamente supeditada a la mimetización total entre el protagonista y el lector."
+    ],
+    "ans": 1,
+    "exp": "El fragmento tiene como propósito revalorizar la lectura de ficción, atribuyéndole un beneficio psicológico concreto basado en evidencia.\n\n* **Análisis del texto:** El autor rechaza la noción de la ficción como \"fuga inútil\" y argumenta que \"entrena\" nuestra capacidad de entender al otro, citando estudios que la asocian con una \"mayor empatía\".\n* **Justificación de la opción B:** Esta opción captura la idea de que la lectura de ficción no es estéril, sino un \"catalizador\" (acelerador/facilitador) para desarrollar o \"refinar\" la empatía, que es exactamente la tesis del pasaje.\n* **Descarte de distractores:** La opción A es la idea refutada en la primera línea. La opción C es una prescripción dogmática sobre lo que se \"debería\" leer, no presente en el texto. La opción D introduce una condición falsa según el texto, el cual afirma precisamente que nos ponemos en la piel de personajes \"muy distintos\" a nosotros, no mimetizados.\n\n**Tip Élite:** Las estructuras refutativas (aquellas que comienzan negando un prejuicio común para luego proponer una tesis novedosa) revelan su idea principal en la afirmación que sustituye al prejuicio rechazado."
+  },
+  {
+    "id": "v_imp_21",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Durante el interrogatorio mediático, el aspirante político articuló cada réplica mediante estructuras sintácticas laberínticas y de gran sonoridad retórica que, no obstante, exhibían una vacuidad propositiva absoluta; al concluir el certamen, ni el más agudo analista presente en el foro habría sido capaz de decodificar un solo axioma programático en su perorata.",
+    "q": "¿Qué deducción implícita resulta insoslayable a partir de la actitud descrita en el texto?",
+    "opts": [
+      "El aspirante estructuró un andamiaje propositivo de extrema solidez analítica.",
+      "El aspirante empleó el virtuosismo retórico como un mecanismo elusivo para no comprometerse con definiciones fácticas.",
+      "La brevedad temporal del formato impidió el desarrollo de una argumentación exhaustiva.",
+      "La sofisticación del discurso facilitó una comprensión unánime e irrefutable de su hoja de ruta política."
+    ],
+    "ans": 1,
+    "exp": "El texto retrata a un hablante hábil en el uso del lenguaje pero vacío en contenido propositivo.\n\n* **Análisis de la actitud:** Frases largas y sonoras que \"no decían nada concreto\" (vacuidad absoluta). El resultado es que nadie entendió \"qué proponía realmente\".\n* **Justificación de la opción B:** La discrepancia entre la forma rimbombante y la ausencia de contenido concreto sugiere implícitamente una estrategia de elusión. El político usó el lenguaje para rodear los temas sin aterrizarlos, evitando así el compromiso con políticas específicas (definiciones fácticas).\n* **Descarte de distractores:** La opción A afirma directamente lo contrario de la premisa (vacuidad absoluta). La opción C asume una limitación de tiempo que el texto jamás insinúa. La opción D asume que el público entendió el plan, cuando el texto afirma tajantemente que nadie pudo \"decodificar\" un solo axioma programático.\n\n**Tip Élite:** Identifica el contraste subyacente en el texto. Aquí el contraste es forma (retórica) vs. fondo (ideas). La inferencia lógica es que el exceso de forma se usó para ocultar u omitir deliberadamente el fondo."
+  },
+  {
+    "id": "v_pro_16",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "La ontología de toda decisión entraña, intrínsecamente, la abjuración de las alternativas disidentes: la elección de un derrotero específico se configura, simultáneamente, como la inmolación de las trayectorias no seleccionadas. En consecuencia, la excelencia en la toma de decisiones no radica en la utopía de evadir el menoscabo, sino en la sagacidad de asimilar aquella pérdida que ostenta la más alta rentabilidad existencial.\nExamine las siguientes proposiciones lógicas:\nI. La validación de una alternativa conlleva inmanentemente el sacrificio de las opciones paralelas.\nII. Resulta factible ejecutar determinaciones operativas en ausencia total de costos de oportunidad.\nIII. Una decisión óptima presupone la asunción estratégica de la claudicación menos gravosa o de mayor valor relativo.\nIV. Las resoluciones de alto impacto carecen sistémicamente de colaterales adversos o mermas asociadas.",
+    "q": "¿Qué proposiciones encuentran sustento fáctico en los argumentos esbozados por el autor?",
+    "opts": [
+      "Las proposiciones I y III manifiestan concordancia.",
+      "Las proposiciones II y IV manifiestan concordancia.",
+      "La proposición III es la única con validez.",
+      "La totalidad de las proposiciones enumeradas son válidas."
+    ],
+    "ans": 0,
+    "exp": "El fragmento expone una teoría económica/filosófica básica sobre la toma de decisiones basada en el costo de oportunidad y la optimización de pérdidas.\n\n* **Análisis de la proposición I:** Congruente. El texto afirma que \"toda decisión entraña... la abjuración de las alternativas disidentes\" (renunciar a otras opciones).\n* **Análisis de la proposición II:** Incongruente. Contradice la idea de que toda decisión es, simultáneamente, la \"inmolación de las trayectorias no seleccionadas\" (siempre hay una renuncia/pérdida).\n* **Análisis de la proposición III:** Congruente. Se alinea con la afirmación final: \"decidir bien... es asimilar aquella pérdida que ostenta la más alta rentabilidad existencial\" (asumir la mejor pérdida o la de mayor valor relativo).\n* **Análisis de la proposición IV:** Incongruente. Negar los \"colaterales adversos o mermas\" choca de frente con la \"utopía de evadir el menoscabo\". El texto afirma que siempre hay un costo.\n* **Conclusión:** Solo las proposiciones I y III se deducen del texto.\n\n**Tip Élite:** Domina la traducción de lenguaje figurado o complejo a lenguaje proposicional. Frases como \"inmolación de trayectorias\" simplemente significan \"costo de oportunidad\" o \"renuncia\". Esta decodificación rápida revela las opciones correctas."
+  },
+  {
+    "id": "m_geo_14",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"35\" y=\"15\" width=\"120\" height=\"120\" fill=\"rgba(46,230,166,.20)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><rect x=\"71\" y=\"51\" width=\"48\" height=\"48\" fill=\"var(--ink)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"74\" y=\"153\" fill=\"currentColor\" font-size=\"13\">6 cm</text><text x=\"82\" y=\"79\" fill=\"currentColor\" font-size=\"11\">4 cm</text></svg>",
+    "stem": "El diagrama anexo ilustra una superficie cuadrangular primaria cuyos lados poseen una longitud de $6\\text{ cm}$. En su interior se ha delineado y sustraído geométricamente un segundo cuadrángulo, concéntrico o no, cuyos lados exhiben una magnitud de $4\\text{ cm}$.",
+    "q": "Con base en estos parámetros dimensionales, ¿a cuánto asciende el área neta de la región sombreada que sobrevive a la sustracción?",
+    "opts": [
+      "$20\\text{ cm}^2$",
+      "$16\\text{ cm}^2$",
+      "$36\\text{ cm}^2$",
+      "$52\\text{ cm}^2$"
+    ],
+    "ans": 0,
+    "exp": "Este problema requiere la aplicación directa del principio de superposición y sustracción de áreas planas.\n\n* **Paso 1:** Determinar el área de la figura base (el cuadrado mayor). Utilizando la fórmula $A = l^2$, donde $l = 6\\text{ cm}$, tenemos que $A_{\\text{mayor}} = 6^2 = 36\\text{ cm}^2$.\n* **Paso 2:** Determinar el área de la oquedad geométrica (el cuadrado menor sustraído). Aplicando la misma fórmula con $l = 4\\text{ cm}$, resulta $A_{\\text{menor}} = 4^2 = 16\\text{ cm}^2$.\n* **Paso 3:** Calcular el área neta de la zona sombreada. Se ejecuta la sustracción algebraica: $A_{\\text{sombreada}} = A_{\\text{mayor}} - A_{\\text{menor}} = 36\\text{ cm}^2 - 16\\text{ cm}^2 = 20\\text{ cm}^2$.\n\n**Tip Élite:** El principio de que el área de una región compuesta puede calcularse restando el área de las \"perforaciones\" del área total del polígono envolvente es universal y se aplica independientemente de la posición relativa de las figuras (no importa si están centradas o no)."
+  },
+  {
+    "id": "m_cnt_14",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 160 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"80\" y1=\"20\" x2=\"80\" y2=\"140\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"20\" y1=\"80\" x2=\"140\" y2=\"80\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Analice con minuciosidad la representación esquemática adjunta, la cual exhibe una retícula regular de dimensiones $2 \\times 2$.",
+    "q": "Efectuando un escrutinio exhaustivo, ¿cuál es la cardinalidad del conjunto total de cuadrados perfectos que pueden ser identificados en la figura, independientemente de su escala superficial?",
+    "opts": [
+      "$4$",
+      "$5$",
+      "$6$",
+      "$8$"
+    ],
+    "ans": 1,
+    "exp": "En los problemas de conteo visual de figuras, la estrategia más robusta es clasificar los elementos por tamaño o dimensiones antes de sumarlos, evitando duplicidades u omisiones.\n\n* **Categoría 1: Cuadrados unitarios (dimensión $1 \\times 1$).** Al observar las celdas más elementales de la retícula, identificamos claramente $4$ cuadrados pequeños y discretos.\n* **Categoría 2: Cuadrados compuestos (dimensión $2 \\times 2$).** Si tomamos en consideración el contorno exterior perimetral que engloba a la totalidad de las celdas, este forma, por definición, $1$ cuadrado de mayor escala.\n* **Resultado:** La suma del número de cuadrados de ambas categorías arroja un total de $4 + 1 = 5$ cuadrados perfectos.\n\n**Tip Élite:** Sistematiza tu observación visual buscando patrones por escala. Un error clásico es obnubilarse con los elementos atómicos (las celdas pequeñas) ignorando las macro-estructuras emergentes (el marco total)."
+  },
+  {
+    "id": "m_cnt_15",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"15\" width=\"135\" height=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"150\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"60\" x2=\"150\" y2=\"60\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"15\" y1=\"105\" x2=\"150\" y2=\"105\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Inspeccione el diagrama matricial provisto, el cual despliega una retícula ortogonal particionada en una configuración de orden $3 \\times 3$.",
+    "q": "¿Cuál es la cuantía máxima de cuadrados geométricos perfectos discernibles en el entramado, considerando permutaciones de todas las dimensiones paramétricas plausibles?",
+    "opts": [
+      "$9$",
+      "$13$",
+      "$14$",
+      "$10$"
+    ],
+    "ans": 2,
+    "exp": "Para calcular el total de cuadrados en una cuadrícula $n \\times n$, empleamos un enfoque combinatorio estratificado por el tamaño del lado del cuadrado $k$ (donde $k = 1, 2, \\ldots, n$).\n\n* **Escala $k=1$ (cuadrados de $1 \\times 1$):** La cuadrícula base contiene $3 \\times 3 = 9$ unidades cuadrangulares discretas.\n* **Escala $k=2$ (cuadrados de $2 \\times 2$):** Consisten en bloques formados por 4 celdas. En la dimensión horizontal, un bloque de 2 celdas puede ubicarse en 2 posiciones; en la vertical, también en 2 posiciones. El total de combinaciones es $2 \\times 2 = 4$ cuadrados medianos.\n* **Escala $k=3$ (cuadrados de $3 \\times 3$):** Corresponde al límite perimetral de la figura, lo que define $1 \\times 1 = 1$ único cuadrado gigante.\n* **Sumatoria Total:** El inventario exhaustivo suma $9 + 4 + 1 = 14$ cuadrados perfectos.\n\n**Tip Élite:** Para cualquier retícula cuadrada de orden $n \\times n$, el número total de cuadrados identificables está dado matemáticamente por la suma de los primeros $n$ cuadrados perfectos: $\\sum_{k=1}^n k^2 = 1^2 + 2^2 + \\cdots + n^2$. En este caso ($n=3$): $1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14$."
+  },
+  {
+    "id": "m_cnt_16",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Obsérvese la representación planimétrica constituida por un polígono triangular macroscópico, el cual es seccionado transversalmente por una ceviana trazada desde su vértice superior u ortocentro aparente, intersecando el segmento basal.",
+    "q": "Procediendo a una evaluación topológica integral, ¿cuántas configuraciones triangulares cerradas pueden delimitarse en la totalidad del esquema?",
+    "opts": [
+      "$2$",
+      "$3$",
+      "$4$",
+      "$5$"
+    ],
+    "ans": 1,
+    "exp": "El conteo de figuras triangulares superpuestas requiere identificar tanto los polígonos simples como las uniones complejas que forman nuevos polígonos del mismo orden.\n\n* **Triángulos Simples:** La ceviana divisoria genera dos regiones triangulares adyacentes y mutumente excluyentes dentro de la estructura principal. Esto nos da un cómputo inicial de $2$ triángulos.\n* **Triángulos Compuestos:** La amalgama de estas dos regiones contiguas re-configura el triángulo envolvente macroscópico, aportando $1$ triángulo adicional al conteo.\n* **Cómputo Global:** Sumando las tipologías simples y compuestas, obtenemos un censo final de $2 + 1 = 3$ triángulos en el entramado.\n\n**Tip Élite:** Cuando líneas interiores particionan un polígono, visualiza siempre el problema en capas: cuenta primero los espacios atómicos indivisibles, y posteriormente evalúa progresivamente las siluetas generadas por la aglomeración aditiva de dichas piezas."
+  },
+  {
+    "id": "m_geo_15",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 195 165\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,30 120,30 120,75 170,75 170,140 20,140\" fill=\"rgba(77,163,255,.12)\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"80\" y=\"156\" fill=\"currentColor\" font-size=\"12\">8 cm</text><text x=\"2\" y=\"92\" fill=\"currentColor\" font-size=\"12\">6 cm</text></svg>",
+    "stem": "El polígono irregular exhibido, con una morfología en \"L\", es el resultado empírico de substraer una muesca ortogonal dispuesta en un vértice de un paralelepípedo rectangular originario, cuyas dimensiones axiales eran de $8\\text{ cm}$ de base por $6\\text{ cm}$ de altura.",
+    "q": "¿Qué longitud rectilínea define de manera rigurosa el perímetro exterior de este cuerpo geométrico irregular?",
+    "opts": [
+      "$28\\text{ cm}$",
+      "$22\\text{ cm}$",
+      "$24\\text{ cm}$",
+      "$20\\text{ cm}$"
+    ],
+    "ans": 0,
+    "exp": "Este ejercicio pone a prueba la compresión intuitiva de las propiedades de conservación del perímetro en sustracciones ortogonales de esquinas.\n\n* **Análisis de la perturbación:** Cuando se amputa un segmento rectangular exclusivamente en una esquina o vértice de un rectángulo mayor, los dos nuevos segmentos ortogonales creados hacia el interior de la muesca poseen longitudes exactamente idénticas a los dos segmentos externos que fueron eliminados.\n* **Cálculo de conservación:** Si mentalmente \"empujamos\" o proyectamos los nuevos bordes hundidos hacia fuera, hasta alinearlos con los límites originales, reconstituiremos el perímetro prístino del rectángulo matriz.\n* **Evaluación final:** El cálculo se simplifica al perímetro del rectángulo no perturbado: $P = 2 \\times (\\text{Base} + \\text{Altura}) = 2 \\times (8\\text{ cm} + 6\\text{ cm}) = 2 \\times 14\\text{ cm} = 28\\text{ cm}$.\n\n**Tip Élite:** La eliminación de secciones rectangulares ancladas en las esquinas modifica sustancialmente el área, pero mantiene invariantemente constante el perímetro original de un polígono ortogonal."
+  },
+  {
+    "id": "m_geo_16",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 200 120\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"100\" x2=\"180\" y2=\"100\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"100\" y1=\"100\" x2=\"45\" y2=\"32\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"52\" y=\"92\" fill=\"currentColor\" font-size=\"13\">130°</text><text x=\"128\" y=\"92\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "El diagrama exhibe un arreglo de ángulos adyacentes estructurados sobre un eje colineal continuo. El valor angular de la porción obtusa está cuantificado en $130^\\circ$.",
+    "q": "Con base en los postulados euclidianos elementales, ¿cuál es la magnitud exacta del ángulo suplementario incógnito?",
+    "opts": [
+      "$50^\\circ$",
+      "$60^\\circ$",
+      "$40^\\circ$",
+      "$130^\\circ$"
+    ],
+    "ans": 0,
+    "exp": "La resolución se fundamenta en un axioma primario de la geometría plana relacionado con ángulos adyacentes.\n\n* **Axioma rector:** Un par de ángulos adyacentes cuyos lados no comunes configuran una recta perfecta constituyen, por imperativo geométrico, un ángulo llano o plano, cuya dimensión inamovible es de $180^\\circ$.\n* **Planteamiento algebraico:** Se establece la ecuación aditiva: $130^\\circ + x = 180^\\circ$, donde $x$ denota la medida del ángulo inexplorado.\n* **Despeje:** $x = 180^\\circ - 130^\\circ = 50^\\circ$.\n\n**Tip Élite:** Memoriza que la cualidad de \"colinealidad\" o la presencia explícita de una \"línea recta continua\" como base, es el indicio infalible que autoriza el empleo directo de la constante de $180^\\circ$ para resolver complementos y suplementos angulares."
+  },
+  {
+    "id": "m_ari_18",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 250 70\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"9\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"37\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"65\" y=\"15\" width=\"28\" height=\"40\" fill=\"rgba(46,230,166,.55)\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"93\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"121\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"149\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"177\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"15\" width=\"28\" height=\"40\" fill=\"none\" stroke=\"var(--brand)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "El prisma gráfico rectangular presentado experimenta una segmentación discreta en múltiples subdivisiones modulares de idénticas proporciones volumétricas, albergando una fracción de ellas un relleno tonal distintivo.",
+    "q": "¿Qué formulación racional irreducible dictamina la proporción exacta del dominio geométrico que ostenta sombreado?",
+    "opts": [
+      "$\\frac{3}{8}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{1}{3}$"
+    ],
+    "ans": 0,
+    "exp": "La conceptualización de las fracciones como relaciones de un todo particionado requiere identificar correctamente sus dos elementos constitutivos: el numerador y el denominador.\n\n* **Determinación del denominador (El universo de partición):** Contabilizamos empíricamente el universo total de segmentos unitarios que configuran el cuerpo del prisma. Observamos una iteración secuencial de $8$ módulos continuos.\n* **Determinación del numerador (La muestra de interés):** Efectuamos un censo de los submódulos que presentan la característica evaluada (sombreado activo), hallando un cómputo de $3$ unidades.\n* **Integración del cociente:** La relación matemática que asocia el conjunto de interés respecto a la totalidad se transcribe formalmente como la fracción $\\frac{3}{8}$.\n\n**Tip Élite:** Corrobora fehacientemente que las fracciones sugeridas en las opciones evaluativas ostentan una forma irreducible. En este caso particular, el máximo común divisor entre $3$ y $8$ es la unidad ($1$), ratificando su irreductibilidad algorítmica."
+  },
+  {
+    "id": "m_geo_17",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g stroke=\"var(--line)\" stroke-width=\"1\"><line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"120\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"120\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"120\"/><line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"120\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"120\"/><line x1=\"30\" y1=\"30\" x2=\"150\" y2=\"30\"/><line x1=\"30\" y1=\"60\" x2=\"150\" y2=\"60\"/><line x1=\"30\" y1=\"90\" x2=\"150\" y2=\"90\"/><line x1=\"30\" y1=\"120\" x2=\"150\" y2=\"120\"/></g><polygon points=\"30,120 150,120 30,30\" fill=\"rgba(77,163,255,.18)\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Considérese un sistema de coordenadas cartesiano implícito, cuya métrica de enrejado está calibrada a escala de $1\\text{ cm}^2$ por cuadrante unitario. Inscrito en él descansa un triángulo rectángulo delimitado por vectores ortogonales de longitud axial correspondiente a $4\\text{ cm}$ (eje de abscisas) y $3\\text{ cm}$ (eje de ordenadas).",
+    "q": "¿Qué área escalar define la magnitud espacial encerrada en el interior de dicho triángulo?",
+    "opts": [
+      "$6\\text{ cm}^2$",
+      "$12\\text{ cm}^2$",
+      "$7\\text{ cm}^2$",
+      "$10\\text{ cm}^2$"
+    ],
+    "ans": 0,
+    "exp": "El cómputo de la extensión planimétrica de una silueta triangular estandarizada recurre a una formulación algebraica clásica que relaciona sus dos dimensiones fundamentales.\n\n* **Identificación paramétrica:** Los datos consignados establecen la envergadura de la base ($b = 4\\text{ cm}$) y la altitud o elevación relativa ($h = 3\\text{ cm}$).\n* **Aplicación algorítmica:** Invocamos el teorema estipulado para áreas de polígonos trigrupales: $Área = \\frac{b \\cdot h}{2}$.\n* **Cálculo de la expresión:** Substituyendo los valores nominales en la expresión analítica, se obtiene: $Área = \\frac{4\\text{ cm} \\cdot 3\\text{ cm}}{2} = \\frac{12\\text{ cm}^2}{2} = 6\\text{ cm}^2$.\n\n**Tip Élite:** La retícula milimétrica o centimétrica adyacente a una figura geométrica suele suministrar confirmación visual de la base y altura paramétrica. Asegúrate de verificar las mediciones en los ejes cartesianos subyacentes antes de aplicar la resolución analítica."
+  },
+  {
+    "id": "v_lec_1",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Históricamente, el consenso sociológico presuponía que el talento era un atributo ontológicamente innato: un don genético presente o ausente de forma perentoria. En contraste, las corrientes recientes en psicología del desempeño matizan este postulado: si bien es innegable la existencia de predisposiciones basales, el vector determinante que propulsa la pericia superlativa es la práctica deliberada, un régimen disciplinario enfocado en la repetición consciente, la auditoría continua de deficiencias y la asunción de fricciones cognitivas marginales. Ergo, la brillantez excepcional, más que una coordenada inicial estática, se perfila como el epifenómeno de un esfuerzo metódico e iterativo a largo plazo.",
+    "q": "¿Cuál es la proposición fundamental que cristaliza el argumento rector del pasaje?",
+    "opts": [
+      "El genio es un constructo puramente genético que florece independientemente del contexto de desarrollo.",
+      "La maestría excepcional no es primordialmente congénita, sino producto del cultivo perseverante mediante práctica analítica.",
+      "La magnitud del entrenamiento no ejerce un impacto estadísticamente significativo en la manifestación de competencias avanzadas.",
+      "Las predisposiciones biológicas son condición sine qua non, sufriendo el esfuerzo una irrelevancia instrumental total."
+    ],
+    "ans": 1,
+    "exp": "El texto refuta un mito arraigado sobre la naturaleza del talento, proponiendo en su lugar una teoría basada en la acción formativa y correctiva.\n\n* **Análisis de la tesis:** El autor desecha la noción de talento como \"don genético presente o ausente\" y postula que lo determinante es la \"práctica deliberada\" (repetición, corrección, esfuerzo). Concluye que la brillantez es resultado del \"esfuerzo metódico\".\n* **Justificación de la opción B:** Rescatan a la perfección ambas partes del argumento del autor: la maestría \"no es primordialmente congénita\" y es el \"producto del cultivo... mediante práctica analítica\".\n* **Descarte de distractores:** La opción A es el paradigma histórico que el autor refuta. Las opciones C y D minimizan brutalmente el rol del esfuerzo y la práctica, colocándose en franca oposición a la tesis medular del texto.\n\n**Tip Élite:** Los conectores de contraste (\"En contraste\", \"Sin embargo\", \"Por el contrario\") a menudo introducen la tesis real del autor en oposición a un paradigma previo, marcando la localización de la idea principal en el entramado textual."
+  },
+  {
+    "id": "v_lec_2",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Toda la comarca aguardaba con ferviente expectativa el arribo inminente del nuevo facultativo de la salud. Transcurrieron ciclos lunares enteros y la residencia destinada a su morada perpetuaba su aura de clausura con los postigos inquebrantablemente sellados; el boticario, previendo una bonanza en dispensaciones, inició la ingrata tarea de retornar el acopio farmacológico excedentario; y en el andén ferroviario principal, el fastuoso lienzo de recepción experimentaba una lenta pero implacable disolución cromática a merced de la intemperie pertinaz.",
+    "q": "¿Qué conjetura incontrovertible subyace entre las líneas del relato, a pesar de no materializarse explícitamente?",
+    "opts": [
+      "El galeno logró afincarse en la periferia de la comarca sorteando inconvenientes logísticos menores.",
+      "El esperado practicante de medicina jamás concretó su desplazamiento hacia la comunidad de acogida.",
+      "El tejido social de la comarca exhibía un cuadro de salud tan prístino que volvía superflua la asistencia médica.",
+      "La botica de la municipalidad clausuró sus operaciones de forma irrevocable por quiebra inminente."
+    ],
+    "ans": 1,
+    "exp": "El párrafo emplea indicios acumulativos sobre el paso del tiempo y preparativos fallidos para retratar la frustración de una espera incumplida.\n\n* **Análisis de los indicios:** \"Postigos inquebrantablemente sellados\", retorno de \"acopio farmacológico excedentario\", y el lienzo de recepción en \"disolución cromática\".\n* **Justificación de la opción B:** Ninguno de los eventos preparatorios (casa, medicinas, cartel) cumplió su función y el paso del tiempo degradó las intenciones, lo que implica de forma directa y concluyente que el sujeto de la espera (el médico) jamás llegó.\n* **Descarte de distractores:** La opción A niega frontalmente las pistas de abandono total en la residencia. La opción C es una inferencia falaz sin soporte en el texto (la gente lo esperaba \"con ferviente expectativa\"). La opción D extrapola incorrectamente el retorno de excesos de inventario hacia una clausura o quiebra total de la farmacia.\n\n**Tip Élite:** La técnica literaria de mostrar sin decir (*show, don't tell*) provee un exceso de detalles circunstanciales (consecuencias de una ausencia) para que el lector deduzca invariablemente el hecho fáctico que las unifica."
+  },
+  {
+    "id": "v_lec_3",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Todo aquel postulante que se sometió a las rigurosas iteraciones del simulador virtual obtuvo invariablemente la certificación oficial de pericia vehicular. Un registro administrativo certifica fehacientemente que el ciudadano Carlos fue acreedor de dicha licencia de conducción sin contratiempos.",
+    "q": "Sustentándose exclusivamente en los preceptos lógicos enunciados, ¿qué conclusión irrebatible puede ser derivada?",
+    "opts": [
+      "Es empíricamente axiomático que el ciudadano Carlos cursó el entrenamiento de simulación.",
+      "Es categoricamente inviable que el ciudadano Carlos haya empleado los simuladores de evaluación.",
+      "Resulta fácticamente imposible determinar de forma unívoca si el ciudadano Carlos interactuó con la interfaz virtual.",
+      "El dispositivo de simulación resulta inoperante y carente de eficacia respecto a las tasas de aprobación general."
+    ],
+    "ans": 2,
+    "exp": "El texto plantea un silogismo clásico con una condición suficiente, pero no una condición necesaria.\n\n* **Estructura lógica:** Premisa 1: Si A (entrenar con simulador) $\\implies$ B (aprobar el examen). Premisa 2: Ocurre B (Carlos aprobó).\n* **Análisis del error común:** Concluir A a partir de B es la \"falacia de afirmación del consecuente\". Que el simulador garantice el éxito no significa que sea la *única* forma de lograrlo (podría haber aprobado tomando clases con sus padres).\n* **Justificación de la opción C:** Debido a que aprobar es condición necesaria pero no suficiente para probar el uso del simulador, es lógicamente imposible saber con certeza si Carlos lo usó o no.\n* **Descarte de distractores:** La A comete la falacia mencionada. La B afirma dogmáticamente lo contrario sin pruebas. La D niega la premisa 1.\n\n**Tip Élite:** Domina la lógica condicional básica. Si $P \\implies Q$, entonces saber $Q$ no te dice nada seguro sobre $P$. Solo si tuvieras $P \\implies Q$ y supieras $\\neg Q$ (no aprobó), podrías concluir $\\neg P$ (no usó el simulador)."
+  },
+  {
+    "id": "v_lec_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Desde el prisma pragmático del ingeniero civil, el longevo viaducto ferromagnético encarna un vestigio estructural caduco susceptible de demolición técnica; en la óptica retrospectiva del historiador industrial, representa un eslabón patrimonial invaluable sobre los albores de la metalurgia local; en tanto, para los transeúntes cotidianos, la mole reticulada funge llanamente como el vector de desplazamiento más pragmático y expedito hacia la institución académica adyacente.",
+    "q": "¿Qué directriz axiológica fundamenta transversalmente la disertación del texto?",
+    "opts": [
+      "La preservación de los patrimonios estructurales debe imponerse ante los criterios de innovación urbana.",
+      "La valencia y el sentido ontológico de un ente empírico son constructos maleables sujetos al paradigma de interés del observador.",
+      "Los razonamientos de la ingeniería moderna incurren en una falibilidad flagrante en su estimación de infraestructuras vetustas.",
+      "Los puentes forjados en hierro carecen en la actualidad de una operatividad funcional remanente."
+    ],
+    "ans": 1,
+    "exp": "El texto yuxtapone tres visiones completamente divergentes sobre un mismo puente.\n\n* **Análisis de la premisa:** Las perspectivas del ingeniero (funcional/obsoleto), historiador (patrimonial) y los vecinos (utilitaria) se presentan en igualdad de condiciones, sin que el narrador declare una como verdadera o superior.\n* **Justificación de la opción B:** El argumento subyacente es que el \"sentido ontológico de un ente\" (qué es y cuánto vale el puente) es \"contingente\" (depende) de los intereses de quien lo evalúa (el ingeniero, el historiador, el vecino).\n* **Descarte de distractores:** La opción A es una opinión prescriptiva sobre patrimonios que el autor omite esgrimir. La opción C toma partido indebidamente contra el ingeniero. La opción D contradice la experiencia empírica de los vecinos, para quienes la funcionalidad está intacta.\n\n**Tip Élite:** Cuando encares pasajes que describen opiniones múltiples, evita las respuestas que seleccionen a un solo bando como ganador, a menos que el tono del autor favorezca explícitamente a uno. Identifica siempre el principio general subyacente (ej., la subjetividad humana)."
+  },
+  {
+    "id": "v_lec_5",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El acto reflejo de procurar iluminación artificial al ingresar a un recinto aparenta ser un suceso mecánico de inmediatez banal: la mera manipulación cinética de un conmutador de palanca. Subyacente a esta aparente nimiedad fenomenológica, sin embargo, existe un colosal engranaje infraestructural que involucra diques monumentales de captación, generadores termoeléctricos, telarañas transcontinentales de conductos superconductores, bancos de transformación perimétrica de alta tensión y, crucialmente, algoritmos orquestadores que sincronizan hiperactivamente las fluctuaciones de consumo energético para permitir que ese minúsculo filamento, simplemente, alcance la incandescencia deseada.",
+    "q": "¿Qué dicotomía conceptual explota el autor como núcleo de su argumentación?",
+    "opts": [
+      "La intrínseca volatilidad de la energía frente a los protocolos de seguridad industrial.",
+      "La abismal disonancia entre la frugalidad de un acto cotidiano y la laberíntica arquitectura sistémica que lo viabiliza.",
+      "La onerosidad financiera del servicio eléctrico con respecto al beneficio residual entregado al consumidor masivo.",
+      "El perjuicio irremediable causado a los cauces hídricos con fines de industrialización acelerada."
+    ],
+    "ans": 1,
+    "exp": "El texto confronta la experiencia superficial del usuario de electricidad con la realidad técnica abrumadora que sucede en el trasfondo.\n\n* **Análisis del fragmento:** El autor utiliza la oposición entre \"inmediatez banal / mera manipulación\" contra el \"colosal engranaje infraestructural / algoritmos orquestadores\".\n* **Justificación de la opción B:** Esta opción sintetiza perfectamente esta oposición. Identifica el contraste entre la sencillez (frugalidad) del acto (pulsar el interruptor) y la complejidad masiva (arquitectura sistémica) requerida para que suceda.\n* **Descarte de distractores:** La opción A, que menciona peligrosidad o seguridad, está ausente de la descripción técnica. La opción C se desvía al aspecto económico, del cual no hay mención. La opción D asume un tono ecologista sobre daño ambiental ajeno a los propósitos del autor en este segmento.\n\n**Tip Élite:** Los reactivos de comprensión orientados a \"contrastes\" exigen localizar los polos opuestos presentados en el texto. En este ejercicio, los polos son clarísimos: simple/fácil frente a complejo/masivo, descartando automáticamente opciones basadas en otros espectros (barato/caro, seguro/peligroso)."
+  },
+  {
+    "id": "v_lec_6",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El individuo propenso a prodigar compromisos desmesurados y garantías verbales a diestra y siniestra forja, de forma irremediable, su propia ruina crediticia: los juramentos esparcidos al viento sin pudor ni tamiz agotan el capital simbólico de la confianza, despojando al verbo de la gravedad específica que fundamenta la credibilidad humana.",
+    "q": "¿Qué aseveración enuncia de manera más elocuente la moraleja transversal del fragmento?",
+    "opts": [
+      "La profusión desbordada de compromisos orales es una estrategia inexcusable para cimentar popularidad táctica.",
+      "La banalización del acto de prometer, derivada de un exceso no calificado, licúa inexorablemente el prestigio del emisor.",
+      "Un alto porcentaje del tejido de promesas sociales culmina en un ciclo inevitable de ejecución satisfactoria.",
+      "La prudencia discursiva obliga a erradicar de forma total y dogmática el acto de contraer cualquier promesa con terceros."
+    ],
+    "ans": 1,
+    "exp": "El texto reflexiona sobre cómo la sobreproducción de promesas disminuye el valor individual de cada una y, por extensión, devalúa la credibilidad del hablante.\n\n* **Análisis de la metáfora:** El autor equipara las promesas a una especie de moneda; \"juramentos esparcidos... agotan el capital simbólico\" y \"despojan... de la gravedad\".\n* **Justificación de la opción B:** La inflación o \"banalización\" de promesas \"licúa\" (diluye, vacía de valor) la credibilidad o \"prestigio\" de quien las emite, capturando perfectamente el tono de advertencia moral del texto.\n* **Descarte de distractores:** La opción A dice que prodigar promesas forja popularidad, justo la tesis contraria. La opción C afirma que las promesas siempre se cumplen, ignorando el foco central del texto en la desilusión y pérdida de peso. La opción D, como suele ocurrir con afirmaciones dogmáticas (\"erradicar de forma total\"), va un paso más allá del autor, que critica el exceso (la inflación de promesas), no el acto intrínseco de prometer.\n\n**Tip Élite:** Busca el trasfondo metafórico que usa el autor. Si habla de \"peso\", \"capital\" y \"agotar\", la paráfrasis correcta probablemente aluda a una devaluación o pérdida de sustento moral. Las opciones extremistas son casi siempre un distractor malicioso."
+  },
+  {
+    "id": "v_lec_7",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La correlación estadística advierte que el pico histórico de expendio de helados acaece exactamente en los meses que registran la cúspide anual en la siniestralidad por inmersión acuática costera. Sería un dislate cognitivo mayor postular que el consumo de derivados lácteos gélidos propicia episodios letales de asfixia. Evidentemente, ambas variables se disparan traccionadas por un tercer agente unificador invisible en los datos aislados: el incremento térmico estival, que aglomera masas tanto en vitrinas refrigeradas como en zonas de oleaje.",
+    "q": "¿Qué máxima epistemológica queda ilustrada contundentemente a través del ejemplo provisto en el texto?",
+    "opts": [
+      "El consumo de golosinas criogénicas cataliza fisiológicamente los calambres causantes de inmersiones fatales.",
+      "La sincronía o solapamiento estadístico entre dos fenómenos empíricos no equivale inherentemente a una causalidad unidireccional.",
+      "Las políticas de salubridad gubernamentales fallan al no clausurar expendios azucarados en las cercanías de litorales.",
+      "El patrón de comportamiento de las masas en climas tórridos elude la asiduidad a enclaves marítimos."
+    ],
+    "ans": 1,
+    "exp": "El ejemplo utilizado en el pasaje demuestra una de las falacias lógicas más extendidas: confundir una relación estadística con una relación de causalidad.\n\n* **Análisis de la argumentación:** A (ventas de helado) y B (ahogamientos) ocurren a la vez, pero el autor califica como \"dislate cognitivo\" decir que A causa B. Luego, expone que C (verano/calor) causa independientemente tanto A como B.\n* **Justificación de la opción B:** El texto advierte que \"solapamiento estadístico\" (correlación) no equivale a \"causalidad\". Ambas pueden dispararse juntas y no ser causa una de la otra.\n* **Descarte de distractores:** La opción A ejemplifica la falacia precisa que el autor busca demoler. Las opciones C y D son deducciones disparatadas y tangenciales que no captan la moraleja central, enfocada en la metodología científica y en la correcta interpretación de la coincidencia.\n\n**Tip Élite:** El principio *\"Correlación no implica causalidad\"* (*Cum hoc ergo propter hoc*) es un pilar recurrente en exámenes de pensamiento crítico y análisis verbal avanzado."
+  },
+  {
+    "id": "v_lec_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "En el seno del consejo directivo, el consenso efervescente en torno al memorándum de reestructuración fue unánime; las lisonjas abundaron y las proyecciones financieras se ovacionaron. Sin embargo, en el instante preciso en que la directiva ejecutiva requirió voluntarios para asumir la capitanía táctica del proyecto, el clamor aprobatorio enmudeció súbitamente, el escrutinio visual se desvió de forma sincronizada hacia los folios de notas de escritorio y, de manera misteriosa, más de un ejecutivo evocó súbitamente compromisos ineludibles impostergables en su agenda.",
+    "q": "¿Qué juicio inferencial se desprende ineluctablemente del comportamiento grupal del consejo?",
+    "opts": [
+      "El equipo directivo desbordaba de un afán proactivo por adjudicarse el rol de vanguardia en la estrategia expuesta.",
+      "La efervescencia discursiva frente al plan era un formalismo carente del respaldo fáctico de un compromiso logístico.",
+      "El planteamiento de la reestructuración fue sistemáticamente vilipendiado y repudiado por inconsistencias flagrantes.",
+      "La presidencia corporativa procedió a la invalidación y suspensión inmediata de la orden del día."
+    ],
+    "ans": 1,
+    "exp": "El fragmento ilustra una dinámica corporativa donde el apoyo general y verbal no se traduce en voluntad de hacerse responsable.\n\n* **Análisis de las actitudes:** 1) Ovaciones y \"consenso efervescente\" durante la presentación del plan. 2) Miradas esquivas, \"clamor que enmudeció\" y súbitos \"compromisos ineludibles\" cuando tocó asignar el trabajo duro (la \"capitanía táctica\").\n* **Justificación de la opción B:** La inferencia directa es que el apoyo era retórico (\"formalismo\"). Todos estaban a favor del plan siempre y cuando no fueran ellos los encargados de sacarlo adelante (ausencia de \"compromiso logístico\").\n* **Descarte de distractores:** La opción A es diametralmente opuesta al texto (se describe el rechazo activo al liderazgo). La opción C es falsa en la etapa inicial de aprobación (\"ovacionaron\"). La opción D inventa una acción punitiva de la presidencia de la cual no hay indicio alguno en el párrafo.\n\n**Tip Élite:** Observa la escisión narrativa: a menudo los autores contrastan lo que la gente *dice* con lo que la gente *hace* en la siguiente frase. La inferencia real se apoya sistemáticamente en las acciones, pues en la narrativa, las acciones exponen la motivación verdadera que contradice la fachada verbal."
+  },
+  {
+    "id": "m_cnt_17",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 170 170\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"120\" height=\"120\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"115\" y1=\"25\" x2=\"115\" y2=\"145\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"55\" x2=\"145\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"85\" x2=\"145\" y2=\"85\" stroke=\"var(--math)\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"115\" x2=\"145\" y2=\"115\" stroke=\"var(--math)\" stroke-width=\"1.5\"/></svg>",
+    "stem": "Analice con el debido rigor la cuadrícula geométrica expuesta a continuación, correspondiente a un mosaico matricial regular de escala $4 \\times 4$.",
+    "q": "Aplicando los fundamentos del escrutinio sistemático, ¿cuál es el cómputo definitivo de las figuras de geometría cuadrangular perfecta que anidan en el entramado, incluyendo a todas las subunidades de cualquier módulo dimensional posible?",
+    "opts": [
+      "$16$",
+      "$26$",
+      "$30$",
+      "$20$"
+    ],
+    "ans": 2,
+    "exp": "El cálculo del volumen total de cuadrados inmersos en una malla $n \\times n$ obedece a un axioma de conteo combinatorial que suma los cuadrados progresivamente más grandes.\n\n* **Cálculo de base (Tamaño $1 \\times 1$):** El fondo elemental consiste de $4 \\times 4 = 16$ cuadrados mínimos.\n* **Tamaño $2 \\times 2$:** Un bloque de $2 \\times 2$ tiene 3 posiciones de libertad horizontales y 3 verticales en la cuadrícula de 4. Total: $3 \\times 3 = 9$ cuadrados medianos.\n* **Tamaño $3 \\times 3$:** Un bloque de $3 \\times 3$ tiene 2 posiciones de libertad horizontales y 2 verticales. Total: $2 \\times 2 = 4$ cuadrados grandes.\n* **Límites máximos (Tamaño $4 \\times 4$):** El margen circundante representa $1$ gigantesco cuadrado absoluto.\n* **Consolidación:** El inventario final equivale a $16 + 9 + 4 + 1 = 30$ cuadrados.\n\n**Tip Élite:** La progresión sigue exactamente la fórmula de la suma de cuadrados de enteros consecutivos: $\\sum_{i=1}^n i^2 = \\frac{n(n+1)(2n+1)}{6}$. Para un tablero de ajedrez ($n=8$), por ejemplo, habría 204 cuadrados."
+  },
+  {
+    "id": "m_cnt_18",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"90,15 20,135 160,135\" fill=\"rgba(77,163,255,.10)\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"67\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"90\" y1=\"15\" x2=\"113\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "El esbozo gráfico exhibe una estructura en forma de triedro proyectivo o triángulo principal, cuyo núcleo espacial es escindido y fragmentado por un par de cevianas incidentes en el lado inferior, trazadas desde el vértice supremo.",
+    "q": "Sustentando sus deducciones en las reglas de las figuras inclusivas múltiples, ¿cuál es el volumen numérico exhaustivo de triángulos que coexisten, latentes o tangibles, en la ilustración?",
+    "opts": [
+      "$4$",
+      "$5$",
+      "$6$",
+      "$7$"
+    ],
+    "ans": 2,
+    "exp": "El conteo de triángulos anidados en una misma base colineal y compartiendo un vértice apical responde a un análisis por conjuntos adyacentes.\n\n* **Nivel 1 (Triángulos fundamentales):** Las dos cevianas fraccionan la entidad en $3$ sub-triángulos básicos y consecutivos que no contienen otras líneas interiores.\n* **Nivel 2 (Triángulos ensamblados de 2 bloques):** Si agrupamos los triángulos fundamentales adyacentes en conjuntos de 2, hallamos un par situado a la izquierda y otro a la derecha. Total: $2$ triángulos medianos.\n* **Nivel 3 (Triángulo contenedor):** El ensamble global de todos los componentes restituye el triángulo primigenio del perímetro. Total: $1$ triángulo general.\n* **Agregado:** La adición final confiere un total de $3 + 2 + 1 = 6$ figuras.\n\n**Tip Élite:** Todo triángulo delimitado por un vértice superior y líneas cruzando a su base, obedece al sumatorio de los fragmentos inferiores: si la base se divide en $n$ secciones, el total de triángulos está determinado por $\\frac{n(n+1)}{2}$."
+  },
+  {
+    "id": "m_cnt_19",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 210 90\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"30\" width=\"170\" height=\"40\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"76\" y1=\"30\" x2=\"76\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"133\" y1=\"30\" x2=\"133\" y2=\"70\" stroke=\"var(--math)\" stroke-width=\"2\"/></svg>",
+    "stem": "Se despliega una cinta euclidiana conformada de manera que un eje longitudinal constante ha sido fragmentado por cortes perpendiculares equidistantes, dando lugar a un tríptico de módulos ortogonales isométricos.",
+    "q": "¿Qué cómputo describe escrupulosamente la suma final de rectángulos configurables subyacentes, producto del solapamiento sucesivo de los distintos eslabones de la tira?",
+    "opts": [
+      "$3$",
+      "$4$",
+      "$5$",
+      "$6$"
+    ],
+    "ans": 3,
+    "exp": "Similar al conteo de triángulos superpuestos sobre un plano adyacente, enumerar rectángulos en secuencias lineales exige clasificar agrupaciones consecutivas.\n\n* **Nivel de base:** Consideramos a cada fragmento como una entidad autónoma. Contabilizamos inicialmente $3$ rectángulos simples.\n* **Nivel intermedio:** Unimos celdas adyacentes consecutivas en pares. El cuadrante izquierdo adosado al central forma 1. El central adosado al derecho forma 1. Totalizamos $2$ rectángulos compuestos (de doble ancho).\n* **Nivel macro:** La fusión absoluta de los 3 segmentos restablece el rectángulo panorámico inicial. Añadimos $1$ más.\n* **Saldo Total:** Efectuando el sumatorio, encontramos un acervo de $3 + 2 + 1 = 6$ rectángulos diferenciables.\n\n**Tip Élite:** La misma fórmula aritmética simplificada $\\frac{n(n+1)}{2}$ se emplea para hallar el número total de subsegmentos en cualquier vector o área rectilínea segmentada en $n$ trozos indivisibles a lo largo del mismo vector."
+  },
+  {
+    "id": "m_geo_18",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 200 175\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"25,35 145,35 145,80 175,80 175,145 25,145\" fill=\"rgba(46,230,166,.16)\" stroke=\"var(--brand)\" stroke-width=\"2\"/><text x=\"80\" y=\"163\" fill=\"currentColor\" font-size=\"12\">10 cm</text><text x=\"4\" y=\"95\" fill=\"currentColor\" font-size=\"12\">8 cm</text></svg>",
+    "stem": "El objeto gráfico poligonal, caracterizado por su perfil en escuadra o forma de L, se derivó heurísticamente de mutilar el cuadrante noreste a una lámina rectangular fundacional, cuyas medidas paramétricas iniciales ascendían a $10\\text{ cm}$ longitudinales y $8\\text{ cm}$ de latitud. La porción cercenada constituía un sub-rectángulo asimétrico de dimensiones correspondientes a $4\\text{ cm}$ por $3\\text{ cm}$.",
+    "q": "Partiendo de esta disección empírica, ¿qué área define métricamente la extensión actual sobreviviente de la lámina?",
+    "opts": [
+      "$68\\text{ cm}^2$",
+      "$80\\text{ cm}^2$",
+      "$12\\text{ cm}^2$",
+      "$92\\text{ cm}^2$"
+    ],
+    "ans": 0,
+    "exp": "El dilema gravita en torno a la ejecución de una sustracción algebraica sencilla entre los vectores de un área matriz y una subárea focal erradicada.\n\n* **Cómputo inicial:** Definimos el umbral absoluto del volumen de superficie primitiva. $Área_{Primitiva} = Base \\times Altura = 10\\text{ cm} \\times 8\\text{ cm} = 80\\text{ cm}^2$.\n* **Cómputo de la merma:** Calculamos la parcela sustraída del margen. $Área_{Perdida} = 4\\text{ cm} \\times 3\\text{ cm} = 12\\text{ cm}^2$.\n* **Cálculo de magnitud neta:** Realizamos la depreciación del valor sustraído: $80\\text{ cm}^2 - 12\\text{ cm}^2 = 68\\text{ cm}^2$.\n\n**Tip Élite:** No confundas la resiliencia del perímetro frente a recortes ortogonales, con la merma obligatoria del área frente a ese mismo tipo de sustracción. Mientras el perímetro exterior en esta figura L se mantiene inmutable ($36\\text{ cm}$), el área siempre se menoscaba irremediablemente."
+  },
+  {
+    "id": "m_geo_20",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "fig": "<svg viewBox=\"0 0 180 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"135\" x2=\"40\" y2=\"30\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"155\" y2=\"135\" stroke=\"var(--math)\" stroke-width=\"2\"/><line x1=\"40\" y1=\"135\" x2=\"135\" y2=\"55\" stroke=\"var(--math)\" stroke-width=\"2\"/><text x=\"46\" y=\"80\" fill=\"currentColor\" font-size=\"13\">35°</text><text x=\"92\" y=\"128\" fill=\"currentColor\" font-size=\"14\">?</text></svg>",
+    "stem": "El trazado ilustra una convergencia ortogonal basal clásica que consolida un ángulo recto de $90^\\circ$. Dicha magnitud ha sido bisectada transversalmente por un rayo de incidencia que delimita uno de los sub-ángulos conformados en un umbral escalar de $35^\\circ$.",
+    "q": "Acogiéndose a la doctrina matemática euclidiana, ¿qué graduación específica completa el dominio de la contraparte angular remanente?",
+    "opts": [
+      "$55^\\circ$",
+      "$65^\\circ$",
+      "$45^\\circ$",
+      "$35^\\circ$"
+    ],
+    "ans": 0,
+    "exp": "El concepto rector aquí es el principio de complementariedad angular estipulado por los teoremas de división de sectores ortogonales.\n\n* **Axioma cardinal:** Toda disección efectuada sobre un ángulo matriz ortogonal da lugar, invariablemente, a ángulos menores de naturaleza mutuamente complementaria. Esto impone que su adición recíproca debe cuadrar en un sumatorio absoluto de $90^\\circ$.\n* **Aplicación algorítmica:** Denominando $X$ a la cuantía en grados inexplorada, establecemos la ecuación: $X + 35^\\circ = 90^\\circ$.\n* **Aislamiento algebraico:** Obtenemos que $X = 90^\\circ - 35^\\circ = 55^\\circ$.\n\n**Tip Élite:** Aprende a distinguir rápidamente por instinto semántico o visual entre ángulos *complementarios* (sumatoria a $90^\\circ$) y *suplementarios* (sumatoria a $180^\\circ$). Reconocer las líneas formadoras ortogonales en el problema inicial acelera la solución sin dudas."
+  }
+]

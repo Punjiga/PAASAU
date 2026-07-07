@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_pro_3",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 2,
+    "stem": "Cuando sube la temperatura, el hielo se derrite. Analice las proposiciones:\nI. El calor puede transformar el hielo en agua.\nII. El hielo se mantiene sólido al subir la temperatura.\nIII. El frío derrite el hielo.",
+    "q": "¿Cuál proposición se deduce del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "Solo la III",
+      "La II y la III"
+    ],
+    "ans": 0,
+    "exp": "De 'al subir la temperatura el hielo se derrite' se deduce que el calor lo transforma en agua: la I (A). La II niega que se derrita y la III confunde frío con calor."
+  },
+  {
+    "id": "m_ari_1",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "En una pulpería, un confite cuesta ₡75 y un chicle ₡120. Andrés compra 8 confites y 3 chicles, y paga con un billete de ₡2 000.",
+    "q": "¿Cuánto recibe de vuelto?",
+    "opts": [
+      "₡860",
+      "₡1 040",
+      "₡960",
+      "₡1 100"
+    ],
+    "ans": 1,
+    "exp": "8 × 75 = 600 y 3 × 120 = 360; en total gasta 960. Vuelto: 2 000 − 960 = 1 040."
+  },
+  {
+    "id": "m_ari_2",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "María leyó {{2/5}} de un libro el lunes y {{1/3}} el martes.",
+    "q": "¿Qué fracción del libro le falta por leer?",
+    "opts": [
+      "{{1/15}}",
+      "{{4/15}}",
+      "{{11/15}}",
+      "{{3/8}}"
+    ],
+    "ans": 1,
+    "exp": "{{2/5}} + {{1/3}} = {{6/15}} + {{5/15}} = {{11/15}} leído. Falta 1 − {{11/15}} = {{4/15}}."
+  },
+  {
+    "id": "m_ari_3",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "Un litro de gasolina cuesta ₡652,50. Un conductor echa 30 litros y paga con tres billetes de ₡10 000.",
+    "q": "¿Cuánto recibe de vuelto?",
+    "opts": [
+      "₡10 425",
+      "₡9 575",
+      "₡10 575",
+      "₡11 425"
+    ],
+    "ans": 0,
+    "exp": "30 × 652,50 = 19 575. Vuelto: 30 000 − 19 575 = 10 425."
+  },
+  {
+    "id": "m_ari_4",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Considere la operación: 3 + 4 × 5 − 8 ÷ 2 + 2³.",
+    "q": "¿Cuál es el resultado?",
+    "opts": [
+      "27",
+      "19",
+      "35",
+      "11"
+    ],
+    "ans": 0,
+    "exp": "Potencia y luego × y ÷: 2³=8, 4×5=20, 8÷2=4. Después: 3 + 20 − 4 + 8 = 27."
+  },
+  {
+    "id": "m_ari_5",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 2,
+    "stem": "La temperatura en Cartago era de 12 °C al mediodía y bajó 15 °C en la madrugada.",
+    "q": "¿Cuál fue la temperatura en la madrugada?",
+    "opts": [
+      "−3 °C",
+      "3 °C",
+      "27 °C",
+      "−27 °C"
+    ],
+    "ans": 0,
+    "exp": "Bajar 15° desde 12° es restar: 12 − 15 = −3 °C (queda bajo cero)."
+  },
+  {
+    "id": "m_mcm_1",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 2,
+    "stem": "Dos buses salen de la misma terminal: uno cada 12 minutos y el otro cada 18 minutos. Ambos salen juntos a las 6:00 a. m.",
+    "q": "¿A qué hora vuelven a salir juntos por primera vez?",
+    "opts": [
+      "6:30 a. m.",
+      "6:36 a. m.",
+      "6:54 a. m.",
+      "7:12 a. m."
+    ],
+    "ans": 1,
+    "exp": "Coinciden en el MCM(12, 18) = 36 minutos. 6:00 + 36 min = 6:36 a. m."
+  },
+  {
+    "id": "m_mcm_2",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Dos buses salen de la misma terminal: uno cada 15 minutos y otro cada 25 minutos. Ambos salen juntos a las 6:00 a. m.",
+    "q": "¿A qué hora vuelven a salir juntos por primera vez?",
+    "opts": [
+      "7:15 a. m.",
+      "6:40 a. m.",
+      "7:00 a. m.",
+      "8:00 a. m."
+    ],
+    "ans": 0,
+    "exp": "Coinciden en el MCM(15, 25) = 75 minutos. 6:00 + 1 h 15 min = 7:15 a. m."
+  },
+  {
+    "id": "m_mcm_3",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 2,
+    "stem": "Se quieren cortar dos cintas, una de 60 cm y otra de 48 cm, en pedazos iguales lo más largos posible, sin que sobre cinta.",
+    "q": "¿Cuánto medirá cada pedazo?",
+    "opts": [
+      "6 cm",
+      "12 cm",
+      "24 cm",
+      "4 cm"
+    ],
+    "ans": 1,
+    "exp": "El pedazo más largo que divide a ambas es el MCD(60, 48) = 12 cm."
+  },
+  {
+    "id": "m_mcm_4",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "El mínimo común múltiplo de dos números es 60 y uno de ellos es 15.",
+    "q": "¿Cuál de los siguientes podría ser el otro número?",
+    "opts": [
+      "8",
+      "9",
+      "12",
+      "25"
+    ],
+    "ans": 2,
+    "exp": "MCM(15, 12) = 60. En cambio MCM(15,8)=120, MCM(15,9)=45 y MCM(15,25)=75."
+  },
+  {
+    "id": "m_rel_1",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 2,
+    "stem": "Cuatro amigos comparan su edad: Ana es mayor que Beto, Carlos es menor que Beto y Diana es mayor que Ana.",
+    "q": "¿Quién es el menor de los cuatro?",
+    "opts": [
+      "Ana",
+      "Beto",
+      "Carlos",
+      "Diana"
+    ],
+    "ans": 2,
+    "exp": "Orden: Diana > Ana > Beto > Carlos. El menor es Carlos."
+  },
+  {
+    "id": "m_rel_2",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Se sabe que a < 0 < b y que el valor absoluto de a es mayor que el de b.",
+    "q": "¿Cuál afirmación es siempre verdadera?",
+    "opts": [
+      "a + b > 0",
+      "a + b < 0",
+      "a + b = 0",
+      "a es mayor que b"
+    ],
+    "ans": 1,
+    "exp": "Como a es negativo y |a| > |b|, el negativo pesa más que el positivo: a + b < 0."
+  },
+  {
+    "id": "m_rel_3",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere los valores 0,4 ; {{3/5}} ; 0,55 ; {{2/5}} ; 0,7.",
+    "q": "¿Cuántos de ellos son mayores que {{1/2}}?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "ans": 1,
+    "exp": "{{1/2}} = 0,5. Mayores: {{3/5}} (0,6), 0,55 y 0,7. Son 3 (0,4 y {{2/5}}=0,4 no superan 0,5)."
+  },
+  {
+    "id": "m_cnt_1",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En una bolsa hay 5 bolas rojas, 3 azules y 4 verdes.",
+    "q": "¿Cuántas bolas hay que sacar como mínimo, sin ver, para asegurarse de tener al menos una de cada color?",
+    "opts": [
+      "3",
+      "4",
+      "10",
+      "12"
+    ],
+    "ans": 2,
+    "exp": "En el peor caso se sacan las dos cantidades mayores (5 + 4 = 9) sin obtener el tercer color; la siguiente bola completa los tres: 10."
+  },
+  {
+    "id": "m_cnt_2",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 2,
+    "stem": "Un candado usa un código de 2 dígitos (del 0 al 9), y se sabe que los dos dígitos son distintos.",
+    "q": "¿Cuántos códigos distintos son posibles?",
+    "opts": [
+      "81",
+      "90",
+      "100",
+      "45"
+    ],
+    "ans": 1,
+    "exp": "El primer dígito tiene 10 opciones y el segundo 9 (distinto del primero): 10 × 9 = 90."
+  },
+  {
+    "id": "m_cnt_3",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 2,
+    "stem": "En una reunión hay 5 personas y cada una saluda de mano a todas las demás exactamente una vez.",
+    "q": "¿Cuántos saludos se dan en total?",
+    "opts": [
+      "10",
+      "20",
+      "25",
+      "15"
+    ],
+    "ans": 0,
+    "exp": "Cada par se saluda una vez: {{5·4/2}} = 10 saludos."
+  },
+  {
+    "id": "m_per_1",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 2,
+    "stem": "Tres personas van a sentarse en 3 sillas colocadas en fila.",
+    "q": "¿De cuántas maneras distintas pueden sentarse?",
+    "opts": [
+      "3",
+      "6",
+      "9",
+      "27"
+    ],
+    "ans": 1,
+    "exp": "Ordenar 3 elementos distintos: 3! = 3·2·1 = 6."
+  },
+  {
+    "id": "m_per_2",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 2,
+    "stem": "Se quieren ordenar 4 libros distintos en un estante.",
+    "q": "¿De cuántas maneras se pueden ordenar?",
+    "opts": [
+      "12",
+      "16",
+      "24",
+      "256"
+    ],
+    "ans": 2,
+    "exp": "Ordenar 4 libros distintos son 4! (factorial): 4·3·2·1 = 24 maneras."
+  },
+  {
+    "id": "m_per_3",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 2,
+    "stem": "Un equipo debe elegir un capitán y un subcapitán entre 5 jugadores.",
+    "q": "¿De cuántas formas distintas puede hacerlo?",
+    "opts": [
+      "10",
+      "20",
+      "25",
+      "120"
+    ],
+    "ans": 1,
+    "exp": "El capitán: 5 opciones; el subcapitán: 4 restantes. 5 × 4 = 20."
+  },
+  {
+    "id": "m_geo_1",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un terreno rectangular mide 8 m de largo y 5 m de ancho. Se quiere cercar todo su contorno con malla, pero uno de los lados de 8 m ya tiene una pared y no necesita malla.",
+    "q": "¿Cuántos metros de malla se necesitan?",
+    "opts": [
+      "26 m",
+      "18 m",
+      "21 m",
+      "13 m"
+    ],
+    "ans": 1,
+    "exp": "El perímetro total es 2·(8 + 5) = 26 m. Como un lado de 8 m no lleva malla: 26 − 8 = 18 m."
+  },
+  {
+    "id": "m_geo_2",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una sala rectangular mide 6 m de largo por 4 m de ancho. Se cubrirá todo el piso con baldosas cuadradas de 1 m de lado, y cada baldosa cuesta ₡2 500.",
+    "q": "¿Cuánto se gasta en baldosas?",
+    "opts": [
+      "₡60 000",
+      "₡25 000",
+      "₡48 000",
+      "₡100 000"
+    ],
+    "ans": 0,
+    "exp": "Área = 6 × 4 = 24 m², o sea 24 baldosas. 24 × 2 500 = 60 000."
+  },
+  {
+    "id": "m_geo_3",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un terreno triangular tiene 20 m de base y 15 m de altura. Se vende a ₡8 000 el metro cuadrado.",
+    "q": "¿Cuánto cuesta el terreno?",
+    "opts": [
+      "₡1 200 000",
+      "₡2 400 000",
+      "₡150 000",
+      "₡800 000"
+    ],
+    "ans": 0,
+    "exp": "Área = 20 × 15 ÷ 2 = 150 m². Costo: 150 × 8 000 = 1 200 000."
+  },
+  {
+    "id": "m_geo_4",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una rueda tiene un radio de 35 cm. Use π ≈ {{22/7}}.",
+    "q": "¿Cuál es su circunferencia (perímetro)?",
+    "opts": [
+      "110 cm",
+      "220 cm",
+      "154 cm",
+      "440 cm"
+    ],
+    "ans": 1,
+    "exp": "Circunferencia = 2·π·r = 2·({{22/7}})·35 = 2·22·5 = 220 cm."
+  },
+  {
+    "id": "m_suc_1",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Observe la sucesión: 4, 7, 10, 13, …",
+    "q": "¿Cuál es el término que ocupa la posición 12?",
+    "opts": [
+      "37",
+      "34",
+      "40",
+      "31"
+    ],
+    "ans": 0,
+    "exp": "Es aritmética con d = 3. a₁₂ = 4 + (12 − 1)·3 = 4 + 33 = 37."
+  },
+  {
+    "id": "m_suc_2",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 2,
+    "stem": "En la sucesión 2, 6, 18, 54, … cada término se obtiene del anterior con la misma operación.",
+    "q": "¿Cuál es el siguiente término?",
+    "opts": [
+      "108",
+      "162",
+      "216",
+      "72"
+    ],
+    "ans": 1,
+    "exp": "Cada término se multiplica por 3: 54 × 3 = 162."
+  },
+  {
+    "id": "m_suc_3",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Observe la sucesión: 2, 5, 10, 17, 26, …",
+    "q": "¿Cuál es el séptimo término?",
+    "opts": [
+      "50",
+      "37",
+      "42",
+      "65"
+    ],
+    "ans": 0,
+    "exp": "El patrón es n²+1: 1²+1=2, 2²+1=5, … El séptimo es 7²+1 = 50."
+  },
+  {
+    "id": "m_suc_4",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Observe la sucesión: 2, 3, 5, 8, 12, …",
+    "q": "¿Cuál es el siguiente número?",
+    "opts": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "ans": 2,
+    "exp": "Las diferencias aumentan: +1, +2, +3, +4. El siguiente suma +5: 12 + 5 = 17."
+  },
+  {
+    "id": "m_suc_5",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 2,
+    "stem": "En la sucesión 1, 1, 2, 3, 5, 8, … cada término es la suma de los dos anteriores.",
+    "q": "¿Cuál es el octavo término?",
+    "opts": [
+      "13",
+      "21",
+      "34",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "1, 1, 2, 3, 5, 8, 13, 21. El octavo término es 21."
+  },
+  {
+    "id": "m_dat_1",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 2,
+    "stem": "En una caja hay 4 bolas rojas y 6 azules. Se saca una bola al azar.",
+    "q": "¿Cuál es la probabilidad de que sea roja?",
+    "opts": [
+      "{{2/5}}",
+      "{{3/5}}",
+      "{{4/6}}",
+      "{{1/4}}"
+    ],
+    "ans": 0,
+    "exp": "Probabilidad = favorables ÷ total = {{4/10}} = {{2/5}}."
+  },
+  {
+    "id": "m_dat_2",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "En cuatro exámenes, un estudiante obtuvo 80, 90, 70 y 100. Hará un quinto examen y quiere que el promedio de los cinco sea exactamente 86.",
+    "q": "¿Qué nota necesita en el quinto examen?",
+    "opts": [
+      "90",
+      "86",
+      "94",
+      "100"
+    ],
+    "ans": 0,
+    "exp": "Para promediar 86 en cinco exámenes, la suma debe ser 5 × 86 = 430. Los cuatro primeros suman 340, así que necesita 430 − 340 = 90."
+  },
+  {
+    "id": "m_dat_3",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 2,
+    "stem": "En una rifa hay 100 boletos: 50 sin premio, 30 con premio pequeño, 15 con premio mediano y 5 con premio mayor. Se compra un boleto.",
+    "q": "¿Qué resultado es el más probable?",
+    "opts": [
+      "Premio mayor",
+      "Premio mediano",
+      "Sin premio",
+      "Premio pequeño"
+    ],
+    "ans": 2,
+    "exp": "El resultado más probable es el de mayor cantidad de casos: 'sin premio' (50 de 100)."
+  },
+  {
+    "id": "m_dat_4",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "En una bolsa hay 12 bolas: 5 rojas, 4 azules y 3 verdes. Se saca una al azar.",
+    "q": "¿Cuál es la probabilidad de que NO sea roja?",
+    "opts": [
+      "{{7/12}}",
+      "{{5/12}}",
+      "{{1/2}}",
+      "{{3/12}}"
+    ],
+    "ans": 0,
+    "exp": "Las que no son rojas son 4 + 3 = 7, de 12 en total: {{7/12}}."
+  },
+  {
+    "id": "m_not_1",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 2,
+    "stem": "Considere la frase: 'cinco más que el doble de un número'.",
+    "q": "¿Cuál expresión la representa?",
+    "opts": [
+      "2x + 5",
+      "2(x + 5)",
+      "5 − 2x",
+      "x/2 + 5"
+    ],
+    "ans": 0,
+    "exp": "El doble del número es 2x; cinco más que eso es 2x + 5."
+  },
+  {
+    "id": "m_not_2",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 2,
+    "stem": "Carlos tiene x colones y Ana tiene el triple que Carlos, menos 200 colones.",
+    "q": "¿Cuánto tiene Ana, en colones?",
+    "opts": [
+      "3x − 200",
+      "3(x − 200)",
+      "x/3 − 200",
+      "200 − 3x"
+    ],
+    "ans": 0,
+    "exp": "El triple de Carlos es 3x; menos 200 es 3x − 200."
+  },
+  {
+    "id": "m_not_3",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Un número se representa con la letra n.",
+    "q": "¿Cuál expresión representa: el doble de un número, disminuido en cinco, es igual a quince?",
+    "opts": [
+      "2n − 5 = 15",
+      "2(n − 5) = 15",
+      "n/2 − 5 = 15",
+      "5 − 2n = 15"
+    ],
+    "ans": 0,
+    "exp": "El doble del número es 2n; disminuido en 5 es 2n − 5; igual a quince: 2n − 5 = 15."
+  },
+  {
+    "id": "m_alr_1",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Sea n un número entero cualquiera.",
+    "q": "¿Cuál de las siguientes expresiones es múltiplo de 4 para todo n?",
+    "opts": [
+      "4n",
+      "2n",
+      "4n + 2",
+      "n + 4"
+    ],
+    "ans": 0,
+    "exp": "4n = 4·n siempre es múltiplo de 4. 2n no (si n es impar), 4n+2 deja residuo 2 y n+4 depende de n."
+  },
+  {
+    "id": "m_alr_2",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Sean P y Q enteros positivos. Se sabe que el producto P·Q es impar.",
+    "q": "¿Qué se puede afirmar con certeza?",
+    "opts": [
+      "P es par",
+      "Q es par",
+      "P y Q son impares",
+      "P es impar y Q es par"
+    ],
+    "ans": 2,
+    "exp": "Un producto es impar solo si ambos factores son impares. Por tanto, P y Q son impares."
+  },
+  {
+    "id": "m_alr_3",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Se sabe que 2x − 3 = 11.",
+    "q": "¿Cuánto vale x²?",
+    "opts": [
+      "49",
+      "14",
+      "7",
+      "21"
+    ],
+    "ans": 0,
+    "exp": "De 2x − 3 = 11 se obtiene 2x = 14, o sea x = 7. Entonces x² = 7² = 49."
+  },
+  {
+    "id": "m_uni_1",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 2,
+    "stem": "Un atleta corre 5 km en 25 minutos a ritmo constante.",
+    "q": "¿Cuántos metros recorre en 5 minutos?",
+    "opts": [
+      "500 m",
+      "1000 m",
+      "1500 m",
+      "200 m"
+    ],
+    "ans": 1,
+    "exp": "5 km = 5000 m en 25 min → 200 m por minuto. En 5 min: 200 × 5 = 1000 m."
+  },
+  {
+    "id": "m_uni_2",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Una llave llena un balde de 18 litros en 3 minutos, a ritmo constante.",
+    "q": "¿Cuántos litros echa en 50 segundos?",
+    "opts": [
+      "5 litros",
+      "6 litros",
+      "3 litros",
+      "9 litros"
+    ],
+    "ans": 0,
+    "exp": "3 min = 180 s, así que echa 18 ÷ 180 = 0,1 L por segundo. En 50 s: 50 × 0,1 = 5 litros."
+  },
+  {
+    "id": "m_uni_3",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un carro viaja a 90 km/h.",
+    "q": "¿Qué distancia recorre en 40 minutos?",
+    "opts": [
+      "36 km",
+      "60 km",
+      "120 km",
+      "45 km"
+    ],
+    "ans": 1,
+    "exp": "40 min = {{40/60}} h = {{2/3}} h. Distancia = 90 · {{2/3}} = 60 km."
+  },
+  {
+    "id": "m_uni_4",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 2,
+    "stem": "Un evento empezó a las 10:45 a. m. y duró 2 horas y 50 minutos.",
+    "q": "¿A qué hora terminó?",
+    "opts": [
+      "12:35 p. m.",
+      "1:35 p. m.",
+      "1:25 p. m.",
+      "12:55 p. m."
+    ],
+    "ans": 1,
+    "exp": "10:45 + 2 h = 12:45; + 50 min = 13:35, es decir 1:35 p. m."
+  }
+]

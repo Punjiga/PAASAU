@@ -1,0 +1,87 @@
+[
+  {
+    "id": "q_pdf6_21",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En una fábrica, por cada artículo que termine\nuna persona trabajadora le entregan 2 bonos.\nPor cada 3 bonos le dan un almuerzo gratis.\nCésar tuvo derecho a 18 almuerzos gratis en el\naño y no le sobraron bonos.\n¿Cuál es el número de artículos que César",
+    "q": "entregó ese año?",
+    "opts": [
+      "3",
+      "12",
+      "27",
+      "54",
+      "108"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_22",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Para una fiesta hay tazas verdes, tazas\namarillas y tazas blancas. Las blancas son tantas\ncomo las verdes y las amarillas juntas. En la\nfiesta solamente se utilizaron las dos terceras\npartes del total de las tazas.\nSegún la información anterior, con certeza,",
+    "q": "¿cuáles tazas se usaron?",
+    "opts": [
+      "Algunas tazas verdes.",
+      "Algunas tazas blancas.",
+      "Algunas tazas amarillas.",
+      "Todas las tazas verdes.",
+      "Todas las tazas blancas."
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_23",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La relación más importante entre el cerebro\ny los otros órganos internos se establece por\nmedio del sistema nervioso, el cual se divide\nen tres formaciones principales: el sistema\nnervioso autónomo, el sistema nervioso central\ny el sistema nervioso periférico.\nSegún lo anterior, ¿cuál de las siguientes\nopciones es una conclusión del texto?\ninterorgánicas, aparte de la que establece el\nsistema nervioso.\nrelación que se establece entre el cerebro y los\notros órganos internos.\nrelación entre el cerebro y los otros órganos\ninternos.\nla más importante es la llamada sistema\nnervioso central.\ninnumerables formaciones distintas dentro del\nsistema nervioso.",
+    "q": "",
+    "opts": [
+      "Es inexistente la posibilidad de otras relaciones",
+      "El sistema nervioso es el producto de la",
+      "Si el sistema nervioso se atrofia, se afecta la",
+      "De las tres formaciones del sistema nervioso,",
+      "Además de las formaciones citadas, hay"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_24",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Mirta, Óscar y Gloria son estudiantes\nuniversitarios. Gloria ganó 50 créditos más que\nÓscar. Óscar ganó el triple de créditos que Mirta.\nSi entre los tres han ganado más de 78 créditos\npero menos de 99, entonces, es posible que\nmás que Gloria.",
+    "q": "",
+    "opts": [
+      "Mirta haya ganado 7 créditos.",
+      "Óscar haya ganado 12 créditos.",
+      "Óscar haya ganado 15 créditos.",
+      "Gloria haya ganado 59 créditos.",
+      "Óscar y Mirta juntos hayan ganado 44 créditos"
+    ],
+    "ans": 2,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_25",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Durante mucho tiempo, el ser humano\nutilizó las partes de su propio cuerpo como\ninstrumentos de medición. Todavía hoy se\nutilizan unidades como el codo y el pie, pero el\nser humano ha preferido otras. La ____________ de\ntales medidas residía en su variabilidad.",
+    "q": "",
+    "opts": [
+      "ventaja.",
+      "desventaja.",
+      "única ventaja.",
+      "mayor ventaja.",
+      "única desventaja."
+    ],
+    "ans": 1,
+    "exp": ""
+  }
+]

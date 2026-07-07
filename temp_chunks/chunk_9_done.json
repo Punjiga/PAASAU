@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_cau_8",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La deforestación indiscriminada en las zonas montañosas privó al sustrato de la red radicular que garantizaba su cohesión estructural; en consecuencia, ante las precipitaciones torrenciales, se desencadenaron aludes devastadores.",
+    "q": "De acuerdo con el texto, ¿cuál es el factor originario que propicia los deslizamientos?",
+    "opts": [
+      "La intensidad anómala de las precipitaciones torrenciales.",
+      "La eliminación de la cobertura vegetal que debilitó la cohesión del terreno.",
+      "El aumento de la escorrentía superficial debido a la erosión eólica.",
+      "La ausencia de infraestructura para canalizar las aguas pluviales."
+    ],
+    "ans": 1,
+    "exp": "Analicemos la cadena de eventos que presenta el texto. ¿Qué evento desencadenó la pérdida de cohesión estructural?\n\n*   El texto indica explícitamente que la \"deforestación indiscriminada\" privó al sustrato de su \"red radicular\".\n*   ¿Son las lluvias la causa originaria? No, las precipitaciones fungen como un detonante secundario sobre un suelo ya vulnerado por la tala.\n*   Por tanto, la causa de fondo es la eliminación de la cobertura vegetal.\n\n**Tip Élite:** En preguntas de causa y efecto, distingue siempre entre el *factor originario* (causa estructural) y el *factor detonante* (causa coyuntural o inmediata)."
+  },
+  {
+    "id": "v_cau_9",
+    "domain": "verbal",
+    "topic": "causa_consecuencia",
+    "dif": 3,
+    "stem": "La gestión sostenible de los recursos hídricos durante los periodos de abundancia garantiza la disponibilidad de reservas estratégicas frente a las inminentes temporadas de estiaje.",
+    "q": "¿Qué nexo causal se establece fundamentalmente en el fragmento anterior?",
+    "opts": [
+      "La preservación y consumo moderado del líquido vital condiciona la seguridad hídrica en tiempos de sequía.",
+      "La inminencia de la temporada de estiaje provoca un aumento en la captación de los recursos hídricos.",
+      "La imposibilidad de almacenar agua exige una gestión sostenible e inmediata.",
+      "La abundancia de recursos hídricos anula los efectos adversos de cualquier periodo de sequía posterior."
+    ],
+    "ans": 0,
+    "exp": "Para identificar el nexo causal, debemos reconocer la acción inicial y su resultado directo.\n\n*   ¿Cuál es la premisa o acción? La \"gestión sostenible de los recursos hídricos\".\n*   ¿Cuál es el efecto o beneficio de esta acción? Garantiza la \"disponibilidad de reservas estratégicas\" durante el estiaje (sequía).\n*   La opción correcta refleja que la conservación activa es el requisito previo para afrontar la escasez.\n\n**Tip Élite:** El término \"garantiza\" o \"condiciona\" frecuentemente marca una relación de dependencia estricta entre una variable independiente (causa) y una dependiente (consecuencia)."
+  },
+  {
+    "id": "v_sim_4",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El acto de encender una vela se agota en la fricción de un fósforo; por el contrario, la activación de una central termoeléctrica demanda la sincronización de turbinas, paneles de control interconectados y la supervisión de un equipo multidisciplinario de ingenieros.",
+    "q": "¿Cuál es el criterio fundamental que subyace en el contraste establecido entre ambas acciones?",
+    "opts": [
+      "La antigüedad histórica de las tecnologías empleadas.",
+      "El grado de multiplicidad de componentes y la complejidad procedimental.",
+      "El nivel de riesgo ambiental asociado a cada procedimiento.",
+      "La magnitud de los recursos económicos invertidos en cada sistema."
+    ],
+    "ans": 1,
+    "exp": "Observemos los elementos que el autor utiliza para describir cada acción.\n\n*   Para la vela, solo se requiere la \"fricción de un fósforo\" (un paso, un elemento).\n*   Para la central, se exige \"sincronización de turbinas\", \"paneles interconectados\" y un \"equipo multidisciplinario\" (múltiples pasos, diversos elementos).\n*   El contraste no radica en costos, riesgos o historia, sino netamente en la complejidad del sistema y sus procesos.\n\n**Tip Élite:** Cuando un texto opone un acto de un solo paso a uno que exige coordinación de múltiples actores y piezas, el contraste central es siempre la dicotomía *simple-complejo*."
+  },
+  {
+    "id": "v_sim_5",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El ensamblaje de un triciclo se fundamenta en unas escasas articulaciones mecánicas elementales; un vehículo automotor contemporáneo, en contraste, consolida una miríada de microprocesadores, sensores electrónicos y sistemas de propulsión interdependientes.",
+    "q": "¿Qué cualidad intrínseca distingue al vehículo automotor moderno en comparación con el triciclo?",
+    "opts": [
+      "Una mayor obsolescencia programada.",
+      "Un nivel de sofisticación y articulación sistémica superior.",
+      "Una menor eficiencia en la transferencia de energía cinética.",
+      "Una configuración mecánica sustancialmente más rudimentaria."
+    ],
+    "ans": 1,
+    "exp": "Analicemos las descripciones de ambos objetos en el texto.\n\n*   El triciclo se define por poseer \"escasas articulaciones mecánicas elementales\" (sencillez).\n*   El automóvil, en cambio, alberga una \"miríada de microprocesadores\" y \"sistemas interdependientes\" (complejidad).\n*   Por tanto, la diferencia estriba en el grado de sofisticación y la intrincada red de sus partes operativas.\n\n**Tip Élite:** El uso de términos como \"miríada\", \"sistemas interdependientes\" o \"articulación sistémica\" son indicadores claros de que el texto gira en torno a la complejidad estructural."
+  },
+  {
+    "id": "v_sim_6",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "El ademán de saludar con la mano constituye un acto reflejo, casi desprovisto de carga cognitiva intencional. Por el contrario, el dominio de la lengua de señas demanda la internalización de un vasto corpus léxico-gestual, articulado mediante precisos marcadores faciales y una sintaxis espacial rigurosa.",
+    "q": "¿Qué atributo diferencia fundamentalmente el dominio de la lengua de señas respecto al ademán cotidiano?",
+    "opts": [
+      "Su naturaleza predominantemente instintiva.",
+      "La exigencia de una mayor carga de complejidad sistémica y cognitiva.",
+      "Su arraigo en tradiciones gestuales milenarias.",
+      "La falta de utilidad en contextos comunicativos informales."
+    ],
+    "ans": 1,
+    "exp": "Verifiquemos cómo se oponen ambas acciones en el texto.\n\n*   El saludo manual se caracteriza como un \"acto reflejo\" y con poca \"carga cognitiva\".\n*   La lengua de señas requiere internalizar un \"vasto corpus\" y aplicar una \"sintaxis espacial rigurosa\".\n*   En consecuencia, la segunda acción involucra un proceso intelectual y estructural significativamente más complejo y articulado.\n\n**Tip Élite:** Oponer un \"acto reflejo\" frente a un sistema con reglas (sintaxis, corpus) resalta el salto de un automatismo simple a un procesamiento cognitivo altamente complejo."
+  },
+  {
+    "id": "v_sim_7",
+    "domain": "verbal",
+    "topic": "simple_complejo",
+    "dif": 3,
+    "stem": "La preparación de un huevo frito se reduce a la ejecución de una secuencia unilineal elemental; la orquestación de un banquete de gala, por el contrario, demanda la sincronización cronométrica de brigadas culinarias, la gestión de inventarios múltiples y el emplatado simultáneo de decenas de recetas heterogéneas.",
+    "q": "En relación con la fritura de un huevo, ¿qué rasgo define primordialmente la orquestación de un banquete?",
+    "opts": [
+      "Una homogeneidad en sus procesos logísticos.",
+      "Un grado exponencialmente mayor de complejidad logística y operativa.",
+      "Una carencia absoluta de valor nutricional intrínseco.",
+      "Una notable reducción en los tiempos de cocción."
+    ],
+    "ans": 1,
+    "exp": "Midamos las dimensiones de ambas tareas según el fragmento.\n\n*   Freír un huevo es una \"secuencia unilineal elemental\" (un solo hilo de acción).\n*   El banquete requiere \"sincronización\", \"gestión de inventarios\" y preparar recetas de forma \"simultánea\".\n*   El contraste evidencia que el banquete es un desafío logístico y operativo inmensamente más enrevesado.\n\n**Tip Élite:** La palabra \"orquestación\" por sí sola ya implica dirigir múltiples partes dispares hacia un fin unificado, lo cual es la esencia de la complejidad."
+  },
+  {
+    "id": "v_con_5",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Al hallar un maletín repleto de valores no declarados en un callejón desierto, el individuo gestionó de inmediato su restitución íntegra a las autoridades pertinentes, a sabiendas de que la impunidad de un posible hurto estaba garantizada.",
+    "q": "¿Qué virtud ética conceptualiza con mayor precisión la conducta del individuo?",
+    "opts": [
+      "Probidad",
+      "Perspicacia",
+      "Pusilanimidad",
+      "Apatía"
+    ],
+    "ans": 0,
+    "exp": "Evaluemos la situación moral descrita.\n\n*   El individuo encuentra objetos de valor en una situación de \"impunidad garantizada\" (nadie lo observaba).\n*   A pesar de ello, decide restituirlos íntegramente de manera voluntaria.\n*   Este actuar recto, apegado a la moralidad aun cuando no hay coacción externa, define a la probidad (sinónimo culto de honradez e integridad).\n\n**Tip Élite:** La probidad se define precisamente como la rectitud de ánimo y la integridad en el obrar, especialmente ante la tentación económica. Familiarízate con este término, es un clásico de los exámenes de admisión."
+  },
+  {
+    "id": "v_con_6",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Afrontó jornadas laborales maratónicas sin expresar la menor inconformidad, sacrificando su tiempo de ocio con el único propósito de garantizar la entrega del proyecto en el plazo fatal establecido por los inversores.",
+    "q": "¿Qué concepto define de forma óptima la actitud profesional evidenciada?",
+    "opts": [
+      "Desidia",
+      "Compromiso inquebrantable",
+      "Ostentación",
+      "Fortuidad"
+    ],
+    "ans": 1,
+    "exp": "Sinteticemos las acciones del sujeto en el ámbito laboral.\n\n*   Realiza un sacrificio personal (\"jornadas maratónicas\", pierde su \"tiempo de ocio\").\n*   Mantiene una actitud resiliente (\"sin expresar inconformidad\").\n*   Tiene como fin último cumplir una meta colectiva (entregar en el plazo).\n*   Todo esto configura un claro nivel de dedicación y deber hacia el trabajo, es decir, un compromiso inquebrantable.\n\n**Tip Élite:** En comprensión lectora, el \"compromiso\" suele asociarse no solo a hacer el trabajo, sino al sacrificio adicional voluntario para cumplir la palabra dada."
+  },
+  {
+    "id": "v_con_7",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Ante el desolador relato de la pérdida que afligía a su colega, ella despojó su mente de prejuicios y logró sintonizar cognitivamente con el dolor ajeno, experimentando la angustia como si fuera propia.",
+    "q": "¿Qué facultad psicológica o emocional sintetiza mejor esta reacción?",
+    "opts": [
+      "Empatía",
+      "Resentimiento",
+      "Indagación morbosa",
+      "Egocentrismo"
+    ],
+    "ans": 0,
+    "exp": "Identifiquemos la esencia del proceso emocional descrito.\n\n*   La persona no solo escucha, sino que \"despoja su mente de prejuicios\" y logra \"sintonizar cognitivamente\".\n*   Experimenta el \"dolor ajeno\" como si fuese suyo.\n*   Esta capacidad de comprender y compartir los sentimientos del otro es la definición canónica de empatía, en contraste con el egocentrismo, que sería centrarse en sí mismo.\n\n**Tip Élite:** En los textos psicológicos o humanísticos, la \"sintonización cognitiva\" y el sentir el dolor ajeno son marcadores inequívocos del concepto de empatía."
+  },
+  {
+    "id": "v_con_8",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "Tras ser galardonado con la máxima distinción académica, el laureado eludió todo protagonismo en su discurso; prefirió ensalzar la labor infatigable de sus mentores y subrayó que aquel triunfo era un mero subproducto del esfuerzo colectivo.",
+    "q": "¿Qué virtud moral se infiere primariamente de la conducta del galardonado?",
+    "opts": [
+      "Humildad",
+      "Filantropía",
+      "Pusilanimidad",
+      "Complejo de inferioridad"
+    ],
+    "ans": 0,
+    "exp": "Extraigamos los rasgos del comportamiento del sujeto frente al éxito.\n\n*   Alcanza un logro excepcional, pero decide \"eludir todo protagonismo\".\n*   Atribuye el mérito al \"esfuerzo colectivo\" y a sus mentores.\n*   Esta contención del ego frente al triunfo y el reconocimiento del aporte ajeno encarnan la humildad.\n*   La filantropía implicaría dar bienes materiales; la pusilanimidad o el complejo denotarían miedo o debilidad, lo cual no ocurre aquí.\n\n**Tip Élite:** La humildad no es baja autoestima, sino la justa apreciación de los propios límites y el reconocimiento sincero del valor de los demás, especialmente en momentos de gloria."
+  },
+  {
+    "id": "v_con_9",
+    "domain": "verbal",
+    "topic": "conceptualizacion",
+    "dif": 3,
+    "stem": "A pesar de acumular una decena de reiterados fracasos experimentales, el investigador mantuvo su ecuanimidad y reanudó la praxis con la misma convicción y rigor metódico de su primer intento.",
+    "q": "¿Qué vocablo abstrae con exactitud la disposición anímica del investigador?",
+    "opts": [
+      "Tenacidad",
+      "Apatía",
+      "Serendipia",
+      "Ofuscación"
+    ],
+    "ans": 0,
+    "exp": "Revisemos las actitudes del investigador ante la adversidad.\n\n*   Enfrenta \"reiterados fracasos\" (dificultad prolongada).\n*   Mantiene la \"ecuanimidad\" y reanuda el trabajo con \"convicción\" (no se rinde).\n*   La firmeza y obstinación positiva para alcanzar una meta, sorteando los fracasos, se denomina tenacidad (o perseverancia).\n*   Serendipia es un hallazgo afortunado; ofuscación es pérdida de claridad mental.\n\n**Tip Élite:** La tenacidad (del latín *tenax*, que agarra con fuerza) es la virtud de persistir firmemente en un propósito, cualidad fundamental para la ciencia y la investigación."
+  },
+  {
+    "id": "v_ord_4",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "La nave industrial, otrora un caos de maquinarias esparcidas sin criterio por el pavimento, se transformó tras la intervención: ahora cada instrumento yace clasificado en sus anaqueles alfanuméricos.",
+    "q": "¿Cuál es la transición estructural que evidencia el espacio descrito?",
+    "opts": [
+      "De una organización metódica a la dispersión aleatoria.",
+      "De la entropía y el caos a la sistematización ordenada.",
+      "De la obsolescencia tecnológica a la modernización vanguardista.",
+      "De un volumen colosal a una escala microscópica."
+    ],
+    "ans": 1,
+    "exp": "Mapeemos el estado inicial y final del espacio.\n\n*   Estado inicial: \"caos de maquinarias esparcidas sin criterio\" (desorden, entropía).\n*   Estado final: instrumentos \"clasificados\" en \"anaqueles alfanuméricos\" (orden riguroso).\n*   La transición es claramente del desorden absoluto a la organización sistemática.\n\n**Tip Élite:** El término \"entropía\", común en termodinámica, se usa metafóricamente en textos humanísticos para referirse al grado de desorden o caos de un sistema. Sistematizar es su opuesto directo."
+  },
+  {
+    "id": "v_ord_5",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "En el archivo central, cada legajo obedece a una indexación topográfica estricta, catalogado simultáneamente por taxonomía temática y orden cronológico, garantizando así la recuperación instantánea de la información.",
+    "q": "¿Qué cualidad inherente caracteriza al sistema del archivo descrito?",
+    "opts": [
+      "Un estado de anarquía documental.",
+      "Una organización metódica y estructurada.",
+      "Una configuración contingente y provisoria.",
+      "Un abandono evidente de los protocolos de custodia."
+    ],
+    "ans": 1,
+    "exp": "Desglosemos los atributos del sistema de archivo.\n\n*   Cuenta con una \"indexación estricta\", \"taxonomía temática\" y \"orden cronológico\".\n*   El resultado es la \"recuperación instantánea\".\n*   Todas estas características convergen en el concepto de una organización extremadamente metódica (sistematizada y ordenada).\n\n**Tip Élite:** Palabras como \"indexación\", \"taxonomía\" y \"catálogo\" pertenecen al campo semántico de la clasificación, lo que inevitablemente connota orden superior y estructura lógica."
+  },
+  {
+    "id": "v_ord_6",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "Tras la culminación de la gala, el recinto ostentaba cristalería quebrada sobre los sofás de terciopelo, tapices manchados, y la mueblería dispuesta de forma errática a lo largo y ancho del salón principal.",
+    "q": "¿Qué concepto abstrae con mayor precisión la condición en la que se encontraba el recinto?",
+    "opts": [
+      "Inmaculada pulcritud",
+      "Soberana entropía",
+      "Absoluta vacuidad",
+      "Simetría arquitectónica"
+    ],
+    "ans": 1,
+    "exp": "Identifiquemos las imágenes que proyecta el texto.\n\n*   Hay objetos fuera de su lugar natural (cristalería en sofás).\n*   Hay daños (manchas, roturas).\n*   La disposición es \"errática\" (sin patrón lógico).\n*   Este escenario describe una pérdida total de estructura y armonía; es decir, un estado de entropía o desorden absoluto.\n\n**Tip Élite:** \"Entropía\" es la alternativa de nivel avanzado para referirse al desorden. Familiarízate con pares léxicos como entropía/caos frente a pulcritud/armonía."
+  },
+  {
+    "id": "v_ord_7",
+    "domain": "verbal",
+    "topic": "orden_desorden",
+    "dif": 3,
+    "stem": "El repositorio en la nube evolucionó de ser un páramo de ficheros huérfanos y directorios innominados, a constituirse como un ecosistema regido por jerarquías conceptuales nítidas y metadatos unívocos.",
+    "q": "¿Qué proceso fundamental tuvo lugar en la gestión del repositorio?",
+    "opts": [
+      "Una exacerbación del caos informático.",
+      "La estructuración sistemática de un estado de dispersión previa.",
+      "La supresión deliberada de información clasificada.",
+      "Una mera alteración en el diseño de la interfaz gráfica."
+    ],
+    "ans": 1,
+    "exp": "Observemos el cambio de estado en el sistema informático.\n\n*   Antes: \"ficheros huérfanos\" y \"directorios innominados\" (desorden, dispersión).\n*   Después: \"jerarquías conceptuales\" y \"metadatos unívocos\" (clasificación sistemática).\n*   El proceso experimentado es el tránsito del caos a la estructuración, es decir, imponer orden donde antes había confusión.\n\n**Tip Élite:** El uso del término \"evolucionó\" ya sugiere un cambio a un estado superior o más complejo, en este caso, de la aleatoriedad a la estructura (\"jerarquías conceptuales\")."
+  },
+  {
+    "id": "v_tmp_4",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "El protocolo de esterilización quirúrgica dicta someter el instrumental primero a una inmersión enzimática, seguido de un lavado por cavitación ultrasónica; posteriormente se somete a calor húmedo en el autoclave, para finalmente ser almacenado en empaques sellados.",
+    "q": "¿Qué procedimiento precede de forma inmediata al almacenamiento del instrumental?",
+    "opts": [
+      "La exposición a ondas ultrasónicas de cavitación.",
+      "El tratamiento térmico en el autoclave.",
+      "El baño en solución enzimática inicial.",
+      "La utilización quirúrgica en el quirófano."
+    ],
+    "ans": 1,
+    "exp": "Trazar el orden cronológico estricto de los eventos es clave.\n\n*   1. Inmersión enzimática.\n*   2. Lavado por cavitación ultrasónica.\n*   3. Sometimiento a calor húmedo en el autoclave.\n*   4. Almacenamiento en empaques.\n*   Se nos pregunta qué ocurre *justo antes* del paso 4 (almacenamiento). La respuesta es el paso 3: el tratamiento en el autoclave.\n\n**Tip Élite:** En preguntas de secuencias procedimentales, elabora mentalmente (o anota) una lista numerada. Presta atención a palabras clave como \"inmediatamente antes\" o \"sucesivamente\"."
+  },
+  {
+    "id": "v_tmp_5",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "Para la promulgación de una ley, el Congreso primero admite la iniciativa para su estudio, luego la debate exhaustivamente en comisiones, subsecuentemente aprueba el dictamen en el pleno y, como colofón, el Poder Ejecutivo la publica en el diario oficial.",
+    "q": "¿Qué fase procedimental ocurre inmediatamente después del debate exhaustivo en comisiones?",
+    "opts": [
+      "La admisión de la iniciativa legislativa.",
+      "La aprobación del dictamen en el pleno legislativo.",
+      "La sanción y publicación por parte del Ejecutivo.",
+      "La derogación de los artículos transitorios."
+    ],
+    "ans": 1,
+    "exp": "Definamos el flujo del proceso legislativo presentado.\n\n*   1. Admisión de la iniciativa.\n*   2. Debate en comisiones.\n*   3. Aprobación en el pleno.\n*   4. Publicación en el diario oficial.\n*   La pregunta indaga sobre el paso consecutivo al \"debate en comisiones\" (paso 2). Este corresponde lógicamente al paso 3: la aprobación en el pleno.\n\n**Tip Élite:** Conectores como \"luego\", \"subsecuentemente\" y \"como colofón\" funcionan como los hitos kilométricos en una carretera; marcan inconfundiblemente la transición temporal de una etapa a la siguiente."
+  },
+  {
+    "id": "v_tmp_6",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "En la manufactura de cerámicas de alta temperatura, el artesano moldea inicialmente la arcilla, acto seguido tornea la pieza para definir su simetría, procede a deshidratarla en un ambiente controlado por 48 horas y, en última instancia, le aplica el vidriado a fuego.",
+    "q": "¿Qué etapa transcurre de forma inmediatamente posterior a la definición de la simetría en el torno?",
+    "opts": [
+      "El modelado rudimentario de la arcilla bruta.",
+      "El proceso de deshidratación en atmósfera controlada.",
+      "La aplicación del esmalte vitrificado a alta temperatura.",
+      "La extracción de los silicatos de las canteras."
+    ],
+    "ans": 1,
+    "exp": "Estructuremos el proceso de manufactura descrito.\n\n*   1. Moldea la arcilla.\n*   2. Tornea la pieza (define simetría).\n*   3. Deshidrata (ambiente controlado).\n*   4. Aplica el vidriado a fuego.\n*   El texto menciona \"acto seguido tornea la pieza... procede a deshidratarla\". Por lo tanto, después del torneado (paso 2) sigue la deshidratación (paso 3).\n\n**Tip Élite:** Presta atención a las paráfrasis en las opciones. \"Tornea la pieza para definir su simetría\" en el texto, aparece como \"definición de la simetría en el torno\" en la pregunta. Comprender la equivalencia es vital."
+  },
+  {
+    "id": "v_tmp_7",
+    "domain": "verbal",
+    "topic": "orden_temporal",
+    "dif": 3,
+    "stem": "Durante el protocolo del juicio oral, el juez declara formalmente instalada la audiencia, a continuación la fiscalía expone sus alegatos de apertura, sobreviene luego una fase de desahogo de pruebas testimoniales y, finalmente, se formulan los alegatos de clausura.",
+    "q": "¿Qué fase procesal precede de manera inmediata a la formulación de los alegatos de clausura?",
+    "opts": [
+      "La exposición argumentativa de apertura por la fiscalía.",
+      "El periodo destinado al desahogo de pruebas testimoniales.",
+      "La declaración inaugural del magistrado presidente.",
+      "La emisión irrevocable de la sentencia condenatoria."
+    ],
+    "ans": 1,
+    "exp": "Establezcamos la cronología del juicio descrita en el fragmento.\n\n*   1. Instalación de la audiencia.\n*   2. Alegatos de apertura.\n*   3. Desahogo de pruebas testimoniales.\n*   4. Alegatos de clausura.\n*   El paso que sucede justo antes de los alegatos de clausura (paso 4) es la fase de pruebas testimoniales (paso 3).\n\n**Tip Élite:** Las secuencias en exámenes de alto nivel suelen esconderse detrás de vocabulario técnico. No te dejes intimidar por la jerga jurídica; el análisis lógico (Paso A -> Paso B) sigue siendo el mismo."
+  },
+  {
+    "id": "v_ese_4",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "La esencia de un magistrado probo reside en ponderar imparcialmente los testimonios, analizar con rigor dogmático las pruebas y emitir un fallo estrictamente apegado a la jurisprudencia.",
+    "q": "Siguiendo esta estructura analógica, ¿cuál sería la conducta consustancial a un auditor financiero íntegro?",
+    "opts": [
+      "Evaluar la situación de la empresa, cotejar los libros contables con exhaustividad y emitir un dictamen fiel a la realidad patrimonial.",
+      "Maximizar artificialmente los márgenes de ganancia para complacer al cuerpo de accionistas.",
+      "Reestructurar de forma arbitraria todas las partidas presupuestarias sin previo diagnóstico.",
+      "Avalar los estados financieros confiando ciegamente en la palabra de la gerencia general."
+    ],
+    "ans": 0,
+    "exp": "Determinemos el patrón de acción del profesional ideal (el magistrado).\n\n*   1. Escucha/pondera la información de forma imparcial.\n*   2. Analiza rigurosamente la evidencia objetiva (pruebas).\n*   3. Emite un resultado ético y apegado a la norma (fallo).\n*   Al trasladar este modelo a un auditor, este debe: 1. Evaluar objetivamente, 2. Analizar exhaustivamente (libros contables) y 3. Emitir un resultado veraz (dictamen fiel). Las opciones B, C y D representan malas praxis.\n\n**Tip Élite:** Las preguntas de analogía lógica requieren que abstraigas el \"esqueleto\" de un argumento (ej. Diagnóstico objetivo -> Análisis riguroso -> Resolución técnica) y lo apliques milimétricamente a un dominio distinto."
+  },
+  {
+    "id": "v_ese_5",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Una constitución política puede ser extensa o sucinta, rígida o flexible en sus mecanismos de reforma; no obstante, si carece del poder para limitar el ejercicio de la autoridad y garantizar los derechos fundamentales, deja de ser una verdadera constitución.",
+    "q": "¿Cuál es el atributo ontológico esencial que define a una constitución según el fragmento?",
+    "opts": [
+      "La longitud y exhaustividad de su articulado dogmático.",
+      "Su capacidad ineludible para restringir el poder estatal y tutelar derechos.",
+      "La maleabilidad de sus procedimientos de reforma legislativa.",
+      "La forma republicana de gobierno que estatuye en sus preámbulos."
+    ],
+    "ans": 1,
+    "exp": "Distingamos entre las propiedades accidentales y las esenciales en el texto.\n\n*   Características variables (accidentales): puede ser extensa, sucinta, rígida, flexible.\n*   Característica condicional (esencial): \"si carece del poder para limitar... y garantizar... deja de ser...\".\n*   Por tanto, la restricción del poder y la protección de derechos constituyen la naturaleza misma (el ser) del objeto en cuestión.\n\n**Tip Élite:** Lo esencial es aquello *sine qua non* (sin lo cual no). En textos filosóficos o teóricos, fíjate en las oraciones condicionales (\"si le falta X, ya no es Y\"), pues revelan el núcleo ontológico del concepto."
+  },
+  {
+    "id": "v_ese_6",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Del mismo modo en que la esencia teleológica de un faro reside ineludiblemente en proyectar un haz lumínico para guiar a los navegantes —soslayando si su arquitectura es cilíndrica o su base de mampostería—, toda herramienta halla su definición en su razón de ser operativa.",
+    "q": "Aplicando este principio ontológico, ¿cuál es la esencia inalienable de un sismógrafo?",
+    "opts": [
+      "Alertar sobre la hora exacta del ocaso.",
+      "Registrar y medir la amplitud de las oscilaciones de las placas tectónicas.",
+      "Indicar el Norte magnético a las embarcaciones a la deriva.",
+      "Determinar la densidad de los estratos minerales del subsuelo."
+    ],
+    "ans": 1,
+    "exp": "Revisemos la premisa principal del argumento.\n\n*   La \"esencia teleológica\" (el propósito) define al objeto, no su forma o material.\n*   Un faro guía navegantes (su función).\n*   Por analogía funcional, debemos identificar el propósito intrínseco de un sismógrafo, el cual es registrar las oscilaciones tectónicas (terremotos).\n\n**Tip Élite:** La palabra \"teleología\" se refiere al estudio de los fines o propósitos. Cuando un texto enfatiza la teleología de un objeto, te está pidiendo que te enfoques exclusivamente en *para qué sirve*, descartando su estética o composición."
+  },
+  {
+    "id": "v_ese_7",
+    "domain": "verbal",
+    "topic": "esencia",
+    "dif": 3,
+    "stem": "Un catalizador químico puede presentarse en fase sólida o líquida, exhibir diversas tonalidades o variar en su densidad; lo que le confiere su identidad inconfundible es su capacidad para alterar la energía de activación de una reacción termodinámica.",
+    "q": "¿Cuál constituye la propiedad intrínseca y definitoria de un catalizador?",
+    "opts": [
+      "Su estructura en fase líquida o sólida.",
+      "Su aptitud para modificar las barreras energéticas de una reacción.",
+      "El matiz de su espectro colorimétrico.",
+      "La concentración de su masa por unidad de volumen."
+    ],
+    "ans": 1,
+    "exp": "Filtremos la información para separar la forma de la función.\n\n*   Atributos morfológicos (fase, color, densidad): pueden variar sin alterar la naturaleza del objeto.\n*   Atributo definitorio: la \"capacidad para alterar la energía de activación\".\n*   Esta aptitud funcional es lo que permite que el objeto reciba el nombre de catalizador.\n\n**Tip Élite:** La estructura argumentativa \"A puede ser X, Y o Z, pero lo que lo hace A es W\" aísla infaliblemente a W como la característica intrínseca y excluye al resto como meros accidentes."
+  },
+  {
+    "id": "v_per_4",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "La severa devaluación monetaria que pulveriza el poder adquisitivo del ciudadano de a pie, paradójicamente, representa una época dorada de alta rentabilidad para las corporaciones orientadas a la exportación de materias primas.",
+    "q": "¿Qué axioma se infiere de la dicotomía planteada en el fragmento?",
+    "opts": [
+      "Las crisis macroeconómicas invariablemente conducen al colapso total de la sociedad.",
+      "Un fenómeno coyuntural idéntico genera impactos diametralmente opuestos según la posición de los actores.",
+      "Los ciudadanos poseen una nula capacidad de resiliencia frente a los embates financieros.",
+      "Las corporaciones mercantiles operan al margen de toda ética en tiempos de crisis."
+    ],
+    "ans": 1,
+    "exp": "Analicemos las dos caras de la moneda presentadas por el autor.\n\n*   Mismo evento central: La \"devaluación monetaria\".\n*   Impacto A: \"Pulveriza\" al ciudadano (efecto negativo).\n*   Impacto B: \"Época dorada\" para exportadores (efecto positivo).\n*   La conclusión lógica (axioma) es que la realidad no es monolítica: un mismo hecho repercute de manera asimétrica dependiendo de a quién afecte.\n\n**Tip Élite:** Muchas preguntas de comprensión evalúan la relatividad de los fenómenos sociales. Evita siempre las opciones que incluyan juicios morales (ej. \"operan al margen de la ética\") que el autor no ha expresado explícitamente."
+  },
+  {
+    "id": "v_per_5",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Atravesar la vorágine de la ciudad cosmopolita es, para el joven sediento de oportunidades, un laberinto rebosante de estímulos efervescentes; para el lugareño anciano anhelante de quietud, resulta ser una cacofonía agobiante y hostil.",
+    "q": "¿Qué premisa sustenta la divergencia en la asimilación del entorno urbano?",
+    "opts": [
+      "La infraestructura urbana se metamorfosea objetivamente dependiendo de la edad del transeúnte.",
+      "La decodificación de la realidad está intrínsecamente supeditada al estado vital y las expectativas del sujeto cognoscente.",
+      "El entusiasmo juvenil suele manifestarse a través de percepciones ilusorias de la realidad material.",
+      "La población de la tercera edad carece de las facultades sensoriales para apreciar el urbanismo."
+    ],
+    "ans": 1,
+    "exp": "Revisemos cómo interactúan los sujetos con su entorno.\n\n*   El objeto (la ciudad cosmopolita) permanece inmutable.\n*   Sujeto A (joven sediento) lo percibe como \"estímulos efervescentes\".\n*   Sujeto B (anciano anhelante) lo percibe como \"cacofonía agobiante\".\n*   La diferencia radica en el filtro interno: el \"estado vital\" y las \"expectativas\" decodifican la misma realidad de forma dispar.\n\n**Tip Élite:** La frase \"sujeto cognoscente\" se refiere a la persona que conoce o percibe. La filosofía del conocimiento enseña que el sujeto no es un espejo pasivo, sino que moldea activamente la realidad que experimenta."
+  },
+  {
+    "id": "v_per_6",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "El abrupto fracaso de una empresa emergente puede ser procesado psicológicamente como una sentencia de incompetencia irredimible, o bien, ser asimilado como un valioso diagnóstico empírico sobre las fallas operativas a corregir en futuros emprendimientos.",
+    "q": "¿Qué postulado defiende el autor respecto a la ocurrencia de un evento adverso?",
+    "opts": [
+      "Que la ruina financiera es un hito inexorable e insalvable en el mundo empresarial.",
+      "Que la fenomenología del fracaso admite hermenéuticas diametralmente opuestas en función de la óptica del individuo.",
+      "Que las leyes del libre mercado son inherentemente hostiles hacia la innovación.",
+      "Que la rentabilidad y la bancarrota son estadios equivalentes e intrascendentes."
+    ],
+    "ans": 1,
+    "exp": "Identifiquemos el argumento central sobre la experiencia del fracaso.\n\n*   Hecho objetivo: quiebra de una empresa.\n*   Interpretación 1: \"sentencia de incompetencia\" (visión fatalista).\n*   Interpretación 2: \"diagnóstico empírico\" (visión constructiva).\n*   El texto postula que el mismo hecho (fenomenología) permite lecturas o interpretaciones (hermenéuticas) totalmente contrarias.\n\n**Tip Élite:** El término \"hermenéutica\" alude al arte de interpretar textos o realidades. En lecturas avanzadas, \"hermenéuticas opuestas\" es sinónimo de interpretar un mismo suceso de formas distintas."
+  },
+  {
+    "id": "v_per_7",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "El incesante repique de las campanas catedralicias que exalta el fervor religioso de los feligreses reunidos en la plaza, representa, para el intelectual recluido en su biblioteca contigua, una intrusión acústica que quebranta su concentración indispensable.",
+    "q": "¿Cuál es la tesis subyacente en esta situación cotidiana?",
+    "opts": [
+      "Las manifestaciones de culto poseen un efecto nocivo universal sobre el rendimiento intelectual.",
+      "La apreciación estética o perturbadora de un estímulo sensorial está condicionada por las necesidades contextuales del receptor.",
+      "Las regulaciones urbanas prohíben taxativamente la emisión de decibelios elevados en zonas patrimoniales.",
+      "La actividad intelectual es axiomáticamente incompatible con la convivencia comunitaria."
+    ],
+    "ans": 1,
+    "exp": "Examinemos las variables de la situación sonora descrita.\n\n*   Estímulo único: Repique de campanas.\n*   Receptor 1 (feligreses): Sienten \"fervor religioso\" (agrado, sintonía).\n*   Receptor 2 (intelectual): Siente una \"intrusión acústica\" (desagrado, interrupción).\n*   El sonido no es inherentemente bueno ni malo; su valencia depende estrictamente del contexto y necesidad de quien lo percibe.\n\n**Tip Élite:** Las preguntas de inferencia exigen generalizar a partir de un caso particular. Evita las respuestas totalizadoras (\"universal\", \"axiomáticamente\", \"siempre\"); la opción correcta suele usar matices como \"condicionada por\" o \"depende de\"."
+  },
+  {
+    "id": "v_per_8",
+    "domain": "verbal",
+    "topic": "perspectiva",
+    "dif": 3,
+    "stem": "Una crítica expresada con meridiana frontalidad suele ser aclamada por ciertos individuos como un paradigma de honestidad intelectual, mientras que por otros es estigmatizada como un atropello inexcusable a las convenciones de la cortesía.",
+    "q": "A partir de lo expuesto, ¿cuál es el factor determinante en la categorización ética del discurso frontal?",
+    "opts": [
+      "La veracidad objetiva de las premisas expuestas en la argumentación.",
+      "Los esquemas perceptuales e interpretativos que despliega el receptor del mensaje.",
+      "El nivel de decibelios empleado durante la articulación fonética del discurso.",
+      "El grado de hostilidad innata albergada en la psique del emisor."
+    ],
+    "ans": 1,
+    "exp": "Encontremos el eje sobre el cual gira la valoración del mensaje.\n\n*   La crítica es la misma (\"meridiana frontalidad\").\n*   El grupo A la aplaude (\"honestidad\"); el grupo B la censura (\"atropello\").\n*   La variación no está en el emisor, ni en el volumen, ni en la verdad del mensaje, sino en cómo cada receptor la procesa y decodifica según sus propios estándares.\n\n**Tip Élite:** En los esquemas de comunicación complejos, el \"receptor\" no es una vasija vacía; aporta sus propios sesgos y \"esquemas perceptuales\" que terminan de construir el significado final del mensaje."
+  },
+  {
+    "id": "v_imp_6",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "De forma invariablemente secuencial, cada vez que el comensal asiste al reputado bistró para degustar sus especialidades marinas, experimenta a las pocas horas cuadros agudos de malestar gastrointestinal.",
+    "q": "¿Qué corolario se puede colegir lógicamente de la reiteración de estos eventos?",
+    "opts": [
+      "El individuo padece de una aversión psicológica hacia los espacios gastronómicos concurridos.",
+      "Existe un agente nocivo o alérgeno en la oferta culinaria del establecimiento que vulnera su metabolismo.",
+      "La alta cocina francesa suele emplear ingredientes con fechas de caducidad superadas.",
+      "El sujeto ha desarrollado una condición médica de inanición crónica severa."
+    ],
+    "ans": 1,
+    "exp": "Establezcamos la relación lógica basada en la repetición de eventos.\n\n*   Premisa A: El sujeto come en un bistró específico.\n*   Premisa B: Acto seguido, sufre malestar gastrointestinal de forma \"invariablemente secuencial\".\n*   La correlación constante entre un lugar/alimento y una respuesta patológica obliga a inferir que es el alimento de ese lugar el que detona el daño biológico (un agente nocivo).\n\n**Tip Élite:** Un \"corolario\" es una proposición que se deduce lógicamente de lo ya demostrado. \"Colegir\" significa deducir. Si A siempre causa B, la implicación es que A contiene el elemento detonante de B."
+  },
+  {
+    "id": "v_imp_7",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Históricamente, los índices de ocupación de las salas de lectura del campus universitario alcanzan su cota máxima de saturación coincidiendo milimétricamente con el inicio del periodo de evaluaciones parciales.",
+    "q": "¿Qué deducción subyacente explica el fenómeno demográfico descrito?",
+    "opts": [
+      "La infraestructura edilicia del campus padece de una deficiencia estructural crónica.",
+      "La inminencia de las evaluaciones ejerce una presión coercitiva que intensifica drásticamente los hábitos de estudio del alumnado.",
+      "Durante el semestre regular, el acervo bibliográfico es objeto de un desdén generalizado.",
+      "La universidad ofrece incentivos económicos para fomentar la asistencia presencial a los recintos."
+    ],
+    "ans": 1,
+    "exp": "Busquemos la causa subyacente que explica el aumento de flujo.\n\n*   El fenómeno observable es la ocupación máxima (\"cota máxima de saturación\").\n*   Este pico coincide con las \"evaluaciones parciales\".\n*   ¿Por qué los alumnos abarrotan el lugar justo en ese momento? Porque la necesidad de aprobar los obliga a aumentar significativamente sus horas de estudio y concentración.\n\n**Tip Élite:** En los ejercicios de deducción o implicatura, la respuesta correcta es la pieza de información que no está escrita, pero que sirve como \"pegamento lógico\" necesario para que el texto tenga sentido."
+  },
+  {
+    "id": "v_imp_8",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Como paso previo a abandonar su domicilio, el explorador se pertrechó meticulosamente con un impermeable de neopreno, calzado antideslizante de caña alta y una capa térmica provista de aislamiento sintético.",
+    "q": "¿Qué premisa no formulada justifica la selección de indumentaria realizada por el sujeto?",
+    "opts": [
+      "Su destino final era una congregación social de carácter estricto y etiqueta rigurosa.",
+      "Mantenía una expectativa fundada de enfrentarse a condiciones meteorológicas sumamente adversas.",
+      "Desarrollaba actividades comerciales ligadas a la venta de pertrechos de supervivencia.",
+      "El clima exterior registraba niveles de humedad relativa propios de una canícula estival."
+    ],
+    "ans": 1,
+    "exp": "Analicemos la función de los objetos seleccionados por el personaje.\n\n*   Impermeable (repele agua), calzado antideslizante de caña alta (protege de charcos/lodo) y capa térmica (protege del frío).\n*   Nadie utiliza esta combinación de pertrechos de manera azarosa.\n*   La conclusión forzosa es que el sujeto anticipa un escenario ambiental donde estos artículos serán indispensables, es decir, un clima lluvioso y gélido.\n\n**Tip Élite:** El verbo \"pertrecharse\" (prepararse con los elementos necesarios para una acción) implica una acción preventiva basada en un pronóstico. La deducción se basa en la utilidad objetiva de las prendas."
+  },
+  {
+    "id": "v_imp_9",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Al franquear el umbral de la morada el día jueves, el detective constató una parálisis temporal absoluta: el diario impreso del lunes yacía intacto en el pórtico, la vajilla del desayuno exhibía restos orgánicos desecados, y las persianas mantenían la penumbra interior a despecho del cénit solar.",
+    "q": "¿Qué conclusión inferencial se impone con un alto grado de certidumbre a partir de la escena del crimen?",
+    "opts": [
+      "El inmueble fue escenario de una congregación multitudinaria clandestina durante las madrugadas previas.",
+      "El recinto ha permanecido en estado de total orfandad humana desde las primeras horas de la jornada de lunes.",
+      "Una brigada de saneamiento acababa de restaurar el orden aséptico de las estancias.",
+      "La morada se encuentra ocupada por individuos que padecen fotofobia severa."
+    ],
+    "ans": 1,
+    "exp": "Reconstruyamos la línea temporal a partir de las evidencias físicas.\n\n*   El observador llega el jueves.\n*   El diario es del lunes; la vajilla tiene restos \"desecados\" (varios días abandonada); hay penumbra diurna constante.\n*   Si hubiese entrado un ser humano entre el lunes y el jueves, alguna de estas variables habría sido alterada (recoger el diario, lavar, abrir cortinas). Su inmutabilidad confirma la ausencia prolongada de habitantes.\n\n**Tip Élite:** La inferencia tipo Sherlock Holmes se basa en la presencia de la ausencia. Lo que indica abandono no es lo que hay, sino lo que *no se ha hecho* (las rutinas diarias suspendidas)."
+  },
+  {
+    "id": "v_imp_10",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "Como parte ineludible de su ritual nocturno, la arrendataria verifica, en no menos de tres comprobaciones consecutivas, que los cerrojos de seguridad de la entrada principal estén plenamente encastrados antes de sucumbir al letargo.",
+    "q": "¿Qué rasgo de la estructura psicológica o actitudinal de la arrendataria queda tácitamente evidenciado?",
+    "opts": [
+      "Una tendencia irremisible hacia la negligencia en el mantenimiento del hogar.",
+      "Un celo exacerbado y de naturaleza precavida frente a posibles vulnerabilidades de seguridad.",
+      "Un padecimiento clínico de insomnio crónico que le impide conciliar el reposo.",
+      "Una carencia de pericia técnica para operar cerraduras modernas."
+    ],
+    "ans": 1,
+    "exp": "Evaluemos el comportamiento de la protagonista frente al riesgo.\n\n*   La acción es \"verificar los cerrojos\".\n*   La intensidad de la acción es \"tres comprobaciones consecutivas\" (un ritual).\n*   Esta redundancia en las medidas de protección no es un descuido, sino la manifestación de un instinto de precaución llevado a un alto nivel de exigencia (celo exacerbado).\n\n**Tip Élite:** Las acciones redundantes en los textos (revisar múltiples veces, corroborar) siempre apuntan a inferir perfiles de desconfianza, cautela extrema o aprensión ante el peligro."
+  },
+  {
+    "id": "v_imp_11",
+    "domain": "verbal",
+    "topic": "idea_implicita",
+    "dif": 3,
+    "stem": "A pesar de que el consorcio rival intentó cooptarlo mediante un paquete remunerativo sustancialmente más lucrativo, el gerente optó de manera inquebrantable por declinar la oferta y ratificar su permanencia en su corporación actual.",
+    "q": "¿Qué principio rector subyace, de forma implícita, en la determinación tomada por el gerente?",
+    "opts": [
+      "Una codicia desmedida que subordina cualquier lealtad al mero lucro económico.",
+      "La preeminencia de factores valorativos intangibles por encima de la estricta retribución monetaria.",
+      "Una parálisis analítica que lo incapacita para ejercer el libre albedrío en el mercado laboral.",
+      "La sospecha fundamentada sobre la inminente insolvencia financiera del consorcio rival."
+    ],
+    "ans": 1,
+    "exp": "Analicemos la toma de decisiones del personaje en función de los incentivos.\n\n*   Incentivo A (irse): \"Paquete remunerativo lucrativo\" (más dinero).\n*   Incentivo B (quedarse): Desconocido, pero suficientemente fuerte para vencer a A.\n*   Al elegir quedarse, se infiere lógicamente que el individuo asigna a factores no pecuniarios (estabilidad, lealtad, clima laboral, realización) un peso mayor que al simple beneficio económico.\n\n**Tip Élite:** En la teoría de decisiones, cuando un agente racional rechaza un beneficio material obvio, se infiere axiomáticamente que sus funciones de utilidad están gobernadas por valores intangibles (honor, lealtad, comodidad)."
+  },
+  {
+    "id": "v_pri_4",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La implementación de políticas de reciclaje integral mitiga ostensiblemente el volumen de residuos sólidos destinados a los vertederos municipales, preserva los cada vez más escasos recursos naturales mediante el reacondicionamiento de materias primas, y atenúa de forma drástica las emisiones contaminantes que degradan los acuíferos y la atmósfera.",
+    "q": "¿Cuál es la tesis vertebradora que unifica los distintos argumentos del fragmento?",
+    "opts": [
+      "La crisis contemporánea de saturación en los vertederos municipales exige medidas urgentes.",
+      "La práctica del reciclaje genera una multiplicidad de impactos ecológicos altamente provechosos.",
+      "El reacondicionamiento de materias primas es el único mecanismo viable de sustentabilidad.",
+      "La mitigación de las emisiones atmosféricas constituye el fin último de todo programa de reciclaje."
+    ],
+    "ans": 1,
+    "exp": "Diferenciemos entre los soportes del texto y su cimiento principal.\n\n*   Soporte 1: Mitiga residuos en vertederos.\n*   Soporte 2: Preserva recursos naturales.\n*   Soporte 3: Atenúa contaminación de agua y aire.\n*   Ninguno de estos puntos abarca a los demás; son ramas del mismo árbol. El tronco (tesis vertebradora) es que el reciclaje produce un conjunto diversificado de externalidades positivas para el medio ambiente.\n\n**Tip Élite:** Para hallar la \"tesis vertebradora\" en un texto de estructura acumulativa (A, B y C), busca la opción que funcione como una sombrilla (término hiperónimo) capaz de cobijar a todos los ejemplos dados sin enfocarse en uno solo."
+  },
+  {
+    "id": "v_pri_5",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Los himenópteros de la familia de los ápidos no solo fungen como el principal vector de polinización para una proporción abrumadora de los cultivos que sustentan la dieta humana, sino que también sintetizan derivados nutricionales invaluables y actúan como especies clave para la homeostasis de innumerables ecosistemas silvestres.",
+    "q": "¿Qué postulado central pretende establecer el autor del texto?",
+    "opts": [
+      "El proceso bioquímico de la síntesis de nutrientes derivados del néctar floral.",
+      "La trascendencia multidimensional y el rol sistémico irremplazable de los ápidos en la biósfera y la antropósfera.",
+      "La vulnerabilidad de los cultivos de consumo humano frente a la extinción de vectores polinizadores.",
+      "La distribución geográfica y adaptación evolutiva de las abejas en entornos silvestres."
+    ],
+    "ans": 1,
+    "exp": "Estructuremos las aseveraciones del autor.\n\n*   Aseveración 1: Son el vector de polinización de la dieta humana.\n*   Aseveración 2: Sintetizan derivados nutricionales (miel).\n*   Aseveración 3: Mantienen la homeostasis (equilibrio) de los ecosistemas.\n*   El punto central no es la miel (A), ni solo los cultivos (C), sino la suma de su impacto vital tanto en la esfera humana (antropósfera) como natural (biósfera).\n\n**Tip Élite:** \"Homeostasis\" significa equilibrio sistémico; \"antropósfera\" alude al mundo humano. El vocabulario erudito a menudo esconde las mismas estructuras lógicas simples: la idea principal es la sumatoria de las premisas."
+  },
+  {
+    "id": "v_pri_6",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "El abordaje asiduo de textos literarios y ensayísticos enriquece el acervo léxico del individuo, estimula la plasticidad de las redes neuronales asociadas a la retentiva, y somete al intelecto a un constante escrutinio de paradigmas y cosmovisiones alternativas.",
+    "q": "¿Cuál es la premisa fundamental que engloba los conceptos vertidos en el párrafo?",
+    "opts": [
+      "La asimilación de vocablos cultos como principal objetivo de la alfabetización.",
+      "El hábito de la lectura como un agente catalizador de múltiples provechos cognitivos y epistémicos.",
+      "El desarrollo exclusivo de la memoria a corto plazo a través del estudio de ensayos.",
+      "La proliferación de cosmovisiones radicales en la literatura contemporánea."
+    ],
+    "ans": 1,
+    "exp": "Clasifiquemos la información según su nivel de generalidad.\n\n*   Nivel específico: Enriquece el léxico, estimula la plasticidad neuronal, escudriña nuevos paradigmas.\n*   Nivel general: Todas estas son ventajas relacionadas con el cerebro, el intelecto y el conocimiento.\n*   Por tanto, la premisa matriz es que la lectura cataliza ventajas cognitivas (plasticidad, memoria) y epistémicas (léxico, paradigmas, conocimiento).\n\n**Tip Élite:** En textos ensayísticos, si una oración enumera características positivas (X, Y, Z) derivadas de una acción, la idea principal será la formulación general que defina a la acción como beneficiosa (agente catalizador)."
+  },
+  {
+    "id": "v_pri_7",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Las cuencas hidrográficas tienen su génesis en los glaciares de alta montaña, serpentean a través de las llanuras fluviales irrigando bastas extensiones agrícolas, y vierten finalmente su caudal en el litoral oceánico, erigiéndose en cada tramo como las arterias proveedoras del vigor biológico.",
+    "q": "¿Cuál es el eje temático alrededor del cual gravita el desarrollo del texto?",
+    "opts": [
+      "La turbidez mineralógica de las corrientes en alta montaña.",
+      "La trayectoria geográfica de las redes fluviales y su función como sustento vital ineludible.",
+      "La altimetría y conformación topográfica de las cordilleras continentales.",
+      "La explotación pesquera intensiva en las zonas de desembocadura litoral."
+    ],
+    "ans": 1,
+    "exp": "Localicemos el hilo conductor narrativo y descriptivo.\n\n*   El texto traza un mapa: nacimiento (montaña) -> tránsito (llanuras/irrigación) -> fin (mar).\n*   Y le asigna un significado a ese mapa: actúan como \"arterias proveedoras del vigor biológico\" en cada etapa.\n*   En consecuencia, el tema abarca ambas dimensiones: el recorrido espacial y el rol sustentador de vida del flujo de agua.\n\n**Tip Élite:** El \"tema central\" (o eje temático) suele ser un sintagma nominal (una frase sin un verbo principal conjugado) que resume de qué se habla. Evita alternativas que se enfoquen solo en el inicio o en el final del relato."
+  },
+  {
+    "id": "v_pri_8",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "La observancia de una higiene del sueño rigurosa optimiza los procesos de consolidación mnemotécnica, potencia la respuesta inmunológica ante patógenos externos y modula la segregación de neurotransmisores asociados a la estabilidad emocional.",
+    "q": "¿Qué tesis abarcadora subsume la totalidad de los datos aportados por el autor?",
+    "opts": [
+      "La optimización de los recuerdos a largo plazo exige prolongados periodos de inactividad.",
+      "La calidad del descanso nocturno genera dividendos fisiológicos y psicológicos de carácter integral.",
+      "El fortalecimiento del sistema inmune es el único factor de resiliencia frente a virus estacionales.",
+      "La labilidad emocional es una patología derivada intrínsecamente del estrés contemporáneo."
+    ],
+    "ans": 1,
+    "exp": "Evaluemos la naturaleza de los beneficios enumerados.\n\n*   Consolidación mnemotécnica (memoria) y neurotransmisores emocionales = Área psicológica o mental.\n*   Respuesta inmunológica = Área fisiológica o corporal.\n*   La tesis que incluye a ambos campos afirma que el descanso genera dividendos (beneficios) fisiológicos y psicológicos integrales.\n\n**Tip Élite:** Subsumir significa incluir algo particular dentro de algo más general. Cuando te pidan la idea que subsume, busca la alternativa que categorice de forma amplia todos los elementos del texto (ej. cuerpo y mente)."
+  },
+  {
+    "id": "v_pri_9",
+    "domain": "verbal",
+    "topic": "idea_principal",
+    "dif": 3,
+    "stem": "Dentro del tejido social de Costa Rica coexisten de manera sinérgica la lengua franca hispana, las ancestrales variantes dialectales autóctonas como el bribri, y el inglés criollo de herencia afroantillana; configurando un crisol que evidencia su vasto patrimonio inmaterial.",
+    "q": "¿Cuál es el núcleo temático que articula el fragmento citado?",
+    "opts": [
+      "El pluralismo lingüístico como manifestación patente de la riqueza sociocultural costarricense.",
+      "El análisis morfosintáctico y filológico de las lenguas de matriz romance en América Central.",
+      "Los movimientos demográficos que cimentaron la conformación étnica de la provincia de Limón.",
+      "Las metodologías pedagógicas imperantes en la instrucción de lenguas germánicas."
+    ],
+    "ans": 0,
+    "exp": "Identifiquemos el concepto macro que agrupa a los tres idiomas mencionados.\n\n*   Se enumeran tres lenguas de orígenes distintos (hispana, autóctona, afroantillana) coexistiendo.\n*   El autor concluye que esto configura un \"crisol\" y evidencia un \"patrimonio inmaterial\".\n*   El término que define la coexistencia de múltiples lenguas es el pluralismo lingüístico (o diversidad lingüística).\n\n**Tip Élite:** Un \"crisol\" es una metáfora muy utilizada en ciencias sociales para denotar la mezcla y convivencia de diferentes culturas. Si ves distintas lenguas conviviendo, el tema central será indefectiblemente el multilingüismo o la diversidad."
+  },
+  {
+    "id": "v_par_4",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El capital intelectual que se confina al hermetismo inexorablemente se marchita, de la misma guisa en que las aguas carentes de fluencia sucumben a la putrefacción.",
+    "q": "¿Qué alternativa constituye una exégesis fiel del sentido figurado del texto?",
+    "opts": [
+      "La erudición es intrínsecamente estéril si no va acompañada de bienes materiales.",
+      "El acervo del saber preserva su vitalidad únicamente a través del proceso de su diseminación.",
+      "Los fluidos en reposo absoluto poseen propiedades regenerativas para los ecosistemas.",
+      "La socialización del aprendizaje conduce irremediablemente a su degradación cualitativa."
+    ],
+    "ans": 1,
+    "exp": "Traduzcamos la metáfora del autor.\n\n*   \"Capital intelectual confinado\" (saber no compartido) se \"marchita\" (muere).\n*   La analogía del agua estancada refuerza la idea de que la falta de circulación genera podredumbre.\n*   La conclusión lógica, expuesta en positivo, es que para que el saber no muera (preserve su vitalidad), debe circular (diseminarse/compartirse).\n\n**Tip Élite:** Una paráfrasis o exégesis puede decir lo mismo usando la negación del opuesto. Si el texto afirma \"No compartir = Muerte\", la alternativa correcta será \"Compartir = Vida\". Esto se llama inferencia por contraposición."
+  },
+  {
+    "id": "v_par_5",
+    "domain": "verbal",
+    "topic": "parafrasis",
+    "dif": 3,
+    "stem": "El enjuiciamiento crítico, cuando está desprovisto de malicia o sesgo punitivo, carece de pretensiones lesivas y se erige, más bien, como un andamiaje propedéutico orientado al perfeccionamiento del sujeto.",
+    "q": "¿Qué formulación parafrasea con mayor rigor semántico la tesis expuesta?",
+    "opts": [
+      "Todo escrutinio valorativo abriga la intención velada de menoscabar la dignidad ajena.",
+      "Una evaluación íntegra ostenta un propósito constructivo y fomenta la superación personal.",
+      "Resulta imperativo suprimir cualquier forma de disenso para preservar la armonía colectiva.",
+      "El perfeccionamiento de las habilidades humanas constituye una quimera inalcanzable."
+    ],
+    "ans": 1,
+    "exp": "Sustituyamos los términos complejos por su equivalente llano.\n\n*   \"Enjuiciamiento desprovisto de malicia\" = Crítica honesta.\n*   \"Carece de pretensiones lesivas\" = No busca herir.\n*   \"Andamiaje orientado al perfeccionamiento\" = Ayuda constructiva para mejorar.\n*   La opción que consolida estas equivalencias afirma que la evaluación íntegra tiene un propósito constructivo y fomenta la superación.\n\n**Tip Élite:** En los ejercicios de paráfrasis de alta dificultad, el truco radica en el vocabulario. Debes construir un glosario mental; por ejemplo, saber que \"menoscabar\" es herir o dañar, y \"quimera\" es algo imposible."
+  }
+]

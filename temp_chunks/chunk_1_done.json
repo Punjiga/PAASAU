@@ -1,0 +1,674 @@
+[
+  {
+    "id": "v_pro_3",
+    "domain": "verbal",
+    "topic": "proposiciones",
+    "dif": 3,
+    "stem": "Considere la siguiente premisa científica: \"El incremento en la energía térmica ambiental provoca el cambio de estado sólido a líquido en el agua congelada\". Analice las siguientes proposiciones derivadas:\nI. La absorción de calor es un factor capaz de inducir la transición del hielo al estado líquido.\nII. El estado de agregación sólido del agua permanece inalterable ante fluctuaciones térmicas positivas.\nIII. La ausencia prolongada de calor es el catalizador principal para la fusión del hielo.",
+    "q": "¿Cuál proposición se deduce del texto?",
+    "opts": [
+      "Solo la I",
+      "Solo la II",
+      "Solo la III",
+      "La II y la III"
+    ],
+    "ans": 0,
+    "exp": "Para resolver este ejercicio, analicemos la premisa inicial paso a paso:\n\n*   **Proposición I:** Se alinea directamente con la premisa, ya que un incremento de energía térmica (calor) provoca la fusión (cambio a líquido). Es una deducción lógica válida.\n*   **Proposición II:** Contradice la premisa, afirmando que el estado sólido permanece inalterable al subir la temperatura.\n*   **Proposición III:** Introduce una falacia causal al atribuir la fusión del hielo a la ausencia de calor (frío), lo cual es opuesto al texto.\n\nPor lo tanto, únicamente la primera proposición se deduce de manera correcta.\n\n**Tip Élite:** En los ejercicios de deducción, asegúrese de no incorporar información externa ni invertir las relaciones de causa y efecto presentadas en el texto."
+  },
+  {
+    "id": "m_ari_1",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En un establecimiento comercial, el precio unitario de un artículo A es de ₡75 y el de un artículo B es de ₡120. Un cliente adquiere 8 unidades del artículo A y 3 unidades del artículo B, efectuando el pago con un billete de ₡2 000.",
+    "q": "¿Cuánto recibe de vuelto?",
+    "opts": [
+      "₡860",
+      "₡1 040",
+      "₡960",
+      "₡1 100"
+    ],
+    "ans": 1,
+    "exp": "Analicemos el problema calculando los costos parciales y el costo total:\n\n*   **Costo de artículos A:** 8 unidades a ₡75 cada una resulta en 8 × 75 = 600.\n*   **Costo de artículos B:** 3 unidades a ₡120 cada una resulta en 3 × 120 = 360.\n*   **Costo total:** Sumamos ambos montos: 600 + 360 = 960.\n\nFinalmente, para calcular el vuelto, restamos el costo total del monto entregado: 2 000 − 960 = 1 040.\n\n**Tip Élite:** Estructure siempre sus cálculos en pasos (costo por rubro, costo total, y resta final) para evitar errores aritméticos por omisión de términos."
+  },
+  {
+    "id": "m_ari_2",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Una estudiante completa la lectura de {{2/5}} del volumen total de una obra literaria durante el primer día, y al día siguiente avanza con {{1/3}} adicional del mismo volumen.",
+    "q": "¿Qué fracción del libro le falta por leer?",
+    "opts": [
+      "{{1/15}}",
+      "{{4/15}}",
+      "{{11/15}}",
+      "{{3/8}}"
+    ],
+    "ans": 1,
+    "exp": "Para hallar la porción restante, primero debemos unificar el avance mediante un común denominador:\n\n*   **Suma del avance:** El progreso total es la suma de ambas fracciones: {{2/5}} + {{1/3}}.\n*   **Denominador común:** El mínimo común múltiplo de 5 y 3 es 15.\n*   **Cálculo:** Convertimos: {{6/15}} + {{5/15}} = {{11/15}}.\n*   **Restante:** El total de la obra representa la unidad (1). Restamos lo leído: 1 − {{11/15}} = {{4/15}}.\n\n**Tip Élite:** Cuando trabaje con adiciones de fracciones heterogéneas, verifique siempre que el resultado no supere la unidad antes de realizar la resta final."
+  },
+  {
+    "id": "m_ari_3",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "El precio de un litro de combustible de alto octanaje se fija en ₡652,50. Un conductor abastece su vehículo con exactamente 30 litros y cancela la transacción utilizando tres billetes de ₡10 000.",
+    "q": "¿Cuánto recibe de vuelto?",
+    "opts": [
+      "₡10 425",
+      "₡9 575",
+      "₡10 575",
+      "₡11 425"
+    ],
+    "ans": 0,
+    "exp": "Desglosemos la transacción financiera del conductor:\n\n*   **Total a pagar:** Multiplicamos el costo unitario por la cantidad: 30 × 652,50. Un atajo es multiplicar 3 × 6525 = 19 575.\n*   **Dinero entregado:** 3 billetes de ₡10 000 suman un total de ₡30 000.\n*   **Cálculo del vuelto:** Restamos la deuda del monto entregado: 30 000 − 19 575 = 10 425.\n\n**Tip Élite:** Al multiplicar decimales por múltiplos de 10, traslade la coma antes de operar para reducir la probabilidad de cometer errores de magnitud."
+  },
+  {
+    "id": "m_ari_4",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "Considere la siguiente estructura aritmética que integra diversas operaciones combinadas: 3 + 4 × 5 − 8 ÷ 2 + 2³.",
+    "q": "¿Cuál es el resultado?",
+    "opts": [
+      "27",
+      "19",
+      "35",
+      "11"
+    ],
+    "ans": 0,
+    "exp": "La clave para resolver este planteamiento radica en respetar la jerarquía (prioridad) de las operaciones aritméticas (PEMDAS):\n\n*   **Potencias:** Primero resolvemos 2³ = 8. La expresión queda: 3 + 4 × 5 − 8 ÷ 2 + 8.\n*   **Multiplicaciones y divisiones:** Se resuelven de izquierda a derecha. Calculamos 4 × 5 = 20 y 8 ÷ 2 = 4. La expresión queda: 3 + 20 − 4 + 8.\n*   **Sumas y restas:** Por último, operamos de forma secuencial: 23 − 4 + 8 = 19 + 8 = 27.\n\n**Tip Élite:** Subraye los bloques de multiplicación y división en expresiones largas para no confundirlos con sumas y restas adyacentes."
+  },
+  {
+    "id": "m_ari_5",
+    "domain": "math",
+    "topic": "aritmetica",
+    "dif": 3,
+    "stem": "En una estación meteorológica se registra una temperatura de 12 °C durante el cenit diurno. Posteriormente, las condiciones climáticas provocan un descenso térmico abrupto de 15 °C durante la madrugada.",
+    "q": "¿Cuál fue la temperatura en la madrugada?",
+    "opts": [
+      "−3 °C",
+      "3 °C",
+      "27 °C",
+      "−27 °C"
+    ],
+    "ans": 0,
+    "exp": "Modelemos el cambio térmico utilizando la recta numérica:\n\n*   **Estado inicial:** Partimos de un registro térmico positivo de 12 °C.\n*   **Descenso:** Un \"descenso\" implica una sustracción. Por lo tanto, debemos restar 15 unidades al valor original.\n*   **Cálculo final:** Operamos 12 − 15. Dado que se resta un número mayor a uno menor, el resultado cruza el cero hacia los números negativos: −3 °C.\n\n**Tip Élite:** Visualice los cambios térmicos como desplazamientos en un eje vertical (termómetro); esto evita la confusión común de sumar ambas magnitudes por error."
+  },
+  {
+    "id": "m_mcm_1",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Dos unidades de transporte público inician su recorrido desde la misma estación central. La primera unidad tiene una frecuencia de salida constante de 12 minutos, mientras que la segunda despacha cada 18 minutos. Ambas unidades inician operaciones simultáneamente a las 6:00 a. m.",
+    "q": "¿A qué hora vuelven a salir juntos por primera vez?",
+    "opts": [
+      "6:30 a. m.",
+      "6:36 a. m.",
+      "6:54 a. m.",
+      "7:12 a. m."
+    ],
+    "ans": 1,
+    "exp": "Para determinar el próximo encuentro, debemos encontrar un múltiplo común de los intervalos de salida:\n\n*   **Concepto:** Se busca el Mínimo Común Múltiplo (MCM) de 12 y 18.\n*   **Cálculo del MCM:** Los múltiplos de 18 son 18, 36, 54, etc. Como 36 es divisible por 12, el MCM es 36 minutos.\n*   **Cálculo de la hora:** Sumamos los 36 minutos a la hora inicial (6:00 a. m.), resultando en las 6:36 a. m.\n\n**Tip Élite:** Siempre que busque coincidencias de eventos recurrentes en el tiempo, la herramienta matemática por excelencia es el Mínimo Común Múltiplo."
+  },
+  {
+    "id": "m_mcm_2",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Dos rutas de transporte metropolitano sincronizan su primer servicio del día a las 6:00 a. m. desde la misma terminal. La ruta A tiene intervalos regulares de 15 minutos, y la ruta B opera estrictamente cada 25 minutos.",
+    "q": "¿A qué hora vuelven a salir juntos por primera vez?",
+    "opts": [
+      "7:15 a. m.",
+      "6:40 a. m.",
+      "7:00 a. m.",
+      "8:00 a. m."
+    ],
+    "ans": 0,
+    "exp": "Encontremos el punto temporal en el que las rutas coinciden nuevamente:\n\n*   **Estrategia:** Determinar el Mínimo Común Múltiplo (MCM) de 15 y 25.\n*   **Descomposición:** 15 = 3 × 5 y 25 = 5². El MCM requiere los factores primos con su mayor exponente: 3 × 5² = 3 × 25 = 75 minutos.\n*   **Conversión temporal:** 75 minutos equivalen a 1 hora y 15 minutos.\n*   **Cálculo final:** Añadiendo este tiempo a las 6:00 a. m. obtenemos 7:15 a. m.\n\n**Tip Élite:** Convertir resultados en minutos a un formato de 'horas y minutos' evita errores al sumar la duración al reloj estándar."
+  },
+  {
+    "id": "m_mcm_3",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "En un taller de confección se dispone de dos cintas continuas cuyas longitudes son 60 cm y 48 cm. El objetivo es seccionar ambas cintas en fragmentos de idéntica longitud, maximizando la dimensión de cada pieza sin generar desperdicio de material.",
+    "q": "¿Cuánto medirá cada pedazo?",
+    "opts": [
+      "6 cm",
+      "12 cm",
+      "24 cm",
+      "4 cm"
+    ],
+    "ans": 1,
+    "exp": "El problema exige fraccionar equitativamente dos magnitudes buscando el mayor tamaño posible sin sobrantes:\n\n*   **Concepto:** Se requiere aplicar el Máximo Común Divisor (MCD) para las medidas 60 y 48.\n*   **Cálculo:** Descomponiendo en factores, 60 = 2² × 3 × 5 y 48 = 2⁴ × 3. Tomamos los factores comunes al menor exponente: 2² × 3 = 4 × 3 = 12.\n*   **Conclusión:** La máxima longitud entera que divide a ambas sin dejar residuo es 12 cm.\n\n**Tip Élite:** Cuando un enunciado hable de 'cortar', 'dividir' o 'repartir' buscando la porción 'más grande', indudablemente se trata de aplicar el MCD."
+  },
+  {
+    "id": "m_mcm_4",
+    "domain": "math",
+    "topic": "mcm_mcd",
+    "dif": 3,
+    "stem": "Se establece que el mínimo común múltiplo (MCM) de dos números enteros positivos es exactamente 60. Si se conoce fehacientemente que uno de los valores involucrados es 15.",
+    "q": "¿Cuál de los siguientes podría ser el otro número?",
+    "opts": [
+      "8",
+      "9",
+      "12",
+      "25"
+    ],
+    "ans": 2,
+    "exp": "Debemos identificar qué número, al ser operado con 15, arroja un MCM de 60:\n\n*   **Análisis:** Descomponemos 60 en factores primos: 60 = 2² × 3 × 5. Sabemos que 15 = 3 × 5.\n*   **Deducción:** El número buscado debe proveer indispensablemente el factor 2², es decir, 4, ya que el 15 no lo posee. Además, puede contener factores 3 o 5, siempre y cuando no excedan el MCM.\n*   **Verificación de opciones:**\n    *   El 8 aporta un factor de 2³, generando un MCM mayor (120).\n    *   El 12 (2² × 3) suple el 2² necesario sin aportar factores extraños, resultando en MCM(15, 12) = 60.\n\n**Tip Élite:** Evaluar los factores primos de las alternativas dadas suele ser más rápido y certero que calcular el MCM empíricamente para cada par numérico."
+  },
+  {
+    "id": "m_rel_1",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "En un análisis de jerarquía etaria entre cuatro individuos, se establecen las siguientes premisas incontrovertibles: Ana supera en edad a Beto, Carlos posee una edad estrictamente inferior a la de Beto, y Diana aventaja en años a Ana.",
+    "q": "¿Quién es el menor de los cuatro?",
+    "opts": [
+      "Ana",
+      "Beto",
+      "Carlos",
+      "Diana"
+    ],
+    "ans": 2,
+    "exp": "Traduzcamos las premisas a desigualdades matemáticas para establecer un orden lineal:\n\n*   **Primera relación:** Ana > Beto.\n*   **Segunda relación:** Carlos < Beto, lo cual equivale a decir que Beto > Carlos.\n*   **Tercera relación:** Diana > Ana.\n*   **Ordenamiento:** Combinando estas inecuaciones obtenemos: Diana > Ana > Beto > Carlos.\n\nEvidentemente, Carlos se sitúa en el extremo inferior de la jerarquía.\n\n**Tip Élite:** Utilice una línea recta y posicione los elementos visualmente; este método gráfico previne confusiones en series transitivas de desigualdad."
+  },
+  {
+    "id": "m_rel_2",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Sean $a$ y $b$ dos números reales que satisfacen la desigualdad $a < 0 < b$. Adicionalmente, se garantiza que la magnitud (valor absoluto) de $a$ excede estrictamente a la magnitud de $b$.",
+    "q": "¿Cuál afirmación es siempre verdadera?",
+    "opts": [
+      "a + b > 0",
+      "a + b < 0",
+      "a + b = 0",
+      "a es mayor que b"
+    ],
+    "ans": 1,
+    "exp": "Analicemos las propiedades de los números involucrados basados en las condiciones dadas:\n\n*   **Signos:** De $a < 0 < b$ deducimos que $a$ es negativo y $b$ es positivo.\n*   **Magnitudes:** La condición $|a| > |b|$ indica que la distancia de $a$ al cero es mayor que la distancia de $b$ al cero (el peso negativo es más fuerte).\n*   **Suma algebraíca:** Al sumar un número negativo y uno positivo, el signo del resultado lo domina el sumando con mayor valor absoluto.\n\nDado que el componente negativo ($a$) es dominantemente mayor en magnitud, la suma $a + b$ siempre resultará en un valor negativo ($< 0$).\n\n**Tip Élite:** En problemas abstractos con variables, asigne valores ficticios que cumplan las reglas (ej. $a = -5, b = 2$) para confirmar rápidamente su hipótesis."
+  },
+  {
+    "id": "m_rel_3",
+    "domain": "math",
+    "topic": "relaciones_orden",
+    "dif": 3,
+    "stem": "Considere el siguiente conjunto de valores numéricos expresados en notación mixta: $0,4$ ; ${{3/5}}$ ; $0,55$ ; ${{2/5}}$ ; $0,7$.",
+    "q": "¿Cuántos de ellos son mayores que {{1/2}}?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "ans": 1,
+    "exp": "Para efectuar una comparación rigurosa, conviene unificar todas las expresiones en un solo formato, idealmente decimales:\n\n*   **Umbral:** ${{1/2}}$ equivale a $0,5$.\n*   **Conversión:** Convertimos las fracciones: ${{3/5}} = 0,6$ y ${{2/5}} = 0,4$.\n*   **Análisis del conjunto:** El conjunto homogeneizado es: $0,4$ ; $0,6$ ; $0,55$ ; $0,4$ ; $0,7$.\n*   **Conteo:** Los valores estrictamente mayores a $0,5$ son $0,6$, $0,55$ y $0,7$. En total, 3 valores superan el umbral.\n\n**Tip Élite:** Memorice las equivalencias decimales de las fracciones comunes (medios, tercios, cuartos y quintos) para acelerar significativamente la fase de comparación."
+  },
+  {
+    "id": "m_cnt_1",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En el interior de un recipiente opaco se encuentran depositadas 5 esferas rojas, 3 azules y 4 verdes. Una persona extrae esferas al azar sin reposición.",
+    "q": "¿Cuántas bolas hay que sacar como mínimo, sin ver, para asegurarse de tener al menos una de cada color?",
+    "opts": [
+      "3",
+      "4",
+      "10",
+      "12"
+    ],
+    "ans": 2,
+    "exp": "Para garantizar un resultado bajo incertidumbre, siempre debemos situarnos en el 'escenario más adverso' (principio del peor de los casos):\n\n*   **Peor escenario:** Consiste en extraer repetidamente las esferas de los colores más abundantes antes de conseguir el tercer color.\n*   **Agotamiento:** Las cantidades mayores son 5 rojas y 4 verdes. Extraeremos todas ellas primero: 5 + 4 = 9 esferas.\n*   **Garantía:** Hasta este punto (9 extracciones), solo poseemos dos colores. La siguiente extracción (la número 10) forzosamente será de una esfera azul, logrando tener la tríada completa.\n\n**Tip Élite:** En problemas de 'certeza o garantía', sume todas las cantidades excepto la menor, y añada uno al total para asegurar la respuesta."
+  },
+  {
+    "id": "m_cnt_2",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "Un mecanismo de seguridad numérico requiere una combinación de 2 dígitos (del 0 al 9 inclusive). El manual del dispositivo especifica que los dígitos que conforman la clave deben ser mutuamente excluyentes (diferentes entre sí).",
+    "q": "¿Cuántos códigos distintos son posibles?",
+    "opts": [
+      "81",
+      "90",
+      "100",
+      "45"
+    ],
+    "ans": 1,
+    "exp": "Procederemos a calcular las posibilidades aplicando el principio multiplicativo de conteo:\n\n*   **Primer dígito:** Hay 10 opciones disponibles (cualquier dígito del 0 al 9).\n*   **Segundo dígito:** Dado que la restricción exige dígitos distintos, la segunda posición no puede repetir el número utilizado en la primera, reduciendo las opciones a 9.\n*   **Cálculo:** Multiplicamos las posibilidades de ambos eventos dependientes: 10 × 9 = 90 códigos factibles.\n\n**Tip Élite:** Vigile siempre palabras clave como 'distintos', 'sin repetición' o 'mutuamente excluyentes', pues estas reducen el espacio muestral en cada paso sucesivo."
+  },
+  {
+    "id": "m_cnt_3",
+    "domain": "math",
+    "topic": "conteo",
+    "dif": 3,
+    "stem": "En un simposio internacional, se congregan 5 delegados. Como parte del protocolo de bienvenida, cada individuo debe estrechar la mano de todos los demás participantes una única vez.",
+    "q": "¿Cuántos saludos se dan en total?",
+    "opts": [
+      "10",
+      "20",
+      "25",
+      "15"
+    ],
+    "ans": 0,
+    "exp": "Este clásico problema puede resolverse empleando combinatoria básica o deducción secuencial:\n\n*   **Método secuencial:** El primer delegado saluda a los 4 restantes. El segundo, habiendo ya saludado al primero, saluda a 3. El tercero a 2, el cuarto a 1, y el quinto a nadie nuevo. Suma: 4 + 3 + 2 + 1 = 10.\n*   **Método combinatorio:** Buscamos formas de escoger pares de un grupo de 5 personas, sin importar el orden: $C(5,2) = \\frac{5 \\times 4}{2} = 10$.\n\n**Tip Élite:** La fórmula rápida para interacciones recíprocas únicas entre $n$ elementos es siempre $\\frac{n(n-1)}{2}$."
+  },
+  {
+    "id": "m_per_1",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un grupo de 3 individuos debe ubicarse en 3 asientos dispuestos de forma contigua en una misma fila.",
+    "q": "¿De cuántas maneras distintas pueden sentarse?",
+    "opts": [
+      "3",
+      "6",
+      "9",
+      "27"
+    ],
+    "ans": 1,
+    "exp": "Estamos ante un caso de ordenamiento lineal exhaustivo sin repetición (permutación de todos los elementos):\n\n*   **Asiento 1:** Para el primer lugar, contamos con 3 individuos disponibles.\n*   **Asiento 2:** Ocupado el primero, restan 2 individuos para el segundo puesto.\n*   **Asiento 3:** Solo queda 1 individuo para el último asiento.\n*   **Cálculo:** Aplicamos la factorial: $3! = 3 \\times 2 \\times 1 = 6$ acomodos diferentes.\n\n**Tip Élite:** Toda ordenación en la que participan todos los elementos disponibles se calcula matemáticamente mediante la función factorial del número total ($n!$)."
+  },
+  {
+    "id": "m_per_2",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "Un bibliotecario necesita organizar 4 tomos de colección, con contenido completamente diferente, en una sola repisa lineal.",
+    "q": "¿De cuántas maneras se pueden ordenar?",
+    "opts": [
+      "12",
+      "16",
+      "24",
+      "256"
+    ],
+    "ans": 2,
+    "exp": "Se solicita determinar el número total de arreglos posibles para un conjunto discreto de elementos que ocupan todos los espacios:\n\n*   **Concepto:** Se emplean permutaciones simples dado que importa el orden y se utilizan todos los tomos.\n*   **Desarrollo:** Existen 4 opciones para el primer lugar, 3 para el segundo, 2 para el tercero y 1 para el cuarto.\n*   **Cálculo:** Matemáticamente, esto equivale al factorial de 4: $4! = 4 \\times 3 \\times 2 \\times 1 = 24$ configuraciones distintas.\n\n**Tip Élite:** Memorice los primeros factoriales ($3!=6$, $4!=24$, $5!=120$) para ahorrar valiosos segundos en exámenes estandarizados."
+  },
+  {
+    "id": "m_per_3",
+    "domain": "math",
+    "topic": "permutaciones",
+    "dif": 3,
+    "stem": "El cuerpo técnico de una delegación deportiva debe seleccionar a un capitán y a un subcapitán de un conjunto cerrado de 5 atletas elegibles.",
+    "q": "¿De cuántas formas distintas puede hacerlo?",
+    "opts": [
+      "10",
+      "20",
+      "25",
+      "120"
+    ],
+    "ans": 1,
+    "exp": "Este escenario exige una selección donde la jerarquía (orden de los puestos) importa, es decir, variaciones o permutaciones parciales:\n\n*   **Elección del Capitán:** Se dispone del grupo completo, por lo que existen 5 candidatos viables.\n*   **Elección del Subcapitán:** Una vez electo el capitán, quedan disponibles 4 candidatos.\n*   **Cálculo Combinado:** Según el principio multiplicativo, el total es $5 \\times 4 = 20$ directivas potenciales.\n\n**Tip Élite:** Identifique siempre si el orden o rol es relevante. Si los cargos son distintos (capitán vs subcapitán), es una permutación parcial; si fuesen cargos iguales (dos vocales), sería una combinación y dividiríamos entre dos."
+  },
+  {
+    "id": "m_geo_1",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Una parcela de geometría rectangular posee dimensiones de 8 metros de longitud y 5 metros de ancho. El propietario desea instalar un cercado perimetral, considerando que uno de los bordes longitudinales colinda con un muro preexistente de mampostería, por lo que dicho segmento no requerirá instalación de malla.",
+    "q": "¿Cuántos metros de malla se necesitan?",
+    "opts": [
+      "26 m",
+      "18 m",
+      "21 m",
+      "13 m"
+    ],
+    "ans": 1,
+    "exp": "El cálculo de materiales debe considerar estrictamente solo los límites que permanecen expuestos:\n\n*   **Perímetro teórico total:** Un rectángulo completo suma todos sus lados: 8 + 5 + 8 + 5 = 26 metros.\n*   **Ajuste estructural:** El enunciado aclara que un flanco de 8 metros (borde longitudinal) ya se encuentra resguardado por un muro.\n*   **Cálculo final:** Sustraemos esta medida de la longitud total: 26 − 8 = 18 metros de malla efectiva.\n\n**Tip Élite:** Lea minuciosamente los condicionantes físicos del problema de geometría; raras veces se solicita un simple perímetro sin ninguna modificación."
+  },
+  {
+    "id": "m_geo_2",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un recinto arquitectónico de forma rectangular cuenta con dimensiones de 6 m de longitud y 4 m de anchura. Se proyecta un revestimiento total del piso utilizando losetas cerámicas cuadradas de 1 m de arista. El costo unitario de cada loseta es de ₡2 500.",
+    "q": "¿Cuánto se gasta en baldosas?",
+    "opts": [
+      "₡60 000",
+      "₡25 000",
+      "₡48 000",
+      "₡100 000"
+    ],
+    "ans": 0,
+    "exp": "El recubrimiento de una superficie requiere calcular el área total para determinar la cantidad de material y, subsecuentemente, el costo:\n\n*   **Superficie Total:** Área = Base × Altura = $6 \\times 4 = 24 \\text{ m}^2$.\n*   **Unidades Requeridas:** Como cada loseta cubre exactamente $1 \\text{ m}^2$, necesitaremos un lote de 24 baldosas enteras.\n*   **Inversión Total:** Multiplicamos la cantidad por el precio unitario: $24 \\times 2 500 = 60 000$ colones.\n\n**Tip Élite:** Cuando trabaje con áreas y costos, siempre confirme que las unidades espaciales de la superficie concuerden con las unidades del material (ej. $m^2$ contra $m^2$) antes de realizar el producto final."
+  },
+  {
+    "id": "m_geo_3",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un lote con morfología triangular presenta una base de 20 m y una altura correspondiente de 15 m. El avalúo inmobiliario fija el valor de la propiedad en ₡8 000 por metro cuadrado.",
+    "q": "¿Cuánto cuesta el terreno?",
+    "opts": [
+      "₡1 200 000",
+      "₡2 400 000",
+      "₡150 000",
+      "₡800 000"
+    ],
+    "ans": 0,
+    "exp": "Procederemos a hallar el área del terreno triangular y usarla como base para el cálculo económico:\n\n*   **Cálculo de Área:** La fórmula del triángulo dicta que el área es $\\frac{\\text{base} \\times \\text{altura}}{2}$. Operando: $\\frac{20 \\times 15}{2} = \\frac{300}{2} = 150 \\text{ m}^2$.\n*   **Cálculo Financiero:** Multiplicamos el área obtenida por la tasa del metro cuadrado: $150 \\times 8 000 = 1 200 000$ colones.\n\n**Tip Élite:** No omita dividir entre dos al calcular el área de un triángulo; el distractor más común asume que el estudiante olvidó este paso fundamental (generando un área ficticia de 300 y un costo de 2 400 000)."
+  },
+  {
+    "id": "m_geo_4",
+    "domain": "math",
+    "topic": "geometria",
+    "dif": 3,
+    "stem": "Un elemento circular rotatorio tiene un radio de 35 cm. Empleando la aproximación racional de $\\pi \\approx {{22/7}}$ para fines de cálculo.",
+    "q": "¿Cuál es su circunferencia (perímetro)?",
+    "opts": [
+      "110 cm",
+      "220 cm",
+      "154 cm",
+      "440 cm"
+    ],
+    "ans": 1,
+    "exp": "La resolución requiere el uso de la fórmula de la longitud de circunferencia integrando la aproximación sugerida:\n\n*   **Fórmula Base:** El perímetro de un círculo se define como $C = 2 \\cdot \\pi \\cdot r$.\n*   **Sustitución:** Incorporamos los valores provistos: $C = 2 \\cdot ({{22/7}}) \\cdot 35$.\n*   **Simplificación:** Dividimos primeramente 35 entre 7, obteniendo 5, lo cual facilita sustancialmente el cálculo. Entonces: $C = 2 \\cdot 22 \\cdot 5$.\n*   **Cálculo final:** $44 \\cdot 5 = 220$ cm.\n\n**Tip Élite:** Cuando el radio sea múltiplo de 7 y se pida usar $\\frac{22}{7}$, aplique siempre la simplificación cruzada (dividir el radio entre 7) antes de multiplicar; ahorrará tiempo y mitigará errores."
+  },
+  {
+    "id": "m_suc_1",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice la siguiente progresión aritmética, cuyos primeros términos equidistan secuencialmente: 4, 7, 10, 13, …",
+    "q": "¿Cuál es el término que ocupa la posición 12?",
+    "opts": [
+      "37",
+      "34",
+      "40",
+      "31"
+    ],
+    "ans": 0,
+    "exp": "Para predecir un término lejano, debemos deducir la ley de formación de la progresión:\n\n*   **Patrón de Crecimiento (d):** Observamos que la diferencia entre términos adyacentes es constante e igual a +3.\n*   **Ecuación General:** El término general de una progresión aritmética es $a_n = a_1 + (n-1)d$.\n*   **Aplicación:** Para la posición 12 ($n=12$): $a_{12} = 4 + (12-1) \\times 3 = 4 + 11 \\times 3 = 4 + 33 = 37$.\n\n**Tip Élite:** Para saltos largos, no cuente manualmente sumando; reste 1 a la posición deseada, multiplique por la razón y sume el primer término. Esto asegura la exactitud en fracciones de segundo."
+  },
+  {
+    "id": "m_suc_2",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Considere la sucesión geométrica definida por los elementos 2, 6, 18, 54, …, en la cual se mantiene un factor multiplicativo constante entre términos consecutivos.",
+    "q": "¿Cuál es el siguiente término de la serie?",
+    "opts": [
+      "108",
+      "162",
+      "216",
+      "72"
+    ],
+    "ans": 1,
+    "exp": "Esta serie manifiesta un crecimiento exponencial, indicando un operador multiplicativo oculto:\n\n*   **Extracción de la Razón ($r$):** Dividiendo un término entre su antecesor inferimos la razón geométrica: $6 \\div 2 = 3$; $18 \\div 6 = 3$. El factor multiplicador recurrente es 3.\n*   **Proyección:** Para hallar el sucesor de 54, multiplicamos este último valor por el factor hallado: $54 \\times 3 = 162$.\n\n**Tip Élite:** Ante sucesiones de crecimiento brusco, descarte inmediatamente sumas e investigue cocientes sucesivos o exponentes para dar con la regla directriz."
+  },
+  {
+    "id": "m_suc_3",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Dada la sucesión numérica estructurada bajo una ley de formación cuadrática: 2, 5, 10, 17, 26, …",
+    "q": "¿Cuál es el séptimo término?",
+    "opts": [
+      "50",
+      "37",
+      "42",
+      "65"
+    ],
+    "ans": 0,
+    "exp": "Desenmascaremos el algoritmo generador de esta sucesión basándonos en los cuadrados perfectos:\n\n*   **Correlación Base:** Contrastemos los valores con los cuadrados perfectos (1, 4, 9, 16, 25...).\n*   **Fórmula Deductiva:** Se percibe de inmediato que cada número es exactamente una unidad mayor que su cuadrado posicional correspondiente: $n^2 + 1$.\n*   **Cálculo Final:** Para determinar el séptimo término ($n=7$), aplicamos la ley: $7^2 + 1 = 49 + 1 = 50$.\n\n**Tip Élite:** Familiarícese profundamente con las series de potencias (cuadrados y cubos perfectos), ya que múltiples exámenes las usan como 'esqueleto' sumándoles o restándoles constantes (como $n^2-1$ o $n^2+1$)."
+  },
+  {
+    "id": "m_suc_4",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "Analice la siguiente serie numérica, en la que las diferencias inter-términos forman a su vez una progresión predecible de segundo orden: 2, 3, 5, 8, 12, …",
+    "q": "¿Cuál es el siguiente número de la secuencia?",
+    "opts": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "ans": 2,
+    "exp": "En secuencias que carecen de una razón constante obvia, la técnica de diferencias sucesivas revela el andamiaje subyacente:\n\n*   **Extracción de Saltos:** Calculamos la distancia aritmética entre elementos consecutivos: +1 (de 2 a 3), +2 (de 3 a 5), +3 (de 5 a 8) y +4 (de 8 a 12).\n*   **Continuidad del Patrón:** Las brechas constituyen una sucesión auxiliar lineal básica (+1, +2, +3, +4...). Lógicamente, la próxima brecha será una adición de +5.\n*   **Proyección:** Aplicamos el incremento al último término de la serie principal: $12 + 5 = 17$.\n\n**Tip Élite:** Siempre que la primera línea de diferencias no revele una constante, extraiga la 'diferencia de las diferencias' (segunda línea); si ésta resulta estable, está tratando con una progresión cuadrática o de saltos crecientes regulares."
+  },
+  {
+    "id": "m_suc_5",
+    "domain": "math",
+    "topic": "sucesiones",
+    "dif": 3,
+    "stem": "La célebre sucesión biológicamente inspirada de Fibonacci está definida por los valores iniciales 1, 1, 2, 3, 5, 8, …, donde cada elemento subsiguiente equivale a la adición de sus dos predecesores inmediatos.",
+    "q": "¿Cuál es el octavo término?",
+    "opts": [
+      "13",
+      "21",
+      "34",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "La mecánica es estrictamente iterativa, construyendo sobre resultados previos:\n\n*   **Serie Proporcionada:** Tenemos los primeros seis términos comprobables: 1, 1, 2, 3, 5, 8.\n*   **Séptimo Término:** Sumamos el quinto y sexto para generarlo: $5 + 8 = 13$.\n*   **Octavo Término:** Se conforma adicionando el sexto y el séptimo: $8 + 13 = 21$.\n\n**Tip Élite:** Sucesiones que dependen del historial inmediato suelen requerir cálculos secuenciales manuales. Evite buscar atajos multiplicativos; céntrese en rastrear rigurosamente las últimas sumas sin equivocarse de índice."
+  },
+  {
+    "id": "m_dat_1",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "En el interior de un contenedor inescrutable convergen 4 esferas de pigmentación roja y 6 de tonalidad azul, sin divergencia en textura o dimensiones. Se efectúa un experimento aleatorio consistente en la extracción de un único elemento.",
+    "q": "¿Cuál es la probabilidad de que la esfera resultante sea roja?",
+    "opts": [
+      "{{2/5}}",
+      "{{3/5}}",
+      "{{4/6}}",
+      "{{1/4}}"
+    ],
+    "ans": 0,
+    "exp": "La resolución se basa en la Regla de Laplace, pilar de la probabilidad clásica unieventual:\n\n*   **Espacio Muestral (Total):** La urna contiene una agregación de 4 rojas + 6 azules = 10 elementos en total.\n*   **Sucesos Favorables:** Buscamos específicamente las entidades rojas, que ascienden a 4.\n*   **Ratio de Probabilidad:** Establecemos el cociente $\\frac{\\text{Favorables}}{\\text{Totales}}$, obteniendo $\\frac{4}{10}$.\n*   **Simplificación:** Dividiendo numerador y denominador entre 2, se logra la fracción irreductible: ${{2/5}}$.\n\n**Tip Élite:** Exprese indefectiblemente todo cociente probabilístico en su forma más simplificada, dado que los ítems del examen siempre ofrecerán la fracción irreductible como respuesta oficial."
+  },
+  {
+    "id": "m_dat_2",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "El expediente académico de un alumno refleja las siguientes calificaciones en cuatro evaluaciones sucesivas: 80, 90, 70 y 100. Previo a la quinta prueba, el estudiante calcula que requiere alcanzar una media aritmética exacta de 86 puntos para mantener una beca.",
+    "q": "¿Qué nota necesita en el quinto examen?",
+    "opts": [
+      "90",
+      "86",
+      "94",
+      "100"
+    ],
+    "ans": 0,
+    "exp": "Plantearemos la situación desde la perspectiva acumulativa de la media aritmética:\n\n*   **Objetivo Global:** Un promedio de 86 extendido sobre 5 pruebas exige una suma global inamovible: $86 \\times 5 = 430$ puntos totales requeridos.\n*   **Progreso Acumulado:** Sumamos el caudal de puntos asegurados hasta el momento: 80 + 90 + 70 + 100 = 340 puntos acumulados.\n*   **Brecha Puntuacional:** Restamos lo que se posee del total que se necesita: $430 − 340 = 90$ puntos.\n\n**Tip Élite:** Despejar promedios multiplicando el target (86) por la cantidad global de muestras (5) es la ruta infalible; no intente 'equilibrar' puntuaciones compensando diferencias individuales si el volumen de datos es superior a tres."
+  },
+  {
+    "id": "m_dat_3",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Un sorteo promocional distribuye 100 boletos con la siguiente estructura probabilística: 50 participaciones en blanco (nulas), 30 con bonificación menor, 15 con bonificación intermedia y 5 ostentando el premio principal. Un participante adquiere una fracción al azar.",
+    "q": "¿Qué resultado es el más probable?",
+    "opts": [
+      "Premio mayor",
+      "Premio mediano",
+      "Sin premio",
+      "Premio pequeño"
+    ],
+    "ans": 2,
+    "exp": "El evento de mayor expectancia matemática es aquel que abarca el mayor volumen del espacio muestral:\n\n*   **Inventario del Espacio Muestral:** Identificamos las frecuencias absolutas: Nulo (50), Menor (30), Medio (15), Mayor (5).\n*   **Axioma de Probabilidad:** A mayor masa crítica, mayor propensión estadística al suceso en una única iteración aleatoria.\n*   **Dictamen:** Conducir a un boleto \"en blanco\" capta el 50% íntegro de las probabilidades absolutas, erigiéndose incuestionablemente como la proyección de mayor certeza.\n\n**Tip Élite:** Aunque psicológicamente el individuo busca focalizarse en escenarios de ganancia, la heurística matemática exige atenerse puramente a la frecuencia absoluta predominante sin ceder a sesgos de deseabilidad."
+  },
+  {
+    "id": "m_dat_4",
+    "domain": "math",
+    "topic": "datos_probabilidad",
+    "dif": 3,
+    "stem": "Un repositorio estadístico consta de 12 esferas uniformes: 5 rojas, 4 azules y 3 verdes. Un investigador ejecuta una selección completamente aleatoria, ciega a los componentes cromáticos.",
+    "q": "¿Cuál es la probabilidad de que NO sea roja?",
+    "opts": [
+      "{{7/12}}",
+      "{{5/12}}",
+      "{{1/2}}",
+      "{{3/12}}"
+    ],
+    "ans": 0,
+    "exp": "Evaluamos el problema mediante la ley de probabilidad complementaria y suma de eventos excluyentes:\n\n*   **Subconjunto de Interés:** Las esferas no rojas aglutinan a la sumatoria de las azules (4) y verdes (3), arrojando un agregado de 7 piezas.\n*   **Espectro Total:** El corpus de opciones disponibles se mantiene inalterado en 12.\n*   **Modelado del Cociente:** Confeccionamos la fracción $\\frac{\\text{Casos Acordes a Restricción}}{\\text{Universo Total}}$, lo que cristaliza en ${{7/12}}$.\n\n**Tip Élite:** Ante preguntas que incluyen negaciones contundentes ('NO es', 'SIN atributo'), sumar los grupos alternativos resulta más inmediato que calcular la probabilidad directa y restarla de la unidad general."
+  },
+  {
+    "id": "m_not_1",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Considere el siguiente postulado verbal en el ámbito algebraico: \"el incremento aditivo de cinco unidades que sobreviene directamente a la duplicación de una variable desconocida\".",
+    "q": "¿Cuál expresión la representa?",
+    "opts": [
+      "2x + 5",
+      "2(x + 5)",
+      "5 − 2x",
+      "x/2 + 5"
+    ],
+    "ans": 0,
+    "exp": "La transcripción de la semántica discursiva a sintaxis matemática requiere diseccionar el orden gramatical de afectación:\n\n*   **Núcleo Base:** La frase \"la duplicación de una variable desconocida\" nos provee el cimiento primario, transcribiéndose como $2x$.\n*   **Modificador Aditivo:** La frase \"el incremento aditivo de cinco unidades\" denota una adición posterior, modelándose con $+ 5$.\n*   **Síntesis:** Ensamblando los bloques, la expansión de la estructura produce irrefutablemente $2x + 5$.\n\n**Tip Élite:** La presencia o ausencia de comas verbales es fundamental. Si dijera \"el doble de, la variable más cinco\", indicaría encapsulamiento $2(x+5)$. La ausencia de pausas implica operaciones secuenciales lineales."
+  },
+  {
+    "id": "m_not_2",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Un individuo denominado Carlos posee un capital ascendente a x colones. Ana, por su parte, ostenta un patrimonio equivalente al triple del haber de Carlos, supeditado a una deducción fija y obligatoria de 200 colones.",
+    "q": "¿Cuánto tiene Ana, en colones?",
+    "opts": [
+      "3x − 200",
+      "3(x − 200)",
+      "x/3 − 200",
+      "200 − 3x"
+    ],
+    "ans": 0,
+    "exp": "Procederemos estructurando la relación de dependencia patrimonial a través del vocabulario algebraico:\n\n*   **Base de Referencia:** El acervo inicial corresponde a Carlos, signado como $x$.\n*   **Expansión Multiplicativa:** El postulado \"el triple del haber de Carlos\" dicta el uso de un coeficiente multiplicador 3, generando $3x$.\n*   **Contracción Sustractiva:** La frase \"deducción fija [...] de 200 colones\" es un modificador de merma constante: $- 200$.\n*   **Conjunción:** Anexando ambos fenómenos logramos el polinomio descriptivo final: $3x − 200$.\n\n**Tip Élite:** Identificar el 'sujeto de referencia' (en este caso, Carlos = x) antes de aplicar cualquier operador aritmético es la regla dorada en problemas de traducción coloquial a matemática."
+  },
+  {
+    "id": "m_not_3",
+    "domain": "math",
+    "topic": "algebra_notacion",
+    "dif": 3,
+    "stem": "Asumiendo que n representa una incógnita numérica, transcriba el siguiente enunciado lingüístico al lenguaje matemático formal: \"el doble de la incógnita, sujeto a un decremento de cinco unidades, arroja un resultado equivalente a quince\".",
+    "q": "¿Cuál expresión representa: el doble de un número, disminuido en cinco, es igual a quince?",
+    "opts": [
+      "2n − 5 = 15",
+      "2(n − 5) = 15",
+      "n/2 − 5 = 15",
+      "5 − 2n = 15"
+    ],
+    "ans": 0,
+    "exp": "Decodifiquemos el flujo semántico asignando una equivalencia matemática a cada constructo textual:\n\n*   **Operador Primordial:** \"El doble de la incógnita\" instaura la estructura central $2n$.\n*   **Desgaste Aritmético:** \"Sujeto a un decremento de cinco unidades\" adjunta directamente una merma postfija a la estructura anterior: $2n − 5$.\n*   **Declaración de Igualdad:** \"Arroja un resultado equivalente a quince\" plasma la nivelación paramétrica final, instituyendo $= 15$.\n*   **Resultado Consolidado:** $2n − 5 = 15$.\n\n**Tip Élite:** Desconfíe de fórmulas con paréntesis no respaldados discursivamente, como $2(n - 5)$; para que esta fuera correcta, el texto debió haber sido explícitamente: \"el doble de, la incógnita disminuida en cinco, es...\"."
+  },
+  {
+    "id": "m_alr_1",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Asuma que n pertenece al conjunto íntegro de los números enteros ($\\mathbb{Z}$).",
+    "q": "¿Cuál de las siguientes expresiones es múltiplo de 4 para todo n?",
+    "opts": [
+      "4n",
+      "2n",
+      "4n + 2",
+      "n + 4"
+    ],
+    "ans": 0,
+    "exp": "El análisis de invarianzas algebraicas bajo conjuntos genéricos se dirime evaluando las propiedades factoriales ineludibles:\n\n*   **Construcción Multiplicativa Pura (4n):** Por definición formal, un ente numérico modelado como $k \\cdot x$ (donde $k$ es entero), ostenta categóricamente la multiplicidad intrínseca de $k$. Si el multiplicador es 4, el producto es irrefutablemente múltiplo de 4.\n*   **Análisis Refutativo (Distractores):** $2n$ puede engendrar un número par no divisible por 4 (ej. $n=3$, resulta $6$). $4n+2$ engendra números que dejan un residuo constante de 2 al dividirse entre 4. $n+4$ es totalmente errático e indisciplinado.\n\n**Tip Élite:** La manera más irrefutable de modelar \"ser múltiplo de M\" en el discurso algebraico, independientemente de la variable interina, es siempre la pre-multiplicación desnuda ($M \\cdot n$)."
+  },
+  {
+    "id": "m_alr_2",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "En el espectro de los enteros positivos ($\\mathbb{Z}^+$), se someten a evaluación dos elementos variables, P y Q. El postulado establece rigurosamente que el resultado de la multiplicación P·Q ostenta una paridad impar.",
+    "q": "¿Qué se puede afirmar con certeza?",
+    "opts": [
+      "P es par",
+      "Q es par",
+      "P y Q son impares",
+      "P es impar y Q es par"
+    ],
+    "ans": 2,
+    "exp": "La teoría de números establece directrices axiomáticas sobre la transmisión de la paridad en operaciones multiplicativas:\n\n*   **Leyes de Multiplicación (Paridad):** Par × Par = Par. Impar × Par = Par. Par × Impar = Par.\n*   **Conclusión Lógica Inclusiva:** Basta con que subsista un único factor par en toda una cadena multiplicativa para que el producto final asuma la paridad par de forma absorbente.\n*   **Deducción a la Inversa:** Para que el fruto de una multiplicación sobreviva inmune y resulte impar, es condición inquebrantable que no exista ni un solo ente par involucrado en su gestación. Consecuentemente, $P$ y $Q$ deben albergar paridad impar sin excepción.\n\n**Tip Élite:** Recuerde la propiedad absorbente del número 2 (y sus múltiplos); la paridad 'par' fagocita por completo todo producto donde logre inmiscuirse."
+  },
+  {
+    "id": "m_alr_3",
+    "domain": "math",
+    "topic": "algebra_relaciones",
+    "dif": 3,
+    "stem": "Se somete a escrutinio la ecuación de primer grado 2x − 3 = 11.",
+    "q": "¿Cuánto vale x²?",
+    "opts": [
+      "49",
+      "14",
+      "7",
+      "21"
+    ],
+    "ans": 0,
+    "exp": "Desvelar un valor auxiliar requiere indefectiblemente el aislamiento y solución previa del componente raíz en la igualdad madre:\n\n*   **Despeje de la Incógnita:** En $2x − 3 = 11$, iniciamos trasladando el término independiente. $2x = 11 + 3$, lo que nos da $2x = 14$.\n*   **Determinación de $x$:** Dividimos en ambas márgenes: $x = \\frac{14}{2}$, solidificando que $x = 7$.\n*   **Ejecución de Comando Auxiliar:** La tarea no demanda descubrir $x$, sino su potencia cuadrática. Procedemos: $7^2 = 7 \\cdot 7 = 49$.\n\n**Tip Élite:** Jamás apresure el proceso de marcado tras hallar el valor de 'x'. Relea vigorosamente la solicitud del ítem (¿pide 'x' o una operación posterior derivada?) para salvaguardarse de la emboscada clásica de respuestas anticipadas."
+  },
+  {
+    "id": "m_uni_1",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un fondista profesional mantiene una velocidad biomecánica sostenida, logrando cubrir una trayectoria ininterrumpida de 5 kilómetros en un lapso temporal de 25 minutos exactos.",
+    "q": "¿Cuántos metros recorre en 5 minutos?",
+    "opts": [
+      "500 m",
+      "1000 m",
+      "1500 m",
+      "200 m"
+    ],
+    "ans": 1,
+    "exp": "La resolución se ampara en la unificación métrica y en el uso de la proporcionalidad directa:\n\n*   **Homogeneización:** Conducimos los 5 kilómetros a la base estandarizada de metros: $5 \\text{ km} = 5000 \\text{ m}$.\n*   **Proporción General:** El régimen de avance está definido por 5000 m que insumen 25 min.\n*   **Búsqueda del Rango Solicitado:** Nos urgen conocer el progreso acaecido en 5 minutos. Observe que 5 minutos equivale precisamente a la quinta parte del tiempo global original (25 min / 5 = 5 min).\n*   **Aplicación Proporcional:** Si el tiempo sufre un fraccionamiento a un quinto (1/5), la distancia corrida debe seguir la misma reducción: $\\frac{5000 \\text{ m}}{5} = 1000 \\text{ m}$.\n\n**Tip Élite:** Buscar divisores comunes entre la línea de tiempo original y la meta temporal facilita atajos mentales asombrosos, sorteando en muchos casos la tediosa escala unitaria (regla de tres)."
+  },
+  {
+    "id": "m_uni_2",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un grifo de uso industrial dispensa flujo hídrico a un caudal uniformemente constante, logrando abastecer un receptáculo matriz de 18 litros en una ventana temporal de 3 minutos íntegros.",
+    "q": "¿Cuántos litros echa en 50 segundos?",
+    "opts": [
+      "5 litros",
+      "6 litros",
+      "3 litros",
+      "9 litros"
+    ],
+    "ans": 0,
+    "exp": "Frente a ventanas temporales discordantes (minutos versus segundos), se prescribe la transición al submúltiplo dominante (segundos):\n\n*   **Sincronización Cronológica:** Modificamos el estrato base: 3 minutos resuenan como $3 \\times 60 = 180 \\text{ segundos}$.\n*   **Definición de Caudal:** Se procesan 18 litros bajo el amparo de 180 segundos.\n*   **Deducción del Ritmo Unitario:** Fraccionamos el flujo: $\\frac{18}{180} = \\frac{1}{10} = 0,1 \\text{ litros por cada segundo}$.\n*   **Culminación:** Expulsando 0,1 litros por segundo continuadamente, en 50 segundos presenciamos la entrega acumulada de $50 \\times 0,1 = 5 \\text{ litros}$.\n\n**Tip Élite:** Cimentar el problema identificando tempranamente el ritmo generador por unidad mínima local (en este rubro, litros por segundo) despeja inmediatamente toda ambigüedad en proyecciones venideras."
+  },
+  {
+    "id": "m_uni_3",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Un automóvil transita por un tramo de autopista manteniendo una celeridad de desplazamiento rectilíneo invariable estacionada en 90 km/h.",
+    "q": "¿Qué distancia recorre en 40 minutos?",
+    "opts": [
+      "36 km",
+      "60 km",
+      "120 km",
+      "45 km"
+    ],
+    "ans": 1,
+    "exp": "Las incongruencias entre la escala temporal de la velocidad (horas) y la métrica demandada (minutos) exigen un ajuste armónico:\n\n*   **Alineamiento Escalable:** Trasladamos 40 minutos al ecosistema de horas. Comprobamos que 40 minutos constituyen la parcela relacional $\\frac{40}{60}$ de una hora.\n*   **Refinamiento de Fracción:** Simplificando dicho guarismo al eliminar ceros y partir por 2, obtenemos holgadamente ${{2/3}} \\text{ de hora}$.\n*   **Cálculo Mecánico de Cinética:** Distancia encarna el consorcio multiplicativo Velocidad × Tiempo: $90 \\cdot ({{2/3}}) = \\frac{180}{3} = 60 \\text{ km}$.\n\n**Tip Élite:** Todo tiempo segmentado en minutos en el contexto de cinemática horaria debe incrustarse como numerador sobre una base 60. Su dominio rápido de fracciones tales como 20m (1/3), 40m (2/3), 45m (3/4) será su baluarte más firme."
+  },
+  {
+    "id": "m_uni_4",
+    "domain": "math",
+    "topic": "unidades_medida",
+    "dif": 3,
+    "stem": "Una conferencia magistral inició formalmente sus ponencias a las 10:45 a. m. y tuvo una prolongación continua, libre de pausas, de 2 horas y 50 minutos.",
+    "q": "¿A qué hora terminó?",
+    "opts": [
+      "12:35 p. m.",
+      "1:35 p. m.",
+      "1:25 p. m.",
+      "12:55 p. m."
+    ],
+    "ans": 1,
+    "exp": "El cálculo sexagesimal invita a la adición fraccionada para sortear tropiezos de acarreo sobre el límite perimetral de los 60 minutos:\n\n*   **Añadidura Magna (Horas):** Ensamblamos primero el bloque macizo de horas sobre la matriz horaria base. Sumar 2 horas a 10:45 nos instala momentáneamente a las 12:45 p. m. (Note la obligada transición de a. m. a p. m.).\n*   **Añadidura Satélite (Minutos):** Nos urge ahora sumar un colchón de 50 minutos al guarismo \"45\". Podemos fraccionar sabiamente estos 50 minutos: inyectamos 15 minutos iniciales para llevar el contador a la redonda cifra de 1:00 p. m. Nos restan $50 − 15 = 35$ minutos por añadir.\n*   **Ensamble Final:** Imprimimos los 35 minutos residuales a la base de la 1:00 p. m., obteniendo las 1:35 p. m. sin percances algorítmicos.\n\n**Tip Élite:** La técnica del puente horario o 'completar la hora' es suprema: sume únicamente los minutos críticos requeridos para nivelarse al próximo ciclo horario (hora en punto) y luego añada apaciblemente el saldo remanente."
+  }
+]

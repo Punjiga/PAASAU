@@ -1,0 +1,85 @@
+[
+  {
+    "id": "q_pdf6_16",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La persona en sociedad permanece,\nbásicamente, ella misma; solo experimenta\ncambios en la medida en que la sociedad\nejerce presión sobre ella y, en consecuencia, le\nconcede mayor satisfacción.\nAnalice las siguientes proposiciones:\nI. A mayor presión y más satisfacción, más\ncambios en la persona.\nII. A mayor presión y más satisfacción, menos\ncambios en la persona.\nIII. A menor presión y menos satisfacción, menos\ncambios en la persona.\nDel texto ¿cuál(es) de la(s) siguiente(s)",
+    "q": "proposición(es) se puede(n) deducir?",
+    "opts": [
+      "Solo la I.",
+      "Solo la II.",
+      "Solo la III.",
+      "Solo la I y la II.",
+      "Solo la I y la III."
+    ],
+    "ans": 4,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_17",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En un vivero hay 60 árboles pequeños de\ndiferentes tipos: 31 guanacastes, 19 cenízaros y\n10 almendros. Los árboles serán sembrados en\nuna finca por 30 estudiantes. Cada estudiante\nsembrará dos árboles.\nSegún la información anterior, ¿cuál de las\nsiguientes situaciones ocurrirá con certeza?\ncenízaros.\nguanacastes.\nguanacaste y un cenízaro.\nguanacaste y un almendro.",
+    "q": "",
+    "opts": [
+      "Uno o más estudiantes sembrarán dos",
+      "Uno o más estudiantes sembrarán dos",
+      "Uno o más estudiantes sembrarán un",
+      "Uno o más estudiantes sembrarán un"
+    ],
+    "ans": 3,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_18",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "La Teoría de la Evolución recuperó la\ncontinuidad entre el ser humano y los animales,\nque había sido negada por Descartes cuando\natribuyó alma solo al ser humano.\nDel texto anterior, se concluye que la Teoría de la\nEvolución\nhumano y los animales.\nser humano y los animales.",
+    "q": "",
+    "opts": [
+      "negó la existencia del alma.",
+      "contradijo la teoría de Descartes.",
+      "desprestigió la teoría de Descartes.",
+      "amplió el concepto de continuidad entre el ser",
+      "inventó el concepto de continuidad entre el"
+    ],
+    "ans": 1,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_19",
+    "domain": "verbal",
+    "topic": "general",
+    "dif": 3,
+    "stem": "En un gas, las moléculas tienen siempre\ngran libertad de movimiento porque las fuerzas\nde atracción resultan demasiado débiles para\nconservarlas unidas entre sí.\nSegún el texto anterior, las moléculas que\nconstituyen los gases tienden a",
+    "q": "",
+    "opts": [
+      "separarse.",
+      "mezclarse.",
+      "expandirse.",
+      "evaporarse.",
+      "multiplicarse."
+    ],
+    "ans": 0,
+    "exp": ""
+  },
+  {
+    "id": "q_pdf6_20",
+    "domain": "math",
+    "topic": "general",
+    "dif": 3,
+    "stem": "Considere la siguiente secuencia de\nigualdades:\nN1 = 2\nN2 = 2\nN3 = 6\nN4 = 6\nN5 = 10\nN6 = 10\nSi se continúa la secuencia, ¿a cuánto equivale",
+    "q": "N116?",
+    "opts": [
+      "226",
+      "228",
+      "230",
+      "232"
+    ],
+    "ans": 2,
+    "exp": ""
+  }
+]
