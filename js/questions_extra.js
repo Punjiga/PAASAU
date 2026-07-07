@@ -8640,3 +8640,11 @@ window.PAA_QUESTIONS_EXTRA = [
     "exp": "El concepto rector aquí es el principio de complementariedad angular estipulado por los teoremas de división de sectores ortogonales.\n\n* **Axioma cardinal:** Toda disección efectuada sobre un ángulo matriz ortogonal da lugar, invariablemente, a ángulos menores de naturaleza mutuamente complementaria. Esto impone que su adición recíproca debe cuadrar en un sumatorio absoluto de $90^\\circ$.\n* **Aplicación algorítmica:** Denominando $X$ a la cuantía en grados inexplorada, establecemos la ecuación: $X + 35^\\circ = 90^\\circ$.\n* **Aislamiento algebraico:** Obtenemos que $X = 90^\\circ - 35^\\circ = 55^\\circ$.\n\n**Tip Élite:** Aprende a distinguir rápidamente por instinto semántico o visual entre ángulos *complementarios* (sumatoria a $90^\\circ$) y *suplementarios* (sumatoria a $180^\\circ$). Reconocer las líneas formadoras ortogonales en el problema inicial acelera la solución sin dudas."
   }
 ];
+
+/* Sumamos las preguntas extra al banco principal y reconstruimos el �ndice */
+window.PAA_QUESTIONS = (window.PAA_QUESTIONS || []).concat(window.PAA_QUESTIONS_EXTRA);
+window.PAA_QUESTIONS_BY_TOPIC = window.PAA_QUESTIONS.reduce(function (m, q) {
+  (m[q.topic] = m[q.topic] || []).push(q);
+  return m;
+}, {});
+
