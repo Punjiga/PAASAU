@@ -222,5 +222,101 @@ window.PAA_QUESTIONS = [
     ],
     ans: 2,
     exp: "El experimento consistió explícitamente en usar un **dispositivo robótico** que enseñó la canción a los chingolos jóvenes de forma autónoma. Es decir, reemplazó al ave adulta en el proceso de enseñanza.\n\nPor lo tanto, la opción C, que afirma que se **'requiere de la intervención de aves adultas'** para introducir el canto mediante robótica, es falsa y se opone directamente al éxito del experimento descrito en el texto.\n\n**Tip Élite:** Si un texto te describe un experimento tecnológico o artificial que reemplaza un proceso biológico, cualquier opción que diga que el proceso biológico original sigue siendo estrictamente 'requerido' será una contradicción u oposición."
+  },
+  {
+    id: "q_pdf2_01",
+    domain: "math",
+    topic: "certeza",
+    dif: 3,
+    stem: "Una empresa posee dos oficinas. En la oficina 1 solo hay hombres y en la oficina 2 hay 15 mujeres y varios hombres. Se van a pasar 9 personas de la oficina 2 a la oficina 1.",
+    q: "¿Cuál de las siguientes afirmaciones sucederá con certeza?",
+    opts: [
+      "La oficina 1 tendrá mujeres y hombres.",
+      "La oficina 2 tendrá mujeres y hombres.",
+      "La oficina 1 tendrá varias mujeres.",
+      "La oficina 2 tendrá varias mujeres."
+    ],
+    ans: 3,
+    exp: "En problemas de *certeza*, debes analizar el PEOR escenario. Nos dicen que se pasan 9 personas de la oficina 2 a la 1.\n\n- Opción A: ¿Tendrá la oficina 1 mujeres? Depende. ¿Qué pasa si las 9 personas trasladadas son todas hombres? (Porque dice que hay 'varios hombres'). Entonces la oficina 1 podría seguir teniendo SOLO hombres. La A no es certera.\n- Opción B: ¿Tendrá la oficina 2 mujeres y hombres? Si se trasladan todos los hombres de la oficina 2, la oficina 2 quedaría SOLO con mujeres. La B no es certera.\n- Opción C: Parecida a la A. Podrían pasarse solo hombres o solo 1 mujer. No es certera.\n- Opción D: Sabemos que hay 15 mujeres en la oficina 2. Si, en el caso más extremo posible, las 9 personas trasladadas fueran TODAS mujeres, la oficina 2 quedaría con $15 - 9 = 6$ mujeres. Siempre quedarán al menos 6 mujeres (varias). Esta afirmación se cumple con **total certeza** en cualquier escenario posible.\n\n**Tip Élite:** 'Con certeza' significa que es verdad en el 100% de los casos. Busca el caso extremo que intente romper la regla; si la regla sobrevive al caso extremo, esa es la respuesta."
+  },
+  {
+    id: "q_pdf2_02",
+    domain: "math",
+    topic: "husos_horarios",
+    dif: 3,
+    stem: "Álvaro y Daniela participaron en un juego por internet. Álvaro se encontraba en Panamá y Daniela en Portugal. Álvaro comentó que el juego empezó un lunes a las 4:00 a. m. de Panamá y Daniela dijo que el juego terminó a las 4:00 a. m. de Portugal, pero del martes. La hora en Portugal está adelantada 6 horas respecto a la de Panamá.",
+    q: "¿Cuántas horas duró el juego?",
+    opts: [
+      "6",
+      "12",
+      "18",
+      "24"
+    ],
+    ans: 2,
+    exp: "Para calcular duraciones en distintas zonas horarias, el secreto es **usar un solo reloj** (ya sea el de Panamá o el de Portugal) y convertir todo a esa zona antes de calcular.\n\nUsaremos el reloj de Portugal:\n1. Álvaro dice que inició a las 4:00 a.m. (Panamá). Como Portugal está adelantado 6 horas, en Portugal el juego **inició a las 10:00 a.m. del lunes**.\n2. Daniela dice que el juego **terminó a las 4:00 a.m. del martes** (hora de Portugal).\n3. Ahora calculamos la diferencia: de las 10:00 a.m. (lunes) hasta las 10:00 p.m. (lunes) son 12 horas. De las 10:00 p.m. hasta las 4:00 a.m. (martes) son 6 horas más.\n   $12 + 6 = 18$ horas.\n\n**Tip Élite:** Jamás intentes restar horas mientras hablas en dos husos distintos. Siempre traduce la 'hora de inicio' a la hora del país destino y luego cuenta normalmente."
+  },
+  {
+    id: "q_pdf2_03",
+    domain: "math",
+    topic: "logica_deductiva",
+    dif: 3,
+    stem: "Un grupo de personas quiere comenzar a practicar algún deporte que sea adecuado a sus preferencias y habilidades, de manera que nadie se quede sin practicar uno o más deportes. A partir de estos requisitos, se toman en cuenta los siguientes aspectos:\n\n- A todos les gusta mojarse y no saben andar en bicicleta.\n- Todos pueden mantenerse a flote en el agua y no les gusta el contacto físico.\n- Algunos pueden controlar bien los objetos esféricos y no desean recorrer largas distancias.",
+    q: "De acuerdo con los aspectos anteriores, ¿qué se puede concluir, con certeza?",
+    opts: [
+      "Algunos pueden practicar natación y ciclismo.",
+      "Todos pueden practicar ciclismo, pero no boxeo.",
+      "Todos pueden practicar natación, pero no ciclismo.",
+      "Algunos pueden practicar boxeo y todos pueden practicar natación."
+    ],
+    ans: 2,
+    exp: "Analicemos las conclusiones lógicas de las condiciones dadas:\n1. 'A todos les gusta mojarse' y 'Todos pueden mantenerse a flote': Significa que la **natación** es apta para todos.\n2. 'No saben andar en bicicleta': Nadie puede practicar **ciclismo**. Descartamos opciones A y B de inmediato.\n3. 'No les gusta el contacto físico': Nadie puede practicar **boxeo**. Descartamos opción D.\n\nLa única conclusión 100% segura es la opción C: 'Todos pueden practicar natación (cumple la condición del agua) pero no ciclismo (no saben andar en bicicleta)'.\n\n**Tip Élite:** Ve descartando opciones apenas leas las limitantes. 'No saben andar en bici' tacha cualquier respuesta que sugiera que pueden hacer ciclismo."
+  },
+  {
+    id: "q_pdf2_04",
+    domain: "verbal",
+    topic: "parafrasis",
+    dif: 3,
+    stem: "En diversos países, la globalización, lejos de favorecer con mayores incentivos económicos la superación de los trabajadores, ha provocado que los salarios sean cada vez más reducidos.",
+    q: "De acuerdo con lo anterior, ¿cuál de las siguientes afirmaciones reproduce lo expuesto en el texto?",
+    opts: [
+      "La globalización eliminó los incentivos salariales.",
+      "La globalización logró unificar los ingresos.",
+      "La globalización redistribuyó los ingresos.",
+      "La globalización modificó los salarios."
+    ],
+    ans: 3,
+    exp: "El texto principal hace una afirmación clara: la globalización provocó que los **salarios sean cada vez más reducidos**.\n\nDebemos buscar la opción que reproduzca esta idea sin decir mentiras ni inventar información:\n- A) Falsa. Dice que no favoreció con 'mayores incentivos', no que los 'eliminó' por completo.\n- B) Falsa. Reducir salarios no significa que todos ganen lo mismo (unificarlos).\n- C) Falsa. Redistribuir implica que se repartieron de forma distinta; el texto solo dice que bajaron.\n- D) Verdadera. Si los salarios se redujeron, inevitablemente sufrieron una **modificación**.\n\n**Tip Élite:** A veces la paráfrasis correcta es una deducción hiper-lógica y generalizada. 'Reducir' es un tipo de 'modificación'. Al ser la única opción que no inventa detalles ajenos al texto, es la correcta."
+  },
+  {
+    id: "q_pdf2_05",
+    domain: "verbal",
+    topic: "proposiciones",
+    dif: 3,
+    stem: "Si alguien sabe andar en bicicleta es porque ha pasado por un proceso de aprendizaje, durante el cual pueden ocurrir muchas caídas. No obstante, llega el momento en que el aprendiz es capaz de mantener un equilibrio activo.\nAnalice las siguientes proposiciones:\n\nI. El aprendizaje no requiere de tiempo.\nII. En todo aprendizaje pueden ocurrir equivocaciones.\nIII. Algunos procesos de aprendizaje no tardan mucho tiempo en completarse.",
+    q: "De las anteriores proposiciones, ¿cuál(es) hace(n) que el texto principal sea falso?",
+    opts: [
+      "Solo la I.",
+      "Solo la II.",
+      "Solo la III.",
+      "Solo la II y la III."
+    ],
+    ans: 0,
+    exp: "La pregunta pide encontrar cuál proposición haría que el texto original sea FALSO, es decir, debes encontrar la proposición que **contradice** directamente el texto.\n\n- Proposición I: 'El aprendizaje no requiere tiempo'. El texto dice que 'llega el momento en que el aprendiz...', lo que implica directamente un transcurso de tiempo (un proceso). Si la proposición I fuera cierta, el texto sería falso. Por ende, la I es la clave.\n- Proposición II: 'pueden ocurrir equivocaciones'. El texto menciona 'muchas caídas', que equivalen a equivocaciones. Concuerda.\n- Proposición III: 'Algunos no tardan mucho tiempo'. El texto no dice cuánto dura el proceso, por lo que esta afirmación no lo contradice.\n\n**Tip Élite:** Presta mucha atención a la pregunta. No te piden qué se infiere del texto, sino qué proposición es *incompatible* con él. Lee siempre la instrucción dos veces."
+  },
+  {
+    id: "q_pdf2_06",
+    domain: "verbal",
+    topic: "inferencia",
+    dif: 3,
+    stem: "Los luchadores exitosos son aquellos persistentes y no precisamente los más fuertes; en una carrera de resistencia, ganan los más constantes, y no siempre los más veloces.",
+    q: "Según el texto anterior, ¿cuál característica deben tener los luchadores exitosos para alcanzar sus metas?",
+    opts: [
+      "Inteligencia.",
+      "Entusiasmo.",
+      "Esperanza.",
+      "Insistencia."
+    ],
+    ans: 3,
+    exp: "El texto enumera características clave del éxito: ser **persistentes** y ser **constantes**.\n\nNinguna de las opciones usa literalmente esas dos palabras, así que debemos inferir el sinónimo más cercano o la cualidad asociada:\n- A) Inteligencia: No se menciona.\n- B) Entusiasmo: Un ánimo exaltado no garantiza la constancia (se puede ser entusiasta hoy y rendirse mañana).\n- C) Esperanza: Confiar en el futuro no implica un esfuerzo constante.\n- D) Insistencia: Ser insistente significa tratar repetidamente, lo cual es casi sinónimo de ser constante y persistente en una meta.\n\n**Tip Élite:** En preguntas de asociación léxica, busca la palabra en las opciones que pertenezca a la misma 'familia semántica' (grupo de significados) de las palabras clave del texto."
   }
 ];

@@ -16,6 +16,10 @@ window.PAA_TOPICS = [
     id: "inferencia", domain: "verbal", name: "Inferencia y comprensión",
     teoria: "Inferir es deducir algo que no está escrito literalmente, pero que es una consecuencia lógica e innegable de lo que se lee. No debes inventar, solo conectar los puntos de la información dada."
   },
+  {
+    id: "proposiciones", domain: "verbal", name: "Análisis de proposiciones",
+    teoria: "En estos ejercicios, debes evaluar afirmaciones (I, II, III) basándote estrictamente en el texto. Para encontrar la proposición falsa, busca afirmaciones absolutas ('todo', 'ningún') o conclusiones que contradigan directamente el sentido del texto original."
+  },
 
   /* ---------------- RAZONAMIENTO MATEMÁTICO ---------------- */
   {
@@ -33,6 +37,18 @@ window.PAA_TOPICS = [
   {
     id: "combinatoria", domain: "math", name: "Combinatoria y sumas",
     teoria: "Cuando debes alcanzar un total usando partes de distintos tamaños (ej. formar 18kg con pesas de 4kg y 5kg), prueba las combinaciones posibles de manera ordenada empezando desde la más grande o la más pequeña hasta que la suma cuadre exacto."
+  },
+  {
+    id: "certeza", domain: "math", name: "Lógica de certeza",
+    teoria: "Estos problemas describen situaciones con varias posibilidades. La afirmación que 'sucederá con certeza' es aquella que es verdad en TODOS los casos posibles, incluso en el peor de los escenarios. Analiza siempre los extremos."
+  },
+  {
+    id: "husos_horarios", domain: "math", name: "Husos horarios y tiempos",
+    teoria: "Para calcular duraciones entre países, convierte siempre una de las horas a la zona horaria de la otra ANTES de sumar o restar. Si un país está 'adelantado', suma horas; si está 'atrasado', resta. Luego calcula la diferencia como un bloque de tiempo único."
+  },
+  {
+    id: "logica_deductiva", domain: "math", name: "Deducción lógica (Silogismos)",
+    teoria: "Consiste en cruzar reglas ('Todos los que nadan se mojan', 'Ninguno sabe andar en bicicleta'). Si te piden una conclusión cierta, debes combinar las reglas sin agregar información externa. Un diagrama de Venn rápido (círculos) puede hacer visible lo invisible."
   }
 ];
 
